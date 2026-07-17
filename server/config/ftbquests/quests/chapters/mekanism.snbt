@@ -1,0 +1,562 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "1A2B000000000002"
+	icon: "mekanism:steel_casing"
+	id: "3C1F000000000010"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2102000000000004"]
+			description: [
+				"&9Mekanism&r is the industrial heart of this pack: processing, chemicals, and enough power to bend the world."
+				""
+				"You've built a Metallurgic Infuser. Now build the machine line that turns raw materials into everything else."
+				""
+				"&7This is a long tree. Work through it tier by tier - there are no shortcuts to the top.&r"
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "6C0C75598D65CE7D"
+			rewards: [
+				{
+					id: "5E9ECA0E6BA00D9B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "03BB7531572FAFA6"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The industrial backbone"
+			tasks: [{
+				id: "1F8D57A48E28B9CF"
+				title: "Begin Mekanism"
+				type: "checkmark"
+			}]
+			title: "&9The Mekanism Way"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: ["The Enrichment Chamber doubles ores and makes enriched materials, compressed redstone, and more. Your first real processing machine."]
+			id: "6B5334AE80D3748E"
+			rewards: [{
+				id: "425E32736F06F3CB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "36BAA084C8543C4D"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			title: "Enrichment Chamber"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: ["The Crusher grinds ingots to dust and biomass to bio fuel. Pair it with the Enrichment Chamber to start doubling metals."]
+			id: "736B27013214BE28"
+			rewards: [{
+				id: "330EA3C96DB0811E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3EFC495C19FC88FD"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "Crusher"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: ["The Energized Smelter is a furnace that runs on power - no fuel, and it feeds into factories later."]
+			id: "62AB81D872055048"
+			rewards: [{
+				id: "3ED07579B89CE98B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2FCAE77421C9A493"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			title: "Energized Smelter"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"Machines need power. A Basic Energy Cube stores it and acts as a battery/adapter between generators and machines."
+				""
+				"Feed it from your Powah or Mekanism generators."
+			]
+			id: "19236F17F30F94C7"
+			rewards: [{
+				id: "4BC9362F1B95B08A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1058026C0E645742"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "Store Some Power"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6B5334AE80D3748E"
+				"736B27013214BE28"
+			]
+			description: ["The Electrolytic Separator splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."]
+			id: "742152612BC35B66"
+			rewards: [{
+				id: "137D67BC9DCE58D2"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "42F9089E2E1E241F"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "Split the Water"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["742152612BC35B66"]
+			description: ["The Purification Chamber uses Oxygen to turn ores into 3 clumps each - tripling. Ore processing tier 3."]
+			id: "43FBE8C75E6299BE"
+			rewards: [{
+				id: "01A6D355894DD9C1"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "12559982DDDDAA0D"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			title: "Triple Your Ores"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["742152612BC35B66"]
+			description: ["The Osmium Compressor stamps Osmium onto materials to make Refined Obsidian, Glowstone ingots, and control-circuit ingredients."]
+			id: "20BFAAABC4357F1F"
+			rewards: [{
+				id: "2AA1AA0487FEA1DC"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "319844816D2CC0FB"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			title: "Osmium Compressor"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43FBE8C75E6299BE"]
+			description: [
+				"The Chemical Injection Chamber uses Hydrogen Chloride to shatter ores into 4 shards each - QUADRUPLING."
+				""
+				"This is the full ore-processing chain. Combined with a Chemical Dissolution setup you can go to x5, but x4 is where most players live."
+			]
+			id: "7ECDAF64265C939E"
+			rewards: [{
+				id: "053646AF782E4851"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "06C60CA51A032F73"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			title: "Quadruple Your Ores"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20BFAAABC4357F1F"]
+			description: [
+				"Control Circuits are the currency of Mekanism upgrades. The Basic circuit gates everything above tier 1."
+				""
+				"Make one in a Metallurgic Infuser (redstone + osmium)."
+			]
+			id: "0FF4B3FC8DFFDE04"
+			rewards: [{
+				id: "4D780B1D95D2426B"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "6E37B7A4F12EE519"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "Basic Circuits"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0FF4B3FC8DFFDE04"]
+			description: ["Advanced Control Circuits need enriched circuits and gold. They gate tier-2 machines and factories."]
+			id: "267D2B1D2D8750CC"
+			rewards: [{
+				id: "2B40E7C3D6713C52"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "6F4EFDE19179F43A"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "Advanced Circuits"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["267D2B1D2D8750CC"]
+			description: ["Elite and Ultimate Control Circuits are the top of the ladder - required for the best factories, the digital miner, and endgame gear."]
+			id: "398BE9895D2BED1B"
+			rewards: [{
+				id: "2CE33709C5BC8FB3"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					id: "14B6A732A897EAE8"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+				{
+					id: "1A32AA02B6DF2AB7"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Elite & Ultimate Circuits"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0FF4B3FC8DFFDE04"
+				"62AB81D872055048"
+			]
+			description: [
+				"A Factory does the job of one machine, but on many items at once, in parallel."
+				""
+				"Build a Basic Smelting Factory to start automating - then upgrade the tier as your circuits allow."
+			]
+			id: "5251868CACAB6B09"
+			rewards: [{
+				id: "40D8CB38E1C01438"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "43CDFE8B81B1E7F5"
+				item: "mekanism:basic_smelting_factory"
+				type: "item"
+			}]
+			title: "Automate It: Factories"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5251868CACAB6B09"
+				"398BE9895D2BED1B"
+			]
+			description: ["Push factories to the top: Elite and Ultimate tiers process a dozen items at once. This is real industry."]
+			id: "3D923C56F219EB9E"
+			rewards: [
+				{
+					id: "44815BA9F91DE639"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "00509CAAE7DE3BAB"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "76F6C288AAEE4B34"
+					item: "mekanism:elite_smelting_factory"
+					type: "item"
+				}
+				{
+					id: "16DD66FE825D83F9"
+					item: "mekanism:ultimate_crushing_factory"
+					type: "item"
+				}
+			]
+			title: "Mass Production"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["398BE9895D2BED1B"]
+			description: ["The Digital Miner mines whole areas by filter, remotely. On a skyblock it's mostly for pulling from Mekanism's own ore-gen, but it's a rite of passage."]
+			id: "6E9FFB8BA9EFA7A6"
+			rewards: [{
+				id: "18252BA850EF783A"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "61F7DD161969BE9B"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			title: "The Digital Miner"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["19236F17F30F94C7"]
+			description: ["The Teleporter moves you across the world (and dimensions) instantly. Link two and step through."]
+			id: "003FCED61DD91731"
+			rewards: [{
+				id: "34ECB489AF609CF1"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "5D8CAE0C9022C6D5"
+				item: "mekanism:teleporter"
+				type: "item"
+			}]
+			title: "Teleporter"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19236F17F30F94C7"]
+			description: [
+				"The Induction Matrix is a multiblock battery that stores absurd amounts of power - the buffer your fission reactor will need."
+				""
+				"Build the casing and at least one cell + provider."
+			]
+			id: "2B928184B2E69250"
+			rewards: [{
+				id: "3E4C55513718AB1F"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					id: "366E1D9C05994B40"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "54FEFF2A0B98FD67"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+			]
+			title: "The Induction Matrix"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6E9FFB8BA9EFA7A6"]
+			description: ["The Quantum Entangloporter is wireless item/fluid/gas/energy transfer across any distance and dimension. Endgame logistics."]
+			id: "0FBFBB69863D68E7"
+			rewards: [{
+				id: "3AB286755B3DF9AC"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "70C7BDFDF3908EC6"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "Quantum Logistics"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["398BE9895D2BED1B"]
+			description: [
+				"The MekaSuit and Meka-Tool are the best armor and tool in the pack - fully modular at a Modification Station."
+				""
+				"Build the station, then craft a Meka-Tool and the MekaSuit chestplate to begin the set."
+			]
+			id: "21557404ADD43A57"
+			rewards: [
+				{
+					id: "420D73343DDC32FB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3236632915BB5471"
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "5251FC4481F88253"
+					item: "mekanism:modification_station"
+					type: "item"
+				}
+				{
+					id: "649E7402DEDEC658"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+				{
+					id: "564C90DE6DC3D434"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+			]
+			title: "MekaSuit & Meka-Tool"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"21557404ADD43A57"
+				"2B928184B2E69250"
+			]
+			description: [
+				"You've mastered Mekanism's machines, chemistry, and gear. Only one frontier remains: nuclear power."
+				""
+				"The Fission Reactor and the road to antimatter live in the &6Endgame&r - go build the Heart of the Sky."
+			]
+			id: "01339523C16D6EDB"
+			rewards: [
+				{
+					id: "7AC69B43C50774F1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "2A9BA0E3A5D11A48"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Mekanism mastered"
+			tasks: [{
+				id: "32542E1805A8AB04"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			title: "&9Industrial Ascendancy"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["742152612BC35B66"]
+			description: [
+				"That Hydrogen your Electrolytic Separator makes? It burns. The &eJetpack&r burns it for personal flight - long before elytra or MekaSuit."
+				""
+				"Fill it from the separator and mind your fuel gauge over the void."
+			]
+			icon: "mekanism:jetpack"
+			id: "6CAF000000000001"
+			rewards: [{
+				id: "6CAF000000000101"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "diamond"
+			subtitle: "&7Hydrogen-powered flight"
+			tasks: [{
+				id: "6CAF000000000201"
+				item: "mekanism:jetpack"
+				type: "item"
+			}]
+			title: "&9The Jetpack"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CAF000000000001"]
+			description: ["&eFree Runners&r cancel fall damage and step up blocks; the &eScuba set&r breathes for you underwater. Cheap quality-of-life that saves your life weekly."]
+			icon: "mekanism:free_runners"
+			id: "6CAF000000000002"
+			rewards: [{
+				id: "6CAF000000000102"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Wearable insurance"
+			tasks: [
+				{
+					id: "6CAF000000000202"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+				{
+					id: "6CAF000000000212"
+					item: "mekanism:scuba_mask"
+					type: "item"
+				}
+			]
+			title: "&9Runner's Kit"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["398BE9895D2BED1B"]
+			description: [
+				"The &eAtomic Disassembler&r is every tool in one handle - pickaxe, axe, shovel, sword - with adjustable speed and a power cell where durability used to be."
+				""
+				"The Meka-Tool will replace it eventually. Until then, this IS the endgame tool."
+			]
+			icon: "mekanism:atomic_disassembler"
+			id: "6CAF000000000003"
+			rewards: [{
+				id: "6CAF000000000103"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "diamond"
+			subtitle: "&7Every tool. One handle."
+			tasks: [{
+				id: "6CAF000000000203"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			title: "&9Atomic Disassembler"
+			x: 1.0d
+			y: -3.0d
+		}
+	]
+	title: "&9Tech Branch Â· Mekanism"
+}

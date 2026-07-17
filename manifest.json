@@ -1,0 +1,37 @@
+{
+  "minecraft": {
+    "version": "1.20.1",
+    "modLoaders": [
+      {
+        "id": "forge-47.3.0",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "ATM Sky Lite",
+  "version": "0.1.0",
+  "author": "you",
+  "overrides": "overrides",
+  "_comment": "projectID/fileID pairs are CurseForge IDs. fileID values below are placeholders marked with LATEST — replace each with a real 1.20.1-Forge file id from curseforge.com before importing. The listed projectIDs are stable.",
+  "files": [
+    { "projectID": 268560, "fileID": "LATEST", "required": true, "_name": "Mekanism" },
+    { "projectID": 268566, "fileID": "LATEST", "required": true, "_name": "Mekanism Generators" },
+    { "projectID": 268567, "fileID": "LATEST", "required": true, "_name": "Mekanism Tools" },
+    { "projectID": 223794, "fileID": "LATEST", "required": true, "_name": "Applied Energistics 2" },
+    { "projectID": 570458, "fileID": "LATEST", "required": true, "_name": "AE2 Things" },
+    { "projectID": 469687, "fileID": "LATEST", "required": true, "_name": "Applied Mekanistics (AE2 <-> Mekanism chemicals)" },
+    { "projectID": 238222, "fileID": "LATEST", "required": true, "_name": "Just Enough Items (JEI)" },
+    { "projectID": 245211, "fileID": "LATEST", "required": true, "_name": "Just Enough Resources (JER)" },
+    { "projectID": 419699, "fileID": "LATEST", "required": true, "_name": "SkyBlock Builder (creates the void world type)" },
+    { "projectID": 247951, "fileID": "LATEST", "required": true, "_name": "Cyclic (sky-progression helpers)" },
+    { "projectID": 231951, "fileID": "LATEST", "required": true, "_name": "Ex Nihilo: Sequentia (sieve/hammer sky resources)" },
+    { "projectID": 419697, "fileID": "LATEST", "required": true, "_name": "FTB Quests (progression book)" },
+    { "projectID": 404465, "fileID": "LATEST", "required": true, "_name": "FTB Library (dependency)" },
+    { "projectID": 328085, "fileID": "LATEST", "required": true, "_name": "Cloth Config API (dependency)" },
+    { "projectID": 306770, "fileID": "LATEST", "required": true, "_name": "Curios API (dependency for many tech trinkets)" },
+    { "projectID": 245755, "fileID": "LATEST", "required": true, "_name": "The One Probe (in-world machine tooltips)" },
+    { "projectID": 623297, "fileID": "LATEST", "required": true, "_name": "Ars Nouveau / optional magic-tech bridge (optional)" }
+  ]
+}

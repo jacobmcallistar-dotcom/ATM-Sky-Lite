@@ -1,0 +1,13 @@
+{
+  "__comment": "Void worlds have no osmium ore - this keystone bridge is the skyblock entry into Mekanism.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "skyforge:industrial_keystone" },
+    { "item": "skyforge:sky_dust" },
+    { "item": "skyforge:sky_dust" }
+  ],
+  "result": { "item": "mekanism:ingot_osmium", "count": 2 }
+}

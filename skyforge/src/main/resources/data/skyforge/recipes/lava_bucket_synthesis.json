@@ -1,0 +1,14 @@
+{
+  "__comment": "SKYBLOCK FIX: lava is only renewable via the Ex Deorum lava crucible, which needs a heat source and cannot be autocrafted into an ME system. Cobblestone is infinite (CobbleForDays / water+lava gen), so this melts a ring of it into a full bucket - a plain crafting recipe AE2 can autocraft.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC"
+  ],
+  "key": {
+    "C": { "item": "minecraft:cobblestone" },
+    "B": { "item": "minecraft:bucket" }
+  },
+  "result": { "item": "minecraft:lava_bucket" }
+}

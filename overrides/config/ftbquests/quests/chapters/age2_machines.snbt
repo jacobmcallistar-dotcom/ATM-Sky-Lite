@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age2_machines"
+	group: "1A2B000000000001"
+	icon: "mekanism:metallurgic_infuser"
+	id: "3C1F000000000002"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["44EA00000000000E"]
+			description: [
+				"&2&lAge III Â· First Machines.&r"
+				""
+				"Water gave you torque; now torque buys you &lelectricity&r. An Industrial Keystone, your first Mekanism machines, and grid power that never sleeps."
+				""
+				"&cThe gate you already passed:&r the Metallurgic Infuser is built around your Precision Mechanism. The next gate: &cAE2's Inscriber demands an Advanced Control Circuit&r - the digital age waits for the electric one."
+			]
+			icon: "skyforge:industrial_keystone"
+			id: "2102000000000001"
+			rewards: [{ id: "2102000000000101", type: "xp", xp: 40 }]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Sky metal becomes industry"
+			tasks: [{ id: "2102000000000201", title: "Enter the Machine Age", type: "checkmark" }]
+			title: "&2Age III Â· First Machines"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2102000000000001"]
+			description: [
+				"The &eIndustrial Keystone&r is the master key to tech. Craft it from Sky Steel, redstone and a diamond."
+				""
+				"In a crafting grid it bridges Sky Dust into &7Osmium&r, &7Certus Quartz&r and &7Uraninite&r, and Sky Steel into &7Mekanism Steel&r - the ores the void refuses to give you."
+			]
+			icon: "skyforge:industrial_keystone"
+			id: "2102000000000002"
+			rewards: [{ count: 2, id: "2102000000000102", item: "skyforge:industrial_keystone", type: "item" }]
+			shape: "diamond"
+			size: 1.25d
+			subtitle: "&7The master key to tech"
+			tasks: [{ id: "2102000000000202", item: "skyforge:industrial_keystone", type: "item" }]
+			title: "&2The Industrial Keystone"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2102000000000002"]
+			description: ["Bridge Sky Steel into &eMekanism Steel&r, then press it into a &eSteel Casing&r - the shell of nearly every Mekanism machine you are about to build."]
+			icon: "mekanism:ingot_steel"
+			id: "2102000000000003"
+			rewards: [{ count: 2, id: "2102000000000103", item: "mekanism:steel_casing", type: "item" }]
+			subtitle: "&7The metal machines are made of"
+			tasks: [{ count: 4L, id: "2102000000000203", item: "mekanism:ingot_steel", type: "item" }]
+			title: "&2Real Steel"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2102000000000003"]
+			description: [
+				"The &eMetallurgic Infuser&r is Mekanism's gateway machine - it infuses materials with redstone, carbon, tin and more to make enriched alloys and steel."
+				""
+				"&cIts recipe is built around your Precision Mechanism&r - kinetics literally inside the machine. &9Build it and the full Mekanism branch opens in Act II.&r Osmium comes from the keystone bridge, or from sieving gravel with an iron mesh."
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "2102000000000004"
+			rewards: [{ count: 4, id: "2102000000000104", item: "mekanism:enriched_redstone", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Opens the Mekanism branch"
+			tasks: [{ id: "2102000000000204", item: "mekanism:metallurgic_infuser", type: "item" }]
+			title: "&9Metallurgy 101"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2102000000000004"]
+			description: ["Infuse redstone into &eEnriched Redstone&r - the concentrated form Mekanism uses in circuits, energy tablets and control components. Make a stack; you will need it constantly."]
+			icon: "mekanism:enriched_redstone"
+			id: "2102000000000005"
+			rewards: [{ id: "2102000000000105", type: "xp", xp: 30 }]
+			subtitle: "&7Concentrated redstone"
+			tasks: [{ count: 4L, id: "2102000000000205", item: "mekanism:enriched_redstone", type: "item" }]
+			title: "&9Enriched Materials"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2102000000000005"]
+			description: [
+				"A &eHeat Generator&r burns lava, coal or fuel to make your first Forge Energy. Wire it into the Sky Assembler with Universal Cables and the ingots roll in without you."
+				""
+				"This is the beginning of the end of doing anything by hand."
+			]
+			icon: "mekanismgenerators:heat_generator"
+			id: "2102000000000006"
+			rewards: [{ count: 8, id: "2102000000000106", item: "minecraft:coal_block", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Your first grid power"
+			tasks: [{ id: "2102000000000206", item: "mekanismgenerators:heat_generator", type: "item" }]
+			title: "&9Power On"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2102000000000006"]
+			description: ["The &eEnergized Smelter&r smelts with power instead of fuel, faster and cleaner than any furnace. Route it into your ore-chunk pipeline and forget about coal."]
+			icon: "mekanism:energized_smelter"
+			id: "2102000000000007"
+			rewards: [{ id: "2102000000000107", type: "xp", xp: 30 }]
+			subtitle: "&7Smelt with electricity"
+			tasks: [{ id: "2102000000000207", item: "mekanism:energized_smelter", type: "item" }]
+			title: "&9Energized Smelter"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2102000000000004"]
+			description: [
+				"The &eEnrichment Chamber&r is your first ore multiplier: one ingot's worth of chunk in, two dusts out. Smelt the dust and you have doubled every metal you sieve."
+				""
+				"This is where the void stops being stingy."
+			]
+			icon: "mekanism:enrichment_chamber"
+			id: "2102000000000008"
+			rewards: [{ count: 8, id: "2102000000000108", item: "minecraft:iron_ingot", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Double your ore"
+			tasks: [{ id: "2102000000000208", item: "mekanism:enrichment_chamber", type: "item" }]
+			title: "&9The Enrichment Chamber"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2102000000000006"]
+			description: ["A &eCrusher&r grinds ingots back into dust and clears the way to Mekanism's deeper ore chains. Cheap, fast, and a prerequisite for the good stuff."]
+			icon: "mekanism:crusher"
+			id: "2102000000000009"
+			rewards: [{ id: "2102000000000109", type: "xp", xp: 30 }]
+			subtitle: "&7Grind it down"
+			tasks: [{ id: "2102000000000209", item: "mekanism:crusher", type: "item" }]
+			title: "&9The Crusher"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2102000000000008"]
+			description: ["The &eOsmium Compressor&r combines osmium with materials to make Mekanism's control circuits and refined alloys. Feed it osmium from the keystone or the sieve."]
+			icon: "mekanism:osmium_compressor"
+			id: "210200000000000A"
+			rewards: [{ id: "210200000000010A", type: "xp", xp: 30 }]
+			subtitle: "&7Compress osmium"
+			tasks: [{ id: "210200000000020A", item: "mekanism:osmium_compressor", type: "item" }]
+			title: "&9Osmium Compressor"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["267D2B1D2D8750CC"]
+			description: [
+				"&bThe digital age begins&r - but only now. Charge your sieved &eCertus Quartz&r and combine it into &eFluix Crystals&r - the semiconductor at the heart of every AE2 device."
+				""
+				"AE2 is deliberately &lmid-game&r in this pack: its Inscriber demands the Advanced Control Circuits you just learned to make. If the void was stingy with certus, the keystone bridge makes more."
+			]
+			icon: "ae2:fluix_crystal"
+			id: "210200000000000B"
+			rewards: [{ count: 8, id: "210200000000010B", item: "ae2:fluix_crystal", type: "item" }]
+			subtitle: "&7The AE2 semiconductor"
+			tasks: [{ count: 8L, id: "210200000000020B", item: "ae2:fluix_crystal", type: "item" }]
+			title: "&bFluix Crystals"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["210200000000000B"]
+			description: [
+				"An &eInscriber&r stamps silicon and quartz into processors. Normally you would loot the four Inscriber Presses from a meteor - but none fall in the void, so building the Inscriber earns you all four."
+				""
+				"&cIts frame is held together by an Advanced Control Circuit&r - check JEI. &bBuild it and the full Applied Energistics branch opens in Act II.&r"
+			]
+			icon: "ae2:inscriber"
+			id: "210200000000000C"
+			rewards: [
+				{ id: "210200000000010C", item: "ae2:silicon_press", type: "item" }
+				{ id: "210200000000010D", item: "ae2:logic_processor_press", type: "item" }
+				{ id: "210200000000010E", item: "ae2:calculation_processor_press", type: "item" }
+				{ id: "210200000000010F", item: "ae2:engineering_processor_press", type: "item" }
+			]
+			shape: "gear"
+			subtitle: "&7Opens the AE2 branch"
+			tasks: [{ id: "210200000000020C", item: "ae2:inscriber", type: "item" }]
+			title: "&bPress Start"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2102000000000008"]
+			description: ["A &eBasic Control Circuit&r is the logic chip behind every advanced machine. Osmium compressor makes them. From here, everything gets smarter."]
+			icon: "mekanism:basic_control_circuit"
+			id: "210200000000000D"
+			rewards: [{ id: "2102000000000110", type: "xp", xp: 40 }]
+			subtitle: "&7The first logic chip"
+			tasks: [{ count: 2L, id: "210200000000020D", item: "mekanism:basic_control_circuit", type: "item" }]
+			title: "&9Basic Circuits"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"210200000000000D"
+				"210200000000000A"
+				"2102000000000008"
+				"2102000000000007"
+			]
+			description: [
+				"Power flows, ore doubles, circuits stamp out. Age III is done."
+				""
+				"&9Act II opens: dive the deep Mekanism tree, push to Advanced Circuits to crack open AE2, then spin up Age IV - Powah reactors and mass power.&r"
+			]
+			icon: "mekanism:steel_casing"
+			id: "210200000000000E"
+			rewards: [
+				{ count: 4, id: "2102000000000111", item: "skyforge:industrial_keystone", type: "item" }
+				{ id: "2102000000000112", table_id: 258L, type: "random" }
+				{ id: "2102000000000113", type: "xp_levels", xp_levels: 5 }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Age II capstone"
+			tasks: [
+				{ count: 4L, id: "210200000000020E", item: "mekanism:basic_control_circuit", type: "item" }
+				{ count: 4L, id: "210200000000021E", item: "mekanism:steel_casing", type: "item" }
+			]
+			title: "&2The Machine Age"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&2Age III Â· First Machines"
+}

@@ -1,0 +1,362 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "war_in_the_sky"
+	group: "1A2B000000000003"
+	icon: {
+		Count: 1
+		id: "minecraft:netherite_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3C1F000000000003"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210300000000000B"]
+			description: [
+				"Apotheosis is live in this world: mobs spawn with affixes, rare gear drops everywhere, and surprise mini-bosses walk your platforms."
+				""
+				"The Reforging Table rerolls gear affixes. The Salvaging Table breaks gear into materials. Build your arsenal."
+			]
+			id: "6B7800000000D001"
+			rewards: [{
+				count: 4
+				id: "5C8900000000E001"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D9A00000000F001"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			title: "Reforged"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B7800000000D001"]
+			description: [
+				"You are not alone up here. This quest rewards two Human Companions - a Knight and an Archer."
+				""
+				"Place them on your island, gear them with armor and weapons, and they'll fight and patrol beside you. Feed them to heal them."
+			]
+			id: "6B7800000000D002"
+			rewards: [
+				{
+					id: "5C8900000000E002"
+					item: "humancompanions:knight_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "5C8900000000E003"
+					item: "humancompanions:archer_spawn_egg"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "4D9A00000000F002"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "Hire the Guard"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B7800000000D001"]
+			description: [
+				"Floating villages generate out in the void sky - balloon platforms full of villagers, loot and trades."
+				""
+				"Craft a Waystone, then go exploring. Plant waystones as you travel to teleport between your island and the villages."
+			]
+			id: "6B7800000000D003"
+			rewards: [
+				{
+					count: 16
+					id: "5C8900000000E004"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "5C8900000000E005"
+					item: {
+						Count: 1
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4D9A00000000F003"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "Village in the Clouds"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B7800000000D001"]
+			description: [
+				"The Boss Summoner calls an Apotheosis boss to YOU. Arena fight on your own island, on your terms."
+				""
+				"Boss drops feed the Salvaging Table and carry rare gems - socket them into your gear."
+			]
+			id: "6B7800000000D004"
+			rewards: [{
+				count: 8
+				id: "5C8900000000E006"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D9A00000000F004"
+				item: "apotheosis:boss_summoner"
+				type: "item"
+			}]
+			title: "Rally the Horde"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B7800000000D004"]
+			description: [
+				"Wither skulls from your Hostile Neural Networks sim, soul sand from the Nether."
+				""
+				"Kill the Wither. The reward opens the End: 12 portal frames + 12 eyes - build and light your own End portal anywhere."
+			]
+			id: "6B7800000000D005"
+			rewards: [
+				{
+					count: 12
+					id: "5C8900000000E007"
+					item: "minecraft:end_portal_frame"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5C8900000000E008"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "4D9A00000000F005"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Wither"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B7800000000D004"]
+			description: [
+				"Deep in the Nether's basalt deltas stands the Burning Arena. The Netherite Monstrosity waits inside."
+				""
+				"This is Cataclysm's first true boss. Bring fire resistance. Bring backup. Bring a will to live."
+			]
+			id: "6B7800000000D006"
+			rewards: [{
+				count: 2
+				id: "5C8900000000E009"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "4D9A00000000F006"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Netherite Monstrosity"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B7800000000D006"]
+			description: [
+				"Ignis, the fallen knight of the Soul Blacksmith, is one of the hardest fights in the pack."
+				""
+				"Its Ignitium drops forge the endgame. You need them for the Heart of the Sky."
+			]
+			id: "6B7800000000D007"
+			rewards: [
+				{
+					count: 2
+					id: "5C8900000000E00A"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+				{
+					id: "5C89000000CC0001"
+					table_id: 259L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "cataclysm:ignis"
+				id: "4D9A00000000F007"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ignis"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B7800000000D005"]
+			description: ["Through your hand-built portal: the End. The dragon doesn't know what's coming."]
+			id: "6B7800000000D008"
+			rewards: [
+				{
+					id: "5C8900000000E00B"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+				{
+					id: "5C8900000000E00C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "4D9A00000000F008"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Dragonfall"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B7800000000D008"]
+			description: [
+				"In a Ruined Citadel out in the End islands, the Ender Guardian rules what's left of its kingdom."
+				""
+				"Kill it. Take its wings - you've earned real flight."
+			]
+			id: "6B7800000000D009"
+			rewards: [{
+				id: "5C8900000000E00D"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "4D9A00000000F009"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Ender Guardian"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B7800000000D001"]
+			description: [
+				"The &eSalvaging Table&r breaks affix gear down into rarity materials. All that mob-dropped junk armor is ore now."
+				""
+				"Salvage everything you don't wear. The materials feed reforging and gem work."
+			]
+			icon: "apotheosis:salvaging_table"
+			id: "6B78AA0000000001"
+			rewards: [{ count: 4, id: "6B78AA0000000101", item: "apotheosis:gem_dust", type: "item" }]
+			subtitle: "&7Junk gear is ore"
+			tasks: [{ id: "6B78AA0000000201", item: "apotheosis:salvaging_table", type: "item" }]
+			title: "&cThe Salvage Yard"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B78AA0000000001"]
+			description: [
+				"Affix mobs drop &egems&r - raw ones are dull. The &eGem Cutting Table&r sharpens them with gem dust into higher purities with stronger bonuses."
+				""
+				"Cut every gem you plan to keep. Purity is power."
+			]
+			icon: "apotheosis:gem_cutting_table"
+			id: "6B78AA0000000002"
+			rewards: [{ count: 6, id: "6B78AA0000000102", item: "apotheosis:gem_dust", type: "item" }]
+			subtitle: "&7Purity is power"
+			tasks: [
+				{ id: "6B78AA0000000202", item: "apotheosis:gem_cutting_table", type: "item" }
+				{ count: 4L, id: "6B78AA0000000212", item: "apotheosis:gem_dust", type: "item" }
+			]
+			title: "&cCut Gems"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B78AA0000000002"]
+			description: [
+				"A &eSigil of Socketing&r adds gem sockets to gear that has none. Socket your best cut gems into your best affix gear and the stat lines stack."
+				""
+				"This is how a sky-dweller builds a boss-killer loadout."
+			]
+			icon: "apotheosis:sigil_of_socketing"
+			id: "6B78AA0000000003"
+			rewards: [{ count: 2, id: "6B78AA0000000103", item: "apotheosis:sigil_of_socketing", type: "item" }]
+			shape: "diamond"
+			subtitle: "&7Gems meet gear"
+			tasks: [{ id: "6B78AA0000000203", item: "apotheosis:sigil_of_socketing", type: "item" }]
+			title: "&cSocket It"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B7800000000D001"]
+			description: [
+				"Apotheosis rebuilds enchanting: bookshelves have stats now - eterna, quanta, arcana - and special shelves push past vanilla limits."
+				""
+				"&eHellshelves&r (from Nether materials) crank quanta for wilder, stronger rolls. Build four and surround your table."
+			]
+			icon: "apotheosis:hellshelf"
+			id: "6B78AA0000000004"
+			rewards: [{ count: 4, id: "6B78AA0000000104", item: "minecraft:lapis_lazuli", type: "item" }]
+			subtitle: "&7Enchanting, unchained"
+			tasks: [{ count: 4L, id: "6B78AA0000000204", item: "apotheosis:hellshelf", type: "item" }]
+			title: "&cHellforged Shelves"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B78AA0000000004"]
+			description: [
+				"The &eLibrary of Alexandria&r eats enchanted books and stores their enchantments as reusable points - deduplicated, upgradeable, withdrawable."
+				""
+				"Every dungeon book you ever loot goes in here. Nothing is wasted again."
+			]
+			icon: "apotheosis:library"
+			id: "6B78AA0000000005"
+			rewards: [{ id: "6B78AA0000000105", type: "xp_levels", xp_levels: 5 }]
+			shape: "diamond"
+			subtitle: "&7Every book, banked"
+			tasks: [{ id: "6B78AA0000000205", item: "apotheosis:library", type: "item" }]
+			title: "&cThe Library"
+			x: -10.0d
+			y: 1.5d
+		}
+	]
+	title: "&cAge V Â· War in the Sky"
+}

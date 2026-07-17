@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SRS",
+    "RDR",
+    "SRS"
+  ],
+  "key": {
+    "S": { "item": "skyforge:sky_steel_ingot" },
+    "R": { "item": "minecraft:redstone" },
+    "D": { "item": "minecraft:diamond" }
+  },
+  "result": { "item": "skyforge:industrial_keystone", "count": 4 }
+}

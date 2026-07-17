@@ -1,0 +1,31 @@
+# Mod jars live in Releases, not git
+mods/
+*.jar
+
+# Build output / gradle
+skyforge/build/
+skyforge/.gradle/
+skyforge/run/
+build/
+.gradle/
+
+# World saves and server runtime
+server/world/
+server/world-backup*/
+server/world-backup*.zip
+server/logs/
+server/crash-reports/
+server/libraries/
+server/runtime/
+server/mods/
+*.log
+
+# Backups / temp
+*-backup-*/
+*.bak
+*.bak-*
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.tmp

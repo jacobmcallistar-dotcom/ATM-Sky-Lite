@@ -1,0 +1,405 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "realms_beyond"
+	group: "1A2B000000000003"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "3C1F000000000005"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75B7246A1B0C350B"]
+			description: [
+				"&c&lAge VII · Realms Beyond.&r Your sky island is not the only world - but the old doors are sealed, and space holds every key."
+				""
+				"&7The Twilight Forest&r opens to those who have walked the &eMoon&r - a Desh Ingot lights its pool now, not a diamond."
+				"&7The Undergarden&r demands a catalyst cored with &eMars&r ostrum."
+				"&7The Everbright&r ignites only with a lighter forged from &eVenus&r calorite."
+				""
+				"One planet, one realm. Climb the solar system and the dimensions fall open behind you. Their bosses guard the metals your fission reactor will demand."
+			]
+			icon: "minecraft:ender_pearl"
+			id: "7EF5DDBB65C58DDC"
+			rewards: [{
+				id: "0B10E0765D673687"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "602BD00C67B592FA"
+				title: "Beyond the Island"
+				type: "checkmark"
+			}]
+			title: "Realms Beyond"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Fill a 2x2 pool with water, ring it with flowers/grass - and toss in a &eDesh Ingot&r. In this pack, moon metal opens the Twilight, not diamonds."
+				""
+				"&cThe portal stays dead until you have set foot on the Moon&r - the forest only answers to those who've left the sky."
+				""
+				"A whole shadowed overworld of dungeons and a strict boss order awaits. Its Fiery Ingots are the only metal your fission reactor accepts."
+			]
+			dependencies: ["7EF5DDBB65C58DDC"]
+			id: "67BC6ABF61224134"
+			rewards: [{
+				count: 16
+				id: "2EB10EA25CB53217"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "4BA53916264ABFE6"
+				type: "dimension"
+			}]
+			title: "Into the Twilight"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["The Naga guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."]
+			dependencies: ["67BC6ABF61224134"]
+			id: "321DE9424210F3F1"
+			rewards: [{
+				count: 9
+				id: "51A7A36D2BE9D256"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "twilightforest:naga"
+				id: "0481725F962E0ED5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Naga"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			description: ["The Lich in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."]
+			dependencies: ["321DE9424210F3F1"]
+			id: "7194AE474BDDA510"
+			rewards: [{
+				id: "7D6E4A4E7E1C768C"
+				item: {
+					Count: 1
+					id: "twilightforest:lifedrain_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "twilightforest:lich"
+				id: "219FACD6690D1306"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Lich"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			description: ["The Hydra of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."]
+			dependencies: ["7194AE474BDDA510"]
+			id: "10583B7DED57F345"
+			rewards: [
+				{
+					count: 2
+					id: "685E2A775367F887"
+					item: "twilightforest:hydra_chop"
+					type: "item"
+				}
+				{
+					id: "7D2C6B0B67BAC84F"
+					table_id: 259L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				entity: "twilightforest:hydra"
+				id: "548FA859046E1025"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Hydra"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"This quest hands you the &eportal kit&r: turquoise stonebrick for the frame (built like a Nether portal) and a &eZeal Lighter&r to ignite it."
+				""
+				"The lighter's recipe demands &eVenus calorite&r + a sieved amethyst - hell's metal to open heaven's door. It leads to two dimensions in one:"
+				""
+				"EVERBRIGHT - eternal day. EVERDAWN - eternal dusk. Both are full of dungeons, gems and horrors."
+			]
+			dependencies: [
+				"7EF5DDBB65C58DDC"
+				"45A0F1081A90EE29"
+			]
+			id: "2D70B1458FF1A3FC"
+			rewards: [
+				{
+					count: 20
+					id: "7CFBD6FAD5C5630D"
+					item: "blue_skies:turquoise_stonebrick"
+					type: "item"
+				}
+				{
+					id: "7CFBD6FAD5C56310"
+					item: "blue_skies:zeal_lighter"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				id: "15E0BA1DF348E888"
+				type: "dimension"
+			}]
+			title: "Everbright"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			description: ["Deep in an Everbright dungeon, the Starlit Crusher rules. Its Summoning Table calls it - a proper arena boss fight."]
+			dependencies: ["2D70B1458FF1A3FC"]
+			id: "259AC632D754FC36"
+			rewards: [{
+				count: 4
+				id: "3299736F20905C21"
+				item: "blue_skies:pyrope_gem"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				id: "77477B260A4ECE65"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Starlit Crusher"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			description: ["The Everdawn's Arachnarch - a spider queen the size of a house. Kill it for the realm's rarest crafting stock."]
+			dependencies: ["259AC632D754FC36"]
+			id: "61DDC993C67CD36F"
+			rewards: [{
+				count: 4
+				id: "2E083765D5769AE5"
+				item: "blue_skies:aquite"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				id: "40A64C9CB67E32C7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Arachnarch"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"Build an Undergarden portal frame like a Nether portal from stone bricks, then strike it with a &eCatalyst&r - whose core is now an &eOstrum Ingot&r from Mars."
+				""
+				"A vast glowing cavern-world of Cloggrum, Froststeel and Utheric crystal - and the Forgotten Guardian."
+			]
+			dependencies: [
+				"7EF5DDBB65C58DDC"
+				"7AEFF5201E41906E"
+			]
+			id: "10EA2E5B2105C715"
+			rewards: [{
+				id: "0A1B292B6158B4D1"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "095B56AFAA98D898"
+				type: "dimension"
+			}]
+			title: "The Undergarden"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			description: ["The Forgotten Guardian, a colossal stone sentinel, sleeps in the deep. Wake it, break it, take its Forgotten gear."]
+			dependencies: ["10EA2E5B2105C715"]
+			id: "538F5CE511D220D9"
+			rewards: [
+				{
+					count: 6
+					id: "63522D9D2E3ED008"
+					item: "undergarden:utheric_shard"
+					type: "item"
+				}
+				{
+					id: "51C45831FFCEF5C5"
+					table_id: 259L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				entity: "undergarden:forgotten_guardian"
+				id: "777C21910D4F7D1C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Forgotten Guardian"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["10583B7DED57F345"]
+			description: ["In the Labyrinth beneath the swamp waits the Minoshroom. Slay it - the Mazebreaker pickaxe is your key deeper in."]
+			id: "7F00000000000001"
+			rewards: [{
+				count: 6
+				id: "7F00AAAA00000001"
+				item: "twilightforest:steeleaf_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "7F00BBBB00000001"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Minoshroom"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000001"]
+			description: ["The Goblin Knight Stronghold is ruled by the Knight Phantom - armored ghosts on spectral steeds. Break them for Knightmetal."]
+			id: "7F00000000000002"
+			rewards: [{
+				count: 6
+				id: "7F00AAAA00000002"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				id: "7F00BBBB00000002"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Knight Phantom"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000002"]
+			description: ["Atop the Dark Tower floats the Ur-Ghast, weeping fire. Bring a Lamp of Cinders and nerves of steel."]
+			id: "7F00000000000003"
+			rewards: [
+				{
+					count: 6
+					id: "7F00AAAA00000003"
+					item: "twilightforest:fiery_ingot"
+					type: "item"
+				}
+				{
+					id: "7F00AAAA00000004"
+					table_id: 259L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				id: "7F00BBBB00000003"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Ur-Ghast"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000003"]
+			description: ["Deep in the Snowy Forest, the Alpha Yeti guards its lair. Beat it to brave the frozen peaks above."]
+			id: "7F00000000000004"
+			rewards: [{
+				count: 8
+				id: "7F00AAAA00000005"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "7F00BBBB00000004"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Alpha Yeti"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000004"]
+			description: [
+				"The Snow Queen reigns in the Aurora Palace - the final boss of the Twilight Forest."
+				""
+				"Defeat her and you have conquered the entire dimension. Only the Final Castle remains for the truly obsessed."
+			]
+			id: "7F00000000000005"
+			rewards: [
+				{
+					id: "7F00AAAA00000006"
+					item: {
+						Count: 1
+						id: "twilightforest:lamp_of_cinders"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F00AAAA00000007"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "7F00AAAA00000008"
+					table_id: 259L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Twilight Forest conquered"
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				id: "7F00BBBB00000005"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&5The Snow Queen"
+			x: 8.0d
+			y: 4.5d
+		}
+	]
+	title: "&cAge VII · Realms Beyond"
+}

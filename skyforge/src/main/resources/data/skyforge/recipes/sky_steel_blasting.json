@@ -1,0 +1,8 @@
+{
+  "__comment": "Bootstrap: lets you make your first Sky Steel without the Assembler (which costs Sky Steel to build). Assembler is still the efficient path once built.",
+  "type": "minecraft:blasting",
+  "ingredient": { "item": "skyforge:sky_dust" },
+  "result": "skyforge:sky_steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,14 @@
+{
+  "__comment": "SKYBLOCK FIX: water is trivially infinite as a placed source, but not autocraftable as a bucket for machines. Ice bottoms out at snowballs, which are not renewable in the void, so that path dead-ends. This wrings a ring of leaves (renewable from any tree) into a full bucket - a plain crafting recipe AE2 can autocraft. Pairs with the lava recipe so both fluids feed the ME system.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LBL",
+    "LLL"
+  ],
+  "key": {
+    "L": { "tag": "minecraft:leaves" },
+    "B": { "item": "minecraft:bucket" }
+  },
+  "result": { "item": "minecraft:water_bucket" }
+}

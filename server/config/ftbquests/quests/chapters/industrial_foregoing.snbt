@@ -1,0 +1,203 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: "1A2B000000000002"
+	icon: "industrialforegoing:laser_drill"
+	id: "3C1F000000000014"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&b&lSide Quest · Industrial Foregoing.&r"
+				""
+				"The heavy-industry branch. Where Mekanism is chemistry and AE2 is logistics, this is &obrute-force machines&r: laser drills that punch ore out of nothing, mob crushers, and storage that holds two billion of one item in a single block."
+				""
+				"The whole mod is built on one climbing part - the &eMachine Frame&r - and one weird resource, &ePink Slime&r. Everything here starts there."
+				""
+				"&7Optional. But the Ore Laser Base is one of the only ways in the pack to automate raw ore without a bee or a seed.&r"
+			]
+			icon: "industrialforegoing:laser_drill"
+			id: "0F16000000000001"
+			rewards: [{
+				id: "0F16000000000101"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Brute-force automation"
+			tasks: [{
+				id: "0F16000000000201"
+				title: "Read: The Industry Branch"
+				type: "checkmark"
+			}]
+			title: "&bIndustrial Foregoing"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Everything here is made of &ePlastic&r. Plastic comes from &eDry Rubber&r, which comes from &eLatex&r, which the &eLatex Processing Unit&r pulls from logs and water."
+				""
+				"Not glamorous. But no plastic, no machines - so make a stack and keep making it."
+			]
+			icon: "industrialforegoing:plastic"
+			id: "0F16000000000002"
+			rewards: [{
+				count: 8
+				id: "0F16000000000102"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			subtitle: "&7The bottom of everything"
+			tasks: [{
+				count: 16L
+				id: "0F16000000000202"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			title: "&bPlastic"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F16000000000002"]
+			description: [
+				"&ePink Slime&r is this mod's signature material - you make it, breed the Pink Slime mob, and render it into ingots."
+				""
+				"Pink Slime Ingots plus plastic build the &ePity Machine Frame&r, the tier-1 chassis every basic machine is crafted around."
+			]
+			icon: "industrialforegoing:pink_slime_ingot"
+			id: "0F16000000000003"
+			rewards: [{
+				id: "0F16000000000103"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Tier-1 chassis"
+			tasks: [{
+				id: "0F16000000000203"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			title: "&bThe Pity Frame"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F16000000000003"]
+			description: [
+				"Machines climb through frame tiers. Upgrade the &ePity&r frame into a &eSimple&r one, and the Simple into an &eAdvanced&r one - each unlocks better machines and higher speeds."
+				""
+				"Build one of each now so nothing downstream stops you."
+			]
+			icon: "industrialforegoing:machine_frame_advanced"
+			id: "0F16000000000004"
+			rewards: [{
+				id: "0F16000000000104"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "&7Climb the chassis tiers"
+			tasks: [
+				{
+					id: "0F16000000000204"
+					item: "industrialforegoing:machine_frame_simple"
+					type: "item"
+				}
+				{
+					id: "0F16000000000205"
+					item: "industrialforegoing:machine_frame_advanced"
+					type: "item"
+				}
+			]
+			title: "&bBetter Frames"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F16000000000004"]
+			description: [
+				"The payoff. An &eOre Laser Base&r fires colored lenses into the void below it and pulls &oraw ore&r straight out - no mining, no sieving. Different lens colors weight it toward different ores."
+				""
+				"A &eLaser Drill&r on top aims it. Stack multiple bases around one drill for real throughput. This is the closest the pack has to a quarry - drop it on a planet and it eats the crust."
+			]
+			icon: "industrialforegoing:ore_laser_base"
+			id: "0F16000000000005"
+			rewards: [{
+				id: "0F16000000000105"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Ore from thin air"
+			tasks: [
+				{
+					id: "0F16000000000209"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "0F1600000000020A"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+			]
+			title: "&b&lThe Ore Laser"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F16000000000003"]
+			description: [
+				"A &eMob Crusher&r kills anything in front of it and vacuums the drops and XP - a grinder with no arena to build."
+				""
+				"Pair it with a spawner and it's a hands-off source of mob loot to sit alongside your Hostile Neural Networks setup."
+			]
+			icon: "industrialforegoing:mob_crusher"
+			id: "0F16000000000006"
+			rewards: [{
+				id: "0F16000000000106"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7A grinder in a box"
+			tasks: [{
+				id: "0F16000000000207"
+				item: "industrialforegoing:mob_crusher"
+				type: "item"
+			}]
+			title: "&bThe Mob Crusher"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F16000000000005"]
+			description: [
+				"Your laser will bury you in ore. A &ePity Black Hole Unit&r stores up to &l2,147,483,647&r of a single item in one block - functionally infinite - and pipes in and out."
+				""
+				"One of these per resource and your storage problem is over until you build the ME system that replaces it."
+			]
+			icon: "industrialforegoing:pity_black_hole_unit"
+			id: "0F16000000000007"
+			rewards: [{
+				id: "0F16000000000107"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Two billion in a block"
+			tasks: [{
+				id: "0F16000000000208"
+				item: "industrialforegoing:pity_black_hole_unit"
+				type: "item"
+			}]
+			title: "&bBottomless Storage"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "&bIndustrial Foregoing"
+}

@@ -1,0 +1,17 @@
+{
+  "__comment": "Presses are meteorite-only in AE2 and quest rewards here; this is the replacement path so a lost press cannot dead-end the ME system.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "ae2" }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "skyforge:sky_steel_ingot" },
+    "C": { "item": "minecraft:gold_block" }
+  },
+  "result": { "item": "ae2:logic_processor_press" }
+}

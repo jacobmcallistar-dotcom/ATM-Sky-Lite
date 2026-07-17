@@ -1,0 +1,260 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "1A2B000000000001"
+	icon: "toms_storage:ts.storage_terminal"
+	id: "3C1F00000000000B"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"&f&lSide Quest Â· Stash & Sort.&r"
+				""
+				"The sieve is about to bury you: chunks, seeds, gems, dust, pebbles - sixteen kinds of everything, forever. Double chests are where items go to disappear."
+				""
+				"This chapter is the cure, in three schools: &edrawer walls&r you can read at a glance, &esmart containers&r that sort themselves, and &eone terminal&r that searches every chest you own. Start with this free backpack."
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "57D0000000000001"
+			rewards: [
+				{
+					id: "57D0000000000101"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					id: "57D0000000000102"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Where did I put the...?"
+			tasks: [{
+				id: "57D0000000000201"
+				title: "Declare war on chest chaos"
+				type: "checkmark"
+			}]
+			title: "&fStash & Sort"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57D0000000000001"]
+			description: [
+				"A &eDrawer&r holds one item type and shows it on its face - your cobble, your dust, your ore chunks, readable from across the room."
+				""
+				"Build a wall of them next to the sieves. Bulk stackables never touch a chest again."
+			]
+			icon: "storagedrawers:oak_full_drawers_1"
+			id: "57D0000000000002"
+			rewards: [{
+				count: 4
+				id: "57D0000000000103"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			subtitle: "&7Storage you can read"
+			tasks: [{
+				count: 4L
+				id: "57D0000000000202"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			title: "&fThe Drawer Wall"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57D0000000000002"]
+			description: ["A &eCompacting Drawer&r holds one material in every size at once - nuggets, ingots and blocks share the same slot and convert as you take them. One drawer, the whole iron economy."]
+			icon: "storagedrawers:compacting_drawers_3"
+			id: "57D0000000000003"
+			rewards: [{
+				id: "57D0000000000104"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Nugget, ingot, block - one slot"
+			tasks: [{
+				id: "57D0000000000203"
+				item: "storagedrawers:compacting_drawers_3"
+				type: "item"
+			}]
+			title: "&fCompacting Drawers"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57D0000000000003"]
+			description: [
+				"The &eDrawer Controller&r turns the whole wall into one block: shift-click it and everything in your inventory flies into its matching drawer."
+				""
+				"Come home, dump, done. Pipes and hoppers can feed it too."
+			]
+			icon: "storagedrawers:controller"
+			id: "57D0000000000004"
+			rewards: [{
+				id: "57D0000000000105"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7One click empties your pockets"
+			tasks: [{
+				id: "57D0000000000204"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			title: "&fThe Controller"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57D0000000000001"]
+			description: [
+				"A &eSophisticated Barrel&r is a chest that grew up: bigger, upgradeable, and with a &lsort button&r. Wood tiers upgrade in place - no repacking."
+				""
+				"For everything that isn't bulk-stackable, these replace vanilla chests outright."
+			]
+			icon: "sophisticatedstorage:barrel"
+			id: "57D0000000000005"
+			rewards: [{
+				id: "57D0000000000106"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			subtitle: "&7Chests that grew up"
+			tasks: [{
+				id: "57D0000000000205"
+				item: "sophisticatedstorage:barrel"
+				type: "item"
+			}]
+			title: "&fSophisticated Barrels"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57D0000000000005"]
+			description: ["A &eStack Upgrade&r multiplies how much every slot holds. Slot one into a barrel and watch a single container swallow a whole farm's output."]
+			icon: "sophisticatedstorage:stack_upgrade_tier_1"
+			id: "57D0000000000006"
+			rewards: [{
+				id: "57D0000000000107"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Deeper pockets"
+			tasks: [{
+				id: "57D0000000000206"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			title: "&fStack Upgrades"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57D0000000000001"]
+			description: [
+				"Your backpack takes upgrades too: &ePickup&r vacuums drops straight in as you walk; &eMagnet&r pulls them from range."
+				""
+				"Sieve with it on and the drops sort themselves while your hands stay on the hammer."
+			]
+			icon: "sophisticatedbackpacks:magnet_upgrade"
+			id: "57D0000000000007"
+			rewards: [{
+				id: "57D0000000000108"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7The bag that feeds itself"
+			tasks: [
+				{
+					id: "57D0000000000207"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "57D0000000000217"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+			]
+			title: "&fHungry Backpack"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57D0000000000005"]
+			description: [
+				"Tom's Simple Storage: place an &eInventory Connector&r touching your chest wall, then a &eStorage Terminal&r on it."
+				""
+				"One screen. A search bar. &lEvery linked chest, barrel and drawer at once.&r This is the 'where did I put it' delete button - long before AE2."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "57D0000000000008"
+			rewards: [{
+				count: 8
+				id: "57D0000000000109"
+				item: "toms_storage:ts.inventory_cable"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Search everything you own"
+			tasks: [
+				{
+					id: "57D0000000000208"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "57D0000000000218"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			title: "&fOne Terminal to Find It All"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57D0000000000008"]
+			description: [
+				"The &eCrafting Terminal&r adds a crafting grid to that same search-everything screen - craft straight from every container you own without touching a single lid."
+				""
+				"Your storage problem is solved until the digital age. Now go fill it."
+			]
+			icon: "toms_storage:ts.crafting_terminal"
+			id: "57D0000000000009"
+			rewards: [
+				{
+					id: "57D000000000010A"
+					type: "random"
+				}
+				{
+					id: "57D000000000010B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Storage side quest complete"
+			tasks: [{
+				id: "57D0000000000209"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			title: "&f&lCraft From Everywhere"
+			x: -2.0d
+			y: 1.5d
+		}
+	]
+	title: "&fSide Quest Â· Stash & Sort"
+}

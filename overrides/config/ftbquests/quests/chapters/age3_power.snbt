@@ -1,0 +1,276 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age3_power"
+	group: "1A2B000000000002"
+	icon: "powah:reactor_basic"
+	id: "3C1F000000000006"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&9&lAge IV Â· Power & Automation.&r"
+				""
+				"Heat generators got you started. They will not carry you to the stars. This Age builds the real power spine - Powah reactors and a wind farm - and a Hostile Neural Network that farms mobs without a single spawner."
+				""
+				"Everything past here drinks Forge Energy. Time to make a lot of it."
+			]
+			icon: "powah:energizing_orb"
+			id: "2103000000000001"
+			rewards: [{ id: "2103000000000101", type: "xp", xp: 50 }]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Build the power spine"
+			tasks: [{ id: "2103000000000201", title: "Electrify the sky", type: "checkmark" }]
+			title: "&9Age IV Â· Power & Automation"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000001"]
+			description: ["The keystone bridge turns Sky Dust into &eUraninite&r - Powah's reactor fuel, and an ore that will never spawn in the void. Bank a few; the reactor eats them."]
+			icon: "powah:uraninite"
+			id: "2103000000000002"
+			rewards: [{ count: 8, id: "2103000000000102", item: "powah:uraninite", type: "item" }]
+			subtitle: "&7Reactor fuel from nothing"
+			tasks: [{ count: 4L, id: "2103000000000202", item: "powah:uraninite", type: "item" }]
+			title: "&9Bridged Uranium"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000002"]
+			description: [
+				"The &eEnergizing Orb&r crafts Powah's tiered materials - toss items into the field, feed it power, get the next tier out."
+				""
+				"Every Powah machine climbs the same ladder: &7Basic &8â†’ &7Hardened &8â†’ &7Blazing &8â†’ &7Niotic &8â†’ &7Spirited &8â†’ &7Nitro&r. This is where you build up it."
+			]
+			icon: "powah:energizing_orb"
+			id: "2103000000000003"
+			rewards: [{ id: "2103000000000103", type: "xp", xp: 50 }]
+			shape: "gear"
+			subtitle: "&7Craft the tiered materials"
+			tasks: [{ id: "2103000000000203", item: "powah:energizing_orb", type: "item" }]
+			title: "&9The Energizing Orb"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000003"]
+			description: ["A &eThermo Generator&r sat over lava makes passive FE forever, no fuel runs required. Drop a few and stop thinking about power for a while."]
+			icon: "powah:thermo_generator_basic"
+			id: "2103000000000004"
+			rewards: [{ count: 4, id: "2103000000000104", item: "minecraft:blaze_rod", type: "item" }]
+			subtitle: "&7Passive power over lava"
+			tasks: [{ id: "2103000000000204", item: "powah:thermo_generator_basic", type: "item" }]
+			title: "&9Free Heat"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2103000000000003"]
+			description: ["Wind Generators love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."]
+			icon: "mekanismgenerators:wind_generator"
+			id: "2103000000000005"
+			rewards: [{ id: "2103000000000105", type: "xp_levels", xp_levels: 3 }]
+			subtitle: "&7Power that scales with height"
+			tasks: [{ id: "2103000000000205", item: "mekanismgenerators:wind_generator", type: "item" }]
+			title: "&9Sky Power"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2103000000000005"]
+			description: ["An &eEnergy Cube&r buffers your generators so machines never starve between gusts. Your first real battery - bigger storage comes with the Induction Matrix."]
+			icon: "mekanism:basic_energy_cube"
+			id: "2103000000000006"
+			rewards: [{ id: "2103000000000106", type: "xp", xp: 30 }]
+			subtitle: "&7Buffer your grid"
+			tasks: [{ id: "2103000000000206", item: "mekanism:basic_energy_cube", type: "item" }]
+			title: "&9Store Some Power"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2103000000000004"]
+			description: [
+				"The &ePowah Reactor&r is a 36-block multiblock that burns your bridged Uraninite for serious, sustained FE."
+				""
+				"This is the power plant that carries you through the tech branches, off-world, and eventually into Mekanism fission. Build the whole thing."
+			]
+			icon: "powah:reactor_basic"
+			id: "2103000000000007"
+			rewards: [{ count: 32, id: "2103000000000107", item: "powah:uraninite", type: "item" }]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7The power plant"
+			tasks: [{ count: 36L, id: "2103000000000207", item: "powah:reactor_basic", type: "item" }]
+			title: "&9Going Nuclear"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000003"]
+			description: [
+				"&9Hostile Neural Networks&r farms mobs without a mob farm. Put a blank Data Model in a &eDeep Learner&r, hold it while you kill that mob, and the model learns."
+				""
+				"Train a Wither Skeleton, a Blaze, an Enderman - anything you would rather not hunt by hand."
+			]
+			icon: "hostilenetworks:deep_learner"
+			id: "2103000000000008"
+			rewards: [{ count: 2, id: "2103000000000108", item: "hostilenetworks:blank_data_model", type: "item" }]
+			subtitle: "&7Teach a machine to hunt"
+			tasks: [{ id: "2103000000000208", item: "hostilenetworks:deep_learner", type: "item" }]
+			title: "&9Learning to Kill"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2103000000000008"]
+			description: [
+				"The &eSimulation Chamber&r runs a trained model over and over, on power, forever. The &eLoot Fabricator&r turns its predictions into the real drops."
+				""
+				"Wither skulls, ender pearls, blaze rods, gunpowder - on tap, while you sleep. Your mob problem is now a mob subscription."
+			]
+			icon: "hostilenetworks:sim_chamber"
+			id: "2103000000000009"
+			rewards: [{ count: 8, id: "2103000000000109", item: "hostilenetworks:prediction_matrix", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Drops on demand"
+			tasks: [
+				{ id: "2103000000000209", item: "hostilenetworks:sim_chamber", type: "item" }
+				{ id: "210300000000021A", item: "hostilenetworks:loot_fabricator", type: "item" }
+			]
+			title: "&9The Kill Simulator"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2103000000000007"]
+			description: [
+				"The &eInduction Matrix&r is Mekanism's mega-battery - a multiblock that stores millions of FE and buffers your whole reactor output."
+				""
+				"Build the casing and a cell. Your endgame machines will drain more than any single generator can push; this is what feeds them."
+			]
+			icon: "mekanism:induction_casing"
+			id: "210300000000000A"
+			rewards: [{ id: "210300000000010A", type: "xp_levels", xp_levels: 5 }]
+			shape: "gear"
+			subtitle: "&7Mega power storage"
+			tasks: [
+				{ count: 4L, id: "210300000000020A", item: "mekanism:induction_casing", type: "item" }
+				{ id: "210300000000021B", item: "mekanism:basic_induction_cell", type: "item" }
+			]
+			title: "&9The Induction Matrix"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2103000000000007"
+				"2103000000000009"
+				"210300000000000A"
+			]
+			description: [
+				"Reactor humming, matrix charged, mobs on tap. You have industrial power and industrial resources. Act II is complete."
+				""
+				"&cAct III opens on three fronts at once: the boss ladder of the Frontiers, the launch pads of the Space Program, and - when you are ready - the road to Ascension.&r"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "210300000000000B"
+			rewards: [
+				{ id: "210300000000010B", table_id: 258L, type: "random" }
+				{ id: "210300000000010C", type: "xp_levels", xp_levels: 8 }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Age III capstone"
+			tasks: [{ id: "210300000000020B", title: "The grid is online", type: "checkmark" }]
+			title: "&9Powered Up"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000004"]
+			description: ["The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."]
+			icon: "exdeorum:mechanical_hammer"
+			id: "210300000000000C"
+			rewards: [{ id: "210300000000010D", type: "xp", xp: 40 }]
+			shape: "gear"
+			subtitle: "&7Your wrists are free"
+			tasks: [{ id: "210300000000020C", item: "exdeorum:mechanical_hammer", type: "item" }]
+			title: "&9The Mechanical Hammer"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["210300000000000C"]
+			description: [
+				"The &eMechanical Sieve&r is the moment skyblock changes forever: powered, automatic sieving. Ore chunks, gems and seeds pour out while you build somewhere else."
+				""
+				"Hopper in gravel, cable in power, pipe out the loot. The hand-sieve retires today."
+			]
+			icon: "exdeorum:mechanical_sieve"
+			id: "210300000000000D"
+			rewards: [
+				{ count: 16, id: "210300000000010E", item: "exdeorum:compressed_gravel", type: "item" }
+				{ id: "210300000000010F", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Sieving, fully automated"
+			tasks: [{ id: "210300000000020D", item: "exdeorum:mechanical_sieve", type: "item" }]
+			title: "&9The Mechanical Sieve"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["210300000000000D"]
+			description: [
+				"Your Mechanical Sieve quest handed you &e16 Compressed Gravel&r. This is what it was for - and the book never told you until now."
+				""
+				"&e9 blocks compress into 1.&r A &eCompressed Sieve&r sifts that compressed block in a single pass, rolling all nine loot chances at once. Same for the &eCompressed Hammer&r line."
+				""
+				"&7Cobblestone &8→&r Compressed Cobblestone &8(9:1)&r"
+				"&7Compressed Hammer &8→&r Compressed Gravel &8→&r Compressed Sand &8→&r Compressed Dust&r"
+				"&7Compressed Sieve + mesh &8→&r nine sieves' worth of ore, in one go&r"
+				""
+				"The Mechanical Sieve and Mechanical Hammer both accept compressed blocks. Feed them compressed instead of loose and your whole ore chain runs &l9x&r without another watt of power."
+				""
+				"&8This is the single biggest throughput jump in the pack, and nothing else in the book mentions it."
+			]
+			icon: "exdeorum:oak_compressed_sieve"
+			id: "0AC0000000000001"
+			rewards: [
+				{ count: 16, id: "0AC0000000000101", item: "exdeorum:compressed_gravel", type: "item" }
+				{ id: "0AC0000000000102", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Nine sieves in one pass"
+			tasks: [{ id: "0AC0000000000201", item: "exdeorum:oak_compressed_sieve", type: "item" }]
+			title: "&9The Compressed Sieve"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2103000000000009"]
+			description: [
+				"Your Simulation Chamber pays out in &ePredictions&r - proof of simulated kills. The Loot Fabricator converts them into that mob's real drop table."
+				""
+				"Stack up Overworld Predictions and you have a mob grinder that fits on a shelf."
+			]
+			icon: "hostilenetworks:overworld_prediction"
+			id: "210300000000000E"
+			rewards: [{ count: 2, id: "2103000000000110", item: "hostilenetworks:nether_prediction", type: "item" }]
+			subtitle: "&7Simulated kills, real loot"
+			tasks: [{ count: 4L, id: "210300000000020E", item: "hostilenetworks:overworld_prediction", type: "item" }]
+			title: "&9Prediction Economy"
+			x: -2.0d
+			y: 3.0d
+		}
+	]
+	title: "&9Age IV Â· Power & Automation"
+}

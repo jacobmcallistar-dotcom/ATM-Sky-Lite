@@ -1,0 +1,253 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: "1A2B000000000001"
+	icon: "ftbquests:book"
+	id: "3C1F000000000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6&lWelcome to ATM Sky Lite.&r"
+				""
+				"You are standing on a scrap of dirt floating in an endless void. Below you: nothing. Around you: everything you will ever build."
+				""
+				"This book is one long climb, broken into &leight Ages&r. Each Age hands you the tools to reach the next - from your first sieve to a machine that ends the world you started on."
+				""
+				"&eClaim this quest for a starter kit and your first Sky Crate. Then read the panels around this one - they teach you everything the void won't.&r"
+			]
+			icon: "minecraft:cake"
+			id: "30B0000000000001"
+			rewards: [
+				{
+					count: 3
+					id: "30B0000000000101"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "30B0000000000102"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "30B0000000000103"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "30B0000000000104"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7Start here"
+			tasks: [{
+				id: "30B0000000000201"
+				title: "Begin your climb"
+				type: "checkmark"
+			}]
+			title: "&6Welcome to the Sky"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"There is no mining here - so you &osieve&r for everything."
+				""
+				"1. Make a &eCobblestone Generator&r (flowing water meets lava)."
+				"2. Craft a &eHammer&r and smash cobble into gravel, gravel into sand, sand into dust."
+				"3. Craft a &eSieve&r and a &eMesh&r, then sift those for ores, seeds and treasure."
+				""
+				"Every ingot in this pack traces back to the sieve. As you upgrade your mesh (&7string &8â†’ &7flint &8â†’ &7iron &8â†’ &7diamond &8â†’ &7netherite&r) rarer drops appear. &aAge I teaches all of it, step by step.&r"
+			]
+			icon: "exdeorum:oak_sieve"
+			id: "30B0000000000002"
+			rewards: [{
+				id: "30B0000000000105"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7How you get resources"
+			tasks: [{
+				id: "30B0000000000202"
+				title: "Read: The Sieve is Your Pickaxe"
+				type: "checkmark"
+			}]
+			title: "&aThe Sieve is Your Pickaxe"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"&eJEI&r - the item list down the right of your inventory - is your best friend."
+				""
+				"- Hover an item and press &bR&r to see how to &lcraft&r it."
+				"- Hover an item and press &bU&r to see what it is &lused&r for."
+				"- Type in the search box to filter."
+				""
+				"Every machine from Ex Deorum, Mekanism, AE2, Powah and Ad Astra shows its recipe here. If a quest ever leaves you stuck, JEI has the answer."
+			]
+			icon: "minecraft:knowledge_book"
+			id: "30B0000000000003"
+			rewards: [{
+				id: "30B0000000000106"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Press R and U"
+			tasks: [{
+				id: "30B0000000000203"
+				title: "Read: Look It Up"
+				type: "checkmark"
+			}]
+			title: "&bLook It Up (JEI)"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"The whole book is one continuous climb. Complete an Age's &lcapstone&r to unlock the next - and the world itself is locked to match:"
+				""
+				"&2Age I &8Â· &2The Sieve&r - sift the void into metal, forge Sky Steel, automate the forge."
+				"&eAge II &8Â· &eThe Kinetic Age&r - Create: water wheels, presses, brass, fan-washing."
+				"&2Age III &8Â· &2First Machines&r - kinetics buy electricity. Mekanism opens."
+				"&9Age IV &8Â· &9Power & Automation&r - Powah reactors, mob simulation, mechanical sieving. AE2 cracks open mid-tree."
+				"&cAge V &8Â· &cWar in the Sky&r - Apotheosis gear, allies, and the &lWither&r."
+				"&6Age VI &8Â· &6The Space Program&r - a Nether Star buys your launch codes. Moon to Glacio."
+				"&cAge VII &8Â· &cRealms Beyond&r - each planet you conquer unseals a dimension."
+				"&5Age VIII &8Â· &5Ascension&r - Twilight fire splits the atom. Antimatter. The Heart."
+				""
+				"&8Green = done. Blue = available. &lThere is a real ending. Go take it.&r"
+				""
+				"&7Side quests: &fStash & Sort&7 (drawers, backpacks, search-everything terminals - start this EARLY), &bSky Gadgets&7 (Cyclic conveniences) and &dEssence Farming&7 (Mystical Agriculture - grow diamonds, then nether stars, then godhood). Optional. Recommended. OP.&r"
+			]
+			icon: "ftbquests:book"
+			id: "30B0000000000004"
+			rewards: [{
+				id: "30B0000000000107"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Your roadmap to the end"
+			tasks: [{
+				id: "30B0000000000204"
+				title: "Read: The Eight Ages"
+				type: "checkmark"
+			}]
+			title: "&6The Eight Ages"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"No ore veins fall in the void, so &eSkyForge&r gives you bridge recipes. Craft an &eIndustrial Keystone&r, then in a crafting grid:"
+				""
+				"&7Keystone + 2 Sky Dust&r &8â†’&r Osmium &8(starts Mekanism)"
+				"&7Keystone + 2 Sky Dust&r &8â†’&r Certus Quartz &8(starts AE2)"
+				"&7Keystone + 2 Sky Dust&r &8â†’&r Uraninite &8(starts Powah)"
+				"&7Keystone + 2 Sky Steel&r &8â†’&r Mekanism Steel"
+				""
+				"You can also &osieve&r your way to osmium and certus the slow way - the keystone is just the reliable shortcut. Age II walks you through it."
+			]
+			icon: "skyforge:industrial_keystone"
+			id: "30B0000000000005"
+			rewards: [{
+				id: "30B0000000000108"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Cheat sheet: breaking into tech"
+			tasks: [{
+				id: "30B0000000000205"
+				title: "Read: The Keystone Bridges"
+				type: "checkmark"
+			}]
+			title: "&eNo Ores? No Problem"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"Some advice for staying alive up here:"
+				""
+				"&a- The void will not kill you.&r Fall off the edge and you are caught before the killing floor, thrown back into the sky above the last solid ground you stood on, and dropped. The landing is free. Your inventory is untouched."
+				"&a- Die to anything else and you leave a Gravestone&r where you fell. Break it and everything comes back - armour, hotbar, and your Curios rings too. Right-click it first to read how you died."
+				"- Wall off your platform before nightfall - mobs spawn on it."
+				"- &cApotheosis&r is live: some mobs carry affixes and become mini-bosses. Rare drops, real danger."
+				"- Sleep to skip night until you are strong enough to farm it."
+				"- &bPress M&r for the map, &bJ&r for the minimap, &bB&r to drop a waypoint. Xaero's is watching."
+				""
+				"&8The void is a nuisance now, not an ending. Mobs, bosses and your own ambition are what will actually kill you."
+				""
+				"Now go build something ridiculous."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "30B0000000000006"
+			rewards: [{
+				id: "30B0000000000109"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Don't fall off"
+			tasks: [{
+				id: "30B0000000000206"
+				title: "Read: Staying Alive"
+				type: "checkmark"
+			}]
+			title: "&cStaying Alive"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30B0000000000001"]
+			description: [
+				"This pack does not ask nicely. The world is &lmechanically locked&r behind your progress:"
+				""
+				"&câš”&r The &eMetallurgic Infuser&r is built around a &cCreate Precision Mechanism&r - no kinetics, no Mekanism."
+				"&câš”&r The &eAE2 Inscriber&r demands an &cAdvanced Control Circuit&r - the digital age waits for the electric one."
+				"&câš”&r The &eNASA Workbench&r is crafted around a &cNether Star&r - kill the Wither or stay grounded."
+				"&câš”&r The &eTwilight Forest&r ignores diamonds. Toss a &cDesh Ingot&r - and the portal stays dead until you've stood on the &cMoon&r."
+				"&câš”&r The &eUndergarden&r catalyst is cored with &cMars ostrum&r."
+				"&câš”&r The &eEverbright&r lighter is forged from &cVenus calorite&r."
+				"&câš”&r &eFission Reactor Casings&r are forged around &cFiery Ingots&r - the Twilight's bosses guard your atom."
+				"&câš”&r The &eHeart of the Sky&r itself is cornered by &cfour Void Signal relics&r - the bosses that answer your rocket launches must ALL die."
+				""
+				"Every locked door tells you which key it wants. JEI shows every recipe. No guessing - just climbing."
+			]
+			icon: "minecraft:iron_door"
+			id: "30B0000000000007"
+			rewards: [{
+				id: "30B000000000010A"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			subtitle: "&7The world is locked. Here are the keys."
+			tasks: [{
+				id: "30B0000000000207"
+				title: "Read: The Gates"
+				type: "checkmark"
+			}]
+			title: "&cThe Gates"
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "&fHow to Play"
+}

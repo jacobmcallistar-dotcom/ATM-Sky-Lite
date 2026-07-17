@@ -1,0 +1,142 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ender_io"
+	group: "1A2B000000000002"
+	icon: "enderio:alloy_smelter"
+	id: "3C1F00000000000D"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&a&lTech Branch Â· Ender IO.&r"
+				""
+				"The compact-tech mod: machines that do one job brutally well, and &econduits&r - item, energy and fluid lines that all share &lone block space&r. Your machine rooms are about to get very, very clean."
+				""
+				"Optional branch. Plays beautifully alongside Mekanism, Create and AE2."
+			]
+			icon: "enderio:item_conduit"
+			id: "61D0000000000001"
+			rewards: [{ id: "61D0000000000101", type: "xp", xp: 40 }]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Compact tech, clean walls"
+			tasks: [{ id: "61D0000000000201", title: "Open the toolbox of the End", type: "checkmark" }]
+			title: "&aTech Branch Â· Ender IO"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61D0000000000001"]
+			description: ["The &eStirling Generator&r burns solids for FE; the &eAlloy Smelter&r fuses Ender IO's signature alloys - and doubles as a triple-slot furnace. The classic starter pair."]
+			icon: "enderio:alloy_smelter"
+			id: "61D0000000000002"
+			rewards: [{ id: "61D0000000000102", type: "xp", xp: 40 }]
+			shape: "gear"
+			subtitle: "&7The starter pair"
+			tasks: [
+				{ id: "61D0000000000202", item: "enderio:stirling_generator", type: "item" }
+				{ id: "61D0000000000212", item: "enderio:alloy_smelter", type: "item" }
+			]
+			title: "&aSmelt & Burn"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61D0000000000002"]
+			description: [
+				"The reason Ender IO exists: &eConduits&r. Item, energy and fluid lines that occupy the &lsame block&r, filterable and channel-aware."
+				""
+				"One tidy bundle where three pipe walls used to be. Your Sky Assembler feed line just became invisible."
+			]
+			icon: "enderio:energy_conduit"
+			id: "61D0000000000003"
+			rewards: [{ id: "61D0000000000103", type: "xp_levels", xp_levels: 3 }]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Three pipes. One block."
+			tasks: [
+				{ count: 8L, id: "61D0000000000203", item: "enderio:item_conduit", type: "item" }
+				{ count: 8L, id: "61D0000000000213", item: "enderio:energy_conduit", type: "item" }
+				{ count: 4L, id: "61D0000000000223", item: "enderio:fluid_conduit", type: "item" }
+			]
+			title: "&aConduits"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61D0000000000002"]
+			description: ["The &eSAG Mill&r grinds ores with bonus outputs, tuned by grinding balls. A &eBasic Capacitor&r slots into any Ender IO machine to push its speed and buffer. Feed the mill your ore chunks."]
+			icon: "enderio:sag_mill"
+			id: "61D0000000000004"
+			rewards: [{ id: "61D0000000000104", item: "enderio:basic_capacitor", type: "item" }]
+			subtitle: "&7Grind with style"
+			tasks: [
+				{ id: "61D0000000000204", item: "enderio:sag_mill", type: "item" }
+				{ id: "61D0000000000214", item: "enderio:basic_capacitor", type: "item" }
+			]
+			title: "&aThe SAG Mill"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61D0000000000003"]
+			description: ["&eDark Steel&r is Ender IO's obsidian-hardened metal - tools, armor and upgrades that rival netherite, plus the frames of every advanced machine. Alloy a batch."]
+			icon: "enderio:dark_steel_ingot"
+			id: "61D0000000000005"
+			rewards: [{ id: "61D0000000000105", item: "enderio:dark_steel_sword", type: "item" }]
+			subtitle: "&7The dark alloy"
+			tasks: [{ count: 4L, id: "61D0000000000205", item: "enderio:dark_steel_ingot", type: "item" }]
+			title: "&aDark Steel"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61D0000000000005"]
+			description: [
+				"Catch a mob's soul in an &eEmpty Soul Vial&r, bind it in the &eSoul Binder&r, and run a &ePowered Spawner&r that spawns that mob on demand, on power."
+				""
+				"Pairs viciously with your Hostile Neural Networks setup - one farms drops, this farms the mobs themselves."
+			]
+			icon: "enderio:powered_spawner"
+			id: "61D0000000000006"
+			rewards: [
+				{ count: 2, id: "61D0000000000106", item: "enderio:empty_soul_vial", type: "item" }
+				{ id: "61D0000000000116", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "gear"
+			subtitle: "&7Bottle a soul, farm a species"
+			tasks: [
+				{ id: "61D0000000000206", item: "enderio:empty_soul_vial", type: "item" }
+				{ id: "61D0000000000216", item: "enderio:soul_binder", type: "item" }
+				{ id: "61D0000000000226", item: "enderio:powered_spawner", type: "item" }
+			]
+			title: "&aSoul Industry"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61D0000000000005"]
+			description: ["A &eTravel Anchor&r teleports you between anchors with a jump - line them across your island chain and blink around your base like the void owes you rent. A &eVibrant Alloy&r batch seals branch mastery."]
+			icon: "enderio:travel_anchor"
+			id: "61D0000000000007"
+			rewards: [
+				{ id: "61D0000000000107", table_id: 258L, type: "random" }
+				{ id: "61D0000000000117", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&7Branch mastered"
+			tasks: [
+				{ id: "61D0000000000207", item: "enderio:travel_anchor", type: "item" }
+				{ count: 2L, id: "61D0000000000217", item: "enderio:vibrant_alloy_ingot", type: "item" }
+			]
+			title: "&aBlink Economy"
+			x: -4.0d
+			y: 1.5d
+		}
+	]
+	title: "&aTech Branch Â· Ender IO"
+}

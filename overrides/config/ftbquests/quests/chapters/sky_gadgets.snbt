@@ -1,0 +1,203 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sky_gadgets"
+	group: "1A2B000000000002"
+	icon: "cyclic:solidifier"
+	id: "3C1F000000000008"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&b&lSky Gadgets.&r"
+				""
+				"Cyclic and Waystones are the pack's toolbox - a hundred small machines that remove a hundred small chores. None of this is required to win. All of it makes the climb smoother."
+				""
+				"Every gadget here runs on the same Forge Energy as everything else you own."
+			]
+			icon: "cyclic:crafter"
+			id: "41C1000000000001"
+			rewards: [{ id: "41C1000000000101", type: "xp", xp: 30 }]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7A hundred small chores, deleted"
+			tasks: [{ id: "41C1000000000201", title: "Open the toolbox", type: "checkmark" }]
+			title: "&bSky Gadgets"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: [
+				"The &eSolidifier&r crafts with fluids - feed it water and lava and it pours out cobblestone, obsidian, or stone all day on FE."
+				""
+				"Your first cobble generator was two buckets and a prayer. This one is a machine."
+			]
+			icon: "cyclic:solidifier"
+			id: "41C1000000000002"
+			rewards: [{ count: 16, id: "41C1000000000102", item: "minecraft:obsidian", type: "item" }]
+			shape: "gear"
+			subtitle: "&7The cobble engine, industrialized"
+			tasks: [{ id: "41C1000000000202", item: "cyclic:solidifier", type: "item" }]
+			title: "&bThe Solidifier"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: ["The &eMelter&r does the opposite - powered heat turns cobblestone back into lava. Paired with the Solidifier, you have an infinite loop of stone and lava with no crucible babysitting."]
+			icon: "cyclic:melter"
+			id: "41C1000000000003"
+			rewards: [{ id: "41C1000000000103", type: "xp", xp: 30 }]
+			subtitle: "&7Cobble in, lava out"
+			tasks: [{ id: "41C1000000000203", item: "cyclic:melter", type: "item" }]
+			title: "&bThe Melter"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41C1000000000002"]
+			description: ["The &eSprinkler&r ticks crops in a wide radius using a little water and power. Your farms grow while you are three dimensions away."]
+			icon: "cyclic:sprinkler"
+			id: "41C1000000000004"
+			rewards: [{ count: 8, id: "41C1000000000104", item: "minecraft:bone_meal", type: "item" }]
+			subtitle: "&7Crops on fast-forward"
+			tasks: [{ id: "41C1000000000204", item: "cyclic:sprinkler", type: "item" }]
+			title: "&bThe Sprinkler"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41C1000000000004"]
+			description: ["The &eHarvester&r picks every grown crop in range and replants nothing - pair it with the Sprinkler and a Collector and your food problem is permanently solved."]
+			icon: "cyclic:harvester"
+			id: "41C1000000000005"
+			rewards: [{ id: "41C1000000000105", type: "xp", xp: 30 }]
+			subtitle: "&7Hands-free farming"
+			tasks: [{ id: "41C1000000000205", item: "cyclic:harvester", type: "item" }]
+			title: "&bThe Harvester"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: ["The &eItem Collector&r vacuums drops in a configurable range straight into its inventory. Under a mob platform, behind a harvester, beside your sieves - it belongs everywhere."]
+			icon: "cyclic:collector"
+			id: "41C1000000000006"
+			rewards: [{ id: "41C1000000000106", type: "xp", xp: 30 }]
+			subtitle: "&7Never chase a drop again"
+			tasks: [{ id: "41C1000000000206", item: "cyclic:collector", type: "item" }]
+			title: "&bThe Collector"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C1000000000003"]
+			description: ["The &eFisher&r pulls fish, treasure and junk from a 3x3 of water below it - no rod, no waiting. In a void world, this is also your only saturation-food faucet that runs unattended."]
+			icon: "cyclic:fisher"
+			id: "41C1000000000007"
+			rewards: [{ count: 6, id: "41C1000000000107", item: "minecraft:cooked_salmon", type: "item" }]
+			subtitle: "&7The lazy angler"
+			tasks: [{ id: "41C1000000000207", item: "cyclic:fisher", type: "item" }]
+			title: "&bThe Fisher"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: ["The &eFuel Generator&r burns anything a furnace would and makes FE - a cheap, dumb, reliable battery-topper for outposts where a reactor is overkill."]
+			icon: "cyclic:generator_fuel"
+			id: "41C1000000000008"
+			rewards: [{ count: 8, id: "41C1000000000108", item: "minecraft:coal_block", type: "item" }]
+			subtitle: "&7Dumb power for smart people"
+			tasks: [{ id: "41C1000000000208", item: "cyclic:generator_fuel", type: "item" }]
+			title: "&bPocket Power"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41C1000000000006"]
+			description: [
+				"The &eUncrafter&r runs recipes BACKWARD - feed it a crafted item and it spits the ingredients back out."
+				""
+				"Loot-crate junk, dungeon armor, mis-crafts: all of it melts back into materials. Deeply cursed. Extremely useful."
+			]
+			icon: "cyclic:uncrafter"
+			id: "41C1000000000009"
+			rewards: [{ id: "41C1000000000109", type: "xp_levels", xp_levels: 3 }]
+			shape: "diamond"
+			subtitle: "&7Crafting, but in reverse"
+			tasks: [{ id: "41C1000000000209", item: "cyclic:uncrafter", type: "item" }]
+			title: "&bThe Uncrafter"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: [
+				"Waystones grow with you: a &eWarp Plate&r teleports anything that steps on it, and &eSharestones&r are color-coded networks you can hand to friends."
+				""
+				"Plant them at your sieve yard, your reactor, your boss arenas. The void is big - stop walking it."
+			]
+			icon: "waystones:warp_plate"
+			id: "41C100000000000A"
+			rewards: [{ count: 2, id: "41C100000000010A", item: "waystones:warp_dust", type: "item" }]
+			subtitle: "&7Never walk the void twice"
+			tasks: [
+				{ id: "41C10000000002A1", item: "waystones:warp_plate", type: "item" }
+				{ count: 2L, id: "41C10000000002A2", item: "waystones:sharestone", type: "item" }
+			]
+			title: "&bWarp Network"
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41C1000000000001"]
+			description: [
+				"Before rockets, there were &ewings&r. Immersive Aircraft brings hand-built flying machines - and in a world of scattered sky islands, a &eBiplane&r is the difference between bridging for an hour and arriving in a minute."
+				""
+				"Build an &eEngine&r and a &ePropeller&r - the heart of every aircraft."
+			]
+			icon: "immersive_aircraft:engine"
+			id: "41C100000000000B"
+			rewards: [{ id: "41C100000000010B", type: "xp", xp: 40 }]
+			subtitle: "&7Wings before rockets"
+			tasks: [
+				{ id: "41C10000000002B1", item: "immersive_aircraft:engine", type: "item" }
+				{ id: "41C10000000002B2", item: "immersive_aircraft:propeller", type: "item" }
+			]
+			title: "&bAviation Program"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C100000000000B"]
+			description: ["The &eBiplane&r: fast, fueled by furnace burnables, and pure joy over a void. Island-hop your whole world in minutes. Do not look down. Or do - that's the fun part."]
+			icon: "immersive_aircraft:biplane"
+			id: "41C100000000000C"
+			rewards: [{ count: 16, id: "41C100000000010C", item: "minecraft:coal", type: "item" }]
+			shape: "diamond"
+			subtitle: "&7The void is a runway"
+			tasks: [{ id: "41C10000000002C1", item: "immersive_aircraft:biplane", type: "item" }]
+			title: "&bThe Biplane"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C100000000000B"]
+			description: ["The &eAirship&r is slower but hauls: passenger seats, cargo space, graceful hangtime. A flying base-ferry for moving your whole operation between islands - or just cruising in style."]
+			icon: "immersive_aircraft:airship"
+			id: "41C100000000000D"
+			rewards: [{ id: "41C100000000010D", type: "xp_levels", xp_levels: 3 }]
+			shape: "diamond"
+			subtitle: "&7Cruise the void"
+			tasks: [{ id: "41C10000000002D1", item: "immersive_aircraft:airship", type: "item" }]
+			title: "&bThe Airship"
+			x: -2.0d
+			y: 1.5d
+		}
+	]
+	title: "&bSky Gadgets"
+}

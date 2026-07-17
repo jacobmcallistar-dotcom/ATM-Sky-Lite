@@ -1,0 +1,706 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space_program"
+	group: "1A2B000000000003"
+	icon: "ad_astra:tier_4_rocket"
+	id: "3C1F000000000012"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6B7800000000D005"]
+			description: [
+				"&6Age VI Â· The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
+				""
+				"Ad Astra takes you off-world: the Moon, Mars, Venus, Mercury, and the frozen exoplanet Glacio. Each needs a bigger rocket and better gear to survive."
+				""
+				"&c&lThe gate:&r the NASA Workbench is built around a &eNether Star&r. Rocket science demands a Wither's heart - no star, no space. And the realms beyond the sky? They only open to those who've walked on other worlds."
+			]
+			icon: "ad_astra:tier_1_rocket"
+			id: "0C5265A68B7CA881"
+			rewards: [
+				{
+					id: "0C79A18F0811CA50"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "386D6C4984D7B09E"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Leave the atmosphere"
+			tasks: [{
+				id: "12B64518BFDE5C15"
+				title: "Begin the Space Program"
+				type: "checkmark"
+			}]
+			title: "&6Reach for the Stars"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C5265A68B7CA881"]
+			description: ["Ad Astra runs on its own Steel. Build a Compressor and press iron plates and steel - the base of every rocket and machine."]
+			id: "025F9F5BB50F3C61"
+			rewards: [{
+				id: "35BE749B6A52C973"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "44F847626F40F02C"
+					item: "ad_astra:compressor"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "558E3813BF30604D"
+					item: "ad_astra:steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Aerospace Steel"
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["025F9F5BB50F3C61"]
+			description: ["A Coal Generator and an Energizer give you the FE that every Ad Astra machine drinks."]
+			id: "1654EA4BC9A74F79"
+			rewards: [{
+				id: "1B3A4C9D6BD278BA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "27C8645AB9E76C60"
+					item: "ad_astra:coal_generator"
+					type: "item"
+				}
+				{
+					id: "70F463107DC7CBFD"
+					item: "ad_astra:energizer"
+					type: "item"
+				}
+			]
+			title: "Ground Power"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["025F9F5BB50F3C61"]
+			description: [
+				"No air in space. An Oxygen Distributor floods a sealed room with breathable air; an Oxygen Loader fills your tanks."
+				""
+				"A Water Pump feeds them. This is your life support - do not skip it."
+			]
+			id: "15008CDD6EC8DA95"
+			rewards: [{
+				id: "7C51C336ACD0DF08"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [
+				{
+					id: "65A375F0EC588450"
+					item: "ad_astra:oxygen_distributor"
+					type: "item"
+				}
+				{
+					id: "23647E2660285C01"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+				{
+					id: "5B56C31CDBE1A5A6"
+					item: "ad_astra:water_pump"
+					type: "item"
+				}
+			]
+			title: "Something to Breathe"
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["025F9F5BB50F3C61"]
+			description: [
+				"Rockets run on refined Fuel, and Fuel comes from Oil - but &cno oil wells survive in a void world&r."
+				""
+				"So you make your own: &e8 Coal Blocks around a Bucket = Crude Oil&r. Feed it to the Fuel Refinery and fill your tanks. Your HNN and essence farms will keep the coal flowing."
+			]
+			id: "4E40677713DCB756"
+			rewards: [{
+				id: "176544BA4BEA02CC"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [
+				{
+					id: "203263A724E0B1B6"
+					item: "ad_astra:fuel_refinery"
+					type: "item"
+				}
+				{
+					id: "724D9773DC100961"
+					item: "ad_astra:fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "Fuel the Fire"
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["15008CDD6EC8DA95"]
+			description: ["A full Space Suit - helmet, suit, pants, boots - keeps you alive off-world. Fill its tanks at the Oxygen Loader before every trip."]
+			id: "3AC5823954DFDBED"
+			rewards: [{
+				id: "6BE525C18D4C33CC"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					id: "0964AE3B1CF60CF5"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63A4F08BCA1FBD3F"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3734FDC6C535F9A0"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "781A540F10026848"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Suit Up"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1654EA4BC9A74F79"]
+			description: [
+				"The NASA Workbench is where rockets are assembled from nose cone, body, fins, and engine."
+				""
+				"&cIn this pack its recipe holds a &eNether Star&r&c at its crown&r - the Wither's heart is the only thing dense enough to calibrate a launch computer. Check JEI."
+			]
+			id: "51B90C3D7756A0EA"
+			rewards: [{
+				id: "36A0AA2157E04EA0"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "169B29E13A4F77E9"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			title: "The NASA Workbench"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4E40677713DCB756"
+				"3AC5823954DFDBED"
+				"51B90C3D7756A0EA"
+			]
+			description: [
+				"Everything is ready: steel, power, oxygen, a suit, fuel, and a workbench."
+				""
+				"Assemble a &eTier 1 Rocket&r, set it on a Launch Pad, fuel it, climb in, and hold SPACE. LIFTOFF."
+			]
+			icon: "ad_astra:tier_1_rocket"
+			id: "6790D53BA13D38CC"
+			rewards: [
+				{
+					id: "305E8ABFE6134ECE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "7113351037B48969"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "T-minus 10..."
+			tasks: [
+				{
+					id: "48681DB7BC6E0C52"
+					item: "ad_astra:tier_1_rocket"
+					type: "item"
+				}
+				{
+					id: "779AF5CF7206C78D"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			title: "&eLiftoff"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6790D53BA13D38CC"]
+			description: ["One small step. The Moon: low gravity, no air, hostile nights - and &eDesh&r ore, the metal of every rocket above Tier 1."]
+			id: "75B7246A1B0C350B"
+			rewards: [{
+				count: 6
+				id: "2F45558CC5C2B69F"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:moon"
+				id: "66D267109143739F"
+				type: "dimension"
+			}]
+			title: "The Moon"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75B7246A1B0C350B"]
+			description: ["Smelt Desh and build a Tier 2 Rocket - enough thrust to cross to the inner planets."]
+			id: "5954D67B54D46F03"
+			rewards: [{
+				id: "20DF2D652B4717D2"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "611EE4680750D69B"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+				{
+					id: "26AEB3BD5D638AF4"
+					item: "ad_astra:tier_2_rocket"
+					type: "item"
+				}
+			]
+			title: "Desh & Tier 2"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5954D67B54D46F03"]
+			description: ["Mars: the red frontier. Ostrum ore, ruined structures, and hostile Martian raiders. Watch your oxygen."]
+			id: "7AEFF5201E41906E"
+			rewards: [{
+				count: 6
+				id: "359DA50EBEA3BE77"
+				item: "ad_astra:raw_ostrum"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:mars"
+				id: "0D06BDC09913AB26"
+				type: "dimension"
+			}]
+			title: "Red Frontier"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7AEFF5201E41906E"]
+			description: ["Ostrum and a Tier 3 Rocket open the harsh worlds: Venus and Mercury."]
+			id: "5B3D9DD3AF77FB22"
+			rewards: [{
+				id: "2755C2C2DF6519A9"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "0D900B8726F91858"
+					item: "ad_astra:ostrum_ingot"
+					type: "item"
+				}
+				{
+					id: "304DDE23F9A0C494"
+					item: "ad_astra:tier_3_rocket"
+					type: "item"
+				}
+			]
+			title: "Ostrum & Tier 3"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B3D9DD3AF77FB22"]
+			description: ["Venus: crushing pressure, acid rain, and Calorite ore. A Netherite Space Suit is strongly advised."]
+			id: "45A0F1081A90EE29"
+			rewards: [{
+				count: 6
+				id: "3C401C618966A48A"
+				item: "ad_astra:raw_calorite"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:venus"
+				id: "3AE534BE40559A80"
+				type: "dimension"
+			}]
+			title: "Hell's Frontier"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B3D9DD3AF77FB22"]
+			description: ["Mercury: scorched, airless, closest to the sun. Plant your flag on the innermost world."]
+			id: "6B7764A7A361338F"
+			rewards: [{
+				id: "1F5F5432A6B846C7"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "542F68E4652B6C92"
+				type: "dimension"
+			}]
+			title: "The Scorched World"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["45A0F1081A90EE29"]
+			description: ["Calorite is the top-tier metal. Forge a Tier 4 Rocket - the only ship that reaches the edge of the system."]
+			id: "13FF1430C16D9379"
+			rewards: [{
+				id: "39A30E84D0829401"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "048DC5313467CA32"
+					item: "ad_astra:calorite_ingot"
+					type: "item"
+				}
+				{
+					id: "0D53DEEFDA885BE8"
+					item: "ad_astra:tier_4_rocket"
+					type: "item"
+				}
+			]
+			title: "Calorite & Tier 4"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13FF1430C16D9379"]
+			description: ["Glacio: a frozen exoplanet beyond the solar system, and the final frontier of Ad Astra. Etrium ore waits in the ice."]
+			id: "3811F52536EF179D"
+			rewards: [
+				{
+					count: 4
+					id: "79710CE0E3FE3A90"
+					item: "ad_astra:etrium_ingot"
+					type: "item"
+				}
+				{
+					id: "0A74D970B8D47A72"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "50855D14DC4163DE"
+				type: "dimension"
+			}]
+			title: "The Edge of the System"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3811F52536EF179D"]
+			description: [
+				"The Jet Suit is Ad Astra's masterpiece: rocket-powered flight, full life support, the freedom of the void made wearable."
+				""
+				"Craft it and you have truly conquered space. The sky was never the limit."
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:jet_suit"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2B029067F1133ABB"
+			rewards: [
+				{
+					id: "782F1B5927C0659D"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "77E7F7B59A334614"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Master of the void"
+			tasks: [{
+				id: "25FA8652F581974D"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6The Jet Suit"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1654EA4BC9A74F79"]
+			description: ["A &eSolar Panel&r loves a void world - no clouds below, no caves above. Free daytime FE for your outposts, on any planet with a sun."]
+			icon: "ad_astra:solar_panel"
+			id: "2D5C000000000001"
+			rewards: [{
+				id: "2D5C000000000101"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Sunlight is fuel"
+			tasks: [{
+				id: "2D5C000000000201"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
+			title: "&6Solar Power"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3AC5823954DFDBED"]
+			description: [
+				"An &eOxygen Can&r is bottled atmosphere - it tops up your suit automatically from your inventory. The difference between a close call and a coffin."
+				""
+				"Carry two. Always."
+			]
+			icon: "ad_astra_giselle_addon:oxygen_can"
+			id: "2D5C000000000002"
+			rewards: [{
+				id: "2D5C000000000102"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Bottled atmosphere"
+			tasks: [{
+				id: "2D5C000000000202"
+				item: "ad_astra_giselle_addon:oxygen_can"
+				type: "item"
+			}]
+			title: "&6Bottled Sky"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2D5C000000000002"]
+			description: [
+				"&ePneumatic suit upgrades&r slot into your space suit and change what it is: the &eSpace Breathing&r upgrade makes airless worlds breathable without cans."
+				""
+				"The suit stops being clothing and starts being a spacecraft you wear."
+			]
+			icon: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade"
+			id: "2D5C000000000003"
+			rewards: [{
+				id: "2D5C000000000103"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "diamond"
+			subtitle: "&7The suit becomes the ship"
+			tasks: [{
+				id: "2D5C000000000203"
+				item: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade"
+				type: "item"
+			}]
+			title: "&6Breathe Easy"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6790D53BA13D38CC"]
+			description: [
+				"Mission control grows up: the &eAutomation NASA Workbench&r assembles rockets from an inventory, a &eFuel Loader&r tanks them on the pad, and a &eRocket Sensor&r fires redstone on launch and landing."
+				""
+				"Build a real launch facility. You are not a stranded islander anymore - you are a space program."
+			]
+			icon: "ad_astra_giselle_addon:automation_nasa_workbench"
+			id: "2D5C000000000004"
+			rewards: [{
+				id: "2D5C000000000104"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "gear"
+			subtitle: "&7Mission control, automated"
+			tasks: [
+				{
+					id: "2D5C000000000204"
+					item: "ad_astra_giselle_addon:automation_nasa_workbench"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000214"
+					item: "ad_astra_giselle_addon:fuel_loader"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000224"
+					item: "ad_astra_giselle_addon:rocket_sensor"
+					type: "item"
+				}
+			]
+			title: "&6Launch Facility"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75B7246A1B0C350B"]
+			description: ["Low gravity is fun until you overshoot a jump into the void. The &eGravity Normalizer&r projects Earth-standard gravity through your moonbase. Home comforts, 384,000 klicks from home."]
+			icon: "ad_astra_giselle_addon:gravity_normalizer"
+			id: "2D5C000000000005"
+			rewards: [{
+				id: "2D5C000000000105"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Earth legs on the Moon"
+			tasks: [{
+				id: "2D5C000000000205"
+				item: "ad_astra_giselle_addon:gravity_normalizer"
+				type: "item"
+			}]
+			title: "&6Gravity Normalizer"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B3D9DD3AF77FB22"]
+			description: [
+				"Venus rains acid that eats standard suits. The &eAcid Rain Proof upgrade&r shrugs it off; a full &eNetherite Space Suit&r shrugs off nearly everything else."
+				""
+				"Gear up BEFORE the transfer burn. Venus does not do second chances."
+			]
+			icon: "ad_astra_giselle_addon:pneumatic_acid_rain_proof_upgrade"
+			id: "2D5C000000000006"
+			rewards: [{
+				id: "2D5C000000000106"
+				item: "ad_astra_giselle_addon:netherite_oxygen_can"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&7Venus-rated"
+			tasks: [
+				{
+					id: "2D5C000000000206"
+					item: "ad_astra_giselle_addon:pneumatic_acid_rain_proof_upgrade"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000216"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6Acid-Proofed"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13FF1430C16D9379"]
+			description: [
+				"The far system is COLD, and cold is fuel: a &eCryo Freezer&r condenses ice into &eCryo Fuel&r - the only thing dense enough to push a Tier 4 rocket to Glacio."
+				""
+				"Freeze a bucket. The edge of the system is waiting."
+			]
+			icon: "ad_astra:cryo_freezer"
+			id: "2D5C000000000007"
+			rewards: [{
+				id: "2D5C000000000107"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "gear"
+			subtitle: "&7Cold is fuel"
+			tasks: [
+				{
+					id: "2D5C000000000207"
+					item: "ad_astra:cryo_freezer"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000217"
+					item: "ad_astra:cryo_fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "&6Cryogenics"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "&6Age VI Â· The Space Program"
+}

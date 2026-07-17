@@ -1,0 +1,140 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "productive_bees"
+	group: "1A2B000000000002"
+	icon: "productivebees:configurable_honeycomb"
+	id: "3C1F000000000013"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e&lSide Quest · Productive Bees.&r"
+				""
+				"A whole different way to automate: you don't build a machine, you breed a &olivestock&r that makes the resource for you."
+				""
+				"Bees live in hives, eat flowers, and their comb centrifuges into ingots, gems and dusts. Cross-breed two bees and you get a rarer one that makes rarer loot. It runs while you're off doing anything else."
+				""
+				"&7None of this is required to win. It's the slow, hands-off branch - set it up once and walk away.&r"
+			]
+			icon: "productivebees:configurable_honeycomb"
+			id: "0BEE000000000001"
+			rewards: [
+				{ id: "0BEE000000000101", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Automation that breeds"
+			tasks: [{ id: "0BEE000000000201", title: "Read: Bees Make Everything", type: "checkmark" }]
+			title: "&eProductive Bees"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BEE000000000001"]
+			description: [
+				"Bees need a home. A &eSugarbag Nest&r is the starter hive - sugar cane and honeycomb, no machine required."
+				""
+				"Wild bees drift in the world; scoop one with a Bee Cage and drop it in. It'll settle and start filling comb."
+			]
+			icon: "productivebees:sugarbag_nest"
+			id: "0BEE000000000002"
+			rewards: [{ id: "0BEE000000000102", type: "xp", xp: 20 }]
+			subtitle: "&7A place to nest"
+			tasks: [{ id: "0BEE000000000202", item: "productivebees:sugarbag_nest", type: "item" }]
+			title: "&eFirst Hive"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BEE000000000002"]
+			description: [
+				"The &eAdvanced Beehive&r is the real workhorse - it holds a bee, feeds from nearby flowers, and pipes comb out automatically."
+				""
+				"Upgrade slots let you speed it up. This is where the branch stops being a curiosity and starts being a factory."
+			]
+			icon: "productivebees:advanced_oak_beehive"
+			id: "0BEE000000000003"
+			rewards: [{ id: "0BEE000000000103", type: "xp", xp: 30 }]
+			subtitle: "&7The workhorse hive"
+			tasks: [{ id: "0BEE000000000203", item: "productivebees:advanced_oak_beehive", type: "item" }]
+			title: "&eThe Advanced Hive"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BEE000000000003"]
+			description: [
+				"Comb isn't the resource - it's the &opackaging&r. A &eCentrifuge&r spins comb into what's actually inside: iron, gold, redstone, whatever that breed produces."
+				""
+				"Hopper comb in, pull ingots out. The bee did the mining; the centrifuge does the smelting."
+			]
+			icon: "productivebees:centrifuge"
+			id: "0BEE000000000004"
+			rewards: [{ id: "0BEE000000000104", type: "xp", xp: 30 }]
+			subtitle: "&7Comb into resources"
+			tasks: [{ id: "0BEE000000000204", item: "productivebees:centrifuge", type: "item" }]
+			title: "&eThe Centrifuge"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BEE000000000003"]
+			description: [
+				"The whole point of bees: &ecross-breeding&r. Put two bees in a &eBreeding Chamber&r and you get a chance at a new species that makes something rarer than either parent."
+				""
+				"This is the tech tree. Common bees breed toward diamond bees, then toward things you'd normally have to fight for."
+			]
+			icon: "productivebees:breeding_chamber"
+			id: "0BEE000000000005"
+			rewards: [{ id: "0BEE000000000105", type: "xp_levels", xp_levels: 2 }]
+			subtitle: "&7Breed toward the good stuff"
+			tasks: [{ id: "0BEE000000000205", item: "productivebees:breeding_chamber", type: "item" }]
+			title: "&eThe Breeding Chamber"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BEE000000000004"]
+			description: [
+				"Do it all on power. The &ePowered Centrifuge&r runs on FE and processes far faster than the hand-cranked one, and the &eHoney Generator&r burns honey back into FE to help feed it."
+				""
+				"Now the loop closes: bees make comb, power spins it, honey tops up the power."
+			]
+			icon: "productivebees:powered_centrifuge"
+			id: "0BEE000000000006"
+			rewards: [{ id: "0BEE000000000106", type: "xp_levels", xp_levels: 3 }]
+			subtitle: "&7Full-speed processing"
+			tasks: [
+				{ id: "0BEE000000000206", item: "productivebees:powered_centrifuge", type: "item" }
+				{ id: "0BEE000000000207", item: "productivebees:honey_generator", type: "item" }
+			]
+			title: "&ePowered Apiary"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BEE000000000005"]
+			description: [
+				"The &eBaBee Incubator&r hatches eggs into specific bees on demand, so you're not waiting on random breeding rolls for the species you want."
+				""
+				"With this you can aim the whole tree at a target - a bee that makes exactly the endgame resource you're short on. The apiary is complete."
+			]
+			icon: "productivebees:incubator"
+			id: "0BEE000000000007"
+			rewards: [
+				{ count: 4, id: "0BEE000000000107", item: "productivebees:configurable_honeycomb", type: "item" }
+				{ id: "0BEE000000000108", type: "xp_levels", xp_levels: 5 }
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Breed on demand"
+			tasks: [{ id: "0BEE000000000208", item: "productivebees:incubator", type: "item" }]
+			title: "&e&lThe Incubator"
+			x: -2.0d
+			y: -1.5d
+		}
+	]
+	title: "&eProductive Bees"
+}

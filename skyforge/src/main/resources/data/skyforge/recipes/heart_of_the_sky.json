@@ -1,0 +1,25 @@
+{
+  "__comment": "The win condition, HARDENED (v0.7.0): the four keystone corners are now the relics of the Void Signal bosses - Soul Star (Lich), Obsidian Heart (Obsidilith), Blazing Eye (Gauntlet), Void Thorn (Void Blossom) - plus witherite from the Netherite Monstrosity, ignitium from Ignis, 2x antimatter from the SPS, and a star from the Wither. Nine slots, seven boss kills, one ending.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" },
+    { "type": "forge:mod_loaded", "modid": "cataclysm" },
+    { "type": "forge:mod_loaded", "modid": "bosses_of_mass_destruction" }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SWO",
+    "AHA",
+    "BIV"
+  ],
+  "key": {
+    "S": { "item": "bosses_of_mass_destruction:soul_star" },
+    "W": { "item": "cataclysm:witherite_ingot" },
+    "O": { "item": "bosses_of_mass_destruction:obsidian_heart" },
+    "A": { "item": "mekanism:pellet_antimatter" },
+    "H": { "item": "minecraft:nether_star" },
+    "B": { "item": "bosses_of_mass_destruction:blazing_eye" },
+    "I": { "item": "cataclysm:ignitium_ingot" },
+    "V": { "item": "bosses_of_mass_destruction:void_thorn" }
+  },
+  "result": { "item": "skyforge:heart_of_the_sky" }
+}

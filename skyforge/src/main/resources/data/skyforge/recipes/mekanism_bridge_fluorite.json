@@ -1,0 +1,13 @@
+{
+  "__comment": "No fluorite ore in a void world - this keystone bridge is the skyblock source of Mekanism fluorite, which the fission fuel line (Hydrofluoric Acid -> Uranium Hexafluoride -> Fissile Fuel) requires. Without it, antimatter and the Heart of the Sky are uncraftable.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "skyforge:industrial_keystone" },
+    { "item": "skyforge:sky_dust" },
+    { "item": "skyforge:sky_dust" }
+  ],
+  "result": { "item": "mekanism:fluorite_gem", "count": 4 }
+}

@@ -1,0 +1,451 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "void_signal"
+	group: "1A2B000000000003"
+	icon: "bosses_of_mass_destruction:obsidian_heart"
+	id: "3C1F00000000000C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75B7246A1B0C350B"]
+			description: [
+				"&4&lThe Void Signal.&r"
+				""
+				"Since the moment your boots touched the Moon, your rocket's radio has been repeating a pattern that is not yours. Every world you land on, it grows louder. Something out there is answering your launches."
+				""
+				"On each planet: &lbuild an arena at your base&r, then light a Distress Beacon quest. &c&lThe thing arrives WHERE YOU STAND when you claim the reward.&r Wall it in first. Bring your best gear."
+				""
+				"Their remains are not trophies. &eThey are the corners of the Heart of the Sky.&r"
+			]
+			icon: "minecraft:sculk_sensor"
+			id: "3055000000000001"
+			rewards: [{
+				id: "3055000000000101"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Something is answering"
+			tasks: [{
+				id: "3055000000000201"
+				title: "Hear the pattern"
+				type: "checkmark"
+			}]
+			title: "&4The Void Signal"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000001"]
+			description: [
+				"The signal on the Moon triangulates to wherever you are. Stand in your arena and &cclaim this quest to answer it&r."
+				""
+				"&8It will be standing there when the dust settles.&r"
+			]
+			icon: "minecraft:amethyst_shard"
+			id: "3055000000000002"
+			rewards: [{
+				command: "/summon bosses_of_mass_destruction:obsidilith ~ ~1 ~"
+				id: "3055000000000102"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "&c&lCLAIM = SUMMON. Arena first."
+			tasks: [{
+				id: "3055000000000202"
+				title: "Broadcast from your moonbase"
+				type: "checkmark"
+			}]
+			title: "&4Beacon: The Mare"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000002"]
+			description: [
+				"A pillar of living obsidian that was on the Moon long before you. The &eObsidilith&r fights in phases - runes, pillars, bursts. Read the arena, not the boss."
+				""
+				"It drops the &5Obsidian Heart&r: the first corner of the Heart of the Sky. &7(It also rises naturally in the End's outer islands, if you'd rather hunt it at home.)&r"
+			]
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			id: "3055000000000003"
+			rewards: [
+				{
+					id: "3055000000000103"
+					type: "random"
+				}
+				{
+					id: "3055000000000113"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7First corner of the Heart"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:obsidilith"
+				id: "3055000000000203"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Monolith"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3055000000000003"
+				"7AEFF5201E41906E"
+			]
+			description: ["On Mars the signal comes from &cunder the soil&r. Stand in your arena and claim - and watch the red sand split open."]
+			icon: "bosses_of_mass_destruction:void_lily"
+			id: "3055000000000004"
+			rewards: [{
+				command: "/summon bosses_of_mass_destruction:void_blossom ~ ~1 ~"
+				id: "3055000000000104"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "&c&lCLAIM = SUMMON. Arena first."
+			tasks: [{
+				id: "3055000000000204"
+				title: "Broadcast from your Mars base"
+				type: "checkmark"
+			}]
+			title: "&4Beacon: The Red Soil"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000004"]
+			description: [
+				"An alien flower the size of a house, blooming where nothing should live. The &eVoid Blossom&r spawns spines, blades and healing roots - cut the roots first."
+				""
+				"It drops the &5Void Thorn&r: the second corner. Eat its Crystal Fruit for a hearts boost that lasts."
+			]
+			icon: "bosses_of_mass_destruction:void_thorn"
+			id: "3055000000000005"
+			rewards: [
+				{
+					count: 2
+					id: "3055000000000105"
+					item: "bosses_of_mass_destruction:crystal_fruit"
+					type: "item"
+				}
+				{
+					id: "3055000000000115"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Second corner of the Heart"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				id: "3055000000000205"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Blossom"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3055000000000005"
+				"45A0F1081A90EE29"
+			]
+			description: ["Venus screams on every frequency. Something in the acid clouds is transmitting through a fist of soulfire. Arena. Claim. Brace."]
+			icon: "minecraft:soul_lantern"
+			id: "3055000000000006"
+			rewards: [{
+				command: "/summon bosses_of_mass_destruction:gauntlet ~ ~1 ~"
+				id: "3055000000000106"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "&c&lCLAIM = SUMMON. Arena first."
+			tasks: [{
+				id: "3055000000000206"
+				title: "Broadcast from your Venus base"
+				type: "checkmark"
+			}]
+			title: "&4Beacon: The Acid Choir"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000006"]
+			description: [
+				"A colossal armored fist animated by burning souls. The &eGauntlet&r grabs, slams and hurls - keep moving, strike the eye when it opens."
+				""
+				"It drops the &5Blazing Eye&r: the third corner. &7(Its kin haunt the Nether's soul valleys too.)&r"
+			]
+			icon: "bosses_of_mass_destruction:blazing_eye"
+			id: "3055000000000007"
+			rewards: [
+				{
+					id: "3055000000000107"
+					item: "bosses_of_mass_destruction:brimstone_nectar"
+					type: "item"
+				}
+				{
+					id: "3055000000000117"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Third corner of the Heart"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "3055000000000207"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Gauntlet"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3055000000000007"
+				"3811F52536EF179D"
+			]
+			description: ["Glacio's night lasts forever, and the signal here sounds like a funeral bell. Whatever answers on the frozen edge of the system, it has been dead a long time."]
+			icon: "minecraft:soul_torch"
+			id: "3055000000000008"
+			rewards: [{
+				command: "/summon bosses_of_mass_destruction:lich ~ ~1 ~"
+				id: "3055000000000108"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "&c&lCLAIM = SUMMON. Arena first."
+			tasks: [{
+				id: "3055000000000208"
+				title: "Broadcast from Glacio"
+				type: "checkmark"
+			}]
+			title: "&4Beacon: The Long Night"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000008"]
+			description: [
+				"The &eNight Lich&r - a frozen king of the dark between worlds. Comets, phantom minions, teleports. Kill it before it heals; it does not fight fair and neither should you."
+				""
+				"It drops the &5Soul Star&r: the fourth and final corner of the Heart."
+			]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "3055000000000009"
+			rewards: [
+				{
+					count: 2
+					id: "3055000000000109"
+					item: "bosses_of_mass_destruction:charged_ender_pearl"
+					type: "item"
+				}
+				{
+					id: "3055000000000119"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Fourth corner of the Heart"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
+				id: "3055000000000209"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Night Lich"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000009"]
+			description: [
+				"Four voices silenced. And then the signal stops repeating - because &c&lthe sender is coming in person&r."
+				""
+				"This quest rewards its landing beacon. Crack the egg in your greatest arena, on any world, when you are truly ready. What arrives is a war machine."
+			]
+			icon: "cataclysm:the_harbinger_spawn_egg"
+			id: "305500000000000A"
+			rewards: [{
+				id: "305500000000010A"
+				item: "cataclysm:the_harbinger_spawn_egg"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			subtitle: "&7The sender lands"
+			tasks: [{
+				id: "305500000000020A"
+				title: "Trace the signal to its source"
+				type: "checkmark"
+			}]
+			title: "&4Beacon: The Source"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["305500000000000A"]
+			description: [
+				"&4&lTHE HARBINGER.&r The machine that has watched every launch since your first. Laser arrays, wither missiles, phase-two fury."
+				""
+				"Kill it, and the void goes quiet. Its arsenal is yours - and with the four corners in hand, &6the Heart of the Sky can finally be forged.&r"
+			]
+			icon: {
+				Count: 1
+				id: "cataclysm:laser_gatling"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "305500000000000B"
+			rewards: [
+				{
+					id: "305500000000010B"
+					item: {
+						Count: 1
+						id: "cataclysm:laser_gatling"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "305500000000011B"
+					item: "cataclysm:wither_assault_shoulder_weapon"
+					type: "item"
+				}
+				{
+					id: "305500000000012B"
+					type: "random"
+				}
+				{
+					id: "305500000000013B"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7Silence the void"
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				id: "305500000000020B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4&lTHE HARBINGER"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3055000000000005"]
+			description: ["An anomaly on the Martian scans: something royal, buried in the red sand, older than the signal itself. This beacon wakes the &ePharaoh of the Red Planet&r. Optional. Angry. Loot-rich."]
+			icon: "cataclysm:ancient_remnant_spawn_egg"
+			id: "305500000000000C"
+			rewards: [{
+				id: "305500000000010C"
+				item: "cataclysm:ancient_remnant_spawn_egg"
+				type: "item"
+			}]
+			subtitle: "&7Optional hunt"
+			tasks: [{
+				id: "305500000000020C"
+				title: "Dig into the anomaly"
+				type: "checkmark"
+			}]
+			title: "&4Anomaly: The Red Pharaoh"
+			x: -2.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["305500000000000C"]
+			description: ["The &eAncient Remnant&r fights with sandstorms, charges and quake-waves. Put the king back in the ground."]
+			icon: "cataclysm:desert_eye"
+			id: "305500000000000D"
+			rewards: [
+				{
+					id: "305500000000010D"
+					type: "random"
+				}
+				{
+					id: "305500000000011D"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "diamond"
+			subtitle: "&7Optional hunt"
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				id: "305500000000020D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Ancient Remnant"
+			x: 0.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["3055000000000009"]
+			description: ["A second reading on Glacio: a knight's shade, circling the ice like a moth. This beacon calls the &eMaledictus&r. Optional. It remembers how to fight."]
+			icon: "cataclysm:maledictus_spawn_egg"
+			id: "305500000000000E"
+			rewards: [{
+				id: "305500000000010E"
+				item: "cataclysm:maledictus_spawn_egg"
+				type: "item"
+			}]
+			subtitle: "&7Optional hunt"
+			tasks: [{
+				id: "305500000000020E"
+				title: "Answer the second reading"
+				type: "checkmark"
+			}]
+			title: "&4Anomaly: The Frost Revenant"
+			x: 6.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["305500000000000E"]
+			description: ["The &eMaledictus&r - a phantom knight with a halberd and a grudge. Its aerial charges hit like a rocket. Ground it permanently."]
+			icon: "cataclysm:cursed_eye"
+			id: "305500000000000F"
+			rewards: [
+				{
+					id: "305500000000010F"
+					type: "random"
+				}
+				{
+					id: "305500000000011F"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "diamond"
+			subtitle: "&7Optional hunt"
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				id: "305500000000020F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&4The Maledictus"
+			x: 8.0d
+			y: 1.8d
+		}
+	]
+	title: "&4The Void Signal"
+}

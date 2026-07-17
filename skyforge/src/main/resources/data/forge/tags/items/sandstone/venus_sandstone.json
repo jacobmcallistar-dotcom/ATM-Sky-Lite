@@ -1,0 +1,7 @@
+{
+  "__comment": "Ad Astra ships a Mekanism crushing recipe keyed to this tag but never defines it, so Mekanism logs a broken-recipe warning. Populate it. Optional entry: harmless if Ad Astra is absent.",
+  "replace": false,
+  "values": [
+    { "id": "ad_astra:venus_sandstone", "required": false }
+  ]
+}

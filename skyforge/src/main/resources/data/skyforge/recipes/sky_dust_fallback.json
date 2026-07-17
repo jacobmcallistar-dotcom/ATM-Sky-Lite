@@ -1,0 +1,9 @@
+{
+  "__comment": "Guaranteed-obtainable on a void world: flint from sieving gravel, bone meal from composting saplings.",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:flint" },
+    { "item": "minecraft:bone_meal" }
+  ],
+  "result": { "item": "skyforge:sky_dust", "count": 2 }
+}

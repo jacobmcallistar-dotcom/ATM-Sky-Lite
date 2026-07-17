@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "S": { "item": "skyforge:sky_steel_ingot" },
+    "F": { "item": "minecraft:blast_furnace" }
+  },
+  "result": { "item": "skyforge:sky_assembler" }
+}

@@ -1,0 +1,256 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age2_kinetic"
+	group: "1A2B000000000001"
+	icon: "create:cogwheel"
+	id: "3C1F00000000000A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2101000000000011"]
+			description: [
+				"&e&lAge II Â· The Kinetic Age.&r"
+				""
+				"Before electricity, there was &orotation&r. Create turns your island into a machine of shafts, cogs and water wheels - presses that stamp sheets, fans that wash gravel into treasure, wheels that crush stone to dust."
+				""
+				"Everything here runs on torque you build with your own hands. Master it: &cthe Metallurgic Infuser - and all of Mekanism behind it - is built around a Precision Mechanism only this Age can make.&r"
+			]
+			icon: "create:water_wheel"
+			id: "44EA000000000001"
+			rewards: [{ id: "44EA000000000101", type: "xp", xp: 40 }]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Industry before electricity"
+			tasks: [{ id: "44EA000000000201", title: "Feel the rotation", type: "checkmark" }]
+			title: "&eAge II Â· The Kinetic Age"
+			x: -16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000001"]
+			description: [
+				"&eAndesite Alloy&r is the Kinetic Age's iron. Sieve gravel with a flint mesh for &eandesite pebbles&r, craft them into andesite, and alloy it with iron or zinc nuggets."
+				""
+				"Every shaft, casing and cogwheel starts here. Make a pile."
+			]
+			icon: "create:andesite_alloy"
+			id: "44EA000000000002"
+			rewards: [{ count: 8, id: "44EA000000000102", item: "create:andesite_alloy", type: "item" }]
+			subtitle: "&7The kinetic iron"
+			tasks: [{ count: 8L, id: "44EA000000000202", item: "create:andesite_alloy", type: "item" }]
+			title: "&eAndesite Alloy"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000002"]
+			description: ["&eShafts&r carry rotation; &eCogwheels&r turn corners and change speed. This is your wiring now - lay it like you mean it."]
+			icon: "create:cogwheel"
+			id: "44EA000000000003"
+			rewards: [{ count: 4, id: "44EA000000000103", item: "create:shaft", type: "item" }]
+			subtitle: "&7Rotation is power"
+			tasks: [
+				{ count: 8L, id: "44EA000000000203", item: "create:shaft", type: "item" }
+				{ count: 4L, id: "44EA000000000213", item: "create:cogwheel", type: "item" }
+			]
+			title: "&eShafts & Cogs"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000003"]
+			description: [
+				"A &eWater Wheel&r in flowing water makes free, forever torque. Your cobble generator's water was already flowing - now it works a double shift."
+				""
+				"More wheels, more stress capacity. The Large Water Wheel does the same job with more style."
+			]
+			icon: "create:water_wheel"
+			id: "44EA000000000004"
+			rewards: [{ id: "44EA000000000104", type: "xp", xp: 40 }]
+			shape: "gear"
+			subtitle: "&7Free torque, forever"
+			tasks: [{ id: "44EA000000000204", item: "create:water_wheel", type: "item" }]
+			title: "&eThe Water Wheel"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000003"]
+			description: ["The &eWrench&r rotates, configures and instantly picks up any Create machine. &eEngineer's Goggles&r overlay stress and speed on everything you look at. Wear them always. Look brilliant."]
+			icon: "create:goggles"
+			id: "44EA000000000005"
+			rewards: [{ id: "44EA000000000105", type: "xp", xp: 30 }]
+			subtitle: "&7Dress for the job"
+			tasks: [
+				{ id: "44EA000000000205", item: "create:wrench", type: "item" }
+				{ id: "44EA000000000215", item: "create:goggles", type: "item" }
+			]
+			title: "&eThe Engineer's Kit"
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44EA000000000004"]
+			description: [
+				"The &eMechanical Press&r stamps ingots into &esheets&r - iron, gold, copper - the material half of Create is built from."
+				""
+				"Put a Depot under it, drop metal on, and thunk: industry."
+			]
+			icon: "create:mechanical_press"
+			id: "44EA000000000006"
+			rewards: [{ count: 4, id: "44EA000000000106", item: "create:iron_sheet", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Thunk."
+			tasks: [{ id: "44EA000000000206", item: "create:mechanical_press", type: "item" }]
+			title: "&eThe Press"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000004"]
+			description: ["The &eMillstone&r grinds slowly but surely - gravel to flint, bones to meal, wheat to flour. Your first powered processing block, and it never asks for a coffee break."]
+			icon: "create:millstone"
+			id: "44EA000000000007"
+			rewards: [{ count: 8, id: "44EA000000000107", item: "minecraft:bone_meal", type: "item" }]
+			subtitle: "&7Grind it out"
+			tasks: [{ id: "44EA000000000207", item: "create:millstone", type: "item" }]
+			title: "&eThe Millstone"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44EA000000000006"]
+			description: [
+				"An &eEncased Fan&r behind water becomes a &ewashing line&r: bulk-wash &egravel into iron and copper nuggets&r, sand into clay, soul sand into gold."
+				""
+				"This is the Kinetic Age's answer to the sieve - park a chest, walk away, come back rich."
+			]
+			icon: "create:encased_fan"
+			id: "44EA000000000008"
+			rewards: [{ id: "44EA000000000108", type: "xp", xp: 50 }]
+			shape: "gear"
+			subtitle: "&7Bulk washing = free ore"
+			tasks: [
+				{ id: "44EA000000000208", item: "create:encased_fan", type: "item" }
+				{ id: "44EA000000000218", item: "create:propeller", type: "item" }
+			]
+			title: "&eFan Washing"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44EA000000000006"]
+			description: ["A &eBasin&r under a &eMechanical Mixer&r combines ingredients automatically - dough, dyes, and soon, alloys. The cauldron of the industrial age."]
+			icon: "create:mechanical_mixer"
+			id: "44EA000000000009"
+			rewards: [{ id: "44EA000000000109", type: "xp", xp: 40 }]
+			shape: "gear"
+			subtitle: "&7Stir with torque"
+			tasks: [
+				{ id: "44EA000000000209", item: "create:mechanical_mixer", type: "item" }
+				{ id: "44EA000000000219", item: "create:basin", type: "item" }
+			]
+			title: "&eBasin & Mixer"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44EA000000000009"]
+			description: [
+				"Some recipes need &lheat&r. An empty &eBlaze Burner&r captures a blaze - which means a trip to a &cNether fortress&r, early and underdressed."
+				""
+				"Crucible lava + water = obsidian. Build the portal, bring blocks and courage, cage your first blaze. It will hold your basin at a boil forever."
+			]
+			icon: "create:blaze_burner"
+			id: "44EA00000000000B"
+			rewards: [{ id: "44EA00000000010B", type: "xp_levels", xp_levels: 3 }]
+			shape: "diamond"
+			subtitle: "&7Steal fire itself"
+			tasks: [{ id: "44EA00000000020B", item: "create:blaze_burner", type: "item" }]
+			title: "&eThe Blaze Burner"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44EA00000000000B"]
+			description: [
+				"Sieve gravel with an iron mesh for &ezinc chunks&r, then mix molten &ecopper + zinc&r over your blaze burner: &6BRASS&r."
+				""
+				"Brass is the smart metal - it filters, it computes, it holds tools. The Kinetic Age just got a brain."
+			]
+			icon: "create:brass_ingot"
+			id: "44EA00000000000A"
+			rewards: [{ count: 4, id: "44EA00000000010A", item: "create:brass_ingot", type: "item" }]
+			subtitle: "&7The smart metal"
+			tasks: [
+				{ count: 4L, id: "44EA00000000020A", item: "create:zinc_ingot", type: "item" }
+				{ count: 4L, id: "44EA00000000021A", item: "create:brass_ingot", type: "item" }
+			]
+			title: "&eZinc & Brass"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44EA000000000006"]
+			description: [
+				"Two &eCrushing Wheels&r spinning against each other pulverize whatever falls between - cobble to gravel, gravel to sand, ores to bonus dust."
+				""
+				"Feed them your whole cobble line. They do not chew quietly."
+			]
+			icon: "create:crushing_wheel"
+			id: "44EA00000000000C"
+			rewards: [{ id: "44EA00000000010C", type: "xp_levels", xp_levels: 3 }]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7The hungry wheels"
+			tasks: [{ count: 2L, id: "44EA00000000020C", item: "create:crushing_wheel", type: "item" }]
+			title: "&eCrushing Wheels"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44EA00000000000A"]
+			description: ["A &eDeployer&r is a tireless mechanical hand - it places, uses, and crafts on repeat. With a &eDepot&r as its workbench, it performs the assembly lines the next quest demands."]
+			icon: "create:deployer"
+			id: "44EA00000000000D"
+			rewards: [{ id: "44EA00000000010D", type: "xp", xp: 50 }]
+			subtitle: "&7A tireless hand"
+			tasks: [
+				{ id: "44EA00000000020D", item: "create:deployer", type: "item" }
+				{ id: "44EA00000000021D", item: "create:depot", type: "item" }
+			]
+			title: "&eThe Deployer"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44EA00000000000D"
+				"44EA00000000000C"
+			]
+			description: [
+				"The summit of kinetics: &6sequenced assembly&r. Deployers pass a golden sheet down the line, adding cogwheels and nails in perfect rhythm, until out rolls a &ePrecision Mechanism&r."
+				""
+				"&cThis is the key to the Electric Age&r - the Metallurgic Infuser is built around one. Craft it, and Mekanism opens."
+				""
+				"&2You built industry out of falling water. Age III opens: electricity.&r"
+			]
+			icon: "create:precision_mechanism"
+			id: "44EA00000000000E"
+			rewards: [
+				{ id: "44EA00000000010E", table_id: 258L, type: "random" }
+				{ id: "44EA00000000010F", type: "xp_levels", xp_levels: 5 }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Age II capstone Â· unlocks Mekanism"
+			tasks: [{ id: "44EA00000000020E", item: "create:precision_mechanism", type: "item" }]
+			title: "&e&lThe Precision Mechanism"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&eAge II Â· The Kinetic Age"
+}

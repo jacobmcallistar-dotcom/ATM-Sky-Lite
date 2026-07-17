@@ -1,0 +1,17 @@
+{
+  "__comment": "SKYBLOCK FIX (v0.7.1): Ad Astra oil comes ONLY from oil-well structures, which cannot generate in a void overworld - making fuel, rockets and the entire space program unobtainable. This cracks coal into crude: 8 coal blocks + a bucket = oil.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "ad_astra" }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC"
+  ],
+  "key": {
+    "C": { "item": "minecraft:coal_block" },
+    "B": { "item": "minecraft:bucket" }
+  },
+  "result": { "item": "ad_astra:oil_bucket" }
+}

@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "1A2B000000000001", title: "&2Act I &8· &2Foundations" }
+		{ id: "1A2B000000000002", title: "&9Act II &8· &9Industry" }
+		{ id: "1A2B000000000003", title: "&cAct III &8· &cConquest" }
+		{ id: "1A2B000000000004", title: "&5Act IV &8· &5Ascension" }
+	]
+}

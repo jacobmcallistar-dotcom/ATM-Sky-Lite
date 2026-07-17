@@ -1,0 +1,26 @@
+{
+  "__comment": "GATE OVERRIDE: Powah's tier ladder requires Mekanism industry first - one glass block becomes a Steel Casing.",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gSg",
+    "gcg",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "powah:dielectric_rod_horizontal"
+    },
+    "g": {
+      "tag": "c:glass_blocks"
+    },
+    "S": {
+      "item": "mekanism:steel_casing"
+    },
+    "c": {
+      "item": "powah:dielectric_casing"
+    }
+  },
+  "result": {
+    "item": "powah:energizing_orb"
+  }
+}

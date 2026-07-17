@@ -1,0 +1,23 @@
+{
+	id: "0000000000000102"
+	loot_crate: {
+		color: -16711681
+		drops: 1
+		glow: true
+		item: "minecraft:chest"
+		string_id: "tech_crate"
+	}
+	loot_size: 3
+	order_index: 1
+	rewards: [
+		{ count: 4, item: "skyforge:industrial_keystone", weight: 8 }
+		{ count: 4, item: "mekanism:ingot_osmium", weight: 8 }
+		{ count: 8, item: "mekanism:ingot_steel", weight: 8 }
+		{ count: 4, item: "ae2:certus_quartz_crystal", weight: 8 }
+		{ count: 8, item: "powah:uraninite", weight: 8 }
+		{ count: 1, item: "mekanism:energy_tablet", weight: 4 }
+		{ count: 4, item: "minecraft:diamond", weight: 5 }
+		{ count: 1, item: "ae2:silicon_press", weight: 2 }
+	]
+	title: "Tech Crate"
+}

@@ -1,0 +1,34 @@
+{
+  "__comment": "GATE OVERRIDE: rocketry requires a Nether Star - kill the Wither before you reach for space. Original recipe minus one steel plate, plus a star.",
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_astra:steel_plates"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "B": {
+      "tag": "ad_astra:steel_blocks"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "|": {
+      "tag": "ad_astra:iron_rods"
+    }
+  },
+  "pattern": [
+    "|S|",
+    "TCT",
+    "#B#"
+  ],
+  "result": {
+    "item": "ad_astra:nasa_workbench"
+  },
+  "show_notification": true
+}

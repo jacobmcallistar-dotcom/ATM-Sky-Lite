@@ -1,0 +1,25 @@
+{
+  "__comment": "GATE OVERRIDE: the Undergarden opens only after Mars - the catalyst's diamond core becomes an Ostrum Ingot.",
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "ad_astra:ostrum_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "GIG",
+    "IDI",
+    "GIG"
+  ],
+  "result": {
+    "item": "undergarden:catalyst"
+  },
+  "show_notification": true
+}

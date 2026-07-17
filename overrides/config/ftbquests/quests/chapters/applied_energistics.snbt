@@ -1,0 +1,516 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: "1A2B000000000002"
+	icon: "ae2:controller"
+	id: "3C1F000000000011"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000C"]
+			description: [
+				"&bApplied Energistics 2&r replaces chests with a digital storage network - and eventually an autocrafting supercomputer that builds anything on demand."
+				""
+				"You have Certus Quartz. Now grow it, process it, and build a network worthy of the endgame."
+				""
+				"&7Autocrafting is gated behind processors and a controller. Earn it.&r"
+			]
+			icon: "ae2:controller"
+			id: "1FA9577AA6C0D787"
+			rewards: [
+				{
+					id: "45914E456B4DA503"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "1DBC4F9033BF02ED"
+					table_id: 258L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Digital storage & autocrafting"
+			tasks: [{
+				id: "2DEA0BC44DC5E6F6"
+				title: "Begin AE2"
+				type: "checkmark"
+			}]
+			title: "&bThe Network Awakens"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: ["Build a Charger and charge Certus Quartz into Charged Certus - the spark for Fluix."]
+			id: "122843FE1BF8B653"
+			rewards: [{
+				id: "79B60CAE1561F669"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "258F1C1881981A91"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Charge It Up"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["122843FE1BF8B653"]
+			description: ["Fluix Crystals - charged certus + redstone + quartz dropped in water. The core material of every cable and device."]
+			id: "06EEAC6C2BFD16FE"
+			rewards: [{
+				id: "344075EFB3D4B951"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "76038751ED078E6C"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			title: "Fluix Crystals"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: ["Silicon comes from the Inscriber. You'll need stacks of it for every processor."]
+			id: "714AA25143923BC8"
+			rewards: [{
+				id: "540653FF6C9ABF3F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "54DE9AD8EA3A1FB5"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			title: "Silicon"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06EEAC6C2BFD16FE", "714AA25143923BC8"]
+			description: [
+				"The three processors - Logic, Calculation, Engineering - are the brains of every AE2 machine."
+				""
+				"Inscribe silicon + the right press + redstone/certus/fluix, then craft one of each."
+			]
+			id: "3584C005DD4926AB"
+			rewards: [{
+				id: "2ED79B85E7F8FDC8"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					id: "5C51EBEE52E4FF2B"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "664034E6E43227A2"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "11D6003426CE55C8"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "The Processors"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3584C005DD4926AB"]
+			description: ["The ME Controller is the heart of a network - it powers and organizes everything wired to it."]
+			id: "4275E6A1A07E4C54"
+			rewards: [{
+				id: "56BA37C3A73E3789"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "2C5A3FCB1805B570"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "The Controller"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4275E6A1A07E4C54"]
+			description: ["Networks run on AE energy. An Energy Acceptor converts your FE in; an Energy Cell stores a buffer."]
+			id: "112DBA08A012C0F3"
+			rewards: [{
+				id: "230C060A445313A7"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [
+				{
+					id: "4157934E8DAC88FE"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "1AF842992BC5A1EF"
+					item: "ae2:energy_cell"
+					type: "item"
+				}
+			]
+			title: "Power the Network"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4275E6A1A07E4C54"]
+			description: ["An ME Drive holds storage cells. Craft a Drive and a 1k Item Storage Cell - your first digital chest."]
+			id: "5079791596C98418"
+			rewards: [{
+				id: "68FC27506F9CF480"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					id: "3C16D56B6FA82C24"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "7FE0563C3F752A6F"
+					item: "ae2:item_storage_cell_1k"
+					type: "item"
+				}
+			]
+			title: "First Digital Storage"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5079791596C98418"]
+			description: ["Scale up: 4k, 16k, and 64k cells hold ever more item types and counts. Fill a Drive with them."]
+			id: "28AD6C72762CBF0C"
+			rewards: [{
+				id: "1BE3AE8F3E2B7AC1"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "00AAAE25DAAC5B15"
+					item: "ae2:item_storage_cell_4k"
+					type: "item"
+				}
+				{
+					id: "1B2F5B93FA4354EB"
+					item: "ae2:item_storage_cell_16k"
+					type: "item"
+				}
+				{
+					id: "3DBCC1E20D92EB45"
+					item: "ae2:item_storage_cell_64k"
+					type: "item"
+				}
+			]
+			title: "Bigger On The Inside"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5079791596C98418"]
+			description: ["A Crafting Terminal lets you see your whole network and craft from it in one screen."]
+			id: "730CBB4200699C94"
+			rewards: [{
+				id: "6675CEEDD228F0BA"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "501CD9E39BB5D449"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "The Terminal"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["730CBB4200699C94"]
+			description: [
+				"AUTOCRAFTING. A Pattern Provider holds recipes; a Molecular Assembler builds them."
+				""
+				"This is the moment AE2 goes from storage to a factory that crafts anything on request."
+			]
+			id: "67906B4F774BA557"
+			rewards: [{
+				id: "7FD4FEEC0B1D8A5D"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					id: "3DA38849DECF8273"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "77120B9EE40A447F"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			title: "Autocrafting Begins"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67906B4F774BA557"]
+			description: [
+				"A Crafting CPU is a multiblock of Crafting Units and Storage. Bigger CPUs craft bigger jobs in parallel."
+				""
+				"Build a 1k Storage, a Unit, and an Accelerator to form your first CPU."
+			]
+			id: "7A7F425862B38C87"
+			rewards: [{
+				id: "6C7C6C6F2E29D6F9"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					id: "123A0AA20CBAE381"
+					item: "ae2:crafting_unit"
+					type: "item"
+				}
+				{
+					id: "6A31A8F583B38772"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "41D0D8D8D521EB73"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+			]
+			title: "Build a Crafting CPU"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67906B4F774BA557"]
+			description: ["The Pattern Encoding Terminal is where you write autocrafting patterns. Encode a few and watch the network build them."]
+			id: "30E15333874AE5C1"
+			rewards: [{
+				id: "5CDC6382731BCD06"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "78BCB14741BDBF21"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			title: "Encode Patterns"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A7F425862B38C87"]
+			description: ["Import and Export Buses pull from and push to machines automatically - the veins of a self-running factory."]
+			id: "028C42F38D7735BD"
+			rewards: [{
+				id: "50CCA33C0CF8F872"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					id: "4E210511981FCF17"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "5FEC1DD4B8302C10"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
+			title: "Full Automation"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["730CBB4200699C94"]
+			description: ["A Wireless Terminal + Access Point lets you reach your whole network from anywhere. No more running home."]
+			id: "3343C89DAB433A2D"
+			rewards: [{
+				id: "703761F4660E6E1E"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "514C9F3EA6DFF0E4"
+				item: "ae2:wireless_terminal"
+				type: "item"
+			}]
+			title: "Go Wireless"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A7F425862B38C87"]
+			description: [
+				"Spatial Storage captures an entire region of the world into a cell - move whole builds, or pocket-dimension your base."
+				""
+				"Build Spatial Pylons and a Spatial IO Port."
+			]
+			id: "4659FDAFCEA8BFE6"
+			rewards: [
+				{
+					id: "0CCD6F5D1A73D4BC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "03399F31A4947F6E"
+					table_id: 258L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "0D4B3AD19BA521A6"
+					item: "ae2:spatial_pylon"
+					type: "item"
+				}
+				{
+					id: "3B7A6E9E31E4A851"
+					item: "ae2:spatial_io_port"
+					type: "item"
+				}
+			]
+			title: "Spatial Storage"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A7F425862B38C87"]
+			description: [
+				"The Quantum Network Bridge links two networks across ANY distance or dimension via an entangled pair."
+				""
+				"Build a Quantum Ring and a Quantum Link Chamber to connect your bases and your rockets."
+			]
+			id: "12A79575C816228A"
+			rewards: [
+				{
+					id: "624B86A83BAAAB53"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "1F802E1FCDC95244"
+					table_id: 258L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "6966C5030746D301"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					id: "2DAD7ED4B39D0B6B"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "Quantum Bridge"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4659FDAFCEA8BFE6", "12A79575C816228A"]
+			description: [
+				"Storage, autocrafting, wireless, spatial, and a quantum-linked multi-network. You have built a machine that builds machines."
+				""
+				"Point it at the endgame - autocraft your way to the Heart of the Sky."
+			]
+			id: "0B23279463D8A784"
+			rewards: [
+				{
+					id: "5B1E788E0EB295AD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "1A18BE45090EF380"
+					table_id: 258L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "AE2 mastered"
+			tasks: [{
+				id: "6F476792FFEFB55D"
+				item: "ae2:crafting_monitor"
+				type: "item"
+			}]
+			title: "&bMaster of the Network"
+			x: 11.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["5079791596C98418"]
+			description: [
+				"&eAE2 Things&r adds DISK drives - a parallel storage-cell line with flat byte counts and cheaper scaling for bulk storage."
+				""
+				"Craft a &eDISK Housing&r and check JEI for the drive tiers. Your cobblestone mountain finally has a home."
+			]
+			icon: "ae2things:disk_housing"
+			id: "1FB9000000000001"
+			rewards: [{ id: "1FB9000000000101", type: "xp", xp: 40 }]
+			subtitle: "&7Bulk storage, cheap"
+			tasks: [{ id: "1FB9000000000201", item: "ae2things:disk_housing", type: "item" }]
+			title: "&bDISK Drives"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FB9000000000001"]
+			description: [
+				"&eApplied Mekanistics&r teaches your ME network to store Mekanism chemicals - gases, infusions, slurries - in cells like any other resource."
+				""
+				"Hydrogen, oxygen and fissile fuel on tap from a terminal. The two tech trees become one network."
+			]
+			icon: "appmek:chemical_cell_housing"
+			id: "1FB9000000000002"
+			rewards: [{ id: "1FB9000000000102", type: "xp", xp: 50 }]
+			subtitle: "&7Gases in the grid"
+			tasks: [{ id: "1FB9000000000202", item: "appmek:chemical_cell_housing", type: "item" }]
+			title: "&bChemicals, Digitized"
+			x: 4.0d
+			y: -4.0d
+		}
+	]
+	title: "&bTech Branch Â· Applied Energistics"
+}

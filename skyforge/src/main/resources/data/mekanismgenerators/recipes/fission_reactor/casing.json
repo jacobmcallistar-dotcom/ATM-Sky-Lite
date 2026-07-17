@@ -1,0 +1,24 @@
+{
+  "__comment": "GATE OVERRIDE: fission requires the Twilight Forest - one lead ingot becomes a Fiery Ingot (Hydra blood / Ur-Ghast tears + iron).",
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/lead"
+    },
+    "F": {
+      "item": "twilightforest:fiery_ingot"
+    },
+    "X": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IXI",
+    " F "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mekanismgenerators:fission_reactor_casing"
+  }
+}

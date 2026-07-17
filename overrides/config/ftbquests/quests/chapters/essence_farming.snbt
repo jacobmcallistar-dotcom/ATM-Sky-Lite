@@ -1,0 +1,244 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "essence_farming"
+	group: "1A2B000000000002"
+	icon: "mysticalagriculture:inferium_essence"
+	id: "3C1F000000000009"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&d&lSide Quest Â· Essence Farming.&r"
+				""
+				"Mystical Agriculture grows &oresources&r. Iron. Diamonds. Nether stars, eventually. You plant a seed, and the thing you used to sieve for just... grows."
+				""
+				"None of this is required to win - it is the &l\"become disgustingly rich\"&r branch. The void has no prosperity ore, so this kit is your seed capital: shards, essence, and your first Inferium Seeds."
+			]
+			icon: "mysticalagriculture:inferium_essence"
+			id: "655E000000000001"
+			rewards: [
+				{ count: 8, id: "655E000000000101", item: "mysticalagriculture:prosperity_shard", type: "item" }
+				{ count: 16, id: "655E000000000102", item: "mysticalagriculture:inferium_essence", type: "item" }
+				{ count: 3, id: "655E000000000103", item: "mysticalagriculture:inferium_seeds", type: "item" }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Grow your loot"
+			tasks: [{ id: "655E000000000201", title: "Plant the first seed", type: "checkmark" }]
+			title: "&dEssence Farming"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["655E000000000001"]
+			description: [
+				"&eInferium&r is tier-1 essence. It grows from Inferium Seeds and drops from every mob you kill."
+				""
+				"Farm a stack - everything in this chapter is built from it."
+			]
+			icon: "mysticalagriculture:inferium_essence"
+			id: "655E000000000002"
+			rewards: [{ count: 3, id: "655E000000000104", item: "mysticalagriculture:inferium_seeds", type: "item" }]
+			subtitle: "&7Tier 1 of 6"
+			tasks: [{ count: 64L, id: "655E000000000202", item: "mysticalagriculture:inferium_essence", type: "item" }]
+			title: "&dInferium"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["655E000000000002"]
+			description: ["An &eInfusion Crystal&r compresses essence up the tiers: 4 of one tier = 1 of the next. It has 1,000 uses; the Master version, none. This little rock is the whole economy."]
+			icon: "mysticalagriculture:infusion_crystal"
+			id: "655E000000000003"
+			rewards: [{ id: "655E000000000105", type: "xp", xp: 30 }]
+			subtitle: "&7The essence compressor"
+			tasks: [{ id: "655E000000000203", item: "mysticalagriculture:infusion_crystal", type: "item" }]
+			title: "&dThe Infusion Crystal"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["655E000000000003"]
+			description: [
+				"The &eInfusion Altar&r and its 8 pedestals craft resource seeds: essence + a material on the pedestals, and the altar fuses them."
+				""
+				"This is where essence stops being currency and starts being &oagriculture&r."
+			]
+			icon: "mysticalagriculture:infusion_altar"
+			id: "655E000000000004"
+			rewards: [{ count: 4, id: "655E000000000106", item: "mysticalagriculture:prosperity_shard", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Seed foundry"
+			tasks: [
+				{ id: "655E000000000204", item: "mysticalagriculture:infusion_altar", type: "item" }
+				{ count: 8L, id: "655E000000000214", item: "mysticalagriculture:infusion_pedestal", type: "item" }
+			]
+			title: "&dThe Infusion Altar"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["655E000000000004"]
+			description: ["Craft &eIron Seeds&r on the altar and plant them. Congratulations: you are now farming a mine. Every resource seed works this way - check JEI for the full catalog."]
+			icon: "minecraft:iron_ingot"
+			id: "655E000000000005"
+			rewards: [{ id: "655E000000000107", item: "mysticalagriculture:diamond_seeds", type: "item" }]
+			shape: "diamond"
+			subtitle: "&7Farm a mine"
+			tasks: [{ id: "655E000000000205", item: "mysticalagriculture:iron_seeds", type: "item" }]
+			title: "&dIron From Dirt"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["655E000000000003"]
+			description: ["Compress up the ladder: &ePrudentium&r, then &eTertium&r. Each tier unlocks stronger seeds and better gear. The grind is real; the payoff is worse mobs fearing you."]
+			icon: "mysticalagriculture:tertium_essence"
+			id: "655E000000000006"
+			rewards: [{ id: "655E000000000108", type: "xp", xp: 40 }]
+			subtitle: "&7Tiers 2 and 3"
+			tasks: [
+				{ count: 16L, id: "655E000000000206", item: "mysticalagriculture:prudentium_essence", type: "item" }
+				{ count: 8L, id: "655E000000000216", item: "mysticalagriculture:tertium_essence", type: "item" }
+			]
+			title: "&dClimbing the Tiers"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["655E000000000006"]
+			description: ["&eImperium&r, then &eSupremium&r - the top of the base-mod ladder. Supremium makes gear that embarrasses netherite."]
+			icon: "mysticalagriculture:supremium_essence"
+			id: "655E000000000007"
+			rewards: [{ id: "655E000000000109", type: "xp_levels", xp_levels: 3 }]
+			subtitle: "&7Tiers 4 and 5"
+			tasks: [
+				{ count: 8L, id: "655E000000000207", item: "mysticalagriculture:imperium_essence", type: "item" }
+				{ count: 4L, id: "655E000000000217", item: "mysticalagriculture:supremium_essence", type: "item" }
+			]
+			title: "&dImperium & Supremium"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["655E000000000004"]
+			description: ["&eGrowth Accelerators&r sit under your farmland and tick the crops above. Stack them in a pillar - each one is another push. Your essence farm becomes a green blur."]
+			icon: "mysticalagriculture:inferium_growth_accelerator"
+			id: "655E000000000008"
+			rewards: [{ id: "655E00000000010A", item: "mysticalagriculture:mystical_fertilizer", type: "item" }]
+			subtitle: "&7Faster. FASTER."
+			tasks: [{ count: 2L, id: "655E000000000208", item: "mysticalagriculture:inferium_growth_accelerator", type: "item" }]
+			title: "&dGrowth Accelerators"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["655E000000000007"]
+			description: [
+				"&5&lThe only resources in this pack you cannot automate are the ones under your rocket.&r"
+				""
+				"Desh, ostrum and calorite are hand-mined on the Moon, Mars and Venus. There is no quarry mod here. Every ingot of the space tier costs you a trip - forever."
+				""
+				"So &eSkyForge&r plants them:"
+				""
+				"&7Desh Seeds&r &8·&r Tier 4 &8·&r Imperium essence + a Desh Ingot"
+				"&7Ostrum Seeds&r &8·&r Tier 5 &8·&r Supremium essence + an Ostrum Ingot"
+				"&7Calorite Seeds&r &8·&r Tier 5 &8·&r Supremium essence + a Calorite Ingot"
+				""
+				"You still have to &ogo&r and bring one ingot of each home - the seed needs a sample. After that the planet grows in your garden and pipes into your ME system like anything else."
+				""
+				"&8Find them in JEI under &7mysticalagriculture:desh_seeds&8 - not skyforge. Mystical Agriculture stamps its own name on every seed it builds, whichever mod supplied the crop."
+			]
+			icon: "mysticalagriculture:desh_seeds"
+			id: "0AC0000000000003"
+			rewards: [
+				{ count: 8, id: "0AC0000000000105", item: "mysticalagriculture:prosperity_shard", type: "item" }
+				{ id: "0AC0000000000106", type: "xp_levels", xp_levels: 5 }
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&7Farm the planets"
+			tasks: [{ id: "0AC0000000000203", item: "mysticalagriculture:desh_seeds", type: "item" }]
+			title: "&5Seeds From Space"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["655E000000000002"]
+			description: [
+				"The &eSoulium Dagger&r harvests &omob souls&r into Soul Jars. Mob-type seeds (zombie, blaze, enderman...) need filled jars on the altar."
+				""
+				"Yes: you can farm &oblaze rods&r as a crop. HNN simulates kills; this one plants them."
+			]
+			icon: "mysticalagriculture:soulium_dagger"
+			id: "655E000000000009"
+			rewards: [{ id: "655E00000000010B", item: "mysticalagriculture:soul_jar", type: "item" }]
+			subtitle: "&7Harvest souls, plant mobs"
+			tasks: [
+				{ id: "655E000000000209", item: "mysticalagriculture:soulium_dagger", type: "item" }
+				{ id: "655E000000000219", item: "mysticalagriculture:soul_jar", type: "item" }
+			]
+			title: "&dSoul Harvest"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["655E000000000007"]
+			description: ["Forge a full piece of &eSupremium&r gear. The armor gives creative-adjacent stats; the tools never quit. This is where 'optionally OP' stops being optional-sounding."]
+			icon: "mysticalagriculture:supremium_sword"
+			id: "655E00000000000A"
+			rewards: [{ id: "655E00000000010C", type: "xp_levels", xp_levels: 5 }]
+			shape: "diamond"
+			subtitle: "&7Better than netherite"
+			tasks: [{ id: "655E00000000020A", item: "mysticalagriculture:supremium_sword", type: "item" }]
+			title: "&dSupremium Steel"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["655E000000000007"]
+			description: [
+				"Mystical Agradditions adds &eInsanium&r - tier 6 - and crux blocks that let you grow the ungrowables: &dNether Stars&r. &dDragon Eggs&r. The materials bosses die for, on a farm."
+				""
+				"Each tier-6 crop needs its crux under the farmland. Check JEI for each crop's demands."
+			]
+			icon: "mysticalagradditions:insanium_essence"
+			id: "655E00000000000B"
+			rewards: [{ count: 2, id: "655E00000000010D", item: "mysticalagradditions:insanium_essence", type: "item" }]
+			shape: "gear"
+			subtitle: "&7Tier 6: grow nether stars"
+			tasks: [{ count: 4L, id: "655E00000000020B", item: "mysticalagradditions:insanium_essence", type: "item" }]
+			title: "&dInsanium"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["655E00000000000B"]
+			description: [
+				"The &eAwakening Altar&r infuses Supremium with the elements into &eAwakened Supremium&r - the final metal of the farming path."
+				""
+				"Craft an Awakened Supremium Ingot and this side quest is conquered. You grew your way to godhood. The bosses never stood a chance."
+			]
+			icon: "mysticalagriculture:awakened_supremium_ingot"
+			id: "655E00000000000C"
+			rewards: [
+				{ id: "655E00000000010E", table_id: 260L, type: "random" }
+				{ id: "655E00000000010F", type: "xp_levels", xp_levels: 10 }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7The farming capstone"
+			tasks: [
+				{ id: "655E00000000020C", item: "mysticalagriculture:awakening_altar", type: "item" }
+				{ id: "655E00000000021C", item: "mysticalagriculture:awakened_supremium_ingot", type: "item" }
+			]
+			title: "&d&lAWAKENED"
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "&dSide Quest Â· Essence Farming"
+}

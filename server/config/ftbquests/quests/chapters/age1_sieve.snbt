@@ -1,0 +1,684 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age1_sieve"
+	group: "1A2B000000000001"
+	icon: "exdeorum:oak_sieve"
+	id: "3C1F000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&2&lAge I Â· The Sieve.&r"
+				""
+				"You have a tree, a block of dirt, and a whole lot of nothing. By the end of this Age you will have turned that nothing into metal, machines, and the first automated forge in the sky."
+				""
+				"Follow the line left to right. The branches below teach mesh upgrades and the two crystals that open every tech mod."
+			]
+			icon: "minecraft:oak_sapling"
+			id: "2101000000000001"
+			rewards: [
+				{
+					count: 3
+					id: "2101000000000101"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2101000000000102"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7From nothing, everything"
+			tasks: [{
+				id: "2101000000000201"
+				title: "Take flight"
+				type: "checkmark"
+			}]
+			title: "&2Age I Â· The Sieve"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000001"]
+			description: [
+				"Your first factory is water and lava. Flowing water hitting a lava source makes cobblestone - break it, and it makes more, forever."
+				""
+				"Everything downstream begins as cobble. Stock up."
+			]
+			icon: "minecraft:cobblestone"
+			id: "2101000000000002"
+			rewards: [{
+				id: "2101000000000103"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Water + lava = infinite stone"
+			tasks: [{
+				count: 64L
+				id: "2101000000000202"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "&aThe Cobble Engine"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000002"]
+			description: [
+				"Craft a &eWooden Hammer&r and smash your cobble down the chain:"
+				""
+				"&7Cobblestone &8â†’&r Gravel &8â†’&r Sand &8â†’&r Dust&r"
+				""
+				"Each step is more sievable material. The hammer wears out - stone, iron and diamond hammers last far longer and you will want them soon."
+			]
+			icon: {
+				Count: 1
+				id: "exdeorum:wooden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2101000000000003"
+			rewards: [{
+				count: 16
+				id: "2101000000000104"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			subtitle: "&7Crush cobble into gravel, sand, dust"
+			tasks: [{
+				id: "2101000000000203"
+				item: {
+					Count: 1
+					id: "exdeorum:wooden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&aHammer Time"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000003"]
+			description: [
+				"Craft an &eOak Sieve&r and a &eString Mesh&r, drop the mesh into the sieve, and sift your gravel, sand and dust."
+				""
+				"This is your mining replacement. Right-click to sift; better meshes shake loose rarer drops."
+			]
+			icon: "exdeorum:string_mesh"
+			id: "2101000000000004"
+			rewards: [{
+				count: 16
+				id: "2101000000000105"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Your mining replacement"
+			tasks: [
+				{
+					id: "2101000000000204"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					id: "2101000000000205"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+			]
+			title: "&aThe Sieve & the Mesh"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"Sift gravel and the void starts paying out. Ore chunks tumble free - iron, copper, gold, tin, lead and more."
+				""
+				"Collect your first chunks. Smelt them for ingots, or hold them for the machines that will double their yield later."
+			]
+			icon: "exdeorum:iron_ore_chunk"
+			id: "2101000000000005"
+			rewards: [{
+				count: 8
+				id: "2101000000000106"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			subtitle: "&7Sift gravel for metal"
+			tasks: [
+				{
+					count: 6L
+					id: "2101000000000206"
+					item: "exdeorum:iron_ore_chunk"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2101000000000207"
+					item: "exdeorum:copper_ore_chunk"
+					type: "item"
+				}
+			]
+			title: "&aOre From Gravel"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000005"]
+			description: ["Smelt your iron ore chunks into ingots. The first real metal in the sky - it goes into hammers, meshes, and your first machines."]
+			icon: "minecraft:iron_ingot"
+			id: "2101000000000006"
+			rewards: [{
+				id: "2101000000000107"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "&7Iron from stone soup"
+			tasks: [{
+				count: 8L
+				id: "2101000000000208"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "&aFirst Iron"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2101000000000006"]
+			description: [
+				"Breaking cobble by hand got you this far. Now stop."
+				""
+				"A &eCobble Gen Tier1&r is a block that just... makes cobblestone, into its own buffer. Hopper it out, pipe it away, walk off. It never stops."
+				""
+				"&7Recipe: 6 logs around a &eGlass&r, with a &eWater Bucket&r and a &eLava Bucket&r either side.&r"
+				""
+				"&cIt eats both buckets&r - but you can bucket your lava source back up out of your cobble generator first. That is why this waits until you have iron."
+				""
+				"&eFive tiers&r, each faster than the last: &7logs &8→&r cobble &8→&r iron &8→&r gold &8→&r diamond&r. Upgrade when the buffer can't keep up."
+				""
+				"&8Feeds straight into hammers, sieves, and eventually your ME system. Cobble is the bottom of every chain in this pack - automate it early."
+			]
+			icon: "cobblefordays:tier_1"
+			id: "0AC0000000000002"
+			rewards: [
+				{
+					count: 8
+					id: "0AC0000000000103"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "0AC0000000000104"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Cobble while you sleep"
+			tasks: [{
+				id: "0AC0000000000202"
+				item: "cobblefordays:tier_1"
+				type: "item"
+			}]
+			title: "&aCobble On Tap"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2101000000000006"]
+			description: ["A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."]
+			icon: "minecraft:blast_furnace"
+			id: "210100000000000C"
+			rewards: [{
+				count: 8
+				id: "2101000000000108"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "&7Hotter than hot"
+			tasks: [{
+				id: "2101000000000209"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "&aHotter Than Hot"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2101000000000002"]
+			description: ["A Crook strips leaves for saplings and silk worms without destroying them. Silk worms breed into string - and string makes your first mesh. It also speeds sapling farming for endless wood."]
+			icon: {
+				Count: 1
+				id: "exdeorum:crook"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "210100000000000A"
+			rewards: [{
+				count: 4
+				id: "2101000000000109"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			subtitle: "&7Leaves, saplings, silk worms"
+			tasks: [{
+				id: "210100000000020A"
+				item: {
+					Count: 1
+					id: "exdeorum:crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&aThe Crook"
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000002"]
+			description: [
+				"An &eEx Deorum Barrel&r is a workhorse. Fill it with water or lava, compost plant matter into dirt, or transform fluids."
+				""
+				"A barrel of water beside your cobble generator means you never haul buckets again."
+			]
+			icon: "exdeorum:oak_barrel"
+			id: "210100000000000D"
+			rewards: [{
+				id: "210100000000010A"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Compost, water and lava"
+			tasks: [{
+				id: "210100000000020D"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			title: "&aThe Barrel"
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"Your string mesh catches the common drops. A &eFlint Mesh&r catches more."
+				""
+				"Sieve gravel for flint (or craft flint from gravel), then craft the Flint Mesh. This is upgrade one of five: &7string &8â†’ &7flint &8â†’ &7iron &8â†’ &7diamond &8â†’ &7netherite&r."
+			]
+			icon: "exdeorum:flint_mesh"
+			id: "2101000000000007"
+			rewards: [{
+				id: "210100000000010B"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Mesh upgrade 1 of 5"
+			tasks: [{
+				id: "2101000000000221"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
+			title: "&aSharper Sieving: Flint"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000007"]
+			description: ["The &eIron Mesh&r unlocks the metal chunks in real quantity - osmium, tin and lead now appear alongside iron and gold. Craft it once you have iron to spare."]
+			icon: "exdeorum:iron_mesh"
+			id: "2101000000000008"
+			rewards: [{
+				id: "210100000000010C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Mesh upgrade 2 of 5"
+			tasks: [{
+				id: "2101000000000222"
+				item: "exdeorum:iron_mesh"
+				type: "item"
+			}]
+			title: "&aIron Mesh"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000008"]
+			description: ["Sieve enough gravel and diamonds fall out. Turn them into a &eDiamond Mesh&r - the tier that pulls the pack's rarest sieve drops and lasts almost forever."]
+			icon: "exdeorum:diamond_mesh"
+			id: "2101000000000009"
+			rewards: [{
+				count: 2
+				id: "210100000000010D"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "&7Mesh upgrade 3 of 5"
+			tasks: [{
+				id: "2101000000000223"
+				item: "exdeorum:diamond_mesh"
+				type: "item"
+			}]
+			title: "&aDiamond Mesh"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000008"]
+			description: [
+				"&bApplied Energistics starts here.&r Sift &esand&r (not gravel) with an iron mesh or better and &eCertus Quartz&r crystals drop."
+				""
+				"No meteors fall in the void, so this is your organic path into AE2. Bank a few crystals - Age II turns them into a digital brain."
+			]
+			icon: "ae2:certus_quartz_crystal"
+			id: "210100000000000E"
+			rewards: [{
+				count: 4
+				id: "210100000000010E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&7Sift sand, seed AE2"
+			tasks: [{
+				count: 6L
+				id: "210100000000020E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "&bCertus From Sand"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2101000000000008"]
+			description: [
+				"&9Mekanism starts here.&r With an iron mesh, gravel also drops &eOsmium Ore Chunks&r. Smelt them into Osmium Ingots - the metal every Mekanism machine is built from."
+				""
+				"The keystone bridge in Age II is faster, but you can bootstrap Mekanism from the sieve alone."
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "2101000000000012"
+			rewards: [{
+				count: 4
+				id: "210100000000010F"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&7Sift gravel, seed Mekanism"
+			tasks: [{
+				count: 4L
+				id: "2101000000000212"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			title: "&9Osmium From Gravel"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2101000000000005"]
+			description: [
+				"&eSky Dust&r is the spine of this pack. Craft it from &7Flint + Bone Meal&r - flint from sieving gravel, bone meal from composting your leaves and saplings."
+				""
+				"You will burn through a lot of it. Get comfortable making it."
+			]
+			icon: "skyforge:sky_dust"
+			id: "210100000000000B"
+			rewards: [{
+				count: 8
+				id: "2101000000000110"
+				item: "skyforge:sky_dust"
+				type: "item"
+			}]
+			subtitle: "&7The backbone material"
+			tasks: [{
+				count: 8L
+				id: "210100000000020B"
+				item: "skyforge:sky_dust"
+				type: "item"
+			}]
+			title: "&aDust of the Heavens"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"210100000000000B"
+				"210100000000000C"
+			]
+			description: [
+				"Blast-smelt Sky Dust into &eSky Steel Ingots&r. Slow by hand - that is exactly what the Sky Assembler is about to fix."
+				""
+				"This first batch is your bootstrap. Push through it."
+			]
+			icon: "skyforge:sky_steel_ingot"
+			id: "210100000000000F"
+			rewards: [{
+				count: 4
+				id: "2101000000000111"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Blast dust into steel"
+			tasks: [{
+				count: 8L
+				id: "210100000000020F"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
+			title: "&aSky Steel"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["210100000000000F"]
+			description: [
+				"The &eSky Assembler&r turns Sky Dust into Sky Steel automatically, running on Forge Energy from any mod's generators and cables."
+				""
+				"It has item slots too, so hoppers, Mekanism logistics or AE2 can feed it. Build it and never hand-smelt steel again."
+			]
+			icon: "skyforge:sky_assembler"
+			id: "2101000000000010"
+			rewards: [{
+				count: 8
+				id: "2101000000000112"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Automate the forge"
+			tasks: [{
+				id: "2101000000000210"
+				item: "skyforge:sky_assembler"
+				type: "item"
+			}]
+			title: "&aThe Sky Assembler"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2101000000000010"]
+			description: [
+				"Power the Assembler, feed it dust, and let it run. When you have a real stockpile of Sky Steel, Age I is complete."
+				""
+				"&2You turned a void into a forge. Age II opens: shafts, cogwheels, and water-driven industry - the Kinetic Age.&r"
+			]
+			icon: "skyforge:sky_steel_ingot"
+			id: "2101000000000011"
+			rewards: [
+				{
+					count: 4
+					id: "2101000000000113"
+					item: "skyforge:industrial_keystone"
+					type: "item"
+				}
+				{
+					id: "2101000000000114"
+					type: "random"
+				}
+				{
+					id: "2101000000000115"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Age I capstone"
+			tasks: [{
+				count: 16L
+				id: "2101000000000211"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
+			title: "&2Ingots on Tap"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["210100000000000D"]
+			description: [
+				"A &eCrucible&r melts what a barrel can't. The wooden one composts leaves into dirt - but the &ePorcelain Crucible&r (fired from clay and bone meal) melts cobblestone into &clava&r."
+				""
+				"An infinite lava faucet in a world with none. Your smelting, your Thermo Generators, and your Nether portal all start here."
+			]
+			icon: "exdeorum:porcelain_crucible"
+			id: "2101000000000013"
+			rewards: [{
+				id: "2101000000000116"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Cobble in, lava out"
+			tasks: [
+				{
+					id: "2101000000000224"
+					item: "exdeorum:oak_crucible"
+					type: "item"
+				}
+				{
+					id: "2101000000000225"
+					item: "exdeorum:porcelain_crucible"
+					type: "item"
+				}
+			]
+			title: "&aThe Crucible"
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["210100000000000D"]
+			description: ["A &eWatering Can&r sprinkles crops, saplings and mushrooms to grow faster while you hold right-click. Tedious? Yes. Faster than waiting? Also yes. Cyclic's Sprinkler automates this later."]
+			icon: "exdeorum:wooden_watering_can"
+			id: "2101000000000014"
+			rewards: [{
+				count: 8
+				id: "2101000000000117"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "&7Grow it NOW"
+			tasks: [{
+				id: "2101000000000226"
+				item: "exdeorum:wooden_watering_can"
+				type: "item"
+			}]
+			title: "&aThe Watering Can"
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["210100000000000A"]
+			description: [
+				"&eSilk Worms&r drop from crook'd leaves. Throw one at a tree's leaves and it infests them - infested leaves crumble into &estring&r."
+				""
+				"String means meshes, bows, and beds without ever seeing a spider."
+			]
+			icon: "exdeorum:silk_worm"
+			id: "2101000000000015"
+			rewards: [{
+				count: 8
+				id: "2101000000000118"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			subtitle: "&7The tree-to-string pipeline"
+			tasks: [{
+				id: "2101000000000227"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
+			title: "&aSilk Worms"
+			x: -14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2101000000000003"]
+			description: [
+				"Nine cobble = one &eCompressed Cobblestone&r. A &eCompressed Hammer&r smashes the whole block at once - nine gravel per swing."
+				""
+				"When your sieve yard scales up, compression is how your arms keep up."
+			]
+			icon: {
+				Count: 1
+				id: "exdeorum:compressed_wooden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2101000000000016"
+			rewards: [{
+				count: 9
+				id: "2101000000000119"
+				item: "exdeorum:compressed_gravel"
+				type: "item"
+			}]
+			subtitle: "&7Nine at a time"
+			tasks: [
+				{
+					count: 9L
+					id: "2101000000000228"
+					item: "exdeorum:compressed_cobblestone"
+					type: "item"
+				}
+				{
+					id: "2101000000000229"
+					item: {
+						Count: 1
+						id: "exdeorum:compressed_wooden_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&aCompressed Progress"
+			x: -8.0d
+			y: -1.5d
+		}
+	]
+	title: "&2Age I Â· The Sieve"
+}

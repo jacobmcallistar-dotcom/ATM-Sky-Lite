@@ -1,0 +1,25 @@
+{
+  "__comment": "GATE OVERRIDE: the digital age requires the electric age - the Inscriber's copper frame becomes a Mekanism Advanced Control Circuit. AE2 is mid-game now.",
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "b": {
+      "item": "minecraft:sticky_piston"
+    },
+    "c": {
+      "item": "mekanism:advanced_control_circuit"
+    }
+  },
+  "pattern": [
+    "aba",
+    "c a",
+    "aba"
+  ],
+  "result": {
+    "item": "ae2:inscriber"
+  },
+  "show_notification": true
+}

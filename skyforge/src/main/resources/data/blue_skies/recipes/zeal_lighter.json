@@ -1,0 +1,16 @@
+{
+  "__comment": "GATE OVERRIDE + skyblock fix: the original recipe needs charoite + moonstone shard, both unobtainable outside Blue Skies (chicken-and-egg in a void world). Now Venus calorite + sieved amethyst.",
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "ad_astra:calorite_ingot"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "result": {
+    "item": "blue_skies:zeal_lighter"
+  }
+}

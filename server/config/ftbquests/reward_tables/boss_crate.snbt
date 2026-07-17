@@ -1,0 +1,22 @@
+{
+	id: "0000000000000103"
+	loot_crate: {
+		color: -65536
+		drops: 1
+		glow: true
+		item: "minecraft:ender_chest"
+		string_id: "boss_crate"
+	}
+	loot_size: 3
+	order_index: 2
+	rewards: [
+		{ count: 3, item: "minecraft:diamond_block", weight: 6 }
+		{ count: 4, item: "minecraft:netherite_scrap", weight: 4 }
+		{ count: 2, item: "apotheosis:gem_dust", weight: 8 }
+		{ count: 1, item: "minecraft:enchanted_golden_apple", weight: 3 }
+		{ count: 16, item: "minecraft:experience_bottle", weight: 8 }
+		{ count: 6, item: "minecraft:gold_block", weight: 5 }
+		{ count: 1, item: "minecraft:totem_of_undying", weight: 2 }
+	]
+	title: "Boss Crate"
+}

@@ -1,0 +1,13 @@
+{
+  "__comment": "CONDITIONAL cross-mod recipe. Only loads when Mekanism is installed. Turns a keystone + sky steel into Mekanism Steel Ingots so SkyForge feeds directly into Mekanism progression. Swap the result item id for any Mekanism/AE2 item you want to gate.",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "skyforge:industrial_keystone" },
+    { "item": "skyforge:sky_steel_ingot" },
+    { "item": "skyforge:sky_steel_ingot" }
+  ],
+  "result": { "item": "mekanism:ingot_steel", "count": 4 }
+}

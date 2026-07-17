@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "skyforge:sky_dust" },
+  "result": "skyforge:sky_steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 400
+}
