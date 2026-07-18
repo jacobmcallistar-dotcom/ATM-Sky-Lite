@@ -33,6 +33,12 @@ launcher resolve them from `manifest.json`.
 > crops can't be cheesed. (v1.1.0 added Extended Bone Meal + Collective — sneak + a bone meal *item* to
 > instant-grow.) **Every update requires everyone to re-download the matching client zip and replace their
 > `mods` folder, or they can't join.**
+>
+> **Server-side extras (no client download needed):** the server also runs **Server-side Vein Miner
+> & Tunneler** (`svmm`) — hold sneak + break an ore or log to vein-mine it (`/svmm enable` per player;
+> toggle with `/svmm`). And island chests come pre-stocked with a **starter kit** (dirt, cobblestone,
+> a crook, a string mesh) to bootstrap the Ex Deorum sieve/compost economy — there is **no cobble
+> generator**; cobble comes from sieving dirt into pebbles, gravel from hammering cobble.
 4. Launch with the Forge 1.20.1 profile and connect to the server address.
 
 ## Host the server
