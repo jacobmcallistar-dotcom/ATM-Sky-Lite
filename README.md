@@ -36,20 +36,22 @@ launcher resolve them from `manifest.json`.
 >
 > **Server-side extras (no client download needed):** the server also runs **Server-side Vein Miner
 > & Tunneler** (`svmm`) — hold sneak + break an ore or log to vein-mine it (`/svmm enable` per player;
-> toggle with `/svmm`). And island chests come pre-stocked with a **starter kit** — dirt×64,
-> cobblestone×16, a crook, a string mesh, an **Oak Sieve**, and a **Wooden Hammer** — so the no-lava
-> Ex Deorum loop works from the first minute with zero crafting:
+> toggle with `/svmm`). There is **no cobble generator, and the starting chest is intentionally
+> empty** — every island starts with nothing but its tree, by design. Everything is craftable from
+> wood alone:
 >
-> 1. **Place the Oak Sieve** from the chest.
-> 2. **Right-click the sieve holding the string mesh** to load the mesh into it.
-> 3. **Right-click the sieve holding dirt** to sift — this yields **Stone Pebbles** (consumes 1 dirt,
->    uses 1 mesh durability; the mesh eventually breaks and needs a new one).
-> 4. **Craft 4 Stone Pebbles (2×2) → 1 Cobblestone.**
-> 5. **Hold the Wooden Hammer and hit cobblestone** → Gravel (then Gravel → Sand → Dust, same way).
-> 6. Compost leaves/saplings in a barrel for more dirt; sieve gravel/sand with better meshes
->    (Flint → Iron → Diamond → Netherite) for flint, ores, and Certus Quartz.
->
-> There is **no cobble generator** — this sieve loop is the intended, fully renewable path.
+> 1. **Punch the tree** for logs → craft planks, sticks, slabs.
+> 2. **Craft a Crook** (2 sticks) and use it on the tree's **leaves** — repeatedly, it strips them for
+>    saplings without destroying the leaf, with a small chance of a **Silk Worm**, and a much better
+>    chance of **String** once a leaf becomes "infested." String → **String Mesh** (9 string, 3×3).
+> 3. **Craft an Oak Sieve** (planks + slab + stick) and an **Oak Barrel** (planks + slab). Compost
+>    leaves/saplings in the barrel for **Dirt** (fully renewable — hover the barrel with The One Probe
+>    to see fill progress).
+> 4. **Load the mesh into the sieve** (right-click with mesh), then **sift dirt** (right-click with
+>    dirt) for **Stone Pebbles** → craft 4 into **Cobblestone**.
+> 5. **Craft a Wooden Hammer** (planks + stick) and hit cobblestone for **Gravel** (then Sand, Dust).
+> 6. Upgrade meshes (String → Flint → Iron → Diamond → Netherite) by sieving gravel/sand for rarer
+>    drops as you go.
 4. Launch with the Forge 1.20.1 profile and connect to the server address:
 
    ```
