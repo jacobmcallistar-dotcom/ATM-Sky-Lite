@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (85 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (86 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,7 +26,7 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 85 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 86 mods — remove any extras or you'll be kicked on join.
 
 > **Latest: v1.2.0** — SkyForge 0.14.0 adds **crouch-to-grow**: hold sneak near crops and they grow
 > automatically, no bone meal item needed. Mystical Agriculture crops (all tiers) are excluded, so essence
@@ -40,8 +40,13 @@ launcher resolve them from `manifest.json`.
 > consistency, but a client missing it can still join fine.
 >
 > **QoL:** **Mouse Tweaks** (shift-drag/right-click-drag item sorting), **Controlling** (keybind
-> conflict UI, client-only — server doesn't require it), and **AppleSkin** (hunger/exhaustion
-> display). None of the three block a mismatched client from connecting.
+> conflict UI, client-only — server doesn't require it, needs **Searchables** as a library dep),
+> and **AppleSkin** (hunger/exhaustion display). None of the three block a mismatched client from
+> connecting.
+>
+> **FTB Ultimine was attempted and removed** — `ftb-ultimine-forge-2001.1.8.jar` crashes on this
+> Forge 47.3.0 build (`NoSuchMethodException` on its own constructor, a binary incompatibility,
+> not a config issue). Vein-mining is covered by `svmm` instead (see above).
 >
 > There is **no cobble generator, and the starting chest is intentionally
 > empty** — every island starts with nothing but its tree, by design. Everything is craftable from
