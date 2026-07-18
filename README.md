@@ -36,9 +36,20 @@ launcher resolve them from `manifest.json`.
 >
 > **Server-side extras (no client download needed):** the server also runs **Server-side Vein Miner
 > & Tunneler** (`svmm`) — hold sneak + break an ore or log to vein-mine it (`/svmm enable` per player;
-> toggle with `/svmm`). And island chests come pre-stocked with a **starter kit** (dirt, cobblestone,
-> a crook, a string mesh) to bootstrap the Ex Deorum sieve/compost economy — there is **no cobble
-> generator**; cobble comes from sieving dirt into pebbles, gravel from hammering cobble.
+> toggle with `/svmm`). And island chests come pre-stocked with a **starter kit** — dirt×64,
+> cobblestone×16, a crook, a string mesh, an **Oak Sieve**, and a **Wooden Hammer** — so the no-lava
+> Ex Deorum loop works from the first minute with zero crafting:
+>
+> 1. **Place the Oak Sieve** from the chest.
+> 2. **Right-click the sieve holding the string mesh** to load the mesh into it.
+> 3. **Right-click the sieve holding dirt** to sift — this yields **Stone Pebbles** (consumes 1 dirt,
+>    uses 1 mesh durability; the mesh eventually breaks and needs a new one).
+> 4. **Craft 4 Stone Pebbles (2×2) → 1 Cobblestone.**
+> 5. **Hold the Wooden Hammer and hit cobblestone** → Gravel (then Gravel → Sand → Dust, same way).
+> 6. Compost leaves/saplings in a barrel for more dirt; sieve gravel/sand with better meshes
+>    (Flint → Iron → Diamond → Netherite) for flint, ores, and Certus Quartz.
+>
+> There is **no cobble generator** — this sieve loop is the intended, fully renewable path.
 4. Launch with the Forge 1.20.1 profile and connect to the server address:
 
    ```
