@@ -93,6 +93,11 @@ Adds a Forge-Energy machine + a resource-progression chain feeding Mekanism/AE2,
 optional in-game `@claude` chat bridge. The Anthropic API key is **never** stored in the jar
 or committed — it's read at runtime from `config/skyforge-claude.json` (`apiKey` is empty here).
 
+**Textures (v0.15.0+):** SkyForge's items/blocks now use original art instead of reused vanilla
+textures. Every source is either generated for this project or explicitly CC0 (public domain) —
+see [`skyforge/TEXTURE_CREDITS.md`](skyforge/TEXTURE_CREDITS.md) for exact sources. None are
+pulled from any mod bundled in this pack.
+
 ## Licensing note
 
 This pack bundles third-party mods. They remain under their respective authors' licenses;

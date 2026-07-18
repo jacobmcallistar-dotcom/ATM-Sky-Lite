@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "minecraft:block/iron_block",
-    "top": "minecraft:block/blast_furnace_top",
-    "side": "minecraft:block/blast_furnace_front"
+    "bottom": "skyforge:block/sky_assembler_bottom",
+    "top": "skyforge:block/sky_assembler_top",
+    "side": "skyforge:block/sky_assembler_side"
   }
 }
