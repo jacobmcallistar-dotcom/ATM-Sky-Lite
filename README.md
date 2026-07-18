@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (87 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (92 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,8 +26,18 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 87 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 92 mods — remove any extras or you'll be kicked on join.
 
+> **Latest: v1.8.0** — Added **Jade** (hover any block/entity for a tooltip: contents, progress,
+> owner — replaces the old "just install TheOneProbe and guess" experience) plus **Jade Addons**
+> for extra tooltip providers (AE2, Mekanism, Waystones, Mystical Agriculture, StorageDrawers,
+> Ex Deorum, Twilight Forest, and more — all picked up automatically, confirmed via a live boot
+> log). Also added **Inventory Profiles Next** (one-click full-inventory sort, auto-refill broken
+> tools/stacks, auto-dump into matching containers) with its two hard dependencies, **libIPN** and
+> **Kotlin for Forge**. JEI, Curios, AppleSkin, Clumps, Waystones, Embeddium, FerriteCore,
+> ModernFix, EntityCulling, Controlling, Xaero's Minimap/Worldmap, and Immersive Aircraft were
+> already in the pack — no changes needed there.
+>
 > **Latest: v1.2.0** — SkyForge 0.14.0 adds **crouch-to-grow**: hold sneak near crops and they grow
 > automatically, no bone meal item needed. Mystical Agriculture crops (all tiers) are excluded, so essence
 > crops can't be cheesed. (v1.1.0 added Extended Bone Meal + Collective — sneak + a bone meal *item* to
