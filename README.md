@@ -28,9 +28,11 @@ launcher resolve them from `manifest.json`.
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 81 mods — remove any extras or you'll be kicked on join.
 
-> **Updating from v1.0.0?** v1.1.0 adds two mods (**Extended Bone Meal** + its **Collective** library —
-> crouch/sneak + bone meal to instantly grow crops). Everyone must re-download the v1.1.0 client zip and
-> replace their `mods` folder, or they can't join. (Mystical Agriculture crops still ignore bone meal by design.)
+> **Latest: v1.2.0** — SkyForge 0.14.0 adds **crouch-to-grow**: hold sneak near crops and they grow
+> automatically, no bone meal item needed. Mystical Agriculture crops (all tiers) are excluded, so essence
+> crops can't be cheesed. (v1.1.0 added Extended Bone Meal + Collective — sneak + a bone meal *item* to
+> instant-grow.) **Every update requires everyone to re-download the matching client zip and replace their
+> `mods` folder, or they can't join.**
 4. Launch with the Forge 1.20.1 profile and connect to the server address.
 
 ## Host the server
