@@ -39,7 +39,13 @@ launcher resolve them from `manifest.json`.
 > toggle with `/svmm`). And island chests come pre-stocked with a **starter kit** (dirt, cobblestone,
 > a crook, a string mesh) to bootstrap the Ex Deorum sieve/compost economy — there is **no cobble
 > generator**; cobble comes from sieving dirt into pebbles, gravel from hammering cobble.
-4. Launch with the Forge 1.20.1 profile and connect to the server address.
+4. Launch with the Forge 1.20.1 profile and connect to the server address:
+
+   ```
+   ttsskyboys.duckdns.org:25565
+   ```
+
+   The server is open to the internet with **no whitelist** — anyone with this address can join.
 
 ## Host the server
 
