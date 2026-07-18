@@ -10,7 +10,8 @@ build/
 .gradle/
 
 # World saves and server runtime
-server/world/
+server/world/*
+!server/world/datapacks/
 server/world-backup*/
 server/world-backup*.zip
 server/logs/
