@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (81 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (82 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,7 +26,7 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 81 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 82 mods — remove any extras or you'll be kicked on join.
 
 > **Latest: v1.2.0** — SkyForge 0.14.0 adds **crouch-to-grow**: hold sneak near crops and they grow
 > automatically, no bone meal item needed. Mystical Agriculture crops (all tiers) are excluded, so essence
@@ -34,9 +34,12 @@ launcher resolve them from `manifest.json`.
 > instant-grow.) **Every update requires everyone to re-download the matching client zip and replace their
 > `mods` folder, or they can't join.**
 >
-> **Server-side extras (no client download needed):** the server also runs **Server-side Vein Miner
-> & Tunneler** (`svmm`) — hold sneak + break an ore or log to vein-mine it (`/svmm enable` per player;
-> toggle with `/svmm`). There is **no cobble generator, and the starting chest is intentionally
+> **Vein mining:** **Server-side Vein Miner & Tunneler** (`svmm`) — hold sneak + break an ore or log to
+> vein-mine it (`/svmm enable` per player; toggle with `/svmm`). It declares itself server-only
+> (`side="SERVER"` in its own manifest), so it's harmless either way — included in the client zip for
+> consistency, but a client missing it can still join fine.
+>
+> There is **no cobble generator, and the starting chest is intentionally
 > empty** — every island starts with nothing but its tree, by design. Everything is craftable from
 > wood alone:
 >
