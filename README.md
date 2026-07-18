@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (79 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (81 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,7 +26,11 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 79 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 81 mods — remove any extras or you'll be kicked on join.
+
+> **Updating from v1.0.0?** v1.1.0 adds two mods (**Extended Bone Meal** + its **Collective** library —
+> crouch/sneak + bone meal to instantly grow crops). Everyone must re-download the v1.1.0 client zip and
+> replace their `mods` folder, or they can't join. (Mystical Agriculture crops still ignore bone meal by design.)
 4. Launch with the Forge 1.20.1 profile and connect to the server address.
 
 ## Host the server
