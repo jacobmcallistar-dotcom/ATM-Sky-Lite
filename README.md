@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (107 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (108 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,8 +26,12 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 107 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 108 mods — remove any extras or you'll be kicked on join.
 
+> **Latest: v1.10.0** — Added **Construction Wand** (the actively-maintained successor to the
+> classic "Builder's Wand" — place a block, then extend a whole surface of matching blocks with
+> one click).
+>
 > **Latest: v1.9.0** — 15 addon mods added for existing tech/farming (Mekanism Additions, AE2
 > Wireless Terminals, Extended AE + Glodium, Create: Steam 'n' Rails, Create Crafts & Additions,
 > Tom's Performant Storage, Extra Hostile Neural Networks, Productive Trees, Advanced Peripherals,
