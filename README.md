@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (92 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (107 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,8 +26,16 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 92 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 107 mods — remove any extras or you'll be kicked on join.
 
+> **Latest: v1.9.0** — 15 addon mods added for existing tech/farming (Mekanism Additions, AE2
+> Wireless Terminals, Extended AE + Glodium, Create: Steam 'n' Rails, Create Crafts & Additions,
+> Tom's Performant Storage, Extra Hostile Neural Networks, Productive Trees, Advanced Peripherals,
+> Quests Additions, Ex Machinis: Divitiae Deorum, Elytra Slot + Caelus API, Just Potion Rings).
+> All are announced in-game under a new **New Arrivals** quest chapter. **Mekanism Curios was
+> tested and dropped** — every 1.20.1 build (including its first release) requires Forge 47.4.0+,
+> confirmed via live boot crash, not just the changelog; this pack stays on 47.3.0.
+>
 > **Latest: v1.8.0** — Added **Jade** (hover any block/entity for a tooltip: contents, progress,
 > owner — replaces the old "just install TheOneProbe and guess" experience) plus **Jade Addons**
 > for extra tooltip providers (AE2, Mekanism, Waystones, Mystical Agriculture, StorageDrawers,

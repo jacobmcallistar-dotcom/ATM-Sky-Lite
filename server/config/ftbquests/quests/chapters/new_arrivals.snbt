@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "new_arrivals"
+	group: "1A2B000000000001"
+	icon: "minecraft:nether_star"
+	id: "9AD0000000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6&lFresh Gear.&r"
+				""
+				"A batch of addon mods just landed for the tools you already have. Nothing here is required - it's all optional QoL and extra content bolted onto your existing progression."
+				""
+				"Claim each panel below to see what's new."
+			]
+			icon: "minecraft:nether_star"
+			id: "9AD1000000000001"
+			rewards: [{
+				id: "9AD1000000000101"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7What's new"
+			tasks: [{
+				id: "9AD1000000000201"
+				title: "Begin"
+				type: "checkmark"
+			}]
+			title: "&6New Arrivals"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"The official 4th Mekanism module. Adds extra tools, armor tiers and misc blocks to your existing Mekanism setup."
+			]
+			icon: "mekanism:steel_casing"
+			id: "9AD1000000000002"
+			rewards: [{ id: "9AD1000000000102", type: "xp", xp: 5 }]
+			subtitle: "&7Mekanism"
+			tasks: [{ id: "9AD1000000000202", title: "Read", type: "checkmark" }]
+			title: "&bMekanism Additions"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Wireless AE2 crafting, storage and pattern access terminals. Check your recipes without walking back to the network."
+			]
+			icon: "minecraft:ender_pearl"
+			id: "9AD1000000000003"
+			rewards: [{ id: "9AD1000000000103", type: "xp", xp: 5 }]
+			subtitle: "&7Applied Energistics 2"
+			tasks: [{ id: "9AD1000000000203", title: "Read", type: "checkmark" }]
+			title: "&bAE2 Wireless Terminals"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Bigger Pattern Providers (72 slots), pattern multiplication in encoding terminals, and a wireless expanded encoding terminal. Big AE2 automation QoL."
+			]
+			icon: "minecraft:crafting_table"
+			id: "9AD1000000000004"
+			rewards: [{ id: "9AD1000000000104", type: "xp", xp: 5 }]
+			subtitle: "&7Applied Energistics 2"
+			tasks: [{ id: "9AD1000000000204", title: "Read", type: "checkmark" }]
+			title: "&bExtended AE"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Trains for Create: rails, signaling, boilers and a conductor's cap. A whole new way to move goods around your sky islands."
+			]
+			icon: "minecraft:rail"
+			id: "9AD1000000000005"
+			rewards: [{ id: "9AD1000000000105", type: "xp", xp: 5 }]
+			subtitle: "&7Create"
+			tasks: [{ id: "9AD1000000000205", title: "Read", type: "checkmark" }]
+			title: "&eCreate: Steam 'n' Rails"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Bridges Forge Energy and Create's kinetic energy - an Electric Motor and Alternator let Mekanism power turn your cogs, and your cogs charge your machines."
+			]
+			icon: "minecraft:redstone_torch"
+			id: "9AD1000000000006"
+			rewards: [{ id: "9AD1000000000106", type: "xp", xp: 5 }]
+			subtitle: "&7Create"
+			tasks: [{ id: "9AD1000000000206", title: "Read", type: "checkmark" }]
+			title: "&eCreate Crafts & Additions"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"A pure performance patch for Tom's Storage - same features, much less lag on big storage networks."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "9AD1000000000007"
+			rewards: [{ id: "9AD1000000000107", type: "xp", xp: 5 }]
+			subtitle: "&7Tom's Storage"
+			tasks: [{ id: "9AD1000000000207", title: "Read", type: "checkmark" }]
+			title: "&aTom's Performant Storage"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Combine 4 Hostile Neural Networks data models into 1 for better simulation yield. Less clutter, more chamber output."
+			]
+			icon: "minecraft:enchanted_book"
+			id: "9AD1000000000008"
+			rewards: [{ id: "9AD1000000000108", type: "xp", xp: 5 }]
+			subtitle: "&7Hostile Neural Networks"
+			tasks: [{ id: "9AD1000000000208", title: "Read", type: "checkmark" }]
+			title: "&dExtra Hostile Neural Networks"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Productive Bees' sister mod - breed and cross-pollinate trees for wood, fruit and resin. Everything still starts with a tree."
+			]
+			icon: "minecraft:oak_sapling"
+			id: "9AD1000000000009"
+			rewards: [{ id: "9AD1000000000109", type: "xp", xp: 5 }]
+			subtitle: "&7Productive Bees"
+			tasks: [{ id: "9AD1000000000209", title: "Read", type: "checkmark" }]
+			title: "&2Productive Trees"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"New peripherals and turtle upgrades for CC: Tweaked - chat boxes, sensors, a geo scanner and more to script against."
+			]
+			icon: "minecraft:comparator"
+			id: "9AD100000000000A"
+			rewards: [{ id: "9AD100000000010A", type: "xp", xp: 5 }]
+			subtitle: "&7CC: Tweaked"
+			tasks: [{ id: "9AD10000000002A", title: "Read", type: "checkmark" }]
+			title: "&cAdvanced Peripherals"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Adds Place, Break, Repeatable and Create-Structure task types to FTB Quests - more ways future quests can check your progress."
+			]
+			icon: "ftbquests:book"
+			id: "9AD100000000000B"
+			rewards: [{ id: "9AD100000000010B", type: "xp", xp: 5 }]
+			subtitle: "&7FTB Quests"
+			tasks: [{ id: "9AD10000000002B", title: "Read", type: "checkmark" }]
+			title: "&6Quests Additions"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"RF-powered Sieve, Hammer and Compactor for Ex Deorum - automate the same sifting chain you've been doing by hand since Age I."
+			]
+			icon: "exdeorum:oak_sieve"
+			id: "9AD100000000000C"
+			rewards: [{ id: "9AD100000000010C", type: "xp", xp: 5 }]
+			subtitle: "&7Ex Deorum"
+			tasks: [{ id: "9AD10000000002C", title: "Read", type: "checkmark" }]
+			title: "&2Ex Machinis: Divitiae Deorum"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["9AD1000000000001"]
+			description: [
+				"Two new Curios accessories: &bElytra Slot&r lets you wear an elytra in a back slot alongside chestplate armor, and &6Just Potion Rings&r gives you a ring for every potion effect - fill those empty Curios slots."
+			]
+			icon: "minecraft:elytra"
+			id: "9AD100000000000D"
+			rewards: [{ id: "9AD100000000010D", type: "xp", xp: 5 }]
+			subtitle: "&7Curios"
+			tasks: [{ id: "9AD10000000002D", title: "Read", type: "checkmark" }]
+			title: "&5Elytra Slot & Just Potion Rings"
+			x: 4.5d
+			y: 2.5d
+		}
+	]
+	title: "&fNew Arrivals"
+}
