@@ -401,6 +401,61 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["44EA00000000000E"]
+			description: ["&6Create Crafts & Additions&r bridges Forge Energy and kinetic energy. An &eAlternator&r turns rotation into FE for Mekanism/AE2; an &eAccumulator&r does the reverse, drawing FE to spin your cogs."]
+			icon: "createaddition:alternator"
+			id: "7592B47334DC838E"
+			rewards: [{
+				id: "35E70C6D60B1DCF6"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7FE meets kinetics"
+			tasks: [
+				{
+					id: "3568529EB4586055"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "6E2E4F44C1148700"
+					item: "createaddition:accumulator"
+					type: "item"
+				}
+			]
+			title: "&eCreate Crafts & Additions"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44EA00000000000E"]
+			description: ["&6Create: Steam 'n' Rails&r adds trains. Lay &etrack&r, mount a &esemaphore&r for signaling, and top off a locomotive with a &econductor's cap&r before you drive it."]
+			icon: "railways:semaphore"
+			id: "6187A9055B14303B"
+			rewards: [{
+				id: "6A28B7F175FCB649"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7All aboard"
+			tasks: [
+				{
+					count: 8L
+					id: "3209ABD4E2D04BAA"
+					item: "railways:track_oak"
+					type: "item"
+				}
+				{
+					id: "2E6F9916B779D700"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "&eSteam 'n' Rails"
+			x: 2.0d
+			y: 1.5d
+		}
 	]
 	title: "&eAge II Â· The Kinetic Age"
 }

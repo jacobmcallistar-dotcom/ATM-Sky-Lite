@@ -422,6 +422,26 @@
 			x: -2.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["210300000000000E"]
+			description: ["&eExtra Hostile Neural Networks&r adds the Merger Camera: combine 4 data models into a single, better one. Fewer Simulation Chambers cluttering your farm, more prediction output per machine."]
+			icon: "extrahnn:merger_camera"
+			id: "3A913DD38D067B8F"
+			rewards: [{
+				id: "5935DE0F918BBF0A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&74 models into 1"
+			tasks: [{
+				id: "44CE0D628477B7A4"
+				item: "extrahnn:merger_camera"
+				type: "item"
+			}]
+			title: "&9Model Merging"
+			x: -2.0d
+			y: 4.5d
+		}
 	]
 	title: "&9Age IV Â· Power & Automation"
 }

@@ -1,0 +1,103 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "1A2B000000000003"
+	icon: "ars_nouveau:apprentice_spell_book"
+	id: "77BC0A8FF6938B38"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&d&lArs Nouveau.&r"
+				""
+				"This pack's first magic mod. Craft a Spellbook, weave glyphs together, cast what you make. Runs on your existing Curios slots."
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "1BD3F090A3FA8B3C"
+			rewards: [{
+				id: "70E347E1F7AB1111"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Weave a spell"
+			tasks: [{
+				id: "691560463534D8D0"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "&dArs Nouveau"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["&eMagebloom&r is Ars Nouveau's signature crop - a flax-like plant you grow, harvest and spin into fiber for robes, ropes and books."]
+			icon: "ars_nouveau:magebloom_crop"
+			id: "572C58F284A0C55F"
+			rewards: [{
+				id: "0566A59528D9F96D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Grow your own robes"
+			tasks: [
+				{
+					id: "543828E21D296C6A"
+					item: "ars_nouveau:magebloom_crop"
+					type: "item"
+				}
+				{
+					id: "45BBC9084BF99F0F"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+			]
+			title: "&dMagebloom"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: ["The &eScribe's Table&r is where spells actually get written - drag glyphs onto a page, arrange the order, and bind the finished spell to your book."]
+			icon: "ars_nouveau:scribes_table"
+			id: "00C017B9AE1AFE32"
+			rewards: [{
+				id: "06BF369D06FF9A71"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Where spells get written"
+			tasks: [{
+				id: "15DDE434F5B859E9"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "&dThe Scribe's Table"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			description: ["An &eArcane Pedestal&r channels source into ritual crafting - the entry point to Ars Nouveau's item-enchanting and automation side."]
+			icon: "ars_nouveau:arcane_pedestal"
+			id: "17478CA1F714EBAB"
+			rewards: [{
+				id: "795B8C8AA7F9DD36"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "gear"
+			subtitle: "&7Ritual crafting"
+			tasks: [{
+				id: "0DFBFFBD8702CC7C"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			title: "&dArcane Pedestal"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&dArs Nouveau"
+}

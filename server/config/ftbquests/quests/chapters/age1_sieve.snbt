@@ -679,6 +679,38 @@
 			x: -8.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["2101000000000016"]
+			description: ["&eEx Machinis: Divitiae Deorum&r automates the exact chain you've been doing by hand - RF-powered Flux Sieve, Flux Hammer and Flux Compactor. Feed them power instead of your own clicks."]
+			icon: "exmachinis:flux_sieve"
+			id: "1A1162A344DAAC99"
+			rewards: [{
+				id: "65645D0A4A1686EE"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automate the sieve"
+			tasks: [
+				{
+					id: "2689D08DCA3C5A71"
+					item: "exmachinis:flux_sieve"
+					type: "item"
+				}
+				{
+					id: "6DAC627FA446C276"
+					item: "exmachinis:flux_hammer"
+					type: "item"
+				}
+				{
+					id: "7A0AD9267429426B"
+					item: "exmachinis:flux_compactor"
+					type: "item"
+				}
+			]
+			title: "&aPowered Sieving"
+			x: -8.0d
+			y: -3.0d
+		}
 	]
 	title: "&2Age I Â· The Sieve"
 }

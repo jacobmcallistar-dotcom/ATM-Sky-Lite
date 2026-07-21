@@ -198,6 +198,33 @@
 			x: -2.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["0BEE000000000007"]
+			description: ["Productive Bees' sister mod. &eProductive Trees&r adds real fruit and nut trees you cross-pollinate for new varieties - same production logic as your bees, but rooted in the ground. Plant an almond sapling and let it grow."]
+			icon: "productivetrees:almond_sapling"
+			id: "3757D9F44B4E1873"
+			rewards: [{
+				id: "0C6C437AEEF9FABA"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Everything starts with a tree"
+			tasks: [
+				{
+					id: "5C982AB28C5A12BA"
+					item: "productivetrees:almond_sapling"
+					type: "item"
+				}
+				{
+					id: "254EC814FE9C6BF8"
+					item: "productivetrees:almond"
+					type: "item"
+				}
+			]
+			title: "&2Productive Trees"
+			x: -4.0d
+			y: -1.5d
+		}
 	]
 	title: "&eProductive Bees"
 }

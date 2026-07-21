@@ -557,6 +557,26 @@
 			x: 1.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["398BE9895D2BED1B"]
+			description: ["&9Mekanism Additions&r - the official 4th module, sibling to Generators and Tools. Misc content that used to live in core Mekanism: extra plastic building sets, a walkie talkie for cross-base comms, and Obsidian TNT for when regular TNT isn't enough."]
+			icon: "mekanismadditions:obsidian_tnt"
+			id: "40FD4EFB660EFE4F"
+			rewards: [{
+				id: "22491C53FFA46A6D"
+				item: "mekanismadditions:walkie_talkie"
+				type: "item"
+			}]
+			subtitle: "&7The 4th module"
+			tasks: [{
+				id: "4CDEA5D6BCDDACC3"
+				item: "mekanismadditions:obsidian_tnt"
+				type: "item"
+			}]
+			title: "&9Mekanism Additions"
+			x: 1.0d
+			y: -4.5d
+		}
 	]
 	title: "&9Tech Branch Â· Mekanism"
 }

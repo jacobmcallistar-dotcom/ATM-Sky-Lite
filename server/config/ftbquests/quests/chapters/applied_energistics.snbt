@@ -529,6 +529,64 @@
 			x: 4.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["1FB9000000000001"]
+			description: ["The &eWireless Universal Terminal&r puts crafting, storage and pattern access in your hand from anywhere in range - no more walking back to the network to check a recipe."]
+			icon: "ae2wtlib:wireless_universal_terminal"
+			id: "0199C6AC85B0298A"
+			rewards: [{
+				id: "7C881B3E69E15977"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Your network, in your pocket"
+			tasks: [{
+				id: "2827AEB0F42F9AC3"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			title: "&bWireless Terminals"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			description: ["&eExtended AE&r's Expanded Pattern Provider holds 72 patterns instead of 9, and multiplies pattern encoding so a single stack becomes an entire crafting tree. Big-base automation QoL."]
+			icon: "expatternprovider:ex_pattern_provider"
+			id: "439099E3AEF701AA"
+			rewards: [{
+				id: "76B43456CCFDE63D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&772 patterns, one provider"
+			tasks: [{
+				id: "0A7C7FB95189D9F7"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			title: "&bExpanded Pattern Provider"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			description: ["&eMEGA Cells&r: a single storage cell that holds a colossal number of item types. When your 64k disk starts filling up, this is where you go instead of buying a second one."]
+			icon: "megacells:item_storage_cell_64m"
+			id: "4898530DE0904B6E"
+			rewards: [{
+				id: "13E8D99DEB598CA2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7When 64k isn't enough"
+			tasks: [{
+				id: "1E19D3098A4DAB05"
+				item: "megacells:item_storage_cell_64m"
+				type: "item"
+			}]
+			title: "&bMEGA Cells"
+			x: 6.0d
+			y: -5.5d
+		}
 	]
 	title: "&bTech Branch Â· Applied Energistics"
 }

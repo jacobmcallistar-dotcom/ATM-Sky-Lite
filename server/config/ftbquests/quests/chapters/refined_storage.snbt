@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: "1A2B000000000001"
+	icon: "refinedstorage:controller"
+	id: "0A74F79847271356"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e&lRefined Storage.&r"
+				""
+				"A second, independent network-storage system alongside AE2 - different UI, different automation flow. Run one, the other, or both side by side. No rule says your base only gets one brain."
+			]
+			icon: "refinedstorage:controller"
+			id: "1AAE9BD0B22003F4"
+			rewards: [{
+				id: "28CCF17F78E82904"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7A second network"
+			tasks: [{
+				id: "12F09680DC06D260"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			title: "&eRefined Storage"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["&eCable&r links every part of the network together, and a &eGrid&r is your window into it - search, insert, extract, craft."]
+			icon: "refinedstorage:grid"
+			id: "1912A7D531B8F103"
+			rewards: [{
+				id: "777C30AD5BFCCFB4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Link it, then look at it"
+			tasks: [
+				{
+					count: 8L
+					id: "1074978F56B70402"
+					item: "refinedstorage:cable"
+					type: "item"
+				}
+				{
+					id: "2C913887AE2E95EC"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+			]
+			title: "&eCables & Grids"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: ["A &e1k Storage Disk&r is your first real capacity - slot it into a Disk Drive and the network has somewhere to actually put things."]
+			icon: "refinedstorage:1k_storage_disk"
+			id: "51D6738AB8937CEE"
+			rewards: [{
+				id: "2DF26B204203F886"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Somewhere to put it"
+			tasks: [{
+				id: "2A613339F427CF73"
+				item: "refinedstorage:1k_storage_disk"
+				type: "item"
+			}]
+			title: "&eStorage Disks"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			description: ["&eImporters&r and &eExporters&r move items into and out of the network automatically - the plumbing that turns Refined Storage from a chest into a factory hub."]
+			icon: "refinedstorage:importer"
+			id: "6B74132EA7DDC9DD"
+			rewards: [{
+				id: "2D11AD914C24C743"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The plumbing"
+			tasks: [
+				{
+					id: "715B559CECAEE951"
+					item: "refinedstorage:importer"
+					type: "item"
+				}
+				{
+					id: "0E1FADB860E30240"
+					item: "refinedstorage:exporter"
+					type: "item"
+				}
+			]
+			title: "&eImporters & Exporters"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			description: ["An &eExternal Storage&r part reaches into a chest, barrel or drawer sitting outside the network and makes its contents visible and usable as if it were a disk. Every old chest on your island just joined the grid."]
+			icon: "refinedstorage:external_storage"
+			id: "3599AD744A70233F"
+			rewards: [{
+				id: "718778F1C0E2E6B1"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Every chest, absorbed"
+			tasks: [{
+				id: "4337049F204234FD"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			title: "&eExternal Storage"
+			x: 4.0d
+			y: -1.5d
+		}
+	]
+	title: "&eRefined Storage"
+}

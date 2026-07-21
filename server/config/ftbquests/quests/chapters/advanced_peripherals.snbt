@@ -1,0 +1,102 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "advanced_peripherals"
+	group: "1A2B000000000002"
+	icon: "advancedperipherals:geo_scanner"
+	id: "353534BEE9A95F72"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&c&lAdvanced Peripherals.&r"
+				""
+				"New peripherals and turtle upgrades for CC: Tweaked - your computers just got a lot more to talk to."
+			]
+			icon: "advancedperipherals:geo_scanner"
+			id: "34B8F6F64C07764C"
+			rewards: [{
+				id: "57BF4670D7F2E2F1"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7More for your computer to talk to"
+			tasks: [{
+				id: "37B446CB6938D469"
+				item: "advancedperipherals:geo_scanner"
+				type: "item"
+			}]
+			title: "&cAdvanced Peripherals"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["The &eChat Box&r reads and sends in-game chat from Lua - build a bot, log events, or bridge chat to a Discord webhook."]
+			icon: "advancedperipherals:chat_box"
+			id: "38FC9026999746D9"
+			rewards: [{
+				id: "09B4310ACC7B58A0"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Chat, scripted"
+			tasks: [{
+				id: "4575DCFBF6FC25EA"
+				item: "advancedperipherals:chat_box"
+				type: "item"
+			}]
+			title: "&cChat Box"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: ["The &eEnergy Detector&r and &eEnvironment Detector&r let a computer read your FE buffers and world conditions - the sensor layer for any automation script."]
+			icon: "advancedperipherals:energy_detector"
+			id: "3610AD37D6DCD7C4"
+			rewards: [{
+				id: "058A9310DD548B76"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Give your computer senses"
+			tasks: [
+				{
+					id: "1E7EDA4436F5A1AD"
+					item: "advancedperipherals:energy_detector"
+					type: "item"
+				}
+				{
+					id: "5265C80289EB310E"
+					item: "advancedperipherals:environment_detector"
+					type: "item"
+				}
+			]
+			title: "&cDetectors"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			description: ["An &eME Bridge&r or &eRS Bridge&r lets a computer query and command your AE2 or Refined Storage network directly from Lua - list items, request crafts, watch stock levels."]
+			icon: "advancedperipherals:me_bridge"
+			id: "34392F6A68FFEC67"
+			rewards: [{
+				id: "77C249C463C08FDF"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Script your storage network"
+			tasks: [{
+				id: "5523D731E0EB2DE6"
+				item: "advancedperipherals:me_bridge"
+				type: "item"
+			}]
+			title: "&cME Bridge"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&cAdvanced Peripherals"
+}
