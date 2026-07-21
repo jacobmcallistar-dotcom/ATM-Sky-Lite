@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (108 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (124 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,8 +26,17 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 108 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 124 mods — remove any extras or you'll be kicked on join.
 
+> **Latest: v1.11.0** — Big content drop: **Compact Machines** (pocket-dimension rooms), **Draconic
+> Evolution** (+ Brandon's Core, CodeChicken Lib — endgame reactors/gear), **Refined Storage** (a
+> second, independent network-storage system alongside AE2), **Ars Nouveau** (spellcrafting magic
+> - this pack's first magic mod), **RFTools full suite** (Base, Utility, Builder, Power,
+> Dimensions, Storage, Control + McJtyLib), and **MEGA Cells** (AE2 addon, massive single storage
+> cells) + **FTB Chunks** (chunk loading, useful for unattended automation). **Flux Networks was
+> requested but could not be included** - CurseForge blocks third-party downloads for it and it
+> isn't on Modrinth; skipped rather than risk a broken link.
+>
 > **Latest: v1.10.0** — Added **Construction Wand** (the actively-maintained successor to the
 > classic "Builder's Wand" — place a block, then extend a whole surface of matching blocks with
 > one click).
