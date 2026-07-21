@@ -28,7 +28,13 @@ launcher resolve them from `manifest.json`.
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 124 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.11.0** — Big content drop: **Compact Machines** (pocket-dimension rooms), **Draconic
+> **Latest: v1.11.1** — Quest book updated: the **New Arrivals** chapter now covers the v1.11.0
+> mods too (Compact Machines, Draconic Evolution, Refined Storage, Ars Nouveau, RFTools, MEGA
+> Cells, FTB Chunks). Also audited the whole 19-chapter quest book for corruption (duplicate IDs,
+> broken dependencies/chapter-group refs, overlapping quest positions) — found none, book was
+> already clean.
+>
+> **v1.11.0** — Big content drop: **Compact Machines** (pocket-dimension rooms), **Draconic
 > Evolution** (+ Brandon's Core, CodeChicken Lib — endgame reactors/gear), **Refined Storage** (a
 > second, independent network-storage system alongside AE2), **Ars Nouveau** (spellcrafting magic
 > - this pack's first magic mod), **RFTools full suite** (Base, Utility, Builder, Power,
