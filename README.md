@@ -28,7 +28,15 @@ launcher resolve them from `manifest.json`.
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 124 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.11.1** — Quest book updated: the **New Arrivals** chapter now covers the v1.11.0
+> **Latest: v1.12.0** — Quest book rebuilt: retired the "New Arrivals" junk-drawer chapter.
+> Every addon mod now gets real quests like every other mod — either its own dedicated chapter
+> (Compact Machines, Refined Storage, FTB Chunks, The Toolkit, Advanced Peripherals, RFTools, Ars
+> Nouveau, Draconic Evolution) or folded into the existing chapter it extends (Mekanism Additions →
+> Mekanism, AE2 Wireless Terminals/Extended AE/MEGA Cells → AE2, Ex Machinis → Age I, Create Steam
+> 'n' Rails/Crafts & Additions → Age II, Productive Trees → Productive Bees, Extra Hostile Neural
+> Networks → Age IV). 26 chapters, 300 quests, boot-tested clean.
+>
+> **v1.11.1** — Quest book updated: the **New Arrivals** chapter now covers the v1.11.0
 > mods too (Compact Machines, Draconic Evolution, Refined Storage, Ars Nouveau, RFTools, MEGA
 > Cells, FTB Chunks). Also audited the whole 19-chapter quest book for corruption (duplicate IDs,
 > broken dependencies/chapter-group refs, overlapping quest positions) — found none, book was
