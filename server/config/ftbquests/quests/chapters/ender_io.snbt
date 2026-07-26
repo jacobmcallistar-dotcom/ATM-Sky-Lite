@@ -11,7 +11,7 @@
 		{
 			dependencies: ["210200000000000E"]
 			description: [
-				"&a&lTech Branch Â· Ender IO.&r"
+				"&a&lTech Branch · Ender IO.&r"
 				""
 				"The compact-tech mod: machines that do one job brutally well, and &econduits&r - item, energy and fluid lines that all share &lone block space&r. Your machine rooms are about to get very, very clean."
 				""
@@ -32,7 +32,7 @@
 				title: "Open the toolbox of the End"
 				type: "checkmark"
 			}]
-			title: "&aTech Branch Â· Ender IO"
+			title: "&aTech Branch · Ender IO"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -241,5 +241,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&aTech Branch Â· Ender IO"
+	title: "&aTech Branch · Ender IO"
 }

@@ -28,7 +28,15 @@ launcher resolve them from `manifest.json`.
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 125 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.13.0** — Added **Pipez** (`pipez-forge-1.20.1-1.2.26`): cheap iron-tier pipes for
+> **Latest: v1.13.1** — Two fixes, no mod changes. **Quest book text repaired:** 69 garbled
+> characters across 15 chapters (chapter titles showing `Â·` instead of `·`, and `â†’` instead of
+> `→` in progression chains) were double-encoded UTF-8 and rendered as mojibake in-game — all
+> fixed. **The auto-crafting checkbox is gone from crafting tables:** that was Inventory Profiles
+> Next's "Continuous Crafting" checkbox, now disabled via `show_continuous_crafting_checkbox: false`
+> in `config/inventoryprofilesnext/inventoryprofiles.json`. IPN's sort/move-all buttons and
+> auto-refill are untouched.
+>
+> **v1.13.0** — Added **Pipez** (`pipez-forge-1.20.1-1.2.26`): cheap iron-tier pipes for
 > items, fluids, energy and Mekanism gas, plus a Universal Pipe that carries all four in one block.
 > One Wrench configures every side (extract/insert, filters, round-robin/nearest/furthest/random
 > distribution, redstone control) and upgrades run Basic → Improved → Advanced → Ultimate for

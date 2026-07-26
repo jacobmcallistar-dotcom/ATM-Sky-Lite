@@ -1,0 +1,9 @@
+{
+    "ModSettings": {
+        "first_run": false
+    },
+    "GuiSettings": {
+        "continuous_crafting_saved_value": false,
+        "show_continuous_crafting_checkbox": false
+    }
+}

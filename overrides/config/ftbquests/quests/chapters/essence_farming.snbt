@@ -11,7 +11,7 @@
 		{
 			dependencies: ["210200000000000E"]
 			description: [
-				"&d&lSide Quest Â· Essence Farming.&r"
+				"&d&lSide Quest · Essence Farming.&r"
 				""
 				"Mystical Agriculture grows &oresources&r. Iron. Diamonds. Nether stars, eventually. You plant a seed, and the thing you used to sieve for just... grows."
 				""
@@ -418,5 +418,5 @@
 			y: -1.5d
 		}
 	]
-	title: "&dSide Quest Â· Essence Farming"
+	title: "&dSide Quest · Essence Farming"
 }

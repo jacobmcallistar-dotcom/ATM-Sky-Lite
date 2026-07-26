@@ -11,7 +11,7 @@
 		{
 			dependencies: ["3811F52536EF179D"]
 			description: [
-				"&5&lAge VIII Â· Ascension.&r"
+				"&5&lAge VIII · Ascension.&r"
 				""
 				"You have stood at the edge of the solar system. Only now does the summit open."
 				""
@@ -32,7 +32,7 @@
 				title: "Begin the ascent"
 				type: "checkmark"
 			}]
-			title: "&5Age VIII Â· Ascension"
+			title: "&5Age VIII · Ascension"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -71,7 +71,7 @@
 			description: [
 				"Mekanism's fission fuel needs &eFluorite&r - and like every ore in this pack, none of it spawns in the void."
 				""
-				"The keystone bridge covers it: &7Keystone + 2 Sky Dust&r &8â†’&r 4 Fluorite. Fluorite feeds the Hydrofluoric Acid that turns uranium into fissile fuel. Without it, nothing below is possible - so start here."
+				"The keystone bridge covers it: &7Keystone + 2 Sky Dust&r &8→&r 4 Fluorite. Fluorite feeds the Hydrofluoric Acid that turns uranium into fissile fuel. Without it, nothing below is possible - so start here."
 			]
 			icon: "mekanism:fluorite_gem"
 			id: "2106000000000008"
@@ -474,5 +474,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&5Age VIII Â· Ascension"
+	title: "&5Age VIII · Ascension"
 }

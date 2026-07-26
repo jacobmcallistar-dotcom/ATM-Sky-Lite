@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"&2&lAge I Â· The Sieve.&r"
+				"&2&lAge I · The Sieve.&r"
 				""
 				"You have a tree, a block of dirt, and a whole lot of nothing. By the end of this Age you will have turned that nothing into metal, machines, and the first automated forge in the sky."
 				""
@@ -40,7 +40,7 @@
 				title: "Take flight"
 				type: "checkmark"
 			}]
-			title: "&2Age I Â· The Sieve"
+			title: "&2Age I · The Sieve"
 			x: -14.0d
 			y: 0.0d
 		}
@@ -74,7 +74,7 @@
 			description: [
 				"Craft a &eWooden Hammer&r and smash your cobble down the chain:"
 				""
-				"&7Cobblestone &8â†’&r Gravel &8â†’&r Sand &8â†’&r Dust&r"
+				"&7Cobblestone &8→&r Gravel &8→&r Sand &8→&r Dust&r"
 				""
 				"Each step is more sievable material. The hammer wears out - stone, iron and diamond hammers last far longer and you will want them soon."
 			]
@@ -320,7 +320,7 @@
 			description: [
 				"Your string mesh catches the common drops. A &eFlint Mesh&r catches more."
 				""
-				"Sieve gravel for flint (or craft flint from gravel), then craft the Flint Mesh. This is upgrade one of five: &7string &8â†’ &7flint &8â†’ &7iron &8â†’ &7diamond &8â†’ &7netherite&r."
+				"Sieve gravel for flint (or craft flint from gravel), then craft the Flint Mesh. This is upgrade one of five: &7string &8→ &7flint &8→ &7iron &8→ &7diamond &8→ &7netherite&r."
 			]
 			icon: "exdeorum:flint_mesh"
 			id: "2101000000000007"
@@ -712,5 +712,5 @@
 			y: -3.0d
 		}
 	]
-	title: "&2Age I Â· The Sieve"
+	title: "&2Age I · The Sieve"
 }

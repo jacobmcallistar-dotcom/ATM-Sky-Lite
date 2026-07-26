@@ -185,7 +185,7 @@
 				xp_levels: 3
 			}]
 			shape: "gear"
-			subtitle: "&7Control &8Â· suite mastered"
+			subtitle: "&7Control &8· suite mastered"
 			tasks: [
 				{
 					id: "6ED2EB3D58DA243F"

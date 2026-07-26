@@ -11,7 +11,7 @@
 		{
 			dependencies: ["210200000000000E"]
 			description: [
-				"&9&lAge IV Â· Power & Automation.&r"
+				"&9&lAge IV · Power & Automation.&r"
 				""
 				"Heat generators got you started. They will not carry you to the stars. This Age builds the real power spine - Powah reactors and a wind farm - and a Hostile Neural Network that farms mobs without a single spawner."
 				""
@@ -32,7 +32,7 @@
 				title: "Electrify the sky"
 				type: "checkmark"
 			}]
-			title: "&9Age IV Â· Power & Automation"
+			title: "&9Age IV · Power & Automation"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -63,7 +63,7 @@
 			description: [
 				"The &eEnergizing Orb&r crafts Powah's tiered materials - toss items into the field, feed it power, get the next tier out."
 				""
-				"Every Powah machine climbs the same ladder: &7Basic &8â†’ &7Hardened &8â†’ &7Blazing &8â†’ &7Niotic &8â†’ &7Spirited &8â†’ &7Nitro&r. This is where you build up it."
+				"Every Powah machine climbs the same ladder: &7Basic &8→ &7Hardened &8→ &7Blazing &8→ &7Niotic &8→ &7Spirited &8→ &7Nitro&r. This is where you build up it."
 			]
 			icon: "powah:energizing_orb"
 			id: "2103000000000003"
@@ -443,5 +443,5 @@
 			y: 4.5d
 		}
 	]
-	title: "&9Age IV Â· Power & Automation"
+	title: "&9Age IV · Power & Automation"
 }

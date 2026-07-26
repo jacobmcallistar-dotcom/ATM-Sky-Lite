@@ -11,7 +11,7 @@
 		{
 			dependencies: ["44EA00000000000E"]
 			description: [
-				"&2&lAge III Â· First Machines.&r"
+				"&2&lAge III · First Machines.&r"
 				""
 				"Water gave you torque; now torque buys you &lelectricity&r. An Industrial Keystone, your first Mekanism machines, and grid power that never sleeps."
 				""
@@ -32,7 +32,7 @@
 				title: "Enter the Machine Age"
 				type: "checkmark"
 			}]
-			title: "&2Age III Â· First Machines"
+			title: "&2Age III · First Machines"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -386,5 +386,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&2Age III Â· First Machines"
+	title: "&2Age III · First Machines"
 }

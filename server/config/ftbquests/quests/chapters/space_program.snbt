@@ -11,7 +11,7 @@
 		{
 			dependencies: ["6B7800000000D005"]
 			description: [
-				"&6Age VI Â· The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
+				"&6Age VI · The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
 				""
 				"Ad Astra takes you off-world: the Moon, Mars, Venus, Mercury, and the frozen exoplanet Glacio. Each needs a bigger rocket and better gear to survive."
 				""
@@ -702,5 +702,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&6Age VI Â· The Space Program"
+	title: "&6Age VI · The Space Program"
 }

@@ -11,7 +11,7 @@
 		{
 			dependencies: ["2101000000000011"]
 			description: [
-				"&e&lAge II Â· The Kinetic Age.&r"
+				"&e&lAge II · The Kinetic Age.&r"
 				""
 				"Before electricity, there was &orotation&r. Create turns your island into a machine of shafts, cogs and water wheels - presses that stamp sheets, fans that wash gravel into treasure, wheels that crush stone to dust."
 				""
@@ -32,7 +32,7 @@
 				title: "Feel the rotation"
 				type: "checkmark"
 			}]
-			title: "&eAge II Â· The Kinetic Age"
+			title: "&eAge II · The Kinetic Age"
 			x: -16.0d
 			y: 0.0d
 		}
@@ -391,7 +391,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Age II capstone Â· unlocks Mekanism"
+			subtitle: "&7Age II capstone · unlocks Mekanism"
 			tasks: [{
 				id: "44EA00000000020E"
 				item: "create:precision_mechanism"
@@ -457,5 +457,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&eAge II Â· The Kinetic Age"
+	title: "&eAge II · The Kinetic Age"
 }

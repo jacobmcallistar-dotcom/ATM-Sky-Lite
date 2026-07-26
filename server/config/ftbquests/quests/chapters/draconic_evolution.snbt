@@ -42,7 +42,7 @@
 				type: "xp"
 				xp: 40
 			}]
-			subtitle: "&7Tier I &8Â· Draconic"
+			subtitle: "&7Tier I &8· Draconic"
 			tasks: [
 				{
 					id: "3EF0C4DCD09F7267"
@@ -94,7 +94,7 @@
 				type: "xp_levels"
 				xp_levels: 4
 			}]
-			subtitle: "&7Tier II &8Â· Wyvern"
+			subtitle: "&7Tier II &8· Wyvern"
 			tasks: [
 				{
 					id: "1510EF7EB3618506"
@@ -122,7 +122,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "&7Tier III &8Â· Chaotic"
+			subtitle: "&7Tier III &8· Chaotic"
 			tasks: [{
 				id: "46520DA9DB86A481"
 				item: "draconicevolution:chaotic_sword"

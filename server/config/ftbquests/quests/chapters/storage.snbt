@@ -11,7 +11,7 @@
 		{
 			dependencies: ["2101000000000004"]
 			description: [
-				"&f&lSide Quest Â· Stash & Sort.&r"
+				"&f&lSide Quest · Stash & Sort.&r"
 				""
 				"The sieve is about to bury you: chunks, seeds, gems, dust, pebbles - sixteen kinds of everything, forever. Double chests are where items go to disappear."
 				""
@@ -256,5 +256,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&fSide Quest Â· Stash & Sort"
+	title: "&fSide Quest · Stash & Sort"
 }
