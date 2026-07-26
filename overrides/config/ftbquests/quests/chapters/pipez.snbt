@@ -1,0 +1,283 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pipez"
+	group: "1A2B000000000001"
+	icon: "pipez:item_pipe"
+	id: "3C1F000000000015"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"&f&lSide Quest · Pipe Dreams.&r"
+				""
+				"Hoppers are slow, chest-to-chest by hand is worse, and the sieve never stops. Sooner or later every base needs things to move themselves."
+				""
+				"&ePipez&r is the cheap answer: one pipe block per resource - &eitems&r, &efluids&r, &eenergy&r, &egas&r - all configured with one tool, all upgradeable from iron to netherite. No network, no controller, no channels. Just pipes that work."
+			]
+			icon: "pipez:item_pipe"
+			id: "7E10000000000001"
+			rewards: [
+				{
+					count: 8
+					id: "7E10000000000101"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "7E10000000000102"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Let the base do the walking"
+			tasks: [{
+				id: "7E10000000000201"
+				title: "Stop carrying things by hand"
+				type: "checkmark"
+			}]
+			title: "&bPipe Dreams"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E10000000000001"]
+			description: [
+				"Two &eflint&r and two &esticks&r. That's the whole cost of every pipe decision you'll ever make."
+				""
+				"Right-click any pipe with the &eWrench&r to open that side's configuration: whether it &lextracts&r or just carries, what it filters, how it splits between targets (round robin, nearest, furthest, random) and how redstone controls it."
+				""
+				"A pipe with no wrench work does nothing. Keep it on your belt."
+			]
+			icon: "pipez:wrench"
+			id: "7E10000000000002"
+			rewards: [{
+				id: "7E10000000000103"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7The only tool Pipez needs"
+			tasks: [{
+				id: "7E10000000000202"
+				item: "pipez:wrench"
+				type: "item"
+			}]
+			title: "&bThe Wrench"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E10000000000002"]
+			description: [
+				"&eSix iron, a dropper and a pinch of redstone dust makes sixteen Item Pipes.&r"
+				""
+				"Run one from your sieve outputs into the drawer wall and the sorting problem solves itself while you're asleep. Wrench the end touching the source and set it to extract."
+			]
+			icon: "pipez:item_pipe"
+			id: "7E10000000000003"
+			rewards: [{
+				id: "7E10000000000104"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "gear"
+			subtitle: "&7Sixteen pipes for six iron"
+			tasks: [{
+				count: 8L
+				id: "7E10000000000203"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			title: "&bItem Pipes"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E10000000000003"]
+			description: [
+				"Same recipe, &ebucket&r instead of the dropper. Fluid Pipes move water, lava and every mod fluid in the pack between tanks and machines."
+				""
+				"Pair them with the crucible water loop and your machines stop needing a babysitter with a bucket."
+			]
+			icon: "pipez:fluid_pipe"
+			id: "7E10000000000004"
+			rewards: [{
+				id: "7E10000000000105"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Water and lava, hands-free"
+			tasks: [{
+				id: "7E10000000000204"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			title: "&bFluid Pipes"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E10000000000001"]
+			description: [
+				"Swap the dropper for a &eredstone block&r and you get Energy Pipes - plain Forge Energy transport that every generator and machine in this pack speaks."
+				""
+				"Mekanism, Powah, EnderIO, RFTools, the Sky Assembler: all of it takes FE. One pipe type feeds them all."
+			]
+			icon: "pipez:energy_pipe"
+			id: "7E10000000000005"
+			rewards: [{
+				id: "7E10000000000106"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7FE from anything to anything"
+			tasks: [{
+				id: "7E10000000000205"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			title: "&bEnergy Pipes"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E10000000000005"]
+			description: [
+				"Once Mekanism is running you'll have gases to move - hydrogen, oxygen, sulfuric acid, the whole chemical chain."
+				""
+				"&eGas Pipes&r cost an &eInfused Alloy&r in place of the dropper and carry Mekanism chemicals without a single pressurised tube or logistical sorter."
+			]
+			icon: "pipez:gas_pipe"
+			id: "7E10000000000006"
+			rewards: [{
+				id: "7E10000000000107"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Mekanism chemicals, simply"
+			tasks: [{
+				id: "7E10000000000206"
+				item: "pipez:gas_pipe"
+				type: "item"
+			}]
+			title: "&bGas Pipes"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7E10000000000003"
+				"7E10000000000004"
+				"7E10000000000005"
+			]
+			description: [
+				"One of each pipe, two iron and a redstone block, and the three become one: the &eUniversal Pipe&r carries items, fluids, energy and gas through the same block."
+				""
+				"Each side still configures independently, so a single run down your machine wall can extract items, deliver power and take fluid away at once. Six per craft - use them where the wall gets crowded."
+			]
+			icon: "pipez:universal_pipe"
+			id: "7E10000000000007"
+			rewards: [
+				{
+					id: "7E10000000000108"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "7E10000000000109"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Everything in one block"
+			tasks: [{
+				id: "7E10000000000207"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			title: "&bThe Universal Pipe"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E10000000000003"]
+			description: [
+				"A bare pipe moves a trickle. &eUpgrades&r slot into each side's wrench config to raise the transfer rate and unlock more filter slots."
+				""
+				"&eBasic&r is iron and redstone. &eImproved&r wraps it in gold. Put one in every extracting side you care about - an unupgraded pipe out of a sieve will fall behind the sieve."
+			]
+			icon: "pipez:improved_upgrade"
+			id: "7E10000000000008"
+			rewards: [{
+				id: "7E1000000000010A"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Faster, and picky about it"
+			tasks: [
+				{
+					id: "7E10000000000208"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+				{
+					id: "7E10000000000218"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+			]
+			title: "&bPipe Upgrades"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E10000000000008"
+				"7E10000000000007"
+			]
+			description: [
+				"The top of the ladder: &eAdvanced&r takes diamonds, &eUltimate&r takes netherite. An Ultimate-upgraded side moves more than any early machine can produce."
+				""
+				"Fit these where throughput actually matters - ore processing lines, power backbones, AE2 and Refined Storage feeds - and stop thinking about pipes for the rest of the pack."
+			]
+			icon: "pipez:ultimate_upgrade"
+			id: "7E10000000000009"
+			rewards: [
+				{
+					id: "7E1000000000010B"
+					type: "random"
+				}
+				{
+					id: "7E1000000000010C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Pipe side quest complete"
+			tasks: [
+				{
+					id: "7E10000000000209"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+				{
+					id: "7E10000000000219"
+					item: "pipez:ultimate_upgrade"
+					type: "item"
+				}
+			]
+			title: "&b&lThroughput Solved"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&bSide Quest · Pipe Dreams"
+}

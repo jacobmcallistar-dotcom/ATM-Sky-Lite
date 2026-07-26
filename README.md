@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (124 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (125 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -26,9 +26,19 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 124 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 125 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.12.0** — Quest book rebuilt: retired the "New Arrivals" junk-drawer chapter.
+> **Latest: v1.13.0** — Added **Pipez** (`pipez-forge-1.20.1-1.2.26`): cheap iron-tier pipes for
+> items, fluids, energy and Mekanism gas, plus a Universal Pipe that carries all four in one block.
+> One Wrench configures every side (extract/insert, filters, round-robin/nearest/furthest/random
+> distribution, redstone control) and upgrades run Basic → Improved → Advanced → Ultimate for
+> throughput and filter slots. Its optional integrations (Mekanism gas pipes, JEI, Jade, The One
+> Probe) are all already in the pack, so they light up automatically. New **Pipe Dreams** quest
+> chapter (9 quests, Act I) covers the whole ladder. **RFTools was also requested but the full
+> suite was already in the pack since v1.11.0** (Base, Builder, Control, Dimensions, Power,
+> Storage, Utility + McJtyLib, with its own quest chapter) — nothing to add.
+>
+> **v1.12.0** — Quest book rebuilt: retired the "New Arrivals" junk-drawer chapter.
 > Every addon mod now gets real quests like every other mod — either its own dedicated chapter
 > (Compact Machines, Refined Storage, FTB Chunks, The Toolkit, Advanced Peripherals, RFTools, Ars
 > Nouveau, Draconic Evolution) or folded into the existing chapter it extends (Mekanism Additions →
