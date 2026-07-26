@@ -27,7 +27,6 @@
 				}
 				{
 					id: "03BB7531572FAFA6"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -120,7 +119,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6B5334AE80D3748E", "736B27013214BE28"]
+			dependencies: [
+				"6B5334AE80D3748E"
+				"736B27013214BE28"
+			]
 			description: ["The Electrolytic Separator splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."]
 			id: "742152612BC35B66"
 			rewards: [{
@@ -261,7 +263,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0FF4B3FC8DFFDE04", "62AB81D872055048"]
+			dependencies: [
+				"0FF4B3FC8DFFDE04"
+				"62AB81D872055048"
+			]
 			description: [
 				"A Factory does the job of one machine, but on many items at once, in parallel."
 				""
@@ -283,7 +288,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5251868CACAB6B09", "398BE9895D2BED1B"]
+			dependencies: [
+				"5251868CACAB6B09"
+				"398BE9895D2BED1B"
+			]
 			description: ["Push factories to the top: Elite and Ultimate tiers process a dozen items at once. This is real industry."]
 			id: "3D923C56F219EB9E"
 			rewards: [
@@ -294,7 +302,6 @@
 				}
 				{
 					id: "00509CAAE7DE3BAB"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -413,7 +420,6 @@
 				}
 				{
 					id: "3236632915BB5471"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -441,7 +447,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["21557404ADD43A57", "2B928184B2E69250"]
+			dependencies: [
+				"21557404ADD43A57"
+				"2B928184B2E69250"
+			]
 			description: [
 				"You've mastered Mekanism's machines, chemistry, and gear. Only one frontier remains: nuclear power."
 				""
@@ -456,7 +465,6 @@
 				}
 				{
 					id: "2A9BA0E3A5D11A48"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -481,10 +489,18 @@
 			]
 			icon: "mekanism:jetpack"
 			id: "6CAF000000000001"
-			rewards: [{ id: "6CAF000000000101", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "6CAF000000000101"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "diamond"
 			subtitle: "&7Hydrogen-powered flight"
-			tasks: [{ id: "6CAF000000000201", item: "mekanism:jetpack", type: "item" }]
+			tasks: [{
+				id: "6CAF000000000201"
+				item: "mekanism:jetpack"
+				type: "item"
+			}]
 			title: "&9The Jetpack"
 			x: -3.0d
 			y: -3.0d
@@ -494,11 +510,23 @@
 			description: ["&eFree Runners&r cancel fall damage and step up blocks; the &eScuba set&r breathes for you underwater. Cheap quality-of-life that saves your life weekly."]
 			icon: "mekanism:free_runners"
 			id: "6CAF000000000002"
-			rewards: [{ id: "6CAF000000000102", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "6CAF000000000102"
+				type: "xp"
+				xp: 40
+			}]
 			subtitle: "&7Wearable insurance"
 			tasks: [
-				{ id: "6CAF000000000202", item: "mekanism:free_runners", type: "item" }
-				{ id: "6CAF000000000212", item: "mekanism:scuba_mask", type: "item" }
+				{
+					id: "6CAF000000000202"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+				{
+					id: "6CAF000000000212"
+					item: "mekanism:scuba_mask"
+					type: "item"
+				}
 			]
 			title: "&9Runner's Kit"
 			x: -1.0d
@@ -513,13 +541,41 @@
 			]
 			icon: "mekanism:atomic_disassembler"
 			id: "6CAF000000000003"
-			rewards: [{ id: "6CAF000000000103", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "6CAF000000000103"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "diamond"
 			subtitle: "&7Every tool. One handle."
-			tasks: [{ id: "6CAF000000000203", item: "mekanism:atomic_disassembler", type: "item" }]
+			tasks: [{
+				id: "6CAF000000000203"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
 			title: "&9Atomic Disassembler"
 			x: 1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["398BE9895D2BED1B"]
+			description: ["&9Mekanism Additions&r - the official 4th module, sibling to Generators and Tools. Misc content that used to live in core Mekanism: extra plastic building sets, a walkie talkie for cross-base comms, and Obsidian TNT for when regular TNT isn't enough."]
+			icon: "mekanismadditions:obsidian_tnt"
+			id: "40FD4EFB660EFE4F"
+			rewards: [{
+				id: "22491C53FFA46A6D"
+				item: "mekanismadditions:walkie_talkie"
+				type: "item"
+			}]
+			subtitle: "&7The 4th module"
+			tasks: [{
+				id: "4CDEA5D6BCDDACC3"
+				item: "mekanismadditions:obsidian_tnt"
+				type: "item"
+			}]
+			title: "&9Mekanism Additions"
+			x: 1.0d
+			y: -4.5d
 		}
 	]
 	title: "&9Tech Branch Â· Mekanism"

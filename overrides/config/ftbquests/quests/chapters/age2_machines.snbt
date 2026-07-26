@@ -19,11 +19,19 @@
 			]
 			icon: "skyforge:industrial_keystone"
 			id: "2102000000000001"
-			rewards: [{ id: "2102000000000101", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "2102000000000101"
+				type: "xp"
+				xp: 40
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Sky metal becomes industry"
-			tasks: [{ id: "2102000000000201", title: "Enter the Machine Age", type: "checkmark" }]
+			tasks: [{
+				id: "2102000000000201"
+				title: "Enter the Machine Age"
+				type: "checkmark"
+			}]
 			title: "&2Age III Â· First Machines"
 			x: -12.0d
 			y: 0.0d
@@ -37,11 +45,20 @@
 			]
 			icon: "skyforge:industrial_keystone"
 			id: "2102000000000002"
-			rewards: [{ count: 2, id: "2102000000000102", item: "skyforge:industrial_keystone", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "2102000000000102"
+				item: "skyforge:industrial_keystone"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 1.25d
 			subtitle: "&7The master key to tech"
-			tasks: [{ id: "2102000000000202", item: "skyforge:industrial_keystone", type: "item" }]
+			tasks: [{
+				id: "2102000000000202"
+				item: "skyforge:industrial_keystone"
+				type: "item"
+			}]
 			title: "&2The Industrial Keystone"
 			x: -10.0d
 			y: 0.0d
@@ -51,9 +68,19 @@
 			description: ["Bridge Sky Steel into &eMekanism Steel&r, then press it into a &eSteel Casing&r - the shell of nearly every Mekanism machine you are about to build."]
 			icon: "mekanism:ingot_steel"
 			id: "2102000000000003"
-			rewards: [{ count: 2, id: "2102000000000103", item: "mekanism:steel_casing", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "2102000000000103"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			subtitle: "&7The metal machines are made of"
-			tasks: [{ count: 4L, id: "2102000000000203", item: "mekanism:ingot_steel", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2102000000000203"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
 			title: "&2Real Steel"
 			x: -8.0d
 			y: 0.0d
@@ -67,10 +94,19 @@
 			]
 			icon: "mekanism:metallurgic_infuser"
 			id: "2102000000000004"
-			rewards: [{ count: 4, id: "2102000000000104", item: "mekanism:enriched_redstone", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "2102000000000104"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Opens the Mekanism branch"
-			tasks: [{ id: "2102000000000204", item: "mekanism:metallurgic_infuser", type: "item" }]
+			tasks: [{
+				id: "2102000000000204"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
 			title: "&9Metallurgy 101"
 			x: -6.0d
 			y: 0.0d
@@ -80,9 +116,18 @@
 			description: ["Infuse redstone into &eEnriched Redstone&r - the concentrated form Mekanism uses in circuits, energy tablets and control components. Make a stack; you will need it constantly."]
 			icon: "mekanism:enriched_redstone"
 			id: "2102000000000005"
-			rewards: [{ id: "2102000000000105", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2102000000000105"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Concentrated redstone"
-			tasks: [{ count: 4L, id: "2102000000000205", item: "mekanism:enriched_redstone", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2102000000000205"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
 			title: "&9Enriched Materials"
 			x: -6.0d
 			y: -1.5d
@@ -96,10 +141,19 @@
 			]
 			icon: "mekanismgenerators:heat_generator"
 			id: "2102000000000006"
-			rewards: [{ count: 8, id: "2102000000000106", item: "minecraft:coal_block", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2102000000000106"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Your first grid power"
-			tasks: [{ id: "2102000000000206", item: "mekanismgenerators:heat_generator", type: "item" }]
+			tasks: [{
+				id: "2102000000000206"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
 			title: "&9Power On"
 			x: -4.0d
 			y: -1.5d
@@ -109,9 +163,17 @@
 			description: ["The &eEnergized Smelter&r smelts with power instead of fuel, faster and cleaner than any furnace. Route it into your ore-chunk pipeline and forget about coal."]
 			icon: "mekanism:energized_smelter"
 			id: "2102000000000007"
-			rewards: [{ id: "2102000000000107", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2102000000000107"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Smelt with electricity"
-			tasks: [{ id: "2102000000000207", item: "mekanism:energized_smelter", type: "item" }]
+			tasks: [{
+				id: "2102000000000207"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
 			title: "&9Energized Smelter"
 			x: -2.0d
 			y: -1.5d
@@ -125,10 +187,19 @@
 			]
 			icon: "mekanism:enrichment_chamber"
 			id: "2102000000000008"
-			rewards: [{ count: 8, id: "2102000000000108", item: "minecraft:iron_ingot", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2102000000000108"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Double your ore"
-			tasks: [{ id: "2102000000000208", item: "mekanism:enrichment_chamber", type: "item" }]
+			tasks: [{
+				id: "2102000000000208"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
 			title: "&9The Enrichment Chamber"
 			x: -4.0d
 			y: 0.0d
@@ -138,9 +209,17 @@
 			description: ["A &eCrusher&r grinds ingots back into dust and clears the way to Mekanism's deeper ore chains. Cheap, fast, and a prerequisite for the good stuff."]
 			icon: "mekanism:crusher"
 			id: "2102000000000009"
-			rewards: [{ id: "2102000000000109", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2102000000000109"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Grind it down"
-			tasks: [{ id: "2102000000000209", item: "mekanism:crusher", type: "item" }]
+			tasks: [{
+				id: "2102000000000209"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
 			title: "&9The Crusher"
 			x: -4.0d
 			y: -3.0d
@@ -150,9 +229,17 @@
 			description: ["The &eOsmium Compressor&r combines osmium with materials to make Mekanism's control circuits and refined alloys. Feed it osmium from the keystone or the sieve."]
 			icon: "mekanism:osmium_compressor"
 			id: "210200000000000A"
-			rewards: [{ id: "210200000000010A", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "210200000000010A"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Compress osmium"
-			tasks: [{ id: "210200000000020A", item: "mekanism:osmium_compressor", type: "item" }]
+			tasks: [{
+				id: "210200000000020A"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
 			title: "&9Osmium Compressor"
 			x: -2.0d
 			y: -3.0d
@@ -166,9 +253,19 @@
 			]
 			icon: "ae2:fluix_crystal"
 			id: "210200000000000B"
-			rewards: [{ count: 8, id: "210200000000010B", item: "ae2:fluix_crystal", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "210200000000010B"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
 			subtitle: "&7The AE2 semiconductor"
-			tasks: [{ count: 8L, id: "210200000000020B", item: "ae2:fluix_crystal", type: "item" }]
+			tasks: [{
+				count: 8L
+				id: "210200000000020B"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
 			title: "&bFluix Crystals"
 			x: -6.0d
 			y: 1.5d
@@ -183,14 +280,34 @@
 			icon: "ae2:inscriber"
 			id: "210200000000000C"
 			rewards: [
-				{ id: "210200000000010C", item: "ae2:silicon_press", type: "item" }
-				{ id: "210200000000010D", item: "ae2:logic_processor_press", type: "item" }
-				{ id: "210200000000010E", item: "ae2:calculation_processor_press", type: "item" }
-				{ id: "210200000000010F", item: "ae2:engineering_processor_press", type: "item" }
+				{
+					id: "210200000000010C"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "210200000000010D"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "210200000000010E"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "210200000000010F"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
 			]
 			shape: "gear"
 			subtitle: "&7Opens the AE2 branch"
-			tasks: [{ id: "210200000000020C", item: "ae2:inscriber", type: "item" }]
+			tasks: [{
+				id: "210200000000020C"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
 			title: "&bPress Start"
 			x: -4.0d
 			y: 1.5d
@@ -200,9 +317,18 @@
 			description: ["A &eBasic Control Circuit&r is the logic chip behind every advanced machine. Osmium compressor makes them. From here, everything gets smarter."]
 			icon: "mekanism:basic_control_circuit"
 			id: "210200000000000D"
-			rewards: [{ id: "2102000000000110", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "2102000000000110"
+				type: "xp"
+				xp: 40
+			}]
 			subtitle: "&7The first logic chip"
-			tasks: [{ count: 2L, id: "210200000000020D", item: "mekanism:basic_control_circuit", type: "item" }]
+			tasks: [{
+				count: 2L
+				id: "210200000000020D"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
 			title: "&9Basic Circuits"
 			x: -2.0d
 			y: 0.0d
@@ -222,16 +348,38 @@
 			icon: "mekanism:steel_casing"
 			id: "210200000000000E"
 			rewards: [
-				{ count: 4, id: "2102000000000111", item: "skyforge:industrial_keystone", type: "item" }
-				{ id: "2102000000000112", table_id: 258L, type: "random" }
-				{ id: "2102000000000113", type: "xp_levels", xp_levels: 5 }
+				{
+					count: 4
+					id: "2102000000000111"
+					item: "skyforge:industrial_keystone"
+					type: "item"
+				}
+				{
+					id: "2102000000000112"
+					type: "random"
+				}
+				{
+					id: "2102000000000113"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Age II capstone"
 			tasks: [
-				{ count: 4L, id: "210200000000020E", item: "mekanism:basic_control_circuit", type: "item" }
-				{ count: 4L, id: "210200000000021E", item: "mekanism:steel_casing", type: "item" }
+				{
+					count: 4L
+					id: "210200000000020E"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "210200000000021E"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
 			]
 			title: "&2The Machine Age"
 			x: 0.0d

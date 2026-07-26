@@ -27,7 +27,6 @@
 				}
 				{
 					id: "386D6C4984D7B09E"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -169,22 +168,46 @@
 			tasks: [
 				{
 					id: "0964AE3B1CF60CF5"
-					item: "ad_astra:space_helmet"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "63A4F08BCA1FBD3F"
-					item: "ad_astra:space_suit"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "3734FDC6C535F9A0"
-					item: "ad_astra:space_pants"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "781A540F10026848"
-					item: "ad_astra:space_boots"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -215,7 +238,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4E40677713DCB756", "3AC5823954DFDBED", "51B90C3D7756A0EA"]
+			dependencies: [
+				"4E40677713DCB756"
+				"3AC5823954DFDBED"
+				"51B90C3D7756A0EA"
+			]
 			description: [
 				"Everything is ready: steel, power, oxygen, a suit, fuel, and a workbench."
 				""
@@ -231,7 +258,6 @@
 				}
 				{
 					id: "7113351037B48969"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -458,7 +484,6 @@
 				}
 				{
 					id: "77E7F7B59A334614"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -467,7 +492,13 @@
 			subtitle: "Master of the void"
 			tasks: [{
 				id: "25FA8652F581974D"
-				item: "ad_astra:jet_suit"
+				item: {
+					Count: 1
+					id: "ad_astra:jet_suit"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "&6The Jet Suit"
@@ -479,9 +510,17 @@
 			description: ["A &eSolar Panel&r loves a void world - no clouds below, no caves above. Free daytime FE for your outposts, on any planet with a sun."]
 			icon: "ad_astra:solar_panel"
 			id: "2D5C000000000001"
-			rewards: [{ id: "2D5C000000000101", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2D5C000000000101"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Sunlight is fuel"
-			tasks: [{ id: "2D5C000000000201", item: "ad_astra:solar_panel", type: "item" }]
+			tasks: [{
+				id: "2D5C000000000201"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
 			title: "&6Solar Power"
 			x: -5.0d
 			y: -2.5d
@@ -495,9 +534,17 @@
 			]
 			icon: "ad_astra_giselle_addon:oxygen_can"
 			id: "2D5C000000000002"
-			rewards: [{ id: "2D5C000000000102", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2D5C000000000102"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Bottled atmosphere"
-			tasks: [{ id: "2D5C000000000202", item: "ad_astra_giselle_addon:oxygen_can", type: "item" }]
+			tasks: [{
+				id: "2D5C000000000202"
+				item: "ad_astra_giselle_addon:oxygen_can"
+				type: "item"
+			}]
 			title: "&6Bottled Sky"
 			x: -3.0d
 			y: 2.5d
@@ -511,10 +558,18 @@
 			]
 			icon: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade"
 			id: "2D5C000000000003"
-			rewards: [{ id: "2D5C000000000103", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "2D5C000000000103"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "diamond"
 			subtitle: "&7The suit becomes the ship"
-			tasks: [{ id: "2D5C000000000203", item: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade", type: "item" }]
+			tasks: [{
+				id: "2D5C000000000203"
+				item: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade"
+				type: "item"
+			}]
 			title: "&6Breathe Easy"
 			x: -1.0d
 			y: 2.5d
@@ -528,13 +583,29 @@
 			]
 			icon: "ad_astra_giselle_addon:automation_nasa_workbench"
 			id: "2D5C000000000004"
-			rewards: [{ id: "2D5C000000000104", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "2D5C000000000104"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "gear"
 			subtitle: "&7Mission control, automated"
 			tasks: [
-				{ id: "2D5C000000000204", item: "ad_astra_giselle_addon:automation_nasa_workbench", type: "item" }
-				{ id: "2D5C000000000214", item: "ad_astra_giselle_addon:fuel_loader", type: "item" }
-				{ id: "2D5C000000000224", item: "ad_astra_giselle_addon:rocket_sensor", type: "item" }
+				{
+					id: "2D5C000000000204"
+					item: "ad_astra_giselle_addon:automation_nasa_workbench"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000214"
+					item: "ad_astra_giselle_addon:fuel_loader"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000224"
+					item: "ad_astra_giselle_addon:rocket_sensor"
+					type: "item"
+				}
 			]
 			title: "&6Launch Facility"
 			x: -2.5d
@@ -545,9 +616,17 @@
 			description: ["Low gravity is fun until you overshoot a jump into the void. The &eGravity Normalizer&r projects Earth-standard gravity through your moonbase. Home comforts, 384,000 klicks from home."]
 			icon: "ad_astra_giselle_addon:gravity_normalizer"
 			id: "2D5C000000000005"
-			rewards: [{ id: "2D5C000000000105", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "2D5C000000000105"
+				type: "xp"
+				xp: 40
+			}]
 			subtitle: "&7Earth legs on the Moon"
-			tasks: [{ id: "2D5C000000000205", item: "ad_astra_giselle_addon:gravity_normalizer", type: "item" }]
+			tasks: [{
+				id: "2D5C000000000205"
+				item: "ad_astra_giselle_addon:gravity_normalizer"
+				type: "item"
+			}]
 			title: "&6Gravity Normalizer"
 			x: 0.0d
 			y: -1.5d
@@ -561,12 +640,30 @@
 			]
 			icon: "ad_astra_giselle_addon:pneumatic_acid_rain_proof_upgrade"
 			id: "2D5C000000000006"
-			rewards: [{ id: "2D5C000000000106", item: "ad_astra_giselle_addon:netherite_oxygen_can", type: "item" }]
+			rewards: [{
+				id: "2D5C000000000106"
+				item: "ad_astra_giselle_addon:netherite_oxygen_can"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7Venus-rated"
 			tasks: [
-				{ id: "2D5C000000000206", item: "ad_astra_giselle_addon:pneumatic_acid_rain_proof_upgrade", type: "item" }
-				{ id: "2D5C000000000216", item: "ad_astra:netherite_space_suit", type: "item" }
+				{
+					id: "2D5C000000000206"
+					item: "ad_astra_giselle_addon:pneumatic_acid_rain_proof_upgrade"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000216"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "&6Acid-Proofed"
 			x: 8.0d
@@ -581,12 +678,24 @@
 			]
 			icon: "ad_astra:cryo_freezer"
 			id: "2D5C000000000007"
-			rewards: [{ id: "2D5C000000000107", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "2D5C000000000107"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "gear"
 			subtitle: "&7Cold is fuel"
 			tasks: [
-				{ id: "2D5C000000000207", item: "ad_astra:cryo_freezer", type: "item" }
-				{ id: "2D5C000000000217", item: "ad_astra:cryo_fuel_bucket", type: "item" }
+				{
+					id: "2D5C000000000207"
+					item: "ad_astra:cryo_freezer"
+					type: "item"
+				}
+				{
+					id: "2D5C000000000217"
+					item: "ad_astra:cryo_fuel_bucket"
+					type: "item"
+				}
 			]
 			title: "&6Cryogenics"
 			x: 10.0d

@@ -1,0 +1,76 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "compact_machines"
+	group: "1A2B000000000001"
+	icon: "minecraft:end_portal_frame"
+	id: "6624A5986578FCC4"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&2&lCompact Machines.&r"
+				""
+				"Miniaturized pocket-dimension rooms, placed inside a single block. No island is big enough for every factory - so build the factory somewhere else entirely."
+			]
+			icon: "compactmachines:machine_normal"
+			id: "598E4E0BE319AF70"
+			rewards: [{
+				id: "4AD918C7024E9D50"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7A room in a block"
+			tasks: [{
+				id: "01B80D8EAE3EADFE"
+				item: "compactmachines:machine_normal"
+				type: "item"
+			}]
+			title: "&2Compact Machines"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["Item, fluid and energy &etunnels&r punch a connection through a machine wall - so the pocket room outside can still feed power and resources in, and pull products back out."]
+			icon: "compactmachines:tunnel_wall"
+			id: "660F0AFCCBF74D89"
+			rewards: [{
+				id: "4B4F733A9785F866"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Punch a connection through"
+			tasks: [{
+				id: "51F38DADD34E2655"
+				item: "compactmachines:tunnel_wall"
+				type: "item"
+			}]
+			title: "&2Tunnels"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: ["A &ePersonal Shrinking Device&r lets you walk into your own pocket rooms at will - no crafting a door, just point and shrink."]
+			icon: "compactmachines:personal_shrinking_device"
+			id: "07736704666D9DC2"
+			rewards: [{
+				id: "1056294EC694EDE5"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Walk right in"
+			tasks: [{
+				id: "0359D3CB537D592A"
+				item: "compactmachines:personal_shrinking_device"
+				type: "item"
+			}]
+			title: "&2Personal Shrinking Device"
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "&2Compact Machines"
+}

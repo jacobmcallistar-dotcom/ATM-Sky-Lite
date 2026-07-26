@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rftools"
+	group: "1A2B000000000002"
+	icon: "rftoolsbase:machine_infuser"
+	id: "1754461D9D681C54"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6&lRFTools.&r"
+				""
+				"The full suite: Utility, Builder, Power, Dimensions, Storage and Control - teleportation, screens, storage scanners, and buildable custom dimensions. All riding on the shared &6McJtyLib&r underneath."
+			]
+			icon: "rftoolsbase:machine_infuser"
+			id: "68EF5F257321514B"
+			rewards: [{
+				id: "477607DB341923F4"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Six mods, one toolbox"
+			tasks: [{
+				id: "12A2860C2D1902AE"
+				item: "rftoolsbase:machine_infuser"
+				type: "item"
+			}]
+			title: "&6RFTools"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["The &eSmartwrench&r is RFTools' universal wrench - rotate, configure and disassemble any RFTools machine with one tool."]
+			icon: "rftoolsbase:smartwrench"
+			id: "115DC22612D3DD3F"
+			rewards: [{
+				id: "590102B397D47C7E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Base"
+			tasks: [{
+				id: "1EB420483681C26B"
+				item: "rftoolsbase:smartwrench"
+				type: "item"
+			}]
+			title: "&6Smartwrench"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["A &eMatter Transmitter&r paired with a &eDialing Device&r teleports you between fixed points on your island chain - point, dial, arrive."]
+			icon: "rftoolsutility:matter_transmitter"
+			id: "7B3DC7246B77DA93"
+			rewards: [{
+				id: "7F14583B9E2CEFC5"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Utility"
+			tasks: [
+				{
+					id: "4BCF4DD3E98887AF"
+					item: "rftoolsutility:matter_transmitter"
+					type: "item"
+				}
+				{
+					id: "37915F214A0B819F"
+					item: "rftoolsutility:dialing_device"
+					type: "item"
+				}
+			]
+			title: "&6Matter Transmitters"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: ["The &eBuilder&r reads a &eShape Card&r and executes it - quarry a cube, pump a lake, or clear an area, all without you lifting a pickaxe."]
+			icon: "rftoolsbuilder:builder"
+			id: "6A03B5968E1CD99C"
+			rewards: [{
+				id: "508F308A8A4CC633"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Builder"
+			tasks: [
+				{
+					id: "64393341A21E157C"
+					item: "rftoolsbuilder:builder"
+					type: "item"
+				}
+				{
+					id: "4314F4901BAD60A2"
+					item: "rftoolsbuilder:shape_card_quarry"
+					type: "item"
+				}
+			]
+			title: "&6The Builder"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: ["A &ePower Cell&r stores RF at massive scale for a single block, and the &eBlazing Generator&r burns blaze rods to fill it - RFTools' own power line, independent of Mekanism."]
+			icon: "rftoolspower:cell1"
+			id: "2E836BF44B65F66F"
+			rewards: [{
+				id: "54C901CAD4D7C37E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Power"
+			tasks: [
+				{
+					id: "56F90F24029B3844"
+					item: "rftoolspower:cell1"
+					type: "item"
+				}
+				{
+					id: "3237819C5422FAF2"
+					item: "rftoolspower:blazing_generator"
+					type: "item"
+				}
+			]
+			title: "&6Power Cells"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["The &eDimension Builder&r assembles &eDimlets&r into a custom pocket dimension - pick the biome, terrain and features, then step through."]
+			icon: "rftoolsdim:dimension_builder"
+			id: "5FF5138F14109D91"
+			rewards: [{
+				id: "7BF583322057371C"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Dimensions"
+			tasks: [{
+				id: "4A927B5EA3A53DB4"
+				item: "rftoolsdim:dimension_builder"
+				type: "item"
+			}]
+			title: "&6Build Your Own Dimension"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["&eModular Storage&r stacks storage modules into a single controllable block, and the &eStorage Scanner&r finds any item across your whole base without opening a single chest."]
+			icon: "rftoolsstorage:modular_storage"
+			id: "7CEFFFCF872943C8"
+			rewards: [{
+				id: "3BD8785ACF528B91"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Storage"
+			tasks: [
+				{
+					id: "285CB563C5D57DB8"
+					item: "rftoolsstorage:modular_storage"
+					type: "item"
+				}
+				{
+					id: "39AB760E43BDFCDF"
+					item: "rftoolsstorage:storage_scanner"
+					type: "item"
+				}
+			]
+			title: "&6Modular Storage"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: ["The &eProgrammer&r and &eWorkbench&r let you script logic nodes directly - a lightweight automation layer that doesn't need a full computer."]
+			icon: "rftoolscontrol:programmer"
+			id: "6775474E8AE4DC25"
+			rewards: [{
+				id: "1CF1BC81C6CF9B0B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "gear"
+			subtitle: "&7Control &8Â· suite mastered"
+			tasks: [
+				{
+					id: "6ED2EB3D58DA243F"
+					item: "rftoolscontrol:programmer"
+					type: "item"
+				}
+				{
+					id: "7D3B00D3EEA17C93"
+					item: "rftoolscontrol:workbench"
+					type: "item"
+				}
+			]
+			title: "&6Programmable Logic"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "&6RFTools"
+}

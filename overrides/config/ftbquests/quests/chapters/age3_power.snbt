@@ -19,11 +19,19 @@
 			]
 			icon: "powah:energizing_orb"
 			id: "2103000000000001"
-			rewards: [{ id: "2103000000000101", type: "xp", xp: 50 }]
+			rewards: [{
+				id: "2103000000000101"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Build the power spine"
-			tasks: [{ id: "2103000000000201", title: "Electrify the sky", type: "checkmark" }]
+			tasks: [{
+				id: "2103000000000201"
+				title: "Electrify the sky"
+				type: "checkmark"
+			}]
 			title: "&9Age IV Â· Power & Automation"
 			x: -12.0d
 			y: 0.0d
@@ -33,9 +41,19 @@
 			description: ["The keystone bridge turns Sky Dust into &eUraninite&r - Powah's reactor fuel, and an ore that will never spawn in the void. Bank a few; the reactor eats them."]
 			icon: "powah:uraninite"
 			id: "2103000000000002"
-			rewards: [{ count: 8, id: "2103000000000102", item: "powah:uraninite", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2103000000000102"
+				item: "powah:uraninite"
+				type: "item"
+			}]
 			subtitle: "&7Reactor fuel from nothing"
-			tasks: [{ count: 4L, id: "2103000000000202", item: "powah:uraninite", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2103000000000202"
+				item: "powah:uraninite"
+				type: "item"
+			}]
 			title: "&9Bridged Uranium"
 			x: -10.0d
 			y: 0.0d
@@ -49,10 +67,18 @@
 			]
 			icon: "powah:energizing_orb"
 			id: "2103000000000003"
-			rewards: [{ id: "2103000000000103", type: "xp", xp: 50 }]
+			rewards: [{
+				id: "2103000000000103"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "gear"
 			subtitle: "&7Craft the tiered materials"
-			tasks: [{ id: "2103000000000203", item: "powah:energizing_orb", type: "item" }]
+			tasks: [{
+				id: "2103000000000203"
+				item: "powah:energizing_orb"
+				type: "item"
+			}]
 			title: "&9The Energizing Orb"
 			x: -8.0d
 			y: 0.0d
@@ -62,9 +88,18 @@
 			description: ["A &eThermo Generator&r sat over lava makes passive FE forever, no fuel runs required. Drop a few and stop thinking about power for a while."]
 			icon: "powah:thermo_generator_basic"
 			id: "2103000000000004"
-			rewards: [{ count: 4, id: "2103000000000104", item: "minecraft:blaze_rod", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "2103000000000104"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
 			subtitle: "&7Passive power over lava"
-			tasks: [{ id: "2103000000000204", item: "powah:thermo_generator_basic", type: "item" }]
+			tasks: [{
+				id: "2103000000000204"
+				item: "powah:thermo_generator_basic"
+				type: "item"
+			}]
 			title: "&9Free Heat"
 			x: -6.0d
 			y: -1.5d
@@ -74,9 +109,17 @@
 			description: ["Wind Generators love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."]
 			icon: "mekanismgenerators:wind_generator"
 			id: "2103000000000005"
-			rewards: [{ id: "2103000000000105", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "2103000000000105"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			subtitle: "&7Power that scales with height"
-			tasks: [{ id: "2103000000000205", item: "mekanismgenerators:wind_generator", type: "item" }]
+			tasks: [{
+				id: "2103000000000205"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
 			title: "&9Sky Power"
 			x: -6.0d
 			y: 1.5d
@@ -86,9 +129,17 @@
 			description: ["An &eEnergy Cube&r buffers your generators so machines never starve between gusts. Your first real battery - bigger storage comes with the Induction Matrix."]
 			icon: "mekanism:basic_energy_cube"
 			id: "2103000000000006"
-			rewards: [{ id: "2103000000000106", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "2103000000000106"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Buffer your grid"
-			tasks: [{ id: "2103000000000206", item: "mekanism:basic_energy_cube", type: "item" }]
+			tasks: [{
+				id: "2103000000000206"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
 			title: "&9Store Some Power"
 			x: -4.0d
 			y: 1.5d
@@ -102,11 +153,21 @@
 			]
 			icon: "powah:reactor_basic"
 			id: "2103000000000007"
-			rewards: [{ count: 32, id: "2103000000000107", item: "powah:uraninite", type: "item" }]
+			rewards: [{
+				count: 32
+				id: "2103000000000107"
+				item: "powah:uraninite"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7The power plant"
-			tasks: [{ count: 36L, id: "2103000000000207", item: "powah:reactor_basic", type: "item" }]
+			tasks: [{
+				count: 36L
+				id: "2103000000000207"
+				item: "powah:reactor_basic"
+				type: "item"
+			}]
 			title: "&9Going Nuclear"
 			x: -4.0d
 			y: 0.0d
@@ -120,9 +181,18 @@
 			]
 			icon: "hostilenetworks:deep_learner"
 			id: "2103000000000008"
-			rewards: [{ count: 2, id: "2103000000000108", item: "hostilenetworks:blank_data_model", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "2103000000000108"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
 			subtitle: "&7Teach a machine to hunt"
-			tasks: [{ id: "2103000000000208", item: "hostilenetworks:deep_learner", type: "item" }]
+			tasks: [{
+				id: "2103000000000208"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
 			title: "&9Learning to Kill"
 			x: -6.0d
 			y: 3.0d
@@ -136,12 +206,25 @@
 			]
 			icon: "hostilenetworks:sim_chamber"
 			id: "2103000000000009"
-			rewards: [{ count: 8, id: "2103000000000109", item: "hostilenetworks:prediction_matrix", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2103000000000109"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Drops on demand"
 			tasks: [
-				{ id: "2103000000000209", item: "hostilenetworks:sim_chamber", type: "item" }
-				{ id: "210300000000021A", item: "hostilenetworks:loot_fabricator", type: "item" }
+				{
+					id: "2103000000000209"
+					item: "hostilenetworks:sim_chamber"
+					type: "item"
+				}
+				{
+					id: "210300000000021A"
+					item: "hostilenetworks:loot_fabricator"
+					type: "item"
+				}
 			]
 			title: "&9The Kill Simulator"
 			x: -4.0d
@@ -156,12 +239,25 @@
 			]
 			icon: "mekanism:induction_casing"
 			id: "210300000000000A"
-			rewards: [{ id: "210300000000010A", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "210300000000010A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "gear"
 			subtitle: "&7Mega power storage"
 			tasks: [
-				{ count: 4L, id: "210300000000020A", item: "mekanism:induction_casing", type: "item" }
-				{ id: "210300000000021B", item: "mekanism:basic_induction_cell", type: "item" }
+				{
+					count: 4L
+					id: "210300000000020A"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "210300000000021B"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
 			]
 			title: "&9The Induction Matrix"
 			x: -2.0d
@@ -181,13 +277,24 @@
 			icon: "mekanism:basic_induction_cell"
 			id: "210300000000000B"
 			rewards: [
-				{ id: "210300000000010B", table_id: 258L, type: "random" }
-				{ id: "210300000000010C", type: "xp_levels", xp_levels: 8 }
+				{
+					id: "210300000000010B"
+					type: "random"
+				}
+				{
+					id: "210300000000010C"
+					type: "xp_levels"
+					xp_levels: 8
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Age III capstone"
-			tasks: [{ id: "210300000000020B", title: "The grid is online", type: "checkmark" }]
+			tasks: [{
+				id: "210300000000020B"
+				title: "The grid is online"
+				type: "checkmark"
+			}]
 			title: "&9Powered Up"
 			x: 0.0d
 			y: 0.0d
@@ -197,10 +304,18 @@
 			description: ["The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."]
 			icon: "exdeorum:mechanical_hammer"
 			id: "210300000000000C"
-			rewards: [{ id: "210300000000010D", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "210300000000010D"
+				type: "xp"
+				xp: 40
+			}]
 			shape: "gear"
 			subtitle: "&7Your wrists are free"
-			tasks: [{ id: "210300000000020C", item: "exdeorum:mechanical_hammer", type: "item" }]
+			tasks: [{
+				id: "210300000000020C"
+				item: "exdeorum:mechanical_hammer"
+				type: "item"
+			}]
 			title: "&9The Mechanical Hammer"
 			x: -6.0d
 			y: -3.0d
@@ -215,13 +330,26 @@
 			icon: "exdeorum:mechanical_sieve"
 			id: "210300000000000D"
 			rewards: [
-				{ count: 16, id: "210300000000010E", item: "exdeorum:compressed_gravel", type: "item" }
-				{ id: "210300000000010F", type: "xp_levels", xp_levels: 3 }
+				{
+					count: 16
+					id: "210300000000010E"
+					item: "exdeorum:compressed_gravel"
+					type: "item"
+				}
+				{
+					id: "210300000000010F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Sieving, fully automated"
-			tasks: [{ id: "210300000000020D", item: "exdeorum:mechanical_sieve", type: "item" }]
+			tasks: [{
+				id: "210300000000020D"
+				item: "exdeorum:mechanical_sieve"
+				type: "item"
+			}]
 			title: "&9The Mechanical Sieve"
 			x: -4.0d
 			y: -3.0d
@@ -244,13 +372,26 @@
 			icon: "exdeorum:oak_compressed_sieve"
 			id: "0AC0000000000001"
 			rewards: [
-				{ count: 16, id: "0AC0000000000101", item: "exdeorum:compressed_gravel", type: "item" }
-				{ id: "0AC0000000000102", type: "xp_levels", xp_levels: 3 }
+				{
+					count: 16
+					id: "0AC0000000000101"
+					item: "exdeorum:compressed_gravel"
+					type: "item"
+				}
+				{
+					id: "0AC0000000000102"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Nine sieves in one pass"
-			tasks: [{ id: "0AC0000000000201", item: "exdeorum:oak_compressed_sieve", type: "item" }]
+			tasks: [{
+				id: "0AC0000000000201"
+				item: "exdeorum:oak_compressed_sieve"
+				type: "item"
+			}]
 			title: "&9The Compressed Sieve"
 			x: -2.0d
 			y: -3.0d
@@ -264,12 +405,42 @@
 			]
 			icon: "hostilenetworks:overworld_prediction"
 			id: "210300000000000E"
-			rewards: [{ count: 2, id: "2103000000000110", item: "hostilenetworks:nether_prediction", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "2103000000000110"
+				item: "hostilenetworks:nether_prediction"
+				type: "item"
+			}]
 			subtitle: "&7Simulated kills, real loot"
-			tasks: [{ count: 4L, id: "210300000000020E", item: "hostilenetworks:overworld_prediction", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "210300000000020E"
+				item: "hostilenetworks:overworld_prediction"
+				type: "item"
+			}]
 			title: "&9Prediction Economy"
 			x: -2.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["210300000000000E"]
+			description: ["&eExtra Hostile Neural Networks&r adds the Merger Camera: combine 4 data models into a single, better one. Fewer Simulation Chambers cluttering your farm, more prediction output per machine."]
+			icon: "extrahnn:merger_camera"
+			id: "3A913DD38D067B8F"
+			rewards: [{
+				id: "5935DE0F918BBF0A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&74 models into 1"
+			tasks: [{
+				id: "44CE0D628477B7A4"
+				item: "extrahnn:merger_camera"
+				type: "item"
+			}]
+			title: "&9Model Merging"
+			x: -2.0d
+			y: 4.5d
 		}
 	]
 	title: "&9Age IV Â· Power & Automation"

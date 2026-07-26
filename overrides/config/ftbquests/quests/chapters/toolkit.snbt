@@ -1,0 +1,158 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "toolkit"
+	group: "1A2B000000000001"
+	icon: "minecraft:tool_workbench"
+	id: "2D49512CEAD3A1E2"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&f&lThe Toolkit.&r"
+				""
+				"Small mods that don't add a progression tree - just make everything else better. All active from the moment you join, nothing to craft."
+			]
+			icon: "minecraft:tool_workbench"
+			id: "5CF5F404538F3494"
+			rewards: [{
+				id: "790846256F40C06F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Small mods, big QoL"
+			tasks: [{
+				id: "709F737D185DD541"
+				title: "Begin"
+				type: "checkmark"
+			}]
+			title: "&fThe Toolkit"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			description: ["&eJade&r shows a tooltip for whatever you're looking at - block contents, machine progress, entity health. Look at things. It just works."]
+			icon: "minecraft:spyglass"
+			id: "6A0BBEDFA2503F3B"
+			rewards: [{
+				id: "5247D7E02E34D9ED"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7Look at things"
+			tasks: [{
+				id: "06063321BE308BF1"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "&bJade"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			description: ["&eInventory Profiles Next&r one-click sorts your inventory, auto-refills broken tools and depleted stacks from elsewhere in your bags, and auto-dumps into matching containers."]
+			icon: "minecraft:chest"
+			id: "35D65CEDF7858F20"
+			rewards: [{
+				id: "140147B58DADC194"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7One-click sort"
+			tasks: [{
+				id: "0CB408B69AFFC63B"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "&6Inventory Profiles Next"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			description: ["&eQuests Additions&r gives this very book new task types - Place, Break, Repeatable, Create-Structure - for anything added to it down the line."]
+			icon: "ftbquests:book"
+			id: "5C98246B859477C0"
+			rewards: [{
+				id: "2C7C34ABB6802ED7"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7New quest task types"
+			tasks: [{
+				id: "0E41D764259C5EFB"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "&6Quests Additions"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: ["&eTom's Performant Storage&r is a pure performance patch for Tom's Storage - same features, much less lag on big networks. Nothing to craft, it just works quietly in the background."]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "092716AC2F380CE9"
+			rewards: [{
+				id: "296B4AB192FE0BAF"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7Quietly faster"
+			tasks: [{
+				id: "185EDEF4E8FA8FB8"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "&aTom's Performant Storage"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			description: ["&eElytra Slot&r adds a dedicated back slot for your elytra, worn alongside full chestplate armor instead of instead of it."]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "09E6B570DFACEA49"
+			rewards: [{
+				id: "770F92DB5833CF87"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7Fly and armor up"
+			tasks: [{
+				id: "14DD449CA4C5B45D"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "&5Elytra Slot"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			description: ["&eJust Potion Rings&r adds a Curios ring for every potion effect in the game - including modded ones. Fill your empty ring slots with permanent buffs."]
+			icon: "justpotionrings:potion_ring"
+			id: "77DE44DB128CE4C0"
+			rewards: [{
+				id: "3F8484F3B91089D5"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "&7A ring for every effect"
+			tasks: [{
+				id: "47030A3C8CD00A24"
+				item: "justpotionrings:potion_ring"
+				type: "item"
+			}]
+			title: "&5Just Potion Rings"
+			x: 2.0d
+			y: 0.5d
+		}
+	]
+	title: "&fThe Toolkit"
+}

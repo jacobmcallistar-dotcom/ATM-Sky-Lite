@@ -20,11 +20,19 @@
 			]
 			icon: "industrialforegoing:laser_drill"
 			id: "0F16000000000001"
-			rewards: [{ id: "0F16000000000101", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "0F16000000000101"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Brute-force automation"
-			tasks: [{ id: "0F16000000000201", title: "Read: The Industry Branch", type: "checkmark" }]
+			tasks: [{
+				id: "0F16000000000201"
+				title: "Read: The Industry Branch"
+				type: "checkmark"
+			}]
 			title: "&bIndustrial Foregoing"
 			x: -8.0d
 			y: 0.0d
@@ -37,9 +45,19 @@
 			]
 			icon: "industrialforegoing:plastic"
 			id: "0F16000000000002"
-			rewards: [{ count: 8, id: "0F16000000000102", item: "industrialforegoing:plastic", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "0F16000000000102"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
 			subtitle: "&7The bottom of everything"
-			tasks: [{ count: 16L, id: "0F16000000000202", item: "industrialforegoing:plastic", type: "item" }]
+			tasks: [{
+				count: 16L
+				id: "0F16000000000202"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
 			title: "&bPlastic"
 			x: -6.0d
 			y: 0.0d
@@ -53,9 +71,17 @@
 			]
 			icon: "industrialforegoing:pink_slime_ingot"
 			id: "0F16000000000003"
-			rewards: [{ id: "0F16000000000103", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "0F16000000000103"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Tier-1 chassis"
-			tasks: [{ id: "0F16000000000203", item: "industrialforegoing:machine_frame_pity", type: "item" }]
+			tasks: [{
+				id: "0F16000000000203"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
 			title: "&bThe Pity Frame"
 			x: -4.0d
 			y: 0.0d
@@ -69,11 +95,23 @@
 			]
 			icon: "industrialforegoing:machine_frame_advanced"
 			id: "0F16000000000004"
-			rewards: [{ id: "0F16000000000104", type: "xp_levels", xp_levels: 2 }]
+			rewards: [{
+				id: "0F16000000000104"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
 			subtitle: "&7Climb the chassis tiers"
 			tasks: [
-				{ id: "0F16000000000204", item: "industrialforegoing:machine_frame_simple", type: "item" }
-				{ id: "0F16000000000205", item: "industrialforegoing:machine_frame_advanced", type: "item" }
+				{
+					id: "0F16000000000204"
+					item: "industrialforegoing:machine_frame_simple"
+					type: "item"
+				}
+				{
+					id: "0F16000000000205"
+					item: "industrialforegoing:machine_frame_advanced"
+					type: "item"
+				}
 			]
 			title: "&bBetter Frames"
 			x: -2.0d
@@ -88,13 +126,25 @@
 			]
 			icon: "industrialforegoing:ore_laser_base"
 			id: "0F16000000000005"
-			rewards: [{ id: "0F16000000000105", type: "xp_levels", xp_levels: 4 }]
+			rewards: [{
+				id: "0F16000000000105"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Ore from thin air"
 			tasks: [
-				{ id: "0F16000000000209", item: "industrialforegoing:laser_drill", type: "item" }
-				{ id: "0F1600000000020A", item: "industrialforegoing:ore_laser_base", type: "item" }
+				{
+					id: "0F16000000000209"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "0F1600000000020A"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
 			]
 			title: "&b&lThe Ore Laser"
 			x: 0.0d
@@ -109,9 +159,17 @@
 			]
 			icon: "industrialforegoing:mob_crusher"
 			id: "0F16000000000006"
-			rewards: [{ id: "0F16000000000106", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "0F16000000000106"
+				type: "xp"
+				xp: 40
+			}]
 			subtitle: "&7A grinder in a box"
-			tasks: [{ id: "0F16000000000207", item: "industrialforegoing:mob_crusher", type: "item" }]
+			tasks: [{
+				id: "0F16000000000207"
+				item: "industrialforegoing:mob_crusher"
+				type: "item"
+			}]
 			title: "&bThe Mob Crusher"
 			x: -4.0d
 			y: 1.5d
@@ -125,9 +183,17 @@
 			]
 			icon: "industrialforegoing:pity_black_hole_unit"
 			id: "0F16000000000007"
-			rewards: [{ id: "0F16000000000107", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "0F16000000000107"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			subtitle: "&7Two billion in a block"
-			tasks: [{ id: "0F16000000000208", item: "industrialforegoing:pity_black_hole_unit", type: "item" }]
+			tasks: [{
+				id: "0F16000000000208"
+				item: "industrialforegoing:pity_black_hole_unit"
+				type: "item"
+			}]
 			title: "&bBottomless Storage"
 			x: 2.0d
 			y: 0.0d

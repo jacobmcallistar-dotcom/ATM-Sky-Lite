@@ -38,6 +38,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7EF5DDBB65C58DDC"]
 			description: [
 				"Fill a 2x2 pool with water, ring it with flowers/grass - and toss in a &eDesh Ingot&r. In this pack, moon metal opens the Twilight, not diamonds."
 				""
@@ -45,7 +46,6 @@
 				""
 				"A whole shadowed overworld of dungeons and a strict boss order awaits. Its Fiery Ingots are the only metal your fission reactor accepts."
 			]
-			dependencies: ["7EF5DDBB65C58DDC"]
 			id: "67BC6ABF61224134"
 			rewards: [{
 				count: 16
@@ -63,8 +63,8 @@
 			y: 0.0d
 		}
 		{
-			description: ["The Naga guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."]
 			dependencies: ["67BC6ABF61224134"]
+			description: ["The Naga guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."]
 			id: "321DE9424210F3F1"
 			rewards: [{
 				count: 9
@@ -83,8 +83,8 @@
 			y: -1.0d
 		}
 		{
-			description: ["The Lich in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."]
 			dependencies: ["321DE9424210F3F1"]
+			description: ["The Lich in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."]
 			id: "7194AE474BDDA510"
 			rewards: [{
 				id: "7D6E4A4E7E1C768C"
@@ -108,8 +108,8 @@
 			y: 1.0d
 		}
 		{
-			description: ["The Hydra of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."]
 			dependencies: ["7194AE474BDDA510"]
+			description: ["The Hydra of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."]
 			id: "10583B7DED57F345"
 			rewards: [
 				{
@@ -120,7 +120,6 @@
 				}
 				{
 					id: "7D2C6B0B67BAC84F"
-					table_id: 259L
 					type: "random"
 				}
 			]
@@ -136,16 +135,16 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"7EF5DDBB65C58DDC"
+				"45A0F1081A90EE29"
+			]
 			description: [
 				"This quest hands you the &eportal kit&r: turquoise stonebrick for the frame (built like a Nether portal) and a &eZeal Lighter&r to ignite it."
 				""
 				"The lighter's recipe demands &eVenus calorite&r + a sieved amethyst - hell's metal to open heaven's door. It leads to two dimensions in one:"
 				""
 				"EVERBRIGHT - eternal day. EVERDAWN - eternal dusk. Both are full of dungeons, gems and horrors."
-			]
-			dependencies: [
-				"7EF5DDBB65C58DDC"
-				"45A0F1081A90EE29"
 			]
 			id: "2D70B1458FF1A3FC"
 			rewards: [
@@ -157,7 +156,13 @@
 				}
 				{
 					id: "7CFBD6FAD5C56310"
-					item: "blue_skies:zeal_lighter"
+					item: {
+						Count: 1
+						id: "blue_skies:zeal_lighter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -171,8 +176,8 @@
 			y: 2.5d
 		}
 		{
-			description: ["Deep in an Everbright dungeon, the Starlit Crusher rules. Its Summoning Table calls it - a proper arena boss fight."]
 			dependencies: ["2D70B1458FF1A3FC"]
+			description: ["Deep in an Everbright dungeon, the Starlit Crusher rules. Its Summoning Table calls it - a proper arena boss fight."]
 			id: "259AC632D754FC36"
 			rewards: [{
 				count: 4
@@ -192,8 +197,8 @@
 			y: 2.5d
 		}
 		{
-			description: ["The Everdawn's Arachnarch - a spider queen the size of a house. Kill it for the realm's rarest crafting stock."]
 			dependencies: ["259AC632D754FC36"]
+			description: ["The Everdawn's Arachnarch - a spider queen the size of a house. Kill it for the realm's rarest crafting stock."]
 			id: "61DDC993C67CD36F"
 			rewards: [{
 				count: 4
@@ -213,14 +218,14 @@
 			y: 2.5d
 		}
 		{
+			dependencies: [
+				"7EF5DDBB65C58DDC"
+				"7AEFF5201E41906E"
+			]
 			description: [
 				"Build an Undergarden portal frame like a Nether portal from stone bricks, then strike it with a &eCatalyst&r - whose core is now an &eOstrum Ingot&r from Mars."
 				""
 				"A vast glowing cavern-world of Cloggrum, Froststeel and Utheric crystal - and the Forgotten Guardian."
-			]
-			dependencies: [
-				"7EF5DDBB65C58DDC"
-				"7AEFF5201E41906E"
 			]
 			id: "10EA2E5B2105C715"
 			rewards: [{
@@ -238,8 +243,8 @@
 			y: -2.5d
 		}
 		{
-			description: ["The Forgotten Guardian, a colossal stone sentinel, sleeps in the deep. Wake it, break it, take its Forgotten gear."]
 			dependencies: ["10EA2E5B2105C715"]
+			description: ["The Forgotten Guardian, a colossal stone sentinel, sleeps in the deep. Wake it, break it, take its Forgotten gear."]
 			id: "538F5CE511D220D9"
 			rewards: [
 				{
@@ -250,7 +255,6 @@
 				}
 				{
 					id: "51C45831FFCEF5C5"
-					table_id: 259L
 					type: "random"
 				}
 			]
@@ -320,7 +324,6 @@
 				}
 				{
 					id: "7F00AAAA00000004"
-					table_id: 259L
 					type: "random"
 				}
 			]
@@ -383,7 +386,6 @@
 				}
 				{
 					id: "7F00AAAA00000008"
-					table_id: 259L
 					type: "random"
 				}
 			]

@@ -19,11 +19,19 @@
 			]
 			icon: "skyforge:heart_of_the_sky"
 			id: "2106000000000001"
-			rewards: [{ id: "2106000000000101", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "2106000000000101"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7The final climb"
-			tasks: [{ id: "2106000000000201", title: "Begin the ascent", type: "checkmark" }]
+			tasks: [{
+				id: "2106000000000201"
+				title: "Begin the ascent"
+				type: "checkmark"
+			}]
 			title: "&5Age VIII Â· Ascension"
 			x: -10.0d
 			y: 0.0d
@@ -40,10 +48,20 @@
 			]
 			icon: "twilightforest:fiery_ingot"
 			id: "2106000000000010"
-			rewards: [{ count: 2, id: "2106000000000110", item: "twilightforest:fiery_ingot", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "2106000000000110"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7The Twilight's toll"
-			tasks: [{ count: 4L, id: "2106000000000230", item: "twilightforest:fiery_ingot", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2106000000000230"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
 			title: "&5Trial of Fire"
 			x: -8.0d
 			y: -1.5d
@@ -57,10 +75,20 @@
 			]
 			icon: "mekanism:fluorite_gem"
 			id: "2106000000000008"
-			rewards: [{ count: 4, id: "2106000000000108", item: "mekanism:fluorite_gem", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "2106000000000108"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7The missing piece of the fuel line"
-			tasks: [{ count: 4L, id: "2106000000000208", item: "mekanism:fluorite_gem", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2106000000000208"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
 			title: "&5Bridge Fluorite"
 			x: -8.0d
 			y: 0.0d
@@ -74,12 +102,25 @@
 			]
 			icon: "mekanism:yellow_cake_uranium"
 			id: "2106000000000009"
-			rewards: [{ id: "2106000000000109", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "2106000000000109"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "gear"
 			subtitle: "&7Uranium into fissile fuel"
 			tasks: [
-				{ count: 4L, id: "2106000000000209", item: "mekanism:yellow_cake_uranium", type: "item" }
-				{ id: "2106000000000219", item: "mekanism:isotopic_centrifuge", type: "item" }
+				{
+					count: 4L
+					id: "2106000000000209"
+					item: "mekanism:yellow_cake_uranium"
+					type: "item"
+				}
+				{
+					id: "2106000000000219"
+					item: "mekanism:isotopic_centrifuge"
+					type: "item"
+				}
 			]
 			title: "&5The Fuel Line"
 			x: -6.0d
@@ -99,15 +140,36 @@
 			]
 			icon: "mekanismgenerators:fission_reactor_casing"
 			id: "2106000000000002"
-			rewards: [{ id: "2106000000000102", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "2106000000000102"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Split the atom"
 			tasks: [
-				{ count: 4L, id: "2106000000000202", item: "mekanismgenerators:fission_reactor_casing", type: "item" }
-				{ id: "2106000000000212", item: "mekanismgenerators:fission_fuel_assembly", type: "item" }
-				{ id: "2106000000000222", item: "mekanismgenerators:control_rod_assembly", type: "item" }
-				{ id: "2106000000000232", item: "mekanismgenerators:fission_reactor_port", type: "item" }
+				{
+					count: 4L
+					id: "2106000000000202"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "2106000000000212"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "2106000000000222"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+				{
+					id: "2106000000000232"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
 			]
 			title: "&5Go Fission"
 			x: -4.0d
@@ -122,14 +184,35 @@
 			]
 			icon: "mekanismgenerators:turbine_rotor"
 			id: "210600000000000A"
-			rewards: [{ id: "210600000000010A", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "210600000000010A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "gear"
 			subtitle: "&7Turn steam into power"
 			tasks: [
-				{ count: 4L, id: "210600000000020A", item: "mekanismgenerators:turbine_casing", type: "item" }
-				{ id: "210600000000021A", item: "mekanismgenerators:turbine_rotor", type: "item" }
-				{ id: "210600000000022A", item: "mekanismgenerators:rotational_complex", type: "item" }
-				{ id: "210600000000023A", item: "mekanismgenerators:electromagnetic_coil", type: "item" }
+				{
+					count: 4L
+					id: "210600000000020A"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					id: "210600000000021A"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "210600000000022A"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					id: "210600000000023A"
+					item: "mekanismgenerators:electromagnetic_coil"
+					type: "item"
+				}
 			]
 			title: "&5Feed the Steam"
 			x: -4.0d
@@ -144,10 +227,18 @@
 			]
 			icon: "mekanism:solar_neutron_activator"
 			id: "210600000000000B"
-			rewards: [{ id: "210600000000010B", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "210600000000010B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "gear"
 			subtitle: "&7Transmute the waste"
-			tasks: [{ id: "210600000000020B", item: "mekanism:solar_neutron_activator", type: "item" }]
+			tasks: [{
+				id: "210600000000020B"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
 			title: "&5Waste to Polonium"
 			x: -2.0d
 			y: -1.5d
@@ -157,9 +248,17 @@
 			description: ["Collect a &ePolonium Pellet&r from your activator. Every endgame Mekanism recipe - above all, antimatter - runs through these."]
 			icon: "mekanism:pellet_polonium"
 			id: "2106000000000003"
-			rewards: [{ id: "2106000000000103", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "2106000000000103"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "&7The byproduct that matters"
-			tasks: [{ id: "2106000000000203", item: "mekanism:pellet_polonium", type: "item" }]
+			tasks: [{
+				id: "2106000000000203"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
 			title: "&5Polonium"
 			x: -2.0d
 			y: 0.0d
@@ -173,14 +272,31 @@
 			]
 			icon: "mekanism:sps_casing"
 			id: "210600000000000C"
-			rewards: [{ id: "210600000000010C", type: "xp_levels", xp_levels: 8 }]
+			rewards: [{
+				id: "210600000000010C"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Build the antimatter engine"
 			tasks: [
-				{ count: 4L, id: "210600000000020C", item: "mekanism:sps_casing", type: "item" }
-				{ id: "210600000000021C", item: "mekanism:sps_port", type: "item" }
-				{ id: "210600000000022C", item: "mekanism:supercharged_coil", type: "item" }
+				{
+					count: 4L
+					id: "210600000000020C"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					id: "210600000000021C"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "210600000000022C"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
 			]
 			title: "&5The Phase Shifter"
 			x: 0.0d
@@ -195,11 +311,20 @@
 			]
 			icon: "mekanism:pellet_antimatter"
 			id: "2106000000000004"
-			rewards: [{ id: "2106000000000104", item: "mekanism:mekasuit_bodyarmor", type: "item" }]
+			rewards: [{
+				id: "2106000000000104"
+				item: "mekanism:mekasuit_bodyarmor"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Make two - the Heart needs both"
-			tasks: [{ count: 2L, id: "2106000000000204", item: "mekanism:pellet_antimatter", type: "item" }]
+			tasks: [{
+				count: 2L
+				id: "2106000000000204"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			title: "&5Antimatter"
 			x: 2.0d
 			y: 0.0d
@@ -213,12 +338,24 @@
 			]
 			icon: "mekanism:meka_tool"
 			id: "2106000000000005"
-			rewards: [{ id: "2106000000000105", type: "xp_levels", xp_levels: 10 }]
+			rewards: [{
+				id: "2106000000000105"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			shape: "diamond"
 			subtitle: "&7Endgame gear"
 			tasks: [
-				{ id: "2106000000000205", item: "mekanism:mekasuit_bodyarmor", type: "item" }
-				{ id: "2106000000000215", item: "mekanism:meka_tool", type: "item" }
+				{
+					id: "2106000000000205"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "2106000000000215"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
 			]
 			title: "&5The MekaSuit"
 			x: 2.0d
@@ -240,16 +377,48 @@
 			]
 			icon: "cataclysm:witherite_ingot"
 			id: "2106000000000006"
-			rewards: [{ id: "2106000000000106", type: "xp_levels", xp_levels: 10 }]
+			rewards: [{
+				id: "2106000000000106"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			subtitle: "&7Remains of the fallen"
 			tasks: [
-				{ id: "2106000000000206", item: "cataclysm:witherite_ingot", type: "item" }
-				{ id: "2106000000000216", item: "cataclysm:ignitium_ingot", type: "item" }
-				{ id: "2106000000000226", item: "minecraft:nether_star", type: "item" }
-				{ id: "2106000000000236", item: "bosses_of_mass_destruction:soul_star", type: "item" }
-				{ id: "2106000000000246", item: "bosses_of_mass_destruction:obsidian_heart", type: "item" }
-				{ id: "2106000000000256", item: "bosses_of_mass_destruction:blazing_eye", type: "item" }
-				{ id: "2106000000000266", item: "bosses_of_mass_destruction:void_thorn", type: "item" }
+				{
+					id: "2106000000000206"
+					item: "cataclysm:witherite_ingot"
+					type: "item"
+				}
+				{
+					id: "2106000000000216"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+				{
+					id: "2106000000000226"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "2106000000000236"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+				{
+					id: "2106000000000246"
+					item: "bosses_of_mass_destruction:obsidian_heart"
+					type: "item"
+				}
+				{
+					id: "2106000000000256"
+					item: "bosses_of_mass_destruction:blazing_eye"
+					type: "item"
+				}
+				{
+					id: "2106000000000266"
+					item: "bosses_of_mass_destruction:void_thorn"
+					type: "item"
+				}
 			]
 			title: "&5Gather the Relics"
 			x: 4.0d
@@ -270,15 +439,36 @@
 			icon: "skyforge:heart_of_the_sky"
 			id: "2106000000000007"
 			rewards: [
-				{ count: 3, id: "2106000000000107", item: "minecraft:nether_star", type: "item" }
-				{ count: 3, id: "2106000000000117", item: "apotheosis:boss_summoner", type: "item" }
-				{ id: "2106000000000127", type: "xp_levels", xp_levels: 30 }
-				{ id: "2106000000000137", table_id: 260L, type: "random" }
+				{
+					count: 3
+					id: "2106000000000107"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2106000000000117"
+					item: "apotheosis:boss_summoner"
+					type: "item"
+				}
+				{
+					id: "2106000000000127"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "2106000000000137"
+					type: "random"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "&6&lThe win condition"
-			tasks: [{ id: "2106000000000207", item: "skyforge:heart_of_the_sky", type: "item" }]
+			tasks: [{
+				id: "2106000000000207"
+				item: "skyforge:heart_of_the_sky"
+				type: "item"
+			}]
 			title: "&6&lHEART OF THE SKY"
 			x: 6.5d
 			y: 0.0d

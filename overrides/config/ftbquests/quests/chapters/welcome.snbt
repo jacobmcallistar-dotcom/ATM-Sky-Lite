@@ -21,15 +21,36 @@
 			icon: "minecraft:cake"
 			id: "30B0000000000001"
 			rewards: [
-				{ count: 3, id: "30B0000000000101", item: "minecraft:oak_sapling", type: "item" }
-				{ count: 16, id: "30B0000000000102", item: "minecraft:bone_meal", type: "item" }
-				{ count: 1, id: "30B0000000000103", item: "minecraft:dirt", type: "item" }
-				{ id: "30B0000000000104", table_id: 257L, type: "random" }
+				{
+					count: 3
+					id: "30B0000000000101"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "30B0000000000102"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "30B0000000000103"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "30B0000000000104"
+					type: "random"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "&7Start here"
-			tasks: [{ id: "30B0000000000201", title: "Begin your climb", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000201"
+				title: "Begin your climb"
+				type: "checkmark"
+			}]
 			title: "&6Welcome to the Sky"
 			x: 0.0d
 			y: 0.0d
@@ -47,9 +68,17 @@
 			]
 			icon: "exdeorum:oak_sieve"
 			id: "30B0000000000002"
-			rewards: [{ id: "30B0000000000105", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B0000000000105"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7How you get resources"
-			tasks: [{ id: "30B0000000000202", title: "Read: The Sieve is Your Pickaxe", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000202"
+				title: "Read: The Sieve is Your Pickaxe"
+				type: "checkmark"
+			}]
 			title: "&aThe Sieve is Your Pickaxe"
 			x: -2.0d
 			y: -1.5d
@@ -67,9 +96,17 @@
 			]
 			icon: "minecraft:knowledge_book"
 			id: "30B0000000000003"
-			rewards: [{ id: "30B0000000000106", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B0000000000106"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Press R and U"
-			tasks: [{ id: "30B0000000000203", title: "Read: Look It Up", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000203"
+				title: "Read: Look It Up"
+				type: "checkmark"
+			}]
 			title: "&bLook It Up (JEI)"
 			x: 2.0d
 			y: -1.5d
@@ -94,9 +131,17 @@
 			]
 			icon: "ftbquests:book"
 			id: "30B0000000000004"
-			rewards: [{ id: "30B0000000000107", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B0000000000107"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Your roadmap to the end"
-			tasks: [{ id: "30B0000000000204", title: "Read: The Eight Ages", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000204"
+				title: "Read: The Eight Ages"
+				type: "checkmark"
+			}]
 			title: "&6The Eight Ages"
 			x: 0.0d
 			y: -2.5d
@@ -115,9 +160,17 @@
 			]
 			icon: "skyforge:industrial_keystone"
 			id: "30B0000000000005"
-			rewards: [{ id: "30B0000000000108", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B0000000000108"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Cheat sheet: breaking into tech"
-			tasks: [{ id: "30B0000000000205", title: "Read: The Keystone Bridges", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000205"
+				title: "Read: The Keystone Bridges"
+				type: "checkmark"
+			}]
 			title: "&eNo Ores? No Problem"
 			x: -2.0d
 			y: 1.5d
@@ -138,11 +191,25 @@
 				""
 				"Now go build something ridiculous."
 			]
-			icon: "minecraft:shield"
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "30B0000000000006"
-			rewards: [{ id: "30B0000000000109", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B0000000000109"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Don't fall off"
-			tasks: [{ id: "30B0000000000206", title: "Read: Staying Alive", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000206"
+				title: "Read: Staying Alive"
+				type: "checkmark"
+			}]
 			title: "&cStaying Alive"
 			x: 2.0d
 			y: 1.5d
@@ -165,10 +232,18 @@
 			]
 			icon: "minecraft:iron_door"
 			id: "30B0000000000007"
-			rewards: [{ id: "30B000000000010A", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "30B000000000010A"
+				type: "xp"
+				xp: 20
+			}]
 			shape: "diamond"
 			subtitle: "&7The world is locked. Here are the keys."
-			tasks: [{ id: "30B0000000000207", title: "Read: The Gates", type: "checkmark" }]
+			tasks: [{
+				id: "30B0000000000207"
+				title: "Read: The Gates"
+				type: "checkmark"
+			}]
 			title: "&cThe Gates"
 			x: 0.0d
 			y: 2.5d

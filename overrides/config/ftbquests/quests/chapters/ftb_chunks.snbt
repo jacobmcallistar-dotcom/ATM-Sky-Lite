@@ -1,0 +1,59 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ftb_chunks"
+	group: "1A2B000000000001"
+	icon: "minecraft:filled_map"
+	id: "36B78FC1BC203848"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&2&lFTB Chunks.&r"
+				""
+				"Chunk loading, tied to your FTB Team. Open the map (default key: &eshown in Controls&r), find your island's chunk, and claim it."
+				""
+				"A claimed chunk keeps ticking - farms, machines, mob grinders - even while you're off exploring or logged out entirely."
+			]
+			icon: "minecraft:filled_map"
+			id: "22444C4EBB5BEB7C"
+			rewards: [{
+				id: "259BE6335A148EA3"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Claim your island"
+			tasks: [{
+				id: "0B0D3E7006620514"
+				title: "Claim your first chunk"
+				type: "checkmark"
+			}]
+			title: "&2FTB Chunks"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["&eForce-loading&r keeps a claimed chunk ticking even with nobody from your team online - the difference between a farm that runs while you sleep and one that pauses the moment you log off."]
+			icon: "minecraft:redstone_torch"
+			id: "5E35775F56D7A7F3"
+			rewards: [{
+				id: "50DAF491C1044C1F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Keep it running while you're gone"
+			tasks: [{
+				id: "29734A180C8864E0"
+				title: "Force-load a chunk"
+				type: "checkmark"
+			}]
+			title: "&2Force Loading"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "&2FTB Chunks"
+}

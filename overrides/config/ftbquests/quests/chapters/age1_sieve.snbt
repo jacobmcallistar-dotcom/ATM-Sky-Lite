@@ -19,13 +19,27 @@
 			icon: "minecraft:oak_sapling"
 			id: "2101000000000001"
 			rewards: [
-				{ count: 3, id: "2101000000000101", item: "minecraft:oak_sapling", type: "item" }
-				{ count: 8, id: "2101000000000102", item: "minecraft:bone_meal", type: "item" }
+				{
+					count: 3
+					id: "2101000000000101"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2101000000000102"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7From nothing, everything"
-			tasks: [{ id: "2101000000000201", title: "Take flight", type: "checkmark" }]
+			tasks: [{
+				id: "2101000000000201"
+				title: "Take flight"
+				type: "checkmark"
+			}]
 			title: "&2Age I Â· The Sieve"
 			x: -14.0d
 			y: 0.0d
@@ -39,9 +53,18 @@
 			]
 			icon: "minecraft:cobblestone"
 			id: "2101000000000002"
-			rewards: [{ id: "2101000000000103", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "2101000000000103"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Water + lava = infinite stone"
-			tasks: [{ count: 64L, id: "2101000000000202", item: "minecraft:cobblestone", type: "item" }]
+			tasks: [{
+				count: 64L
+				id: "2101000000000202"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			title: "&aThe Cobble Engine"
 			x: -12.0d
 			y: 0.0d
@@ -55,11 +78,32 @@
 				""
 				"Each step is more sievable material. The hammer wears out - stone, iron and diamond hammers last far longer and you will want them soon."
 			]
-			icon: "exdeorum:wooden_hammer"
+			icon: {
+				Count: 1
+				id: "exdeorum:wooden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "2101000000000003"
-			rewards: [{ count: 16, id: "2101000000000104", item: "minecraft:gravel", type: "item" }]
+			rewards: [{
+				count: 16
+				id: "2101000000000104"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			subtitle: "&7Crush cobble into gravel, sand, dust"
-			tasks: [{ id: "2101000000000203", item: "exdeorum:wooden_hammer", type: "item" }]
+			tasks: [{
+				id: "2101000000000203"
+				item: {
+					Count: 1
+					id: "exdeorum:wooden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			title: "&aHammer Time"
 			x: -10.0d
 			y: 0.0d
@@ -73,12 +117,25 @@
 			]
 			icon: "exdeorum:string_mesh"
 			id: "2101000000000004"
-			rewards: [{ count: 16, id: "2101000000000105", item: "minecraft:gravel", type: "item" }]
+			rewards: [{
+				count: 16
+				id: "2101000000000105"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Your mining replacement"
 			tasks: [
-				{ id: "2101000000000204", item: "exdeorum:oak_sieve", type: "item" }
-				{ id: "2101000000000205", item: "exdeorum:string_mesh", type: "item" }
+				{
+					id: "2101000000000204"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					id: "2101000000000205"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
 			]
 			title: "&aThe Sieve & the Mesh"
 			x: -8.0d
@@ -93,11 +150,26 @@
 			]
 			icon: "exdeorum:iron_ore_chunk"
 			id: "2101000000000005"
-			rewards: [{ count: 8, id: "2101000000000106", item: "minecraft:gravel", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000106"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			subtitle: "&7Sift gravel for metal"
 			tasks: [
-				{ count: 6L, id: "2101000000000206", item: "exdeorum:iron_ore_chunk", type: "item" }
-				{ count: 4L, id: "2101000000000207", item: "exdeorum:copper_ore_chunk", type: "item" }
+				{
+					count: 6L
+					id: "2101000000000206"
+					item: "exdeorum:iron_ore_chunk"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2101000000000207"
+					item: "exdeorum:copper_ore_chunk"
+					type: "item"
+				}
 			]
 			title: "&aOre From Gravel"
 			x: -6.0d
@@ -108,9 +180,18 @@
 			description: ["Smelt your iron ore chunks into ingots. The first real metal in the sky - it goes into hammers, meshes, and your first machines."]
 			icon: "minecraft:iron_ingot"
 			id: "2101000000000006"
-			rewards: [{ id: "2101000000000107", item: "minecraft:iron_block", type: "item" }]
+			rewards: [{
+				id: "2101000000000107"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
 			subtitle: "&7Iron from stone soup"
-			tasks: [{ count: 8L, id: "2101000000000208", item: "minecraft:iron_ingot", type: "item" }]
+			tasks: [{
+				count: 8L
+				id: "2101000000000208"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			title: "&aFirst Iron"
 			x: -6.0d
 			y: -1.5d
@@ -133,12 +214,25 @@
 			icon: "cobblefordays:tier_1"
 			id: "0AC0000000000002"
 			rewards: [
-				{ count: 8, id: "0AC0000000000103", item: "minecraft:glass", type: "item" }
-				{ id: "0AC0000000000104", type: "xp", xp: 40 }
+				{
+					count: 8
+					id: "0AC0000000000103"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "0AC0000000000104"
+					type: "xp"
+					xp: 40
+				}
 			]
 			shape: "gear"
 			subtitle: "&7Cobble while you sleep"
-			tasks: [{ id: "0AC0000000000202", item: "cobblefordays:tier_1", type: "item" }]
+			tasks: [{
+				id: "0AC0000000000202"
+				item: "cobblefordays:tier_1"
+				type: "item"
+			}]
 			title: "&aCobble On Tap"
 			x: -2.0d
 			y: -1.5d
@@ -148,9 +242,18 @@
 			description: ["A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."]
 			icon: "minecraft:blast_furnace"
 			id: "210100000000000C"
-			rewards: [{ count: 8, id: "2101000000000108", item: "minecraft:coal", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000108"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			subtitle: "&7Hotter than hot"
-			tasks: [{ id: "2101000000000209", item: "minecraft:blast_furnace", type: "item" }]
+			tasks: [{
+				id: "2101000000000209"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
 			title: "&aHotter Than Hot"
 			x: -4.0d
 			y: -1.5d
@@ -158,11 +261,32 @@
 		{
 			dependencies: ["2101000000000002"]
 			description: ["A Crook strips leaves for saplings and silk worms without destroying them. Silk worms breed into string - and string makes your first mesh. It also speeds sapling farming for endless wood."]
-			icon: "exdeorum:crook"
+			icon: {
+				Count: 1
+				id: "exdeorum:crook"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "210100000000000A"
-			rewards: [{ count: 4, id: "2101000000000109", item: "minecraft:string", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "2101000000000109"
+				item: "minecraft:string"
+				type: "item"
+			}]
 			subtitle: "&7Leaves, saplings, silk worms"
-			tasks: [{ id: "210100000000020A", item: "exdeorum:crook", type: "item" }]
+			tasks: [{
+				id: "210100000000020A"
+				item: {
+					Count: 1
+					id: "exdeorum:crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			title: "&aThe Crook"
 			x: -12.0d
 			y: 1.5d
@@ -176,9 +300,17 @@
 			]
 			icon: "exdeorum:oak_barrel"
 			id: "210100000000000D"
-			rewards: [{ id: "210100000000010A", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "210100000000010A"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Compost, water and lava"
-			tasks: [{ id: "210100000000020D", item: "exdeorum:oak_barrel", type: "item" }]
+			tasks: [{
+				id: "210100000000020D"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
 			title: "&aThe Barrel"
 			x: -10.0d
 			y: 1.5d
@@ -192,9 +324,17 @@
 			]
 			icon: "exdeorum:flint_mesh"
 			id: "2101000000000007"
-			rewards: [{ id: "210100000000010B", type: "xp", xp: 20 }]
+			rewards: [{
+				id: "210100000000010B"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "&7Mesh upgrade 1 of 5"
-			tasks: [{ id: "2101000000000221", item: "exdeorum:flint_mesh", type: "item" }]
+			tasks: [{
+				id: "2101000000000221"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
 			title: "&aSharper Sieving: Flint"
 			x: -8.0d
 			y: 1.5d
@@ -204,9 +344,17 @@
 			description: ["The &eIron Mesh&r unlocks the metal chunks in real quantity - osmium, tin and lead now appear alongside iron and gold. Craft it once you have iron to spare."]
 			icon: "exdeorum:iron_mesh"
 			id: "2101000000000008"
-			rewards: [{ id: "210100000000010C", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "210100000000010C"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Mesh upgrade 2 of 5"
-			tasks: [{ id: "2101000000000222", item: "exdeorum:iron_mesh", type: "item" }]
+			tasks: [{
+				id: "2101000000000222"
+				item: "exdeorum:iron_mesh"
+				type: "item"
+			}]
 			title: "&aIron Mesh"
 			x: -6.0d
 			y: 1.5d
@@ -216,9 +364,18 @@
 			description: ["Sieve enough gravel and diamonds fall out. Turn them into a &eDiamond Mesh&r - the tier that pulls the pack's rarest sieve drops and lasts almost forever."]
 			icon: "exdeorum:diamond_mesh"
 			id: "2101000000000009"
-			rewards: [{ count: 2, id: "210100000000010D", item: "minecraft:diamond", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "210100000000010D"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			subtitle: "&7Mesh upgrade 3 of 5"
-			tasks: [{ id: "2101000000000223", item: "exdeorum:diamond_mesh", type: "item" }]
+			tasks: [{
+				id: "2101000000000223"
+				item: "exdeorum:diamond_mesh"
+				type: "item"
+			}]
 			title: "&aDiamond Mesh"
 			x: -4.0d
 			y: 1.5d
@@ -232,10 +389,20 @@
 			]
 			icon: "ae2:certus_quartz_crystal"
 			id: "210100000000000E"
-			rewards: [{ count: 4, id: "210100000000010E", item: "ae2:certus_quartz_crystal", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "210100000000010E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7Sift sand, seed AE2"
-			tasks: [{ count: 6L, id: "210100000000020E", item: "ae2:certus_quartz_crystal", type: "item" }]
+			tasks: [{
+				count: 6L
+				id: "210100000000020E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			title: "&bCertus From Sand"
 			x: -2.0d
 			y: 1.5d
@@ -249,10 +416,20 @@
 			]
 			icon: "mekanism:ingot_osmium"
 			id: "2101000000000012"
-			rewards: [{ count: 4, id: "210100000000010F", item: "mekanism:ingot_osmium", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "210100000000010F"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7Sift gravel, seed Mekanism"
-			tasks: [{ count: 4L, id: "2101000000000212", item: "mekanism:ingot_osmium", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "2101000000000212"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			title: "&9Osmium From Gravel"
 			x: -4.0d
 			y: 3.0d
@@ -266,9 +443,19 @@
 			]
 			icon: "skyforge:sky_dust"
 			id: "210100000000000B"
-			rewards: [{ count: 8, id: "2101000000000110", item: "skyforge:sky_dust", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000110"
+				item: "skyforge:sky_dust"
+				type: "item"
+			}]
 			subtitle: "&7The backbone material"
-			tasks: [{ count: 8L, id: "210100000000020B", item: "skyforge:sky_dust", type: "item" }]
+			tasks: [{
+				count: 8L
+				id: "210100000000020B"
+				item: "skyforge:sky_dust"
+				type: "item"
+			}]
 			title: "&aDust of the Heavens"
 			x: -4.0d
 			y: 0.0d
@@ -285,10 +472,20 @@
 			]
 			icon: "skyforge:sky_steel_ingot"
 			id: "210100000000000F"
-			rewards: [{ count: 4, id: "2101000000000111", item: "skyforge:sky_steel_ingot", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "2101000000000111"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Blast dust into steel"
-			tasks: [{ count: 8L, id: "210100000000020F", item: "skyforge:sky_steel_ingot", type: "item" }]
+			tasks: [{
+				count: 8L
+				id: "210100000000020F"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
 			title: "&aSky Steel"
 			x: -2.0d
 			y: 0.0d
@@ -302,11 +499,20 @@
 			]
 			icon: "skyforge:sky_assembler"
 			id: "2101000000000010"
-			rewards: [{ count: 8, id: "2101000000000112", item: "mekanism:basic_universal_cable", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000112"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7Automate the forge"
-			tasks: [{ id: "2101000000000210", item: "skyforge:sky_assembler", type: "item" }]
+			tasks: [{
+				id: "2101000000000210"
+				item: "skyforge:sky_assembler"
+				type: "item"
+			}]
 			title: "&aThe Sky Assembler"
 			x: 0.0d
 			y: 0.0d
@@ -321,14 +527,31 @@
 			icon: "skyforge:sky_steel_ingot"
 			id: "2101000000000011"
 			rewards: [
-				{ count: 4, id: "2101000000000113", item: "skyforge:industrial_keystone", type: "item" }
-				{ id: "2101000000000114", table_id: 257L, type: "random" }
-				{ id: "2101000000000115", type: "xp_levels", xp_levels: 5 }
+				{
+					count: 4
+					id: "2101000000000113"
+					item: "skyforge:industrial_keystone"
+					type: "item"
+				}
+				{
+					id: "2101000000000114"
+					type: "random"
+				}
+				{
+					id: "2101000000000115"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Age I capstone"
-			tasks: [{ count: 16L, id: "2101000000000211", item: "skyforge:sky_steel_ingot", type: "item" }]
+			tasks: [{
+				count: 16L
+				id: "2101000000000211"
+				item: "skyforge:sky_steel_ingot"
+				type: "item"
+			}]
 			title: "&2Ingots on Tap"
 			x: 2.0d
 			y: 0.0d
@@ -342,12 +565,24 @@
 			]
 			icon: "exdeorum:porcelain_crucible"
 			id: "2101000000000013"
-			rewards: [{ id: "2101000000000116", item: "minecraft:lava_bucket", type: "item" }]
+			rewards: [{
+				id: "2101000000000116"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Cobble in, lava out"
 			tasks: [
-				{ id: "2101000000000224", item: "exdeorum:oak_crucible", type: "item" }
-				{ id: "2101000000000225", item: "exdeorum:porcelain_crucible", type: "item" }
+				{
+					id: "2101000000000224"
+					item: "exdeorum:oak_crucible"
+					type: "item"
+				}
+				{
+					id: "2101000000000225"
+					item: "exdeorum:porcelain_crucible"
+					type: "item"
+				}
 			]
 			title: "&aThe Crucible"
 			x: -10.0d
@@ -358,9 +593,18 @@
 			description: ["A &eWatering Can&r sprinkles crops, saplings and mushrooms to grow faster while you hold right-click. Tedious? Yes. Faster than waiting? Also yes. Cyclic's Sprinkler automates this later."]
 			icon: "exdeorum:wooden_watering_can"
 			id: "2101000000000014"
-			rewards: [{ count: 8, id: "2101000000000117", item: "minecraft:bone_meal", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000117"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
 			subtitle: "&7Grow it NOW"
-			tasks: [{ id: "2101000000000226", item: "exdeorum:wooden_watering_can", type: "item" }]
+			tasks: [{
+				id: "2101000000000226"
+				item: "exdeorum:wooden_watering_can"
+				type: "item"
+			}]
 			title: "&aThe Watering Can"
 			x: -12.0d
 			y: 3.0d
@@ -374,9 +618,18 @@
 			]
 			icon: "exdeorum:silk_worm"
 			id: "2101000000000015"
-			rewards: [{ count: 8, id: "2101000000000118", item: "minecraft:string", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "2101000000000118"
+				item: "minecraft:string"
+				type: "item"
+			}]
 			subtitle: "&7The tree-to-string pipeline"
-			tasks: [{ id: "2101000000000227", item: "exdeorum:silk_worm", type: "item" }]
+			tasks: [{
+				id: "2101000000000227"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
 			title: "&aSilk Worms"
 			x: -14.0d
 			y: 3.0d
@@ -388,17 +641,75 @@
 				""
 				"When your sieve yard scales up, compression is how your arms keep up."
 			]
-			icon: "exdeorum:compressed_wooden_hammer"
+			icon: {
+				Count: 1
+				id: "exdeorum:compressed_wooden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "2101000000000016"
-			rewards: [{ count: 9, id: "2101000000000119", item: "exdeorum:compressed_gravel", type: "item" }]
+			rewards: [{
+				count: 9
+				id: "2101000000000119"
+				item: "exdeorum:compressed_gravel"
+				type: "item"
+			}]
 			subtitle: "&7Nine at a time"
 			tasks: [
-				{ count: 9L, id: "2101000000000228", item: "exdeorum:compressed_cobblestone", type: "item" }
-				{ id: "2101000000000229", item: "exdeorum:compressed_wooden_hammer", type: "item" }
+				{
+					count: 9L
+					id: "2101000000000228"
+					item: "exdeorum:compressed_cobblestone"
+					type: "item"
+				}
+				{
+					id: "2101000000000229"
+					item: {
+						Count: 1
+						id: "exdeorum:compressed_wooden_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "&aCompressed Progress"
 			x: -8.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["2101000000000016"]
+			description: ["&eEx Machinis: Divitiae Deorum&r automates the exact chain you've been doing by hand - RF-powered Flux Sieve, Flux Hammer and Flux Compactor. Feed them power instead of your own clicks."]
+			icon: "exmachinis:flux_sieve"
+			id: "1A1162A344DAAC99"
+			rewards: [{
+				id: "65645D0A4A1686EE"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automate the sieve"
+			tasks: [
+				{
+					id: "2689D08DCA3C5A71"
+					item: "exmachinis:flux_sieve"
+					type: "item"
+				}
+				{
+					id: "6DAC627FA446C276"
+					item: "exmachinis:flux_hammer"
+					type: "item"
+				}
+				{
+					id: "7A0AD9267429426B"
+					item: "exmachinis:flux_compactor"
+					type: "item"
+				}
+			]
+			title: "&aPowered Sieving"
+			x: -8.0d
+			y: -3.0d
 		}
 	]
 	title: "&2Age I Â· The Sieve"

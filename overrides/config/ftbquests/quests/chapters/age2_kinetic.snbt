@@ -19,11 +19,19 @@
 			]
 			icon: "create:water_wheel"
 			id: "44EA000000000001"
-			rewards: [{ id: "44EA000000000101", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "44EA000000000101"
+				type: "xp"
+				xp: 40
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Industry before electricity"
-			tasks: [{ id: "44EA000000000201", title: "Feel the rotation", type: "checkmark" }]
+			tasks: [{
+				id: "44EA000000000201"
+				title: "Feel the rotation"
+				type: "checkmark"
+			}]
 			title: "&eAge II Â· The Kinetic Age"
 			x: -16.0d
 			y: 0.0d
@@ -37,9 +45,19 @@
 			]
 			icon: "create:andesite_alloy"
 			id: "44EA000000000002"
-			rewards: [{ count: 8, id: "44EA000000000102", item: "create:andesite_alloy", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "44EA000000000102"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
 			subtitle: "&7The kinetic iron"
-			tasks: [{ count: 8L, id: "44EA000000000202", item: "create:andesite_alloy", type: "item" }]
+			tasks: [{
+				count: 8L
+				id: "44EA000000000202"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
 			title: "&eAndesite Alloy"
 			x: -14.0d
 			y: 0.0d
@@ -49,11 +67,26 @@
 			description: ["&eShafts&r carry rotation; &eCogwheels&r turn corners and change speed. This is your wiring now - lay it like you mean it."]
 			icon: "create:cogwheel"
 			id: "44EA000000000003"
-			rewards: [{ count: 4, id: "44EA000000000103", item: "create:shaft", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "44EA000000000103"
+				item: "create:shaft"
+				type: "item"
+			}]
 			subtitle: "&7Rotation is power"
 			tasks: [
-				{ count: 8L, id: "44EA000000000203", item: "create:shaft", type: "item" }
-				{ count: 4L, id: "44EA000000000213", item: "create:cogwheel", type: "item" }
+				{
+					count: 8L
+					id: "44EA000000000203"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44EA000000000213"
+					item: "create:cogwheel"
+					type: "item"
+				}
 			]
 			title: "&eShafts & Cogs"
 			x: -12.0d
@@ -68,10 +101,18 @@
 			]
 			icon: "create:water_wheel"
 			id: "44EA000000000004"
-			rewards: [{ id: "44EA000000000104", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "44EA000000000104"
+				type: "xp"
+				xp: 40
+			}]
 			shape: "gear"
 			subtitle: "&7Free torque, forever"
-			tasks: [{ id: "44EA000000000204", item: "create:water_wheel", type: "item" }]
+			tasks: [{
+				id: "44EA000000000204"
+				item: "create:water_wheel"
+				type: "item"
+			}]
 			title: "&eThe Water Wheel"
 			x: -10.0d
 			y: 0.0d
@@ -81,11 +122,23 @@
 			description: ["The &eWrench&r rotates, configures and instantly picks up any Create machine. &eEngineer's Goggles&r overlay stress and speed on everything you look at. Wear them always. Look brilliant."]
 			icon: "create:goggles"
 			id: "44EA000000000005"
-			rewards: [{ id: "44EA000000000105", type: "xp", xp: 30 }]
+			rewards: [{
+				id: "44EA000000000105"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "&7Dress for the job"
 			tasks: [
-				{ id: "44EA000000000205", item: "create:wrench", type: "item" }
-				{ id: "44EA000000000215", item: "create:goggles", type: "item" }
+				{
+					id: "44EA000000000205"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "44EA000000000215"
+					item: "create:goggles"
+					type: "item"
+				}
 			]
 			title: "&eThe Engineer's Kit"
 			x: -12.0d
@@ -100,10 +153,19 @@
 			]
 			icon: "create:mechanical_press"
 			id: "44EA000000000006"
-			rewards: [{ count: 4, id: "44EA000000000106", item: "create:iron_sheet", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "44EA000000000106"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "&7Thunk."
-			tasks: [{ id: "44EA000000000206", item: "create:mechanical_press", type: "item" }]
+			tasks: [{
+				id: "44EA000000000206"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
 			title: "&eThe Press"
 			x: -8.0d
 			y: 0.0d
@@ -113,9 +175,18 @@
 			description: ["The &eMillstone&r grinds slowly but surely - gravel to flint, bones to meal, wheat to flour. Your first powered processing block, and it never asks for a coffee break."]
 			icon: "create:millstone"
 			id: "44EA000000000007"
-			rewards: [{ count: 8, id: "44EA000000000107", item: "minecraft:bone_meal", type: "item" }]
+			rewards: [{
+				count: 8
+				id: "44EA000000000107"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
 			subtitle: "&7Grind it out"
-			tasks: [{ id: "44EA000000000207", item: "create:millstone", type: "item" }]
+			tasks: [{
+				id: "44EA000000000207"
+				item: "create:millstone"
+				type: "item"
+			}]
 			title: "&eThe Millstone"
 			x: -10.0d
 			y: -1.5d
@@ -129,12 +200,24 @@
 			]
 			icon: "create:encased_fan"
 			id: "44EA000000000008"
-			rewards: [{ id: "44EA000000000108", type: "xp", xp: 50 }]
+			rewards: [{
+				id: "44EA000000000108"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "gear"
 			subtitle: "&7Bulk washing = free ore"
 			tasks: [
-				{ id: "44EA000000000208", item: "create:encased_fan", type: "item" }
-				{ id: "44EA000000000218", item: "create:propeller", type: "item" }
+				{
+					id: "44EA000000000208"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "44EA000000000218"
+					item: "create:propeller"
+					type: "item"
+				}
 			]
 			title: "&eFan Washing"
 			x: -8.0d
@@ -145,12 +228,24 @@
 			description: ["A &eBasin&r under a &eMechanical Mixer&r combines ingredients automatically - dough, dyes, and soon, alloys. The cauldron of the industrial age."]
 			icon: "create:mechanical_mixer"
 			id: "44EA000000000009"
-			rewards: [{ id: "44EA000000000109", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "44EA000000000109"
+				type: "xp"
+				xp: 40
+			}]
 			shape: "gear"
 			subtitle: "&7Stir with torque"
 			tasks: [
-				{ id: "44EA000000000209", item: "create:mechanical_mixer", type: "item" }
-				{ id: "44EA000000000219", item: "create:basin", type: "item" }
+				{
+					id: "44EA000000000209"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "44EA000000000219"
+					item: "create:basin"
+					type: "item"
+				}
 			]
 			title: "&eBasin & Mixer"
 			x: -6.0d
@@ -165,10 +260,18 @@
 			]
 			icon: "create:blaze_burner"
 			id: "44EA00000000000B"
-			rewards: [{ id: "44EA00000000010B", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "44EA00000000010B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "diamond"
 			subtitle: "&7Steal fire itself"
-			tasks: [{ id: "44EA00000000020B", item: "create:blaze_burner", type: "item" }]
+			tasks: [{
+				id: "44EA00000000020B"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "&eThe Blaze Burner"
 			x: -6.0d
 			y: 1.5d
@@ -182,11 +285,26 @@
 			]
 			icon: "create:brass_ingot"
 			id: "44EA00000000000A"
-			rewards: [{ count: 4, id: "44EA00000000010A", item: "create:brass_ingot", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "44EA00000000010A"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
 			subtitle: "&7The smart metal"
 			tasks: [
-				{ count: 4L, id: "44EA00000000020A", item: "create:zinc_ingot", type: "item" }
-				{ count: 4L, id: "44EA00000000021A", item: "create:brass_ingot", type: "item" }
+				{
+					count: 4L
+					id: "44EA00000000020A"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44EA00000000021A"
+					item: "create:brass_ingot"
+					type: "item"
+				}
 			]
 			title: "&eZinc & Brass"
 			x: -4.0d
@@ -201,11 +319,20 @@
 			]
 			icon: "create:crushing_wheel"
 			id: "44EA00000000000C"
-			rewards: [{ id: "44EA00000000010C", type: "xp_levels", xp_levels: 3 }]
+			rewards: [{
+				id: "44EA00000000010C"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "&7The hungry wheels"
-			tasks: [{ count: 2L, id: "44EA00000000020C", item: "create:crushing_wheel", type: "item" }]
+			tasks: [{
+				count: 2L
+				id: "44EA00000000020C"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
 			title: "&eCrushing Wheels"
 			x: -6.0d
 			y: -1.5d
@@ -215,11 +342,23 @@
 			description: ["A &eDeployer&r is a tireless mechanical hand - it places, uses, and crafts on repeat. With a &eDepot&r as its workbench, it performs the assembly lines the next quest demands."]
 			icon: "create:deployer"
 			id: "44EA00000000000D"
-			rewards: [{ id: "44EA00000000010D", type: "xp", xp: 50 }]
+			rewards: [{
+				id: "44EA00000000010D"
+				type: "xp"
+				xp: 50
+			}]
 			subtitle: "&7A tireless hand"
 			tasks: [
-				{ id: "44EA00000000020D", item: "create:deployer", type: "item" }
-				{ id: "44EA00000000021D", item: "create:depot", type: "item" }
+				{
+					id: "44EA00000000020D"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "44EA00000000021D"
+					item: "create:depot"
+					type: "item"
+				}
 			]
 			title: "&eThe Deployer"
 			x: -2.0d
@@ -240,16 +379,82 @@
 			icon: "create:precision_mechanism"
 			id: "44EA00000000000E"
 			rewards: [
-				{ id: "44EA00000000010E", table_id: 258L, type: "random" }
-				{ id: "44EA00000000010F", type: "xp_levels", xp_levels: 5 }
+				{
+					id: "44EA00000000010E"
+					type: "random"
+				}
+				{
+					id: "44EA00000000010F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Age II capstone Â· unlocks Mekanism"
-			tasks: [{ id: "44EA00000000020E", item: "create:precision_mechanism", type: "item" }]
+			tasks: [{
+				id: "44EA00000000020E"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
 			title: "&e&lThe Precision Mechanism"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["44EA00000000000E"]
+			description: ["&6Create Crafts & Additions&r bridges Forge Energy and kinetic energy. An &eAlternator&r turns rotation into FE for Mekanism/AE2; an &eAccumulator&r does the reverse, drawing FE to spin your cogs."]
+			icon: "createaddition:alternator"
+			id: "7592B47334DC838E"
+			rewards: [{
+				id: "35E70C6D60B1DCF6"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7FE meets kinetics"
+			tasks: [
+				{
+					id: "3568529EB4586055"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "6E2E4F44C1148700"
+					item: "createaddition:accumulator"
+					type: "item"
+				}
+			]
+			title: "&eCreate Crafts & Additions"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44EA00000000000E"]
+			description: ["&6Create: Steam 'n' Rails&r adds trains. Lay &etrack&r, mount a &esemaphore&r for signaling, and top off a locomotive with a &econductor's cap&r before you drive it."]
+			icon: "railways:semaphore"
+			id: "6187A9055B14303B"
+			rewards: [{
+				id: "6A28B7F175FCB649"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7All aboard"
+			tasks: [
+				{
+					count: 8L
+					id: "3209ABD4E2D04BAA"
+					item: "railways:track_oak"
+					type: "item"
+				}
+				{
+					id: "2E6F9916B779D700"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "&eSteam 'n' Rails"
+			x: 2.0d
+			y: 1.5d
 		}
 	]
 	title: "&eAge II Â· The Kinetic Age"

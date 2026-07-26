@@ -27,7 +27,6 @@
 				}
 				{
 					id: "1DBC4F9033BF02ED"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -98,7 +97,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["06EEAC6C2BFD16FE", "714AA25143923BC8"]
+			dependencies: [
+				"06EEAC6C2BFD16FE"
+				"714AA25143923BC8"
+			]
 			description: [
 				"The three processors - Logic, Calculation, Engineering - are the brains of every AE2 machine."
 				""
@@ -387,7 +389,6 @@
 				}
 				{
 					id: "03399F31A4947F6E"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -425,7 +426,6 @@
 				}
 				{
 					id: "1F802E1FCDC95244"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -448,7 +448,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4659FDAFCEA8BFE6", "12A79575C816228A"]
+			dependencies: [
+				"4659FDAFCEA8BFE6"
+				"12A79575C816228A"
+			]
 			description: [
 				"Storage, autocrafting, wireless, spatial, and a quantum-linked multi-network. You have built a machine that builds machines."
 				""
@@ -463,7 +466,6 @@
 				}
 				{
 					id: "1A18BE45090EF380"
-					table_id: 258L
 					type: "random"
 				}
 			]
@@ -488,9 +490,17 @@
 			]
 			icon: "ae2things:disk_housing"
 			id: "1FB9000000000001"
-			rewards: [{ id: "1FB9000000000101", type: "xp", xp: 40 }]
+			rewards: [{
+				id: "1FB9000000000101"
+				type: "xp"
+				xp: 40
+			}]
 			subtitle: "&7Bulk storage, cheap"
-			tasks: [{ id: "1FB9000000000201", item: "ae2things:disk_housing", type: "item" }]
+			tasks: [{
+				id: "1FB9000000000201"
+				item: "ae2things:disk_housing"
+				type: "item"
+			}]
 			title: "&bDISK Drives"
 			x: 2.0d
 			y: -4.0d
@@ -504,12 +514,78 @@
 			]
 			icon: "appmek:chemical_cell_housing"
 			id: "1FB9000000000002"
-			rewards: [{ id: "1FB9000000000102", type: "xp", xp: 50 }]
+			rewards: [{
+				id: "1FB9000000000102"
+				type: "xp"
+				xp: 50
+			}]
 			subtitle: "&7Gases in the grid"
-			tasks: [{ id: "1FB9000000000202", item: "appmek:chemical_cell_housing", type: "item" }]
+			tasks: [{
+				id: "1FB9000000000202"
+				item: "appmek:chemical_cell_housing"
+				type: "item"
+			}]
 			title: "&bChemicals, Digitized"
 			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["1FB9000000000001"]
+			description: ["The &eWireless Universal Terminal&r puts crafting, storage and pattern access in your hand from anywhere in range - no more walking back to the network to check a recipe."]
+			icon: "ae2wtlib:wireless_universal_terminal"
+			id: "0199C6AC85B0298A"
+			rewards: [{
+				id: "7C881B3E69E15977"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Your network, in your pocket"
+			tasks: [{
+				id: "2827AEB0F42F9AC3"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			title: "&bWireless Terminals"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			description: ["&eExtended AE&r's Expanded Pattern Provider holds 72 patterns instead of 9, and multiplies pattern encoding so a single stack becomes an entire crafting tree. Big-base automation QoL."]
+			icon: "expatternprovider:ex_pattern_provider"
+			id: "439099E3AEF701AA"
+			rewards: [{
+				id: "76B43456CCFDE63D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&772 patterns, one provider"
+			tasks: [{
+				id: "0A7C7FB95189D9F7"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			title: "&bExpanded Pattern Provider"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			description: ["&eMEGA Cells&r: a single storage cell that holds a colossal number of item types. When your 64k disk starts filling up, this is where you go instead of buying a second one."]
+			icon: "megacells:item_storage_cell_64m"
+			id: "4898530DE0904B6E"
+			rewards: [{
+				id: "13E8D99DEB598CA2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7When 64k isn't enough"
+			tasks: [{
+				id: "1E19D3098A4DAB05"
+				item: "megacells:item_storage_cell_64m"
+				type: "item"
+			}]
+			title: "&bMEGA Cells"
+			x: 6.0d
+			y: -5.5d
 		}
 	]
 	title: "&bTech Branch Â· Applied Energistics"

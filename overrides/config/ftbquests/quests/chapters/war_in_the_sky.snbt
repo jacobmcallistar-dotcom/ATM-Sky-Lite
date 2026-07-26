@@ -201,7 +201,6 @@
 				}
 				{
 					id: "5C89000000CC0001"
-					table_id: 259L
 					type: "random"
 				}
 			]
@@ -281,9 +280,18 @@
 			]
 			icon: "apotheosis:salvaging_table"
 			id: "6B78AA0000000001"
-			rewards: [{ count: 4, id: "6B78AA0000000101", item: "apotheosis:gem_dust", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "6B78AA0000000101"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
 			subtitle: "&7Junk gear is ore"
-			tasks: [{ id: "6B78AA0000000201", item: "apotheosis:salvaging_table", type: "item" }]
+			tasks: [{
+				id: "6B78AA0000000201"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
 			title: "&cThe Salvage Yard"
 			x: -6.0d
 			y: -1.5d
@@ -297,11 +305,25 @@
 			]
 			icon: "apotheosis:gem_cutting_table"
 			id: "6B78AA0000000002"
-			rewards: [{ count: 6, id: "6B78AA0000000102", item: "apotheosis:gem_dust", type: "item" }]
+			rewards: [{
+				count: 6
+				id: "6B78AA0000000102"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
 			subtitle: "&7Purity is power"
 			tasks: [
-				{ id: "6B78AA0000000202", item: "apotheosis:gem_cutting_table", type: "item" }
-				{ count: 4L, id: "6B78AA0000000212", item: "apotheosis:gem_dust", type: "item" }
+				{
+					id: "6B78AA0000000202"
+					item: "apotheosis:gem_cutting_table"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6B78AA0000000212"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
 			]
 			title: "&cCut Gems"
 			x: -8.0d
@@ -316,10 +338,19 @@
 			]
 			icon: "apotheosis:sigil_of_socketing"
 			id: "6B78AA0000000003"
-			rewards: [{ count: 2, id: "6B78AA0000000103", item: "apotheosis:sigil_of_socketing", type: "item" }]
+			rewards: [{
+				count: 2
+				id: "6B78AA0000000103"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "&7Gems meet gear"
-			tasks: [{ id: "6B78AA0000000203", item: "apotheosis:sigil_of_socketing", type: "item" }]
+			tasks: [{
+				id: "6B78AA0000000203"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
 			title: "&cSocket It"
 			x: -8.0d
 			y: 0.0d
@@ -333,9 +364,19 @@
 			]
 			icon: "apotheosis:hellshelf"
 			id: "6B78AA0000000004"
-			rewards: [{ count: 4, id: "6B78AA0000000104", item: "minecraft:lapis_lazuli", type: "item" }]
+			rewards: [{
+				count: 4
+				id: "6B78AA0000000104"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
 			subtitle: "&7Enchanting, unchained"
-			tasks: [{ count: 4L, id: "6B78AA0000000204", item: "apotheosis:hellshelf", type: "item" }]
+			tasks: [{
+				count: 4L
+				id: "6B78AA0000000204"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
 			title: "&cHellforged Shelves"
 			x: -8.0d
 			y: 1.5d
@@ -349,10 +390,18 @@
 			]
 			icon: "apotheosis:library"
 			id: "6B78AA0000000005"
-			rewards: [{ id: "6B78AA0000000105", type: "xp_levels", xp_levels: 5 }]
+			rewards: [{
+				id: "6B78AA0000000105"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "diamond"
 			subtitle: "&7Every book, banked"
-			tasks: [{ id: "6B78AA0000000205", item: "apotheosis:library", type: "item" }]
+			tasks: [{
+				id: "6B78AA0000000205"
+				item: "apotheosis:library"
+				type: "item"
+			}]
 			title: "&cThe Library"
 			x: -10.0d
 			y: 1.5d

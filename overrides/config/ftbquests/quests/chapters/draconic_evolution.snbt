@@ -1,0 +1,137 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "draconic_evolution"
+	group: "1A2B000000000004"
+	icon: "draconicevolution:draconium_ingot"
+	id: "256742505B017DD8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&c&lDraconic Evolution.&r"
+				""
+				"Endgame tech: tools, armor and reactors that make everything before this look quaint. Runs on &6Brandon's Core&r and &6CodeChicken Lib&r underneath - both included."
+			]
+			icon: "draconicevolution:draconium_ingot"
+			id: "38DC97E4D4193BDC"
+			rewards: [{
+				id: "63051A74E753F1CC"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Where the game peaks"
+			tasks: [{
+				id: "336D38740A260C2C"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			title: "&cDraconic Evolution"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["The &eDraconic Sword&r and &eDraconic Pickaxe&r are the tier-one lineup - draconium-forged, and already a serious step past netherite."]
+			icon: "draconicevolution:draconic_sword"
+			id: "5739033CBC45ADCC"
+			rewards: [{
+				id: "3B384F5D4741DDFB"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Tier I &8Â· Draconic"
+			tasks: [
+				{
+					id: "3EF0C4DCD09F7267"
+					item: "draconicevolution:draconic_sword"
+					type: "item"
+				}
+				{
+					id: "64A74CB1DA0C7F42"
+					item: "draconicevolution:draconic_pickaxe"
+					type: "item"
+				}
+			]
+			title: "&cDraconic Tools"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: ["An &eEnergy Core&r paired with an &eEnergy Pylon&r ring is Draconic Evolution's answer to RF storage - millions of FE, buffered in one structure."]
+			icon: "draconicevolution:energy_core"
+			id: "2F22A3FE8C075F7E"
+			rewards: [{
+				id: "65442B26A6E4CFAC"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Store power at scale"
+			tasks: [
+				{
+					id: "339338EA58C6F451"
+					item: "draconicevolution:energy_core"
+					type: "item"
+				}
+				{
+					id: "69B7253AE046D1F0"
+					item: "draconicevolution:energy_pylon"
+					type: "item"
+				}
+			]
+			title: "&cEnergy Core"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			description: ["&eWyvern&r tier gear picks up upgrade modules - flight, auto-feed, shield capacity - turning your tools and armor into a build-your-own loadout."]
+			icon: "draconicevolution:wyvern_sword"
+			id: "28E31AAB6A65F788"
+			rewards: [{
+				id: "7B693D117F397DCB"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			subtitle: "&7Tier II &8Â· Wyvern"
+			tasks: [
+				{
+					id: "1510EF7EB3618506"
+					item: "draconicevolution:wyvern_sword"
+					type: "item"
+				}
+				{
+					id: "542172E0E9131EBB"
+					item: "draconicevolution:wyvern_chestpiece"
+					type: "item"
+				}
+			]
+			title: "&cWyvern Gear"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			description: ["&eChaotic&r tier is built from a Chaos Shard, pulled from the far end of a chaos-generation build. Beyond this: &eAwakened&r, the true ceiling of the mod."]
+			icon: "draconicevolution:chaotic_sword"
+			id: "69DF0964511307F4"
+			rewards: [{
+				id: "4EBCFB3A045B8DBA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Tier III &8Â· Chaotic"
+			tasks: [{
+				id: "46520DA9DB86A481"
+				item: "draconicevolution:chaotic_sword"
+				type: "item"
+			}]
+			title: "&cChaotic Gear"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "&cDraconic Evolution"
+}
