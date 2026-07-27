@@ -9,6 +9,7 @@ ad_astra:mercury_deltas
 ad_astra:orbit
 ad_astra:venus_wastelands
 ae2:spatial_storage
+ars_nouveau:archwood_forest
 blue_skies:brightlands
 blue_skies:brisk_meadow
 blue_skies:brumble_forest
@@ -32,6 +33,8 @@ blue_skies:slushlands
 blue_skies:snow_covered_pines
 blue_skies:sunset_maple_forest
 blue_skies:unorthodox_valley
+compactmachines:machine
+integrateddynamics:meneglin
 minecraft:badlands
 minecraft:bamboo_jungle
 minecraft:basalt_deltas

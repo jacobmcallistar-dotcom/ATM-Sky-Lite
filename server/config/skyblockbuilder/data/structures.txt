@@ -11,6 +11,9 @@ apotheosis:tower_leaf
 apotheosis:tower_main
 apotheosis:tower_sand
 apotheosis:tower_spruce
+ars_nouveau:guardian_wilden_den
+ars_nouveau:hunter_wilden_den
+ars_nouveau:stalker_wilden_den
 blue_skies:everbright_blinding_dungeon
 blue_skies:everdawn_blinding_dungeon
 blue_skies:frozen_bunker

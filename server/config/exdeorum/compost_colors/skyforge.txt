@@ -1,0 +1,5 @@
+// Compost colors for skyforge. You may add your own colors, change existing ones, or remove colors that aren't needed.
+heart_of_the_sky, #6b3a91
+industrial_keystone, #ffff43
+sky_dust, #feffff
+sky_steel_ingot, #ffffff

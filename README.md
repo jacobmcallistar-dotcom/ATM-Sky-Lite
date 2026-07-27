@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (125 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (165 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -17,8 +17,11 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 | `PACK-README.md` | Original project notes |
 
 **The mod `.jar` files are not committed to git.** Download them from the
-[**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`), or let a CurseForge-style
-launcher resolve them from `manifest.json`.
+[**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
+
+> ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 165 mods. The client
+> zip on the Releases page is the only supported install path.
 
 ## Install (to play)
 
@@ -26,9 +29,58 @@ launcher resolve them from `manifest.json`.
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 125 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 165 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.13.1** — Two fixes, no mod changes. **Quest book text repaired:** 69 garbled
+> **Latest: v1.14.0 — the automation update. 40 new mods, 125 → 165.**
+>
+> The pack was never short on *machines* — it was short on **ways to move things between them**.
+> Logistics jumped straight from hoppers and Pipez to a full AE2 network, with nothing in the
+> middle, so most builds skipped the stage where automation is actually fun. This update fills
+> that gap.
+>
+> **The headliners**
+>
+> | Mod | What it does |
+> |---|---|
+> | **Super Factory Manager** | Write short plain-English programs (`EVERY 20 TICKS DO INPUT FROM chests OUTPUT TO furnaces`) that move items, fluids and energy across a whole labelled network from one block. The single biggest quality-of-life jump in the update. |
+> | **XNet** | One cable and one controller GUI: item/fluid/energy/logic channels with filters and priorities, configured centrally instead of per-pipe. |
+> | **Modular Routers** | One block plus up to 9 modules (extractor, placer, breaker, vacuum, activator…) replaces an entire pipe network. Cheap and available very early. |
+> | **Pretty Pipes** | Cheap item pipes with filters, plus a **Crafting Terminal** that gives you AE2-style autocrafting out of plain chests long before AE2 is realistic. |
+> | **PneumaticCraft: Repressurized** | Pressure-based tech whose headline is **programmable drones** — build a program out of puzzle-piece widgets and a drone flies off and does it. |
+> | **Thermal Foundation / Expansion / Dynamics** | Simple 1-in/1-out machines with auto-eject and in-place augment upgrades, plus ducts with built-in filtering. The gentlest automation on-ramp in the pack. |
+> | **Integrated Dynamics** (+ Tunnels, Crafting) | A logic and data network — readers, writers and an operator system that amounts to functional programming in-world. Highest ceiling here. |
+>
+> **Hands-off resource loops** — the pack's other gap. **Botany Pots** grows any crop or sapling
+> with no farmland, water or light and drops straight into a hopper. **Botania** brings mana,
+> functional flowers that haul/place/grow, and the **Corporea** wireless request network.
+> **Occultism** summons familiars that mine and haul with no cables at all. **Industrial
+> Foregoing: Souls** adds a mob-soul chain onto the IF you already run, and **PackagedAuto** lets
+> AE2 autocraft machines that need multiple simultaneous inputs or produce multiple outputs —
+> the classic AE2 pattern gap. **Item Collectors** vacuum drops into any inventory.
+>
+> **Power, wireless and misc**: Immersive Engineering (multiblock machines + conveyors), Solar
+> Flux Reborn, Advanced Generators, Ender Storage, EnderTanks, **Entangled** (links any two
+> blocks remotely — a partial stand-in for the still-unavailable Flux Networks), Cable Tiers,
+> Refined Storage: Requestify, Pipe Connector, Iron Jetpacks.
+>
+> **Deliberately left out.** Simple Storage Network, Functional Storage and Extreme Reactors were
+> downloaded and then dropped — they duplicate Tom's Simple Storage, Storage Drawers and
+> Mekanism's fission reactor respectively. **LaserIO, Mob Grinding Utils, Woot, Just Dire Things,
+> Actually Additions, Routers and Flux Networks have no Forge 1.20.1 build** (NeoForge-only or
+> CurseForge-exclusive), so none of them could be included — LaserIO is the most painful miss.
+>
+> Every jar was checked against this pack's **Forge 47.3.0** before install by reading
+> `loaderVersion` and the `minecraft` version range straight out of its `mods.toml` — the same
+> check that caught FTB Ultimine and killed Mekanism Curios. Two catches worth recording: SFM
+> declares `loaderVersion "[47,)"` but its real forge dependency is `[47.1,)`, and Item Collectors
+> ships as `mc1.20.2` in its filename while its actual range is `[1.20,1.20.3)`. **Boot-tested
+> clean twice** (`Done (2.674s)` at 162 jars, `Done (2.101s)` at 165) with zero
+> `LoadingFailedException` and no missing dependencies. This release also syncs 206 server config
+> files that had drifted out of the repo snapshot since v1.8.0.
+>
+> **These 40 mods have no quest coverage yet** — that's the next release.
+>
+> **v1.13.1** — Two fixes, no mod changes. **Quest book text repaired:** 69 garbled
 > characters across 15 chapters (chapter titles showing `Â·` instead of `·`, and `â†’` instead of
 > `→` in progression chains) were double-encoded UTF-8 and rendered as mojibake in-game — all
 > fixed. **The auto-crafting checkbox is gone from crafting tables:** that was Inventory Profiles
