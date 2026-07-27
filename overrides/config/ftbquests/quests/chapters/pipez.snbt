@@ -278,6 +278,136 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7E10000000000009"]
+			description: [
+				"Pipez is not the only way to move an item, and the alternatives are worth knowing before you commit a whole base to one style."
+				""
+				"&ePretty Pipes&r are cheap, filterable, and come with something Pipez doesn't have: an &eItem Terminal&r that shows every connected inventory in one searchable window, and a &eCrafting Terminal&r that crafts from all of them at once."
+				""
+				"That is AE2-style convenience out of plain chests, available long before AE2 is realistic."
+			]
+			icon: "prettypipes:crafting_terminal"
+			id: "7E30100000000001"
+			rewards: [{
+				id: "7E30100000000101"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7A terminal, without a network"
+			tasks: [
+				{
+					count: 8L
+					id: "7E30100000000201"
+					item: "prettypipes:pipe"
+					type: "item"
+				}
+				{
+					id: "7E30100000000211"
+					item: "prettypipes:crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "&bPretty Pipes"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30100000000001"]
+			description: [
+				"&eModular Routers&r throws out the idea of a pipe run entirely."
+				""
+				"One &eRouter&r block holds up to nine &emodules&r, and each module is a job: pull from a chest, push to a machine, place a block, break a block, vacuum up drops, activate a tool, fling items across a gap."
+				""
+				"A single router bolted to a wall can replace a whole pipe network. It is the cheapest \"oh, that's easy\" moment in the pack - build one and see how much of your base it quietly absorbs."
+			]
+			icon: "modularrouters:modular_router"
+			id: "7E30100000000002"
+			rewards: [
+				{
+					id: "7E30100000000102"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "7E30100000000103"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7One block, nine jobs"
+			tasks: [
+				{
+					id: "7E30100000000202"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7E30100000000212"
+					item: "modularrouters:blank_module"
+					type: "item"
+				}
+				{
+					id: "7E30100000000222"
+					item: "modularrouters:puller_module_1"
+					type: "item"
+				}
+			]
+			title: "&bModular Routers"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30100000000002"]
+			description: [
+				"An &eItem Collector&r vacuums up dropped items in a radius and pushes them into whatever inventory it faces."
+				""
+				"Park one under a tree farm, a mob drop point, or the output of anything that flings items on the floor, and the sweeping problem disappears. The Advanced version covers a much larger area."
+			]
+			icon: "itemcollectors:basic_collector"
+			id: "7E30100000000003"
+			rewards: [{
+				id: "7E30100000000104"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Stop picking things up"
+			tasks: [{
+				id: "7E30100000000203"
+				item: "itemcollectors:basic_collector"
+				type: "item"
+			}]
+			title: "&bItem Collectors"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30100000000002"]
+			description: [
+				"A small quality-of-life block that solves a genuinely annoying problem: connecting a pipe to a machine that is one block out of reach, or on the wrong face."
+				""
+				"The &ePipe Connector&r bridges a pipe to a block it isn't touching, so you can keep a tidy wall instead of bending a run around an awkward corner."
+			]
+			icon: "pipe_connector:pipe_connector"
+			id: "7E30100000000004"
+			rewards: [{
+				id: "7E30100000000105"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Reach the awkward face"
+			tasks: [{
+				count: 2L
+				id: "7E30100000000204"
+				item: "pipe_connector:pipe_connector"
+				type: "item"
+			}]
+			title: "&bPipe Connector"
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "&bSide Quest · Pipe Dreams"
 }

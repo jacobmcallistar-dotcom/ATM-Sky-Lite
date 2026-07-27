@@ -1,0 +1,523 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "programmable_automation"
+	group: "1A2B000000000002"
+	icon: "sfm:manager"
+	id: "3C1F000000000016"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&f&lSide Quest · Program the Base.&r"
+				""
+				"Pipes solved &omoving&r things. They didn't solve &odeciding&r things."
+				""
+				"Every pipe you place is one more decision baked into the world - which side extracts, what it filters, where it goes. Change the plan and you re-wrench the whole wall."
+				""
+				"The four systems in this chapter replace that with something you can &oread&r: a program, a channel list, a logic expression, a flight plan. Write it once, change it in one place, and the base rearranges itself."
+			]
+			icon: "sfm:manager"
+			id: "6AF9FD70EB5A15AB"
+			rewards: [
+				{
+					count: 16
+					id: "68EF088E3DD7DCAD"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "60080E309F6B2B65"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Stop wiring. Start writing."
+			tasks: [{
+				id: "3AA9EE5BD77273B7"
+				title: "Decide to automate the deciding"
+				type: "checkmark"
+			}]
+			title: "&bProgram the Base"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"&eSuper Factory Manager&r is the gentlest entry point in this chapter, and the most powerful thing here for the least effort."
+				""
+				"Place a &eManager&r, open it, and type something close to English:"
+				""
+				"&7EVERY 20 TICKS DO&r"
+				"&7  INPUT FROM chest&r"
+				"&7  OUTPUT TO furnace&r"
+				"&7END&r"
+				""
+				"That's a working program. No cables to route by hand, no per-side config - the Manager reaches every inventory you've labelled."
+			]
+			icon: "sfm:manager"
+			id: "3BF6BDC10CD08233"
+			rewards: [{
+				id: "6DDAC5176C8C61E6"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Automation you can read back"
+			tasks: [{
+				id: "2EEDEA6E3C576EE8"
+				item: "sfm:manager"
+				type: "item"
+			}]
+			title: "&bThe Manager"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3BF6BDC10CD08233"]
+			description: [
+				"The Manager needs to &osee&r the inventories it talks about. &eSFM Cable&r is how it reaches them - run it from the Manager to every chest, machine and tank you want in the program."
+				""
+				"Cable is cheap and dumb on purpose. It carries no items itself; it only extends the Manager's reach. All the intelligence stays in the one place you can actually edit."
+			]
+			icon: "sfm:cable"
+			id: "47A7B0BFB116D2EB"
+			rewards: [{
+				id: "607523405A370BB1"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Reach, not throughput"
+			tasks: [{
+				count: 16L
+				id: "129533685530B611"
+				item: "sfm:cable"
+				type: "item"
+			}]
+			title: "&bSFM Cable"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47A7B0BFB116D2EB"]
+			description: [
+				"Two finishing pieces."
+				""
+				"The &eLabel Gun&r (crafted, then used on blocks) tags inventories with names your program refers to - &7chest&r, &7furnace&r, &7output&r. Rename the label and every program using it follows."
+				""
+				"The &eNetwork Tool&r shows you what the Manager can currently see, which is the fastest way to find the one cable you forgot to connect."
+			]
+			icon: "sfm:network_tool"
+			id: "3300CBEB9EA7135B"
+			rewards: [
+				{
+					id: "5778062D74430E9E"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "6043F0EBBB578625"
+					type: "random"
+				}
+			]
+			subtitle: "&7Name things, then see them"
+			tasks: [
+				{
+					id: "3F0151BD842C5105"
+					item: "sfm:network_tool"
+					type: "item"
+				}
+				{
+					id: "4C3FF2896E9CB56C"
+					item: "sfm:disk"
+					type: "item"
+				}
+			]
+			title: "&bLabels and Disks"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"&eXNet&r takes the opposite approach to SFM: instead of a program, you get a &especification&r."
+				""
+				"The &eController&r is the brain. Every machine on the network gets a connector, every connector joins a coloured &echannel&r, and each channel says what moves, in which direction, through what filter, at what priority."
+				""
+				"One GUI, one screen, the whole base's logistics laid out as a table. Change a priority and it takes effect instantly."
+			]
+			icon: "xnet:controller"
+			id: "5691D2336F4242E7"
+			rewards: [{
+				id: "05D2CC3C77448F32"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7The whole base on one screen"
+			tasks: [{
+				id: "1604CD2866BF57E7"
+				item: "xnet:controller"
+				type: "item"
+			}]
+			title: "&bThe XNet Controller"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5691D2336F4242E7"]
+			description: [
+				"&eNetwork Cable&r joins things to the Controller. &eConnectors&r are what actually touch a machine and decide what that machine contributes to a channel."
+				""
+				"&c&lWorth knowing:&r XNet has no plain uncoloured cable or connector you can craft - every one comes in &bblue&r, &agreen&r, &cred&r or &eyellow&r. The colour is purely organisational; pick one and stay consistent, or dye them later."
+				""
+				"A single cable run can carry every channel at once, so one backbone is usually all a base ever needs."
+			]
+			icon: "xnet:connector_blue"
+			id: "721D4965AD3FB2EE"
+			rewards: [{
+				id: "6819589228EADB85"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One backbone, every channel"
+			tasks: [
+				{
+					count: 16L
+					id: "2FBD1FF3D178A525"
+					item: "xnet:netcable_blue"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4C971470CA8ECE2D"
+					item: "xnet:connector_blue"
+					type: "item"
+				}
+			]
+			title: "&bCables and Connectors"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["721D4965AD3FB2EE"]
+			description: [
+				"Two upgrades worth the detour."
+				""
+				"The &eConnector Upgrade&r raises how much a single connector moves per tick - fit these on ore-processing feeds before you blame XNet for being slow."
+				""
+				"The &eWireless Router&r links two separate XNet networks with no cable between them. Base to island, island to nether outpost - the channels simply continue."
+			]
+			icon: "xnet:wireless_router"
+			id: "3D806EF240D67C03"
+			rewards: [
+				{
+					id: "4EED98C9E5B840DA"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4BC895B2CA9F3143"
+					type: "random"
+				}
+			]
+			subtitle: "&7Faster, and further"
+			tasks: [
+				{
+					count: 4L
+					id: "193A2E9983C06EC0"
+					item: "xnet:connector_upgrade"
+					type: "item"
+				}
+				{
+					id: "09900525F39B5CA9"
+					item: "xnet:wireless_router"
+					type: "item"
+				}
+			]
+			title: "&bUpgrades and Range"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"&eIntegrated Dynamics&r is the deep end, and the most rewarding thing in this chapter if you stay with it."
+				""
+				"It isn't a pipe mod. It's a way to ask the world questions - &7how full is that tank&r, &7is this machine idle&r, &7does the ME system have 64 iron yet&r - and act on the answers."
+				""
+				"The &eLogic Programmer&r is where you build those questions out of operators, like assembling a formula. Start here; it explains itself better than any quest can."
+			]
+			icon: "integrateddynamics:logic_programmer"
+			id: "5C273F0F3989D687"
+			rewards: [{
+				id: "751960C0870FA23A"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			subtitle: "&7Ask the world questions"
+			tasks: [{
+				id: "562E02AB00452ECD"
+				item: "integrateddynamics:logic_programmer"
+				type: "item"
+			}]
+			title: "&bThe Logic Programmer"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C273F0F3989D687"]
+			description: [
+				"&eVariables&r hold the answers your Logic Programmer produces. A &eVariable Store&r keeps them somewhere the network can read."
+				""
+				"&eLogic Cable&r is the nervous system - it carries no items at all, only information, and every part you place later sits on it."
+				""
+				"Nothing visible happens yet. That's normal: you're building the wiring that the next two quests plug into."
+			]
+			icon: "integrateddynamics:cable"
+			id: "054CDC18C3A87BDD"
+			rewards: [{
+				id: "4A869B8339E311F8"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Information, not items"
+			tasks: [
+				{
+					count: 16L
+					id: "2751B90450F61AB5"
+					item: "integrateddynamics:cable"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "35E14E589E61F4BB"
+					item: "integrateddynamics:variable"
+					type: "item"
+				}
+				{
+					id: "366A3A8D8BD2D91D"
+					item: "integrateddynamics:variablestore"
+					type: "item"
+				}
+			]
+			title: "&bCables and Variables"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["054CDC18C3A87BDD"]
+			description: [
+				"&eIntegrated Tunnels&r is what turns all that logic into movement."
+				""
+				"&eImporters&r pull out of an inventory, &eExporters&r push into one - but unlike a pipe, each one can be driven by a variable. \"Export iron only while the furnace buffer is under 16.\" \"Import from the sieve only when the drawer isn't full.\""
+				""
+				"These are &oparts&r: place them onto a Logic Cable, not as standalone blocks."
+			]
+			icon: "integratedtunnels:part_exporter_item"
+			id: "07EA52F629E3F2E5"
+			rewards: [{
+				id: "150B6BDFF729B973"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Movement, driven by logic"
+			tasks: [
+				{
+					id: "28964609EBEF7900"
+					item: "integratedtunnels:part_importer_item"
+					type: "item"
+				}
+				{
+					id: "308C74F988C4826A"
+					item: "integratedtunnels:part_exporter_item"
+					type: "item"
+				}
+			]
+			title: "&bImporters and Exporters"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07EA52F629E3F2E5"]
+			description: [
+				"The &eCrafting Interface&r lets the logic network request crafts, not just move finished goods."
+				""
+				"Point it at a crafting setup, tell it what recipes that setup can make, and any part of your network can now ask for those items on demand - the same idea as an AE2 pattern provider, driven by your own conditions instead."
+				""
+				"This is the point where Integrated Dynamics stops being a curiosity and starts replacing infrastructure."
+			]
+			icon: "integratedcrafting:part_interface_crafting"
+			id: "159FB53B985A6BBD"
+			rewards: [
+				{
+					id: "2943C8E2A7C154CA"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1156919E7C3A3EA3"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Autocrafting on your own terms"
+			tasks: [{
+				id: "6559C238AFFBC60B"
+				item: "integratedcrafting:part_interface_crafting"
+				type: "item"
+			}]
+			title: "&bThe Crafting Interface"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"&ePneumaticCraft&r runs on &opressure&r rather than Forge Energy, and it is the only mod in this chapter where over-pressurising a machine makes it explode. Watch the gauges."
+				""
+				"Start with an &eAir Compressor&r burning solid fuel and &ePressure Tube&r to distribute it. Everything downstream - the charging station, the assembly line, the drones - drinks from this."
+			]
+			icon: "pneumaticcraft:air_compressor"
+			id: "7A4291CCD32CAFEF"
+			rewards: [{
+				id: "24C2375EC3B18D91"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Mind the gauge"
+			tasks: [
+				{
+					id: "6710B43629C4F7B1"
+					item: "pneumaticcraft:air_compressor"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6FBCFDC00D87E102"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "&bPressure, Not Power"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A4291CCD32CAFEF"]
+			description: [
+				"The &eProgrammer&r is the best-looking automation UI in the pack, and the most fun."
+				""
+				"You drag &opuzzle pieces&r into a program - &7go to area&r, &7dig block&r, &7place block&r, &7pick up item&r, &7craft&r, &7harvest&r - and snap them together into a flight plan. No syntax, no text, just shapes that fit or don't."
+				""
+				"Build the program here. The thing that runs it comes next."
+			]
+			icon: "pneumaticcraft:programmer"
+			id: "164AB36A0A638226"
+			rewards: [{
+				id: "6585856BAB28035F"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Automation as a jigsaw"
+			tasks: [{
+				id: "14A4944BA00D0B14"
+				item: "pneumaticcraft:programmer"
+				type: "item"
+			}]
+			title: "&bThe Programmer"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["164AB36A0A638226"]
+			description: [
+				"Slot a program into a &eDrone&r, give it a &eCharging Station&r to sip pressure from, and let it go."
+				""
+				"It will fly out and do the job - farm a field, clear an area, ferry items between chests, chase mobs off the island - and come home to recharge. No pipes, no cables, no channels. Just a small machine that knows what you asked for."
+				""
+				"&7Specialised drones exist too: Harvesting, Logistics, Collector and Guard drones come pre-programmed if you'd rather skip the jigsaw."
+			]
+			icon: "pneumaticcraft:drone"
+			id: "3486F30F73E53018"
+			rewards: [
+				{
+					id: "562B7A2D9360C7D1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "07643492CDE4E63D"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Send it out. It comes back."
+			tasks: [
+				{
+					id: "31FF6175A761CF69"
+					item: "pneumaticcraft:drone"
+					type: "item"
+				}
+				{
+					id: "17D6C541FE803C20"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+			]
+			title: "&bDrones"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3300CBEB9EA7135B"
+				"3D806EF240D67C03"
+				"159FB53B985A6BBD"
+				"3486F30F73E53018"
+			]
+			description: [
+				"Four systems, four philosophies, and no wrong answer:"
+				""
+				"&eSFM&r - write what should happen, in words."
+				"&eXNet&r - declare what connects to what, in a table."
+				"&eIntegrated Dynamics&r - describe the conditions, and let them drive."
+				"&ePneumaticCraft&r - hand a robot a plan and let it fly."
+				""
+				"Most bases end up using two or three of these at once, because each is best at something the others aren't. Pipes still have their place - but you are no longer wrenching a wall every time the plan changes."
+			]
+			icon: "pneumaticcraft:harvesting_drone"
+			id: "7083373948204BA5"
+			rewards: [
+				{
+					id: "73A08DBD90BF1DD5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "190F0F1CB4B83E6E"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7The base runs itself now"
+			tasks: [{
+				id: "3ACCE7D8B7799310"
+				title: "Automate the deciding"
+				type: "checkmark"
+			}]
+			title: "&b&lThe Base Thinks"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&bSide Quest · Program the Base"
+}

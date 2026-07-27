@@ -442,6 +442,85 @@
 			x: -2.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["2103000000000001"]
+			description: [
+				"On a void skyblock you have one resource in genuinely infinite supply: unobstructed sky."
+				""
+				"&eSolar Flux Reborn&r turns that into power, and unlike vanilla-style solars it scales all the way up - eight tiers, each a straight upgrade of the last, with &eupgrade&r slots for capacity, efficiency and dispersion so a panel you place now stays useful much later."
+				""
+				"No fuel, no water, no ash. Put them on the roof and forget them."
+			]
+			icon: "solarflux:sp_1"
+			id: "7E30300000000001"
+			rewards: [{
+				id: "7E30300000000101"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Free power, infinite sky"
+			tasks: [
+				{
+					id: "7E30300000000201"
+					item: "solarflux:photovoltaic_cell_1"
+					type: "item"
+				}
+				{
+					id: "7E30300000000211"
+					item: "solarflux:sp_1"
+					type: "item"
+				}
+			]
+			title: "&9Solar Flux"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30300000000001"]
+			description: [
+				"Panels get you started. &eAdvanced Generators&r is what you build when \"more panels\" stops being an answer."
+				""
+				"It is a multiblock kit rather than a machine: assemble a frame from &eIron Frames&r and &eTubing&r, add a &eController&r, then bolt on the pieces you actually need - fuel tanks, item and fluid inputs, power outputs, heat exchangers, turbine rotors."
+				""
+				"You design the generator's shape and capacity yourself, which means it scales to whatever your base is actually drawing rather than to a fixed tier."
+			]
+			icon: "advgenerators:controller"
+			id: "7E30300000000002"
+			rewards: [
+				{
+					id: "7E30300000000102"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7E30300000000103"
+					type: "random"
+				}
+			]
+			subtitle: "&7Build the generator you need"
+			tasks: [
+				{
+					count: 8L
+					id: "7E30300000000202"
+					item: "advgenerators:iron_frame"
+					type: "item"
+				}
+				{
+					id: "7E30300000000212"
+					item: "advgenerators:controller"
+					type: "item"
+				}
+				{
+					id: "7E30300000000222"
+					item: "advgenerators:fe_output"
+					type: "item"
+				}
+			]
+			title: "&9Advanced Generators"
+			x: -6.0d
+			y: 4.5d
+		}
 	]
 	title: "&9Age IV · Power & Automation"
 }

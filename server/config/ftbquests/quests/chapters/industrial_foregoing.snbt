@@ -198,6 +198,47 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["0F16000000000001"]
+			description: [
+				"&eIndustrial Foregoing: Souls&r bolts a soul economy onto the IF machines you already run."
+				""
+				"Mob deaths generate soul energy, which is piped around with the &eSoul Network Pipe&r and spent to accelerate and empower IF machinery. The &eSoul Laser Base&r is the hub the rest of it plugs into."
+				""
+				"This is the closest thing the pack has to a dedicated mob-farm mod - LaserIO's stablemates &eMob Grinding Utils&r and &eWoot&r have no Forge 1.20.1 build, so this fills that gap."
+			]
+			icon: "industrialforegoingsouls:soul_laser_base"
+			id: "7E30600000000001"
+			rewards: [
+				{
+					id: "7E30600000000101"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7E30600000000102"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Put the mob drops to work"
+			tasks: [
+				{
+					id: "7E30600000000201"
+					item: "industrialforegoingsouls:soul_laser_base"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E30600000000211"
+					item: "industrialforegoingsouls:soul_network_pipe"
+					type: "item"
+				}
+			]
+			title: "&bIF: Souls"
+			x: -2.0d
+			y: 1.5d
+		}
 	]
 	title: "&bIndustrial Foregoing"
 }

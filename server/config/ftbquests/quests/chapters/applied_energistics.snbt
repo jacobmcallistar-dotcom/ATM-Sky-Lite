@@ -587,6 +587,242 @@
 			x: 6.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"&e&lRefined Storage.&r"
+				""
+				"A second, independent network-storage system sitting alongside AE2 - different UI, different automation flow, and noticeably cheaper to get started with."
+				""
+				"It solves the same problem AE2 does, which is exactly why it lives in this chapter rather than off on its own. Run one, the other, or both side by side. No rule says your base only gets one brain."
+			]
+			icon: "refinedstorage:controller"
+			id: "1AAE9BD0B22003F4"
+			rewards: [{
+				id: "28CCF17F78E82904"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7A second network"
+			tasks: [{
+				id: "12F09680DC06D260"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			title: "&eRefined Storage"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1AAE9BD0B22003F4"]
+			description: ["&eCable&r links every part of the network together, and a &eGrid&r is your window into it - search, insert, extract, craft. The Grid is where RS feels most different from an ME Terminal; try both before deciding which you prefer."]
+			icon: "refinedstorage:grid"
+			id: "1912A7D531B8F103"
+			rewards: [{
+				id: "777C30AD5BFCCFB4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Link it, then look at it"
+			tasks: [
+				{
+					count: 8L
+					id: "1074978F56B70402"
+					item: "refinedstorage:cable"
+					type: "item"
+				}
+				{
+					id: "2C913887AE2E95EC"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+			]
+			title: "&eCables & Grids"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1912A7D531B8F103"]
+			description: ["A &e1k Storage Disk&r is your first real capacity - slot it into a Disk Drive and the network has somewhere to actually put things. RS uses disks where AE2 uses cells; the idea is the same, the crafting chain is cheaper."]
+			icon: "refinedstorage:1k_storage_disk"
+			id: "51D6738AB8937CEE"
+			rewards: [{
+				id: "2DF26B204203F886"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Somewhere to put it"
+			tasks: [{
+				id: "2A613339F427CF73"
+				item: "refinedstorage:1k_storage_disk"
+				type: "item"
+			}]
+			title: "&eStorage Disks"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51D6738AB8937CEE"]
+			description: ["&eImporters&r and &eExporters&r move items into and out of the network automatically - the plumbing that turns Refined Storage from a chest into a factory hub. AE2 does this with import/export buses; same job, different name."]
+			icon: "refinedstorage:importer"
+			id: "6B74132EA7DDC9DD"
+			rewards: [{
+				id: "2D11AD914C24C743"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The plumbing"
+			tasks: [
+				{
+					id: "715B559CECAEE951"
+					item: "refinedstorage:importer"
+					type: "item"
+				}
+				{
+					id: "0E1FADB860E30240"
+					item: "refinedstorage:exporter"
+					type: "item"
+				}
+			]
+			title: "&eImporters & Exporters"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6B74132EA7DDC9DD"]
+			description: ["An &eExternal Storage&r part reaches into a chest, barrel or drawer sitting outside the network and makes its contents visible and usable as if it were a disk. Every old chest on your island just joined the grid."]
+			icon: "refinedstorage:external_storage"
+			id: "3599AD744A70233F"
+			rewards: [{
+				id: "718778F1C0E2E6B1"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Every chest, absorbed"
+			tasks: [{
+				id: "4337049F204234FD"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			title: "&eExternal Storage"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3599AD744A70233F"]
+			description: [
+				"&eCable Tiers&r adds faster versions of Refined Storage's importers, exporters, interfaces, constructors, destructors, requesters and disk manipulators - Elite, Ultra and Mega."
+				""
+				"A stock RS importer moves one stack at a time and becomes the bottleneck the moment your ore processing gets serious. Swap in an Elite and the queue stops backing up."
+			]
+			icon: "cabletiers:elite_importer"
+			id: "7E30200000000001"
+			rewards: [{
+				id: "7E30200000000101"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7When stock RS parts fall behind"
+			tasks: [
+				{
+					id: "7E30200000000201"
+					item: "cabletiers:elite_importer"
+					type: "item"
+				}
+				{
+					id: "7E30200000000211"
+					item: "cabletiers:elite_exporter"
+					type: "item"
+				}
+			]
+			title: "&eCable Tiers"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7E30200000000001"]
+			description: [
+				"&eRefined Storage: Requestify&r adds a &eRequester&r that keeps a set amount of something in stock automatically - tell it \"always have 64 iron ingots\" and it will craft or import more whenever the count drops."
+				""
+				"The &eCrafting Emitter&r fires a redstone signal while a craft is running, which is the cleanest way to stop a machine double-starting a job."
+			]
+			icon: "rsrequestify:requester"
+			id: "7E30200000000002"
+			rewards: [
+				{
+					id: "7E30200000000102"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "7E30200000000103"
+					type: "random"
+				}
+			]
+			subtitle: "&7Keep 64 of it in stock, always"
+			tasks: [
+				{
+					id: "7E30200000000202"
+					item: "rsrequestify:requester"
+					type: "item"
+				}
+				{
+					id: "7E30200000000212"
+					item: "rsrequestify:crafting_emitter"
+					type: "item"
+				}
+			]
+			title: "&eRequestify"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"AE2's autocrafting has one long-standing blind spot: a pattern assumes one machine takes a set of inputs and hands back one output."
+				""
+				"Plenty of machines in this pack don't work that way - Mekanism's multi-input chains, Immersive Engineering's multiblocks, anything that returns several products at once."
+				""
+				"&ePackagedAuto&r fixes exactly that. Encode a recipe on the &eEncoder&r, and the &ePackager&r and &eUnpackager&r bundle the inputs, deliver them together, and return every output to the network."
+			]
+			icon: "packagedauto:packager"
+			id: "7E30200000000003"
+			rewards: [
+				{
+					id: "7E30200000000104"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7E30200000000105"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Autocraft the awkward machines"
+			tasks: [
+				{
+					id: "7E30200000000203"
+					item: "packagedauto:encoder"
+					type: "item"
+				}
+				{
+					id: "7E30200000000213"
+					item: "packagedauto:packager"
+					type: "item"
+				}
+				{
+					id: "7E30200000000223"
+					item: "packagedauto:unpackager"
+					type: "item"
+				}
+			]
+			title: "&bPackagedAuto"
+			x: -6.0d
+			y: 5.5d
+		}
 	]
 	title: "&bTech Branch · Applied Energistics"
 }

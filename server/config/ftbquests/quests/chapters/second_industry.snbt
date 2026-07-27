@@ -1,0 +1,498 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "second_industry"
+	group: "1A2B000000000002"
+	icon: "thermal:machine_pulverizer"
+	id: "3C1F000000000017"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["210200000000000E"]
+			description: [
+				"&f&lSide Quest · The Second Industry.&r"
+				""
+				"Mekanism, EnderIO and Industrial Foregoing all solve the same problem: power goes in, processed resources come out. They also all ask you to learn a whole system before the first machine turns over."
+				""
+				"&eThermal&r and &eImmersive Engineering&r are the two gentlest ways into that problem, and they approach it from opposite ends."
+				""
+				"Thermal is the softest landing in the pack - one block, one job, drop in a fuel, done. Immersive Engineering is the opposite: nothing is a single block, everything is a structure you build out of parts and walk inside."
+			]
+			icon: "thermal:machine_pulverizer"
+			id: "7E20000000000001"
+			rewards: [
+				{
+					count: 8
+					id: "7E20000000000101"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7E20000000000102"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Two more ways to process a rock"
+			tasks: [{
+				id: "7E20000000000201"
+				title: "Pick a second industry"
+				type: "checkmark"
+			}]
+			title: "&6The Second Industry"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E20000000000001"]
+			description: [
+				"Thermal's machines all run on Forge Energy, so you need a little first."
+				""
+				"The &eStirling Dynamo&r burns solid fuel - coal, charcoal, anything from the sieve chain - and pushes FE straight into an adjacent machine. No cables needed for your first setup: put the dynamo flush against the machine and it feeds it directly."
+				""
+				"&7Every Thermal dynamo takes augments too, so this same block scales up later rather than being replaced."
+			]
+			icon: "thermal:dynamo_stirling"
+			id: "7E20000000000002"
+			rewards: [{
+				id: "7E20000000000103"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Burn something, get power"
+			tasks: [{
+				id: "7E20000000000202"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			title: "&6The Stirling Dynamo"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E20000000000002"]
+			description: [
+				"The &ePulverizer&r is the reason most people install Thermal: it grinds one ore into &etwo dust&r, and often a bonus product on the side."
+				""
+				"On a skyblock where every ore came out of a sieve, doubling is enormous."
+				""
+				"Note the GUI - one input, one output, a power bar, and an augment tray. That is the entire Thermal interface, and every machine after this one looks the same."
+			]
+			icon: "thermal:machine_pulverizer"
+			id: "7E20000000000003"
+			rewards: [{
+				id: "7E20000000000104"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7One ore in, two dust out"
+			tasks: [{
+				id: "7E20000000000203"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			title: "&6The Pulverizer"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E20000000000003"]
+			description: [
+				"The &eInduction Smelter&r takes two inputs and fuses them - ore plus sand for extra yield, or two dusts into an alloy."
+				""
+				"It is Thermal's answer to Mekanism's infuser and EnderIO's alloy smelter, and it will happily process the ores and dusts those mods produce. Nothing here is walled off; the pack's ore chains all speak to each other."
+			]
+			icon: "thermal:machine_smelter"
+			id: "7E20000000000004"
+			rewards: [{
+				id: "7E20000000000105"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Two in, one better thing out"
+			tasks: [{
+				id: "7E20000000000204"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			title: "&6The Induction Smelter"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E20000000000004"]
+			description: [
+				"The &eCentrifugal Separator&r pulls mixed inputs apart into their components - the cleanup step at the end of a processing line."
+				""
+				"Feed it slag, dusts, mob drops or the odd by-products the rest of your machines spit out, and it sorts them into something usable instead of something you throw away."
+			]
+			icon: "thermal:machine_centrifuge"
+			id: "7E20000000000005"
+			rewards: [{
+				id: "7E20000000000106"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Turn by-products back into products"
+			tasks: [{
+				id: "7E20000000000205"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			title: "&6The Centrifugal Separator"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E20000000000002"]
+			description: [
+				"Thermal's &eDucts&r carry energy and fluids. They are cheap, they auto-connect, and they hide inside walls neatly."
+				""
+				"&c&lWorth knowing:&r this version of Thermal Dynamics has &lno item duct&r - only &eEnergy&r and &eFluid&r ducts. Moving items is left to Pipez, Pretty Pipes, XNet or SFM, all of which are already in this pack. Don't go hunting for a duct that isn't there."
+			]
+			icon: "thermal:energy_duct"
+			id: "7E20000000000006"
+			rewards: [{
+				id: "7E20000000000107"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Energy and fluids only"
+			tasks: [
+				{
+					count: 16L
+					id: "7E20000000000206"
+					item: "thermal:energy_duct"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7E20000000000216"
+					item: "thermal:fluid_duct"
+					type: "item"
+				}
+			]
+			title: "&6Ducts"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E20000000000006"]
+			description: [
+				"This is the part people miss, and it is the best thing about Thermal Dynamics."
+				""
+				"A &eServo&r clips onto the end of a duct where it meets an inventory and makes it &lextract&r. A &eFilter&r clips on and decides what may pass. No separate filter item, no upgrade tier to unlock - the filtering is built into the duct itself."
+				""
+				"Two attachments turn a dumb pipe into a sorting system."
+			]
+			icon: "thermal:servo_attachment"
+			id: "7E20000000000007"
+			rewards: [
+				{
+					id: "7E20000000000108"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "7E20000000000109"
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Filtering, built in"
+			tasks: [
+				{
+					count: 2L
+					id: "7E20000000000207"
+					item: "thermal:servo_attachment"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7E20000000000217"
+					item: "thermal:filter_attachment"
+					type: "item"
+				}
+			]
+			title: "&6Servos and Filters"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E20000000000005"]
+			description: [
+				"The &ePhytogenic Insolator&r grows crops with power instead of time - drop in a seed and some water and it returns a full harvest plus extra seeds."
+				""
+				"It stacks neatly with the &eMystical Agriculture&r essence farm you already run and with &eBotany Pots&r: pots for hands-off passive growth, the Insolator for when you want a specific crop &oright now&r and have power to spend."
+			]
+			icon: "thermal:machine_insolator"
+			id: "7E20000000000008"
+			rewards: [{
+				id: "7E2000000000010A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Crops, but with a power bill"
+			tasks: [{
+				id: "7E20000000000208"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			title: "&6The Phytogenic Insolator"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E20000000000001"]
+			description: [
+				"&eImmersive Engineering&r starts with a hammer and never really stops being physical."
+				""
+				"The &eEngineer's Hammer&r builds and configures everything in the mod - it rotates blocks, forms multiblocks and connects wires. You will hold it constantly."
+				""
+				"&7Nothing in IE is a single block that does a job. Everything worth having is a structure you assemble and then walk into."
+			]
+			icon: "immersiveengineering:hammer"
+			id: "7E20000000000009"
+			rewards: [{
+				id: "7E2000000000010B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The only tool that matters"
+			tasks: [{
+				id: "7E20000000000209"
+				item: "immersiveengineering:hammer"
+				type: "item"
+			}]
+			title: "&6The Engineer's Hammer"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E20000000000009"]
+			description: [
+				"&eTreated Wood&r is IE's universal building material - creosote-soaked planks that resist weather and form the frame of nearly every multiblock you'll build."
+				""
+				"Creosote comes out of the Coke Oven, and the Coke Oven needs treated wood scaffolding to be worth running, so expect to bootstrap the first batch by hand. That circularity is deliberate."
+			]
+			icon: "immersiveengineering:treated_wood_horizontal"
+			id: "7E2000000000000A"
+			rewards: [{
+				id: "7E2000000000010C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The frame of everything"
+			tasks: [{
+				count: 16L
+				id: "7E2000000000020A"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "&6Treated Wood"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E2000000000000A"]
+			description: [
+				"Your first real multiblock. Twenty-seven &eCoke Bricks&r in a 3x3x3, hit one face with the hammer, and it becomes a &eCoke Oven&r."
+				""
+				"It turns coal into &eCoal Coke&r (a better fuel than coal) and drips &eCreosote Oil&r as a by-product - which is exactly what treated wood needs. The loop closes here."
+			]
+			icon: "immersiveengineering:cokebrick"
+			id: "7E2000000000000B"
+			rewards: [{
+				id: "7E2000000000010D"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			subtitle: "&7Twenty-seven bricks and a hammer"
+			tasks: [{
+				count: 27L
+				id: "7E2000000000020B"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "&6The Coke Oven"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E2000000000000B"]
+			description: [
+				"Same idea, hotter. Twenty-seven &eBlast Bricks&r make an &eImprovised Blast Furnace&r, which turns iron plus coal coke into &eSteel&r."
+				""
+				"Steel is the gate to the rest of IE - the excavator, the arc furnace, the heavy machines all want it. It also feeds plenty of other mods in this pack that accept the common steel tag."
+			]
+			icon: "immersiveengineering:blastbrick"
+			id: "7E2000000000000C"
+			rewards: [
+				{
+					id: "7E2000000000010E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7E2000000000010F"
+					type: "random"
+				}
+			]
+			subtitle: "&7Steel, the hard way"
+			tasks: [{
+				count: 27L
+				id: "7E2000000000020C"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			title: "&6The Blast Furnace"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E2000000000000A"]
+			description: [
+				"IE does not use cables in the usual sense. It strings &eWire&r between &eConnectors&r, in visible sagging lines you can see across the island."
+				""
+				"Place an &eLV Connector&r on a generator and another on a machine, then right-click both with a &eCopper Wire Coil&r. The wire physically spans the gap."
+				""
+				"&7Wires have real transfer limits and lose energy over distance, and an uninsulated wire will hurt you if you touch it. This is a feature."
+			]
+			icon: "immersiveengineering:wirecoil_copper"
+			id: "7E2000000000000D"
+			rewards: [{
+				id: "7E20000000000110"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Power you can actually see"
+			tasks: [
+				{
+					count: 4L
+					id: "7E2000000000020D"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E2000000000021D"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+			]
+			title: "&6Wires and Connectors"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E2000000000000D"]
+			description: [
+				"IE's early power is refreshingly low-tech: a &eWindmill&r or a &eWatermill&r bolted to a &eDynamo&r, generating quietly forever with no fuel at all."
+				""
+				"Perfect for a skyblock, where you have nothing but open air in every direction. Put a windmill high and unobstructed and it will outproduce anything you can feed coal into at this stage."
+				""
+				"An &eLV Capacitor&r buffers the output so the lulls don't stall your machines."
+			]
+			icon: "immersiveengineering:windmill"
+			id: "7E2000000000000E"
+			rewards: [{
+				id: "7E20000000000111"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Free power, forever, in open sky"
+			tasks: [
+				{
+					id: "7E2000000000020E"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+				{
+					id: "7E2000000000021E"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "7E2000000000022E"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+			]
+			title: "&6Wind and Water"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E2000000000000D"]
+			description: [
+				"&eConveyor Belts&r are IE's item transport, and they are deliberately not pipes - items ride on top where you can watch them, get picked up by hoppers, or be dropped into a furnace at the end of the line."
+				""
+				"They are slower than every other option in this pack and that is fine. Use them where the base is meant to look like a factory rather than a wall of hidden cables."
+			]
+			icon: "immersiveengineering:conveyor_basic"
+			id: "7E2000000000000F"
+			rewards: [{
+				id: "7E20000000000112"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Items you can watch move"
+			tasks: [{
+				count: 16L
+				id: "7E2000000000020F"
+				item: "immersiveengineering:conveyor_basic"
+				type: "item"
+			}]
+			title: "&6Conveyor Belts"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7E20000000000008"
+				"7E20000000000007"
+				"7E2000000000000C"
+				"7E2000000000000F"
+			]
+			description: [
+				"Two industries, two personalities."
+				""
+				"&eThermal&r asks nothing of you - place a block, feed it power, walk away. It is the mod to reach for when you want a job done and don't want to think about it."
+				""
+				"&eImmersive Engineering&r asks for a build, and gives you a base that looks like somewhere work happens."
+				""
+				"Neither replaces Mekanism, EnderIO or Industrial Foregoing. All five accept each other's ores, dusts and power, so use whichever machine is nearest and stop worrying about picking a side."
+			]
+			icon: "immersiveengineering:blastbrick"
+			id: "7E20000000000010"
+			rewards: [
+				{
+					id: "7E20000000000113"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "7E20000000000114"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Second industry established"
+			tasks: [{
+				id: "7E20000000000210"
+				title: "Run a second industry"
+				type: "checkmark"
+			}]
+			title: "&6&lIndustrialised"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "&6Side Quest · The Second Industry"
+}

@@ -255,6 +255,110 @@
 			x: -2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["57D0000000000009"]
+			description: [
+				"Everything so far has needed a physical connection. These don't."
+				""
+				"An &eEnder Chest&r is a container addressed by a three-dye colour code. Two chests set to the same code are the same chest, whether they're one block apart or in different dimensions. The &eEnder Tank&r does the same for fluids."
+				""
+				"On a skyblock this is how you get resources from a mining dimension or a nether outpost back to base without building anything between them."
+			]
+			icon: "enderstorage:ender_chest"
+			id: "7E30700000000001"
+			rewards: [{
+				id: "7E30700000000101"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Same colour, same chest, anywhere"
+			tasks: [
+				{
+					id: "7E30700000000201"
+					item: "enderstorage:ender_chest"
+					type: "item"
+				}
+				{
+					id: "7E30700000000211"
+					item: "enderstorage:ender_tank"
+					type: "item"
+				}
+			]
+			title: "&fEnder Storage"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30700000000001"]
+			description: [
+				"&eEnderTanks&r is a second take on the same idea with a friendlier fluid workflow, and it brings the &eEnder Bucket&r - a bucket that fills and empties from your linked tank wherever you happen to be standing."
+				""
+				"Handy for hauling lava to a magmatic dynamo, or water to a crucible loop, without a single pipe."
+			]
+			icon: "endertanks:ender_tank"
+			id: "7E30700000000002"
+			rewards: [{
+				id: "7E30700000000102"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7A bucket with a network behind it"
+			tasks: [
+				{
+					id: "7E30700000000202"
+					item: "endertanks:ender_tank"
+					type: "item"
+				}
+				{
+					id: "7E30700000000212"
+					item: "endertanks:ender_bucket"
+					type: "item"
+				}
+			]
+			title: "&fEnderTanks"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E30700000000001"]
+			description: [
+				"&eEntangled&r is the most flexible of the three and the strangest: an &eEntangled Block&r bound to any other block in the world behaves &oas that block&r."
+				""
+				"Bind it to a machine and it becomes that machine's face - items, fluids and energy all pass through. That makes it a partial stand-in for &eFlux Networks&r, which this pack still can't include because there's no Forge 1.20.1 build available."
+				""
+				"&7Bind with the Entangled Binder, then place the block wherever the connection is actually convenient."
+			]
+			icon: "entangled:block"
+			id: "7E30700000000003"
+			rewards: [
+				{
+					id: "7E30700000000103"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7E30700000000104"
+					type: "random"
+				}
+			]
+			subtitle: "&7A block that pretends to be elsewhere"
+			tasks: [
+				{
+					id: "7E30700000000203"
+					item: "entangled:block"
+					type: "item"
+				}
+				{
+					id: "7E30700000000213"
+					item: "entangled:item"
+					type: "item"
+				}
+			]
+			title: "&fEntangled"
+			x: 2.0d
+			y: 3.0d
+		}
 	]
 	title: "&fSide Quest · Stash & Sort"
 }

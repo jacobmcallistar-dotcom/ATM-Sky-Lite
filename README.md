@@ -31,7 +31,50 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 165 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.14.0 — the automation update. 40 new mods, 125 → 165.**
+> **Latest: v1.15.0 — quests for the automation update. No mod changes.**
+>
+> v1.14.0 added 40 mods and zero quests. This fixes that: **28 chapters**, with the new mods
+> integrated into the book properly rather than dumped in a patch-notes chapter.
+>
+> **Mods are grouped by how they work, not one chapter per mod.** Only two genuinely new ways of
+> playing earned their own chapter; everything else was folded into the chapter that already
+> teaches the same idea.
+>
+> **New: &bProgram the Base&r** (Act II) — 15 quests across four parallel branches that all
+> replace "re-wrench every pipe side" with something you can read back: **Super Factory Manager**
+> (write it in near-English), **XNet** (declare it in a table), **Integrated Dynamics + Tunnels +
+> Crafting** (describe the conditions and let them drive), and **PneumaticCraft** (hand a drone a
+> jigsaw flight plan).
+>
+> **New: &6The Second Industry&r** (Act II) — 16 quests covering **Thermal** (Foundation,
+> Expansion, Dynamics) and **Immersive Engineering**, the two gentlest on-ramps to ore processing,
+> approached from opposite ends: one block that just works, versus a structure you walk inside.
+>
+> **Refined Storage has been merged into the Applied Energistics chapter.** It was a separate Act I
+> chapter despite solving exactly the same problem AE2 does. It is now a parallel branch in one
+> "network storage" chapter, which is where a player learning that idea will actually look.
+>
+> **Folded into existing chapters:** Pretty Pipes, Modular Routers, Item Collectors and Pipe
+> Connector → *Pipe Dreams*. PackagedAuto, Cable Tiers and Requestify → *Applied Energistics*.
+> Solar Flux and Advanced Generators → *Age IV · Power*. Botany Pots → *Essence Farming*. Botania
+> and Occultism → the Ars Nouveau chapter, now retitled **The Magic Branch** to match its actual
+> contents. IF: Souls → *Industrial Foregoing*. Ender Storage, EnderTanks and Entangled →
+> *Stash & Sort*. Iron Jetpacks → *Sky Gadgets*.
+>
+> **Also fixed:** two quests in the Productive Bees chapter ("The Breeding Chamber" and "Productive
+> Trees") were rendering on top of each other at identical coordinates — a leftover from the
+> v1.12.0 Productive Trees append, which landed after that release's overlap audit had run.
+>
+> Every item referenced by a new quest task was verified to be a real, craftable item by reading
+> recipe outputs straight out of the mod jars — **77 IDs checked automatically**, plus Solar Flux
+> by hand because it ships no recipes in its jar. That caught three that would have produced
+> permanently uncompletable quests: XNet has no craftable *uncoloured* cable or connector (only
+> dyed variants), Thermal Dynamics on 1.20.1 has **no item duct at all** (energy and fluid only),
+> and Solar Flux registers its panels as `sp_1`, not `solar_panel_1`. The whole book was then
+> boot-tested and cleanly shut down with **all 28 chapters byte-identical afterwards**, which is
+> the only real proof FTB Quests accepted them unmodified.
+>
+> **v1.14.0 — the automation update. 40 new mods, 125 → 165.**
 >
 > The pack was never short on *machines* — it was short on **ways to move things between them**.
 > Logistics jumped straight from hoppers and Pipez to a full AE2 network, with nothing in the

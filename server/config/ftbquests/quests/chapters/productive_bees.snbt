@@ -223,7 +223,7 @@
 			]
 			title: "&2Productive Trees"
 			x: -4.0d
-			y: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "&eProductive Bees"
