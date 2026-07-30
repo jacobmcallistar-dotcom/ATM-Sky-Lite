@@ -134,25 +134,6 @@
 			x: -2.0d
 			y: 0.5d
 		}
-		{
-			description: ["&eJust Potion Rings&r adds a Curios ring for every potion effect in the game - including modded ones. Fill your empty ring slots with permanent buffs."]
-			icon: "justpotionrings:potion_ring"
-			id: "77DE44DB128CE4C0"
-			rewards: [{
-				id: "3F8484F3B91089D5"
-				type: "xp"
-				xp: 5
-			}]
-			subtitle: "&7A ring for every effect"
-			tasks: [{
-				id: "47030A3C8CD00A24"
-				item: "justpotionrings:potion_ring"
-				type: "item"
-			}]
-			title: "&5Just Potion Rings"
-			x: 2.0d
-			y: 0.5d
-		}
 	]
 	title: "&fThe Toolkit"
 }

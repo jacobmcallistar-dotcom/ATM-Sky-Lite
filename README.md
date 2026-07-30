@@ -31,7 +31,71 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 165 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.15.0 — quests for the automation update. No mod changes.**
+> **Latest: v1.16.0 — Gateways to Eternity, crouch-growth rework, and the Just Potion Rings
+> crash fix. 165 mods.**
+>
+> Three changes in one release. **This supersedes v1.15.1, which was never published** — its Just
+> Potion Rings fix is included here.
+>
+> **Added: Gateways to Eternity.** Craft a **Gate Pearl**, use it on a block, and it opens a
+> wave-based combat event that spawns hostile mobs for you to fight. Rewards are
+> `gateways:entity_loot` — the mob's *own* drop table, rolled 10–15× per wave and scaling with each
+> wave — which makes this a real answer to the void-skyblock problem of mobs you can never
+> encounter. Biome-locked and dimension-locked mobs no longer dead-end progression: you fight for
+> their drops instead of waiting for a spawn that will never happen. Seven gateways ship craftable
+> (blaze, enderman, slime, emerald grove, hellish fortress, overworldian nights, endless blaze),
+> and gateways are datapack-defined, so more can be added later. **No new dependencies** — it needs
+> Placebo and Apothic Attributes, both already in the pack.
+>
+> **SkyForge 0.17.0 — crouch-to-grow reworked.** The old behaviour fired a growth pulse every 10
+> ticks *for as long as sneak was held*, so two seconds of ordinary crouching bone-mealed a 7×7 area
+> four times over. Sneak is movement — edging along a block, taking stairs, not falling off the
+> island — so this grew crops as a side effect of getting around, and there was no way to aim it.
+> Now:
+> - **One pulse per press.** Growth fires on the moment sneak goes down and never again until you
+>   release it. Spam crouch to grow deliberately; incidental sneaking costs at most a single stage.
+> - **3×3 instead of 7×7.** A crouch affects what is at your feet, not a whole field nearby.
+> - **Particles, no sound.** Vanilla's bone-meal `levelEvent` fires particles *and* the sound
+>   together, so the particles are now sent directly instead. Sneak gets held for long stretches; a
+>   sound on every pulse would be unbearable.
+> - **Deterministic.** The old code consulted vanilla's `isBonemealSuccess`, a random roll that
+>   fails ~55% of the time on saplings — which read as "broken" rather than "slow". Valid targets
+>   now always grow.
+> - **Mystical Agriculture is limited by tier, not banned.** Inferium, Prudentium and Tertium respond
+>   to crouching; **Imperium, Supremium and Insanium do not**, so the early essence grind is quick
+>   without trivialising endgame essence. The tier is read from Mystical Agriculture's own API at
+>   runtime and **fails closed** — if that API ever changes, it reverts to excluding all MA crops
+>   rather than leaking a high-tier one.
+>
+> **Removed: Just Potion Rings — it was hard-crashing the server.** Its `LivingEntity` mixin calls
+> `HandlerRing.equippedEffects()` on *any* entity that takes damage, and that returns `null` for
+> mobs, which have no Curios ring slots — instant `NullPointerException` on the server thread. A
+> zombified piglin standing on a magma block in a force-loaded chunk triggered it **three times in
+> ten minutes, twice with nobody online**, so the server could not stay up even idle. There was no
+> fix short of removal: v2.0 is already the newest build, and the mod's config only covers JEI/REI
+> display and loot tables — nothing restricts the mixin to players. Its config and its quest in
+> *The Toolkit* chapter went with it. **Any potion rings you were carrying are gone.**
+>
+> **v1.15.1 (superseded, never published) — server crash fix. Just Potion Rings removed.**
+>
+> **Just Potion Rings was crashing the server.** Its mixin on `LivingEntity` calls
+> `HandlerRing.equippedEffects()` on *any* living entity that takes damage, and that returns
+> `null` for mobs, which have no Curios ring slots. The result is a `NullPointerException` on the
+> server thread and an immediate hard crash.
+>
+> The trigger here was a zombified piglin standing on a magma block in a force-loaded chunk at
+> `(-89, 36, 77)`. Magma damage → mixin → null → dead server. It crashed **three times in ten
+> minutes**, including twice with nobody online, so the server could not stay up even idle.
+>
+> There is no fix short of removal: **v2.0 is already the newest build** (June 2026), and the
+> mod's config only controls JEI/REI display and loot tables — nothing disables the mixin or
+> restricts it to players. The mod is gone, along with its config and its quest in *The Toolkit*
+> chapter (which would otherwise have asked for an item that no longer exists).
+>
+> **You lose the potion rings.** Any rings already in inventories or storage will disappear.
+> Everything else is unchanged — 28 chapters, all v1.15.0 content intact.
+>
+> **v1.15.0 — quests for the automation update. No mod changes.**
 >
 > v1.14.0 added 40 mods and zero quests. This fixes that: **28 chapters**, with the new mods
 > integrated into the book properly rather than dumped in a patch-notes chapter.
