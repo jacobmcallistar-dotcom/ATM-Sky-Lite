@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (165 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (166 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 165 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 166 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,40 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 165 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 166 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.16.0 — Gateways to Eternity, crouch-growth rework, and the Just Potion Rings
+> **Latest: v1.17.0 — Create: Power Grid. Real electrical simulation for Create. 166 mods.**
+>
+> **Added: Create: Power Grid** (`powergrid-mc1.20.1-0.5.5.1`). The pack already had Create and
+> Create Crafts & Additions, so it could turn rotation into FE and back — but FE is a fiction where
+> power teleports down a wire with no losses and no failure modes. Power Grid replaces that with an
+> actual **network-analysis simulation**: circuits must form closed loops before any current flows,
+> voltage sags when demand outruns supply, and higher voltage moves more power with fewer
+> transmission losses. Under-build your generation and you don't just stall — you **damage the
+> equipment and the blocks around it**. Overheat behaviour is configurable if that turns out to be
+> too punishing.
+>
+> What it adds to build with: **Electric Motor** (electricity → SU, closing the loop with Crafts &
+> Additions), **Basin Heater** (an electric blaze burner), **Heating Coil** (faster bulk smoking and
+> blasting), **Electric Fan**, **Servo** (a motor positioned precisely by voltage), **Electromagnet**
+> (unlocks item magnetisation as a new processing recipe), **Growth Lamp** (light plus crop
+> acceleration — useful on a void island), **Light Bulb** and **Alarm Bell**. It also speaks
+> **Forge Energy**, so it drives Mekanism, AE2, RFTools and everything else in the pack directly.
+>
+> The deep end is **custom circuit boards**: lay out resistors, capacitors and vacuum tubes, route
+> the traces, then etch and populate the board. In-game **Ponders** cover every mechanic, so this
+> doesn't need quest scaffolding to be learnable.
+>
+> **Dependency check before install**, same as every release: `mods.toml` declares Forge `[47,)`
+> (pack runs 47.3.0 ✓), Minecraft `[1.20.1,)` ✓, Architectury `[9.2.14,)` (pack has exactly
+> 9.2.14 ✓) and Create `[6.0.7,6.1.0)` — the pack runs **Create 6.0.8**, inside the range ✓. No new
+> dependencies needed. The 0.5.5.1 build is specifically the one that *"removed relay volume code
+> which crashed dedicated server"*, so it is the correct pick for a server pack.
+>
+> **No quest coverage yet** — the mod's Ponders carry it for now; a chapter can follow.
+> **Not yet boot-tested** — installed while the server was down and not restarted.
+>
+> **v1.16.0 — Gateways to Eternity, crouch-growth rework, and the Just Potion Rings
 > crash fix. 165 mods.**
 >
 > Three changes in one release. **This supersedes v1.15.1, which was never published** — its Just
