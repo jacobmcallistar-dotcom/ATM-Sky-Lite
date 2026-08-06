@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (168 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (167 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 168 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 167 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,41 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 168 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 167 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.19.0 — The quest book rewrite. It now teaches the mods instead of
+> **Latest: v1.19.1 — Quest detection fix, and one duplicate HUD mod removed. 167 mods.**
+>
+> ⚠️ **This release removes a mod, so you must re-download the zip.** A mismatched mod list will
+> get you kicked on join.
+>
+> **Fixed: quests silently failing to detect items.** `progression_mode` was set to `linear`,
+> which means a quest whose dependencies are unmet is *locked* — and **locked quests do not run
+> item detection at all**. Craft something ahead of the book's expected order and the progress
+> was silently lost, with no feedback, because item tasks don't consume the item either. This was
+> found after a Precision Mechanism was crafted and the Age II capstone stayed empty. It affected
+> **every item task in the pack**, not just that one. Now set to `flexible`: tasks detect
+> regardless of dependency state, so the book reflects what you have actually done.
+>
+> **Also softened eight chapter capstones** with `min_required_dependencies: 1` — *The Machine
+> Age*, *Powered Up*, *Gather the Relics*, *HEART OF THE SKY*, *The Universal Pipe*, *The Base
+> Thinks*, *Industrialised* and *Liftoff*. Dependencies only control when a quest unlocks in the
+> book; the **task** is what actually gates completion. Finishing any one branch now reveals the
+> chapter goal instead of hiding it behind every side quest, and nobody can skip real content.
+>
+> **Neither change affects progression.** The pack's gating lives in the KubeJS recipe scripts,
+> not in quest state — you still cannot craft an ME Controller without Naga Scales no matter what
+> the book says.
+>
+> **Removed: The One Probe.** The pack shipped **two** block-info HUD overlays doing the same
+> job — Jade and The One Probe — both drawing on screen at once. Jade wins on three counts:
+> **JadeAddons hard-depends on it**, so dropping Jade would have cost two mods rather than one;
+> nothing in the pack has a mandatory dependency on TOP; and TOP's only two integrations (AE2 and
+> Pipez) both support Jade as well. Nothing is lost. If you were carrying a Probe item it has
+> been removed from your inventory.
+>
+> Boot-tested clean (`Done (2.516s)`) with 167 mods.
+>
+> **v1.19.0 — The quest book rewrite. It now teaches the mods instead of
 > listing them. 168 mods.**
 >
 > No mod changes and no recipe changes. This is the companion release to v1.18.0: that one
