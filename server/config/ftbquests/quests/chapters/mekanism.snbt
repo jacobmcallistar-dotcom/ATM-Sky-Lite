@@ -45,12 +45,14 @@
 		{
 			dependencies: ["6C0C75598D65CE7D"]
 			description: ["The Enrichment Chamber doubles ores and makes enriched materials, compressed redstone, and more. Your first real processing machine."]
+			icon: "mekanism:enrichment_chamber"
 			id: "6B5334AE80D3748E"
 			rewards: [{
 				id: "425E32736F06F3CB"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Doubling starts here"
 			tasks: [{
 				id: "36BAA084C8543C4D"
 				item: "mekanism:enrichment_chamber"
@@ -63,12 +65,14 @@
 		{
 			dependencies: ["6C0C75598D65CE7D"]
 			description: ["The Crusher grinds ingots to dust and biomass to bio fuel. Pair it with the Enrichment Chamber to start doubling metals."]
+			icon: "mekanism:crusher"
 			id: "736B27013214BE28"
 			rewards: [{
 				id: "330EA3C96DB0811E"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Ingots back into dust"
 			tasks: [{
 				id: "3EFC495C19FC88FD"
 				item: "mekanism:crusher"
@@ -81,12 +85,14 @@
 		{
 			dependencies: ["6C0C75598D65CE7D"]
 			description: ["The Energized Smelter is a furnace that runs on power - no fuel, and it feeds into factories later."]
+			icon: "mekanism:energized_smelter"
 			id: "62AB81D872055048"
 			rewards: [{
 				id: "3ED07579B89CE98B"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Furnace, without the fuel"
 			tasks: [{
 				id: "2FCAE77421C9A493"
 				item: "mekanism:energized_smelter"
@@ -103,12 +109,14 @@
 				""
 				"Feed it from your Powah or Mekanism generators."
 			]
+			icon: "mekanism:basic_energy_cube"
 			id: "19236F17F30F94C7"
 			rewards: [{
 				id: "4BC9362F1B95B08A"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Energy Cubes buffer the spikes"
 			tasks: [{
 				id: "1058026C0E645742"
 				item: "mekanism:basic_energy_cube"
@@ -124,12 +132,14 @@
 				"736B27013214BE28"
 			]
 			description: ["The Electrolytic Separator splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."]
+			icon: "mekanism:electrolytic_separator"
 			id: "742152612BC35B66"
 			rewards: [{
 				id: "137D67BC9DCE58D2"
 				type: "xp"
 				xp: 30
 			}]
+			subtitle: "&7Hydrogen and oxygen, free"
 			tasks: [{
 				id: "42F9089E2E1E241F"
 				item: "mekanism:electrolytic_separator"
@@ -142,12 +152,14 @@
 		{
 			dependencies: ["742152612BC35B66"]
 			description: ["The Purification Chamber uses Oxygen to turn ores into 3 clumps each - tripling. Ore processing tier 3."]
+			icon: "mekanism:purification_chamber"
 			id: "43FBE8C75E6299BE"
 			rewards: [{
 				id: "01A6D355894DD9C1"
 				type: "xp"
 				xp: 30
 			}]
+			subtitle: "&7Purification: 3x per ore"
 			tasks: [{
 				id: "12559982DDDDAA0D"
 				item: "mekanism:purification_chamber"
@@ -160,12 +172,14 @@
 		{
 			dependencies: ["742152612BC35B66"]
 			description: ["The Osmium Compressor stamps Osmium onto materials to make Refined Obsidian, Glowstone ingots, and control-circuit ingredients."]
+			icon: "mekanism:osmium_compressor"
 			id: "20BFAAABC4357F1F"
 			rewards: [{
 				id: "2AA1AA0487FEA1DC"
 				type: "xp"
 				xp: 30
 			}]
+			subtitle: "&7The ingot everything needs"
 			tasks: [{
 				id: "319844816D2CC0FB"
 				item: "mekanism:osmium_compressor"
@@ -182,12 +196,14 @@
 				""
 				"This is the full ore-processing chain. Combined with a Chemical Dissolution setup you can go to x5, but x4 is where most players live."
 			]
+			icon: "mekanism:chemical_injection_chamber"
 			id: "7ECDAF64265C939E"
 			rewards: [{
 				id: "053646AF782E4851"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Chemical Injection: 4x per ore"
 			tasks: [{
 				id: "06C60CA51A032F73"
 				item: "mekanism:chemical_injection_chamber"
@@ -204,12 +220,14 @@
 				""
 				"Make one in a Metallurgic Infuser (redstone + osmium)."
 			]
+			icon: "mekanism:basic_control_circuit"
 			id: "0FF4B3FC8DFFDE04"
 			rewards: [{
 				id: "4D780B1D95D2426B"
 				type: "xp"
 				xp: 30
 			}]
+			subtitle: "&7Osmium and redstone"
 			tasks: [{
 				id: "6E37B7A4F12EE519"
 				item: "mekanism:basic_control_circuit"
@@ -222,12 +240,14 @@
 		{
 			dependencies: ["0FF4B3FC8DFFDE04"]
 			description: ["Advanced Control Circuits need enriched circuits and gold. They gate tier-2 machines and factories."]
+			icon: "mekanism:advanced_control_circuit"
 			id: "267D2B1D2D8750CC"
 			rewards: [{
 				id: "2B40E7C3D6713C52"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Now with infused alloy"
 			tasks: [{
 				id: "6F4EFDE19179F43A"
 				item: "mekanism:advanced_control_circuit"
@@ -240,12 +260,14 @@
 		{
 			dependencies: ["267D2B1D2D8750CC"]
 			description: ["Elite and Ultimate Control Circuits are the top of the ladder - required for the best factories, the digital miner, and endgame gear."]
+			icon: "mekanism:elite_control_circuit"
 			id: "398BE9895D2BED1B"
 			rewards: [{
 				id: "2CE33709C5BC8FB3"
 				type: "xp"
 				xp: 60
 			}]
+			subtitle: "&7The last two tiers"
 			tasks: [
 				{
 					id: "14B6A732A897EAE8"
@@ -272,12 +294,14 @@
 				""
 				"Build a Basic Smelting Factory to start automating - then upgrade the tier as your circuits allow."
 			]
+			icon: "mekanism:basic_smelting_factory"
 			id: "5251868CACAB6B09"
 			rewards: [{
 				id: "40D8CB38E1C01438"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7One machine, many slots"
 			tasks: [{
 				id: "43CDFE8B81B1E7F5"
 				item: "mekanism:basic_smelting_factory"
@@ -293,6 +317,7 @@
 				"398BE9895D2BED1B"
 			]
 			description: ["Push factories to the top: Elite and Ultimate tiers process a dozen items at once. This is real industry."]
+			icon: "mekanism:elite_smelting_factory"
 			id: "3D923C56F219EB9E"
 			rewards: [
 				{
@@ -305,6 +330,7 @@
 					type: "random"
 				}
 			]
+			subtitle: "&7Elite and Ultimate factories"
 			tasks: [
 				{
 					id: "76F6C288AAEE4B34"
@@ -324,12 +350,14 @@
 		{
 			dependencies: ["398BE9895D2BED1B"]
 			description: ["The Digital Miner mines whole areas by filter, remotely. On a skyblock it's mostly for pulling from Mekanism's own ore-gen, but it's a rite of passage."]
+			icon: "mekanism:digital_miner"
 			id: "6E9FFB8BA9EFA7A6"
 			rewards: [{
 				id: "18252BA850EF783A"
 				type: "xp"
 				xp: 60
 			}]
+			subtitle: "&7Filtered mining at range"
 			tasks: [{
 				id: "61F7DD161969BE9B"
 				item: "mekanism:digital_miner"
@@ -342,12 +370,14 @@
 		{
 			dependencies: ["19236F17F30F94C7"]
 			description: ["The Teleporter moves you across the world (and dimensions) instantly. Link two and step through."]
+			icon: "mekanism:teleporter"
 			id: "003FCED61DD91731"
 			rewards: [{
 				id: "34ECB489AF609CF1"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Point to point, any distance"
 			tasks: [{
 				id: "5D8CAE0C9022C6D5"
 				item: "mekanism:teleporter"
@@ -364,12 +394,14 @@
 				""
 				"Build the casing and at least one cell + provider."
 			]
+			icon: "mekanism:induction_casing"
 			id: "2B928184B2E69250"
 			rewards: [{
 				id: "3E4C55513718AB1F"
 				type: "xp"
 				xp: 60
 			}]
+			subtitle: "&7Terabuffer for the whole base"
 			tasks: [
 				{
 					id: "366E1D9C05994B40"
@@ -389,12 +421,14 @@
 		{
 			dependencies: ["6E9FFB8BA9EFA7A6"]
 			description: ["The Quantum Entangloporter is wireless item/fluid/gas/energy transfer across any distance and dimension. Endgame logistics."]
+			icon: "mekanism:quantum_entangloporter"
 			id: "0FBFBB69863D68E7"
 			rewards: [{
 				id: "3AB286755B3DF9AC"
 				type: "xp"
 				xp: 80
 			}]
+			subtitle: "&7Instant item transport"
 			tasks: [{
 				id: "70C7BDFDF3908EC6"
 				item: "mekanism:quantum_entangloporter"
@@ -411,6 +445,7 @@
 				""
 				"Build the station, then craft a Meka-Tool and the MekaSuit chestplate to begin the set."
 			]
+			icon: "mekanism:modification_station"
 			id: "21557404ADD43A57"
 			rewards: [
 				{
@@ -425,6 +460,7 @@
 			]
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "&7One suit, every job"
 			tasks: [
 				{
 					id: "5251FC4481F88253"
@@ -456,6 +492,7 @@
 				""
 				"The Fission Reactor and the road to antimatter live in the &6Endgame&r - go build the Heart of the Sky."
 			]
+			icon: "mekanism:steel_casing"
 			id: "01339523C16D6EDB"
 			rewards: [
 				{

@@ -31,7 +31,32 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 168 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.18.0 — Adventure gating. The Twilight Forest and the planets are no longer
+> **Latest: v1.18.1 — Quest book format pass. Every quest now has a subtitle and an icon.**
+>
+> No mod changes, no recipe changes, no gameplay changes. Cosmetic and clarity only.
+>
+> **69 quests across five chapters were missing their `subtitle` and/or `icon` fields** —
+> *Applied Energistics*, *Mekanism*, *Space Program*, *War in the Sky* and *Realms Beyond*. In the
+> book that reads as a wall of unlabelled boxes: no one-line summary under the title, and a blank
+> frame where the item should be. Those five were the pack's most important chapters and its
+> scruffiest.
+>
+> **All 358 quests in all 28 chapters now carry both.** Icons were derived from each quest's own
+> task item where one existed; the remainder — boss kills and dimension visits, which have no item
+> to read — were assigned by hand. The Twilight ladder now shows the actual trophy of the boss it
+> asks you to kill, *Space Program* shows the surface of the world you are flying to, and the
+> Cataclysm fights show the ingot they drop.
+>
+> Subtitles were written per quest rather than generated, so they say something useful:
+> *"Purification: 3x per ore"*, *"Fiery Blood for the Quantum Ring"*, *"Unlocks the Twilight portal"*.
+> Several double as gate reminders now that progression depends on them.
+>
+> Boot-tested clean (`Done (2.351s)`), all 28 chapters parsed, KubeJS 0 errors.
+>
+> **Still outstanding:** per-mod description depth. Most quests still explain *what* to craft
+> rather than *how the mod actually works* — only the AE2 chapter got that treatment in v1.18.0.
+>
+> **v1.18.0 — Adventure gating. The Twilight Forest and the planets are no longer
 > optional. 168 mods.**
 >
 > The pack had a real problem: **you could finish it without ever opening a Twilight portal or

@@ -21,6 +21,7 @@
 				""
 				"The Reforging Table rerolls gear affixes. The Salvaging Table breaks gear into materials. Build your arsenal."
 			]
+			icon: "apotheosis:reforging_table"
 			id: "6B7800000000D001"
 			rewards: [{
 				count: 4
@@ -28,6 +29,7 @@
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
+			subtitle: "&7Apotheosis: rebuild your gear"
 			tasks: [{
 				id: "4D9A00000000F001"
 				item: "apotheosis:reforging_table"
@@ -44,6 +46,7 @@
 				""
 				"Place them on your island, gear them with armor and weapons, and they'll fight and patrol beside you. Feed them to heal them."
 			]
+			icon: "minecraft:emerald"
 			id: "6B7800000000D002"
 			rewards: [
 				{
@@ -57,6 +60,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&7Companions who fight back"
 			tasks: [{
 				count: 8L
 				id: "4D9A00000000F002"
@@ -74,6 +78,7 @@
 				""
 				"Craft a Waystone, then go exploring. Plant waystones as you travel to teleport between your island and the villages."
 			]
+			icon: "waystones:waystone"
 			id: "6B7800000000D003"
 			rewards: [
 				{
@@ -94,6 +99,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&7Trade without a mainland"
 			tasks: [{
 				id: "4D9A00000000F003"
 				item: "waystones:waystone"
@@ -110,6 +116,7 @@
 				""
 				"Boss drops feed the Salvaging Table and carry rare gems - socket them into your gear."
 			]
+			icon: "apotheosis:boss_summoner"
 			id: "6B7800000000D004"
 			rewards: [{
 				count: 8
@@ -117,6 +124,7 @@
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
+			subtitle: "&7Numbers beat stats"
 			tasks: [{
 				id: "4D9A00000000F004"
 				item: "apotheosis:boss_summoner"
@@ -133,6 +141,7 @@
 				""
 				"Kill the Wither. The reward opens the End: 12 portal frames + 12 eyes - build and light your own End portal anywhere."
 			]
+			icon: "minecraft:nether_star"
 			id: "6B7800000000D005"
 			rewards: [
 				{
@@ -150,6 +159,7 @@
 			]
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "&7One star. You need more."
 			tasks: [{
 				entity: "minecraft:wither"
 				id: "4D9A00000000F005"
@@ -167,6 +177,7 @@
 				""
 				"This is Cataclysm's first true boss. Bring fire resistance. Bring backup. Bring a will to live."
 			]
+			icon: "cataclysm:witherite_ingot"
 			id: "6B7800000000D006"
 			rewards: [{
 				count: 2
@@ -174,6 +185,7 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
+			subtitle: "&7Witherite for the Heart"
 			tasks: [{
 				entity: "cataclysm:netherite_monstrosity"
 				id: "4D9A00000000F006"
@@ -191,6 +203,7 @@
 				""
 				"Its Ignitium drops forge the endgame. You need them for the Heart of the Sky."
 			]
+			icon: "cataclysm:ignitium_ingot"
 			id: "6B7800000000D007"
 			rewards: [
 				{
@@ -204,6 +217,7 @@
 					type: "random"
 				}
 			]
+			subtitle: "&7Ignitium for the Heart"
 			tasks: [{
 				entity: "cataclysm:ignis"
 				id: "4D9A00000000F007"
@@ -217,6 +231,7 @@
 		{
 			dependencies: ["6B7800000000D005"]
 			description: ["Through your hand-built portal: the End. The dragon doesn't know what's coming."]
+			icon: "minecraft:dragon_egg"
 			id: "6B7800000000D008"
 			rewards: [
 				{
@@ -230,6 +245,7 @@
 					xp_levels: 10
 				}
 			]
+			subtitle: "&7The old ender dragon"
 			tasks: [{
 				entity: "minecraft:ender_dragon"
 				id: "4D9A00000000F008"
@@ -247,6 +263,7 @@
 				""
 				"Kill it. Take its wings - you've earned real flight."
 			]
+			icon: "cataclysm:void_forge"
 			id: "6B7800000000D009"
 			rewards: [{
 				id: "5C8900000000E00D"
@@ -261,6 +278,7 @@
 			}]
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "&7Cataclysm at the end"
 			tasks: [{
 				entity: "cataclysm:ender_guardian"
 				id: "4D9A00000000F009"

@@ -28,6 +28,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "&7One planet, one realm"
 			tasks: [{
 				id: "602BD00C67B592FA"
 				title: "Beyond the Island"
@@ -46,6 +47,7 @@
 				""
 				"A whole shadowed overworld of dungeons and a strict boss order awaits. Its Fiery Ingots are the only metal your fission reactor accepts."
 			]
+			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "67BC6ABF61224134"
 			rewards: [{
 				count: 16
@@ -53,6 +55,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			subtitle: "&cNeeds Desh - go to the Moon first"
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "4BA53916264ABFE6"
@@ -65,6 +68,7 @@
 		{
 			dependencies: ["67BC6ABF61224134"]
 			description: ["The Naga guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."]
+			icon: "twilightforest:naga_trophy"
 			id: "321DE9424210F3F1"
 			rewards: [{
 				count: 9
@@ -72,6 +76,7 @@
 				item: "twilightforest:naga_scale"
 				type: "item"
 			}]
+			subtitle: "&cScales for your ME Controller"
 			tasks: [{
 				entity: "twilightforest:naga"
 				id: "0481725F962E0ED5"
@@ -85,6 +90,7 @@
 		{
 			dependencies: ["321DE9424210F3F1"]
 			description: ["The Lich in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."]
+			icon: "twilightforest:lich_trophy"
 			id: "7194AE474BDDA510"
 			rewards: [{
 				id: "7D6E4A4E7E1C768C"
@@ -97,6 +103,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "&7Trophy for the Celestial Core"
 			tasks: [{
 				entity: "twilightforest:lich"
 				id: "219FACD6690D1306"
@@ -110,6 +117,7 @@
 		{
 			dependencies: ["7194AE474BDDA510"]
 			description: ["The Hydra of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."]
+			icon: "twilightforest:hydra_trophy"
 			id: "10583B7DED57F345"
 			rewards: [
 				{
@@ -124,6 +132,7 @@
 				}
 			]
 			shape: "diamond"
+			subtitle: "&cFiery Blood for the Quantum Ring"
 			tasks: [{
 				entity: "twilightforest:hydra"
 				id: "548FA859046E1025"
@@ -146,6 +155,7 @@
 				""
 				"EVERBRIGHT - eternal day. EVERDAWN - eternal dusk. Both are full of dungeons, gems and horrors."
 			]
+			icon: "blue_skies:zeal_lighter"
 			id: "2D70B1458FF1A3FC"
 			rewards: [
 				{
@@ -166,6 +176,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&7Blue Skies, lit by Venus"
 			tasks: [{
 				dimension: "blue_skies:everbright"
 				id: "15E0BA1DF348E888"
@@ -178,6 +189,7 @@
 		{
 			dependencies: ["2D70B1458FF1A3FC"]
 			description: ["Deep in an Everbright dungeon, the Starlit Crusher rules. Its Summoning Table calls it - a proper arena boss fight."]
+			icon: "blue_skies:starlit_crusher_spawn_egg"
 			id: "259AC632D754FC36"
 			rewards: [{
 				count: 4
@@ -186,6 +198,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&7Everbright boss"
 			tasks: [{
 				entity: "blue_skies:starlit_crusher"
 				id: "77477B260A4ECE65"
@@ -199,6 +212,7 @@
 		{
 			dependencies: ["259AC632D754FC36"]
 			description: ["The Everdawn's Arachnarch - a spider queen the size of a house. Kill it for the realm's rarest crafting stock."]
+			icon: "blue_skies:arachnarch_spawn_egg"
 			id: "61DDC993C67CD36F"
 			rewards: [{
 				count: 4
@@ -207,6 +221,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&7Everdawn boss"
 			tasks: [{
 				entity: "blue_skies:arachnarch"
 				id: "40A64C9CB67E32C7"
@@ -227,12 +242,14 @@
 				""
 				"A vast glowing cavern-world of Cloggrum, Froststeel and Utheric crystal - and the Forgotten Guardian."
 			]
+			icon: "undergarden:catalyst"
 			id: "10EA2E5B2105C715"
 			rewards: [{
 				id: "0A1B292B6158B4D1"
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
+			subtitle: "&7Opened with Mars ostrum"
 			tasks: [{
 				dimension: "undergarden:undergarden"
 				id: "095B56AFAA98D898"
@@ -245,6 +262,7 @@
 		{
 			dependencies: ["10EA2E5B2105C715"]
 			description: ["The Forgotten Guardian, a colossal stone sentinel, sleeps in the deep. Wake it, break it, take its Forgotten gear."]
+			icon: "undergarden:forgotten_ingot"
 			id: "538F5CE511D220D9"
 			rewards: [
 				{
@@ -259,6 +277,7 @@
 				}
 			]
 			shape: "diamond"
+			subtitle: "&7Undergarden boss"
 			tasks: [{
 				entity: "undergarden:forgotten_guardian"
 				id: "777C21910D4F7D1C"
@@ -272,6 +291,7 @@
 		{
 			dependencies: ["10583B7DED57F345"]
 			description: ["In the Labyrinth beneath the swamp waits the Minoshroom. Slay it - the Mazebreaker pickaxe is your key deeper in."]
+			icon: "twilightforest:minoshroom_trophy"
 			id: "7F00000000000001"
 			rewards: [{
 				count: 6
@@ -280,6 +300,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&7Labyrinth, under the maze"
 			tasks: [{
 				entity: "twilightforest:minoshroom"
 				id: "7F00BBBB00000001"
@@ -293,6 +314,7 @@
 		{
 			dependencies: ["7F00000000000001"]
 			description: ["The Goblin Knight Stronghold is ruled by the Knight Phantom - armored ghosts on spectral steeds. Break them for Knightmetal."]
+			icon: "twilightforest:knight_phantom_trophy"
 			id: "7F00000000000002"
 			rewards: [{
 				count: 6
@@ -301,6 +323,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&cKnightmetal gates Draconic"
 			tasks: [{
 				entity: "twilightforest:knight_phantom"
 				id: "7F00BBBB00000002"
@@ -314,6 +337,7 @@
 		{
 			dependencies: ["7F00000000000002"]
 			description: ["Atop the Dark Tower floats the Ur-Ghast, weeping fire. Bring a Lamp of Cinders and nerves of steel."]
+			icon: "twilightforest:ur_ghast_trophy"
 			id: "7F00000000000003"
 			rewards: [
 				{
@@ -328,6 +352,7 @@
 				}
 			]
 			shape: "diamond"
+			subtitle: "&cTrophy for the Celestial Core"
 			tasks: [{
 				entity: "twilightforest:ur_ghast"
 				id: "7F00BBBB00000003"
@@ -341,6 +366,7 @@
 		{
 			dependencies: ["7F00000000000003"]
 			description: ["Deep in the Snowy Forest, the Alpha Yeti guards its lair. Beat it to brave the frozen peaks above."]
+			icon: "twilightforest:alpha_yeti_trophy"
 			id: "7F00000000000004"
 			rewards: [{
 				count: 8
@@ -349,6 +375,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&7Fur for arctic gear"
 			tasks: [{
 				entity: "twilightforest:alpha_yeti"
 				id: "7F00BBBB00000004"
@@ -366,6 +393,7 @@
 				""
 				"Defeat her and you have conquered the entire dimension. Only the Final Castle remains for the truly obsessed."
 			]
+			icon: "twilightforest:snow_queen_trophy"
 			id: "7F00000000000005"
 			rewards: [
 				{

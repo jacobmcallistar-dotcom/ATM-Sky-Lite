@@ -45,12 +45,14 @@
 		{
 			dependencies: ["1FA9577AA6C0D787"]
 			description: ["Build a Charger and charge Certus Quartz into Charged Certus - the spark for Fluix."]
+			icon: "ae2:charged_certus_quartz_crystal"
 			id: "122843FE1BF8B653"
 			rewards: [{
 				id: "79B60CAE1561F669"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Charger: certus into charged"
 			tasks: [{
 				id: "258F1C1881981A91"
 				item: "ae2:charged_certus_quartz_crystal"
@@ -63,12 +65,14 @@
 		{
 			dependencies: ["122843FE1BF8B653"]
 			description: ["Fluix Crystals - charged certus + redstone + quartz dropped in water. The core material of every cable and device."]
+			icon: "ae2:fluix_crystal"
 			id: "06EEAC6C2BFD16FE"
 			rewards: [{
 				id: "344075EFB3D4B951"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Redstone, certus, quartz, water"
 			tasks: [{
 				id: "76038751ED078E6C"
 				item: "ae2:fluix_crystal"
@@ -81,12 +85,14 @@
 		{
 			dependencies: ["1FA9577AA6C0D787"]
 			description: ["Silicon comes from the Inscriber. You'll need stacks of it for every processor."]
+			icon: "ae2:silicon"
 			id: "714AA25143923BC8"
 			rewards: [{
 				id: "540653FF6C9ABF3F"
 				type: "xp"
 				xp: 20
 			}]
+			subtitle: "&7Sky stone dust, pressed"
 			tasks: [{
 				id: "54DE9AD8EA3A1FB5"
 				item: "ae2:silicon"
@@ -106,12 +112,14 @@
 				""
 				"Inscribe silicon + the right press + redstone/certus/fluix, then craft one of each."
 			]
+			icon: "ae2:logic_processor"
 			id: "3584C005DD4926AB"
 			rewards: [{
 				id: "2ED79B85E7F8FDC8"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Logic, calculation, engineering"
 			tasks: [
 				{
 					id: "5C51EBEE52E4FF2B"
@@ -162,12 +170,14 @@
 		{
 			dependencies: ["4275E6A1A07E4C54"]
 			description: ["Networks run on AE energy. An Energy Acceptor converts your FE in; an Energy Cell stores a buffer."]
+			icon: "ae2:energy_acceptor"
 			id: "112DBA08A012C0F3"
 			rewards: [{
 				id: "230C060A445313A7"
 				type: "xp"
 				xp: 30
 			}]
+			subtitle: "&7FE in, AE out"
 			tasks: [
 				{
 					id: "4157934E8DAC88FE"
@@ -187,12 +197,14 @@
 		{
 			dependencies: ["4275E6A1A07E4C54"]
 			description: ["An ME Drive holds storage cells. Craft a Drive and a 1k Item Storage Cell - your first digital chest."]
+			icon: "ae2:drive"
 			id: "5079791596C98418"
 			rewards: [{
 				id: "68FC27506F9CF480"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7The Drive holds your cells"
 			tasks: [
 				{
 					id: "3C16D56B6FA82C24"
@@ -212,12 +224,14 @@
 		{
 			dependencies: ["5079791596C98418"]
 			description: ["Scale up: 4k, 16k, and 64k cells hold ever more item types and counts. Fill a Drive with them."]
+			icon: "ae2:item_storage_cell_4k"
 			id: "28AD6C72762CBF0C"
 			rewards: [{
 				id: "1BE3AE8F3E2B7AC1"
 				type: "xp"
 				xp: 50
 			}]
+			subtitle: "&7Cell tiers: 1k to 64k"
 			tasks: [
 				{
 					id: "00AAAE25DAAC5B15"
@@ -242,12 +256,14 @@
 		{
 			dependencies: ["5079791596C98418"]
 			description: ["A Crafting Terminal lets you see your whole network and craft from it in one screen."]
+			icon: "ae2:crafting_terminal"
 			id: "730CBB4200699C94"
 			rewards: [{
 				id: "6675CEEDD228F0BA"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7See and search everything"
 			tasks: [{
 				id: "501CD9E39BB5D449"
 				item: "ae2:crafting_terminal"
@@ -333,12 +349,14 @@
 		{
 			dependencies: ["67906B4F774BA557"]
 			description: ["The Pattern Encoding Terminal is where you write autocrafting patterns. Encode a few and watch the network build them."]
+			icon: "ae2:pattern_encoding_terminal"
 			id: "30E15333874AE5C1"
 			rewards: [{
 				id: "5CDC6382731BCD06"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Teach the network a recipe"
 			tasks: [{
 				id: "78BCB14741BDBF21"
 				item: "ae2:pattern_encoding_terminal"
@@ -351,12 +369,14 @@
 		{
 			dependencies: ["7A7F425862B38C87"]
 			description: ["Import and Export Buses pull from and push to machines automatically - the veins of a self-running factory."]
+			icon: "ae2:import_bus"
 			id: "028C42F38D7735BD"
 			rewards: [{
 				id: "50CCA33C0CF8F872"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Import and export buses"
 			tasks: [
 				{
 					id: "4E210511981FCF17"
@@ -376,12 +396,14 @@
 		{
 			dependencies: ["730CBB4200699C94"]
 			description: ["A Wireless Terminal + Access Point lets you reach your whole network from anywhere. No more running home."]
+			icon: "ae2:wireless_terminal"
 			id: "3343C89DAB433A2D"
 			rewards: [{
 				id: "703761F4660E6E1E"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Leave the terminal behind"
 			tasks: [{
 				id: "514C9F3EA6DFF0E4"
 				item: "ae2:wireless_terminal"
@@ -398,6 +420,7 @@
 				""
 				"Build Spatial Pylons and a Spatial IO Port."
 			]
+			icon: "ae2:spatial_pylon"
 			id: "4659FDAFCEA8BFE6"
 			rewards: [
 				{
@@ -482,6 +505,7 @@
 				""
 				"Point it at the endgame - autocraft your way to the Heart of the Sky."
 			]
+			icon: "ae2:crafting_monitor"
 			id: "0B23279463D8A784"
 			rewards: [
 				{
