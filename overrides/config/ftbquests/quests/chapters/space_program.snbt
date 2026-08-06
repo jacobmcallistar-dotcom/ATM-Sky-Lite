@@ -166,7 +166,21 @@
 		}
 		{
 			dependencies: ["15008CDD6EC8DA95"]
-			description: ["A full Space Suit - helmet, suit, pants, boots - keeps you alive off-world. Fill its tanks at the Oxygen Loader before every trip."]
+			description: [
+				"A full Space Suit - helmet, suit, pants, boots - keeps you alive off-world. Fill its tanks at the &eOxygen Loader&r before every trip."
+				""
+				"&c&lAll four pieces, or it does not work.&r A partial suit provides no oxygen at all. This is the single most common way people die on their first launch."
+				""
+				"&e&lOxygen is consumed continuously while off-world.&r The tank empties whether you are mining or standing still. Check it before you launch, and carry a spare filled tank for anything longer than a quick survey."
+				""
+				"&e&lThe upgrade path:&r"
+				"&7- &fSpace Suit&7 - Moon and Mars"
+				"&7- &fNetherite Space Suit&7 - required in practice for &cVenus&7, where acid rain eats the basic suit"
+				""
+				"&e&lOxygen Distributor&r is the other half of the answer. Placed in a sealed room with power and oxygen, it fills the space with breathable air - so you can take the helmet off, eat, and build a real base rather than living on tank time."
+				""
+				"&8Build the Oxygen Loader before the rocket. Arriving on the Moon with empty tanks is a very short expedition."
+			]
 			icon: "ad_astra:space_suit"
 			id: "3AC5823954DFDBED"
 			rewards: [{
@@ -294,7 +308,21 @@
 		}
 		{
 			dependencies: ["6790D53BA13D38CC"]
-			description: ["One small step. The Moon: low gravity, no air, hostile nights - and &eDesh&r ore, the metal of every rocket above Tier 1."]
+			description: [
+				"One small step. The Moon: low gravity, no air, hostile nights - and &eDesh&r ore, the metal of every rocket above Tier 1."
+				""
+				"&6&lThis single landing unlocks two entire systems.&r"
+				"&7- &bAE2 autocrafting&7 - Molecular Assemblers and Crafting CPUs are framed in Desh. Storage worked without it; crafting does not."
+				"&7- &aThe Twilight Forest&7 - the portal will not light until you have stood here. Every Twilight boss, and therefore your ME Controller and the ending, is behind this trip."
+				""
+				"&c&lYou are the reason it is gated this way.&r Nothing else in the pack forces you off the island. This does."
+				""
+				"&e&lWhat to bring:&r a full Space Suit with loaded oxygen, food, blocks, and a &7Oxygen Distributor&r if you plan to stay. Low gravity makes jumps enormous - it is easy to launch yourself somewhere you cannot get back from."
+				""
+				"&e&lWhat to bring home:&r &lfar more Desh than you think.&r Every Crafting CPU and every Molecular Assembler wants it, and you will want several of both. A stack is a sensible first haul, not four ingots."
+				""
+				"&7Set up a Mekanism Teleporter or a Quantum Entangloporter here on your first trip. Doing so means you never build a return rocket again.&r"
+			]
 			icon: "ad_astra:moon_sand"
 			id: "75B7246A1B0C350B"
 			rewards: [{
@@ -343,7 +371,21 @@
 		}
 		{
 			dependencies: ["5954D67B54D46F03"]
-			description: ["Mars: the red frontier. Ostrum ore, ruined structures, and hostile Martian raiders. Watch your oxygen."]
+			description: [
+				"Mars: the red frontier. &eOstrum&r ore, ruined structures, and hostile Martian raiders. Watch your oxygen."
+				""
+				"&6&lMars is the computer gate.&r Ostrum now frames both the &bAdvanced Computer&r and the &bPeripheral Casing&r - and since every Advanced Peripherals block is built on that casing, this planet unlocks the whole computer-automation layer in one trip."
+				""
+				"&e&lIt also opens the Undergarden&r - that dimension's catalyst is cored with Mars ostrum."
+				""
+				"&e&lWhat is different from the Moon:&r there are hostile mobs here that will actually fight you, and ruined structures worth looting. Gravity is higher than the Moon but still low. Oxygen is still mandatory."
+				""
+				"&7Bring a weapon this time. The Moon was empty; Mars is not.&r"
+				""
+				"&e&lWhat to bring home:&r Ostrum in quantity. One ingot per Advanced Computer sounds cheap until you are building a monitor wall and a dozen peripherals."
+				""
+				"&8Mystical Agriculture has ostrum seeds - but you need the ingot first to craft them. Bring enough home to start that farm and you never mine Mars again."
+			]
 			icon: "ad_astra:mars_sand"
 			id: "7AEFF5201E41906E"
 			rewards: [{
@@ -392,7 +434,21 @@
 		}
 		{
 			dependencies: ["5B3D9DD3AF77FB22"]
-			description: ["Venus: crushing pressure, acid rain, and Calorite ore. A Netherite Space Suit is strongly advised."]
+			description: [
+				"Venus: crushing pressure, acid rain, and &eCalorite&r ore. A Netherite Space Suit is strongly advised."
+				""
+				"&6&lVenus is the endgame-storage gate.&r Calorite now frames the &bSpatial IO Port&r and &bSky Steel&r - and Sky Steel is the base of every single MEGA Cell. If you want storage beyond stock AE2, it is on this planet."
+				""
+				"&e&lIt also lights the Everbright&r - the Blue Skies zeal lighter is forged from Venus calorite."
+				""
+				"&c&lThis is the first genuinely lethal world.&r Acid rain damages you through an ordinary space suit. The &7Netherite Space Suit&r is not a luxury here - upgrade before you land, not after."
+				""
+				"&7Build shelter immediately on arrival. An Oxygen Distributor inside a sealed room turns Venus from a countdown into a base.&r"
+				""
+				"&e&lWhat to bring home:&r Calorite, and plenty. Between Spatial Storage and the MEGA cell line you will consume more of this than of Desh or Ostrum."
+				""
+				"&8Also a Celestial Core ingredient - one Calorite ingot goes into the item that ends the pack."
+			]
 			icon: "ad_astra:venus_sand"
 			id: "45A0F1081A90EE29"
 			rewards: [{

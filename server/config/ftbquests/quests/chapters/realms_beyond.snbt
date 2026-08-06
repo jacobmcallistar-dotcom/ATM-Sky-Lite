@@ -67,7 +67,21 @@
 		}
 		{
 			dependencies: ["67BC6ABF61224134"]
-			description: ["The Naga guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."]
+			description: [
+				"The &aNaga&r guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."
+				""
+				"&c&lThis is the most important kill in the pack.&r Naga Scales are the corners of the &bME Controller&r. Until this snake is dead you have no AE2 network - no drives, no terminal, no autocrafting road at all. Everything digital waits here."
+				""
+				"&e&lThe fight:&r a spiral courtyard with a segmented serpent that charges in straight lines and smashes the pillars. It cannot be outrun."
+				"&7- &fUse the pillars.&7 Break its charge by putting stone between you. It destroys them, which is fine - there are plenty."
+				"&7- &fHit the head&7, not the body segments."
+				"&7- &fIt alternates&7 between charging and a slower circling phase. Attack during the circle, hide during the charge."
+				"&7- &fBring a shield&7 and food. This is a stamina fight, not a burst fight."
+				""
+				"&e&lDrops:&r &7Naga Scales&r (armour, and your ME Controller) plus the &7Naga Trophy&r - one of the five you will need for the Celestial Core. &lKeep the trophy.&r"
+				""
+				"&8Iron gear is enough if you use the terrain. Diamond makes it comfortable. Do not bring your only good sword and no backup."
+			]
 			icon: "twilightforest:naga_trophy"
 			id: "321DE9424210F3F1"
 			rewards: [{
@@ -89,7 +103,22 @@
 		}
 		{
 			dependencies: ["321DE9424210F3F1"]
-			description: ["The Lich in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."]
+			description: [
+				"The &5Lich&r in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."
+				""
+				"&c&lHe is a hard progression lock, not an optional boss.&r Until the Lich dies the Twilight Forest actively punishes you for entering its deeper biomes - you take escalating damage and simply cannot proceed. Everything past this point in the chapter needs him dead first."
+				""
+				"&e&lThe fight has three distinct phases:&r"
+				"&71.&r &7Shield phase&7 - he floats behind orbiting shields and fires homing bolts. &lReflect them back with a sword&r; each reflected bolt breaks one shield. Melee is useless here."
+				"&72.&r &7Summon phase&7 - shields down, he teleports and spawns zombies and skeletons. Clear adds, chase him down."
+				"&73.&r &7Melee phase&7 - out of tricks, he fights directly. This part is short."
+				""
+				"&7A shield helps enormously in phase one. Do not waste arrows on him while the shields are up.&r"
+				""
+				"&e&lDrops:&r scepters (the Twilight and Zombie scepters are genuinely useful) and the &7Lich Trophy&r - Celestial Core component number two. &lKeep the trophy.&r"
+				""
+				"&8The tower is full of lesser liches on the lower floors. Clear them first so nothing interrupts the real fight."
+			]
 			icon: "twilightforest:lich_trophy"
 			id: "7194AE474BDDA510"
 			rewards: [{
@@ -116,7 +145,22 @@
 		}
 		{
 			dependencies: ["7194AE474BDDA510"]
-			description: ["The Hydra of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."]
+			description: [
+				"The &cHydra&r of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."
+				""
+				"&c&lThis fight pays for wireless AE2.&r Fiery Blood smelts into &7Fiery Ingots&r, and Fiery Ingots are the frame of the &bQuantum Ring&r - the block that links your island network to the Moon, Mars and everywhere else. It also forges &7Fission Reactor Casings&r, so Ascension runs through here too."
+				""
+				"&e&lThe fight:&r three heads that attack independently, breathe fire, and bite. Heads you destroy grow back unless you are fast."
+				"&7- &fFire resistance is close to mandatory.&7 Potion, or Fiery armour if you already have some."
+				"&7- &fKill heads quickly&7 - damaged heads regenerate if you take too long between them."
+				"&7- &fStay under it&7 where the fire breath cannot easily track you."
+				"&7- &fBring a bow&7 for the heads you cannot safely reach."
+				"&7- &fBlock up the swamp approach&7 - the surrounding area is hostile and you do not want adds mid-fight."
+				""
+				"&e&lDrops:&r &7Fiery Blood&r (smelt for Fiery Ingots) and the &7Hydra Trophy&r - Celestial Core component number three. &lKeep the trophy.&r"
+				""
+				"&8Do not attempt this in iron. This is the first Twilight boss that genuinely expects enchanted diamond or better."
+			]
 			icon: "twilightforest:hydra_trophy"
 			id: "10583B7DED57F345"
 			rewards: [
@@ -313,7 +357,21 @@
 		}
 		{
 			dependencies: ["7F00000000000001"]
-			description: ["The Goblin Knight Stronghold is ruled by the Knight Phantom - armored ghosts on spectral steeds. Break them for Knightmetal."]
+			description: [
+				"The Goblin Knight Stronghold is ruled by the &7Knight Phantom&r - armoured ghosts on spectral steeds. Break them for Knightmetal."
+				""
+				"&c&lThis kill unlocks Draconic Evolution.&r The &bDraconium Core&r - the root of the entire Draconic tree and therefore all of Act IV - is now pinned with &7Knightmetal Ingots&r. No Knight Phantom, no Draconic."
+				""
+				"&e&lThe fight:&r several armoured phantoms that phase in and out, fight from the air, and hit hard with lances."
+				"&7- &fThey are invulnerable while transparent.&7 Wait for them to solidify."
+				"&7- &fThey fight in a sealed trophy room&7 - no retreating, so bring supplies in with you."
+				"&7- &fThey come in waves.&7 Heal between them."
+				"&7- &fRanged is awkward&7 because of the phasing. Melee on the ground when they descend."
+				""
+				"&e&lDrops:&r &7Knightmetal Ingots&r and &7Armor Shards&r - Knightmetal armour and tools are excellent, and Knightmetal is now a hard requirement for Draconic. Plus the Knight Phantom Trophy."
+				""
+				"&8Getting in requires clearing the Goblin Stronghold, which is a dungeon in its own right. Bring building blocks - the mazes are easier to cheat through than to solve."
+			]
 			icon: "twilightforest:knight_phantom_trophy"
 			id: "7F00000000000002"
 			rewards: [{
@@ -336,7 +394,23 @@
 		}
 		{
 			dependencies: ["7F00000000000002"]
-			description: ["Atop the Dark Tower floats the Ur-Ghast, weeping fire. Bring a Lamp of Cinders and nerves of steel."]
+			description: [
+				"Atop the Dark Tower floats the &4Ur-Ghast&r, weeping fire. Bring a Lamp of Cinders and nerves of steel."
+				""
+				"&c&lCelestial Core component number four.&r Keep the trophy - without it the pack has no ending."
+				""
+				"&e&lThe fight:&r a giant ghast that hovers above an open tower roof, rains fireballs, and summons smaller ghasts constantly."
+				"&7- &fReflect its fireballs&7 back at it. That is the primary damage source - your bow will not carry this alone."
+				"&7- &fIt periodically retreats to the ceiling&7 and becomes untargetable while it heals. Kill the adds during that window."
+				"&7- &fBring blocks.&7 The arena is open to a very long fall and the ghasts will knock you off it."
+				"&7- &fFire resistance again.&7 Everything here is fire."
+				""
+				"&e&lGetting there is half the fight.&r The Dark Tower is full of ghast traps and locked block-puzzle doors. A &7Lamp of Cinders&r clears the thorns on the approach; the tower's coloured key-blocks are opened by killing the tower's mini-bosses."
+				""
+				"&e&lDrops:&r &7Carminite&r, &7Fiery Tears&r, and the &7Ur-Ghast Trophy&r."
+				""
+				"&8This is the hardest Twilight boss before the Snow Queen. Come with the best gear you own and a stack of golden apples."
+			]
 			icon: "twilightforest:ur_ghast_trophy"
 			id: "7F00000000000003"
 			rewards: [
