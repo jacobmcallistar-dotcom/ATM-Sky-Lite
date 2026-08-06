@@ -334,7 +334,20 @@
 		}
 		{
 			dependencies: ["10583B7DED57F345"]
-			description: ["In the Labyrinth beneath the swamp waits the Minoshroom. Slay it - the Mazebreaker pickaxe is your key deeper in."]
+			description: [
+				"In the Labyrinth beneath the swamp waits the &6Minoshroom&r. Slay it - the Mazebreaker pickaxe is your key deeper in."
+				""
+				"&e&lThe Labyrinth is the real obstacle, not the boss.&r It is a huge underground maze full of minotaurs, and the walls resist ordinary tools. The Minoshroom sits in a chamber at its heart."
+				""
+				"&e&lThe fight:&r a minotaur that charges in straight lines like the Naga but hits far harder, in a confined room with no space to retreat."
+				"&7- &fSidestep the charge&7 - it commits to a direction and cannot correct."
+				"&7- &fIt heals from nearby mushrooms.&7 Break them before engaging."
+				"&7- &fBring milk or a cleansing option&7 - it inflicts hunger and nausea."
+				""
+				"&e&lThe drop that matters is the &7Meef Stroganoff&e and the Diamond Minotaur Axe&r, but progression-wise this kill unlocks the &7Mazebreaker&r - the only pickaxe that breaks Maze Stone quickly, and the tool you need before the Dark Tower."
+				""
+				"&8Map as you go or bring blocks to mark turns. The Labyrinth genuinely will get you lost, and dying deep inside means a long walk back to your gravestone."
+			]
 			icon: "twilightforest:minoshroom_trophy"
 			id: "7F00000000000001"
 			rewards: [{
@@ -439,7 +452,22 @@
 		}
 		{
 			dependencies: ["7F00000000000003"]
-			description: ["Deep in the Snowy Forest, the Alpha Yeti guards its lair. Beat it to brave the frozen peaks above."]
+			description: [
+				"Deep in the Snowy Forest, the &fAlpha Yeti&r guards its lair. Beat it to brave the frozen peaks above."
+				""
+				"&c&lThis is the gate to the Snow Queen&r - and the Snow Queen's trophy is the fifth and last piece of the Celestial Core. You cannot finish the pack without coming through here."
+				""
+				"&e&lThe fight:&r a large yeti in a cave lair that grabs you, carries you into the air and throws you."
+				"&7- &fThe grab is the whole fight.&7 It picks you up, climbs, and drops you - the fall is what kills people, not the melee."
+				"&7- &fFight near the floor&7 and keep something soft or a water bucket below you."
+				"&7- &fIt is fast&7 - do not plan on outrunning it in a confined lair."
+				""
+				"&e&lDrops:&r &7Alpha Yeti Fur&r, which crafts into &7Arctic Armour&r - the gear that keeps you alive in the Glacier biome above. That biome is where the Aurora Palace and the Snow Queen are."
+				""
+				"&7So the order is: Alpha Yeti, then Arctic Armour, then the Glacier, then the Snow Queen. Skipping the armour means freezing to death on the approach.&r"
+				""
+				"&8Take fall-damage protection if you have it. Free Runners, a Draconic shield, or feather falling all turn the yeti's signature move into an inconvenience."
+			]
 			icon: "twilightforest:alpha_yeti_trophy"
 			id: "7F00000000000004"
 			rewards: [{

@@ -44,7 +44,23 @@
 		}
 		{
 			dependencies: ["0C5265A68B7CA881"]
-			description: ["Ad Astra runs on its own Steel. Build a Compressor and press iron plates and steel - the base of every rocket and machine."]
+			description: [
+				"Ad Astra runs on its own Steel. Build a &eCompressor&r and press iron plates and steel - the base of every rocket and machine."
+				""
+				"&c&lAd Astra Steel is not Mekanism Steel.&r They are separate items with separate recipes, and the rocket recipes want this one specifically. Do not assume your Mekanism stockpile covers it."
+				""
+				"&e&lThe Compressor is the workhorse of this chapter.&r Everything above is plates - iron plates, desh plates, ostrum plates, calorite plates - and every one of them comes from here. Build it early and feed it constantly."
+				""
+				"&e&lThe machine order that saves you time:&r"
+				"&71.&r &7Compressor&r - plates, the universal input"
+				"&72.&r &7NASA Workbench&r - assembles rockets"
+				"&73.&r &7Fuel Refinery&r + &7Oxygen Loader&r - the consumables"
+				"&74.&r &7Launch Pad&r - and you are flying"
+				""
+				"&7All of them take Forge Energy, so wire this area into your main grid rather than running a dedicated generator.&r"
+				""
+				"&8Press far more plates than the first rocket needs. Every tier above uses the same machine and you will be back here four times."
+			]
 			icon: "ad_astra:compressor"
 			id: "025F9F5BB50F3C61"
 			rewards: [{
@@ -343,7 +359,23 @@
 		}
 		{
 			dependencies: ["75B7246A1B0C350B"]
-			description: ["Smelt Desh and build a Tier 2 Rocket - enough thrust to cross to the inner planets."]
+			description: [
+				"Smelt Desh and build a &eTier 2 Rocket&r - enough thrust to cross to the inner planets."
+				""
+				"&6&lThis is the quest where AE2 autocrafting unlocks.&r Desh is not just rocket fuel-metal - it frames the &bMolecular Assembler&r and the &bCrafting CPU&r. Bring enough home and you can finally stop hand-crafting."
+				""
+				"&e&lRockets are consumed on launch&r - you do not get the ship back. Every trip costs a full rocket plus fuel, which is why a Mekanism Teleporter or Quantum Entangloporter on the destination pays for itself almost immediately."
+				""
+				"&e&lRocket tiers and where they reach:&r"
+				"&7- &fTier 1&7 - the Moon"
+				"&7- &fTier 2&7 - Mars"
+				"&7- &fTier 3&7 - Venus, Mercury"
+				"&7- &fTier 4&7 - Glacio"
+				""
+				"&7Build it on the Launch Pad with the NASA Workbench, fuel it, then right-click to board and press space to launch.&r"
+				""
+				"&8Take building blocks, food, and a spare oxygen tank on every flight. Arriving somewhere hostile with an empty inventory is how first trips end badly."
+			]
 			icon: "ad_astra:desh_ingot"
 			id: "5954D67B54D46F03"
 			rewards: [{
@@ -591,7 +623,19 @@
 		}
 		{
 			dependencies: ["1654EA4BC9A74F79"]
-			description: ["A &eSolar Panel&r loves a void world - no clouds below, no caves above. Free daytime FE for your outposts, on any planet with a sun."]
+			description: [
+				"A &eSolar Panel&r loves a void world - no clouds below, no caves above. Free daytime FE for your outposts, on any planet with a sun."
+				""
+				"&e&lThis is the right generator for off-world bases.&r Your Moon or Mars outpost cannot easily run cables home, and hauling fuel across the solar system is miserable. Solar needs nothing shipped in."
+				""
+				"&e&lIt only produces in daylight&r, so pair every panel with an &7Energy Cube&r or battery to carry the base through the night. On the Moon the night is long and hostile - a base that loses power after dark loses its oxygen distributor too."
+				""
+				"&c&lOutput varies by planet.&r Closer to the sun is stronger - Mercury and Venus are excellent, Glacio is poor. Plan the outpost's power around where it actually is."
+				""
+				"&7On your home island they are still worth building. No terrain shadows anything, so a roof of panels runs at full output all day.&r"
+				""
+				"&8Combine with wind generators at home: solar covers the day, wind never stops. Between them you rarely need to burn anything."
+			]
 			icon: "ad_astra:solar_panel"
 			id: "2D5C000000000001"
 			rewards: [{
