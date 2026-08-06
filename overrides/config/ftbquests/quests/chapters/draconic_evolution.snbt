@@ -34,7 +34,20 @@
 			y: -2.0d
 		}
 		{
-			description: ["The &eDraconic Sword&r and &eDraconic Pickaxe&r are the tier-one lineup - draconium-forged, and already a serious step past netherite."]
+			description: [
+				"The &eDraconic Sword&r and &eDraconic Pickaxe&r are the tier-one lineup - draconium-forged, and already a serious step past netherite."
+				""
+				"&c&lRemember what it cost to get here.&r In this pack the &7Draconium Core&r at the root of this tree is pinned with &7Knightmetal&r - so every item in this chapter is downstream of killing the Knight Phantom in the Goblin Stronghold."
+				""
+				"&e&lThe tier ladder above this:&r"
+				"&7Draconic &8→&7 &fWyvern&7 &8→&7 &fDraconic (awakened)&7 &8→&7 &fChaotic&r"
+				""
+				"Each step is a &7Fusion Crafting&r operation - a core surrounded by injectors, fed enormous amounts of FE. Set that multiblock up now; everything from here uses it."
+				""
+				"&e&lTier-one gear already outclasses netherite&r on raw stats, but the real jump comes at Wyvern when upgrade modules unlock. Do not over-invest in enchanting this tier - you will replace it."
+				""
+				"&8Draconium comes from the Draconium ore that does not spawn in a void world - which is what SkyForge's bridge recipes and Mystical Agriculture seeds are for. Set up a farm before committing to this chapter."
+			]
 			icon: "draconicevolution:draconic_sword"
 			id: "5739033CBC45ADCC"
 			rewards: [{
@@ -60,7 +73,19 @@
 			y: -0.5d
 		}
 		{
-			description: ["An &eEnergy Core&r paired with an &eEnergy Pylon&r ring is Draconic Evolution's answer to RF storage - millions of FE, buffered in one structure."]
+			description: [
+				"An &eEnergy Core&r paired with an &eEnergy Pylon&r ring is Draconic Evolution's answer to RF storage - millions of FE, buffered in one structure."
+				""
+				"&e&lIt is a tiered multiblock, and the tiers are enormous.&r Tier 1 is a single core block. Tier 8 is a vast sphere of Draconium and Wyvern blocks holding a genuinely absurd amount of energy - far more than an Induction Matrix at comparable effort."
+				""
+				"&e&lHow to build one:&r place the core, then use the &7Energy Core Stabilizer&r blocks at the tier's required offsets. Right-click the core with a &7Crafting Injector&r-style tool to open the build guide - it renders a ghost preview of exactly where every block goes. Do not try to place a tier 4+ core from memory."
+				""
+				"&e&lEnergy Pylons are the input and output.&r The core itself has no connections. Place pylons facing the core, then toggle each one to input or output mode by right-clicking. A core with no output pylon stores power forever and gives you none of it back - which is the usual reason a new one looks broken."
+				""
+				"&7Wireless Energy Crystals can move power in and out without cables, which is how most people feed one.&r"
+				""
+				"&8Build tier 3 or 4 first. It is enough to buffer a fission reactor and costs a fraction of the higher tiers."
+			]
 			icon: "draconicevolution:energy_core"
 			id: "2F22A3FE8C075F7E"
 			rewards: [{
@@ -86,7 +111,21 @@
 			y: 0.5d
 		}
 		{
-			description: ["&eWyvern&r tier gear picks up upgrade modules - flight, auto-feed, shield capacity - turning your tools and armor into a build-your-own loadout."]
+			description: [
+				"&eWyvern&r tier gear picks up upgrade modules - flight, auto-feed, shield capacity - turning your tools and armour into a build-your-own loadout."
+				""
+				"&e&lUpgrades are applied at a Fusion Crafting setup&r and each has multiple levels. You are not choosing a fixed item - you are spending resources to specialise it:"
+				"&7- &fShield Capacity / Recovery&7 - a rechargeable damage buffer over your health"
+				"&7- &fFlight&7 - creative-style flight once you reach the right tier"
+				"&7- &fDig Speed / AOE&7 - the pickaxe mines 3x3, 5x5, and further"
+				"&7- &fAuto-Feed&7 - eats from your inventory so you never starve mid-build"
+				""
+				"&e&lThe AOE upgrade is the one that changes your life.&r A Wyvern pickaxe on 5x5 clears platforms and terrain faster than any Builder card, and it works in every dimension without setup."
+				""
+				"&c&lEverything here runs on stored FE.&r Flat gear is ordinary gear - the shield stops, the flight stops, and you fall. Keep a charged Energy Cube or a wireless crystal on you."
+				""
+				"&7Configure active upgrades with the module GUI keybind rather than re-crafting. Most upgrades can be toggled on the fly.&r"
+			]
 			icon: "draconicevolution:wyvern_sword"
 			id: "28E31AAB6A65F788"
 			rewards: [{

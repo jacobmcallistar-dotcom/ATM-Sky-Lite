@@ -245,7 +245,20 @@
 		}
 		{
 			dependencies: ["210600000000000B"]
-			description: ["Collect a &ePolonium Pellet&r from your activator. Every endgame Mekanism recipe - above all, antimatter - runs through these."]
+			description: [
+				"Collect a &ePolonium Pellet&r from your activator. Every endgame Mekanism recipe - above all, antimatter - runs through these."
+				""
+				"&e&lWhere polonium sits in the chain:&r"
+				"&7Fission Reactor &8→&7 Nuclear Waste &8→&7 &fSolar Neutron Activator&7 &8→&7 Polonium &8→&7 Pellet&r"
+				""
+				"&e&lThe Solar Neutron Activator needs open sky and daylight.&r It is slow by design, and on a void island it is one of the few machines that genuinely wants to be on your highest platform. Build several in parallel rather than waiting on one."
+				""
+				"&e&lWhat pellets feed:&r the &7SPS&r (Supercritical Phase Shifter), which turns polonium into &7Antimatter&r. The Heart of the Sky needs &l2 antimatter pellets&r, and the SPS consumes polonium and enormous power for every one."
+				""
+				"&c&lThis is the longest single grind in the pack.&r Antimatter is deliberately expensive. Start the polonium line running in the background as soon as your fission reactor is stable - do not wait until you are otherwise ready to finish."
+				""
+				"&7Nuclear waste is also produced continuously by the reactor whether you use it or not. Feeding it to activators is disposal and production at the same time.&r"
+			]
 			icon: "mekanism:pellet_polonium"
 			id: "2106000000000003"
 			rewards: [{

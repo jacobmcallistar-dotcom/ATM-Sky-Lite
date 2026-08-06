@@ -60,7 +60,22 @@
 			y: -1.5d
 		}
 		{
-			description: ["The &eScribe's Table&r is where spells actually get written - drag glyphs onto a page, arrange the order, and bind the finished spell to your book."]
+			description: [
+				"The &eScribe's Table&r is where spells actually get written - drag glyphs onto a page, arrange the order, and bind the finished spell to your book."
+				""
+				"&e&lSpells are built from three kinds of glyph, in this order:&r"
+				"&71. &fForm&7 - how the spell is delivered. &lEvery spell must start with one.&r Projectile, Touch, Self, Burst."
+				"&72. &fEffect&7 - what it actually does. Break, Harm, Grow, Ignite, Place Block."
+				"&73. &fAugment&7 - modifies the effect before it. Amplify, Extend Time, AOE, Pierce, Dampen."
+				""
+				"&e&lThe order matters enormously.&r Augments apply to the effect immediately before them, so &7Projectile - Break - AOE&r breaks a wide area where it lands, while &7Projectile - AOE - Break&r does something quite different."
+				""
+				"&e&lMana cost rises steeply with augments&r, so a spell that reads well on paper may be uncastable. Check the cost shown on the table before you commit."
+				""
+				"&7This is the mod's whole appeal: you are not picking spells off a list, you are designing them. A &fProjectile - Break - Fortune&7 wand is a mining tool nobody handed you.&r"
+				""
+				"&8Start simple. Two-glyph spells are cheap, cast fast, and cover most practical needs."
+			]
 			icon: "ars_nouveau:scribes_table"
 			id: "00C017B9AE1AFE32"
 			rewards: [{
@@ -79,7 +94,19 @@
 			y: -1.5d
 		}
 		{
-			description: ["An &eArcane Pedestal&r channels source into ritual crafting - the entry point to Ars Nouveau's item-enchanting and automation side."]
+			description: [
+				"An &eArcane Pedestal&r channels source into ritual crafting - the entry point to Ars Nouveau's item-enchanting and automation side."
+				""
+				"&e&lThe standard layout:&r an &7Enchanting Apparatus&r in the centre with &7Arcane Pedestals&r ringing it. Put the reagent in the apparatus, one ingredient on each pedestal, and provide Source. Right-click the apparatus to run it."
+				""
+				"&e&lSource is Ars Nouveau's power&r and it is entirely separate from FE. You generate it with &7Source Jars&r fed by things like the Volcanic Sourcelink (burns items) or Agronomic Sourcelink (nearby crop growth). Rituals will silently fail with no source nearby."
+				""
+				"&e&lWhat this unlocks:&r spell parchment, upgraded wands and armour, Ritual Braziers, and the automation side - &7Whirlisprigs&r that farm for you and &7Drygmys&r that collect mob drops without killing anything."
+				""
+				"&7The Drygmy is the standout for a void world: it gathers drops from nearby mobs passively, which is a mob farm with no grinder, no fall damage and no spawn platform.&r"
+				""
+				"&8Craft the Worn Notebook early - it is the in-game documentation and covers every glyph and ritual in far more detail than a quest book reasonably can."
+			]
 			icon: "ars_nouveau:arcane_pedestal"
 			id: "17478CA1F714EBAB"
 			rewards: [{
