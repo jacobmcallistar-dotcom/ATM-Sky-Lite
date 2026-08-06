@@ -31,7 +31,54 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 168 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.18.1 — Quest book format pass. Every quest now has a subtitle and an icon.**
+> **Latest: v1.19.0 — The quest book rewrite. It now teaches the mods instead of
+> listing them. 168 mods.**
+>
+> No mod changes and no recipe changes. This is the companion release to v1.18.0: that one
+> rebuilt the *progression*, this one rebuilt the *explanation* of it.
+>
+> **The problem.** Most quests said what to craft and stopped. *"The ME Controller is the heart
+> of a network."* True, useless. Nothing explained how a mod actually worked, what would go
+> wrong, or — after v1.18.0 — why half the tech tree now needed a dead boss.
+>
+> **Around 110 quests across 20 chapters were rewritten.** Highlights:
+>
+> **The gating is finally visible.** *The Gates* panel in **How to Play** was rewritten from
+> scratch — it predated v1.18.0 and listed none of the new locks. It is now grouped into Tier /
+> Dimension / Adventure / Ending, and ends on the line that matters: *everything up to the ME
+> Controller you can build on your island; nothing after it.* Every Twilight boss and every
+> planet now names the block it unlocks — the Naga is introduced as "the most important kill in
+> the pack" because Naga Scales are the ME Controller.
+>
+> **Create** (your first real complaint) — all seven thin quests rewritten. RPM versus stress,
+> gearing trading one for the other, the one-source-per-shaft rule behind most lockups, exact
+> Basin/Mixer spacing, and Sequenced Assembly as the road to the Precision Mechanism.
+>
+> **AE2** — the bytes-versus-types distinction, and the punchline that **every cell tier holds 63
+> types**; higher tiers give bytes, not types. That one fact explains why everyone's first network
+> "fills up" instantly. Plus fluix being grown rather than crafted, crafting versus processing
+> patterns, and why a pattern in an unattached Provider silently stalls a job.
+>
+> **Mekanism** — 13 quests. The Electrolytic Separator flagged as the pivot from items to gases,
+> the 3x chain drawn out as four machines, Factories explained as parallel slots, and the
+> Entangloporter's side-config gotcha that makes a new one look dead.
+>
+> **The Void Signal fights** read as optional flavour. Three of the four **Heart of the Sky**
+> corners drop there. They now say so, with arena advice — roof the Venus arena or the acid rain
+> fights you too, and the Glacio lich is **not** the Twilight lich.
+>
+> **Things you can only learn by dying** are now written down: a partial Space Suit provides *no*
+> oxygen, the Harvester replants *nothing*, claimed is not the same as force-loaded, Free Runners
+> stop protecting you the moment they run flat, and Ad Astra Steel is not Mekanism Steel.
+>
+> Boot-tested clean after every batch — fourteen times, all 28 chapters parsing, KubeJS reporting
+> zero errors throughout.
+>
+> **Deliberately not padded.** Around 46 quests still have short descriptions: optional Cataclysm
+> bosses, Blue Skies and Undergarden side-bosses, flag-planting on Mercury, aircraft, minor
+> conveniences. Three paragraphs on "plant your flag" would make the book worse.
+>
+> **v1.18.1 — Quest book format pass. Every quest now has a subtitle and an icon.**
 >
 > No mod changes, no recipe changes, no gameplay changes. Cosmetic and clarity only.
 >
