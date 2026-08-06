@@ -64,7 +64,20 @@
 		}
 		{
 			dependencies: ["122843FE1BF8B653"]
-			description: ["Fluix Crystals - charged certus + redstone + quartz dropped in water. The core material of every cable and device."]
+			description: [
+				"Fluix Crystals - charged certus + redstone + quartz dropped in water. The core material of every cable and device."
+				""
+				"&e&lThrow the ingredients into water as dropped items&r - this is an in-world transformation, not a crafting recipe. One charged certus, one redstone, one nether quartz, tossed into a water source block. They fuse after a moment."
+				""
+				"&e&lThen grow more instead of making more.&r Fluix crystals can be grown from seeds:"
+				"&71.&r Craft &7Fluix Seeds&r from fluix dust."
+				"&72.&r Drop them in water and wait, or speed it up with a &7Growth Accelerator&r."
+				"&73.&r Harvest full crystals, crush some back into dust, repeat."
+				""
+				"&c&lThat loop is self-sustaining&r - it is the only reason AE2 is viable at scale. Set up a growth chamber early: a small water pool ringed with accelerators produces fluix and certus faster than you can spend it."
+				""
+				"&7Fluix goes into every cable, every processor, and every device in the mod. There is no such thing as too much.&r"
+			]
 			icon: "ae2:fluix_crystal"
 			id: "06EEAC6C2BFD16FE"
 			rewards: [{
@@ -84,7 +97,22 @@
 		}
 		{
 			dependencies: ["1FA9577AA6C0D787"]
-			description: ["Silicon comes from the Inscriber. You'll need stacks of it for every processor."]
+			description: [
+				"Silicon comes from the Inscriber. You'll need stacks of it for every processor."
+				""
+				"&e&lThe Inscriber has three slots and the layout matters:&r top press, bottom press, and a middle material slot. Presses are &lnot consumed&r - they stamp forever."
+				""
+				"&e&lThe four presses&r - Silicon, Logic, Calculation and Engineering - normally come from meteorites, which do not exist in a void world. &7SkyForge provides craftable press recipes&r so the whole mod is reachable. Make all four once and you never need them again."
+				""
+				"&e&lProcessor assembly is a three-step chain:&r"
+				"&71.&r Inscribe silicon into a &7Printed Silicon&r."
+				"&72.&r Inscribe the material (redstone/certus/gold) into its printed form."
+				"&73.&r Combine printed silicon + printed material + redstone in the Inscriber to get the finished processor."
+				""
+				"&c&lAutomate this early.&r Processors are consumed by every AE2 device you will ever build, and hand-inscribing three stages per processor is genuinely miserable. A line of three Inscribers with pipes between them is one of the best hours you can spend."
+				""
+				"&8Remember the Inscriber itself is gated behind a Mekanism Advanced Control Circuit in this pack."
+			]
 			icon: "ae2:silicon"
 			id: "714AA25143923BC8"
 			rewards: [{
@@ -169,7 +197,19 @@
 		}
 		{
 			dependencies: ["4275E6A1A07E4C54"]
-			description: ["Networks run on AE energy. An Energy Acceptor converts your FE in; an Energy Cell stores a buffer."]
+			description: [
+				"Networks run on AE energy. An &eEnergy Acceptor&r converts your FE in; an &eEnergy Cell&r stores a buffer."
+				""
+				"&e&lAE2 uses its own energy unit&r and will not accept FE directly. The Energy Acceptor is the only translator - one on the network, cabled to your grid, and the whole system is powered."
+				""
+				"&c&lRunning out of power wipes your network state.&r Not your items - those are safe in the cells - but the network shuts down, channels drop, and everything reboots when power returns. Autocrafting jobs in progress are lost."
+				""
+				"&e&lWhich is why the Energy Cell matters.&r It buffers enough to ride out a brief outage while your generators catch up. On a wind or solar grid that flickers, this is the difference between a stable network and one that resets every night."
+				""
+				"&7Power draw scales with how much network you have - every bus, every drive, every terminal costs idle power, and autocrafting spikes it hard.&r"
+				""
+				"&8If your network keeps browning out when a craft starts, add a Dense Energy Cell rather than a bigger generator. The problem is almost always burst demand, not average supply."
+			]
 			icon: "ae2:energy_acceptor"
 			id: "112DBA08A012C0F3"
 			rewards: [{
@@ -196,7 +236,21 @@
 		}
 		{
 			dependencies: ["4275E6A1A07E4C54"]
-			description: ["An ME Drive holds storage cells. Craft a Drive and a 1k Item Storage Cell - your first digital chest."]
+			description: [
+				"An &eME Drive&r holds storage cells. Craft a Drive and a 1k Item Storage Cell - your first digital chest."
+				""
+				"&e&lStorage cells have two separate limits&r and people usually hit the wrong one first:"
+				"&7- &fBytes&7 - total quantity stored"
+				"&7- &fTypes&7 - how many &ldistinct&r items it can hold, regardless of quantity"
+				""
+				"&c&lA 1k cell holds only 63 types.&r Dump a messy inventory into one and it fills on types long before it runs out of bytes - and each additional type also costs bytes. This is why your first cell seems to fill instantly."
+				""
+				"&e&lPartition your cells.&r Use a &7Cell Workbench&r to lock a cell to specific items. A cell partitioned to just cobblestone stores an enormous amount of it; an unpartitioned cell wastes most of its capacity on 63 kinds of junk."
+				""
+				"&7A Drive holds 10 cells. Mixing tiers is fine - put your bulk items in a partitioned 1k and your general overflow in a 64k.&r"
+				""
+				"&8Do not delete cells with items still inside. Break the drive, the cells drop with contents intact - but a cell tossed in lava takes everything with it."
+			]
 			icon: "ae2:drive"
 			id: "5079791596C98418"
 			rewards: [{
@@ -223,7 +277,21 @@
 		}
 		{
 			dependencies: ["5079791596C98418"]
-			description: ["Scale up: 4k, 16k, and 64k cells hold ever more item types and counts. Fill a Drive with them."]
+			description: [
+				"Scale up: 4k, 16k, and 64k cells hold ever more item types and counts. Fill a Drive with them."
+				""
+				"&e&lThe type limit barely moves.&r This is the thing that surprises everyone:"
+				"&7- &f1k&7 - 63 types"
+				"&7- &f4k&7 - 63 types"
+				"&7- &f16k&7 - 63 types"
+				"&7- &f64k&7 - 63 types"
+				""
+				"&c&lHigher tiers give you more BYTES, not more TYPES.&r A 64k cell holds vastly more &lquantity&r, but still only 63 distinct items. If your network says it is full while the bytes look fine, you have run out of types and need &lmore cells&r, not bigger ones."
+				""
+				"&e&lSo build wide, not tall.&r Several mid-tier cells in a Drive beat one enormous cell for a varied inventory. Save the 64k cells for bulk - cobblestone, dust, ore chunks - ideally partitioned."
+				""
+				"&7This limit is exactly why MEGA Cells exist later, and why they are gated behind Venus. They break the type ceiling as well as the byte one.&r"
+			]
 			icon: "ae2:item_storage_cell_4k"
 			id: "28AD6C72762CBF0C"
 			rewards: [{
@@ -255,7 +323,23 @@
 		}
 		{
 			dependencies: ["5079791596C98418"]
-			description: ["A Crafting Terminal lets you see your whole network and craft from it in one screen."]
+			description: [
+				"A &eCrafting Terminal&r lets you see your whole network and craft from it in one screen."
+				""
+				"&e&lThe terminal is where you actually live once AE2 is running.&r Search bar at the top, everything you own below it, and a crafting grid attached - pull ingredients straight from the network without opening a single chest."
+				""
+				"&e&lSearch syntax worth memorising:&r"
+				"&7- &f@mod&7 - filter by mod, e.g. `@mekanism`"
+				"&7- &f#tag&7 - filter by tag, e.g. `#ingot`"
+				"&7- &f*&7 - wildcard"
+				"&7- Prefix with &f-&7 to exclude"
+				""
+				"&e&lTerminal variants&r do different jobs: the plain &7ME Terminal&r views only, the &7Crafting Terminal&r adds the grid, and the &7Pattern Encoding Terminal&r writes autocrafting patterns. Later, AE2WTLib's Universal Terminal merges all of them into one item."
+				""
+				"&7Terminals are cable parts, not blocks - attach them to the side of a cable and they cost a channel each.&r"
+				""
+				"&8Set the terminal to sort by amount and enable the tooltip showing item counts. Small settings, big difference when your network holds thousands of things."
+			]
 			icon: "ae2:crafting_terminal"
 			id: "730CBB4200699C94"
 			rewards: [{
@@ -348,7 +432,21 @@
 		}
 		{
 			dependencies: ["67906B4F774BA557"]
-			description: ["The Pattern Encoding Terminal is where you write autocrafting patterns. Encode a few and watch the network build them."]
+			description: [
+				"The &ePattern Encoding Terminal&r is where you write autocrafting patterns. Encode a few and watch the network build them."
+				""
+				"&e&lTwo pattern types, and picking the wrong one is the usual reason autocrafting fails:&r"
+				"&7- &fCrafting Pattern&7 - a 3x3 grid recipe. Executed by a &fMolecular Assembler&7."
+				"&7- &fProcessing Pattern&7 - arbitrary inputs and outputs, for machines. The network pushes ingredients into the machine and waits for the result to come back."
+				""
+				"&c&lProcessing patterns do not care about recipe shape&r - you tell it what goes in and what comes out. Use these for anything that is not a crafting table: smelters, crushers, infusers, the lot."
+				""
+				"&e&lPatterns live in a Pattern Provider&r, and the Provider must be touching the machine (or an assembler) that executes them. A pattern sitting in a Provider with nothing attached is a recipe the network believes it can make and then silently stalls on."
+				""
+				"&e&lSubstitutions&r let a pattern accept any equivalent ingredient - any wood plank, any iron source. Toggle it per-slot in the terminal. Fuzzy matching helps for damaged tools."
+				""
+				"&7Encode everything. A pattern costs one blank pattern and takes ten seconds; the payoff is never crafting that item by hand again.&r"
+			]
 			icon: "ae2:pattern_encoding_terminal"
 			id: "30E15333874AE5C1"
 			rewards: [{
@@ -368,7 +466,26 @@
 		}
 		{
 			dependencies: ["7A7F425862B38C87"]
-			description: ["Import and Export Buses pull from and push to machines automatically - the veins of a self-running factory."]
+			description: [
+				"&eImport&r and &eExport Buses&r pull from and push to machines automatically - the veins of a self-running factory."
+				""
+				"&e&lThink of them from the network's point of view:&r"
+				"&7- &fImport Bus&7 - takes items &lout of&r a machine and &linto&r the network"
+				"&7- &fExport Bus&7 - takes items &lout of&r the network and &linto&r a machine"
+				""
+				"&c&lExport Buses need a filter&r or they do nothing at all. Import Buses default to taking everything, which is usually what you want."
+				""
+				"&e&lUpgrade cards change their behaviour:&r"
+				"&7- &fSpeed Card&7 - more items per operation, up to 4"
+				"&7- &fCapacity Card&7 - more filter slots"
+				"&7- &fRedstone Card&7 - only run on a redstone signal"
+				"&7- &fCrafting Card&7 - if the network has none of the item, &lrequest a craft&r instead of idling. This is what makes auto-stocking work."
+				"&7- &fFuzzy Card&7 - ignore damage and NBT when matching"
+				""
+				"&e&lThe classic setup:&r Export Bus with a Crafting Card feeding a machine, Import Bus taking the output back. That loop is a self-refilling production line and it is the point of the whole mod."
+				""
+				"&8Every bus costs a channel. Watch your controller's budget as you add them."
+			]
 			icon: "ae2:import_bus"
 			id: "028C42F38D7735BD"
 			rewards: [{
@@ -395,7 +512,19 @@
 		}
 		{
 			dependencies: ["730CBB4200699C94"]
-			description: ["A Wireless Terminal + Access Point lets you reach your whole network from anywhere. No more running home."]
+			description: [
+				"A &eWireless Terminal&r + &eAccess Point&r lets you reach your whole network from anywhere. No more running home."
+				""
+				"&e&lYou need both halves.&r The terminal is the handheld item; the &7Wireless Access Point&r is what it talks to. A terminal with no access point in range simply does nothing."
+				""
+				"&e&lRange is the thing to plan around.&r A bare Access Point has a small radius. Slot &7Wireless Booster&r cards into it and the range grows substantially, and you can place several access points to cover a sprawling base."
+				""
+				"&c&lIt does not cross dimensions.&r Standing on the Moon, your island's access point is unreachable. That is what the &7Quantum Ring&r is for - link the two networks, then put an access point on each end."
+				""
+				"&e&lThe terminal holds a charge&r and drains with use. Keep it topped up in a charger."
+				""
+				"&7AE2WTLib upgrades this into a Universal Terminal - crafting, patterns and storage in one handheld item. Worth it the moment you can afford it.&r"
+			]
 			icon: "ae2:wireless_terminal"
 			id: "3343C89DAB433A2D"
 			rewards: [{
