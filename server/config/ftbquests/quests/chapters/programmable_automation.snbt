@@ -495,6 +495,7 @@
 			]
 			icon: "pneumaticcraft:harvesting_drone"
 			id: "7083373948204BA5"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "73A08DBD90BF1DD5"

@@ -292,6 +292,7 @@
 			]
 			icon: "ad_astra:tier_1_rocket"
 			id: "6790D53BA13D38CC"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "305E8ABFE6134ECE"

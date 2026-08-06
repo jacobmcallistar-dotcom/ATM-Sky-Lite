@@ -470,6 +470,7 @@
 			]
 			icon: "immersiveengineering:blastbrick"
 			id: "7E20000000000010"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "7E20000000000113"

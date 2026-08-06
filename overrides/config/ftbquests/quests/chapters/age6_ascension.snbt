@@ -390,6 +390,7 @@
 			]
 			icon: "cataclysm:witherite_ingot"
 			id: "2106000000000006"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "2106000000000106"
 				type: "xp_levels"
@@ -495,6 +496,7 @@
 			]
 			icon: "skyforge:heart_of_the_sky"
 			id: "2106000000000007"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 3

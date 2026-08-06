@@ -426,6 +426,7 @@
 			]
 			icon: "mekanism:steel_casing"
 			id: "210200000000000E"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 4

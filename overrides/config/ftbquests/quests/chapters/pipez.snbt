@@ -181,6 +181,7 @@
 			]
 			icon: "pipez:universal_pipe"
 			id: "7E10000000000007"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "7E10000000000108"

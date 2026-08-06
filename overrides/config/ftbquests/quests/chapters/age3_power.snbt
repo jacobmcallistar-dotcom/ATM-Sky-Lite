@@ -328,6 +328,7 @@
 			]
 			icon: "mekanism:basic_induction_cell"
 			id: "210300000000000B"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "210300000000010B"
