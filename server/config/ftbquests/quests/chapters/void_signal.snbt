@@ -101,7 +101,20 @@
 				"3055000000000003"
 				"7AEFF5201E41906E"
 			]
-			description: ["On Mars the signal comes from &cunder the soil&r. Stand in your arena and claim - and watch the red sand split open."]
+			description: [
+				"On Mars the signal comes from &cunder the soil&r. Stand in your arena and claim - and watch the red sand split open."
+				""
+				"&c&lThis is a Heart of the Sky component.&r The &7Void Thorn&r this fight drops is one of the four Void Signal relics cornering the win condition. It is not optional content."
+				""
+				"&e&lThe Void Blossom&r fights from a fixed position and covers the ground in spore fields and thorn spikes. It is an arena fight in the literal sense - the floor is the danger, not the boss."
+				"&7- &fKeep moving.&7 Standing still in a spore field is what kills people."
+				"&7- &fBuild your arena before you claim&r - a flat, walled, well-lit platform with no holes. Fighting this in open Martian terrain is far harder."
+				"&7- &fBring ranged options.&7 Closing distance repeatedly through the floor hazards is expensive."
+				""
+				"&c&lRemember you are on Mars.&r Oxygen is still draining while you fight. Bring a spare tank, or set up an Oxygen Distributor in the arena so the fight is not on a timer."
+				""
+				"&8Claim the quest only when the arena is finished and you are geared. The boss spawns immediately."
+			]
 			icon: "bosses_of_mass_destruction:void_lily"
 			id: "3055000000000004"
 			rewards: [{
@@ -159,7 +172,20 @@
 				"3055000000000005"
 				"45A0F1081A90EE29"
 			]
-			description: ["Venus screams on every frequency. Something in the acid clouds is transmitting through a fist of soulfire. Arena. Claim. Brace."]
+			description: [
+				"Venus screams on every frequency. Something in the acid clouds is transmitting through a fist of soulfire. Arena. Claim. Brace."
+				""
+				"&c&lAnother Heart component.&r The &7Blazing Eye&r from the Gauntlet is Void Signal relic number three."
+				""
+				"&e&lThe Gauntlet&r is a giant hand that erupts from the ground, slams, and fires soulfire beams. It is largely stationary but its reach is enormous."
+				"&7- &fStrafe, do not back up.&7 Its slams track forward; circling is safer than retreating."
+				"&7- &fSoulfire ignores normal fire resistance&r - do not assume a potion covers it."
+				"&7- &fIt has an invulnerable phase&7 where it withdraws. Use it to heal and reposition rather than wasting hits."
+				""
+				"&c&lVenus is the hardest place to fight anything.&r Acid rain damages you throughout, on top of the boss. A &7Netherite Space Suit&r and a sealed, roofed arena are close to mandatory here - the roof stops the rain, which turns an unfair fight into a fair one."
+				""
+				"&8Of the four relic fights, this is the one most worth over-preparing for. Build the arena properly."
+			]
 			icon: "minecraft:soul_lantern"
 			id: "3055000000000006"
 			rewards: [{
@@ -216,7 +242,23 @@
 				"3055000000000007"
 				"3811F52536EF179D"
 			]
-			description: ["Glacio's night lasts forever, and the signal here sounds like a funeral bell. Whatever answers on the frozen edge of the system, it has been dead a long time."]
+			description: [
+				"Glacio's night lasts forever, and the signal here sounds like a funeral bell. Whatever answers on the frozen edge of the system, it has been dead a long time."
+				""
+				"&c&lThe last of the four Heart components.&r The &7Soul Star&r from the Void Lich is Void Signal relic number four - and with it the corners of the Heart of the Sky are complete."
+				""
+				"&c&lDo not confuse this with the Twilight Forest Lich.&r Different mod, different fight, different drop. You need both dead."
+				""
+				"&e&lThe Void Lich&r teleports constantly, summons skeletal minions, and fires homing soul projectiles. It is a mobility fight - you will spend more time chasing than swinging."
+				"&7- &fClear the adds first&7 or they will chip you down while you chase."
+				"&7- &fA bow or a projectile spell&7 is far more useful than melee for the teleport phases."
+				"&7- &fRoof the arena.&7 It likes to teleport out of reach vertically."
+				"&7- &fBring a lot of food.&7 This is the longest of the four fights."
+				""
+				"&7Glacio is cold and dark but not corrosive - it is a kinder venue than Venus. Bring lighting; the permanent night means mobs spawn throughout.&r"
+				""
+				"&8Once this drops, you have all four relics. What remains between you and the ending is the Celestial Core - five Twilight trophies and three planet metals."
+			]
 			icon: "minecraft:soul_torch"
 			id: "3055000000000008"
 			rewards: [{
