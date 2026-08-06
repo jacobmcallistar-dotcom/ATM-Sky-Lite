@@ -79,7 +79,20 @@
 			y: -1.5d
 		}
 		{
-			description: ["An &eME Bridge&r or &eRS Bridge&r lets a computer query and command your AE2 or Refined Storage network directly from Lua - list items, request crafts, watch stock levels."]
+			description: [
+				"An &eME Bridge&r or &eRS Bridge&r lets a computer query and command your AE2 or Refined Storage network directly from Lua - list items, request crafts, watch stock levels."
+				""
+				"&e&lThis is the block that makes computers worth building.&r Everything else in ComputerCraft is a toy until it can see your storage. With a bridge, a twenty-line script does things no amount of manual AE2 configuration can:"
+				"&7- &fAuto-stock&7 - keep 64 of every circuit in the system, requesting crafts when it dips"
+				"&7- &fDashboards&7 - a monitor wall showing live stock, power and craft queues"
+				"&7- &fConditional crafting&7 - only make X when Y is above a threshold"
+				""
+				"&e&lHow to wire it:&r place the bridge touching your ME network so it joins as a device, then attach a computer with a &7wired modem&r and `peripheral.wrap` it. It draws channel and power like any other AE2 device."
+				""
+				"&c&lIn this pack the Peripheral Casing is gated behind Mars ostrum&r, so every Advanced Peripherals block - this one included - waits until you have flown. That is deliberate: computer automation is a late reward, not a starting tool."
+				""
+				"&7Useful calls: `listItems()`, `craftItem()`, `getItem()`, `isItemCrafting()`. The mod ships in-game documentation with the full API.&r"
+			]
 			icon: "advancedperipherals:me_bridge"
 			id: "34392F6A68FFEC67"
 			rewards: [{

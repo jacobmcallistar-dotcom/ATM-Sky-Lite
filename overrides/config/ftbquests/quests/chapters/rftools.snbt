@@ -34,7 +34,17 @@
 			y: -2.0d
 		}
 		{
-			description: ["The &eSmartwrench&r is RFTools' universal wrench - rotate, configure and disassemble any RFTools machine with one tool."]
+			description: [
+				"The &eSmartwrench&r is RFTools' universal wrench - rotate, configure and disassemble any RFTools machine with one tool."
+				""
+				"&e&lTwo modes, switched by crouching:&r"
+				"&7- &fNormal&7 - rotate and configure the block you click."
+				"&7- &fSelect&7 - bind a machine to the wrench, then configure it from anywhere. This is how you set up a Matter Transmitter without walking back and forth across your island."
+				""
+				"&7It also picks machines up intact, keeping their inventory and settings - the same trick as Create's wrench. Never break an RFTools machine with a pickaxe.&r"
+				""
+				"&8Keep it in your hotbar for the whole chapter. Every block here expects it."
+			]
 			icon: "rftoolsbase:smartwrench"
 			id: "115DC22612D3DD3F"
 			rewards: [{
@@ -79,7 +89,22 @@
 			y: 0.0d
 		}
 		{
-			description: ["The &eBuilder&r reads a &eShape Card&r and executes it - quarry a cube, pump a lake, or clear an area, all without you lifting a pickaxe."]
+			description: [
+				"The &eBuilder&r reads a &eShape Card&r and executes it - quarry a cube, pump a lake, or clear an area, all without you lifting a pickaxe."
+				""
+				"&e&lThe Builder is the most versatile block in RFTools&r because the Shape Card decides what it does. Same machine, completely different jobs:"
+				"&7- &fQuarry card&7 - mines everything in the defined region"
+				"&7- &fVoid card&7 - mines and deletes, for clearing space"
+				"&7- &fPump card&7 - drains fluids in the region"
+				"&7- &fBuilder card&7 - &lplaces&r blocks from its inventory instead of removing them"
+				"&7- &fFilter variants&7 - only ores, only non-ores, and so on"
+				""
+				"&e&lHow to aim it:&r right-click the card to open the shape editor, set dimensions and offsets, then preview with a &7Shape Card projector&r before you run it. The preview is the difference between quarrying a chunk and quarrying your base."
+				""
+				"&c&lIt is very power hungry&r, and silk-touch or fortune variants multiply that cost. Feed it from a Power Cell, not directly from a wind farm."
+				""
+				"&7On a void island the Builder shines as a &lconstruction&r tool as much as a mining one - filling platforms, clearing old builds, and shifting terrain in the dimensions you visit.&r"
+			]
 			icon: "rftoolsbuilder:builder"
 			id: "6A03B5968E1CD99C"
 			rewards: [{
@@ -131,7 +156,23 @@
 			y: 0.0d
 		}
 		{
-			description: ["The &eDimension Builder&r assembles &eDimlets&r into a custom pocket dimension - pick the biome, terrain and features, then step through."]
+			description: [
+				"The &eDimension Builder&r assembles &eDimlets&r into a custom pocket dimension - pick the biome, terrain and features, then step through."
+				""
+				"&e&lThis is RFTools' headline feature and the most powerful thing in the chapter.&r You are not visiting a dimension someone else designed - you are specifying one. Terrain type, biome, what blocks it is made of, whether it has mobs, whether it has a sky."
+				""
+				"&e&lThe workflow:&r"
+				"&71.&r Collect &7Dimlets&r - each describes one property."
+				"&72.&r Insert them into the &7Dimension Builder&r along with a Dimension Tab."
+				"&73.&r Power it heavily while it builds. This costs a lot."
+				"&74.&r Place the finished &7Dimension Cell&r in a &7Dimension Enscriber&r and step through the portal."
+				""
+				"&c&lThe dimension draws power continuously to stay alive.&r If your grid dies while you are inside, you are stranded until it comes back. Always carry a way out."
+				""
+				"&e&lWhy it matters on a skyblock:&r a custom dimension made entirely of one ore block is a genuinely unlimited resource supply. It is also, quite deliberately, expensive enough that you have to earn it."
+				""
+				"&8Start with a simple flat dimension to learn the system before spending your good dimlets."
+			]
 			icon: "rftoolsdim:dimension_builder"
 			id: "5FF5138F14109D91"
 			rewards: [{
@@ -150,7 +191,19 @@
 			y: 0.0d
 		}
 		{
-			description: ["&eModular Storage&r stacks storage modules into a single controllable block, and the &eStorage Scanner&r finds any item across your whole base without opening a single chest."]
+			description: [
+				"&eModular Storage&r stacks storage modules into a single controllable block, and the &eStorage Scanner&r finds any item across your whole base without opening a single chest."
+				""
+				"&e&lThe Storage Scanner is the part worth building.&r It indexes every inventory in a radius - chests, drawers, barrels, machine buffers - and gives you one searchable window across all of them. You can pull items out and push items back from that window."
+				""
+				"&e&lIt is not AE2, and that is the point.&r No cables, no channels, no controller, no power-hungry network. It reads chests you already have, exactly where they are. On a mid-game base that is often all you actually wanted."
+				""
+				"&7Set the scan radius carefully - a large radius over a big base costs performance every refresh. Tighten it to the room your storage actually occupies.&r"
+				""
+				"&e&lModular Storage&r itself is a single block whose capacity depends on the modules inside, remotely viewable from the Scanner. Useful, but the Scanner is the reason to be here."
+				""
+				"&8If you already have an ME network, the Scanner still earns its place - it sees the chests your AE2 system does not."
+			]
 			icon: "rftoolsstorage:modular_storage"
 			id: "7CEFFFCF872943C8"
 			rewards: [{

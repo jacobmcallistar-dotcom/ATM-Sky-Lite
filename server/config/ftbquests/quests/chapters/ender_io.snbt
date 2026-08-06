@@ -107,7 +107,20 @@
 		}
 		{
 			dependencies: ["61D0000000000002"]
-			description: ["The &eSAG Mill&r grinds ores with bonus outputs, tuned by grinding balls. A &eBasic Capacitor&r slots into any Ender IO machine to push its speed and buffer. Feed the mill your ore chunks."]
+			description: [
+				"The &eSAG Mill&r grinds ores with bonus outputs, tuned by grinding balls. A &eBasic Capacitor&r slots into any Ender IO machine to push its speed and buffer. Feed the mill your ore chunks."
+				""
+				"&e&lGrinding Balls are the whole feature.&r Drop one into the mill's ball slot and it modifies every recipe while it lasts. Each ball trades three stats against each other:"
+				"&7- &fChance&7 - odds of bonus output"
+				"&7- &fPower&7 - energy cost per operation"
+				"&7- &fDuration&7 - how many operations before it wears out"
+				""
+				"&7A Flint ball is cheap and mild. Dark Steel is expensive and strong. Match the ball to what you are grinding - do not burn a good ball on cobblestone.&r"
+				""
+				"&e&lIt is a genuine alternative to Mekanism's ore chain&r rather than a copy: fewer machines, no gases, but the yield is random rather than guaranteed. Many players run both - Mekanism for reliable 5x on metals, SAG Mill for bulk materials where variance does not matter."
+				""
+				"&e&lCapacitors slot into every Ender IO machine&r and raise both speed and internal buffer. Basic, Double-Layer and Octadic - upgrading a capacitor is usually cheaper than building a second machine."
+			]
 			icon: "enderio:sag_mill"
 			id: "61D0000000000004"
 			rewards: [{
@@ -134,7 +147,21 @@
 		}
 		{
 			dependencies: ["61D0000000000003"]
-			description: ["&eDark Steel&r is Ender IO's obsidian-hardened metal - tools, armor and upgrades that rival netherite, plus the frames of every advanced machine. Alloy a batch."]
+			description: [
+				"&eDark Steel&r is Ender IO's obsidian-hardened metal - tools, armour and upgrades that rival netherite, plus the frames of every advanced machine. Alloy a batch."
+				""
+				"&e&lDark Steel gear is upgradeable, which is what sets it apart.&r Instead of enchanting once and living with it, you apply &7upgrades&r at an Anvil over time:"
+				"&7- &fEmpowered&7 (I-IV) - the tools store FE and hit harder while charged"
+				"&7- &fSpoon&7 - pickaxe also acts as a shovel"
+				"&7- &fDirect&7 - mined blocks go straight to your inventory"
+				"&7- &fTravel&7 - right-click to teleport to Travel Anchors, or blink short distances"
+				""
+				"&e&lThe Dark Pickaxe with Spoon and Direct is arguably the best mining tool in the pack&r before you reach Draconic - and it is available far, far earlier."
+				""
+				"&c&lIt eats obsidian&r, which in a void world means a lava-and-water setup running constantly. Build that first or this quest will stall you."
+				""
+				"&7Dark Steel is also the frame material for Ender IO's higher machines, so you are making it regardless. Make extra while the smelter is hot.&r"
+			]
 			icon: "enderio:dark_steel_ingot"
 			id: "61D0000000000005"
 			rewards: [{

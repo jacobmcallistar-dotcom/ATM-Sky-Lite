@@ -145,7 +145,24 @@
 		}
 		{
 			dependencies: ["655E000000000004"]
-			description: ["Craft &eIron Seeds&r on the altar and plant them. Congratulations: you are now farming a mine. Every resource seed works this way - check JEI for the full catalog."]
+			description: [
+				"Craft &eIron Seeds&r on the altar and plant them. Congratulations: you are now farming a mine. Every resource seed works this way - check JEI for the full catalogue."
+				""
+				"&e&lHow a resource seed is made:&r put the &7Infusion Altar&r in the middle, ring it with four &7Pedestals&r, drop the tier's essence on the pedestals and the base ingredients in the middle. The altar does the rest."
+				""
+				"&e&lThe seed tier decides what farmland it needs.&r A tier-4 seed will not grow on tier-1 Inferium farmland. Match them or nothing happens and it looks broken."
+				""
+				"&e&lThe seeds that actually change this pack:&r"
+				"&7- &fOsmium&7 - breaks the Mekanism bottleneck"
+				"&7- &fUraninite&7 - makes Powah reactors sustainable"
+				"&7- &fDiamond / Obsidian&7 - the Elite and Ultimate circuit wall"
+				"&7- &fDesh, Ostrum, Calorite&7 - SkyForge adds planet-metal seeds, so you can farm what you flew for"
+				"&7- &fNether Star&7 - yes, really"
+				""
+				"&c&lNote the planet seeds still require the trip first&r - you need the ingot to craft the seed. They make the metals sustainable, not free."
+				""
+				"&8Plant one of everything early. A farm running in the background for fifty hours is worth more than any single machine you could build with that time."
+			]
 			icon: "minecraft:iron_ingot"
 			id: "655E000000000005"
 			rewards: [{
@@ -224,7 +241,19 @@
 		}
 		{
 			dependencies: ["655E000000000004"]
-			description: ["&eGrowth Accelerators&r sit under your farmland and tick the crops above. Stack them in a pillar - each one is another push. Your essence farm becomes a green blur."]
+			description: [
+				"&eGrowth Accelerators&r sit under your farmland and tick the crops above. Stack them in a pillar - each one is another push. Your essence farm becomes a green blur."
+				""
+				"&e&lThey stack downward, and that is the trick.&r One accelerator directly under the farmland helps a little. A column of ten under the same block is ten times the growth ticks. Build &ldown&r, not out - you are on a floating island, and vertical space is the one thing you have plenty of."
+				""
+				"&e&lTiers matter more than count:&r Inferium, Prudentium, Tertium, Imperium and Supremium accelerators each tick faster than the last. Ten Supremium accelerators beat fifty Inferium ones and take a fifth of the space."
+				""
+				"&c&lThey draw no power but they do cost performance.&r Every accelerator is a block ticking constantly. A few hundred of them will hurt your server's tick rate - which matters here, since the standing rule on this machine is nothing that slows things down."
+				""
+				"&7Combine with a Watering Can or Cyclic Sprinkler for a further multiplier, and harvest with a Harvester or Botany Pots so the whole farm runs unattended.&r"
+				""
+				"&8This is how essence farming stops being a grind. Without accelerators you are waiting on vanilla crop timers; with them, Supremium is a weekend rather than a month."
+			]
 			icon: "mysticalagriculture:inferium_growth_accelerator"
 			id: "655E000000000008"
 			rewards: [{
