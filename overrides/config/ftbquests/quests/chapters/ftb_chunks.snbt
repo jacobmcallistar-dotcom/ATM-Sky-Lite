@@ -36,7 +36,19 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eForce-loading&r keeps a claimed chunk ticking even with nobody from your team online - the difference between a farm that runs while you sleep and one that pauses the moment you log off."]
+			description: [
+				"&eForce-loading&r keeps a claimed chunk ticking even with nobody from your team online - the difference between a farm that runs while you sleep and one that pauses the moment you log off."
+				""
+				"&e&lThis is not optional in a pack like this.&r Sieves, smelters, mob farms, Powah reactors and every Create contraption stop dead in unloaded chunks. If you log off and come back to an empty output chest, this is almost always why."
+				""
+				"&e&lHow to do it:&r press &bM&r for the map, drag to &7claim&r chunks, then &7ctrl+click&r (or shift+click) to force-load the ones that matter. Claimed and force-loaded are &lnot&r the same thing - claiming only sets ownership."
+				""
+				"&c&lForce-load sparingly.&r Every force-loaded chunk is a chunk the server ticks forever, whether you are online or not. Load your machine room and your farms; do not blanket-load your whole island."
+				""
+				"&7You have a limited allowance of both claims and force-loads. Check the counter in the top corner of the map screen.&r"
+				""
+				"&8If a force-loaded farm still stalls, the usual culprit is the machine sitting on a chunk border with half of it outside the loaded area."
+			]
 			icon: "minecraft:redstone_torch"
 			id: "5E35775F56D7A7F3"
 			rewards: [{

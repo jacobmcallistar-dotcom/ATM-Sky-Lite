@@ -34,7 +34,22 @@
 			y: -1.5d
 		}
 		{
-			description: ["Item, fluid and energy &etunnels&r punch a connection through a machine wall - so the pocket room outside can still feed power and resources in, and pull products back out."]
+			description: [
+				"Item, fluid and energy &etunnels&r punch a connection through a machine wall - so the pocket room outside can still feed power and resources in, and pull products back out."
+				""
+				"&e&lWithout tunnels a Compact Machine is a sealed box.&r The room inside is a genuinely separate space - nothing crosses the wall on its own. A tunnel creates one matched pair of ports: one on the inside wall, one on the outer block face."
+				""
+				"&e&lHow to place one:&r hold the tunnel item and right-click the &linside&r wall. It appears on the corresponding outside face, colour-coded so you can tell pairs apart. Use the same colour dye on both ends when you have several."
+				""
+				"&e&lTunnel types:&r"
+				"&7- &fItem&7 - in or out, set the direction with a wrench"
+				"&7- &fFluid&7 - same, for tanks and pipes"
+				"&7- &fEnergy&7 - FE across the wall"
+				""
+				"&e&lWhy bother at all:&r a Compact Machine is one block on your island containing an entire room. On a floating platform where space and chunk-loading both cost you, putting your whole ore-processing line inside one block is a real win."
+				""
+				"&8The room only ticks if the block holding it is loaded. Force-load the chunk the machine sits in, not some imaginary chunk inside."
+			]
 			icon: "compactmachines:tunnel_wall"
 			id: "660F0AFCCBF74D89"
 			rewards: [{

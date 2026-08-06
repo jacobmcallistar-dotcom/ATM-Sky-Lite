@@ -65,7 +65,17 @@
 		}
 		{
 			dependencies: ["2102000000000002"]
-			description: ["Bridge Sky Steel into &eMekanism Steel&r, then press it into a &eSteel Casing&r - the shell of nearly every Mekanism machine you are about to build."]
+			description: [
+				"Bridge Sky Steel into &eMekanism Steel&r, then press it into a &eSteel Casing&r - the shell of nearly every Mekanism machine you are about to build."
+				""
+				"&e&lSteel Casings are the tax on everything.&r Enrichment Chamber, Crusher, Smelter, Purification, Injection, the Digital Miner, the Teleporter - every one of them is a casing plus contents. You will not build four. You will build forty."
+				""
+				"&e&lSo automate it early.&r The chain is &7iron + coal dust &8→&7 steel dust &8→&7 smelt &8→&7 steel ingot&r, then casings. Mekanism's own machines can run that whole line, which means the first thing you should build with Mekanism is more Mekanism."
+				""
+				"&7SkyForge gives you a keystone bridge to Mekanism Steel directly. Use it to get the first few casings, then switch to the real chain once your Enrichment Chamber is live - the bridge does not scale.&r"
+				""
+				"&8Stockpile steel. Every time you think you have enough, you are about three machines short."
+			]
 			icon: "mekanism:ingot_steel"
 			id: "2102000000000003"
 			rewards: [{
@@ -113,7 +123,21 @@
 		}
 		{
 			dependencies: ["2102000000000004"]
-			description: ["Infuse redstone into &eEnriched Redstone&r - the concentrated form Mekanism uses in circuits, energy tablets and control components. Make a stack; you will need it constantly."]
+			description: [
+				"Infuse redstone into &eEnriched Redstone&r - the concentrated form Mekanism uses in circuits, energy tablets and control components. Make a stack; you will need it constantly."
+				""
+				"&e&lHow the Metallurgic Infuser works.&r It has two inputs: the &litem&r you are upgrading, and an &linfusion type&r loaded from a second slot. Put redstone dust in the infusion slot and it fills an internal buffer - that buffer is then spent on whatever passes through."
+				""
+				"&7Infusion types you will use constantly:&r"
+				"&7- &fRedstone&7 - enriched redstone, enriched alloy"
+				"&7- &fDiamond&7 - reinforced alloy"
+				"&7- &fCarbon&7 (coal/charcoal) - steel dust"
+				"&7- &fRefined Obsidian&7 - atomic alloy"
+				""
+				"&8Load the infusion buffer well ahead of what you are making - a half-empty buffer silently stalls the machine mid-batch and it looks like it has jammed."
+				""
+				"&c&lRemember the Infuser itself was gated&r - it needs a Create Precision Mechanism. That was deliberate: kinetics buy electricity, and this block is the receipt."
+			]
 			icon: "mekanism:enriched_redstone"
 			id: "2102000000000005"
 			rewards: [{
@@ -160,7 +184,20 @@
 		}
 		{
 			dependencies: ["2102000000000006"]
-			description: ["The &eEnergized Smelter&r smelts with power instead of fuel, faster and cleaner than any furnace. Route it into your ore-chunk pipeline and forget about coal."]
+			description: [
+				"The &eEnergized Smelter&r smelts with power instead of fuel, faster and cleaner than any furnace. Route it into your ore-chunk pipeline and forget about coal."
+				""
+				"&e&lThis is where you stop feeding furnaces by hand.&r No fuel slot, no ash, no refilling - it draws FE and runs as long as the grid holds. Everything a furnace can smelt, it smelts faster."
+				""
+				"&e&lUpgrades slot into every Mekanism machine&r, and this is a good place to learn them:"
+				"&7- &fSpeed Upgrade&7 - faster processing, higher power draw."
+				"&7- &fEnergy Upgrade&7 - bigger internal buffer, less sensitive to grid dips."
+				"&7- &fMuffling Upgrade&7 - silences it. Put these in everything or your base will be unbearable."
+				""
+				"&7Right-click the machine, open the upgrade slot on the left, and drop them in. Up to 8 of each.&r"
+				""
+				"&e&lWire it into the ore line:&r Crusher or Enrichment Chamber output &8→&7 Energized Smelter &8→&7 ingot chest&r. That is your Age I sieve chain finally running end to end without you."
+			]
 			icon: "mekanism:energized_smelter"
 			id: "2102000000000007"
 			rewards: [{
@@ -206,7 +243,23 @@
 		}
 		{
 			dependencies: ["2102000000000006"]
-			description: ["A &eCrusher&r grinds ingots back into dust and clears the way to Mekanism's deeper ore chains. Cheap, fast, and a prerequisite for the good stuff."]
+			description: [
+				"A &eCrusher&r grinds ingots back into dust and clears the way to Mekanism's deeper ore chains. Cheap, fast, and a prerequisite for the good stuff."
+				""
+				"&e&lThe Crusher is half of your first doubling.&r On its own it turns ingots back into dust - which sounds pointless until you realise the pairing:"
+				""
+				"&7Ore chunk &8→&7 &fEnrichment Chamber&7 &8→&7 2x dust &8→&7 &fEnergized Smelter&7 &8→&7 2 ingots&r"
+				""
+				"&e&lThat is 2x ore, and it is the entry rung of a ladder that goes to 5x:&r"
+				"&7- &a2x&7 Enrichment Chamber"
+				"&7- &a3x&7 + Purification Chamber (needs oxygen)"
+				"&7- &a4x&7 + Chemical Injection Chamber (needs hydrogen chloride)"
+				"&7- &a5x&7 + Chemical Dissolution + Washer + Crystallizer"
+				""
+				"Each tier adds machines &lin front&r of the previous one rather than replacing it, so nothing you build here is wasted later."
+				""
+				"&7The Crusher also makes coal dust for steel, bio fuel from plants, and is the cheapest way to turn surplus tools and armour back into usable metal.&r"
+			]
 			icon: "mekanism:crusher"
 			id: "2102000000000009"
 			rewards: [{
@@ -226,7 +279,19 @@
 		}
 		{
 			dependencies: ["2102000000000008"]
-			description: ["The &eOsmium Compressor&r combines osmium with materials to make Mekanism's control circuits and refined alloys. Feed it osmium from the keystone or the sieve."]
+			description: [
+				"The &eOsmium Compressor&r combines osmium with materials to make Mekanism's control circuits and refined alloys. Feed it osmium from the keystone or the sieve."
+				""
+				"&e&lIt runs on liquid osmium, not ingots.&r The compressor takes a &lgas&r input - molten osmium - produced by feeding osmium ingots or dust into it, plus the item you want to compress. If it looks stuck, check the gas buffer before anything else."
+				""
+				"&e&lWhat comes out of it:&r"
+				"&7- &fBasic Control Circuits&7 - the component you will make thousands of"
+				"&7- &fRefined Obsidian / Refined Glowstone Ingots&7 - the late-tier alloys"
+				""
+				"&7Osmium is the single most-consumed metal in Mekanism, and it does not drop below an iron mesh. If this machine keeps running dry, the fix is upstream - more sieves on iron or diamond mesh, not a bigger compressor.&r"
+				""
+				"&8Pair it with the Metallurgic Infuser and the Enrichment Chamber and you have the three blocks that produce every Mekanism intermediate. Everything else is those three, scaled."
+			]
 			icon: "mekanism:osmium_compressor"
 			id: "210200000000000A"
 			rewards: [{
@@ -314,7 +379,21 @@
 		}
 		{
 			dependencies: ["2102000000000008"]
-			description: ["A &eBasic Control Circuit&r is the logic chip behind every advanced machine. Osmium compressor makes them. From here, everything gets smarter."]
+			description: [
+				"A &eBasic Control Circuit&r is the logic chip behind every advanced machine. The Osmium Compressor makes them. From here, everything gets smarter."
+				""
+				"&e&lFour tiers, each built from the one below:&r"
+				"&7- &fBasic&7 - osmium + enriched redstone"
+				"&7- &fAdvanced&7 - basic + enriched alloy"
+				"&7- &fElite&7 - advanced + reinforced alloy"
+				"&7- &fUltimate&7 - elite + atomic alloy"
+				""
+				"&c&lThis is a gate, not just a component.&r The &eAE2 Inscriber&r in this pack is built around an &cAdvanced Control Circuit&r - so the digital age genuinely waits on the electric one. You cannot start AE2 until Mekanism is running properly."
+				""
+				"&e&lThe alloy ladder behind those tiers&r runs through the Metallurgic Infuser: &7Enriched Alloy&r (iron + infused redstone), then &7Reinforced&r (enriched + infused diamond), then &7Atomic&r (reinforced + infused refined obsidian). Build the infuser line once and every circuit tier becomes cheap."
+				""
+				"&8Automate basic circuits early. They are consumed by the dozen and hand-crafting them will become the thing you hate most about Age III."
+			]
 			icon: "mekanism:basic_control_circuit"
 			id: "210200000000000D"
 			rewards: [{

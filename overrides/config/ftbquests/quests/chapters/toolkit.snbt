@@ -34,7 +34,22 @@
 			y: -3.5d
 		}
 		{
-			description: ["&eJade&r shows a tooltip for whatever you're looking at - block contents, machine progress, entity health. Look at things. It just works."]
+			description: [
+				"&eJade&r shows a tooltip for whatever you're looking at - block contents, machine progress, entity health. Look at things. It just works."
+				""
+				"&e&lIt is the fastest debugging tool in the pack.&r Look at a stalled machine and Jade tells you whether it is out of power, out of input, or full of output - which is three different fixes and otherwise indistinguishable."
+				""
+				"&7Useful things it reads without opening anything:&r"
+				"&7- Machine progress bars and energy buffers"
+				"&7- Tank contents and amounts"
+				"&7- What a drawer or barrel holds and how full it is"
+				"&7- Growth stage of crops - so you know if a farm is actually working"
+				"&7- Mob health and armour, including Apotheosis affixes"
+				""
+				"&e&lPress the config key to filter what it shows.&r The default overlay gets noisy in a machine room; trimming it to energy and progress makes it far more useful."
+				""
+				"&8JadeAddons extends it to more of this pack's mods. Both are already installed - nothing to craft, just look at things."
+			]
 			icon: "minecraft:spyglass"
 			id: "6A0BBEDFA2503F3B"
 			rewards: [{
@@ -53,7 +68,18 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eInventory Profiles Next&r one-click sorts your inventory, auto-refills broken tools and depleted stacks from elsewhere in your bags, and auto-dumps into matching containers."]
+			description: [
+				"&eInventory Profiles Next&r one-click sorts your inventory, auto-refills broken tools and depleted stacks from elsewhere in your bags, and auto-dumps into matching containers."
+				""
+				"&e&lThe three features that actually matter here:&r"
+				"&7- &fSort buttons&7 - appear at the top of every container. One click and a chest of sieve output becomes readable."
+				"&7- &fAuto-refill&7 - when a stack in your hotbar runs out, it silently pulls more from your inventory. You will not notice it until you play without it."
+				"&7- &fMove-all&7 - shift-click variants that shove everything matching into the open container. This is how you unload after a sieving session."
+				""
+				"&7Hold a modifier while clicking sort to change the sort order - by name, by count, by mod.&r"
+				""
+				"&8The auto-crafting checkbox that used to appear on crafting tables was this mod, and it is disabled in this pack on purpose. Sorting, move-all and auto-refill are untouched."
+			]
 			icon: "minecraft:chest"
 			id: "35D65CEDF7858F20"
 			rewards: [{

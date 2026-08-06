@@ -71,7 +71,17 @@
 		}
 		{
 			dependencies: ["57D0000000000002"]
-			description: ["A &eCompacting Drawer&r holds one material in every size at once - nuggets, ingots and blocks share the same slot and convert as you take them. One drawer, the whole iron economy."]
+			description: [
+				"A &eCompacting Drawer&r holds one material in every size at once - nuggets, ingots and blocks share the same slot and convert as you take them. One drawer, the whole iron economy."
+				""
+				"&e&lWhy this beats three ordinary drawers.&r A normal drawer holding iron ingots fills up and starts voiding or backing up your system. A Compacting Drawer silently converts overflow &lupward&r - 9 ingots become a block, 9 blocks become... nothing further, but you have just multiplied your effective capacity ninefold without a single upgrade."
+				""
+				"&7Pull from the nugget face and it breaks a block down for you automatically. Insert blocks and it stores them as ingots. You never manually compress anything again.&r"
+				""
+				"&e&lThe catch:&r one material per drawer, and only materials that have a real nugget/ingot/block chain. Iron, gold, copper, osmium, all the Mekanism metals - yes. Cobblestone or gravel - no, use an ordinary drawer."
+				""
+				"&8Put these on your ore output line first. Metals are what actually overflow in this pack; everything else is a rounding error by comparison."
+			]
 			icon: "storagedrawers:compacting_drawers_3"
 			id: "57D0000000000003"
 			rewards: [{
@@ -140,7 +150,23 @@
 		}
 		{
 			dependencies: ["57D0000000000005"]
-			description: ["A &eStack Upgrade&r multiplies how much every slot holds. Slot one into a barrel and watch a single container swallow a whole farm's output."]
+			description: [
+				"A &eStack Upgrade&r multiplies how much every slot holds. Slot one into a barrel and watch a single container swallow a whole farm's output."
+				""
+				"&e&lThey multiply, they do not add.&r Each tier stacks on the last, so a barrel with several upgrades holds absurd quantities per slot rather than merely a few more. This is the cheapest capacity in the pack by a wide margin - far cheaper than more AE2 cells."
+				""
+				"&e&lSophisticated Storage upgrades worth knowing:&r"
+				"&7- &fStack&7 - raw capacity, the one you want first"
+				"&7- &fPickup&7 - vacuums matching items straight off the ground into the barrel"
+				"&7- &fMagnet&7 - wider-range pickup"
+				"&7- &fCompacting&7 - auto-compresses to blocks as it fills"
+				"&7- &fFiltered / Advanced Filtered&7 - only accepts what you specify"
+				"&7- &fVoid&7 - throws away overflow once full. Dangerous, but the correct answer for cobblestone."
+				""
+				"&7Barrels and backpacks take the same upgrades, so anything you learn here carries into your Hungry Backpack.&r"
+				""
+				"&8Start this chapter early. Sorting is not a late-game luxury in a pack where the sieve never stops producing."
+			]
 			icon: "sophisticatedstorage:stack_upgrade_tier_1"
 			id: "57D0000000000006"
 			rewards: [{
