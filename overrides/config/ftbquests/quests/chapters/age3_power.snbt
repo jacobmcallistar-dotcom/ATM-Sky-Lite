@@ -38,7 +38,19 @@
 		}
 		{
 			dependencies: ["2103000000000001"]
-			description: ["The keystone bridge turns Sky Dust into &eUraninite&r - Powah's reactor fuel, and an ore that will never spawn in the void. Bank a few; the reactor eats them."]
+			description: [
+				"The keystone bridge turns Sky Dust into &eUraninite&r - Powah's reactor fuel, and an ore that will never spawn in the void. Bank a few; the reactor eats them."
+				""
+				"&e&lThis is a bridge recipe, not a real supply.&r SkyForge exists to break chicken-and-egg problems: Powah needs uraninite, uraninite needs an overworld, and you do not have one. The keystone gets you started - it does not scale."
+				""
+				"&e&lThe scalable answer is Mystical Agriculture.&r Uraninite seeds turn reactor fuel into a crop you harvest. If you intend to run reactors seriously - and Age IV assumes you will - get that farm going early rather than bridging one ingot at a time."
+				""
+				"&e&lWhat it feeds:&r Powah's &7Uraninite &8→&7 Uranium&r line, and from there the Reactor tiers that carry your grid from Age III to the fission plant in Ascension."
+				""
+				"&7Powah reactors consume fuel continuously while running, unlike the Thermo and Wind generators you have been leaning on. Budget for a steady supply before you commit your base to one.&r"
+				""
+				"&8The same keystone bridges osmium for Mekanism and certus for AE2. One block, three tech trees unlocked."
+			]
 			icon: "powah:uraninite"
 			id: "2103000000000002"
 			rewards: [{
@@ -85,7 +97,19 @@
 		}
 		{
 			dependencies: ["2103000000000003"]
-			description: ["A &eThermo Generator&r sat over lava makes passive FE forever, no fuel runs required. Drop a few and stop thinking about power for a while."]
+			description: [
+				"A &eThermo Generator&r sat over lava makes passive FE forever, no fuel runs required. Drop a few and stop thinking about power for a while."
+				""
+				"&e&lIt runs on a temperature difference, not on burning fuel.&r Lava on one side, cooler air or water on the other, and it produces indefinitely. The lava is &lnot consumed&r - one bucket powers it forever."
+				""
+				"&e&lWhich makes it perfect here.&r You already have a lava source for your cobble generator, and SkyForge gives you lava synthesis. Free heat you were making anyway."
+				""
+				"&7Surround it with water or place it in a cold biome to widen the temperature gap - output goes up. A generator sitting in the Nether next to lava produces almost nothing, because everything around it is already hot.&r"
+				""
+				"&e&lIt is slow but utterly reliable&r - no fuel logistics, no moving parts, no maintenance. Build a bank of them as your baseline grid and let the reactors handle peaks."
+				""
+				"&8Between this and wind, you can run all of Age III without ever crafting a fuel-burning generator."
+			]
 			icon: "powah:thermo_generator_basic"
 			id: "2103000000000004"
 			rewards: [{
@@ -106,7 +130,23 @@
 		}
 		{
 			dependencies: ["2103000000000003"]
-			description: ["Wind Generators love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."]
+			description: [
+				"&eWind Generators&r love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."
+				""
+				"&e&lThis is the one generator a skyblock is actually good at.&r Output scales with Y level, and you start higher than most players ever build. Free real estate."
+				""
+				"&e&lThe rules that matter:&r"
+				"&7- &fOutput rises with altitude.&7 Build them on your highest platform, not at base level."
+				"&7- &fThey need open sky.&7 Blocks directly above kill them."
+				"&7- &fThey do not need fuel, water, or attention.&7 Ever."
+				"&7- &fSome dimensions have no wind at all&7 - do not plan a Moon base around them."
+				""
+				"&e&lThey are individually weak.&r One will not run a Purification Chamber. The answer is quantity - a field of twenty is trivially cheap, silent, and needs nothing from you again."
+				""
+				"&7Wire them into an Energy Cube rather than straight to machines. Wind output is steady but small, and the buffer is what turns a trickle into something that can handle a burst of demand.&r"
+				""
+				"&8Cheap enough to be your first real grid, weak enough that you will still want Powah reactors later. Build both."
+			]
 			icon: "mekanismgenerators:wind_generator"
 			id: "2103000000000005"
 			rewards: [{
@@ -126,7 +166,19 @@
 		}
 		{
 			dependencies: ["2103000000000005"]
-			description: ["An &eEnergy Cube&r buffers your generators so machines never starve between gusts. Your first real battery - bigger storage comes with the Induction Matrix."]
+			description: [
+				"An &eEnergy Cube&r buffers your generators so machines never starve between gusts. Your first real battery - bigger storage comes with the Induction Matrix."
+				""
+				"&e&lWhy a buffer is not optional.&r Generators produce a steady trickle; machines demand in bursts. Wire a Purification Chamber straight to a wind farm and it stutters. Put a cube between them and the same farm runs it smoothly, because the cube absorbs the peaks."
+				""
+				"&e&lConfigure the sides.&r Right-click, open the config tab, and set each face to input or output. A cube with every side on the same mode will happily push power back into your generators and do nothing useful. This is the most common wiring mistake in Mekanism."
+				""
+				"&e&lFour tiers&r - Basic, Advanced, Elite, Ultimate - each holding far more and transferring faster. Upgrade in place with the tier installers; you keep the stored charge."
+				""
+				"&7They are portable. A charged cube in your inventory will refill Free Runners, a Meka-Tool or a jetpack in the field.&r"
+				""
+				"&8Put one next to any machine that runs intermittently. It is cheaper than a bigger generator and fixes the same problem."
+			]
 			icon: "mekanism:basic_energy_cube"
 			id: "2103000000000006"
 			rewards: [{
@@ -301,7 +353,20 @@
 		}
 		{
 			dependencies: ["2103000000000004"]
-			description: ["The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."]
+			description: [
+				"The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."
+				""
+				"&e&lThis is the second half of Age I's automation&r - the Flux Sieve handled sifting, this handles the hammering that feeds it. Together they replace the entire manual chain you started the pack with."
+				""
+				"&e&lThe full hands-off line:&r"
+				"&7Cobble generator &8→&7 &fMechanical Hammer&7 &8→&7 gravel &8→&7 &fFlux Sieve&7 &8→&7 ore chunks &8→&7 &fEnergized Smelter&7 &8→&7 ingots&r"
+				""
+				"Every stage takes FE, and every stage runs while you are asleep, in the Twilight Forest, or on Mars."
+				""
+				"&7Unlike a hand hammer it has no durability and never needs replacing. Unlike the Create Millstone it does not care about rotation speed or stress - it just wants power.&r"
+				""
+				"&8Put a filtered pipe on the output so gravel goes to the sieve and sand goes wherever you want it. Left unsorted, the hammer will happily crush its own output down to dust."
+			]
 			icon: "exdeorum:mechanical_hammer"
 			id: "210300000000000C"
 			rewards: [{

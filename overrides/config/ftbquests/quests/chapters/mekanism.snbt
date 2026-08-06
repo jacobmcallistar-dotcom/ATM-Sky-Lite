@@ -44,7 +44,21 @@
 		}
 		{
 			dependencies: ["6C0C75598D65CE7D"]
-			description: ["The Enrichment Chamber doubles ores and makes enriched materials, compressed redstone, and more. Your first real processing machine."]
+			description: [
+				"The &eEnrichment Chamber&r doubles ores and makes enriched materials, compressed redstone, and more. Your first real processing machine."
+				""
+				"&e&lIt does far more than double ore.&r It is the machine you will keep coming back to:"
+				"&7- &fOre &8→&7 2x dust&r - the 2x tier"
+				"&7- &fRedstone &8→&7 Enriched Redstone&r - feeds every circuit"
+				"&7- &fCoal &8→&7 Enriched Carbon&r, &fdiamond &8→&7 Enriched Diamond&r, &fobsidian &8→&7 Enriched Obsidian&r - all four infusion types come from here"
+				"&7- &fDirty Dust &8→&7 clean Dust&r - a required stage of the 3x, 4x and 5x chains"
+				""
+				"&c&lThat last one is why you never remove it.&r Every higher ore tier routes back through this machine. It is not tier-2 equipment you outgrow - it is permanent infrastructure."
+				""
+				"&7Build two: one dedicated to the ore line, one for infusion materials. Sharing a single chamber between both means your circuit production stalls every time you process a batch of ore.&r"
+				""
+				"&8Slot in a Muffling Upgrade immediately. This machine runs constantly and it is loud."
+			]
 			icon: "mekanism:enrichment_chamber"
 			id: "6B5334AE80D3748E"
 			rewards: [{
@@ -64,7 +78,19 @@
 		}
 		{
 			dependencies: ["6C0C75598D65CE7D"]
-			description: ["The Crusher grinds ingots to dust and biomass to bio fuel. Pair it with the Enrichment Chamber to start doubling metals."]
+			description: [
+				"The &eCrusher&r grinds ingots to dust and biomass to bio fuel. Pair it with the Enrichment Chamber to start doubling metals."
+				""
+				"&e&lTwo jobs, and the second one is easy to miss:&r"
+				"&71.&r &7Ingots and clumps into dust&r - its role in every ore tier above 2x."
+				"&72.&r &7Any plant matter into Bio Fuel&r - saplings, seeds, flowers, rotten flesh, all of it."
+				""
+				"&e&lBio Fuel is free power.&r Feed it to a &7Bio-Generator&r and your surplus sieve saplings become electricity. In a void world where you are already producing endless saplings from the Crook, this is the cheapest generator you will ever run - and it costs you nothing you were using."
+				""
+				"&7It also recycles. Worn tools, spare armour, and anything metal you no longer want go in and come back as dust, then ingots. Nothing is wasted.&r"
+				""
+				"&8Pair with a Muffling Upgrade. Crushers are relentless."
+			]
 			icon: "mekanism:crusher"
 			id: "736B27013214BE28"
 			rewards: [{
@@ -84,7 +110,17 @@
 		}
 		{
 			dependencies: ["6C0C75598D65CE7D"]
-			description: ["The Energized Smelter is a furnace that runs on power - no fuel, and it feeds into factories later."]
+			description: [
+				"The &eEnergized Smelter&r is a furnace that runs on power - no fuel, and it feeds into factories later."
+				""
+				"&e&lIt is the last stage of every ore chain you will ever build.&r 2x, 3x, 4x, 5x - they all end with dust going into a smelter. Whatever else changes upstream, this block stays."
+				""
+				"&e&lWhich is exactly why it should be your first Factory.&r A Smelting Factory has 3, 5, 7 or 9 parallel slots depending on tier, and your ore line will saturate a single smelter long before it saturates anything else. When you get to the Factory quest, upgrade this one first."
+				""
+				"&7No fuel slot means no hoppers full of coal, no ash, and no stalling overnight when the charcoal runs out. Power is the only input.&r"
+				""
+				"&8Speed Upgrades pay off here more than almost anywhere else, because this machine is nearly always the bottleneck rather than the thing waiting on input."
+			]
 			icon: "mekanism:energized_smelter"
 			id: "62AB81D872055048"
 			rewards: [{
@@ -131,7 +167,21 @@
 				"6B5334AE80D3748E"
 				"736B27013214BE28"
 			]
-			description: ["The Electrolytic Separator splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."]
+			description: [
+				"The &eElectrolytic Separator&r splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."
+				""
+				"&e&lThis one block is why Mekanism goes further than every other tech mod here.&r Up to now everything has been items in, items out. From here Mekanism runs on &lgases&r, and gases are what take you from 2x ore to 5x."
+				""
+				"&e&lWhat each output is for:&r"
+				"&7- &fOxygen&7 - feeds the &fPurification Chamber&7 for &a3x&7 ore"
+				"&7- &fHydrogen&7 - burns in gas generators, and combines with chlorine for the &a4x&7 chain"
+				""
+				"&e&lPlumbing it:&r water in via &7Mechanical Pipes&r or a fluid tank, gases out via &7Pressurised Tubes&r. Gases do not travel in item pipes or fluid pipes - they need their own tubing. Put a &7Chemical Tank&r on each output as a buffer, or the separator throttles itself the moment one side backs up."
+				""
+				"&c&lIt is power-hungry.&r This is usually the point where a hand-fed generator stops being enough and you need a real power plant. Age IV's Powah reactors exist for exactly this."
+				""
+				"&8Water is free and infinite - a single Aqueous Accumulator or an infinite water source keeps it fed forever."
+			]
 			icon: "mekanism:electrolytic_separator"
 			id: "742152612BC35B66"
 			rewards: [{
@@ -151,7 +201,21 @@
 		}
 		{
 			dependencies: ["742152612BC35B66"]
-			description: ["The Purification Chamber uses Oxygen to turn ores into 3 clumps each - tripling. Ore processing tier 3."]
+			description: [
+				"The &ePurification Chamber&r uses Oxygen to turn ores into 3 clumps each - tripling. Ore processing tier 3."
+				""
+				"&e&lThe 3x chain in full - each step needs its own machine:&r"
+				"&7Ore &8→&7 &fPurification Chamber&7 (+oxygen) &8→&7 3x &fClump&r"
+				"&7Clump &8→&7 &fCrusher&7 &8→&7 &fDirty Dust&r"
+				"&7Dirty Dust &8→&7 &fEnrichment Chamber&7 &8→&7 &fDust&r"
+				"&7Dust &8→&7 &fEnergized Smelter&7 &8→&7 &aIngot&r"
+				""
+				"&c&lThat is four machines for one ore.&r This is the shape of every Mekanism tier above 2x - the ladder gets longer, not just richer. Build it as a physical line with pipes between each stage and feed it once at the top."
+				""
+				"&e&lDo not tear down your 2x setup.&r The Enrichment Chamber and Energized Smelter you already built are &lstages in this chain&r, not replaced by it. Everything you own gets reused."
+				""
+				"&7Automate this before you go further. Hand-carrying clumps between four machines is the most tedious thing in the pack, and Pipez or Mekanism's own Logistical Transporters solve it in ten minutes.&r"
+			]
 			icon: "mekanism:purification_chamber"
 			id: "43FBE8C75E6299BE"
 			rewards: [{
@@ -171,7 +235,20 @@
 		}
 		{
 			dependencies: ["742152612BC35B66"]
-			description: ["The Osmium Compressor stamps Osmium onto materials to make Refined Obsidian, Glowstone ingots, and control-circuit ingredients."]
+			description: [
+				"The &eOsmium Compressor&r stamps Osmium onto materials to make Refined Obsidian, Glowstone ingots, and control-circuit ingredients."
+				""
+				"&e&lIt consumes osmium as a gas.&r Feed osmium ingots or dust into the gas slot and it liquefies them into an internal buffer; that buffer is then spent on whatever item you push through. An empty gas buffer looks identical to a broken machine."
+				""
+				"&e&lWhat it makes, and why each matters:&r"
+				"&7- &fRefined Obsidian Ingot&7 - the wall in front of Atomic Alloy and every Ultimate-tier item"
+				"&7- &fRefined Glowstone Ingot&7 - Energy Cubes and lighting"
+				"&7- &fBasic Control Circuits&7 - the component you consume forever"
+				""
+				"&c&lOsmium supply is the real constraint on all of Mekanism&r, and it does not drop below an iron sieve mesh. If this machine keeps running dry, add sieves - a bigger compressor will not help."
+				""
+				"&7Mystical Agriculture osmium seeds turn this from a bottleneck into a farm. Worth doing before you start the Ultimate tier.&r"
+			]
 			icon: "mekanism:osmium_compressor"
 			id: "20BFAAABC4357F1F"
 			rewards: [{
@@ -239,7 +316,17 @@
 		}
 		{
 			dependencies: ["0FF4B3FC8DFFDE04"]
-			description: ["Advanced Control Circuits need enriched circuits and gold. They gate tier-2 machines and factories."]
+			description: [
+				"&eAdvanced Control Circuits&r need enriched circuits and gold. They gate tier-2 machines and factories."
+				""
+				"&c&lThis is the circuit that unlocks AE2.&r The Inscriber in this pack is built around one, which is the pack's way of saying the digital age does not start until the electric one is running properly. If you are impatient to start AE2, this quest is the whole bottleneck."
+				""
+				"&e&lThey are also the gate on:&r Advanced Factories, the Digital Miner, tier-2 Energy Cubes, and most of the machines worth owning."
+				""
+				"&7Make far more than you think you need. Circuits are consumed by every upgrade, every factory tier and every new machine - and hand-crafting them in batches of four is the thing that will make you finally build autocrafting.&r"
+				""
+				"&8Enriched Alloy is the ingredient that limits you, and it comes from the Metallurgic Infuser with an infused-redstone buffer. Keep that machine fed and circuits stop being a problem."
+			]
 			icon: "mekanism:advanced_control_circuit"
 			id: "267D2B1D2D8750CC"
 			rewards: [{
@@ -259,7 +346,19 @@
 		}
 		{
 			dependencies: ["267D2B1D2D8750CC"]
-			description: ["Elite and Ultimate Control Circuits are the top of the ladder - required for the best factories, the digital miner, and endgame gear."]
+			description: [
+				"&eElite&r and &eUltimate Control Circuits&r are the top of the ladder - required for the best factories, the Digital Miner, and endgame gear."
+				""
+				"&e&lThe alloys behind them are the real cost:&r"
+				"&7- &fElite&7 needs &fReinforced Alloy&7 - enriched alloy + infused diamond"
+				"&7- &fUltimate&7 needs &fAtomic Alloy&7 - reinforced alloy + infused refined obsidian"
+				""
+				"&e&lRefined Obsidian is the wall.&r It comes from obsidian dust through the Osmium Compressor, and obsidian in a void world means lava plus water on repeat. Set up a dedicated obsidian generator before you start this tier or you will grind it a bucket at a time."
+				""
+				"&7Mystical Agriculture is the shortcut. Diamond and obsidian seeds turn this whole bottleneck into a farm you harvest - which is exactly why the Essence Farming chapter is marked recommended.&r"
+				""
+				"&e&lWhat these unlock:&r Ultimate Factories, the Quantum Entangloporter, the MekaSuit, and the fission and fusion lines that Act IV is built on. Everything expensive in Mekanism sits behind these two items."
+			]
 			icon: "mekanism:elite_control_circuit"
 			id: "398BE9895D2BED1B"
 			rewards: [{
@@ -316,7 +415,19 @@
 				"5251868CACAB6B09"
 				"398BE9895D2BED1B"
 			]
-			description: ["Push factories to the top: Elite and Ultimate tiers process a dozen items at once. This is real industry."]
+			description: [
+				"Push factories to the top: Elite and Ultimate tiers process a dozen items at once. This is real industry."
+				""
+				"&e&lWhat a Factory actually is:&r a single machine with many parallel input slots instead of one. A Basic Factory has 3, Advanced 5, Elite 7, Ultimate 9. Each slot runs its own recipe simultaneously, so one Ultimate Smelting Factory replaces nine Energized Smelters and takes one block of space and one cable."
+				""
+				"&e&lThey come in types, set at craft time&r - Smelting, Enriching, Crushing, Compressing, Purifying, Injecting and more. Pick the type by what your ore line needs most; you cannot change it afterwards without recrafting."
+				""
+				"&e&lUpgrade in place.&r A Basic Factory plus the right tier installer becomes Advanced, then Elite, then Ultimate - you keep the machine and its contents. Do not scrap the old one."
+				""
+				"&c&lPower draw scales with the slots you actually use.&r An Ultimate Factory running one item costs almost nothing; running all nine at speed will eat a reactor. Watch your grid when you first fill one."
+				""
+				"&7This is the moment your base stops looking like a machine museum and starts looking like a factory - one block per processing step instead of nine.&r"
+			]
 			icon: "mekanism:elite_smelting_factory"
 			id: "3D923C56F219EB9E"
 			rewards: [
@@ -349,7 +460,22 @@
 		}
 		{
 			dependencies: ["398BE9895D2BED1B"]
-			description: ["The Digital Miner mines whole areas by filter, remotely. On a skyblock it's mostly for pulling from Mekanism's own ore-gen, but it's a rite of passage."]
+			description: [
+				"The &eDigital Miner&r mines whole areas by filter, remotely. On a skyblock it's mostly for pulling from Mekanism's own ore-gen, but it's a rite of passage."
+				""
+				"&e&lHow it works:&r set a radius and a Y range, add &lfilters&r for the blocks you want, and it teleports matching blocks straight into its inventory from anywhere in range. It does not need a tunnel, a path, or line of sight - it simply removes them."
+				""
+				"&e&lFilter types worth knowing:&r"
+				"&7- &fItem filter&7 - a specific block"
+				"&7- &fTag filter&7 - everything matching a tag, e.g. all ores at once"
+				"&7- &fMaterial filter&7 - everything made of a given material"
+				""
+				"&e&lThe two settings people miss:&r &7Inverse mode&r mines everything &lexcept&r your filters - the fastest way to clear a build area. And &7Silk Touch&r mode, which costs far more power but is the only way to pull certain blocks intact."
+				""
+				"&c&lIt is genuinely expensive to run&r and gets more so with radius. Start small."
+				""
+				"&8On a void island the honest use is clearing terrain in other dimensions - the Twilight Forest and the planets have real ore, and this is how you strip-mine them without swinging a pickaxe."
+			]
 			icon: "mekanism:digital_miner"
 			id: "6E9FFB8BA9EFA7A6"
 			rewards: [{
@@ -369,7 +495,19 @@
 		}
 		{
 			dependencies: ["19236F17F30F94C7"]
-			description: ["The Teleporter moves you across the world (and dimensions) instantly. Link two and step through."]
+			description: [
+				"The &eTeleporter&r moves you across the world (and dimensions) instantly. Link two and step through."
+				""
+				"&e&lThe build:&r a Teleporter block plus a &7Teleporter Frame&r arch around it - the frame is what you walk through. Give both ends the same &lfrequency&r, exactly like the Entangloporter, and step in."
+				""
+				"&e&lIt needs power at both ends&r, and the cost scales with distance and whether you are crossing dimensions. A cross-dimension jump is expensive; keep an Energy Cube next to each pad rather than relying on a thin cable."
+				""
+				"&7Teleporters move &lyou&r and anything you carry, including a full backpack. They do not move items on their own - that is the Entangloporter's job.&r"
+				""
+				"&e&lWhy this matters in a space pack:&r rockets are one-way trips that need fuel and a launch pad. Once you have a teleporter on the Moon, you never build a return rocket again."
+				""
+				"&8Frequencies are shared with your team. Name them by destination or you will end up somewhere surprising."
+			]
 			icon: "mekanism:teleporter"
 			id: "003FCED61DD91731"
 			rewards: [{
@@ -420,7 +558,19 @@
 		}
 		{
 			dependencies: ["6E9FFB8BA9EFA7A6"]
-			description: ["The Quantum Entangloporter is wireless item/fluid/gas/energy transfer across any distance and dimension. Endgame logistics."]
+			description: [
+				"The &eQuantum Entangloporter&r is wireless item/fluid/gas/energy transfer across any distance and dimension. Endgame logistics."
+				""
+				"&e&lIt is the single most useful block Mekanism makes.&r Set two or more to the same &lfrequency&r and they behave as one shared inventory - anything put into one comes out of any other, instantly, with no cable, no chunk-loading between them, and no distance limit."
+				""
+				"&e&lIt carries all five transfer types at once:&r items, fluids, gases, energy and heat. One block replaces a pipe, a tank, a tube and a cable."
+				""
+				"&e&lHow to set it up:&r right-click, open the frequency tab, create a named frequency, then set every other Entangloporter to the same name. Set each one's sides to input or output with the config tab - a side left on 'none' does nothing, which is the usual reason a new one appears dead."
+				""
+				"&7Frequencies can be private or public. Keep them private on a shared server unless you want other people's machines feeding into yours.&r"
+				""
+				"&e&lWhy it matters here:&r your rockets go to five worlds. This is how the Moon base sends Desh home without you flying it back."
+			]
 			icon: "mekanism:quantum_entangloporter"
 			id: "0FBFBB69863D68E7"
 			rewards: [{
@@ -544,7 +694,21 @@
 		}
 		{
 			dependencies: ["6CAF000000000001"]
-			description: ["&eFree Runners&r cancel fall damage and step up blocks; the &eScuba set&r breathes for you underwater. Cheap quality-of-life that saves your life weekly."]
+			description: [
+				"&eFree Runners&r cancel fall damage and step up blocks; the &eScuba set&r breathes for you underwater. Cheap quality-of-life that saves your life weekly."
+				""
+				"&e&lFree Runners are the single best early Mekanism item.&r They go in your feet slot, run on stored energy, and give you:"
+				"&7- &fNo fall damage&7 while charged"
+				"&7- &fAuto step-up&7 a full block - no more jumping around your own base"
+				""
+				"&7Toggle the step-assist and the fall protection separately with the mode key while holding them. Turn step-up off when doing precision building.&r"
+				""
+				"&e&lThe Scuba set&r is a mask plus a tank. It matters more than it sounds in this pack - the Undergarden and several Blue Skies areas will drown you, and Venus is worse."
+				""
+				"&c&lBoth need charging.&r An Energy Cube or any charger will do it. Free Runners that run flat stop protecting you from falls, which is exactly the moment you find out they were flat."
+				""
+				"&8These are the cheap precursor to the MekaSuit. Do not skip them waiting for the good version - the good version is hundreds of hours away."
+			]
 			icon: "mekanism:free_runners"
 			id: "6CAF000000000002"
 			rewards: [{
