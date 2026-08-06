@@ -64,7 +64,20 @@
 		}
 		{
 			dependencies: ["41C1000000000001"]
-			description: ["The &eMelter&r does the opposite - powered heat turns cobblestone back into lava. Paired with the Solidifier, you have an infinite loop of stone and lava with no crucible babysitting."]
+			description: [
+				"The &eMelter&r does the opposite - powered heat turns cobblestone back into lava. Paired with the Solidifier, you have an infinite loop of stone and lava with no crucible babysitting."
+				""
+				"&e&lThis quietly solves one of the pack's real bottlenecks.&r Lava is not decoration here - it feeds Thermo Generators, makes obsidian for Dark Steel and Refined Obsidian, and runs your cobble generator. Ex Deorum's crucible does it slowly and by hand; this does it on tap."
+				""
+				"&e&lThe loop:&r"
+				"&7Cobble generator &8→&7 &fMelter&7 &8→&7 lava &8→&7 &fSolidifier&7 &8→&7 obsidian&r"
+				""
+				"&7Feed the lava out with fluid pipes to wherever it is needed - Thermo Generators, the obsidian line, or a tank as a buffer. Cobblestone is free and infinite, so the only real input is power.&r"
+				""
+				"&e&lObsidian on tap is what makes Elite and Ultimate Mekanism circuits practical&r - Refined Obsidian is the wall on that tier, and this is the wall-removal tool."
+				""
+				"&8Keep a tank between the Melter and whatever consumes the lava. Direct pipe runs stall the melter every time the consumer is briefly full."
+			]
 			icon: "cyclic:melter"
 			id: "41C1000000000003"
 			rewards: [{
@@ -84,7 +97,19 @@
 		}
 		{
 			dependencies: ["41C1000000000002"]
-			description: ["The &eSprinkler&r ticks crops in a wide radius using a little water and power. Your farms grow while you are three dimensions away."]
+			description: [
+				"The &eSprinkler&r ticks crops in a wide radius using a little water and power. Your farms grow while you are three dimensions away."
+				""
+				"&e&lThis is the automated Watering Can.&r Same effect - extra growth ticks on everything in range - except you are not holding right-click for twenty minutes."
+				""
+				"&e&lIt needs water and power.&r Pipe water in from an infinite source; it consumes very little. Range is a radius around the block, so centre it on the farm rather than putting it in a corner."
+				""
+				"&e&lIt stacks with Growth Accelerators.&r Accelerators tick from below, the Sprinkler ticks from above, and a crop under both grows dramatically faster than under either. That combination is what makes a Mystical Agriculture farm practical rather than theoretical."
+				""
+				"&7Pair with a &fHarvester&7 and an &fItem Collector&7 and the farm runs completely unattended - grow, cut, collect, store.&r"
+				""
+				"&8Works on saplings, mushrooms and Ex Deorum crops too, not just food and essence."
+			]
 			icon: "cyclic:sprinkler"
 			id: "41C1000000000004"
 			rewards: [{
@@ -105,7 +130,21 @@
 		}
 		{
 			dependencies: ["41C1000000000004"]
-			description: ["The &eHarvester&r picks every grown crop in range and replants nothing - pair it with the Sprinkler and a Collector and your food problem is permanently solved."]
+			description: [
+				"The &eHarvester&r picks every grown crop in range and replants nothing - pair it with the Sprinkler and a Collector and your food problem is permanently solved."
+				""
+				"&c&lRead that again: it replants nothing.&r The Harvester cuts what is ripe and leaves bare farmland. On its own that is a one-shot farm. You need one of:"
+				"&7- &fMystical Agriculture crops&7 - they regrow from the same plant, so nothing needs replanting"
+				"&7- &fBotany Pots&7 - self-contained, self-replanting"
+				"&7- &fa Planter&7 fed from the Collector's output, closing the loop manually"
+				""
+				"&e&lThe full unattended farm:&r"
+				"&7Sprinkler (above) &8+&7 Growth Accelerators (below) &8→&7 Harvester &8→&7 Item Collector &8→&7 chest or ME network&r"
+				""
+				"&7That is four blocks and it runs forever with no player present, provided the chunk is force-loaded.&r"
+				""
+				"&8Set the range to match your farm exactly. An oversized radius wastes power scanning empty air."
+			]
 			icon: "cyclic:harvester"
 			id: "41C1000000000005"
 			rewards: [{
@@ -125,7 +164,20 @@
 		}
 		{
 			dependencies: ["41C1000000000001"]
-			description: ["The &eItem Collector&r vacuums drops in a configurable range straight into its inventory. Under a mob platform, behind a harvester, beside your sieves - it belongs everywhere."]
+			description: [
+				"The &eItem Collector&r vacuums drops in a configurable range straight into its inventory. Under a mob platform, behind a harvester, beside your sieves - it belongs everywhere."
+				""
+				"&e&lIn a void world this is not a convenience, it is insurance.&r Every dropped item that misses a hopper falls forever. A collector under any farm, mob platform or automated hammer is the difference between output and a very long drop."
+				""
+				"&e&lThe settings that matter:&r"
+				"&7- &fRange&7 - a radius around the block. Bigger costs more power."
+				"&7- &fFilter&7 - whitelist or blacklist specific items."
+				"&7- &fOutput side&7 - pipe it into a chest or machine rather than letting it fill up and stop."
+				""
+				"&7Pair it with a &fHarvester&7 (crops drop, collector catches) or sit one under a mob grinder.&r"
+				""
+				"&8Place these before you need them. The items you lose are always the ones you were not watching."
+			]
 			icon: "cyclic:collector"
 			id: "41C1000000000006"
 			rewards: [{
@@ -145,7 +197,17 @@
 		}
 		{
 			dependencies: ["41C1000000000003"]
-			description: ["The &eFisher&r pulls fish, treasure and junk from a 3x3 of water below it - no rod, no waiting. In a void world, this is also your only saturation-food faucet that runs unattended."]
+			description: [
+				"The &eFisher&r pulls fish, treasure and junk from a 3x3 of water below it - no rod, no waiting. In a void world, this is also your only saturation-food faucet that runs unattended."
+				""
+				"&e&lThe treasure table is the real prize.&r It rolls vanilla fishing loot, which means &7enchanted books&r, &7name tags&r, &7saddles&r and &7nautilus shells&r - several of which have no other source on a floating island with no structures to loot."
+				""
+				"&e&lThe build:&r a 3x3 pool of water directly beneath it, and power. That is the whole setup. It does not need a player nearby, so put it in a force-loaded chunk and forget about it."
+				""
+				"&7Pipe the output into a sorter - you will accumulate a lot of junk alongside the good drops.&r"
+				""
+				"&8Enchanted books from here are how you get Mending and Fortune without an enchanting setup or a villager hall. Worth building early for that alone."
+			]
 			icon: "cyclic:fisher"
 			id: "41C1000000000007"
 			rewards: [{
