@@ -64,7 +64,19 @@
 		}
 		{
 			dependencies: ["44EA000000000002"]
-			description: ["&eShafts&r carry rotation; &eCogwheels&r turn corners and change speed. This is your wiring now - lay it like you mean it."]
+			description: [
+				"&eShafts&r carry rotation; &eCogwheels&r turn corners and change speed. This is your wiring now - lay it like you mean it."
+				""
+				"&e&lThe two numbers that run all of Create.&r"
+				"&7- &fSpeed (RPM)&7 - how fast something turns. Machines have minimum speeds; some break above a maximum."
+				"&7- &fStress (SU)&7 - how much load the network can carry. Every machine &lcosts&r stress; every generator &lsupplies&r it. Exceed your budget and the whole line stops dead."
+				""
+				"&e&lGearing changes one at the expense of the other.&r A &7Cogwheel&r next to a &7Large Cogwheel&r halves the speed and doubles the torque; the other way round doubles speed and halves it. You never get both."
+				""
+				"&c&lThe rule that catches everyone:&r a shaft can only be driven by &lone&r source. Two generators feeding the same line from opposite ends will lock it up and flash red. If a network jams, look for two things fighting over the same shaft."
+				""
+				"&7Put on the Engineer's Goggles from the next quest and look at any block - it shows the whole network's speed and stress budget live. Do not build blind.&r"
+			]
 			icon: "create:cogwheel"
 			id: "44EA000000000003"
 			rewards: [{
@@ -119,7 +131,19 @@
 		}
 		{
 			dependencies: ["44EA000000000003"]
-			description: ["The &eWrench&r rotates, configures and instantly picks up any Create machine. &eEngineer's Goggles&r overlay stress and speed on everything you look at. Wear them always. Look brilliant."]
+			description: [
+				"The &eWrench&r rotates, configures and instantly picks up any Create machine. &eEngineer's Goggles&r overlay stress and speed on everything you look at. Wear them always. Look brilliant."
+				""
+				"&e&lThe Wrench does four separate jobs:&r"
+				"&7- &fRight-click&7 a shaft or cog to rotate it."
+				"&7- &fRight-click&7 a machine to cycle its configuration - filter direction, funnel mode, gauge type."
+				"&7- &fCrouch + right-click&7 to instantly pick a block up, keeping its settings. This is how you move a build without rebuilding it."
+				"&7- &fRight-click&7 a Mechanical Belt to reverse it."
+				""
+				"&e&lThe Goggles are not cosmetic.&r Look at any shaft and you see the network's live SU budget - used versus available. Look at a machine and you see its individual draw. Look at a Stressometer or Speedometer and you get exact figures instead of a coloured bar."
+				""
+				"&7Nearly every Create problem - line stopped, machine idle, everything flashing - is diagnosable in two seconds with goggles on and invisible without them. Craft them early, not when you get stuck.&r"
+			]
 			icon: "create:goggles"
 			id: "44EA000000000005"
 			rewards: [{
@@ -172,7 +196,17 @@
 		}
 		{
 			dependencies: ["44EA000000000004"]
-			description: ["The &eMillstone&r grinds slowly but surely - gravel to flint, bones to meal, wheat to flour. Your first powered processing block, and it never asks for a coffee break."]
+			description: [
+				"The &eMillstone&r grinds slowly but surely - gravel to flint, bones to meal, wheat to flour. Your first powered processing block, and it never asks for a coffee break."
+				""
+				"&e&lWhy start here and not with Crushing Wheels.&r The Millstone is one block, costs almost no stress, and takes rotation from any direction. Crushing Wheels are a two-block multiblock that needs them counter-rotating at matched speed and eats far more SU. The Millstone gets you grinding &lnow&r; upgrade when your water wheels can afford it."
+				""
+				"&7Feed it from the top with a funnel or hopper; it drops output out the bottom. Put a hopper underneath and a chest below that and it runs unattended.&r"
+				""
+				"&e&lWhat it is actually for in this pack:&r &7cobblestone &8→&7 gravel &8→&7 sand&r without hammering. That is your entire Age I chain, automated, using a block you can afford in the first hour of Age II."
+				""
+				"&8It is slow. That is fine - it is slow while you are asleep."
+			]
 			icon: "create:millstone"
 			id: "44EA000000000007"
 			rewards: [{
@@ -225,7 +259,21 @@
 		}
 		{
 			dependencies: ["44EA000000000006"]
-			description: ["A &eBasin&r under a &eMechanical Mixer&r combines ingredients automatically - dough, dyes, and soon, alloys. The cauldron of the industrial age."]
+			description: [
+				"A &eBasin&r under a &eMechanical Mixer&r combines ingredients automatically - dough, dyes, and soon, alloys. The cauldron of the industrial age."
+				""
+				"&e&lHow to build it so it actually works:&r"
+				"&71.&r Place the Basin."
+				"&72.&r Place the Mixer &lexactly two blocks above it&r - one air gap between. Any other spacing and nothing happens."
+				"&73.&r Drive the Mixer from the top with a shaft or cog."
+				"&74.&r Feed items in from any side with funnels or chutes; fluids via pipes."
+				""
+				"&e&lGetting the output out&r is the part people miss. A Basin holds its result until something takes it. Put a &7Basin&r facing a belt or chute by right-clicking its lower edge with a Wrench to set the output side - otherwise it fills up and stalls."
+				""
+				"&e&lHeat matters.&r Some recipes need a &7Blaze Burner&r directly under the Basin, and a few need it &lsuper-heated&r. That is the next quest - and it is what unlocks brass."
+				""
+				"&7The Mixer is your alloying station: zinc + copper into brass, iron + andesite into more useful things. Everything in Create's mid-tier passes through here.&r"
+			]
 			icon: "create:mechanical_mixer"
 			id: "44EA000000000009"
 			rewards: [{
@@ -339,7 +387,21 @@
 		}
 		{
 			dependencies: ["44EA00000000000A"]
-			description: ["A &eDeployer&r is a tireless mechanical hand - it places, uses, and crafts on repeat. With a &eDepot&r as its workbench, it performs the assembly lines the next quest demands."]
+			description: [
+				"A &eDeployer&r is a tireless mechanical hand - it places, uses, and crafts on repeat. With a &eDepot&r as its workbench, it performs the assembly lines the next quest demands."
+				""
+				"&e&lIt does whatever you would do holding that item.&r Give it a sword and it attacks. A hoe, it tills. A bucket, it fills or empties. Bone meal, it fertilises. An empty hand, it punches. Whatever the item does when &lyou&r right-click, the Deployer does forever."
+				""
+				"&e&lTwo modes&r, toggled with the Wrench:"
+				"&7- &fUse&7 - right-clicks, the default."
+				"&7- &fPunch&7 - left-clicks. This is how you make it break blocks or fight."
+				""
+				"&e&lSequenced Assembly&r is what it is really here for. A Depot or belt carries a base item past a line of Deployers, each adding one component in order, and the last step spits out the finished part. That is how you make the &6Precision Mechanism&r - and the Precision Mechanism is the gate to all of Mekanism."
+				""
+				"&7Filter each Deployer so it only consumes the ingredient it is meant to. Unfiltered Deployers will happily grab the wrong item off the belt and ruin the sequence.&r"
+				""
+				"&8Feed them from a chest via funnels. A Deployer with an empty inventory silently does nothing, which looks identical to a broken build."
+			]
 			icon: "create:deployer"
 			id: "44EA00000000000D"
 			rewards: [{
@@ -403,7 +465,19 @@
 		}
 		{
 			dependencies: ["44EA00000000000E"]
-			description: ["&6Create Crafts & Additions&r bridges Forge Energy and kinetic energy. An &eAlternator&r turns rotation into FE for Mekanism/AE2; an &eAccumulator&r does the reverse, drawing FE to spin your cogs."]
+			description: [
+				"&6Create Crafts & Additions&r bridges Forge Energy and kinetic energy. An &eAlternator&r turns rotation into FE for Mekanism/AE2; an &eAccumulator&r does the reverse, drawing FE to spin your cogs."
+				""
+				"&e&lThis is the single most important block in Age II.&r Everything after Create - Mekanism, AE2, Powah, RFTools - runs on Forge Energy. Water wheels make rotation. The Alternator is the only thing standing between the two, and it is what turns a Create build into a &lpower plant&r."
+				""
+				"&e&lHow to wire it:&r shaft into the Alternator, cable out. Output scales with the &lspeed&r of the rotation feeding it, so gear &lup&r before the Alternator, not down. A slow, high-torque line makes almost nothing."
+				""
+				"&e&lThe Accumulator runs it backwards&r - FE in, rotation out. Useful once you have a big electric grid and want to drive a Create machine from it without building a second water wheel."
+				""
+				"&7It also adds electric versions of Create blocks, an Electric Motor with adjustable RPM, and cables that carry FE without needing another mod's wiring.&r"
+				""
+				"&8Note: this pack now also has &fCreate: Power Grid&r, which simulates real electricity on top of Create. Crafts & Additions is the simple FE bridge; Power Grid is the deep end. You want this one first."
+			]
 			icon: "createaddition:alternator"
 			id: "7592B47334DC838E"
 			rewards: [{
@@ -430,7 +504,23 @@
 		}
 		{
 			dependencies: ["44EA00000000000E"]
-			description: ["&6Create: Steam 'n' Rails&r adds trains. Lay &etrack&r, mount a &esemaphore&r for signaling, and top off a locomotive with a &econductor's cap&r before you drive it."]
+			description: [
+				"&6Create: Steam 'n' Rails&r adds trains. Lay &etrack&r, mount a &esemaphore&r for signaling, and top off a locomotive with a &econductor's cap&r before you drive it."
+				""
+				"&e&lOn a floating island, trains are not decoration.&r They are the cheapest way to move large amounts of material between platforms that are too far apart to belt and too close to justify an AE2 network."
+				""
+				"&e&lThe build order that works:&r"
+				"&71.&r Lay &7Train Track&r with the &7Railway Casing&r - it auto-curves and bridges gaps, so you do not place every piece by hand."
+				"&72.&r Place a &7Train Station&r beside the track and name it."
+				"&73.&r Build the train on the track using a &7Train Assembler&r - bogeys first, then the body."
+				"&74.&r Assemble from the station, then give it a &7Schedule&r."
+				""
+				"&e&lSchedules are the actual feature.&r A schedule is a little program - go to station A, wait until cargo full, go to station B, wait 30 seconds, repeat. Hand it to a &7Conductor&r and the train runs itself forever with no player nearby."
+				""
+				"&7Semaphores and signals stop two trains colliding on shared track. With one train you can skip them entirely.&r"
+				""
+				"&8Fully optional. Nothing in the progression requires a train - but hauling stacks of ore chunks across your island by hand gets old fast."
+			]
 			icon: "railways:semaphore"
 			id: "6187A9055B14303B"
 			rewards: [{

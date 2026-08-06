@@ -300,7 +300,15 @@
 		}
 		{
 			dependencies: ["2101000000000002"]
-			description: ["A Crook strips leaves for saplings and silk worms without destroying them. Silk worms breed into string - and string makes your first mesh. It also speeds sapling farming for endless wood."]
+			description: [
+				"A Crook strips leaves for saplings and silk worms without destroying them. Silk worms breed into string - and string makes your first mesh. It also speeds sapling farming for endless wood."
+				""
+				"&e&lWhy the crook and not your fist.&r Breaking leaves by hand mostly gives you nothing. The crook multiplies sapling drops and is the &lonly&r way to get silk worms - which matters, because in a void world there are no sheep, no spiders and no other route to string."
+				""
+				"&7Put a silk worm on a leaf block and it slowly eats it, leaving &fstring&r behind. Set up a wall of leaves and a handful of worms and you have a passive string farm - the first thing in this pack that works while you are not looking at it.&r"
+				""
+				"&8String makes your first mesh, and the mesh is what starts the entire resource chain. Everything you build for the next hundred hours traces back to a worm on a leaf."
+			]
 			icon: {
 				Count: 1
 				id: "exdeorum:crook"
@@ -381,7 +389,15 @@
 		}
 		{
 			dependencies: ["2101000000000007"]
-			description: ["The &eIron Mesh&r unlocks the metal chunks in real quantity - osmium, tin and lead now appear alongside iron and gold. Craft it once you have iron to spare."]
+			description: [
+				"The &eIron Mesh&r unlocks the metal chunks in real quantity - osmium, tin and lead now appear alongside iron and gold. Craft it once you have iron to spare."
+				""
+				"&e&lThis is the mesh that changes the pack.&r &7Osmium&r is the reason. It does not appear on string or flint meshes at all, and Mekanism - the whole electric tier - is built on it. Every Steel Casing, every circuit, every machine frame wants osmium."
+				""
+				"&7You can also bridge to osmium with a SkyForge Industrial Keystone, but sieving is the scalable route. The keystone gets you started; the iron mesh keeps you supplied.&r"
+				""
+				"&8Once this is running, put a second sieve on flint and keep it there. Flint still out-performs iron for a few common drops, and you will want both flowing at once."
+			]
 			icon: "exdeorum:iron_mesh"
 			id: "2101000000000008"
 			rewards: [{
@@ -401,7 +417,15 @@
 		}
 		{
 			dependencies: ["2101000000000008"]
-			description: ["Sieve enough gravel and diamonds fall out. Turn them into a &eDiamond Mesh&r - the tier that pulls the pack's rarest sieve drops and lasts almost forever."]
+			description: [
+				"Sieve enough gravel and diamonds fall out. Turn them into a &eDiamond Mesh&r - the tier that pulls the pack's rarest sieve drops and lasts almost forever."
+				""
+				"&e&lWhat the diamond tier is really for.&r It is not about new drops so much as &lrates&r. Everything the iron mesh gave you now comes faster, and the genuinely scarce things - the ones you need in bulk far later - start appearing often enough to plan around."
+				""
+				"&7Sieve &fdust&r with this, not just gravel. Dust is where redstone, lapis and glowstone live, and those become the bottleneck the moment you start building Mekanism machines in quantity.&r"
+				""
+				"&8Netherite mesh exists above this one, but the jump is small compared to iron-to-diamond. Do not stall Age I chasing it - get diamond, automate, and move on to Create."
+			]
 			icon: "exdeorum:diamond_mesh"
 			id: "2101000000000009"
 			rewards: [{
@@ -721,7 +745,20 @@
 		}
 		{
 			dependencies: ["2101000000000016"]
-			description: ["&eEx Machinis: Divitiae Deorum&r automates the exact chain you've been doing by hand - RF-powered Flux Sieve, Flux Hammer and Flux Compactor. Feed them power instead of your own clicks."]
+			description: [
+				"&eEx Machinis: Divitiae Deorum&r automates the exact chain you've been doing by hand - RF-powered &eFlux Sieve&r, &eFlux Hammer&r and &eFlux Compactor&r. Feed them power instead of your own clicks."
+				""
+				"&6&lThis is the most important quest in Age I.&r Everything above this point scales with how long you are willing to hold right-click. Everything below it scales with how much power you can make. That is the whole difference between a skyblock and a factory."
+				""
+				"&e&lThe full automated line:&r"
+				"&7Cobble generator &8→&7 Flux Hammer &8→&7 gravel &8→&7 Flux Sieve &8→&7 ore chunks &8→&7 furnace &8→&7 ingots&r"
+				""
+				"Each machine takes a mesh or a tool in its slot exactly like the hand version, so your diamond mesh carries straight over. They accept any Forge Energy - Powah reactors, Create Crafts & Additions alternators, Thermal dynamos, whatever you have running."
+				""
+				"&7Build the sieve first, the hammer second.&r Hammering is the less painful half by hand; sieving is what actually eats your evenings."
+				""
+				"&8Feed the output into a chest and walk away. Come back to stacks of chunks. From here Age II is about spending them, not gathering them."
+			]
 			icon: "exmachinis:flux_sieve"
 			id: "1A1162A344DAAC99"
 			rewards: [{
