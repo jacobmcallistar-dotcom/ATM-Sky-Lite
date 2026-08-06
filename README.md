@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (166 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (168 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 166 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 168 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,65 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 166 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 168 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.17.0 — Create: Power Grid. Real electrical simulation for Create. 166 mods.**
+> **Latest: v1.18.0 — Adventure gating. The Twilight Forest and the planets are no longer
+> optional. 168 mods.**
+>
+> The pack had a real problem: **you could finish it without ever opening a Twilight portal or
+> launching a rocket.** AE2, computers and the entire endgame sat in Act II–IV behind pure
+> crafting, while Twilight Forest and Ad Astra were parallel side-content. Both adventure trees
+> were skippable. This release makes them mandatory.
+>
+> **Added: KubeJS + Rhino** (`kubejs-forge-2001.6.5-build.26`, `rhino-forge-2001.2.3-build.10`).
+> SkyForge's datapack already carried `GATE OVERRIDE` recipes, but Java + a Gradle rebuild for
+> every balance tweak is too slow to iterate on. Gating now lives in scripts under `kubejs/`.
+> Dependency check as always: Forge `[47.1.0,)` ✓ 47.3.0, Architectury `[9.1.12,)` ✓ 9.2.14,
+> Rhino `[2001.2.2-build.1,)` ✓.
+>
+> **Nine mid-to-late recipe gates.** Each swaps a single ingredient of an existing recipe, so
+> shapes are untouched and JEI still reads normally:
+>
+> | Unlock | Now costs | Where |
+> |---|---|---|
+> | ME Controller | Naga Scale | Twilight Forest — Naga |
+> | Crafting CPU | Desh | The Moon |
+> | Molecular Assembler | Desh | The Moon |
+> | Advanced Computer | Ostrum ×1 | Mars |
+> | Peripheral Casing | Ostrum | Mars |
+> | Quantum Ring | Fiery Ingot | Twilight Forest — Hydra |
+> | Spatial IO Port | Calorite | Venus |
+> | Sky Steel → all MEGA cells | Calorite | Venus |
+> | Draconium Core | Knightmetal | Twilight Forest — Knight Phantom |
+>
+> Two of these are chokepoints that gate far more than themselves: **Peripheral Casing** is in
+> every Advanced Peripherals block, and **Sky Steel** is the base of every MEGA cell. Advanced
+> Computer swaps its *redstone*, not its gold — one Ostrum each, a real gate you won't resent
+> when crafting them in bulk.
+>
+> **New item: the Celestial Core.** Heart of the Sky already demanded seven boss kills, but every
+> one came from BOMD, Cataclysm or the Wither — nothing from the Twilight Forest, nothing from the
+> planets. The Core replaces the Nether Star at the centre of that recipe and costs **five Twilight
+> boss trophies** (Naga, Lich, Hydra, Ur-Ghast, Snow Queen), **one ingot from each planet** (Desh,
+> Ostrum, Calorite) and a Nether Star. Trophies drop only from the boss itself — they cannot be
+> sieved, farmed or traded. **The ending went from 7 boss kills to 12.**
+>
+> **Quest book.** The AE2 chapter's Controller, Molecular Assembler, Crafting CPU, Quantum Ring
+> and Spatial Storage quests were rewritten to teach the new gates, with missing subtitles and
+> icons added. Ascension gained a **Celestial Core** quest naming every Twilight king and where
+> each one lives. Early game is deliberately untouched — sieve, Create and basic Mekanism are
+> exactly as they were. **Easy to start, harder to finish.**
+>
+> **Note on the client zip:** it now contains a `kubejs` folder alongside `mods` and `config`.
+> Copy all three into `.minecraft`.
+>
+> **Known gap:** roughly 70 quests across *Mekanism*, *Space Program*, *War in the Sky* and
+> *Realms Beyond* still lack subtitles and icons. Format pass to follow.
+>
+> Boot-tested clean three times (`Done (2.424s)`, `Done (2.306s)`, `Done (2.202s)`), KubeJS
+> reporting 0 errors and 0 warnings, FTB Quests parsing every chapter without complaint.
+>
+> **v1.17.0 — Create: Power Grid. Real electrical simulation for Create. 166 mods.**
 >
 > **Added: Create: Power Grid** (`powergrid-mc1.20.1-0.5.5.1`). The pack already had Create and
 > Create Crafts & Additions, so it could turn rotation into FE and back — but FE is a fiction where

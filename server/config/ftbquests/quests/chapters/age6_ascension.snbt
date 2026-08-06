@@ -425,12 +425,56 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2106000000000006"]
+			description: [
+				"&b&lThe Celestial Core.&r The last thing standing between you and the ending - and the only item in the pack that demands both adventure trees at once."
+				""
+				"&e&lFive trophies.&r Trophies drop from the boss itself and nothing else. They cannot be sieved, farmed, duplicated or traded for. Each one is a kill:"
+				"&7- &aNaga&7 - the spiral courtyard, first of the Twilight kings"
+				"&7- &aLich&7 - the tower above the Naga's ruin"
+				"&7- &aHydra&7 - three heads, and they grow back"
+				"&7- &aUr-Ghast&7 - the Dark Tower, and it never lands"
+				"&7- &aSnow Queen&7 - the Aurora Palace, last of them all"
+				""
+				"&e&lThree worlds.&r One ingot from each: &7Desh&r from the Moon, &7Ostrum&r from Mars, &7Calorite&r from Venus. You will have walked all three long before now - but the Core makes it official."
+				""
+				"&e&lOne Nether Star.&r The Wither, for old times' sake."
+				""
+				"&8Nine slots. Five kings, three worlds, one star."
+			]
+			icon: "kubejs:celestial_core"
+			id: "2106000000000ACE"
+			rewards: [
+				{
+					id: "2106000000000BCE"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					id: "2106000000000DCE"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "&7Five kings, three worlds, one star"
+			tasks: [{
+				id: "2106000000000CCE"
+				item: "kubejs:celestial_core"
+				type: "item"
+			}]
+			title: "&bThe Celestial Core"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
 			dependencies: [
 				"2106000000000006"
 				"305500000000000B"
+				"2106000000000ACE"
 			]
 			description: [
-				"The four corners of the void. The remains of hell's worst. Antimatter that cost you gigajoules, and the star of the Wither at the center. The Harbinger is silent - nothing is left to object."
+				"The four corners of the void. The remains of hell's worst. Antimatter that cost you gigajoules - and at the centre, no longer a bare Wither star, but the &bCelestial Core&r you carried back from five Twilight kings and three dead worlds."
 				""
 				"&6&lForge the HEART OF THE SKY.&r"
 				""

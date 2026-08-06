@@ -135,13 +135,21 @@
 		}
 		{
 			dependencies: ["3584C005DD4926AB"]
-			description: ["The ME Controller is the heart of a network - it powers and organizes everything wired to it."]
+			description: [
+				"The ME Controller is the heart of a network - it powers and organises everything wired to it. One Controller runs the whole system; a second one placed nearby will conflict with the first."
+				""
+				"&c&lThis is where the island stops being enough.&r The Controller's corners are no longer sky stone - they are &eNaga Scales&r, and the Naga only dies in the Twilight Forest."
+				""
+				"&7And the Twilight portal will not light until you have stood on the Moon.&r So the road to a real ME network runs: rocket, Moon, portal, Naga. Everything below this quest you can build at home. Nothing above it."
+			]
+			icon: "ae2:controller"
 			id: "4275E6A1A07E4C54"
 			rewards: [{
 				id: "56BA37C3A73E3789"
 				type: "xp"
 				xp: 40
 			}]
+			subtitle: "&7Four Naga Scales and a dead snake"
 			tasks: [{
 				id: "2C5A3FCB1805B570"
 				item: "ae2:controller"
@@ -252,16 +260,22 @@
 		{
 			dependencies: ["730CBB4200699C94"]
 			description: [
-				"AUTOCRAFTING. A Pattern Provider holds recipes; a Molecular Assembler builds them."
+				"AUTOCRAFTING. A Pattern Provider holds recipes; a Molecular Assembler builds them. Encode a pattern, ask the terminal for the result, and the network assembles it on demand."
 				""
-				"This is the moment AE2 goes from storage to a factory that crafts anything on request."
+				"This is the moment AE2 stops being storage and becomes a factory."
+				""
+				"&b&lIt costs you the Moon.&r The Assembler's iron frame is now &eDesh&r - and Desh does not exist on your island, in the Nether, or anywhere the sieve can reach. It generates on the &eMoon&r and nowhere else."
+				""
+				"&7Storage, terminals and import/export all still work without it. You can run a perfectly good network while you build the rocket - you just cannot make it craft for you.&r"
 			]
+			icon: "ae2:molecular_assembler"
 			id: "67906B4F774BA557"
 			rewards: [{
 				id: "7FD4FEEC0B1D8A5D"
 				type: "xp"
 				xp: 60
 			}]
+			subtitle: "&7Build the rocket first"
 			tasks: [
 				{
 					id: "3DA38849DECF8273"
@@ -281,16 +295,20 @@
 		{
 			dependencies: ["67906B4F774BA557"]
 			description: [
-				"A Crafting CPU is a multiblock of Crafting Units and Storage. Bigger CPUs craft bigger jobs in parallel."
+				"A Crafting CPU is a multiblock of Crafting Units and Storage. Storage sets how many distinct items a job can hold; Accelerators set how fast it chews through them. Build several small CPUs rather than one huge one - the network can only run one job per CPU."
 				""
-				"Build a 1k Storage, a Unit, and an Accelerator to form your first CPU."
+				"Build a 1k Storage, a Unit and an Accelerator to form your first CPU."
+				""
+				"&b&lAlso Desh-gated.&r Crafting Units share the Assembler's tax, so the whole autocrafting tree lands on the far side of your first rocket. Budget the Moon trip for a stack of Desh, not four ingots - you will want several CPUs eventually."
 			]
+			icon: "ae2:crafting_unit"
 			id: "7A7F425862B38C87"
 			rewards: [{
 				id: "6C7C6C6F2E29D6F9"
 				type: "xp"
 				xp: 60
 			}]
+			subtitle: "&7One job per CPU - build several"
 			tasks: [
 				{
 					id: "123A0AA20CBAE381"
@@ -406,6 +424,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&7Venus, or nothing"
 			title: "Spatial Storage"
 			x: 7.0d
 			y: 2.0d
@@ -413,10 +432,16 @@
 		{
 			dependencies: ["7A7F425862B38C87"]
 			description: [
-				"The Quantum Network Bridge links two networks across ANY distance or dimension via an entangled pair."
+				"The Quantum Network Bridge links two networks across ANY distance or dimension via an entangled pair of Quantum Entangled Singularities. Craft the pair together, drop one in each chamber, and the two networks behave as one cable."
 				""
-				"Build a Quantum Ring and a Quantum Link Chamber to connect your bases and your rockets."
+				"Build a Quantum Ring and a Quantum Link Chamber to connect your island to the Moon, Mars, or the Twilight Forest."
+				""
+				"&4&lThe Hydra pays for this one.&r The Ring's iron is now &eFiery Ingots&r, smelted from the &cFiery Blood&r that only the Hydra drops - deep in the Twilight Forest, well past the Naga that got you your Controller."
+				""
+				"&7Worth the fight: this is what makes off-world bases practical. Mine Ostrum on Mars and have it appear in your island's ME system.&r"
 			]
+			icon: "ae2:quantum_ring"
+			subtitle: "&7Kill the Hydra, wire the solar system"
 			id: "12A79575C816228A"
 			rewards: [
 				{
