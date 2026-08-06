@@ -113,7 +113,19 @@
 			description: [
 				"Craft an &eOak Sieve&r and a &eString Mesh&r, drop the mesh into the sieve, and sift your gravel, sand and dust."
 				""
-				"This is your mining replacement. Right-click to sift; better meshes shake loose rarer drops."
+				"This is your mining replacement. Right-click to sift; &7hold right-click&r to keep going."
+				""
+				"&e&lHow sieving actually works.&r The block you put in decides &lwhat&r you can get. The mesh decides &lhow much of it&r and &lhow rare&r:"
+				"&7- &fGravel&7 - metal ore chunks. Iron, copper, gold, tin, lead, aluminium."
+				"&7- &fSand&7 - certus quartz, gunpowder, cocoa, sugar cane."
+				"&7- &fDust&7 - redstone, lapis, glowstone, the rare stuff."
+				"&7- &fCrushed netherrack / end stone&7 - nether and end drops without the trip."
+				""
+				"&e&lMesh tiers&r run &7string &8→ &7flint &8→ &7iron &8→ &7diamond &8→ &7netherite&r. Each tier does not just add new drops - it also &lraises the odds&r of everything below it. A diamond mesh on gravel pays far better than a string mesh on the same gravel."
+				""
+				"&8Do not throw meshes away when you upgrade. Multiple sieves running different meshes side by side is faster than one sieve you keep re-fitting."
+				""
+				"&7Sieving by hand is the bottleneck of Age I. Look ahead to &fPowered Sieving&7 - the moment you automate this, the whole pack opens up.&r"
 			]
 			icon: "exdeorum:string_mesh"
 			id: "2101000000000004"
@@ -146,7 +158,17 @@
 			description: [
 				"Sift gravel and the void starts paying out. Ore chunks tumble free - iron, copper, gold, tin, lead and more."
 				""
-				"Collect your first chunks. Smelt them for ingots, or hold them for the machines that will double their yield later."
+				"Collect your first chunks. Smelt them for ingots, or hold them for the machines that will multiply them later."
+				""
+				"&e&lDo not smelt everything.&r A chunk in a furnace is &l1 ingot&r. The same chunk, later, is worth far more:"
+				"&7- &fMekanism Enrichment Chamber&7 - &a2x&7"
+				"&7- &f+ Purification Chamber&7 - &a3x&7"
+				"&7- &f+ Chemical Injection&7 - &a4x&7"
+				"&7- &f+ Dissolution / full 5-stage&7 - &a5x&7"
+				""
+				"&8Every chunk you burn now is four you will not have later. Smelt what you need for the next machine and stockpile the rest - a chest of raw chunks is the best investment in Age I."
+				""
+				"&7Copper is the one people under-collect. Create runs on brass, brass runs on copper, and you will want hundreds.&r"
 			]
 			icon: "exdeorum:iron_ore_chunk"
 			id: "2101000000000005"
@@ -177,7 +199,17 @@
 		}
 		{
 			dependencies: ["2101000000000005"]
-			description: ["Smelt your iron ore chunks into ingots. The first real metal in the sky - it goes into hammers, meshes, and your first machines."]
+			description: [
+				"Smelt your iron ore chunks into ingots. The first real metal in the sky - it goes into hammers, meshes, and your first machines."
+				""
+				"&e&lWhere your early iron goes.&r Budget for these before you spend it on armour:"
+				"&7- &fIron Hammer&7 - lasts far longer than stone and is the tool you use most in Age I."
+				"&7- &fIron Mesh&7 - the first mesh that pays for itself. Gets you the rarer chunks."
+				"&7- &fBlast Furnace&7 - 5 iron, and the only route to Sky Steel."
+				"&7- &fBuckets&7 - you will need several for lava, water and the crucible."
+				""
+				"&8Armour can wait. You are not fighting anything yet, and every ingot spent on a chestplate is an ingot not spent on the machine that makes more iron."
+			]
 			icon: "minecraft:iron_ingot"
 			id: "2101000000000006"
 			rewards: [{
@@ -239,7 +271,15 @@
 		}
 		{
 			dependencies: ["2101000000000006"]
-			description: ["A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."]
+			description: [
+				"A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."
+				""
+				"&e&lWhy this matters more than it looks.&r &7Sky Steel&r is the backbone of Age I - it goes into the Sky Assembler, the Crucible line, and the keystone bridges that unlock Mekanism, AE2 and Powah. A normal furnace will never make it. This block is the gate."
+				""
+				"&7Blast Furnaces only accept ores, raw metals and metal tools - no food, no sand, no wood. Keep an ordinary furnace running alongside it.&r"
+				""
+				"&8Build two or three. Fuel is cheap once the cobble engine runs, and parallel furnaces beat one fast furnace when you are smelting stacks of chunks."
+			]
 			icon: "minecraft:blast_furnace"
 			id: "210100000000000C"
 			rewards: [{
