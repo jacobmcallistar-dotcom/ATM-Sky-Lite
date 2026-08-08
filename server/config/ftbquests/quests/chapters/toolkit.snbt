@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "toolkit"
 	group: "1A2B000000000001"
-	icon: "minecraft:tool_workbench"
+	icon: "minecraft:crafting_table"
 	id: "2D49512CEAD3A1E2"
 	order_index: 8
 	quest_links: [ ]
@@ -14,7 +14,7 @@
 				""
 				"Small mods that don't add a progression tree - just make everything else better. All active from the moment you join, nothing to craft."
 			]
-			icon: "minecraft:tool_workbench"
+			icon: "minecraft:crafting_table"
 			id: "5CF5F404538F3494"
 			rewards: [{
 				id: "790846256F40C06F"
