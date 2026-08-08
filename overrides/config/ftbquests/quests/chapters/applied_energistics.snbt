@@ -564,6 +564,7 @@
 			]
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "&7Venus, or nothing"
 			tasks: [
 				{
 					id: "0D4B3AD19BA521A6"
@@ -576,7 +577,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7Venus, or nothing"
 			title: "Spatial Storage"
 			x: 7.0d
 			y: 2.0d
@@ -593,7 +593,6 @@
 				"&7Worth the fight: this is what makes off-world bases practical. Mine Ostrum on Mars and have it appear in your island's ME system.&r"
 			]
 			icon: "ae2:quantum_ring"
-			subtitle: "&7Kill the Hydra, wire the solar system"
 			id: "12A79575C816228A"
 			rewards: [
 				{
@@ -608,6 +607,7 @@
 			]
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "&7Kill the Hydra, wire the solar system"
 			tasks: [
 				{
 					id: "6966C5030746D301"
@@ -1000,6 +1000,592 @@
 			title: "&bPackagedAuto"
 			x: -6.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"&eGrowth Accelerators&r placed beside budding certus quartz make it grow dramatically faster."
+				""
+				"&e&lThis is the sustainable certus supply&r, and it is the difference between AE2 being viable and being a grind. Budding quartz blocks sprout crystals over time; accelerators speed that up; you harvest and the block regrows."
+				""
+				"&c&lBudding blocks degrade as you harvest&r - Flawless to Flawed to Chipped to Damaged, then plain quartz. Mine them with a Fortune tool or, better, use the in-world fluix growth loop for bulk."
+				""
+				"&7Accelerators need power. A small array with four accelerators around one budding block produces more certus than early AE2 can consume.&r"
+			]
+			icon: "ae2:growth_accelerator"
+			id: "8A00000000000001"
+			rewards: [{
+				id: "8A00A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Certus that farms itself"
+			tasks: [
+				{
+					id: "8A00B00000000100"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+			]
+			title: "&bCrystal Growth"
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["8A00000000000001"]
+			description: [
+				"AE2 has four cable types and they are not cosmetic."
+				""
+				"&7- &fGlass&7 - cheapest, carries 8 channels."
+				"&7- &fCovered&7 - same 8 channels, does not visually connect to everything."
+				"&7- &fSmart&7 - 8 channels, and &lshows channel usage as coloured lines&r. Worth the cost for that alone."
+				"&7- &fDense (smart or covered)&7 - carries &l32 channels&r."
+				""
+				"&e&lChannels are AE2's core constraint.&r Every device - drive, terminal, bus, interface - consumes one. A controller supplies a limited number, and a plain cable run can only carry 8 to any branch."
+				""
+				"&c&lRun DENSE cable from the controller as a trunk&r, then split to normal cable near the devices. Trying to feed thirty devices down one glass cable is the classic beginner network failure."
+				""
+				"&7Smart cable's coloured lines tell you at a glance which branch is saturated. Use it while building, even if you swap it later.&r"
+			]
+			icon: "ae2:fluix_smart_cable"
+			id: "8A00000000000002"
+			rewards: [{
+				id: "8A00A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Glass, covered, smart, dense"
+			tasks: [
+				{
+					id: "8A00B00000000200"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000201"
+					item: "ae2:fluix_smart_cable"
+					type: "item"
+				}
+			]
+			title: "&bCable Types"
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["8A00000000000002"]
+			description: [
+				"A &eP2P Tunnel&r pair carries something from one point to another through your existing cable - items, fluids, energy, redstone, light, or ME channels themselves."
+				""
+				"&e&lThe ME variant is the important one.&r A dense cable carries 32 channels; a P2P tunnel pair lets you push those 32 channels down a single cable run to a remote sub-network. That is how large networks stay manageable."
+				""
+				"&e&lHow to pair them:&r right-click the input tunnel with a &7Memory Card&r to copy its frequency, then right-click each output tunnel to paste it. One input, many outputs."
+				""
+				"&7Non-ME tunnels are just as useful - run FE, fluids and items through the same cable you already laid instead of three parallel pipe runs.&r"
+				""
+				"&8This is the block that separates a tidy AE2 base from a spaghetti one."
+			]
+			icon: "ae2:me_p2p_tunnel"
+			id: "8A00000000000003"
+			rewards: [{
+				id: "8A00A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One cable, many services"
+			tasks: [
+				{
+					id: "8A00B00000000300"
+					item: "ae2:me_p2p_tunnel"
+					type: "item"
+				}
+			]
+			title: "&bP2P Tunnels"
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5079791596C98418"]
+			description: [
+				"A &eStorage Bus&r on a chest, barrel, drawer or machine makes its contents appear in your ME terminal as if they were in a cell."
+				""
+				"&e&lThis is how you keep bulk storage cheap.&r Cobblestone, gravel, dust and ore chunks do not belong in expensive cells - put them in Storage Drawers and slap a storage bus on the controller. The network sees them, you never pay for cell types."
+				""
+				"&e&lPriority matters.&r Set the bus's priority higher than your cells and the network will prefer to put matching items there. That is how you route specific items to specific containers automatically."
+				""
+				"&7A storage bus with a filter only accepts what you list, which turns any chest into a targeted overflow.&r"
+				""
+				"&8Also works on other mods' storage - a bus on a Mekanism QIO or a Refined Storage network bridges the two."
+			]
+			icon: "ae2:storage_bus"
+			id: "8A00000000000004"
+			rewards: [{
+				id: "8A00A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Make any chest part of the network"
+			tasks: [
+				{
+					id: "8A00B00000000400"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
+			title: "&bStorage Bus"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["8A00000000000004"]
+			description: [
+				"An &eME Interface&r exposes network items to a machine or pipe; a &ePattern Provider&r pushes crafting ingredients into machines."
+				""
+				"&e&lInterfaces can also stock themselves.&r Set an item and a quantity, and the interface keeps that much on hand, crafting more if needed. That is how you keep a machine permanently fed without an export bus."
+				""
+				"&e&lPattern Providers are the autocrafting output.&r They hold your encoded patterns and push ingredients to whatever they touch - a Molecular Assembler for crafting recipes, or any machine for processing patterns."
+				""
+				"&c&lA Pattern Provider must physically touch the machine&r, or be pointed at it with a cable-facing variant. A provider with nothing adjacent will accept a craft job and then stall it forever."
+				""
+				"&7Extended AE's Expanded Pattern Provider holds 72 patterns instead of 9 - a straight upgrade once you have a lot of recipes.&r"
+			]
+			icon: "ae2:interface"
+			id: "8A00000000000005"
+			rewards: [{
+				id: "8A00A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The network's hands"
+			tasks: [
+				{
+					id: "8A00B00000000500"
+					item: "ae2:interface"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000501"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+			]
+			title: "&bInterface & Pattern Provider"
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8A00000000000005"]
+			description: [
+				"A &eLevel Emitter&r emits a redstone signal when a chosen item in the network rises above or falls below a threshold you set."
+				""
+				"&e&lThis is the network's feedback loop.&r Emitter watching your steel count, wired to the machine that makes steel - production stops at a cap and restarts when you spend it."
+				""
+				"&7It can also watch crafting status rather than stock, emitting while a craft is in progress.&r"
+				""
+				"&8Combine with a Toggle Bus to switch whole sections of network on and off - useful for keeping idle power draw down on a big base."
+			]
+			icon: "ae2:level_emitter"
+			id: "8A00000000000006"
+			rewards: [{
+				id: "8A00A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Redstone from stock levels"
+			tasks: [
+				{
+					id: "8A00B00000000600"
+					item: "ae2:level_emitter"
+					type: "item"
+				}
+			]
+			title: "&bLevel Emitter"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8A00000000000006"]
+			description: [
+				"An &eAnnihilation Plane&r breaks the block in front of it and stores the drop; a &eFormation Plane&r places blocks from the network into the world."
+				""
+				"&e&lThe pair is a complete automated production line with no machines.&r Formation plane places a block, annihilation plane breaks it, network keeps the difference - that is how cobble generators, obsidian farms and tree farms get built in AE2."
+				""
+				"&7Annihilation planes also pick up items and XP that touch them, which makes them the tidiest mob-farm collector in the pack.&r"
+				""
+				"&8Fit them with speed and fortune cards. A fortune-enchanted annihilation plane on an ore block is a genuinely good multiplier."
+			]
+			icon: "ae2:annihilation_plane"
+			id: "8A00000000000007"
+			rewards: [{
+				id: "8A00A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The network touches the world"
+			tasks: [
+				{
+					id: "8A00B00000000700"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000701"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+			]
+			title: "&bFormation & Annihilation Planes"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5079791596C98418"]
+			description: [
+				"The &eCell Workbench&r configures a storage cell - which items it accepts, and in what order the network fills it."
+				""
+				"&c&lThis is the fix for the 63-type limit.&r An unpartitioned cell wastes most of its capacity holding one stack each of sixty-three kinds of junk. Partition it to a handful of items and it holds an enormous amount of each."
+				""
+				"&e&lThe standard setup:&r one 64k cell partitioned to your bulk materials, several unpartitioned mid-tier cells for everything else, and storage buses on drawers for the truly high-volume stuff."
+				""
+				"&7The workbench also copies a configuration between cells, so you can set one up and clone it.&r"
+			]
+			icon: "ae2:cell_workbench"
+			id: "8A00000000000008"
+			rewards: [{
+				id: "8A00A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Partition your storage"
+			tasks: [
+				{
+					id: "8A00B00000000800"
+					item: "ae2:cell_workbench"
+					type: "item"
+				}
+			]
+			title: "&bCell Workbench"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["8A00000000000008"]
+			description: [
+				"&eFluid Storage Cells&r hold liquids in the same drives as your item cells, viewable and extractable from the terminal."
+				""
+				"&e&lThis matters more in this pack than most&r, because Mekanism runs on gases and fluids that otherwise need their own tank farms. An ME fluid cell replaces a wall of tanks and puts everything on one screen."
+				""
+				"&7Applied Mekanistics extends AE2 to Mekanism chemicals specifically, so oxygen, hydrogen and the rest go in the same system.&r"
+				""
+				"&8Fluid cells have the same type limits as item cells. Partition them the same way."
+			]
+			icon: "ae2:fluid_storage_cell_1k"
+			id: "8A00000000000009"
+			rewards: [{
+				id: "8A00A00000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Store more than items"
+			tasks: [
+				{
+					id: "8A00B00000000900"
+					item: "ae2:fluid_storage_cell_1k"
+					type: "item"
+				}
+			]
+			title: "&bFluid & Chemical Cells"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["8A00000000000008"]
+			description: [
+				"An &eME IO Port&r bulk-transfers cells in or out of the network; a &eMatter Condenser&r destroys items, optionally turning them into singularities."
+				""
+				"&e&lThe IO Port is how you empty a cell&r without pulling items one stack at a time - drop cells in, hit transfer, and the network absorbs everything."
+				""
+				"&e&lThe Condenser is your void bin.&r Point a storage bus at it with a filter and the network silently deletes overflow cobblestone. Set to Singularity mode it instead consumes enormous quantities of matter to produce the singularities that Quantum Bridges need."
+				""
+				"&c&lThe Condenser destroys permanently.&r Filter it carefully - a mis-set storage bus on a condenser will eat your entire network."
+			]
+			icon: "ae2:io_port"
+			id: "8A0000000000000A"
+			rewards: [{
+				id: "8A00A0000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Bulk cell management, and a bin"
+			tasks: [
+				{
+					id: "8A00B00000000A00"
+					item: "ae2:io_port"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000A01"
+					item: "ae2:condenser"
+					type: "item"
+				}
+			]
+			title: "&bIO Port & Condenser"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8A0000000000000A"]
+			description: [
+				"A &eStorage Monitor&r displays how much of one item the network holds; a &eConversion Monitor&r does the same and lets you deposit or withdraw by clicking it."
+				""
+				"&e&lA wall of these is a dashboard&r - key materials at a glance without opening a terminal. Lock one with the network tool and it stays on that item."
+				""
+				"&7Conversion monitors are genuinely convenient at a build site: click with a stack to deposit, click empty-handed to withdraw one, crouch-click for a full stack.&r"
+			]
+			icon: "ae2:storage_monitor"
+			id: "8A0000000000000B"
+			rewards: [{
+				id: "8A00A0000000000B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Read and touch stock"
+			tasks: [
+				{
+					id: "8A00B00000000B00"
+					item: "ae2:storage_monitor"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000B01"
+					item: "ae2:conversion_monitor"
+					type: "item"
+				}
+			]
+			title: "&bStorage & Conversion Monitors"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8A0000000000000B"]
+			description: [
+				"The &eME Security Terminal&r controls who can access your network and what they can do."
+				""
+				"&e&lOn a shared server this is worth doing early.&r Without it, anyone who reaches a terminal has your entire storage. Set per-player permissions for build, extract, inject, craft and security."
+				""
+				"&7It also produces linked Wireless Terminals - a terminal registered to a secured network only works for players you have authorised.&r"
+				""
+				"&8Only one security terminal per network."
+			]
+			icon: "ae2:security_station"
+			id: "8A0000000000000C"
+			rewards: [{
+				id: "8A00A0000000000C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Lock the network"
+			tasks: [
+				{
+					id: "8A00B00000000C00"
+					item: "ae2:security_station"
+					type: "item"
+				}
+			]
+			title: "&bSecurity Terminal"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8A0000000000000C"]
+			description: [
+				"The &eNetwork Tool&r shows a network's full device list and lets you install upgrade cards without breaking anything; the &eColor Applicator&r recolours cables."
+				""
+				"&e&lThe network tool is a diagnostic.&r Hold it and right-click any cable to see every device, its channel use and its status. That is how you find the branch that is out of channels."
+				""
+				"&e&lColour is functional, not cosmetic.&r Cables only connect to cables of the same colour or to fluix-coloured ones, so recolouring is how you run two independent networks through the same wall."
+				""
+				"&7AE2 also has an Entropy Manipulator (smelt or freeze blocks in place), a Matter Cannon (fires stored matter) and a Charged Staff. All powered from the network.&r"
+			]
+			icon: "ae2:network_tool"
+			id: "8A0000000000000D"
+			rewards: [{
+				id: "8A00A0000000000D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Quality of life"
+			tasks: [
+				{
+					id: "8A00B00000000D00"
+					item: "ae2:network_tool"
+					type: "item"
+				}
+				{
+					id: "8A00B00000000D01"
+					item: "ae2:color_applicator"
+					type: "item"
+				}
+			]
+			title: "&bNetwork Tools & Gear"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["8A00000000000008"]
+			description: [
+				"An &eME Chest&r holds a single storage cell and gives you a terminal on the front. No controller, no cables, no channels."
+				""
+				"&e&lThis is the cheapest possible entry to AE2&r and a genuinely good early-game chest - one cell holds far more than a double chest and it is searchable."
+				""
+				"&7It is also the correct thing to take to a new build site or another dimension. Drop a chest, drop a cell, and you have organised storage anywhere.&r"
+				""
+				"&8Feed it power with an energy acceptor or it will not open."
+			]
+			icon: "ae2:chest"
+			id: "8A0000000000000E"
+			rewards: [{
+				id: "8A00A0000000000E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7A network of one"
+			tasks: [
+				{
+					id: "8A00B00000000E00"
+					item: "ae2:chest"
+					type: "item"
+				}
+			]
+			title: "&bME Chest"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["67906B4F774BA557"]
+			description: [
+				"&eCrafting Co-Processing Units&r - accelerators - let a Crafting CPU work on more steps of a job in parallel."
+				""
+				"&e&lA CPU with no accelerators crafts one step at a time&r, which on a deep recipe tree is agonising. Each accelerator adds another parallel worker."
+				""
+				"&e&lCPU design, briefly:&r &7Storage&r sets how many distinct items the job can hold, &7Accelerators&r set speed, and a &7Crafting Monitor&r shows what it is doing. Build several small CPUs rather than one giant one - the network runs one job per CPU, so three CPUs means three simultaneous crafts."
+				""
+				"&7MEGA Cells adds a MEGA Crafting Accelerator that is worth the Venus trip if you are doing serious autocrafting.&r"
+			]
+			icon: "ae2:crafting_accelerator"
+			id: "8A0000000000000F"
+			rewards: [{
+				id: "8A00A0000000000F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Make jobs finish"
+			tasks: [
+				{
+					id: "8A00B00000000F00"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+			]
+			title: "&bCrafting Accelerators"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["8A0000000000000F"]
+			description: [
+				"A &eCrafting Monitor&r attached to a CPU displays the job currently running on it."
+				""
+				"&e&lThis is how you diagnose a stalled craft.&r A job that sits forever is almost always missing an ingredient with no pattern, or a Pattern Provider with nothing adjacent to push into. The monitor names the item it is waiting on."
+				""
+				"&7Name your CPUs with an anvil-renamed Crafting Unit so the monitor tells you which one is busy.&r"
+			]
+			icon: "ae2:crafting_monitor"
+			id: "8A00000000000010"
+			rewards: [{
+				id: "8A00A00000000010"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7See what the network is doing"
+			tasks: [
+				{
+					id: "8A00B00000001000"
+					item: "ae2:crafting_monitor"
+					type: "item"
+				}
+			]
+			title: "&bCrafting Monitor"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["8A0000000000000C"]
+			description: [
+				"A &eToggle Bus&r cuts a section of network on a redstone signal; a &eQuartz Fiber&r passes power between two networks without passing channels."
+				""
+				"&e&lQuartz fiber is the trick for sub-networks.&r A storage-bus-only sub-network attached by fiber draws power from your main network but keeps its own channel budget - which is how you attach dozens of storage buses without exhausting the controller."
+				""
+				"&7Sub-networks are the advanced AE2 pattern. Once you understand fiber, channel limits stop being a constraint.&r"
+				""
+				"&8Toggle buses paired with level emitters let the network switch parts of itself off when idle."
+			]
+			icon: "ae2:toggle_bus"
+			id: "8A00000000000011"
+			rewards: [{
+				id: "8A00A00000000011"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Split and switch"
+			tasks: [
+				{
+					id: "8A00B00000001100"
+					item: "ae2:toggle_bus"
+					type: "item"
+				}
+				{
+					id: "8A00B00000001101"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+			]
+			title: "&bToggle Bus & Quartz Fiber"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"8A00000000000003"
+				"8A00000000000007"
+				"8A00000000000010"
+				"8A00000000000011"
+			]
+			description: [
+				"&b&lYou understand the network.&r"
+				""
+				"Dense trunks and P2P tunnels instead of cable spaghetti. Storage buses on drawers instead of expensive cells. Sub-networks behind quartz fibre so channels stopped mattering. Several small CPUs so three jobs run at once."
+				""
+				"&7AE2 is the mod in this pack with the highest skill ceiling and the harshest early learning curve. Everything above this quest is what separates a network that works from one that scales.&r"
+				""
+				"&8What is left is MEGA Cells and Spatial Storage - both behind Venus."
+			]
+			icon: "ae2:controller"
+			id: "8A00000000000012"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "8A00A00000000012"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Channels, tunnels and jobs"
+			tasks: [{
+				id: "8A00B00000001200"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&b&lMaster of the Grid"
+			x: 9.0d
+			y: 1.0d
 		}
 	]
 	title: "&bTech Branch · Applied Energistics"

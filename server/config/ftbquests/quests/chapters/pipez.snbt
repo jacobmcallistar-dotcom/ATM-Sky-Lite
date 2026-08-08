@@ -5,7 +5,7 @@
 	group: "1A2B000000000001"
 	icon: "pipez:item_pipe"
 	id: "3C1F000000000015"
-	order_index: 9
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

@@ -199,7 +199,13 @@
 				""
 				"EVERBRIGHT - eternal day. EVERDAWN - eternal dusk. Both are full of dungeons, gems and horrors."
 			]
-			icon: "blue_skies:zeal_lighter"
+			icon: {
+				Count: 1
+				id: "blue_skies:zeal_lighter"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "2D70B1458FF1A3FC"
 			rewards: [
 				{
@@ -349,7 +355,7 @@
 				"&8Map as you go or bring blocks to mark turns. The Labyrinth genuinely will get you lost, and dying deep inside means a long walk back to your gravestone."
 			]
 			icon: "twilightforest:minoshroom_trophy"
-			id: "7F00000000000001"
+			id: "0DABDEE4D0A6CA1A"
 			rewards: [{
 				count: 6
 				id: "7F00AAAA00000001"
@@ -386,7 +392,7 @@
 				"&8Getting in requires clearing the Goblin Stronghold, which is a dungeon in its own right. Bring building blocks - the mazes are easier to cheat through than to solve."
 			]
 			icon: "twilightforest:knight_phantom_trophy"
-			id: "7F00000000000002"
+			id: "57369136D708C9BF"
 			rewards: [{
 				count: 6
 				id: "7F00AAAA00000002"
@@ -425,7 +431,7 @@
 				"&8This is the hardest Twilight boss before the Snow Queen. Come with the best gear you own and a stack of golden apples."
 			]
 			icon: "twilightforest:ur_ghast_trophy"
-			id: "7F00000000000003"
+			id: "25B739B6205C0331"
 			rewards: [
 				{
 					count: 6
@@ -469,7 +475,7 @@
 				"&8Take fall-damage protection if you have it. Free Runners, a Draconic shield, or feather falling all turn the yeti's signature move into an inconvenience."
 			]
 			icon: "twilightforest:alpha_yeti_trophy"
-			id: "7F00000000000004"
+			id: "630F29D7A31F391E"
 			rewards: [{
 				count: 8
 				id: "7F00AAAA00000005"
@@ -496,7 +502,7 @@
 				"Defeat her and you have conquered the entire dimension. Only the Final Castle remains for the truly obsessed."
 			]
 			icon: "twilightforest:snow_queen_trophy"
-			id: "7F00000000000005"
+			id: "2A170433DB798C1C"
 			rewards: [
 				{
 					id: "7F00AAAA00000006"

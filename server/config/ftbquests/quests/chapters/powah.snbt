@@ -176,16 +176,14 @@
 				xp: 30
 			}]
 			subtitle: "&7The component in everything"
-			tasks: [
-				{
-					id: "7B02000000000200"
-					item: "powah:capacitor_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000200"
+				item: "powah:capacitor_basic"
+				type: "item"
+			}]
 			title: "&9Capacitors"
 			x: -8.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B00000000000002"]
@@ -220,7 +218,7 @@
 			]
 			title: "&9Dielectric Materials"
 			x: -8.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B00000000000002"]
@@ -241,16 +239,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Powah's own wiring"
-			tasks: [
-				{
-					id: "7B02000000000400"
-					item: "powah:energy_cable_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000400"
+				item: "powah:energy_cable_basic"
+				type: "item"
+			}]
 			title: "&9Energy Cables"
 			x: -6.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B00000000000004"]
@@ -271,16 +267,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Buffer the peaks"
-			tasks: [
-				{
-					id: "7B02000000000500"
-					item: "powah:energy_cell_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000500"
+				item: "powah:energy_cell_basic"
+				type: "item"
+			}]
 			title: "&9Energy Cells"
 			x: -6.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B00000000000005"]
@@ -301,16 +295,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Burn solids for power"
-			tasks: [
-				{
-					id: "7B02000000000600"
-					item: "powah:furnator_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000600"
+				item: "powah:furnator_basic"
+				type: "item"
+			}]
 			title: "&9Furnator"
 			x: -4.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B00000000000006"]
@@ -331,16 +323,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Lava straight into FE"
-			tasks: [
-				{
-					id: "7B02000000000700"
-					item: "powah:magmator_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000700"
+				item: "powah:magmator_basic"
+				type: "item"
+			}]
 			title: "&9Magmator"
 			x: -4.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B00000000000007"]
@@ -361,16 +351,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Daylight, tiered"
-			tasks: [
-				{
-					id: "7B02000000000800"
-					item: "powah:solar_panel_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000800"
+				item: "powah:solar_panel_basic"
+				type: "item"
+			}]
 			title: "&9Powah Solar Panels"
 			x: -2.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B00000000000008"]
@@ -391,16 +379,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Feeding the Orb"
-			tasks: [
-				{
-					id: "7B02000000000900"
-					item: "powah:energizing_rod_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000900"
+				item: "powah:energizing_rod_basic"
+				type: "item"
+			}]
 			title: "&9Energizing Rods"
 			x: -2.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B00000000000009"]
@@ -423,16 +409,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Uraninite into serious power"
-			tasks: [
-				{
-					id: "7B02000000000A00"
-					item: "powah:reactor_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000A00"
+				item: "powah:reactor_basic"
+				type: "item"
+			}]
 			title: "&9Reactor Tiers"
 			x: 2.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B0000000000000A"]
@@ -455,16 +439,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Wireless energy, any distance"
-			tasks: [
-				{
-					id: "7B02000000000B00"
-					item: "powah:ender_cell_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000B00"
+				item: "powah:ender_cell_basic"
+				type: "item"
+			}]
 			title: "&9Ender Cells"
 			x: 4.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B0000000000000B"]
@@ -483,16 +465,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Many cells, one hub"
-			tasks: [
-				{
-					id: "7B02000000000C00"
-					item: "powah:ender_gate_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000C00"
+				item: "powah:ender_gate_basic"
+				type: "item"
+			}]
 			title: "&9Ender Gates"
 			x: 6.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B0000000000000B"]
@@ -513,16 +493,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Charge yourself, wirelessly"
-			tasks: [
-				{
-					id: "7B02000000000D00"
-					item: "powah:player_transmitter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000D00"
+				item: "powah:player_transmitter"
+				type: "item"
+			}]
 			title: "&9Player Transmitter"
 			x: 4.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B0000000000000D"]
@@ -543,16 +521,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Power in your pocket"
-			tasks: [
-				{
-					id: "7B02000000000E00"
-					item: "powah:battery_basic"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000E00"
+				item: "powah:battery_basic"
+				type: "item"
+			}]
 			title: "&9Portable Batteries"
 			x: 6.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B0000000000000C"]
@@ -573,16 +549,14 @@
 				xp: 30
 			}]
 			subtitle: "&7See through the world"
-			tasks: [
-				{
-					id: "7B02000000000F00"
-					item: "powah:lens_of_ender"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000000F00"
+				item: "powah:lens_of_ender"
+				type: "item"
+			}]
 			title: "&9Lens of Ender"
 			x: 8.0d
-			y: 1.50d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B0000000000000F"]
@@ -601,16 +575,14 @@
 				xp: 30
 			}]
 			subtitle: "&7Solar as a building block"
-			tasks: [
-				{
-					id: "7B02000000001000"
-					item: "powah:photoelectric_pane"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B02000000001000"
+				item: "powah:photoelectric_pane"
+				type: "item"
+			}]
 			title: "&9Photoelectric Pane"
 			x: 8.0d
-			y: 3.00d
+			y: 3.0d
 		}
 		{
 			dependencies: [

@@ -255,6 +255,442 @@
 			x: 0.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["68EF5F257321514B"]
+			description: [
+				"&eMachine Frames&r are the chassis of every RFTools machine, and the &eMachine Infuser&r upgrades them into &7Infused&r frames."
+				""
+				"&e&lInfused machines run faster and cheaper.&r The infuser consumes Dimensional Shards to upgrade a frame in place - worth doing for anything that runs constantly."
+				""
+				"&7RFTools is really seven separate mods sharing a frame: Base, Builder, Control, Dimensions, Power, Storage and Utility. Every one of them starts with this block.&r"
+				""
+				"&8Make a stack. You will build more RFTools machines than you expect."
+			]
+			icon: "rftoolsbase:machine_frame"
+			id: "8B00000000000001"
+			rewards: [{
+				id: "8B00A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every RFTools block starts here"
+			tasks: [
+				{
+					id: "8B00B00000000100"
+					item: "rftoolsbase:machine_frame"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000101"
+					item: "rftoolsbase:machine_infuser"
+					type: "item"
+				}
+			]
+			title: "&6Machine Frames"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A03B5968E1CD99C"]
+			description: [
+				"A &eShape Card&r defines a region and an operation. The Builder just executes it."
+				""
+				"&e&lThe card types:&r"
+				"&7- &fQuarry&7 - mine everything in the region"
+				"&7- &fQuarry (silk / fortune)&7 - the same, with enchant behaviour"
+				"&7- &fVoid&7 - mine and delete, for clearing"
+				"&7- &fPump&7 - drain fluids"
+				"&7- &fBuilder&7 - place blocks from inventory instead of removing"
+				""
+				"&c&lPreview before you run it.&r The shape editor renders a ghost of the affected region. This is the difference between quarrying a chunk and quarrying your base."
+				""
+				"&7Filters restrict the card to ores only, non-ores only, or a specific list. A filtered quarry card is far cheaper to run.&r"
+			]
+			icon: "rftoolsbuilder:builder"
+			id: "8B00000000000002"
+			rewards: [{
+				id: "8B00A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Tell the Builder what to do"
+			tasks: [
+				{
+					id: "8B00B00000000200"
+					item: "rftoolsbuilder:builder"
+					type: "item"
+				}
+			]
+			title: "&6Shape Cards"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["8B00000000000002"]
+			description: [
+				"A &eSpace Chamber&r captures a region of the world; the &eMover&r relocates it somewhere else."
+				""
+				"&e&lThis moves builds intact&r - machines, inventories, orientation and all. On a floating island where you inevitably outgrow your first platform, it is worth its cost the first time you use it."
+				""
+				"&7Define the chamber with corner blocks, scan it, then place the result. Large regions cost a great deal of power.&r"
+				""
+				"&8Create's Schematicannon rebuilds from materials; this genuinely teleports the original blocks."
+			]
+			icon: "rftoolsbuilder:space_chamber"
+			id: "8B00000000000003"
+			rewards: [{
+				id: "8B00A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Copy a whole build"
+			tasks: [
+				{
+					id: "8B00B00000000300"
+					item: "rftoolsbuilder:space_chamber"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000301"
+					item: "rftoolsbuilder:mover"
+					type: "item"
+				}
+			]
+			title: "&6Space Chamber & Mover"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6775474E8AE4DC25"]
+			description: [
+				"&eScreens&r display information from anywhere in your base - energy levels, machine status, item counts, time, player names."
+				""
+				"&e&lThey are modular.&r Each screen holds modules, and each module shows one thing. Add an Energy module pointed at your Powah reactor, a Counter module on your ore output, a Clock, a Redstone indicator."
+				""
+				"&e&lA Screen Controller powers a whole wall of screens at once&r rather than wiring each one, and lets them read blocks far away."
+				""
+				"&7This is the cheapest monitoring in the pack - no computer, no Lua, no Advanced Peripherals. Just place and configure.&r"
+			]
+			icon: "rftoolsutility:screen"
+			id: "8B00000000000004"
+			rewards: [{
+				id: "8B00A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7A dashboard for your base"
+			tasks: [
+				{
+					id: "8B00B00000000400"
+					item: "rftoolsutility:screen"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000401"
+					item: "rftoolsutility:screen_controller"
+					type: "item"
+				}
+			]
+			title: "&6Screens"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8B00000000000004"]
+			description: [
+				"&eRedstone Transmitters&r and &eReceivers&r carry a signal across any distance and between dimensions."
+				""
+				"&e&lPair them with a channel name&r and they behave as one wire. No repeaters, no dust, no chunk-loading the line between."
+				""
+				"&7Combined with a Sensor - which detects blocks, items, entities or growth in a region - you get remote automation triggers with no wiring at all.&r"
+				""
+				"&8The Counter, Timer and Sequencer blocks turn those signals into actual logic without a computer."
+			]
+			icon: "rftoolsutility:redstone_transmitter"
+			id: "8B00000000000005"
+			rewards: [{
+				id: "8B00A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Wireless signals"
+			tasks: [
+				{
+					id: "8B00B00000000500"
+					item: "rftoolsutility:redstone_transmitter"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000501"
+					item: "rftoolsutility:redstone_receiver"
+					type: "item"
+				}
+			]
+			title: "&6Redstone Anywhere"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8B00000000000005"]
+			description: [
+				"RFTools' &eSequencer&r, &eTimer&r, &eCounter&r and logic gates replace sprawling redstone with single blocks."
+				""
+				"&e&lThe Sequencer is the standout&r - draw a 64-step pattern in its GUI and it emits that sequence on a clock. Machine timing, alternating outputs, pulse trains, all without a single repeater."
+				""
+				"&7The Timer is a clean adjustable clock. The Counter counts pulses and fires at a threshold. Between them you can build most factory control logic in three blocks.&r"
+				""
+				"&8Far easier to change later than a redstone build, and far kinder to server tick rate."
+			]
+			icon: "rftoolsutility:sequencer"
+			id: "8B00000000000006"
+			rewards: [{
+				id: "8B00A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Redstone without the dust"
+			tasks: [
+				{
+					id: "8B00B00000000600"
+					item: "rftoolsutility:sequencer"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000601"
+					item: "rftoolsutility:timer"
+					type: "item"
+				}
+			]
+			title: "&6Logic Blocks"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8B00000000000006"]
+			description: [
+				"The &eCrafter&r holds several recipes at once and crafts them from piped-in materials."
+				""
+				"&e&lThree tiers hold 2, 4 and 8 recipes.&r Unlike the Create Mechanical Crafter it needs no arrangement, and unlike AE2 autocrafting it needs no network - it just sits there making things."
+				""
+				"&e&lIt supports internal recipes&r, where the output of one recipe feeds the next inside the same machine. A single Crafter can turn ingots into a finished component through three steps."
+				""
+				"&7Good middle ground: cheaper than AE2, more flexible than a Create crafter array.&r"
+			]
+			icon: "rftoolsutility:crafter1"
+			id: "8B00000000000007"
+			rewards: [{
+				id: "8B00A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Recipe automation, tiered"
+			tasks: [
+				{
+					id: "8B00B00000000700"
+					item: "rftoolsutility:crafter1"
+					type: "item"
+				}
+			]
+			title: "&6RFTools Crafter"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8B00000000000007"]
+			description: [
+				"The &eSpawner&r creates mobs from raw materials beamed in by &eMatter Beamers&r - no spawn eggs, no dark room, no spawner cage."
+				""
+				"&e&lThis is a real answer to a void world.&r Feed it the right materials and it produces the mob you specify, wherever you built it, regardless of light level or biome."
+				""
+				"&7Each mob needs specific matter types in specific amounts, shown in the spawner's GUI. Beamers deliver them from adjacent inventories.&r"
+				""
+				"&8Between this, Hostile Neural Networks and Ars Nouveau's Drygmy, a floating island has three completely different ways to farm mobs it cannot spawn."
+			]
+			icon: "rftoolsutility:spawner"
+			id: "8B00000000000008"
+			rewards: [{
+				id: "8B00A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Mobs from materials"
+			tasks: [
+				{
+					id: "8B00B00000000800"
+					item: "rftoolsutility:spawner"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000801"
+					item: "rftoolsutility:matter_beamer"
+					type: "item"
+				}
+			]
+			title: "&6Matter Beamer & Spawner"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8B00000000000008"]
+			description: [
+				"The &eEnvironmental Controller&r applies potion effects to everything in a radius - or denies them."
+				""
+				"&e&lPermanent haste and night vision over your base&r is the obvious use, and it is very good. Feed it modules and power and it simply runs."
+				""
+				"&7It also has hostile-mob and player filters, so you can buff yourself while poisoning anything that wanders in.&r"
+				""
+				"&8Power draw scales with radius and module count. Keep the radius tight to your actual base."
+			]
+			icon: "rftoolsutility:environmental_controller"
+			id: "8B00000000000009"
+			rewards: [{
+				id: "8B00A00000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Area effects on demand"
+			tasks: [
+				{
+					id: "8B00B00000000900"
+					item: "rftoolsutility:environmental_controller"
+					type: "item"
+				}
+			]
+			title: "&6Environmental Controller"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8B00000000000009"]
+			description: [
+				"A &eCharged Porter&r is a handheld teleporter - charge it, link it to a Matter Transmitter, and use it to jump there from anywhere."
+				""
+				"&e&lIt is the escape hatch.&r Deep in the Twilight Forest with a full inventory and low health, this gets you home without a rocket, a portal or a walk."
+				""
+				"&7It holds a charge and needs recharging between uses. The Advanced Charged Porter holds far more.&r"
+				""
+				"&8Pairs with the Matter Transmitters you already built at the start of this chapter."
+			]
+			icon: "rftoolsutility:charged_porter"
+			id: "8B0000000000000A"
+			rewards: [{
+				id: "8B00A0000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Teleport home"
+			tasks: [
+				{
+					id: "8B00B00000000A00"
+					item: "rftoolsutility:charged_porter"
+					type: "item"
+				}
+			]
+			title: "&6Charged Porter"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E836BF44B65F66F"]
+			description: [
+				"&ePower Cells&r store FE and, unusually, &lshare it wirelessly with every other cell on the same network&r."
+				""
+				"&e&lThat is the feature.&r Place a cell at your base and another at an outpost, link them, and power flows between them with no cable. It is Powah's Ender Cell idea, built into a storage block."
+				""
+				"&7Cells come in three tiers and combine into multiblocks - place them adjacent and capacity pools.&r"
+				""
+				"&8The Blazing Generator burns blaze rods for a reasonable trickle. Fine early, outclassed later by Powah reactors and Mekanism turbines."
+			]
+			icon: "rftoolspower:cell1"
+			id: "8B0000000000000B"
+			rewards: [{
+				id: "8B00A0000000000B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7RFTools' own grid"
+			tasks: [
+				{
+					id: "8B00B00000000B00"
+					item: "rftoolspower:cell1"
+					type: "item"
+				}
+				{
+					id: "8B00B00000000B01"
+					item: "rftoolspower:blazing_generator"
+					type: "item"
+				}
+			]
+			title: "&6Power Cells & Generation"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CEFFFCF872943C8"]
+			description: [
+				"The &eStorage Scanner&r indexes every inventory in a radius and gives you one searchable window across all of them."
+				""
+				"&e&lIt is not AE2, and that is the point.&r No cables, no channels, no controller, no cells. It reads chests, barrels, drawers and machine buffers exactly where they already are."
+				""
+				"&e&lIt still earns its place next to an ME network&r, because it sees the containers AE2 does not - machine inventories, unbussed drawers, the chest you dumped things in and forgot."
+				""
+				"&c&lKeep the scan radius tight.&r A large radius over a big base costs performance on every refresh."
+				""
+				"&7There is a handheld remote version that works from your inventory in range.&r"
+			]
+			icon: "rftoolsstorage:storage_scanner"
+			id: "8B0000000000000C"
+			rewards: [{
+				id: "8B00A0000000000C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Search every chest at once"
+			tasks: [
+				{
+					id: "8B00B00000000C00"
+					item: "rftoolsstorage:storage_scanner"
+					type: "item"
+				}
+			]
+			title: "&6Storage Scanner"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"8B00000000000003"
+				"8B0000000000000A"
+				"8B0000000000000C"
+				"8B00000000000008"
+			]
+			description: [
+				"&6&lYou have used all seven RFTools mods.&r"
+				""
+				"Quarries that mine by shape card, a dimension you specified yourself, screens that read your whole base, logic without redstone dust, mobs from raw matter, and power that travels without cable."
+				""
+				"&7RFTools is the odd one out in this pack - it does not have a tech tree so much as a toolbox. Very little of it is required, and almost all of it is useful.&r"
+				""
+				"&8The Dimension Builder remains the headline: a custom world made of whatever you specify is the closest this pack comes to an infinite resource."
+			]
+			icon: "rftoolsbase:machine_frame"
+			id: "8B0000000000000D"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "8B00A0000000000D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Seven mods, one frame"
+			tasks: [{
+				id: "8B00B00000000D00"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&6&lRFTools Complete"
+			x: 8.0d
+			y: 2.2d
+		}
 	]
 	title: "&6RFTools"
 }

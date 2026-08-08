@@ -197,7 +197,13 @@
 				""
 				"&8Build the Oxygen Loader before the rocket. Arriving on the Moon with empty tanks is a very short expedition."
 			]
-			icon: "ad_astra:space_suit"
+			icon: {
+				Count: 1
+				id: "ad_astra:space_suit"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3AC5823954DFDBED"
 			rewards: [{
 				id: "6BE525C18D4C33CC"

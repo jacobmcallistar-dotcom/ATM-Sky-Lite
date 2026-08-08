@@ -162,13 +162,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Wear your models to train them"
-			tasks: [
-				{
-					id: "7C02000000000200"
-					item: "hostilenetworks:deep_learner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000200"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
 			title: "&9The Deep Learner"
 			x: -6.0d
 			y: 0.0d
@@ -196,13 +194,11 @@
 				xp: 30
 			}]
 			subtitle: "&7One per mob you want to farm"
-			tasks: [
-				{
-					id: "7C02000000000300"
-					item: "hostilenetworks:blank_data_model"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000300"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
 			title: "&9Blank Data Models"
 			x: -6.0d
 			y: 1.5d
@@ -226,13 +222,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Turn data into drops"
-			tasks: [
-				{
-					id: "7C02000000000400"
-					item: "hostilenetworks:prediction_matrix"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000400"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
 			title: "&9Prediction Matrix"
 			x: 4.0d
 			y: 0.0d
@@ -257,13 +251,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Predictions into actual items"
-			tasks: [
-				{
-					id: "7C02000000000500"
-					item: "hostilenetworks:loot_fabricator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000500"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
 			title: "&9The Loot Fabricator"
 			x: 6.0d
 			y: 0.0d
@@ -285,13 +277,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Nether, End and Twilight tables"
-			tasks: [
-				{
-					id: "7C02000000000600"
-					item: "hostilenetworks:nether_prediction"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000600"
+				item: "hostilenetworks:nether_prediction"
+				type: "item"
+			}]
 			title: "&9Dimensional Predictions"
 			x: 4.0d
 			y: 1.5d
@@ -315,13 +305,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Four models into one"
-			tasks: [
-				{
-					id: "7C02000000000700"
-					item: "extrahnn:merger_camera"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C02000000000700"
+				item: "extrahnn:merger_camera"
+				type: "item"
+			}]
 			title: "&9Model Merging"
 			x: 6.0d
 			y: 1.5d

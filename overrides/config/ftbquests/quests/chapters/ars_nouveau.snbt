@@ -233,7 +233,13 @@
 				{
 					count: 2L
 					id: "7E30500000000203"
-					item: "occultism:chalk_white"
+					item: {
+						Count: 1
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -243,7 +249,13 @@
 				}
 				{
 					id: "7E30500000000223"
-					item: "occultism:otherworld_goggles"
+					item: {
+						Count: 1
+						id: "occultism:otherworld_goggles"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]

@@ -255,7 +255,13 @@
 				""
 				"&7Nothing in IE is a single block that does a job. Everything worth having is a structure you assemble and then walk into."
 			]
-			icon: "immersiveengineering:hammer"
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7E20000000000009"
 			rewards: [{
 				id: "7E2000000000010B"
@@ -265,7 +271,13 @@
 			subtitle: "&7The only tool that matters"
 			tasks: [{
 				id: "7E20000000000209"
-				item: "immersiveengineering:hammer"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "&6The Engineer's Hammer"

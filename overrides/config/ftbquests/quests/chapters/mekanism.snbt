@@ -801,13 +801,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Rotate, wrench, empty, configure"
-			tasks: [
-				{
-					id: "7AE0000000000100"
-					item: "mekanism:configurator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000100"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
 			title: "&9The Configurator"
 			x: -11.0d
 			y: 0.0d
@@ -831,13 +829,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Energy, tiered"
-			tasks: [
-				{
-					id: "7AE0000000000200"
-					item: "mekanism:basic_universal_cable"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000200"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
 			title: "&9Universal Cables"
 			x: -11.0d
 			y: -1.5d
@@ -861,13 +857,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Fluids"
-			tasks: [
-				{
-					id: "7AE0000000000300"
-					item: "mekanism:basic_mechanical_pipe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000300"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
 			title: "&9Mechanical Pipes"
 			x: -11.0d
 			y: 1.5d
@@ -891,13 +885,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Gases - their own plumbing"
-			tasks: [
-				{
-					id: "7AE0000000000400"
-					item: "mekanism:basic_pressurized_tube"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000400"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
 			title: "&9Pressurised Tubes"
 			x: -9.0d
 			y: -1.5d
@@ -924,13 +916,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Items that route themselves"
-			tasks: [
-				{
-					id: "7AE0000000000500"
-					item: "mekanism:basic_logistical_transporter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000500"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
 			title: "&9Logistical Transporters"
 			x: -9.0d
 			y: 1.5d
@@ -958,13 +948,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Filtered output, colour-coded"
-			tasks: [
-				{
-					id: "7AE0000000000600"
-					item: "mekanism:logistical_sorter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000600"
+				item: "mekanism:logistical_sorter"
+				type: "item"
+			}]
 			title: "&9The Logistical Sorter"
 			x: -9.0d
 			y: 3.0d
@@ -988,13 +976,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Heat is a resource here"
-			tasks: [
-				{
-					id: "7AE0000000000700"
-					item: "mekanism:basic_thermodynamic_conductor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000700"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
 			title: "&9Thermodynamic Conductors"
 			x: -11.0d
 			y: 3.0d
@@ -1023,13 +1009,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Start of the 5x chain"
-			tasks: [
-				{
-					id: "7AE0000000000800"
-					item: "mekanism:chemical_dissolution_chamber"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000800"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
 			title: "&9Chemical Dissolution Chamber"
 			x: 1.0d
 			y: -1.5d
@@ -1053,13 +1037,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Dirty slurry into clean"
-			tasks: [
-				{
-					id: "7AE0000000000900"
-					item: "mekanism:chemical_washer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000900"
+				item: "mekanism:chemical_washer"
+				type: "item"
+			}]
 			title: "&9Chemical Washer"
 			x: 3.0d
 			y: -1.5d
@@ -1083,13 +1065,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Slurry back into solids"
-			tasks: [
-				{
-					id: "7AE0000000000A00"
-					item: "mekanism:chemical_crystallizer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000A00"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
 			title: "&9Chemical Crystallizer"
 			x: 5.0d
 			y: -1.5d
@@ -1115,13 +1095,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Brine, lithium, and a big build"
-			tasks: [
-				{
-					id: "7AE0000000000B00"
-					item: "mekanism:thermal_evaporation_controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000B00"
+				item: "mekanism:thermal_evaporation_controller"
+				type: "item"
+			}]
 			title: "&9Thermal Evaporation Plant"
 			x: 7.0d
 			y: -1.5d
@@ -1149,13 +1127,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Two gases into one"
-			tasks: [
-				{
-					id: "7AE0000000000C00"
-					item: "mekanism:chemical_infuser"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000C00"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
 			title: "&9Chemical Infuser"
 			x: -5.0d
 			y: -3.0d
@@ -1182,13 +1158,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Item + fluid + gas at once"
-			tasks: [
-				{
-					id: "7AE0000000000D00"
-					item: "mekanism:pressurized_reaction_chamber"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000D00"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
 			title: "&9Pressurised Reaction Chamber"
 			x: -3.0d
 			y: -3.0d
@@ -1212,13 +1186,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Gas to fluid, and back"
-			tasks: [
-				{
-					id: "7AE0000000000E00"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000E00"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
 			title: "&9Rotary Condensentrator"
 			x: -1.0d
 			y: -4.5d
@@ -1244,13 +1216,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Toward fusion"
-			tasks: [
-				{
-					id: "7AE0000000000F00"
-					item: "mekanism:isotopic_centrifuge"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000000F00"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
 			title: "&9Isotopic Centrifuge"
 			x: -5.0d
 			y: -4.5d
@@ -1276,13 +1246,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Infinite water, no buckets"
-			tasks: [
-				{
-					id: "7AE0000000001000"
-					item: "mekanism:electric_pump"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001000"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
 			title: "&9Electric Pump"
 			x: -3.0d
 			y: -4.5d
@@ -1344,13 +1312,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Mekanism's own storage network"
-			tasks: [
-				{
-					id: "7AE0000000001200"
-					item: "mekanism:qio_drive_array"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001200"
+				item: "mekanism:qio_drive_array"
+				type: "item"
+			}]
 			title: "&9QIO Drive Array"
 			x: 7.0d
 			y: 1.5d
@@ -1374,13 +1340,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Search and pull, no channels"
-			tasks: [
-				{
-					id: "7AE0000000001300"
-					item: "mekanism:qio_dashboard"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001300"
+				item: "mekanism:qio_dashboard"
+				type: "item"
+			}]
 			title: "&9QIO Dashboard"
 			x: 9.0d
 			y: 1.5d
@@ -1443,13 +1407,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Repeat crafting, automated"
-			tasks: [
-				{
-					id: "7AE0000000001500"
-					item: "mekanism:formulaic_assemblicator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001500"
+				item: "mekanism:formulaic_assemblicator"
+				type: "item"
+			}]
 			title: "&9Formulaic Assemblicator"
 			x: 7.0d
 			y: 3.0d
@@ -1473,13 +1435,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Electricity into heat"
-			tasks: [
-				{
-					id: "7AE0000000001600"
-					item: "mekanism:resistive_heater"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001600"
+				item: "mekanism:resistive_heater"
+				type: "item"
+			}]
 			title: "&9Resistive Heater"
 			x: -7.0d
 			y: 5.0d
@@ -1505,13 +1465,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Water into steam, at scale"
-			tasks: [
-				{
-					id: "7AE0000000001700"
-					item: "mekanism:boiler_casing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001700"
+				item: "mekanism:boiler_casing"
+				type: "item"
+			}]
 			title: "&9Thermoelectric Boiler"
 			x: -5.0d
 			y: 5.0d
@@ -1537,13 +1495,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Steam into serious power"
-			tasks: [
-				{
-					id: "7AE0000000001800"
-					item: "mekanismgenerators:turbine_casing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001800"
+				item: "mekanismgenerators:turbine_casing"
+				type: "item"
+			}]
 			title: "&9Industrial Turbine"
 			x: -3.0d
 			y: 5.0d
@@ -1567,13 +1523,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Burn hydrogen for power"
-			tasks: [
-				{
-					id: "7AE0000000001900"
-					item: "mekanismgenerators:gas_burning_generator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001900"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
 			title: "&9Gas-Burning Generator"
 			x: -1.0d
 			y: 5.0d
@@ -1603,13 +1557,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Where MekaSuit becomes yours"
-			tasks: [
-				{
-					id: "7AE0000000001A00"
-					item: "mekanism:modification_station"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001A00"
+				item: "mekanism:modification_station"
+				type: "item"
+			}]
 			title: "&9Modification Station"
 			x: 3.0d
 			y: 4.5d
@@ -1633,13 +1585,11 @@
 				xp: 30
 			}]
 			subtitle: "&7A follower that crafts and fetches"
-			tasks: [
-				{
-					id: "7AE0000000001B00"
-					item: "mekanism:robit"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001B00"
+				item: "mekanism:robit"
+				type: "item"
+			}]
 			title: "&9The Robit"
 			x: 5.0d
 			y: 4.5d
@@ -1663,13 +1613,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Lock your machines"
-			tasks: [
-				{
-					id: "7AE0000000001C00"
-					item: "mekanism:security_desk"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001C00"
+				item: "mekanism:security_desk"
+				type: "item"
+			}]
 			title: "&9Security Desk"
 			x: 3.0d
 			y: 6.0d
@@ -1695,13 +1643,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Move a machine without losing it"
-			tasks: [
-				{
-					id: "7AE0000000001D00"
-					item: "mekanism:cardboard_box"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001D00"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
 			title: "&9Cardboard Box"
 			x: 5.0d
 			y: 6.0d
@@ -1725,13 +1671,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Read the ground"
-			tasks: [
-				{
-					id: "7AE0000000001E00"
-					item: "mekanism:seismic_vibrator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001E00"
+				item: "mekanism:seismic_vibrator"
+				type: "item"
+			}]
 			title: "&9Seismic Vibrator"
 			x: 7.0d
 			y: 6.0d
@@ -1755,13 +1699,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Convert between equivalents"
-			tasks: [
-				{
-					id: "7AE0000000001F00"
-					item: "mekanism:oredictionificator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000001F00"
+				item: "mekanism:oredictionificator"
+				type: "item"
+			}]
 			title: "&9Oredictionificator"
 			x: 9.0d
 			y: 6.0d
@@ -1787,13 +1729,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Store it or vent it"
-			tasks: [
-				{
-					id: "7AE0000000002000"
-					item: "mekanism:radioactive_waste_barrel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000002000"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
 			title: "&9Radioactive Waste Barrel"
 			x: -7.0d
 			y: 6.5d
@@ -1819,13 +1759,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Precision cutting, and a big battery"
-			tasks: [
-				{
-					id: "7AE0000000002100"
-					item: "mekanism:laser"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000002100"
+				item: "mekanism:laser"
+				type: "item"
+			}]
 			title: "&9Lasers"
 			x: -5.0d
 			y: 6.5d
@@ -1851,13 +1789,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Chunk loading, Mekanism-style"
-			tasks: [
-				{
-					id: "7AE0000000002200"
-					item: "mekanism:dimensional_stabilizer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000002200"
+				item: "mekanism:dimensional_stabilizer"
+				type: "item"
+			}]
 			title: "&9Dimensional Stabilizer"
 			x: -3.0d
 			y: 6.5d
@@ -1883,13 +1819,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Hydrogen, weaponised"
-			tasks: [
-				{
-					id: "7AE0000000002300"
-					item: "mekanism:flamethrower"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7AE0000000002300"
+				item: "mekanism:flamethrower"
+				type: "item"
+			}]
 			title: "&9Flamethrower"
 			x: -1.0d
 			y: 6.5d

@@ -86,13 +86,11 @@
 				xp: 30
 			}]
 			subtitle: "&7The component in every panel"
-			tasks: [
-				{
-					id: "7D02000000000200"
-					item: "solarflux:photovoltaic_cell_1"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7D02000000000200"
+				item: "solarflux:photovoltaic_cell_1"
+				type: "item"
+			}]
 			title: "&ePhotovoltaic Cells"
 			x: -2.0d
 			y: 0.0d
@@ -116,13 +114,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Eight rungs, each a straight upgrade"
-			tasks: [
-				{
-					id: "7D02000000000300"
-					item: "solarflux:sp_4"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7D02000000000300"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
 			title: "&ePanel Tiers"
 			x: 0.0d
 			y: 0.0d
@@ -151,13 +147,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Where Solar Flux gets interesting"
-			tasks: [
-				{
-					id: "7D02000000000400"
-					item: "solarflux:blank_upgrade"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7D02000000000400"
+				item: "solarflux:blank_upgrade"
+				type: "item"
+			}]
 			title: "&eUpgrades"
 			x: 2.0d
 			y: 0.0d
@@ -179,13 +173,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Point more sun at one panel"
-			tasks: [
-				{
-					id: "7D02000000000500"
-					item: "solarflux:mirror"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7D02000000000500"
+				item: "solarflux:mirror"
+				type: "item"
+			}]
 			title: "&eMirrors"
 			x: 0.0d
 			y: 1.5d

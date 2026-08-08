@@ -565,13 +565,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Turn a corner"
-			tasks: [
-				{
-					id: "7F02000000000100"
-					item: "create:gearbox"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000100"
+				item: "create:gearbox"
+				type: "item"
+			}]
 			title: "&eGearboxes"
 			x: -12.0d
 			y: -1.5d
@@ -632,13 +630,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Programmed motion"
-			tasks: [
-				{
-					id: "7F02000000000300"
-					item: "create:sequenced_gearshift"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000300"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
 			title: "&eSequenced Gearshift"
 			x: -12.0d
 			y: -4.5d
@@ -662,13 +658,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Set an exact RPM"
-			tasks: [
-				{
-					id: "7F02000000000400"
-					item: "create:rotation_speed_controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000400"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
 			title: "&eRotation Speed Controller"
 			x: -10.0d
 			y: -3.0d
@@ -727,13 +721,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Move items with rotation"
-			tasks: [
-				{
-					id: "7F02000000000600"
-					item: "create:belt_connector"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000600"
+				item: "create:belt_connector"
+				type: "item"
+			}]
 			title: "&eMechanical Belts"
 			x: -8.0d
 			y: 1.5d
@@ -827,13 +819,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Launch items where you want them"
-			tasks: [
-				{
-					id: "7F02000000000900"
-					item: "create:weighted_ejector"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000900"
+				item: "create:weighted_ejector"
+				type: "item"
+			}]
 			title: "&eWeighted Ejector"
 			x: -6.0d
 			y: 4.5d
@@ -857,13 +847,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Bulk storage that connects"
-			tasks: [
-				{
-					id: "7F02000000000A00"
-					item: "create:item_vault"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000A00"
+				item: "create:item_vault"
+				type: "item"
+			}]
 			title: "&eItem Vaults"
 			x: -8.0d
 			y: 4.5d
@@ -887,13 +875,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Logs, planks and trees"
-			tasks: [
-				{
-					id: "7F02000000000B00"
-					item: "create:mechanical_saw"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000B00"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
 			title: "&eMechanical Saw"
 			x: -8.0d
 			y: -3.0d
@@ -917,13 +903,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Break blocks with rotation"
-			tasks: [
-				{
-					id: "7F02000000000C00"
-					item: "create:mechanical_drill"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000C00"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
 			title: "&eMechanical Drill"
 			x: -8.0d
 			y: -4.5d
@@ -1017,13 +1001,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Buffer and store"
-			tasks: [
-				{
-					id: "7F02000000000F00"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000000F00"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
 			title: "&eFluid Tanks"
 			x: -4.0d
 			y: -4.5d
@@ -1047,13 +1029,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Make things move"
-			tasks: [
-				{
-					id: "7F02000000001000"
-					item: "create:mechanical_bearing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000001000"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
 			title: "&eMechanical Bearing"
 			x: -4.0d
 			y: 1.5d
@@ -1069,7 +1049,13 @@
 				""
 				"&8Chassis is far less fiddly for anything rectangular. Save the glue for decoration and odd corners."
 			]
-			icon: "create:super_glue"
+			icon: {
+				Count: 1
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7F00000000000011"
 			rewards: [{
 				id: "7F01000000000011"
@@ -1085,7 +1071,13 @@
 				}
 				{
 					id: "7F02000000001101"
-					item: "create:super_glue"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1147,13 +1139,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Load and unload moving machines"
-			tasks: [
-				{
-					id: "7F02000000001300"
-					item: "create:portable_storage_interface"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000001300"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
 			title: "&ePortable Storage Interface"
 			x: 0.0d
 			y: 4.5d
@@ -1179,13 +1169,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Automated crafting, Create style"
-			tasks: [
-				{
-					id: "7F02000000001400"
-					item: "create:mechanical_crafter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000001400"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
 			title: "&eMechanical Crafters"
 			x: 2.0d
 			y: -1.5d
@@ -1209,13 +1197,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Sorting without pipes"
-			tasks: [
-				{
-					id: "7F02000000001500"
-					item: "create:mechanical_arm"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000001500"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
 			title: "&eMechanical Arm"
 			x: 2.0d
 			y: -3.0d
@@ -1338,7 +1324,13 @@
 				""
 				"&8Both are Create at its most Create. Neither is required. Both are worth ten minutes."
 			]
-			icon: "create:extendo_grip"
+			icon: {
+				Count: 1
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7F00000000000019"
 			rewards: [{
 				id: "7F01000000000019"
@@ -1349,12 +1341,24 @@
 			tasks: [
 				{
 					id: "7F02000000001900"
-					item: "create:extendo_grip"
+					item: {
+						Count: 1
+						id: "create:extendo_grip"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "7F02000000001901"
-					item: "create:potato_cannon"
+					item: {
+						Count: 1
+						id: "create:potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1389,7 +1393,13 @@
 				}
 				{
 					id: "7F02000000001A01"
-					item: "create:copper_diving_helmet"
+					item: {
+						Count: 1
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1453,13 +1463,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Serious rotational power"
-			tasks: [
-				{
-					id: "7F02000000001C00"
-					item: "create:steam_engine"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F02000000001C00"
+				item: "create:steam_engine"
+				type: "item"
+			}]
 			title: "&eSteam Engine"
 			x: -6.0d
 			y: -4.5d

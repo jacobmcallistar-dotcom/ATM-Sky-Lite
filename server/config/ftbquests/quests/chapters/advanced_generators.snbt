@@ -101,13 +101,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Every generator starts here"
-			tasks: [
-				{
-					id: "7E02000000000200"
-					item: "advgenerators:controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7E02000000000200"
+				item: "advgenerators:controller"
+				type: "item"
+			}]
 			title: "&6The Controller"
 			x: -2.0d
 			y: 0.0d
@@ -195,13 +193,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Heat into power"
-			tasks: [
-				{
-					id: "7E02000000000500"
-					item: "advgenerators:steam_turbine_controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7E02000000000500"
+				item: "advgenerators:steam_turbine_controller"
+				type: "item"
+			}]
 			title: "&6Turbines & Exchangers"
 			x: 4.0d
 			y: 0.0d
