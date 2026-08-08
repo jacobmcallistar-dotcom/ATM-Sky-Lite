@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "advancedperipherals:geo_scanner"
 	id: "353534BEE9A95F72"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

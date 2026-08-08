@@ -37,98 +37,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2103000000000001"]
-			description: [
-				"The keystone bridge turns Sky Dust into &eUraninite&r - Powah's reactor fuel, and an ore that will never spawn in the void. Bank a few; the reactor eats them."
-				""
-				"&e&lThis is a bridge recipe, not a real supply.&r SkyForge exists to break chicken-and-egg problems: Powah needs uraninite, uraninite needs an overworld, and you do not have one. The keystone gets you started - it does not scale."
-				""
-				"&e&lThe scalable answer is Mystical Agriculture.&r Uraninite seeds turn reactor fuel into a crop you harvest. If you intend to run reactors seriously - and Age IV assumes you will - get that farm going early rather than bridging one ingot at a time."
-				""
-				"&e&lWhat it feeds:&r Powah's &7Uraninite &8→&7 Uranium&r line, and from there the Reactor tiers that carry your grid from Age III to the fission plant in Ascension."
-				""
-				"&7Powah reactors consume fuel continuously while running, unlike the Thermo and Wind generators you have been leaning on. Budget for a steady supply before you commit your base to one.&r"
-				""
-				"&8The same keystone bridges osmium for Mekanism and certus for AE2. One block, three tech trees unlocked."
-			]
-			icon: "powah:uraninite"
-			id: "2103000000000002"
-			rewards: [{
-				count: 8
-				id: "2103000000000102"
-				item: "powah:uraninite"
-				type: "item"
-			}]
-			subtitle: "&7Reactor fuel from nothing"
-			tasks: [{
-				count: 4L
-				id: "2103000000000202"
-				item: "powah:uraninite"
-				type: "item"
-			}]
-			title: "&9Bridged Uranium"
-			x: -10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2103000000000002"]
-			description: [
-				"The &eEnergizing Orb&r crafts Powah's tiered materials - toss items into the field, feed it power, get the next tier out."
-				""
-				"Every Powah machine climbs the same ladder: &7Basic &8→ &7Hardened &8→ &7Blazing &8→ &7Niotic &8→ &7Spirited &8→ &7Nitro&r. This is where you build up it."
-			]
-			icon: "powah:energizing_orb"
-			id: "2103000000000003"
-			rewards: [{
-				id: "2103000000000103"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "gear"
-			subtitle: "&7Craft the tiered materials"
-			tasks: [{
-				id: "2103000000000203"
-				item: "powah:energizing_orb"
-				type: "item"
-			}]
-			title: "&9The Energizing Orb"
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2103000000000003"]
-			description: [
-				"A &eThermo Generator&r sat over lava makes passive FE forever, no fuel runs required. Drop a few and stop thinking about power for a while."
-				""
-				"&e&lIt runs on a temperature difference, not on burning fuel.&r Lava on one side, cooler air or water on the other, and it produces indefinitely. The lava is &lnot consumed&r - one bucket powers it forever."
-				""
-				"&e&lWhich makes it perfect here.&r You already have a lava source for your cobble generator, and SkyForge gives you lava synthesis. Free heat you were making anyway."
-				""
-				"&7Surround it with water or place it in a cold biome to widen the temperature gap - output goes up. A generator sitting in the Nether next to lava produces almost nothing, because everything around it is already hot.&r"
-				""
-				"&e&lIt is slow but utterly reliable&r - no fuel logistics, no moving parts, no maintenance. Build a bank of them as your baseline grid and let the reactors handle peaks."
-				""
-				"&8Between this and wind, you can run all of Age III without ever crafting a fuel-burning generator."
-			]
-			icon: "powah:thermo_generator_basic"
-			id: "2103000000000004"
-			rewards: [{
-				count: 4
-				id: "2103000000000104"
-				item: "minecraft:blaze_rod"
-				type: "item"
-			}]
-			subtitle: "&7Passive power over lava"
-			tasks: [{
-				id: "2103000000000204"
-				item: "powah:thermo_generator_basic"
-				type: "item"
-			}]
-			title: "&9Free Heat"
-			x: -6.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["2103000000000003"]
 			description: [
 				"&eWind Generators&r love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."
@@ -195,34 +103,6 @@
 			title: "&9Store Some Power"
 			x: -4.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["2103000000000004"]
-			description: [
-				"The &ePowah Reactor&r is a 36-block multiblock that burns your bridged Uraninite for serious, sustained FE."
-				""
-				"This is the power plant that carries you through the tech branches, off-world, and eventually into Mekanism fission. Build the whole thing."
-			]
-			icon: "powah:reactor_basic"
-			id: "2103000000000007"
-			rewards: [{
-				count: 32
-				id: "2103000000000107"
-				item: "powah:uraninite"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.25d
-			subtitle: "&7The power plant"
-			tasks: [{
-				count: 36L
-				id: "2103000000000207"
-				item: "powah:reactor_basic"
-				type: "item"
-			}]
-			title: "&9Going Nuclear"
-			x: -4.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["2103000000000003"]

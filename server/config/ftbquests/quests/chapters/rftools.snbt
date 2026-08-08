@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "rftoolsbase:machine_infuser"
 	id: "1754461D9D681C54"
-	order_index: 9
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
