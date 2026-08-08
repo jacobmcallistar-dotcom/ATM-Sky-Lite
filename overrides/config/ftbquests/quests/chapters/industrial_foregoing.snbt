@@ -249,26 +249,23 @@
 				"&7Almost every machine in this chapter is a frame plus contents, so set up a frame production line before you start building specific machines.&r"
 			]
 			icon: "industrialforegoing:machine_frame_pity"
-			id: "8D00000000000001"
+			id: "236994F358186A1D"
 			rewards: [{
-				id: "8D00A00000000001"
+				id: "49A866C032661CD4"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Pity, Simple, Advanced, Supreme"
-			tasks: [
-				{
-					id: "8D00B00000000100"
-					item: "industrialforegoing:machine_frame_pity"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "121517729E0A8DC5"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
 			title: "&2Machine Frames"
 			x: -6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000001"]
 			description: [
 				"The &eLaser Drill&r fires into the void beneath it and produces ore, biased by the coloured &eLenses&r you surround it with."
 				""
@@ -281,21 +278,21 @@
 				"&7Slow and power-hungry, but completely passive and it never runs out.&r"
 			]
 			icon: "industrialforegoing:laser_drill"
-			id: "8D00000000000002"
+			id: "04B16030A5EA3BCD"
 			rewards: [{
-				id: "8D00A00000000002"
+				id: "2643DC47E4C0679E"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ore from nothing"
 			tasks: [
 				{
-					id: "8D00B00000000200"
+					id: "233171FD39DC2500"
 					item: "industrialforegoing:laser_drill"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000201"
+					id: "21F9D3A12BAE7F13"
 					item: "industrialforegoing:laser_lens"
 					type: "item"
 				}
@@ -305,7 +302,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000002"]
 			description: [
 				"A &ePlant Sower&r plants seeds in its working area; a &ePlant Gatherer&r harvests everything grown there."
 				""
@@ -318,21 +314,21 @@
 				"&8The Gatherer also produces Sludge as a by-product - feed it to the Sludge Refiner rather than voiding it."
 			]
 			icon: "industrialforegoing:plant_gatherer"
-			id: "8D00000000000003"
+			id: "1619ADCB3AD360EF"
 			rewards: [{
-				id: "8D00A00000000003"
+				id: "07D4CEC92D2A5F0E"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Automatic farms, any crop"
 			tasks: [
 				{
-					id: "8D00B00000000300"
+					id: "0750DD630F8463C0"
 					item: "industrialforegoing:plant_gatherer"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000301"
+					id: "4ACAB5518B2AA235"
 					item: "industrialforegoing:plant_sower"
 					type: "item"
 				}
@@ -342,7 +338,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000003"]
 			description: [
 				"The &eMob Duplicator&r spawns mobs from Essence and a captured soul; the &eMob Slaughter Factory&r kills everything in its range and collects the drops."
 				""
@@ -355,21 +350,21 @@
 				"&8The Slaughter Factory also outputs Pink Slime, which has its own uses and its own slightly alarming mob."
 			]
 			icon: "industrialforegoing:mob_duplicator"
-			id: "8D00000000000004"
+			id: "7F62FC57B50E7F52"
 			rewards: [{
-				id: "8D00A00000000004"
+				id: "05930D60002AEFFE"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Industrial mob farming"
 			tasks: [
 				{
-					id: "8D00B00000000400"
+					id: "490877E6428E4A29"
 					item: "industrialforegoing:mob_duplicator"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000401"
+					id: "177A00E6586CDBE9"
 					item: "industrialforegoing:mob_slaughter_factory"
 					type: "item"
 				}
@@ -379,7 +374,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000004"]
 			description: [
 				"A &eBlack Hole Unit&r stores an enormous quantity of a single item; a &eBlack Hole Tank&r does the same for one fluid."
 				""
@@ -390,21 +384,21 @@
 				"&8Pair with an AE2 storage bus on the Black Hole Controller and your network sees everything without spending a single cell type."
 			]
 			icon: "industrialforegoing:black_hole_unit"
-			id: "8D00000000000005"
+			id: "2A8DD64A999C6C0C"
 			rewards: [{
-				id: "8D00A00000000005"
+				id: "6C413D71FA5B1461"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Effectively infinite storage"
 			tasks: [
 				{
-					id: "8D00B00000000500"
+					id: "342D8198E2369B32"
 					item: "industrialforegoing:black_hole_unit"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000501"
+					id: "7238358CE0F3CD71"
 					item: "industrialforegoing:black_hole_tank"
 					type: "item"
 				}
@@ -414,7 +408,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000005"]
 			description: [
 				"The &eBiofuel Generator&r burns biofuel made from crops; the &eProtein Generator&r burns protein made from meat and mob drops."
 				""
@@ -423,21 +416,21 @@
 				"&7The Petrified Fuel Generator is the odd one - it burns solid fuel but gets more efficient the longer it runs uninterrupted, so it rewards a steady supply.&r"
 			]
 			icon: "industrialforegoing:biofuel_generator"
-			id: "8D00000000000006"
+			id: "1E1C2562E86DC963"
 			rewards: [{
-				id: "8D00A00000000006"
+				id: "7DE2E1A55E6D1420"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Power from farm output"
 			tasks: [
 				{
-					id: "8D00B00000000600"
+					id: "4BD6F1AACAD70B92"
 					item: "industrialforegoing:biofuel_generator"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000601"
+					id: "4AA6954F71F2AD2A"
 					item: "industrialforegoing:protein_generator"
 					type: "item"
 				}
@@ -447,7 +440,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8D00000000000006"]
 			description: [
 				"The &eEnchantment Extractor&r pulls enchantments off items into books; the &eApplicator&r puts them back onto something else."
 				""
@@ -458,21 +450,21 @@
 				"&8Far more reliable than an enchanting table, and it needs no bookshelves or lapis."
 			]
 			icon: "industrialforegoing:enchantment_applicator"
-			id: "8D00000000000007"
+			id: "5E562E699E7D750C"
 			rewards: [{
-				id: "8D00A00000000007"
+				id: "65E6C19A9FFB3067"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Books from XP"
 			tasks: [
 				{
-					id: "8D00B00000000700"
+					id: "6B3B6047AB2A5B5E"
 					item: "industrialforegoing:enchantment_extractor"
 					type: "item"
 				}
 				{
-					id: "8D00B00000000701"
+					id: "0501A72F9D69EB1C"
 					item: "industrialforegoing:enchantment_applicator"
 					type: "item"
 				}
@@ -482,7 +474,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["8D00000000000007"]
 			description: [
 				"The &eMaterial Stonework Factory&r performs a programmable chain of stone operations - crush, smelt, cut, shape - in one machine."
 				""
@@ -493,29 +484,23 @@
 				"&8Genuinely useful in this pack, where cobblestone is infinite and everything downstream of it is a bottleneck."
 			]
 			icon: "industrialforegoing:material_stonework_factory"
-			id: "8D00000000000008"
+			id: "206210E20694CB96"
 			rewards: [{
-				id: "8D00A00000000008"
+				id: "21290E2215694B18"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One block, every stone recipe"
-			tasks: [
-				{
-					id: "8D00B00000000800"
-					item: "industrialforegoing:material_stonework_factory"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "79C7436E00AA9588"
+				item: "industrialforegoing:material_stonework_factory"
+				type: "item"
+			}]
 			title: "&2Material Stonework Factory"
 			x: 4.0d
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"8D00000000000008"
-				"8D00000000000006"
-			]
 			description: [
 				"&2&lYou have automated the things a void island cannot naturally do.&r"
 				""
@@ -524,16 +509,16 @@
 				"&7Industrial Foregoing is the most &lskyblock-shaped&r mod in this pack - almost everything it does works without terrain, mobs or biomes.&r"
 			]
 			icon: "industrialforegoing:laser_drill"
-			id: "8D00000000000009"
+			id: "5577B19F9BA125E5"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "8D00A00000000009"
+				id: "1BB0DA491595D6A8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ore, farms and mobs from power"
 			tasks: [{
-				id: "8D00B00000000900"
+				id: "77BFD4E6DDD23373"
 				title: "Complete"
 				type: "checkmark"
 			}]

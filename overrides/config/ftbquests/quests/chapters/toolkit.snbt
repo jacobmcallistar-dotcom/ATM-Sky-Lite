@@ -160,6 +160,116 @@
 			x: -2.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["5CF5F404538F3494"]
+			description: [
+				"&eWaystones&r are teleport markers. Right-click one to attune, then travel between them from anywhere."
+				""
+				"&7On a multi-island base they remove a great deal of walking, and a Warp Stone in your inventory lets you jump to the nearest one on a cooldown.&r"
+				""
+				"&8Cheaper and available far earlier than Mekanism teleporters or Draconic dislocators."
+			]
+			icon: "waystones:blackstone_waystone"
+			id: "9600000000000001"
+			rewards: [{
+				id: "9600A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Fast travel"
+			tasks: [{
+				id: "9600B00000000100"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&fWaystones"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CF5F404538F3494"]
+			description: [
+				"JEI is installed and most people use a tenth of it."
+				""
+				"&7- &fR&7 on an item shows how to make it; &fU&7 shows what it is used for."
+				"&7- &f@mod&7 filters by mod, &f#tag&7 by tag."
+				"&7- Click a recipe's arrow to see alternatives from other mods."
+				"&7- &fBookmark&7 an item with &fA&7 so you can find it again."
+				""
+				"&e&lIn a 167-mod pack, several mods usually make the same thing.&r JEI is how you find the cheapest route rather than the first one."
+			]
+			icon: "minecraft:book"
+			id: "9600000000000002"
+			rewards: [{
+				id: "9600A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The tool you already have"
+			tasks: [{
+				id: "9600B00000000200"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&fJEI, Properly"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CF5F404538F3494"]
+			description: [
+				"Several mods here exist purely to keep the pack playable: &eEmbeddium&r, &eFerriteCore&r, &eModernFix&r, &eEntity Culling&r and &eClumps&r."
+				""
+				"&7Clumps in particular merges XP orbs, which is the difference between a mob farm being fine and a mob farm dropping your framerate to nothing.&r"
+				""
+				"&8Nothing to craft. Worth knowing they are there before you go looking for a lag cause."
+			]
+			icon: "minecraft:redstone"
+			id: "9600000000000003"
+			rewards: [{
+				id: "9600A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Why this pack runs"
+			tasks: [{
+				id: "9600B00000000300"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&fPerformance Mods"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"9600000000000001"
+				"9600000000000002"
+				"9600000000000003"
+			]
+			description: [
+				"&f&lNone of this chapter is required. All of it is why the pack is pleasant.&r"
+				""
+				"&7Jade tells you why a machine stopped. IPN sorts your chests. Waystones remove the walking. Clumps stops your mob farm killing your framerate.&r"
+			]
+			icon: "minecraft:crafting_table"
+			id: "9600000000000004"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "9600A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Quality of life"
+			tasks: [{
+				id: "9600B00000000400"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&f&lToolkit Complete"
+			x: 0.0d
+			y: 2.5d
+		}
 	]
 	title: "&fThe Toolkit"
 }

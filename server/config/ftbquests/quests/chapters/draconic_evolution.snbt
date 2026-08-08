@@ -185,21 +185,21 @@
 				"&7Set this up once and leave it. Every tier from here passes through the same structure.&r"
 			]
 			icon: "draconicevolution:crafting_core"
-			id: "8F00000000000001"
+			id: "4C373CB047F72F81"
 			rewards: [{
-				id: "8F00A00000000001"
+				id: "771A3E4246C67F5E"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The multiblock everything uses"
 			tasks: [
 				{
-					id: "8F00B00000000100"
+					id: "6C5414D3BE401989"
 					item: "draconicevolution:crafting_core"
 					type: "item"
 				}
 				{
-					id: "8F00B00000000101"
+					id: "3680D9444938C775"
 					item: "draconicevolution:basic_crafting_injector"
 					type: "item"
 				}
@@ -209,7 +209,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8F00000000000001"]
 			description: [
 				"The &eEnergy Core&r is a tiered multiblock holding absurd amounts of FE - tier 1 is a single block, tier 8 is a vast sphere."
 				""
@@ -222,21 +221,21 @@
 				"&8Tier 3 or 4 is plenty to buffer a fission reactor. The higher tiers are for fusion reactors and showing off."
 			]
 			icon: "draconicevolution:energy_core"
-			id: "8F00000000000002"
+			id: "6CB7DF61A5619D64"
 			rewards: [{
-				id: "8F00A00000000002"
+				id: "7AD58E7725BB4C82"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Storage measured in billions"
 			tasks: [
 				{
-					id: "8F00B00000000200"
+					id: "60C2F9DA85106557"
 					item: "draconicevolution:energy_core"
 					type: "item"
 				}
 				{
-					id: "8F00B00000000201"
+					id: "5773C9A0C5D0CEFF"
 					item: "draconicevolution:energy_pylon"
 					type: "item"
 				}
@@ -246,7 +245,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["8F00000000000002"]
 			description: [
 				"The &eDraconic Reactor&r produces more power than anything else in the pack - and detonates spectacularly if mishandled."
 				""
@@ -259,21 +257,21 @@
 				"&7Flux Gates and a Potentiometer let you regulate input and output precisely. Most people wire it through a computer for automatic control - Advanced Peripherals can read and adjust it.&r"
 			]
 			icon: "draconicevolution:reactor_core"
-			id: "8F00000000000003"
+			id: "6BC6DFF0179792DA"
 			rewards: [{
-				id: "8F00A00000000003"
+				id: "293E3B36255269ED"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Enormous power, real consequences"
 			tasks: [
 				{
-					id: "8F00B00000000300"
+					id: "6EC592E29C10BBA2"
 					item: "draconicevolution:reactor_core"
 					type: "item"
 				}
 				{
-					id: "8F00B00000000301"
+					id: "085989A6579DB696"
 					item: "draconicevolution:reactor_stabilizer"
 					type: "item"
 				}
@@ -283,7 +281,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8F00000000000003"]
 			description: [
 				"A &eFlux Gate&r limits energy flow to an exact rate you set; &eRelay Crystals&r move power wirelessly between linked points."
 				""
@@ -294,26 +291,23 @@
 				"&8Relay Crystals are Draconic's answer to Ender Cells and RFTools Power Cells: wireless energy with no cable."
 			]
 			icon: "draconicevolution:flux_gate"
-			id: "8F00000000000004"
+			id: "53F71D6411041738"
 			rewards: [{
-				id: "8F00A00000000004"
+				id: "25AEA6EFBB9434EF"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Precise power control"
-			tasks: [
-				{
-					id: "8F00B00000000400"
-					item: "draconicevolution:flux_gate"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3D8A3E18819F19E7"
+				item: "draconicevolution:flux_gate"
+				type: "item"
+			}]
 			title: "&5Flux Gates & Relays"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["8F00000000000004"]
 			description: [
 				"Draconic tools are upgradeable at a &eFusion Crafting&r setup, and the upgrades are what make them extraordinary."
 				""
@@ -326,26 +320,23 @@
 				"&7Configure AOE and other toggles with the tool config key rather than recrafting.&r"
 			]
 			icon: "draconicevolution:draconic_pickaxe"
-			id: "8F00000000000005"
+			id: "57A45D872EFFAAAC"
 			rewards: [{
-				id: "8F00A00000000005"
+				id: "177051C1D9E43605"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Mining at absurd scale"
-			tasks: [
-				{
-					id: "8F00B00000000500"
-					item: "draconicevolution:wyvern_pickaxe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "09D53A33DD216E95"
+				item: "draconicevolution:wyvern_pickaxe"
+				type: "item"
+			}]
 			title: "&5Draconic Tools"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8F00000000000005"]
 			description: [
 				"Draconic armour provides a &eshield&r - a rechargeable buffer that absorbs damage before your health does - and, at the right tier, &eflight&r."
 				""
@@ -356,26 +347,23 @@
 				"&8Combined with the MekaSuit's modules, you have two competing endgame armour sets. Pick one and invest - splitting resources across both leaves you with neither."
 			]
 			icon: "draconicevolution:draconium_ingot"
-			id: "8F00000000000006"
+			id: "59CB6285DD0DC2C6"
 			rewards: [{
-				id: "8F00A00000000006"
+				id: "1939428A46FEEED3"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Flight and a shield that regenerates"
-			tasks: [
-				{
-					id: "8F00B00000000600"
-					item: "draconicevolution:draconium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "33BAB786D3769713"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
 			title: "&5Draconic Armour"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["8F00000000000006"]
 			description: [
 				"&eChaos Shards&r come from Chaos Islands in the End - guarded by a Chaos Guardian, one of the hardest fights available."
 				""
@@ -386,26 +374,23 @@
 				"&7A shard splits into fragments, so one kill supplies several crafts.&r"
 			]
 			icon: "draconicevolution:chaos_shard"
-			id: "8F00000000000007"
+			id: "7FF6F80DD8EAD6C0"
 			rewards: [{
-				id: "8F00A00000000007"
+				id: "4C34301A6CA861BD"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The last material"
-			tasks: [
-				{
-					id: "8F00B00000000700"
-					item: "draconicevolution:chaos_shard"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1E17CE6A0B5392E2"
+				item: "draconicevolution:chaos_shard"
+				type: "item"
+			}]
 			title: "&5Chaos Shards"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8F00000000000007"]
 			description: [
 				"&eAwakened Draconium&r is made by fusion-crafting draconium with a Nether Star at the highest tier - the material every endgame Draconic item needs."
 				""
@@ -414,29 +399,23 @@
 				"&8Awakened blocks are also part of the highest Energy Core tiers, so budget for far more than your tools need."
 			]
 			icon: "draconicevolution:awakened_draconium_ingot"
-			id: "8F00000000000008"
+			id: "4AE3E2FBDA6D869E"
 			rewards: [{
-				id: "8F00A00000000008"
+				id: "645994D24EFEBEE8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Beyond the dragon"
-			tasks: [
-				{
-					id: "8F00B00000000800"
-					item: "draconicevolution:awakened_draconium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5884709F42F6832B"
+				item: "draconicevolution:awakened_draconium_ingot"
+				type: "item"
+			}]
 			title: "&5&lAwakened Draconium"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"8F00000000000008"
-				"8F00000000000003"
-			]
 			description: [
 				"&5&lDraconic Evolution is the pack's parallel endgame.&r"
 				""
@@ -445,16 +424,16 @@
 				"&c&lRemember the Draconium Core that started this chapter is pinned with Knightmetal.&r None of this existed until you killed the Knight Phantom."
 			]
 			icon: "draconicevolution:awakened_draconium_ingot"
-			id: "8F00000000000009"
+			id: "653713EE47E96B97"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "8F00A00000000009"
+				id: "247889069E506B37"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The other ending"
 			tasks: [{
-				id: "8F00B00000000900"
+				id: "5A16E50D4C09B650"
 				title: "Complete"
 				type: "checkmark"
 			}]

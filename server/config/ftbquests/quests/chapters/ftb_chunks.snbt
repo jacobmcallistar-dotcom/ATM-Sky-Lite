@@ -66,6 +66,84 @@
 			x: 0.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["22444C4EBB5BEB7C"]
+			description: [
+				"&eFTB Teams&r groups players so claims, force-loads and quest progress are shared."
+				""
+				"&7Create or join a team from the team GUI. Everything claimed by any member is accessible to all of them.&r"
+				""
+				"&8Quest completion is per-team by default in this pack, so joining a team mid-game inherits progress."
+			]
+			icon: "minecraft:player_head"
+			id: "9700000000000001"
+			rewards: [{
+				id: "9700A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Shared claims and progress"
+			tasks: [{
+				id: "9700B00000000100"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&2Teams"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["9700000000000001"]
+			description: [
+				"&bM&r opens the world map, &bJ&r toggles the minimap, &bB&r drops a waypoint."
+				""
+				"&7Xaero's minimap and world map are both installed and share waypoints. Waypoints work across dimensions, which matters once you have bases on four planets.&r"
+				""
+				"&8The FTB Chunks claim screen is a separate map - check your keybinds if the two are confusing you."
+			]
+			icon: "minecraft:filled_map"
+			id: "9700000000000002"
+			rewards: [{
+				id: "9700A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Xaero's, and the claim screen"
+			tasks: [{
+				id: "9700B00000000200"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&2The Map"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["9700000000000002"]
+			description: [
+				"You have a limited number of claims and a smaller number of force-loads."
+				""
+				"&c&lForce-load only what must run while you are away&r - sieves, smelters, farms, reactors. Everything else can sit unloaded."
+				""
+				"&7The counter is in the corner of the claim screen. If a farm stops working while you are elsewhere, this is the first thing to check.&r"
+			]
+			icon: "minecraft:redstone_torch"
+			id: "9700000000000003"
+			rewards: [{
+				id: "9700A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Spend them deliberately"
+			tasks: [{
+				id: "9700B00000000300"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&2Claim Limits"
+			x: 3.0d
+			y: 1.5d
+		}
 	]
 	title: "&2FTB Chunks"
 }

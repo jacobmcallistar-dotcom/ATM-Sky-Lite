@@ -531,26 +531,23 @@
 				"&8Label everything as you build it. Retrofitting labels onto an existing base is the tedious part."
 			]
 			icon: "sfm:labelgun"
-			id: "9300000000000001"
+			id: "0E021885C5312E6F"
 			rewards: [{
-				id: "9300A00000000001"
+				id: "1E0A68860C5D26D6"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Name things, then program them"
-			tasks: [
-				{
-					id: "9300B00000000100"
-					item: "sfm:labelgun"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "59CA38F58A2F9B95"
+				item: "sfm:labelgun"
+				type: "item"
+			}]
 			title: "&bSFM: Labels"
 			x: -8.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9300000000000001"]
 			description: [
 				"The &eManager&r runs your program. The syntax is close to English and the in-game editor autocompletes it."
 				""
@@ -565,26 +562,23 @@
 				"&c&lOne manager can replace an entire base's pipework.&r That is not an exaggeration - this is the single biggest quality-of-life mod in the pack."
 			]
 			icon: "sfm:manager"
-			id: "9300000000000002"
+			id: "15A795A221272CD3"
 			rewards: [{
-				id: "9300A00000000002"
+				id: "54EBD2E6019608BF"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Plain-English automation"
-			tasks: [
-				{
-					id: "9300B00000000200"
-					item: "sfm:manager"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3AE3644E071B0411"
+				item: "sfm:manager"
+				type: "item"
+			}]
 			title: "&bSFM: Programs"
 			x: -6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9300000000000002"]
 			description: [
 				"Beyond simple moves, SFM supports conditionals, redstone triggers, and resource-count checks."
 				""
@@ -595,15 +589,15 @@
 				"&8The in-game documentation covers the full syntax. It is short and worth reading once."
 			]
 			icon: "sfm:manager"
-			id: "9300000000000003"
+			id: "2A945F8800FE246C"
 			rewards: [{
-				id: "9300A00000000003"
+				id: "0013D6CA49F6D626"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Conditionals and resource tracking"
 			tasks: [{
-				id: "9300B00000000300"
+				id: "317238B5BC64A2B7"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -621,21 +615,21 @@
 				"&7That central configuration is XNet's advantage over pipes: changing a filter means opening one screen, not finding one block.&r"
 			]
 			icon: "xnet:controller"
-			id: "9300000000000004"
+			id: "212BF90B5D46FDCC"
 			rewards: [{
-				id: "9300A00000000004"
+				id: "08B53A6318B35AFC"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Channels, centrally configured"
 			tasks: [
 				{
-					id: "9300B00000000400"
+					id: "6EB849DBA5BB78DB"
 					item: "xnet:controller"
 					type: "item"
 				}
 				{
-					id: "9300B00000000401"
+					id: "4F4D765E35DC729F"
 					item: "xnet:connector_routing"
 					type: "item"
 				}
@@ -645,7 +639,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["9300000000000004"]
 			description: [
 				"&eConnectors&r attach to inventories and machines. Each one gets a name and a set of channel roles in the controller GUI."
 				""
@@ -656,26 +649,23 @@
 				"&8SFM and XNet solve the same problem differently - SFM is a program, XNet is a control panel. Most people end up using both."
 			]
 			icon: "xnet:connector_blue"
-			id: "9300000000000005"
+			id: "68EB3463EEABDFD6"
 			rewards: [{
-				id: "9300A00000000005"
+				id: "26A3C31884A8F791"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Per-side control"
-			tasks: [
-				{
-					id: "9300B00000000500"
-					item: "xnet:connector_blue"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "02E572D7BB0CA03B"
+				item: "xnet:connector_blue"
+				type: "item"
+			}]
 			title: "&bXNet: Connectors & Filters"
 			x: -6.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9300000000000005"]
 			description: [
 				"A &eModular Router&r holds up to nine modules, each performing one action on the items passing through it."
 				""
@@ -686,26 +676,23 @@
 				"&7Cheap, available very early, and one router genuinely replaces a small pipe network.&r"
 			]
 			icon: "modularrouters:modular_router"
-			id: "9300000000000006"
+			id: "40B8EE418EA4FA8E"
 			rewards: [{
-				id: "9300A00000000006"
+				id: "075A2C8C036EF49F"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One block, nine modules"
-			tasks: [
-				{
-					id: "9300B00000000600"
-					item: "modularrouters:modular_router"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "744F4DAEFC69920F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
 			title: "&bModular Routers"
 			x: -4.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9300000000000006"]
 			description: [
 				"&ePretty Pipes&r are cheap filtered item pipes - and they come with a &eCrafting Terminal&r."
 				""
@@ -716,30 +703,23 @@
 				"&8Not a replacement for AE2 at scale, but it fills the entire mid-game gap where AE2 is unaffordable."
 			]
 			icon: "prettypipes:crafting_terminal"
-			id: "9300000000000007"
+			id: "39F1651A7521EB9B"
 			rewards: [{
-				id: "9300A00000000007"
+				id: "255B7BEEF23D58A9"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Cheap pipes with a terminal"
-			tasks: [
-				{
-					id: "9300B00000000700"
-					item: "prettypipes:crafting_terminal"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6F12C0D35EA370CB"
+				item: "prettypipes:crafting_terminal"
+				type: "item"
+			}]
 			title: "&bPretty Pipes"
 			x: -2.0d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"9300000000000003"
-				"9300000000000005"
-				"9300000000000007"
-			]
 			description: [
 				"&b&lYou now have five different ways to move an item&r - SFM programs, XNet channels, Modular Routers, Pretty Pipes and plain Mekanism transporters."
 				""
@@ -748,16 +728,16 @@
 				"&8Pick per problem rather than per mod. Using all five in one base is normal here."
 			]
 			icon: "sfm:manager"
-			id: "9300000000000008"
+			id: "4041B3AC4C3562F7"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9300A00000000008"
+				id: "659AD7A39239EBF8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Five ways to move an item"
 			tasks: [{
-				id: "9300B00000000800"
+				id: "2D52B074869553F5"
 				title: "Complete"
 				type: "checkmark"
 			}]

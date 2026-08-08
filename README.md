@@ -31,7 +31,67 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** these 167 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.19.1 — Quest detection fix, and one duplicate HUD mod removed. 167 mods.**
+> **Latest: v1.20.0 — The quest book, rebuilt. 357 → 578 quests, one mod per chapter.
+> 167 mods.**
+>
+> No mod changes and no recipe changes. This is the release v1.19.0 should have been.
+>
+> **What went wrong last time.** v1.19.0 rewrote quest *descriptions* and added exactly **one**
+> quest. Opening the book, nothing looked different — same boxes, same grid. The complaint was
+> fair: "more in-depth quests" meant *more quests*, not longer text on the existing ones.
+>
+> **This release adds 220.** Real quest entries — icon, item task, subtitle, dependency wiring —
+> covering the machines and mechanics the book simply never mentioned.
+>
+> | Chapter | Was | Now |
+> |---|---|---|
+> | Mekanism | 24 | **63** |
+> | Applied Energistics | 31 | **49** |
+> | Create | 16 | **46** |
+> | Thermal | 16 | **25** |
+> | SFM / XNet / routers | 15 | **23** |
+> | RFTools | 8 | **21** |
+> | Powah | — | **21** |
+> | Storage | 12 | **18** |
+> | Industrial Foregoing | 8 | **17** |
+> | Ender IO | 7 | **17** |
+> | Ars Nouveau | 7 | **15** |
+> | Draconic Evolution | 5 | **14** |
+> | Productive Bees | 8 | **14** |
+> | Neural Networks | — | **12** |
+> | Advanced Peripherals | 4 | **12** |
+> | Toolkit | 6 | **10** |
+> | Compact Machines | 3 | **8** |
+> | Advanced Generators | — | **8** |
+> | Solar Flux | — | **7** |
+> | FTB Chunks | 2 | **5** |
+>
+> **One mod, one questline.** `age3_power` was a *themed* chapter holding eight different mods —
+> Powah, Mekanism, MekanismGenerators, Hostile Networks, Extra HNN, Ex Deorum, Solar Flux and
+> Advanced Generators — which made it impossible to see how far through any one of them you were.
+> It has been dismantled into **four new chapters** (Powah, Neural Networks, Solar Flux, Advanced
+> Generators), with the Ex Deorum tools moved into *Age I* and the Mekanism quests into
+> *Mekanism*. Act II is now 16 chapters, one mod each.
+>
+> **Every moved quest kept its original id**, so completion progress survived the restructure.
+>
+> **Fixed: a broken icon that predated all of this.** `minecraft:tool_workbench` is not a real
+> item, and it was the *Toolkit* chapter icon and its first quest's icon — both rendering as
+> missing-texture cubes. Found by rebuilding the id validator: the old one only read
+> `models/item/*.json`, which misses mods that register blocks via lang files (Solar Flux panels
+> are `sp_1`–`sp_8`) and never checked vanilla at all. The new one reads item models, blockstates,
+> `en_us.json`, `en_us.lang` **and the vanilla 1.20.1 jar** — 26,745 entries.
+>
+> **Validation on the finished book: 0 broken ids, 0 duplicate quest ids, brackets balanced in
+> all 32 files.** Boot-tested clean after every batch.
+>
+> The writing targets what actually stops people rather than restating recipes — a pipe network
+> with no Mechanical Pump does nothing; contraptions only move blocks that are *attached*; every
+> AE2 cell tier holds 63 types regardless of size; Draconic Energy Core pylons default to input,
+> which is why a new core appears to swallow power; a Pattern Provider must physically touch its
+> machine or the job stalls forever.
+>
+> **v1.19.1 — Quest detection fix, and one duplicate HUD mod removed. 167 mods.**
 >
 > ⚠️ **This release removes a mod, so you must re-download the zip.** A mismatched mod list will
 > get you kicked on join.

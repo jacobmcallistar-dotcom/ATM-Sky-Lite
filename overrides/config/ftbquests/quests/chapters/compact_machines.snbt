@@ -98,26 +98,23 @@
 				"&8Start with a Normal. Upgrading later means rebuilding the interior, so leave yourself room."
 			]
 			icon: "compactmachines:machine_normal"
-			id: "8E00000000000001"
+			id: "26846F680FA84EA4"
 			rewards: [{
-				id: "8E00A00000000001"
+				id: "204B00CB12ABA731"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Tiny to Maximum"
-			tasks: [
-				{
-					id: "8E00B00000000100"
-					item: "compactmachines:machine_tiny"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1A781539B4A0AACE"
+				item: "compactmachines:machine_tiny"
+				type: "item"
+			}]
 			title: "&fMachine Sizes"
 			x: -4.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8E00000000000001"]
 			description: [
 				"Tunnels are the only thing that crosses a machine wall. Place them on the &linside&r wall and a matching port appears outside."
 				""
@@ -128,26 +125,23 @@
 				"&7You can have many tunnels per machine, so a single Compact Machine can take power in, materials in, and push three different outputs to three different destinations.&r"
 			]
 			icon: "compactmachines:tunnel"
-			id: "8E00000000000002"
+			id: "4BBBE538189B4263"
 			rewards: [{
-				id: "8E00A00000000002"
+				id: "4E023182868F349B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Item, fluid, energy"
-			tasks: [
-				{
-					id: "8E00B00000000200"
-					item: "compactmachines:tunnel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5E8E9408FEA72869"
+				item: "compactmachines:tunnel"
+				type: "item"
+			}]
 			title: "&fTunnel Types"
 			x: -2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8E00000000000002"]
 			description: [
 				"The &ePersonal Shrinking Device&r lets you enter any Compact Machine you own by right-clicking it, and leave with a command or the device again."
 				""
@@ -156,26 +150,23 @@
 				"&8Keep one in your hotbar permanently once you start using Compact Machines seriously."
 			]
 			icon: "compactmachines:personal_shrinking_device"
-			id: "8E00000000000003"
+			id: "6DE3AC66535021CD"
 			rewards: [{
-				id: "8E00A00000000003"
+				id: "19697A7B0EABAE48"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Walk in and out"
-			tasks: [
-				{
-					id: "8E00B00000000300"
-					item: "compactmachines:personal_shrinking_device"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6492CF8B409B2E72"
+				item: "compactmachines:personal_shrinking_device"
+				type: "item"
+			}]
 			title: "&fPersonal Shrinking Device"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8E00000000000003"]
 			description: [
 				"A Compact Machine's interior only ticks while the block holding it is loaded."
 				""
@@ -186,41 +177,38 @@
 				"&7Combined with the standing rule on this server about not slowing things down, Compact Machines are the tidiest way to run a lot of machinery.&r"
 			]
 			icon: "compactmachines:wall"
-			id: "8E00000000000004"
+			id: "5D0D79C915D77217"
 			rewards: [{
-				id: "8E00A00000000004"
+				id: "1ED27D3C1BEA831A"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ticking inside the block"
-			tasks: [
-				{
-					id: "8E00B00000000400"
-					item: "compactmachines:wall"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "49B07030C391DDE1"
+				item: "compactmachines:wall"
+				type: "item"
+			}]
 			title: "&fLoading & Limits"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["8E00000000000004"]
 			description: [
 				"&f&lYour factory is one block.&r"
 				""
 				"&7Compact Machines does not add power, ore or automation. It adds &lspace&r - which on a floating island in the void is the one resource you genuinely cannot make more of.&r"
 			]
 			icon: "compactmachines:machine_maximum"
-			id: "8E00000000000005"
+			id: "3C0ADEF377BE414F"
 			rewards: [{
-				id: "8E00A00000000005"
+				id: "7EC016B185E2B715"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Space, solved"
 			tasks: [{
-				id: "8E00B00000000500"
+				id: "4C534E9748F6038C"
 				title: "Complete"
 				type: "checkmark"
 			}]

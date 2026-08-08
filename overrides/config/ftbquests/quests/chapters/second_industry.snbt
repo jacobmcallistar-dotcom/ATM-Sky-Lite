@@ -518,26 +518,23 @@
 				"&8The Magmatic Dynamo pairs with your Cyclic Melter loop - infinite cobble to lava to power."
 			]
 			icon: "thermal:dynamo_stirling"
-			id: "9200000000000001"
+			id: "14FFE2FBE2F681B0"
 			rewards: [{
-				id: "9200A00000000001"
+				id: "494BDBAF9AB38444"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Thermal's generators"
-			tasks: [
-				{
-					id: "9200B00000000100"
-					item: "thermal:dynamo_stirling"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "217A15E140B6EE9B"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
 			title: "&6Dynamos"
 			x: -8.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9200000000000001"]
 			description: [
 				"&eAugments&r slot into every Thermal machine and dynamo, and they are what makes the mod worth using."
 				""
@@ -552,26 +549,23 @@
 				"&7Because it is one system, anything you learn on a Pulverizer applies to every other Thermal block you ever place.&r"
 			]
 			icon: "thermal:machine_crafter"
-			id: "9200000000000002"
+			id: "23EBEFE4863B832A"
 			rewards: [{
-				id: "9200A00000000002"
+				id: "6A6C2102A8D1E39D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One upgrade system, every machine"
-			tasks: [
-				{
-					id: "9200B00000000200"
-					item: "thermal:machine_crafter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1039DBA3E52DBC2C"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
 			title: "&6Augments"
 			x: -8.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9200000000000002"]
 			description: [
 				"The &ePulverizer&r grinds ore into dust; the &eRedstone Furnace&r smelts it. Together they are Thermal's 2x ore chain."
 				""
@@ -582,21 +576,21 @@
 				"&8The Pulverizer also gives bonus outputs - nickel from iron, gold from copper - which Mekanism's chain does not."
 			]
 			icon: "thermal:machine_pulverizer"
-			id: "9200000000000003"
+			id: "4112F538CDB724AE"
 			rewards: [{
-				id: "9200A00000000003"
+				id: "644248EE08257724"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The starter pair"
 			tasks: [
 				{
-					id: "9200B00000000300"
+					id: "32992EEF4FFFFCCF"
 					item: "thermal:machine_pulverizer"
 					type: "item"
 				}
 				{
-					id: "9200B00000000301"
+					id: "79B6C072D0CBC064"
 					item: "thermal:machine_furnace"
 					type: "item"
 				}
@@ -606,7 +600,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["9200000000000003"]
 			description: [
 				"The &eInduction Smelter&r combines two inputs - the alloying machine, and Thermal's route to richer ore processing."
 				""
@@ -615,26 +608,23 @@
 				"&7It makes every Thermal alloy: Electrum, Invar, Constantan, Signalum, Lumium, Enderium. Those alloys are what the higher machines and augments are built from.&r"
 			]
 			icon: "thermal:machine_smelter"
-			id: "9200000000000004"
+			id: "106E634AC77EF6C0"
 			rewards: [{
-				id: "9200A00000000004"
+				id: "7C8CCF6C8EB27400"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Alloys and 3x ore"
-			tasks: [
-				{
-					id: "9200B00000000400"
-					item: "thermal:machine_smelter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "741D82B9BA02E526"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
 			title: "&6Induction Smelter"
 			x: -6.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9200000000000004"]
 			description: [
 				"The &eCentrifugal Separator&r splits materials into components; the &eMagma Crucible&r melts solids into fluids; the &eBlast Chiller&r freezes fluids into solids."
 				""
@@ -643,21 +633,21 @@
 				"&7The Centrifuge processes mob drops, ores and sludge into usable components. It is the tidiest way to deal with Industrial Foregoing's by-products.&r"
 			]
 			icon: "thermal:machine_centrifuge"
-			id: "9200000000000005"
+			id: "005F815DB6D33895"
 			rewards: [{
-				id: "9200A00000000005"
+				id: "161D8C95BED459CC"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Centrifuge, Crucible, Chiller"
 			tasks: [
 				{
-					id: "9200B00000000500"
+					id: "48CA954D6F3EBD3E"
 					item: "thermal:machine_centrifuge"
 					type: "item"
 				}
 				{
-					id: "9200B00000000501"
+					id: "3326926563DEF4C2"
 					item: "thermal:machine_crucible"
 					type: "item"
 				}
@@ -667,7 +657,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["9200000000000005"]
 			description: [
 				"Thermal's &eDevices&r are cheap single-purpose blocks: Collector, Nullifier, Item Buffer, Fluid Buffer, XP Collector, Rock Gen, Water Gen, Tree Extractor."
 				""
@@ -678,26 +667,23 @@
 				"&8None of them are exciting. Most of them remove a chore you have been tolerating."
 			]
 			icon: "thermal:machine_insolator"
-			id: "9200000000000006"
+			id: "40A26ECD0EA04DE4"
 			rewards: [{
-				id: "9200A00000000006"
+				id: "37E2C14EA92038F5"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Small blocks, large effect"
-			tasks: [
-				{
-					id: "9200B00000000600"
-					item: "thermal:machine_insolator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3821322E574EB59F"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
 			title: "&6Devices"
 			x: -4.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9200000000000006"]
 			description: [
 				"Thermal's &eDucts&r carry energy, fluid and items, and they are among the cheapest transport in the pack."
 				""
@@ -706,26 +692,23 @@
 				"&7They connect straight to any FE machine, so a Thermal duct network can carry Mekanism, AE2 and Powah power equally well.&r"
 			]
 			icon: "thermal:energy_duct"
-			id: "9200000000000007"
+			id: "76133BE8A70ABAC1"
 			rewards: [{
-				id: "9200A00000000007"
+				id: "2D8E2CF6BE77AC74"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Thermal's transport"
-			tasks: [
-				{
-					id: "9200B00000000700"
-					item: "thermal:energy_duct"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "562710CFDA54D604"
+				item: "thermal:energy_duct"
+				type: "item"
+			}]
 			title: "&6Fluiducts & Itemducts"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9200000000000007"]
 			description: [
 				"Every Thermal machine can have its sides configured for input, output or nothing, and its internal tanks and slots locked."
 				""
@@ -734,29 +717,23 @@
 				"&7Redstone control on every machine lets you gate production on a signal without extra blocks.&r"
 			]
 			icon: "thermal:machine_press"
-			id: "9200000000000008"
+			id: "35F24D7A725C1F44"
 			rewards: [{
-				id: "9200A00000000008"
+				id: "03F95A7CB31D9109"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Every machine, every side"
-			tasks: [
-				{
-					id: "9200B00000000800"
-					item: "thermal:machine_press"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "111B8CF8099AA3EC"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
 			title: "&6Tinkering & Reconfiguration"
 			x: -2.0d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"9200000000000008"
-				"9200000000000006"
-			]
 			description: [
 				"&6&lThermal is the least glamorous mod in this pack and one of the most useful.&r"
 				""
@@ -765,16 +742,16 @@
 				"&7Nothing here is required. Most of it makes everything else easier.&r"
 			]
 			icon: "thermal:machine_smelter"
-			id: "9200000000000009"
+			id: "7F0D7093E391B6E5"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9200A00000000009"
+				id: "45C19325C69C8712"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The quiet workhorse"
 			tasks: [{
-				id: "9200B00000000900"
+				id: "6151036D82890666"
 				title: "Complete"
 				type: "checkmark"
 			}]

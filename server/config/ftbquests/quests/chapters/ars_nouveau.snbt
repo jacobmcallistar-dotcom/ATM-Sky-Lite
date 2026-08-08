@@ -280,21 +280,21 @@
 				"&c&lRituals and machines fail silently with no Source nearby.&r If something is not working, check the jar before anything else."
 			]
 			icon: "ars_nouveau:source_jar"
-			id: "9000000000000001"
+			id: "64B9091CDDD0F160"
 			rewards: [{
-				id: "9000A00000000001"
+				id: "4B4B4983235E9627"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ars Nouveau's power"
 			tasks: [
 				{
-					id: "9000B00000000100"
+					id: "17CC0DBF7D424E4D"
 					item: "ars_nouveau:source_jar"
 					type: "item"
 				}
 				{
-					id: "9000B00000000101"
+					id: "67ECEAAA25EE2F65"
 					item: "ars_nouveau:volcanic_sourcelink"
 					type: "item"
 				}
@@ -304,7 +304,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["9000000000000001"]
 			description: [
 				"The &eImbuement Chamber&r is the entry-level Ars crafting block - it makes Source Gems, basic glyphs and the components for everything else."
 				""
@@ -313,26 +312,23 @@
 				"&8Faster with Sconces and Arcane Pedestals nearby. Build it before the Enchanting Apparatus - most of that recipe passes through here."
 			]
 			icon: "ars_nouveau:imbuement_chamber"
-			id: "9000000000000002"
+			id: "429A934F2E0C099C"
 			rewards: [{
-				id: "9000A00000000002"
+				id: "57A3107C96E64D91"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Your first crafting station"
-			tasks: [
-				{
-					id: "9000B00000000200"
-					item: "ars_nouveau:imbuement_chamber"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2673310282A59562"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
 			title: "&dImbuement Chamber"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9000000000000002"]
 			description: [
 				"The &eEnchanting Apparatus&r sits on an &eArcane Core&r and is ringed by &eArcane Pedestals&r. Reagent in the middle, ingredients on the pedestals, Source supplied."
 				""
@@ -341,21 +337,21 @@
 				"&7Right-click the apparatus to run it once everything is placed. It tells you if a pedestal is missing something.&r"
 			]
 			icon: "ars_nouveau:enchanting_apparatus"
-			id: "9000000000000003"
+			id: "7A8183DFE99721FE"
 			rewards: [{
-				id: "9000A00000000003"
+				id: "5061FCAA2B07938F"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ritual crafting proper"
 			tasks: [
 				{
-					id: "9000B00000000300"
+					id: "01BEDD908925E5AD"
 					item: "ars_nouveau:enchanting_apparatus"
 					type: "item"
 				}
 				{
-					id: "9000B00000000301"
+					id: "16719EAD90B2CB5C"
 					item: "ars_nouveau:arcane_core"
 					type: "item"
 				}
@@ -365,7 +361,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["9000000000000003"]
 			description: [
 				"Ars Nouveau automates with summoned creatures rather than machines."
 				""
@@ -378,21 +373,21 @@
 				"&e&lAll of them run on Source&r, and none of them need cables, GUIs or config. Place the charm, give them a home, and they work."
 			]
 			icon: "ars_nouveau:drygmy_charm"
-			id: "9000000000000004"
+			id: "4D14951234EB768C"
 			rewards: [{
-				id: "9000A00000000004"
+				id: "3300C2E2CAA86E2E"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Automation that walks around"
 			tasks: [
 				{
-					id: "9000B00000000400"
+					id: "6A21FE8BE5939178"
 					item: "ars_nouveau:drygmy_charm"
 					type: "item"
 				}
 				{
-					id: "9000B00000000401"
+					id: "7F31D9B1E62486A4"
 					item: "ars_nouveau:whirlisprig_charm"
 					type: "item"
 				}
@@ -402,7 +397,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["9000000000000003"]
 			description: [
 				"A &eRitual Brazier&r performs area effects: growth, weather, teleportation, mob transformation, restoring a wither skeleton's soul."
 				""
@@ -411,26 +405,23 @@
 				"&7Each ritual is a tablet placed in the brazier, plus Source, plus sometimes items on nearby pedestals.&r"
 			]
 			icon: "ars_nouveau:ritual_brazier"
-			id: "9000000000000005"
+			id: "42A6E1A512045699"
 			rewards: [{
-				id: "9000A00000000005"
+				id: "12018C54200142D8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Big effects, one brazier"
-			tasks: [
-				{
-					id: "9000B00000000500"
-					item: "ars_nouveau:ritual_brazier"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3EF10D4BAC4EBDED"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
 			title: "&dRituals"
 			x: -2.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9000000000000005"]
 			description: [
 				"&eSpell Parchment&r stores a spell; &eenchanters' gear&r casts spells on hit, on step or automatically."
 				""
@@ -439,21 +430,21 @@
 				"&7The &fDominion Wand&r links blocks together - a Drygmy to its chest, a spell turret to its target, a source relay to its jar. Most Ars automation needs it.&r"
 			]
 			icon: "ars_nouveau:spell_parchment"
-			id: "9000000000000006"
+			id: "394CB14D0BB9DDF5"
 			rewards: [{
-				id: "9000A00000000006"
+				id: "5DF831336930DDEA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Wear your spells"
 			tasks: [
 				{
-					id: "9000B00000000600"
+					id: "6AEA5B7D5629004C"
 					item: "ars_nouveau:spell_parchment"
 					type: "item"
 				}
 				{
-					id: "9000B00000000601"
+					id: "3E9A4F31DCF7063D"
 					item: "ars_nouveau:dominion_wand"
 					type: "item"
 				}
@@ -463,7 +454,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["9000000000000006"]
 			description: [
 				"A &eSpell Turret&r casts a bound spell on a redstone pulse; &eSource Relays&r move Source between jars across distance."
 				""
@@ -474,21 +464,21 @@
 				"&8Relays let you generate Source in one place and consume it in another, which is how a big Ars base is laid out."
 			]
 			icon: "ars_nouveau:spell_turret"
-			id: "9000000000000007"
+			id: "126B7D588553B629"
 			rewards: [{
-				id: "9000A00000000007"
+				id: "1927E77238864683"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Automation with spells"
 			tasks: [
 				{
-					id: "9000B00000000700"
+					id: "1540101763F9C84A"
 					item: "ars_nouveau:spell_turret"
 					type: "item"
 				}
 				{
-					id: "9000B00000000701"
+					id: "464020E602804DDF"
 					item: "ars_nouveau:relay"
 					type: "item"
 				}
@@ -498,10 +488,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"9000000000000007"
-				"9000000000000004"
-			]
 			description: [
 				"&d&lYou designed your own tools.&r"
 				""
@@ -510,16 +496,16 @@
 				"&7Nothing here is required to finish the pack. It is the most creative branch in it.&r"
 			]
 			icon: "ars_nouveau:novice_spell_book"
-			id: "9000000000000008"
+			id: "33D6D5CE6C9560B1"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9000A00000000008"
+				id: "742861BF4D1663FE"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Spells as machinery"
 			tasks: [{
-				id: "9000B00000000800"
+				id: "63BF5DD7913965CB"
 				title: "Complete"
 				type: "checkmark"
 			}]

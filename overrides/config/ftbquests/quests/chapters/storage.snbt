@@ -385,6 +385,181 @@
 			x: 2.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["57D0000000000001"]
+			description: [
+				"Storage Drawers takes &eupgrades&r that multiply capacity, and specialist ones that change behaviour."
+				""
+				"&7- &fStorage upgrades&7 - iron through diamond and beyond, each multiplying capacity"
+				"&7- &fVoid&7 - discards overflow once full. The correct answer for cobblestone."
+				"&7- &fCreative Vending&7 - infinite supply, endgame only"
+				"&7- &fConversion&7 - auto-compacts to blocks"
+				""
+				"&e&lDrawers are the cheapest bulk storage in the pack by a wide margin&r, and an AE2 storage bus on a drawer controller exposes them all to your network for free.&r"
+			]
+			icon: "storagedrawers:iron_storage_upgrade"
+			id: "9500000000000001"
+			rewards: [{
+				id: "9500A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Capacity, void, vending"
+			tasks: [
+				{
+					id: "9500B00000000100"
+					item: "storagedrawers:iron_storage_upgrade"
+					type: "item"
+				}
+			]
+			title: "&fDrawer Upgrades"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9500000000000001"]
+			description: [
+				"&eSophisticated Backpacks&r take the same upgrade system as the barrels - stack, pickup, magnet, filter, compacting, void."
+				""
+				"&e&lThe upgrades that change how you play:&r &7Pickup&r (items go straight into the bag), &7Magnet&r (from a distance), &7Refill&r (keeps your hotbar stocked), and &7Crafting&r (a grid in your bag)."
+				""
+				"&7A well-upgraded backpack means you never stop mining to manage inventory. It is the single biggest early quality-of-life item in the pack.&r"
+			]
+			icon: "sophisticatedstorage:iron_barrel"
+			id: "9500000000000002"
+			rewards: [{
+				id: "9500A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Storage that follows you"
+			tasks: [
+				{
+					id: "9500B00000000200"
+					item: "sophisticatedstorage:iron_barrel"
+					type: "item"
+				}
+			]
+			title: "&fSophisticated Backpacks"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9500000000000002"]
+			description: [
+				"Tom's Simple Storage gives you a searchable terminal across connected inventories with no channels, no cables and no power."
+				""
+				"&e&lIt is the correct mid-game answer.&r AE2 is expensive and gated behind the Naga; this needs a terminal, some trims and a few chests."
+				""
+				"&7Tom's Performant Storage is also installed - same features, far less lag on big networks.&r"
+				""
+				"&8Keep it even after AE2. It costs nothing to run and it sees chests your ME network does not."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "9500000000000003"
+			rewards: [{
+				id: "9500A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Search everything, cheaply"
+			tasks: [
+				{
+					id: "9500B00000000300"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			title: "&fTom's Storage Terminal"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9500000000000003"]
+			description: [
+				"Ender Chests and EnderTanks link by a three-colour code - any two with the same code share contents, across any distance or dimension."
+				""
+				"&e&lThis is the cheapest cross-dimension logistics in the pack&r, available long before Quantum Rings or Entangloporters."
+				""
+				"&7Set the code with dyes on the top. Personal frequencies stop other players sharing yours.&r"
+				""
+				"&8Put one on the Moon on your first landing. It is the simplest way to send Desh home."
+			]
+			icon: "enderstorage:ender_chest"
+			id: "9500000000000004"
+			rewards: [{
+				id: "9500A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Colour-coded, anywhere"
+			tasks: [
+				{
+					id: "9500B00000000400"
+					item: "enderstorage:ender_chest"
+					type: "item"
+				}
+			]
+			title: "&fEnder Storage & Tanks"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9500000000000004"]
+			description: [
+				"&eEntangled&r links any two blocks so that interacting with one operates the other - across dimensions."
+				""
+				"&e&lIt is not storage specifically, it is a remote proxy for anything.&r Bind it to a machine, a tank, a chest, an ME interface - and the entangled block behaves exactly as the original."
+				""
+				"&7This pack has no Flux Networks, and Entangled fills part of that gap: bind one to a power acceptor and you have a wireless power endpoint.&r"
+			]
+			icon: "entangled:block"
+			id: "9500000000000005"
+			rewards: [{
+				id: "9500A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Link any two blocks"
+			tasks: [{
+				id: "9500B00000000500"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&fEntangled"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"9500000000000005"
+				"9500000000000003"
+			]
+			description: [
+				"&f&lYou can find anything you own.&r"
+				""
+				"Drawers for bulk, barrels and backpacks for the road, a terminal to search it all, and ender chests to move it between worlds."
+				""
+				"&7None of this is required. All of it saves you more time than it costs.&r"
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "9500000000000006"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "9500A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Everything, findable"
+			tasks: [{
+				id: "9500B00000000600"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&f&lStash Complete"
+			x: 0.0d
+			y: 3.8d
+		}
 	]
 	title: "&fSide Quest · Stash & Sort"
 }
