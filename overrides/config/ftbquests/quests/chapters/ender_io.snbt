@@ -267,6 +267,313 @@
 			x: -4.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["61D0000000000001"]
+			description: [
+				"&eConduits&r are Ender IO's signature feature: energy, fluid, item and redstone lines that all occupy &lthe same block space&r."
+				""
+				"&e&lThat is the whole pitch.&r Six conduit types can run through one block, so a wall carrying power, two fluids, items and a redstone signal is one row of blocks rather than five parallel runs."
+				""
+				"&e&lThe Yeta Wrench configures them&r - right-click a conduit end to cycle insert/extract, crouch-click to hide them inside facades."
+				""
+				"&7Item conduits take filters and priorities exactly like a sorting system, so a conduit network often replaces a pipe mod entirely.&r"
+				""
+				"&8Conduit Binder Composite is the crafting base for all of them. Make it in bulk."
+			]
+			icon: "enderio:energy_conduit"
+			id: "8C00000000000001"
+			rewards: [{
+				id: "8C00A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Six services, one block space"
+			tasks: [
+				{
+					id: "8C00B00000000100"
+					item: "enderio:conduit_binder_composite"
+					type: "item"
+				}
+				{
+					id: "8C00B00000000101"
+					item: "enderio:energy_conduit"
+					type: "item"
+				}
+			]
+			title: "&5Conduits"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8C00000000000001"]
+			description: [
+				"The &eYeta Wrench&r rotates machines, configures conduits and picks blocks up intact."
+				""
+				"&c&lConduits cannot be configured with anything else.&r Trying to set a conduit's input/output with a Create wrench or a Mekanism Configurator does nothing - this is the tool."
+				""
+				"&7Crouch-clicking with it toggles conduit visibility, which is how you hide a full six-service bundle inside a wall.&r"
+			]
+			icon: "enderio:yeta_wrench"
+			id: "8C00000000000002"
+			rewards: [{
+				id: "8C00A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The only tool conduits accept"
+			tasks: [
+				{
+					id: "8C00B00000000200"
+					item: "enderio:yeta_wrench"
+					type: "item"
+				}
+			]
+			title: "&5Yeta Wrench"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8C00000000000002"]
+			description: [
+				"A &eSoul Binder&r captures a mob's soul into a vial; a &ePowered Spawner&r then spawns that mob from FE."
+				""
+				"&e&lThis is another void-world answer.&r Capture one blaze, one enderman, one wither skeleton - then spawn them at will on a platform you designed, with no spawner cage and no light-level fiddling."
+				""
+				"&7Broken Spawner in, Soul Vial in, power applied, and the machine produces that mob continuously. Pair it with a grinder and a collector.&r"
+				""
+				"&8The Soul Binder is also used to upgrade several Ender IO items, so it earns its space regardless."
+			]
+			icon: "enderio:powered_spawner"
+			id: "8C00000000000003"
+			rewards: [{
+				id: "8C00A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Mob farms without a dungeon"
+			tasks: [
+				{
+					id: "8C00B00000000300"
+					item: "enderio:soul_binder"
+					type: "item"
+				}
+				{
+					id: "8C00B00000000301"
+					item: "enderio:powered_spawner"
+					type: "item"
+				}
+			]
+			title: "&5Soul Binder & Powered Spawner"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8C00000000000003"]
+			description: [
+				"&eVibrant Crystals&r and the capacitor tiers built from them are what upgrade every Ender IO machine."
+				""
+				"&e&lCapacitors go in every machine&r and raise speed and internal buffer together. Basic, Double-Layer and Octadic - upgrading the capacitor is almost always cheaper than building a second machine."
+				""
+				"&7Vibrant Crystals need a Soul Binder and an ender pearl, so this tier arrives after you have a mob source.&r"
+			]
+			icon: "enderio:vibrant_crystal"
+			id: "8C00000000000004"
+			rewards: [{
+				id: "8C00A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The upgrade currency"
+			tasks: [
+				{
+					id: "8C00B00000000400"
+					item: "enderio:vibrant_crystal"
+					type: "item"
+				}
+			]
+			title: "&5Vibrant Crystals & Capacitors"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8C00000000000004"]
+			description: [
+				"A &eTravel Anchor&r is a teleport waypoint; looking at one and right-clicking blinks you to it."
+				""
+				"&e&lThe Staff of Travelling extends the range enormously&r and lets you jump between anchors across your whole island chain."
+				""
+				"&7Dark Steel armour with the Travel upgrade does the same thing without holding an item - the standard endgame movement setup here.&r"
+				""
+				"&8Anchors can be named and access-restricted, which matters on a shared server."
+			]
+			icon: "enderio:travel_anchor"
+			id: "8C00000000000005"
+			rewards: [{
+				id: "8C00A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Blink around the base"
+			tasks: [
+				{
+					id: "8C00B00000000500"
+					item: "enderio:travel_anchor"
+					type: "item"
+				}
+			]
+			title: "&5Travel Anchors & Staff"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8C00000000000005"]
+			description: [
+				"The &eXP Vacuum&r hoovers experience orbs from a wide radius; the Experience Obelisk stores XP as a fluid you can withdraw."
+				""
+				"&e&lTogether they turn a mob farm into an enchanting bank.&r Kill mobs anywhere near the vacuum, and the XP accumulates in a tank you can draw from at an anvil."
+				""
+				"&7Ender IO also has an Aversion Obelisk (stops mobs spawning in a radius) and an Attractor Obelisk (pulls them in) - the two halves of a controlled spawn platform.&r"
+			]
+			icon: "enderio:xp_vacuum"
+			id: "8C00000000000006"
+			rewards: [{
+				id: "8C00A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Enchanting infrastructure"
+			tasks: [
+				{
+					id: "8C00B00000000600"
+					item: "enderio:xp_vacuum"
+					type: "item"
+				}
+			]
+			title: "&5XP Vacuum & Obelisks"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8C00000000000006"]
+			description: [
+				"An &eImpulse Hopper&r moves a complete set of items at once rather than one at a time; a &eWired Charger&r charges any item placed in it from FE."
+				""
+				"&e&lThe Impulse Hopper is for recipes.&r It waits until it has every ingredient of the set you configured, then moves them together - which stops a crafting machine jamming on a partial set."
+				""
+				"&7The Wired Charger is the tidiest way to keep Free Runners, jetpacks and a Meka-Tool topped up at base.&r"
+			]
+			icon: "enderio:impulse_hopper"
+			id: "8C00000000000007"
+			rewards: [{
+				id: "8C00A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Small machines that matter"
+			tasks: [
+				{
+					id: "8C00B00000000700"
+					item: "enderio:impulse_hopper"
+					type: "item"
+				}
+				{
+					id: "8C00B00000000701"
+					item: "enderio:wired_charger"
+					type: "item"
+				}
+			]
+			title: "&5Impulse Hopper & Wired Charger"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8C00000000000007"]
+			description: [
+				"&eDark Steel&r tools and armour take upgrades at an anvil rather than being fixed at craft time."
+				""
+				"&e&lThe upgrades worth having:&r &7Empowered&r (I-IV, stores FE and hits harder), &7Spoon&r (pickaxe doubles as shovel), &7Direct&r (mined blocks go straight to inventory), &7Travel&r (anchor teleporting without a staff)."
+				""
+				"&c&lIt eats obsidian&r, which in a void world means a lava-and-water loop or the Cyclic Melter line. Set that up first."
+				""
+				"&7Empowered gear runs on stored FE - flat gear is ordinary gear. Keep a Wired Charger at base.&r"
+			]
+			icon: "enderio:dark_steel_sword"
+			id: "8C00000000000008"
+			rewards: [{
+				id: "8C00A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Upgradeable armour and tools"
+			tasks: [
+				{
+					id: "8C00B00000000800"
+					item: "enderio:dark_steel_sword"
+					type: "item"
+				}
+			]
+			title: "&5Dark Steel Gear"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8C00000000000008"]
+			description: [
+				"&ePhotovoltaic Cells&r are Ender IO's solar panels, in four tiers."
+				""
+				"&7They are a reasonable trickle for outposts and they connect straight into energy conduits, but Solar Flux scales considerably further. Build these if you are already deep in Ender IO; build Solar Flux if solar is your plan.&r"
+				""
+				"&8On a floating island every panel runs unshaded, so whichever you pick performs at its stated maximum."
+			]
+			icon: "enderio:photovoltaic_cell"
+			id: "8C00000000000009"
+			rewards: [{
+				id: "8C00A00000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7EnderIO's solar tier"
+			tasks: [
+				{
+					id: "8C00B00000000900"
+					item: "enderio:photovoltaic_cell"
+					type: "item"
+				}
+			]
+			title: "&5Photovoltaic Cells"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"8C00000000000009"
+				"8C00000000000008"
+			]
+			description: [
+				"&5&lYou have run Ender IO end to end.&r"
+				""
+				"Conduits carrying six services through one block. A spawner that makes mobs the void cannot. Armour you upgraded rather than replaced. And a travel network you blink around."
+				""
+				"&7Ender IO's real contribution to this pack is &lspace&r - it does what four other mods do, in a fraction of the room.&r"
+			]
+			icon: "enderio:energy_conduit"
+			id: "8C0000000000000A"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "8C00A0000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One block, six services"
+			tasks: [{
+				id: "8C00B00000000A00"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&5&lEnder IO Complete"
+			x: 4.0d
+			y: 2.2d
+		}
 	]
 	title: "&aTech Branch · Ender IO"
 }

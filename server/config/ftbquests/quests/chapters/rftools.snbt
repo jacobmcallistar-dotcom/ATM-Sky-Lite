@@ -267,21 +267,21 @@
 				"&8Make a stack. You will build more RFTools machines than you expect."
 			]
 			icon: "rftoolsbase:machine_frame"
-			id: "8B00000000000001"
+			id: "3F1C4431FD3C3253"
 			rewards: [{
-				id: "8B00A00000000001"
+				id: "396D2476A39832AF"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Every RFTools block starts here"
 			tasks: [
 				{
-					id: "8B00B00000000100"
+					id: "54A5B0D1FD0C7DE3"
 					item: "rftoolsbase:machine_frame"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000101"
+					id: "20BCA01550586CE5"
 					item: "rftoolsbase:machine_infuser"
 					type: "item"
 				}
@@ -307,26 +307,23 @@
 				"&7Filters restrict the card to ores only, non-ores only, or a specific list. A filtered quarry card is far cheaper to run.&r"
 			]
 			icon: "rftoolsbuilder:builder"
-			id: "8B00000000000002"
+			id: "1B7CF26A9E2A2A09"
 			rewards: [{
-				id: "8B00A00000000002"
+				id: "37162A39CF1172C2"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Tell the Builder what to do"
-			tasks: [
-				{
-					id: "8B00B00000000200"
-					item: "rftoolsbuilder:builder"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "48BCCC0C88A309A3"
+				item: "rftoolsbuilder:builder"
+				type: "item"
+			}]
 			title: "&6Shape Cards"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["8B00000000000002"]
 			description: [
 				"A &eSpace Chamber&r captures a region of the world; the &eMover&r relocates it somewhere else."
 				""
@@ -337,21 +334,21 @@
 				"&8Create's Schematicannon rebuilds from materials; this genuinely teleports the original blocks."
 			]
 			icon: "rftoolsbuilder:space_chamber"
-			id: "8B00000000000003"
+			id: "575506CCAB286D21"
 			rewards: [{
-				id: "8B00A00000000003"
+				id: "496ED1BCF2C264B8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Copy a whole build"
 			tasks: [
 				{
-					id: "8B00B00000000300"
+					id: "2091A1C8BC244D5B"
 					item: "rftoolsbuilder:space_chamber"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000301"
+					id: "7B8C2DC944B5E95C"
 					item: "rftoolsbuilder:mover"
 					type: "item"
 				}
@@ -372,21 +369,21 @@
 				"&7This is the cheapest monitoring in the pack - no computer, no Lua, no Advanced Peripherals. Just place and configure.&r"
 			]
 			icon: "rftoolsutility:screen"
-			id: "8B00000000000004"
+			id: "12CE62FCAF4E41F9"
 			rewards: [{
-				id: "8B00A00000000004"
+				id: "34CD58B22E160D56"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7A dashboard for your base"
 			tasks: [
 				{
-					id: "8B00B00000000400"
+					id: "0CCF56E17B032021"
 					item: "rftoolsutility:screen"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000401"
+					id: "2F0E79892ADEB0F8"
 					item: "rftoolsutility:screen_controller"
 					type: "item"
 				}
@@ -396,7 +393,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8B00000000000004"]
 			description: [
 				"&eRedstone Transmitters&r and &eReceivers&r carry a signal across any distance and between dimensions."
 				""
@@ -407,21 +403,21 @@
 				"&8The Counter, Timer and Sequencer blocks turn those signals into actual logic without a computer."
 			]
 			icon: "rftoolsutility:redstone_transmitter"
-			id: "8B00000000000005"
+			id: "1A0B8EA199669395"
 			rewards: [{
-				id: "8B00A00000000005"
+				id: "4CE5BA0C4F5E14DA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Wireless signals"
 			tasks: [
 				{
-					id: "8B00B00000000500"
+					id: "0068518E559A2A80"
 					item: "rftoolsutility:redstone_transmitter"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000501"
+					id: "469F164F20295A68"
 					item: "rftoolsutility:redstone_receiver"
 					type: "item"
 				}
@@ -431,7 +427,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["8B00000000000005"]
 			description: [
 				"RFTools' &eSequencer&r, &eTimer&r, &eCounter&r and logic gates replace sprawling redstone with single blocks."
 				""
@@ -442,21 +437,21 @@
 				"&8Far easier to change later than a redstone build, and far kinder to server tick rate."
 			]
 			icon: "rftoolsutility:sequencer"
-			id: "8B00000000000006"
+			id: "4735DC156D54E438"
 			rewards: [{
-				id: "8B00A00000000006"
+				id: "5C2316E789077555"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Redstone without the dust"
 			tasks: [
 				{
-					id: "8B00B00000000600"
+					id: "7D4F6B5499D87EE4"
 					item: "rftoolsutility:sequencer"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000601"
+					id: "440166ED1F2D784B"
 					item: "rftoolsutility:timer"
 					type: "item"
 				}
@@ -466,7 +461,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["8B00000000000006"]
 			description: [
 				"The &eCrafter&r holds several recipes at once and crafts them from piped-in materials."
 				""
@@ -477,26 +471,23 @@
 				"&7Good middle ground: cheaper than AE2, more flexible than a Create crafter array.&r"
 			]
 			icon: "rftoolsutility:crafter1"
-			id: "8B00000000000007"
+			id: "7BAA210748EB9970"
 			rewards: [{
-				id: "8B00A00000000007"
+				id: "2432BF4170D87DC8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Recipe automation, tiered"
-			tasks: [
-				{
-					id: "8B00B00000000700"
-					item: "rftoolsutility:crafter1"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "255A97D706CF6481"
+				item: "rftoolsutility:crafter1"
+				type: "item"
+			}]
 			title: "&6RFTools Crafter"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["8B00000000000007"]
 			description: [
 				"The &eSpawner&r creates mobs from raw materials beamed in by &eMatter Beamers&r - no spawn eggs, no dark room, no spawner cage."
 				""
@@ -507,21 +498,21 @@
 				"&8Between this, Hostile Neural Networks and Ars Nouveau's Drygmy, a floating island has three completely different ways to farm mobs it cannot spawn."
 			]
 			icon: "rftoolsutility:spawner"
-			id: "8B00000000000008"
+			id: "0BF501014A4D1EDE"
 			rewards: [{
-				id: "8B00A00000000008"
+				id: "6748BC25D1515950"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Mobs from materials"
 			tasks: [
 				{
-					id: "8B00B00000000800"
+					id: "2AC924666BB6B758"
 					item: "rftoolsutility:spawner"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000801"
+					id: "28608FDFDEB840AC"
 					item: "rftoolsutility:matter_beamer"
 					type: "item"
 				}
@@ -531,7 +522,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8B00000000000008"]
 			description: [
 				"The &eEnvironmental Controller&r applies potion effects to everything in a radius - or denies them."
 				""
@@ -542,26 +532,23 @@
 				"&8Power draw scales with radius and module count. Keep the radius tight to your actual base."
 			]
 			icon: "rftoolsutility:environmental_controller"
-			id: "8B00000000000009"
+			id: "62401BB46357F44D"
 			rewards: [{
-				id: "8B00A00000000009"
+				id: "1AA4B5C84F405781"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Area effects on demand"
-			tasks: [
-				{
-					id: "8B00B00000000900"
-					item: "rftoolsutility:environmental_controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2EF609D895E4A619"
+				item: "rftoolsutility:environmental_controller"
+				type: "item"
+			}]
 			title: "&6Environmental Controller"
 			x: 4.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["8B00000000000009"]
 			description: [
 				"A &eCharged Porter&r is a handheld teleporter - charge it, link it to a Matter Transmitter, and use it to jump there from anywhere."
 				""
@@ -571,21 +558,31 @@
 				""
 				"&8Pairs with the Matter Transmitters you already built at the start of this chapter."
 			]
-			icon: "rftoolsutility:charged_porter"
-			id: "8B0000000000000A"
+			icon: {
+				Count: 1
+				id: "rftoolsutility:charged_porter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "66C5190C6F47EDDF"
 			rewards: [{
-				id: "8B00A0000000000A"
+				id: "4CA6AD46E2722766"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Teleport home"
-			tasks: [
-				{
-					id: "8B00B00000000A00"
-					item: "rftoolsutility:charged_porter"
-					type: "item"
+			tasks: [{
+				id: "03364C5B69F8AF16"
+				item: {
+					Count: 1
+					id: "rftoolsutility:charged_porter"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			title: "&6Charged Porter"
 			x: 6.0d
 			y: 1.5d
@@ -602,21 +599,21 @@
 				"&8The Blazing Generator burns blaze rods for a reasonable trickle. Fine early, outclassed later by Powah reactors and Mekanism turbines."
 			]
 			icon: "rftoolspower:cell1"
-			id: "8B0000000000000B"
+			id: "7196D4CFF397E2AD"
 			rewards: [{
-				id: "8B00A0000000000B"
+				id: "062C11B0D0308403"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7RFTools' own grid"
 			tasks: [
 				{
-					id: "8B00B00000000B00"
+					id: "51ED48FC122B95C3"
 					item: "rftoolspower:cell1"
 					type: "item"
 				}
 				{
-					id: "8B00B00000000B01"
+					id: "35D148EC3A39D421"
 					item: "rftoolspower:blazing_generator"
 					type: "item"
 				}
@@ -639,31 +636,23 @@
 				"&7There is a handheld remote version that works from your inventory in range.&r"
 			]
 			icon: "rftoolsstorage:storage_scanner"
-			id: "8B0000000000000C"
+			id: "66AE0E2D73FA659F"
 			rewards: [{
-				id: "8B00A0000000000C"
+				id: "3C7BD06628F65369"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Search every chest at once"
-			tasks: [
-				{
-					id: "8B00B00000000C00"
-					item: "rftoolsstorage:storage_scanner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "665610F206544A74"
+				item: "rftoolsstorage:storage_scanner"
+				type: "item"
+			}]
 			title: "&6Storage Scanner"
 			x: 6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"8B00000000000003"
-				"8B0000000000000A"
-				"8B0000000000000C"
-				"8B00000000000008"
-			]
 			description: [
 				"&6&lYou have used all seven RFTools mods.&r"
 				""
@@ -674,16 +663,16 @@
 				"&8The Dimension Builder remains the headline: a custom world made of whatever you specify is the closest this pack comes to an infinite resource."
 			]
 			icon: "rftoolsbase:machine_frame"
-			id: "8B0000000000000D"
+			id: "3BD7EBD01AF4B92B"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "8B00A0000000000D"
+				id: "2908A30B69D2ABE2"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Seven mods, one frame"
 			tasks: [{
-				id: "8B00B00000000D00"
+				id: "2D21ACF7238D83AB"
 				title: "Complete"
 				type: "checkmark"
 			}]

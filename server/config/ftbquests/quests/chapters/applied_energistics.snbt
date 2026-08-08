@@ -1013,26 +1013,23 @@
 				"&7Accelerators need power. A small array with four accelerators around one budding block produces more certus than early AE2 can consume.&r"
 			]
 			icon: "ae2:growth_accelerator"
-			id: "8A00000000000001"
+			id: "5714B172FC3D8D9E"
 			rewards: [{
-				id: "8A00A00000000001"
+				id: "69BC6A7D699C552C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Certus that farms itself"
-			tasks: [
-				{
-					id: "8A00B00000000100"
-					item: "ae2:growth_accelerator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6F5059C7764055BF"
+				item: "ae2:growth_accelerator"
+				type: "item"
+			}]
 			title: "&bCrystal Growth"
 			x: -9.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["8A00000000000001"]
 			description: [
 				"AE2 has four cable types and they are not cosmetic."
 				""
@@ -1048,21 +1045,21 @@
 				"&7Smart cable's coloured lines tell you at a glance which branch is saturated. Use it while building, even if you swap it later.&r"
 			]
 			icon: "ae2:fluix_smart_cable"
-			id: "8A00000000000002"
+			id: "4A2562FC80C2A537"
 			rewards: [{
-				id: "8A00A00000000002"
+				id: "2DB1B94CFCE53776"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Glass, covered, smart, dense"
 			tasks: [
 				{
-					id: "8A00B00000000200"
+					id: "27451607AD4D75A2"
 					item: "ae2:fluix_glass_cable"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000201"
+					id: "46DE7F76A182DE16"
 					item: "ae2:fluix_smart_cable"
 					type: "item"
 				}
@@ -1072,7 +1069,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["8A00000000000002"]
 			description: [
 				"A &eP2P Tunnel&r pair carries something from one point to another through your existing cable - items, fluids, energy, redstone, light, or ME channels themselves."
 				""
@@ -1085,20 +1081,18 @@
 				"&8This is the block that separates a tidy AE2 base from a spaghetti one."
 			]
 			icon: "ae2:me_p2p_tunnel"
-			id: "8A00000000000003"
+			id: "5D8B26978072FC06"
 			rewards: [{
-				id: "8A00A00000000003"
+				id: "66F7DB3B09AE8B49"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One cable, many services"
-			tasks: [
-				{
-					id: "8A00B00000000300"
-					item: "ae2:me_p2p_tunnel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "157EF30FF106D21C"
+				item: "ae2:me_p2p_tunnel"
+				type: "item"
+			}]
 			title: "&bP2P Tunnels"
 			x: -9.0d
 			y: -5.5d
@@ -1117,26 +1111,23 @@
 				"&8Also works on other mods' storage - a bus on a Mekanism QIO or a Refined Storage network bridges the two."
 			]
 			icon: "ae2:storage_bus"
-			id: "8A00000000000004"
+			id: "2C838F63119A5CA9"
 			rewards: [{
-				id: "8A00A00000000004"
+				id: "29F73684676F0F42"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Make any chest part of the network"
-			tasks: [
-				{
-					id: "8A00B00000000400"
-					item: "ae2:storage_bus"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2D39D69E2D42E87A"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
 			title: "&bStorage Bus"
 			x: -7.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["8A00000000000004"]
 			description: [
 				"An &eME Interface&r exposes network items to a machine or pipe; a &ePattern Provider&r pushes crafting ingredients into machines."
 				""
@@ -1149,21 +1140,21 @@
 				"&7Extended AE's Expanded Pattern Provider holds 72 patterns instead of 9 - a straight upgrade once you have a lot of recipes.&r"
 			]
 			icon: "ae2:interface"
-			id: "8A00000000000005"
+			id: "652EF2A6E105C1B1"
 			rewards: [{
-				id: "8A00A00000000005"
+				id: "4B668098181064D8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The network's hands"
 			tasks: [
 				{
-					id: "8A00B00000000500"
+					id: "3E29C6EBA7392AE3"
 					item: "ae2:interface"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000501"
+					id: "0C5C569206646EC5"
 					item: "ae2:pattern_provider"
 					type: "item"
 				}
@@ -1173,7 +1164,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8A00000000000005"]
 			description: [
 				"A &eLevel Emitter&r emits a redstone signal when a chosen item in the network rises above or falls below a threshold you set."
 				""
@@ -1184,26 +1174,23 @@
 				"&8Combine with a Toggle Bus to switch whole sections of network on and off - useful for keeping idle power draw down on a big base."
 			]
 			icon: "ae2:level_emitter"
-			id: "8A00000000000006"
+			id: "044623BF57F787F6"
 			rewards: [{
-				id: "8A00A00000000006"
+				id: "0F97DFB71B90126B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Redstone from stock levels"
-			tasks: [
-				{
-					id: "8A00B00000000600"
-					item: "ae2:level_emitter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "74542AAD71E37E9F"
+				item: "ae2:level_emitter"
+				type: "item"
+			}]
 			title: "&bLevel Emitter"
 			x: -5.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["8A00000000000006"]
 			description: [
 				"An &eAnnihilation Plane&r breaks the block in front of it and stores the drop; a &eFormation Plane&r places blocks from the network into the world."
 				""
@@ -1214,21 +1201,21 @@
 				"&8Fit them with speed and fortune cards. A fortune-enchanted annihilation plane on an ore block is a genuinely good multiplier."
 			]
 			icon: "ae2:annihilation_plane"
-			id: "8A00000000000007"
+			id: "1E2150C2C3C4C452"
 			rewards: [{
-				id: "8A00A00000000007"
+				id: "188E59C4A9686433"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The network touches the world"
 			tasks: [
 				{
-					id: "8A00B00000000700"
+					id: "7C7A478097CFB0B6"
 					item: "ae2:annihilation_plane"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000701"
+					id: "790FE57ABCE71289"
 					item: "ae2:formation_plane"
 					type: "item"
 				}
@@ -1249,26 +1236,23 @@
 				"&7The workbench also copies a configuration between cells, so you can set one up and clone it.&r"
 			]
 			icon: "ae2:cell_workbench"
-			id: "8A00000000000008"
+			id: "1F7659A11AFEC31E"
 			rewards: [{
-				id: "8A00A00000000008"
+				id: "488D655902EFE9BA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Partition your storage"
-			tasks: [
-				{
-					id: "8A00B00000000800"
-					item: "ae2:cell_workbench"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "224B9BC4E1B63DB7"
+				item: "ae2:cell_workbench"
+				type: "item"
+			}]
 			title: "&bCell Workbench"
 			x: -5.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["8A00000000000008"]
 			description: [
 				"&eFluid Storage Cells&r hold liquids in the same drives as your item cells, viewable and extractable from the terminal."
 				""
@@ -1279,26 +1263,23 @@
 				"&8Fluid cells have the same type limits as item cells. Partition them the same way."
 			]
 			icon: "ae2:fluid_storage_cell_1k"
-			id: "8A00000000000009"
+			id: "1793251D802CE994"
 			rewards: [{
-				id: "8A00A00000000009"
+				id: "53380AB88B22B82C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Store more than items"
-			tasks: [
-				{
-					id: "8A00B00000000900"
-					item: "ae2:fluid_storage_cell_1k"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "39983BAAE48EB691"
+				item: "ae2:fluid_storage_cell_1k"
+				type: "item"
+			}]
 			title: "&bFluid & Chemical Cells"
 			x: -3.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["8A00000000000008"]
 			description: [
 				"An &eME IO Port&r bulk-transfers cells in or out of the network; a &eMatter Condenser&r destroys items, optionally turning them into singularities."
 				""
@@ -1309,21 +1290,21 @@
 				"&c&lThe Condenser destroys permanently.&r Filter it carefully - a mis-set storage bus on a condenser will eat your entire network."
 			]
 			icon: "ae2:io_port"
-			id: "8A0000000000000A"
+			id: "6533A593E80924EB"
 			rewards: [{
-				id: "8A00A0000000000A"
+				id: "1D16C7D7AA02B287"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Bulk cell management, and a bin"
 			tasks: [
 				{
-					id: "8A00B00000000A00"
+					id: "65770D507EEE9973"
 					item: "ae2:io_port"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000A01"
+					id: "298491823B8C52F9"
 					item: "ae2:condenser"
 					type: "item"
 				}
@@ -1333,7 +1314,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8A0000000000000A"]
 			description: [
 				"A &eStorage Monitor&r displays how much of one item the network holds; a &eConversion Monitor&r does the same and lets you deposit or withdraw by clicking it."
 				""
@@ -1342,21 +1322,21 @@
 				"&7Conversion monitors are genuinely convenient at a build site: click with a stack to deposit, click empty-handed to withdraw one, crouch-click for a full stack.&r"
 			]
 			icon: "ae2:storage_monitor"
-			id: "8A0000000000000B"
+			id: "5ED6ADA1949CC240"
 			rewards: [{
-				id: "8A00A0000000000B"
+				id: "73E59F94EC632ED7"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Read and touch stock"
 			tasks: [
 				{
-					id: "8A00B00000000B00"
+					id: "1815547E03786EC5"
 					item: "ae2:storage_monitor"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000B01"
+					id: "71AD9CF9CC9783A9"
 					item: "ae2:conversion_monitor"
 					type: "item"
 				}
@@ -1366,7 +1346,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8A0000000000000B"]
 			description: [
 				"The &eME Security Terminal&r controls who can access your network and what they can do."
 				""
@@ -1377,26 +1356,23 @@
 				"&8Only one security terminal per network."
 			]
 			icon: "ae2:security_station"
-			id: "8A0000000000000C"
+			id: "69C3FB8C2BF4A6DD"
 			rewards: [{
-				id: "8A00A0000000000C"
+				id: "067EBF52FBD51334"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Lock the network"
-			tasks: [
-				{
-					id: "8A00B00000000C00"
-					item: "ae2:security_station"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1D6E0EAEF8664738"
+				item: "ae2:security_station"
+				type: "item"
+			}]
 			title: "&bSecurity Terminal"
 			x: 1.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["8A0000000000000C"]
 			description: [
 				"The &eNetwork Tool&r shows a network's full device list and lets you install upgrade cards without breaking anything; the &eColor Applicator&r recolours cables."
 				""
@@ -1407,21 +1383,21 @@
 				"&7AE2 also has an Entropy Manipulator (smelt or freeze blocks in place), a Matter Cannon (fires stored matter) and a Charged Staff. All powered from the network.&r"
 			]
 			icon: "ae2:network_tool"
-			id: "8A0000000000000D"
+			id: "33DAE58708C2B807"
 			rewards: [{
-				id: "8A00A0000000000D"
+				id: "352817BCC60485D7"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Quality of life"
 			tasks: [
 				{
-					id: "8A00B00000000D00"
+					id: "776371FEF79CC7B5"
 					item: "ae2:network_tool"
 					type: "item"
 				}
 				{
-					id: "8A00B00000000D01"
+					id: "4AB7B80B58FE3CB5"
 					item: "ae2:color_applicator"
 					type: "item"
 				}
@@ -1431,7 +1407,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["8A00000000000008"]
 			description: [
 				"An &eME Chest&r holds a single storage cell and gives you a terminal on the front. No controller, no cables, no channels."
 				""
@@ -1442,20 +1417,18 @@
 				"&8Feed it power with an energy acceptor or it will not open."
 			]
 			icon: "ae2:chest"
-			id: "8A0000000000000E"
+			id: "1909EB9D3CC75812"
 			rewards: [{
-				id: "8A00A0000000000E"
+				id: "5367EA823DE44A60"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7A network of one"
-			tasks: [
-				{
-					id: "8A00B00000000E00"
-					item: "ae2:chest"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0F3B6443C3A92ABA"
+				item: "ae2:chest"
+				type: "item"
+			}]
 			title: "&bME Chest"
 			x: -1.0d
 			y: 2.5d
@@ -1472,26 +1445,23 @@
 				"&7MEGA Cells adds a MEGA Crafting Accelerator that is worth the Venus trip if you are doing serious autocrafting.&r"
 			]
 			icon: "ae2:crafting_accelerator"
-			id: "8A0000000000000F"
+			id: "7FAD9215CF11B4A6"
 			rewards: [{
-				id: "8A00A0000000000F"
+				id: "34F3B12A3715A4DE"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Make jobs finish"
-			tasks: [
-				{
-					id: "8A00B00000000F00"
-					item: "ae2:crafting_accelerator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "787B1577052F98CE"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
 			title: "&bCrafting Accelerators"
 			x: 5.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["8A0000000000000F"]
 			description: [
 				"A &eCrafting Monitor&r attached to a CPU displays the job currently running on it."
 				""
@@ -1500,26 +1470,23 @@
 				"&7Name your CPUs with an anvil-renamed Crafting Unit so the monitor tells you which one is busy.&r"
 			]
 			icon: "ae2:crafting_monitor"
-			id: "8A00000000000010"
+			id: "7672FC5AE642EFD0"
 			rewards: [{
-				id: "8A00A00000000010"
+				id: "414107D05F93792C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7See what the network is doing"
-			tasks: [
-				{
-					id: "8A00B00000001000"
-					item: "ae2:crafting_monitor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1A163A1A538C3DF4"
+				item: "ae2:crafting_monitor"
+				type: "item"
+			}]
 			title: "&bCrafting Monitor"
 			x: 7.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["8A0000000000000C"]
 			description: [
 				"A &eToggle Bus&r cuts a section of network on a redstone signal; a &eQuartz Fiber&r passes power between two networks without passing channels."
 				""
@@ -1530,21 +1497,21 @@
 				"&8Toggle buses paired with level emitters let the network switch parts of itself off when idle."
 			]
 			icon: "ae2:toggle_bus"
-			id: "8A00000000000011"
+			id: "667F2847FF4FF7B8"
 			rewards: [{
-				id: "8A00A00000000011"
+				id: "6A0419973848A19D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Split and switch"
 			tasks: [
 				{
-					id: "8A00B00000001100"
+					id: "4AE28AD521B9E68E"
 					item: "ae2:toggle_bus"
 					type: "item"
 				}
 				{
-					id: "8A00B00000001101"
+					id: "40D18BDEAACA3BB5"
 					item: "ae2:quartz_fiber"
 					type: "item"
 				}
@@ -1554,12 +1521,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"8A00000000000003"
-				"8A00000000000007"
-				"8A00000000000010"
-				"8A00000000000011"
-			]
 			description: [
 				"&b&lYou understand the network.&r"
 				""
@@ -1570,16 +1531,16 @@
 				"&8What is left is MEGA Cells and Spatial Storage - both behind Venus."
 			]
 			icon: "ae2:controller"
-			id: "8A00000000000012"
+			id: "36188A1AB4313FC1"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "8A00A00000000012"
+				id: "081FE301A41AA663"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Channels, tunnels and jobs"
 			tasks: [{
-				id: "8A00B00000001200"
+				id: "3AB0A56D88C07344"
 				title: "Complete"
 				type: "checkmark"
 			}]

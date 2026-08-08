@@ -519,6 +519,252 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"Super Factory Manager starts with the &eLabel Gun&r: you shoot inventories to give them names, then write a program that refers to those names."
+				""
+				"&e&lThat is the whole idea.&r Instead of routing pipes, you label a chest 'ore', label a machine 'smelter', and write &7EVERY 20 TICKS DO INPUT FROM ore OUTPUT TO smelter&r."
+				""
+				"&7Labels are shared across the whole manager network, and one inventory can hold several labels.&r"
+				""
+				"&8Label everything as you build it. Retrofitting labels onto an existing base is the tedious part."
+			]
+			icon: "sfm:labelgun"
+			id: "9300000000000001"
+			rewards: [{
+				id: "9300A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Name things, then program them"
+			tasks: [
+				{
+					id: "9300B00000000100"
+					item: "sfm:labelgun"
+					type: "item"
+				}
+			]
+			title: "&bSFM: Labels"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9300000000000001"]
+			description: [
+				"The &eManager&r runs your program. The syntax is close to English and the in-game editor autocompletes it."
+				""
+				"&e&lA real example:&r"
+				"&7EVERY 20 TICKS DO"
+				"&7  INPUT 64 iron_ingot FROM storage"
+				"&7  OUTPUT TO furnace_input"
+				"&7END&r"
+				""
+				"&e&lIt handles items, fluids, energy and gases&r with the same syntax, across any distance the network reaches, with filters, priorities and round-robin built in."
+				""
+				"&c&lOne manager can replace an entire base's pipework.&r That is not an exaggeration - this is the single biggest quality-of-life mod in the pack."
+			]
+			icon: "sfm:manager"
+			id: "9300000000000002"
+			rewards: [{
+				id: "9300A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Plain-English automation"
+			tasks: [
+				{
+					id: "9300B00000000200"
+					item: "sfm:manager"
+					type: "item"
+				}
+			]
+			title: "&bSFM: Programs"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9300000000000002"]
+			description: [
+				"Beyond simple moves, SFM supports conditionals, redstone triggers, and resource-count checks."
+				""
+				"&e&lIF statements let a program react:&r only smelt when ore is above a threshold, only run the reactor when power is low, only craft when stock drops."
+				""
+				"&7Because the program is text, you can copy it, version it and paste it into another manager - which makes duplicating a working setup trivial.&r"
+				""
+				"&8The in-game documentation covers the full syntax. It is short and worth reading once."
+			]
+			icon: "sfm:manager"
+			id: "9300000000000003"
+			rewards: [{
+				id: "9300A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Conditionals and resource tracking"
+			tasks: [{
+				id: "9300B00000000300"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&bSFM: Advanced Patterns"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6AF9FD70EB5A15AB"]
+			description: [
+				"An &eXNet Controller&r plus &eNetwork Cable&r gives you a single GUI that configures every connector on the network."
+				""
+				"&e&lThe model is channels.&r Each channel handles one job - items, fluids, energy or logic - and each connector on that channel is configured from the controller rather than by walking to it."
+				""
+				"&7That central configuration is XNet's advantage over pipes: changing a filter means opening one screen, not finding one block.&r"
+			]
+			icon: "xnet:controller"
+			id: "9300000000000004"
+			rewards: [{
+				id: "9300A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Channels, centrally configured"
+			tasks: [
+				{
+					id: "9300B00000000400"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					id: "9300B00000000401"
+					item: "xnet:connector_routing"
+					type: "item"
+				}
+			]
+			title: "&bXNet: Controllers & Cables"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9300000000000004"]
+			description: [
+				"&eConnectors&r attach to inventories and machines. Each one gets a name and a set of channel roles in the controller GUI."
+				""
+				"&e&lPriority and round-robin are built in&r, so splitting output between several machines evenly, or preferring one until it is full, is a dropdown rather than a build."
+				""
+				"&7Advanced Connectors extend range and throughput. The Wireless Router links separate XNet networks, including across dimensions.&r"
+				""
+				"&8SFM and XNet solve the same problem differently - SFM is a program, XNet is a control panel. Most people end up using both."
+			]
+			icon: "xnet:connector_blue"
+			id: "9300000000000005"
+			rewards: [{
+				id: "9300A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Per-side control"
+			tasks: [
+				{
+					id: "9300B00000000500"
+					item: "xnet:connector_blue"
+					type: "item"
+				}
+			]
+			title: "&bXNet: Connectors & Filters"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9300000000000005"]
+			description: [
+				"A &eModular Router&r holds up to nine modules, each performing one action on the items passing through it."
+				""
+				"&e&lThe module list is the mod:&r Extractor, Placer, Breaker, Vacuum, Activator, Sender, Dropper, Flinger, Puller, Distributor."
+				""
+				"&e&lAn Activator module right-clicks with whatever you give it&r, which makes a router into a bone-mealer, a bucket-filler, or a farm harvester depending on the item."
+				""
+				"&7Cheap, available very early, and one router genuinely replaces a small pipe network.&r"
+			]
+			icon: "modularrouters:modular_router"
+			id: "9300000000000006"
+			rewards: [{
+				id: "9300A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One block, nine modules"
+			tasks: [
+				{
+					id: "9300B00000000600"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+			]
+			title: "&bModular Routers"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9300000000000006"]
+			description: [
+				"&ePretty Pipes&r are cheap filtered item pipes - and they come with a &eCrafting Terminal&r."
+				""
+				"&e&lThat terminal is the point.&r It gives you AE2-style search-and-craft across plain chests, long before AE2 is realistic. On a fresh world it is the fastest route to organised storage."
+				""
+				"&7Modules add filtering, extraction and retrieval. The network needs no controller and no power.&r"
+				""
+				"&8Not a replacement for AE2 at scale, but it fills the entire mid-game gap where AE2 is unaffordable."
+			]
+			icon: "prettypipes:crafting_terminal"
+			id: "9300000000000007"
+			rewards: [{
+				id: "9300A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Cheap pipes with a terminal"
+			tasks: [
+				{
+					id: "9300B00000000700"
+					item: "prettypipes:crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "&bPretty Pipes"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"9300000000000003"
+				"9300000000000005"
+				"9300000000000007"
+			]
+			description: [
+				"&b&lYou now have five different ways to move an item&r - SFM programs, XNet channels, Modular Routers, Pretty Pipes and plain Mekanism transporters."
+				""
+				"&7They overlap deliberately. SFM for complex logic across a whole base, XNet for centrally-managed channels, Routers for one clever action, Pretty Pipes for early-game convenience, and transporters when you just want a pipe.&r"
+				""
+				"&8Pick per problem rather than per mod. Using all five in one base is normal here."
+			]
+			icon: "sfm:manager"
+			id: "9300000000000008"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "9300A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Five ways to move an item"
+			tasks: [{
+				id: "9300B00000000800"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&b&lThe Base Runs Itself"
+			x: 0.0d
+			y: 3.8d
+		}
 	]
 	title: "&bSide Quest · Program the Base"
 }

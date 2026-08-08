@@ -239,6 +239,308 @@
 			x: -2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["0F16000000000001"]
+			description: [
+				"Industrial Foregoing machines are built on &eMachine Frames&r in four tiers - Pity, Simple, Advanced and Supreme."
+				""
+				"&e&lEach tier is crafted from the one below&r, so the ladder is cumulative and the later machines are genuinely expensive. Budget accordingly."
+				""
+				"&7Almost every machine in this chapter is a frame plus contents, so set up a frame production line before you start building specific machines.&r"
+			]
+			icon: "industrialforegoing:machine_frame_pity"
+			id: "8D00000000000001"
+			rewards: [{
+				id: "8D00A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Pity, Simple, Advanced, Supreme"
+			tasks: [
+				{
+					id: "8D00B00000000100"
+					item: "industrialforegoing:machine_frame_pity"
+					type: "item"
+				}
+			]
+			title: "&2Machine Frames"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000001"]
+			description: [
+				"The &eLaser Drill&r fires into the void beneath it and produces ore, biased by the coloured &eLenses&r you surround it with."
+				""
+				"&e&lThis is the single most useful IF machine on a skyblock.&r It needs no terrain - it generates ore from power and depth alone. Place it, aim it downward into nothing, and it produces."
+				""
+				"&e&lLens colour changes the odds.&r Each ore is weighted to a colour; ring the drill with lenses of one colour and that ore dominates the output. Check JEI for the colour-to-ore mapping."
+				""
+				"&c&lDepth matters.&r Output improves the lower the drill sits, which on a floating island means building a shaft down toward the void."
+				""
+				"&7Slow and power-hungry, but completely passive and it never runs out.&r"
+			]
+			icon: "industrialforegoing:laser_drill"
+			id: "8D00000000000002"
+			rewards: [{
+				id: "8D00A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Ore from nothing"
+			tasks: [
+				{
+					id: "8D00B00000000200"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000201"
+					item: "industrialforegoing:laser_lens"
+					type: "item"
+				}
+			]
+			title: "&2Laser Drill & Lenses"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000002"]
+			description: [
+				"A &ePlant Sower&r plants seeds in its working area; a &ePlant Gatherer&r harvests everything grown there."
+				""
+				"&e&lUnlike the Cyclic Harvester, this pair replants.&r Sower and Gatherer sharing a range is a complete closed farm - no Botany Pots, no Mystical Agriculture regrowth needed."
+				""
+				"&e&lIt harvests trees too&r, including the leaves, which makes it the easiest automatic wood and sapling farm in the pack."
+				""
+				"&7Set the working area with a Range Addon. Bigger range costs more power and more time per cycle.&r"
+				""
+				"&8The Gatherer also produces Sludge as a by-product - feed it to the Sludge Refiner rather than voiding it."
+			]
+			icon: "industrialforegoing:plant_gatherer"
+			id: "8D00000000000003"
+			rewards: [{
+				id: "8D00A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automatic farms, any crop"
+			tasks: [
+				{
+					id: "8D00B00000000300"
+					item: "industrialforegoing:plant_gatherer"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000301"
+					item: "industrialforegoing:plant_sower"
+					type: "item"
+				}
+			]
+			title: "&2Plant Gatherer & Sower"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000003"]
+			description: [
+				"The &eMob Duplicator&r spawns mobs from Essence and a captured soul; the &eMob Slaughter Factory&r kills everything in its range and collects the drops."
+				""
+				"&e&lTogether they are a complete mob farm in two blocks&r - no platform, no spawn conditions, no fall damage, no player nearby."
+				""
+				"&e&lEssence is the fuel&r, produced by the Mob Slaughter Factory itself or by the Enchantment Extractor. The loop can be made self-sustaining once running."
+				""
+				"&7Use a Mob Imprisonment Tool to capture the mob you want, then put it in the Duplicator.&r"
+				""
+				"&8The Slaughter Factory also outputs Pink Slime, which has its own uses and its own slightly alarming mob."
+			]
+			icon: "industrialforegoing:mob_duplicator"
+			id: "8D00000000000004"
+			rewards: [{
+				id: "8D00A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Industrial mob farming"
+			tasks: [
+				{
+					id: "8D00B00000000400"
+					item: "industrialforegoing:mob_duplicator"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000401"
+					item: "industrialforegoing:mob_slaughter_factory"
+					type: "item"
+				}
+			]
+			title: "&2Mob Duplicator & Slaughter Factory"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000004"]
+			description: [
+				"A &eBlack Hole Unit&r stores an enormous quantity of a single item; a &eBlack Hole Tank&r does the same for one fluid."
+				""
+				"&e&lThey are the right answer for bulk.&r Cobblestone, dust, ore chunks and sludge belong in these rather than in AE2 cells - and a Black Hole Controller exposes a wall of them to your storage network as one inventory."
+				""
+				"&7They keep contents when broken, so they double as portable bulk transport.&r"
+				""
+				"&8Pair with an AE2 storage bus on the Black Hole Controller and your network sees everything without spending a single cell type."
+			]
+			icon: "industrialforegoing:black_hole_unit"
+			id: "8D00000000000005"
+			rewards: [{
+				id: "8D00A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Effectively infinite storage"
+			tasks: [
+				{
+					id: "8D00B00000000500"
+					item: "industrialforegoing:black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000501"
+					item: "industrialforegoing:black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "&2Black Hole Units & Tanks"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000005"]
+			description: [
+				"The &eBiofuel Generator&r burns biofuel made from crops; the &eProtein Generator&r burns protein made from meat and mob drops."
+				""
+				"&e&lBoth close a loop you already have open.&r Your Plant Gatherer produces surplus crops; your Mob Slaughter Factory produces surplus meat. Feed them here and the farms part-fund their own power."
+				""
+				"&7The Petrified Fuel Generator is the odd one - it burns solid fuel but gets more efficient the longer it runs uninterrupted, so it rewards a steady supply.&r"
+			]
+			icon: "industrialforegoing:biofuel_generator"
+			id: "8D00000000000006"
+			rewards: [{
+				id: "8D00A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Power from farm output"
+			tasks: [
+				{
+					id: "8D00B00000000600"
+					item: "industrialforegoing:biofuel_generator"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000601"
+					item: "industrialforegoing:protein_generator"
+					type: "item"
+				}
+			]
+			title: "&2Biofuel & Protein Generators"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8D00000000000006"]
+			description: [
+				"The &eEnchantment Extractor&r pulls enchantments off items into books; the &eApplicator&r puts them back onto something else."
+				""
+				"&e&lThis is an enchantment laundry.&r Feed it enchanted junk from a mob farm or fishing, strip the enchantments to books, and apply the ones you want to your real gear."
+				""
+				"&7It runs on Essence, which your mob farm already produces. The whole chain - kill, extract, apply - automates.&r"
+				""
+				"&8Far more reliable than an enchanting table, and it needs no bookshelves or lapis."
+			]
+			icon: "industrialforegoing:enchantment_applicator"
+			id: "8D00000000000007"
+			rewards: [{
+				id: "8D00A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Books from XP"
+			tasks: [
+				{
+					id: "8D00B00000000700"
+					item: "industrialforegoing:enchantment_extractor"
+					type: "item"
+				}
+				{
+					id: "8D00B00000000701"
+					item: "industrialforegoing:enchantment_applicator"
+					type: "item"
+				}
+			]
+			title: "&2Enchantment Factory"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8D00000000000007"]
+			description: [
+				"The &eMaterial Stonework Factory&r performs a programmable chain of stone operations - crush, smelt, cut, shape - in one machine."
+				""
+				"&e&lIt replaces a whole row of machines.&r Cobble in, and out comes whatever you configured: gravel, sand, smooth stone, slabs, or anything down that chain."
+				""
+				"&7Configure the operation list in its GUI. Each step is applied in order, so you can go cobble to gravel to sand to glass in a single pass.&r"
+				""
+				"&8Genuinely useful in this pack, where cobblestone is infinite and everything downstream of it is a bottleneck."
+			]
+			icon: "industrialforegoing:material_stonework_factory"
+			id: "8D00000000000008"
+			rewards: [{
+				id: "8D00A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One block, every stone recipe"
+			tasks: [
+				{
+					id: "8D00B00000000800"
+					item: "industrialforegoing:material_stonework_factory"
+					type: "item"
+				}
+			]
+			title: "&2Material Stonework Factory"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"8D00000000000008"
+				"8D00000000000006"
+			]
+			description: [
+				"&2&lYou have automated the things a void island cannot naturally do.&r"
+				""
+				"Ore from a laser pointed at nothing. Crops planted and harvested by machines. Mobs spawned and slaughtered on demand. Enchantments stripped and reapplied. And storage measured in the millions."
+				""
+				"&7Industrial Foregoing is the most &lskyblock-shaped&r mod in this pack - almost everything it does works without terrain, mobs or biomes.&r"
+			]
+			icon: "industrialforegoing:laser_drill"
+			id: "8D00000000000009"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "8D00A00000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Ore, farms and mobs from power"
+			tasks: [{
+				id: "8D00B00000000900"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&2&lIndustrial Foregoing Complete"
+			x: 6.0d
+			y: 2.2d
+		}
 	]
 	title: "&bIndustrial Foregoing"
 }

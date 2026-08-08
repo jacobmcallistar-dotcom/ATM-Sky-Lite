@@ -506,6 +506,282 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7E20000000000001"]
+			description: [
+				"Thermal's generators are called &eDynamos&r, and there are five: Stirling (solid fuel), Compression (liquid fuel), Magmatic (lava), Numismatic (coins and gems) and Lapidary (gems)."
+				""
+				"&e&lThey all take the same augments&r, which is the point of Thermal - one upgrade system across every machine and dynamo."
+				""
+				"&7Fuel Catalysts make fuel last longer; Boost augments raise output at the cost of efficiency. Pick per dynamo depending on whether fuel or throughput is your constraint.&r"
+				""
+				"&8The Magmatic Dynamo pairs with your Cyclic Melter loop - infinite cobble to lava to power."
+			]
+			icon: "thermal:dynamo_stirling"
+			id: "9200000000000001"
+			rewards: [{
+				id: "9200A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Thermal's generators"
+			tasks: [
+				{
+					id: "9200B00000000100"
+					item: "thermal:dynamo_stirling"
+					type: "item"
+				}
+			]
+			title: "&6Dynamos"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9200000000000001"]
+			description: [
+				"&eAugments&r slot into every Thermal machine and dynamo, and they are what makes the mod worth using."
+				""
+				"&e&lThe main families:&r"
+				"&7- &fUpgrade&7 - raises the machine's whole tier at once"
+				"&7- &fSpeed / Efficiency&7 - the usual trade"
+				"&7- &fAuxiliary&7 - machine-specific extras like extra output chance"
+				"&7- &fFluid / Item tank&7 - bigger internal buffers"
+				""
+				"&c&lAugment slots are limited by machine tier&r, so an Upgrade augment often pays for itself by unlocking more slots."
+				""
+				"&7Because it is one system, anything you learn on a Pulverizer applies to every other Thermal block you ever place.&r"
+			]
+			icon: "thermal:machine_crafter"
+			id: "9200000000000002"
+			rewards: [{
+				id: "9200A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One upgrade system, every machine"
+			tasks: [
+				{
+					id: "9200B00000000200"
+					item: "thermal:machine_crafter"
+					type: "item"
+				}
+			]
+			title: "&6Augments"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9200000000000002"]
+			description: [
+				"The &ePulverizer&r grinds ore into dust; the &eRedstone Furnace&r smelts it. Together they are Thermal's 2x ore chain."
+				""
+				"&e&lThey are the cheapest ore doubling in the pack&r and available very early - well before Mekanism's chain is practical."
+				""
+				"&7Both have auto-eject, so chaining them with no pipes at all works: pulverizer facing furnace facing a chest.&r"
+				""
+				"&8The Pulverizer also gives bonus outputs - nickel from iron, gold from copper - which Mekanism's chain does not."
+			]
+			icon: "thermal:machine_pulverizer"
+			id: "9200000000000003"
+			rewards: [{
+				id: "9200A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The starter pair"
+			tasks: [
+				{
+					id: "9200B00000000300"
+					item: "thermal:machine_pulverizer"
+					type: "item"
+				}
+				{
+					id: "9200B00000000301"
+					item: "thermal:machine_furnace"
+					type: "item"
+				}
+			]
+			title: "&6Pulverizer & Redstone Furnace"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9200000000000003"]
+			description: [
+				"The &eInduction Smelter&r combines two inputs - the alloying machine, and Thermal's route to richer ore processing."
+				""
+				"&e&lWith Rich Slag or Cinnabar it produces extra output&r, taking Thermal's ore chain past simple doubling."
+				""
+				"&7It makes every Thermal alloy: Electrum, Invar, Constantan, Signalum, Lumium, Enderium. Those alloys are what the higher machines and augments are built from.&r"
+			]
+			icon: "thermal:machine_smelter"
+			id: "9200000000000004"
+			rewards: [{
+				id: "9200A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Alloys and 3x ore"
+			tasks: [
+				{
+					id: "9200B00000000400"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
+			title: "&6Induction Smelter"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9200000000000004"]
+			description: [
+				"The &eCentrifugal Separator&r splits materials into components; the &eMagma Crucible&r melts solids into fluids; the &eBlast Chiller&r freezes fluids into solids."
+				""
+				"&e&lThe Crucible is the useful one here&r - it turns cobblestone into lava directly, which feeds Magmatic Dynamos and your obsidian line without a Cyclic Melter."
+				""
+				"&7The Centrifuge processes mob drops, ores and sludge into usable components. It is the tidiest way to deal with Industrial Foregoing's by-products.&r"
+			]
+			icon: "thermal:machine_centrifuge"
+			id: "9200000000000005"
+			rewards: [{
+				id: "9200A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Centrifuge, Crucible, Chiller"
+			tasks: [
+				{
+					id: "9200B00000000500"
+					item: "thermal:machine_centrifuge"
+					type: "item"
+				}
+				{
+					id: "9200B00000000501"
+					item: "thermal:machine_crucible"
+					type: "item"
+				}
+			]
+			title: "&6Fluid Machines"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9200000000000005"]
+			description: [
+				"Thermal's &eDevices&r are cheap single-purpose blocks: Collector, Nullifier, Item Buffer, Fluid Buffer, XP Collector, Rock Gen, Water Gen, Tree Extractor."
+				""
+				"&e&lThe Rock Gen and Water Gen are quietly excellent on a skyblock&r - infinite stone and infinite water with no build, no lava, no pool."
+				""
+				"&7The Nullifier is a void bin. The Collector is a vacuum. The Buffers are filtered inline storage with throughput control.&r"
+				""
+				"&8None of them are exciting. Most of them remove a chore you have been tolerating."
+			]
+			icon: "thermal:machine_insolator"
+			id: "9200000000000006"
+			rewards: [{
+				id: "9200A00000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Small blocks, large effect"
+			tasks: [
+				{
+					id: "9200B00000000600"
+					item: "thermal:machine_insolator"
+					type: "item"
+				}
+			]
+			title: "&6Devices"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["9200000000000006"]
+			description: [
+				"Thermal's &eDucts&r carry energy, fluid and items, and they are among the cheapest transport in the pack."
+				""
+				"&e&lItemducts have built-in filtering and round-robin&r without needing a separate sorter block, which makes small sorting jobs very quick to build."
+				""
+				"&7They connect straight to any FE machine, so a Thermal duct network can carry Mekanism, AE2 and Powah power equally well.&r"
+			]
+			icon: "thermal:energy_duct"
+			id: "9200000000000007"
+			rewards: [{
+				id: "9200A00000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Thermal's transport"
+			tasks: [
+				{
+					id: "9200B00000000700"
+					item: "thermal:energy_duct"
+					type: "item"
+				}
+			]
+			title: "&6Fluiducts & Itemducts"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["9200000000000007"]
+			description: [
+				"Every Thermal machine can have its sides configured for input, output or nothing, and its internal tanks and slots locked."
+				""
+				"&e&lAuto-eject is the setting that matters.&r Turn it on and the machine pushes output to whatever is adjacent - which is why a Thermal setup often needs no pipes at all."
+				""
+				"&7Redstone control on every machine lets you gate production on a signal without extra blocks.&r"
+			]
+			icon: "thermal:machine_press"
+			id: "9200000000000008"
+			rewards: [{
+				id: "9200A00000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every machine, every side"
+			tasks: [
+				{
+					id: "9200B00000000800"
+					item: "thermal:machine_press"
+					type: "item"
+				}
+			]
+			title: "&6Tinkering & Reconfiguration"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"9200000000000008"
+				"9200000000000006"
+			]
+			description: [
+				"&6&lThermal is the least glamorous mod in this pack and one of the most useful.&r"
+				""
+				"One augment system across every block. Auto-eject that removes pipes entirely. Ore doubling available before anything else offers it. And a Rock Gen that quietly solves the skyblock's oldest problem."
+				""
+				"&7Nothing here is required. Most of it makes everything else easier.&r"
+			]
+			icon: "thermal:machine_smelter"
+			id: "9200000000000009"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "9200A00000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The quiet workhorse"
+			tasks: [{
+				id: "9200B00000000900"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&6&lThermal Complete"
+			x: 0.0d
+			y: 3.8d
+		}
 	]
 	title: "&6Side Quest · The Second Industry"
 }

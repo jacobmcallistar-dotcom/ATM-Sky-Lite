@@ -86,6 +86,148 @@
 			x: 2.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["598E4E0BE319AF70"]
+			description: [
+				"Compact Machines come in six sizes - &eTiny&r, &eSmall&r, &eNormal&r, &eLarge&r, &eGiant&r and &eMaximum&r - from a 3x3 room up to 15x15."
+				""
+				"&e&lThe block is always one block.&r Only the interior grows, so a Maximum machine is still a single block on your island holding a 15x15x15 room."
+				""
+				"&7On a floating platform where space and chunk-loading both cost you, that is the entire point. An ore-processing line that would sprawl across your island fits in one block.&r"
+				""
+				"&8Start with a Normal. Upgrading later means rebuilding the interior, so leave yourself room."
+			]
+			icon: "compactmachines:machine_normal"
+			id: "8E00000000000001"
+			rewards: [{
+				id: "8E00A00000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Tiny to Maximum"
+			tasks: [
+				{
+					id: "8E00B00000000100"
+					item: "compactmachines:machine_tiny"
+					type: "item"
+				}
+			]
+			title: "&fMachine Sizes"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8E00000000000001"]
+			description: [
+				"Tunnels are the only thing that crosses a machine wall. Place them on the &linside&r wall and a matching port appears outside."
+				""
+				"&e&lThree kinds:&r item, fluid and energy. Each is directional - set it with a wrench to push in or pull out."
+				""
+				"&c&lColour-code them.&r With more than two tunnels it becomes very hard to tell which outside face belongs to which inside wall. Dye them as you place them."
+				""
+				"&7You can have many tunnels per machine, so a single Compact Machine can take power in, materials in, and push three different outputs to three different destinations.&r"
+			]
+			icon: "compactmachines:tunnel"
+			id: "8E00000000000002"
+			rewards: [{
+				id: "8E00A00000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Item, fluid, energy"
+			tasks: [
+				{
+					id: "8E00B00000000200"
+					item: "compactmachines:tunnel"
+					type: "item"
+				}
+			]
+			title: "&fTunnel Types"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8E00000000000002"]
+			description: [
+				"The &ePersonal Shrinking Device&r lets you enter any Compact Machine you own by right-clicking it, and leave with a command or the device again."
+				""
+				"&7Without it you would have to build a door structure. With it, machines are just rooms you step into.&r"
+				""
+				"&8Keep one in your hotbar permanently once you start using Compact Machines seriously."
+			]
+			icon: "compactmachines:personal_shrinking_device"
+			id: "8E00000000000003"
+			rewards: [{
+				id: "8E00A00000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Walk in and out"
+			tasks: [
+				{
+					id: "8E00B00000000300"
+					item: "compactmachines:personal_shrinking_device"
+					type: "item"
+				}
+			]
+			title: "&fPersonal Shrinking Device"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8E00000000000003"]
+			description: [
+				"A Compact Machine's interior only ticks while the block holding it is loaded."
+				""
+				"&c&lForce-load the chunk the MACHINE sits in&r, not some imaginary chunk inside it. A machine in an unloaded chunk is a room where nothing happens."
+				""
+				"&e&lThis is also the mod's biggest performance advantage.&r One loaded chunk holding a 15x15 factory is far cheaper than the same factory spread across four chunks."
+				""
+				"&7Combined with the standing rule on this server about not slowing things down, Compact Machines are the tidiest way to run a lot of machinery.&r"
+			]
+			icon: "compactmachines:wall"
+			id: "8E00000000000004"
+			rewards: [{
+				id: "8E00A00000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Ticking inside the block"
+			tasks: [
+				{
+					id: "8E00B00000000400"
+					item: "compactmachines:wall"
+					type: "item"
+				}
+			]
+			title: "&fLoading & Limits"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8E00000000000004"]
+			description: [
+				"&f&lYour factory is one block.&r"
+				""
+				"&7Compact Machines does not add power, ore or automation. It adds &lspace&r - which on a floating island in the void is the one resource you genuinely cannot make more of.&r"
+			]
+			icon: "compactmachines:machine_maximum"
+			id: "8E00000000000005"
+			rewards: [{
+				id: "8E00A00000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Space, solved"
+			tasks: [{
+				id: "8E00B00000000500"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&f&lRoom In A Block"
+			x: 4.0d
+			y: 1.5d
+		}
 	]
 	title: "&2Compact Machines"
 }
