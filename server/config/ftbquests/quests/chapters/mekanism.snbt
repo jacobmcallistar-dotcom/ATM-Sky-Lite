@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "mekanism:steel_casing"
 	id: "3C1F000000000010"
-	order_index: 2
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -1927,6 +1927,107 @@
 			title: "&9&lMaster of Mekanism"
 			x: 1.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"&eWind Generators&r love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."
+				""
+				"&e&lThis is the one generator a skyblock is actually good at.&r Output scales with Y level, and you start higher than most players ever build. Free real estate."
+				""
+				"&e&lThe rules that matter:&r"
+				"&7- &fOutput rises with altitude.&7 Build them on your highest platform, not at base level."
+				"&7- &fThey need open sky.&7 Blocks directly above kill them."
+				"&7- &fThey do not need fuel, water, or attention.&7 Ever."
+				"&7- &fSome dimensions have no wind at all&7 - do not plan a Moon base around them."
+				""
+				"&e&lThey are individually weak.&r One will not run a Purification Chamber. The answer is quantity - a field of twenty is trivially cheap, silent, and needs nothing from you again."
+				""
+				"&7Wire them into an Energy Cube rather than straight to machines. Wind output is steady but small, and the buffer is what turns a trickle into something that can handle a burst of demand.&r"
+				""
+				"&8Cheap enough to be your first real grid, weak enough that you will still want Powah reactors later. Build both."
+			]
+			icon: "mekanismgenerators:wind_generator"
+			id: "2103000000000005"
+			rewards: [{
+				id: "2103000000000105"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Power that scales with height"
+			tasks: [{
+				id: "2103000000000205"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			title: "&9Sky Power"
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"An &eEnergy Cube&r buffers your generators so machines never starve between gusts. Your first real battery - bigger storage comes with the Induction Matrix."
+				""
+				"&e&lWhy a buffer is not optional.&r Generators produce a steady trickle; machines demand in bursts. Wire a Purification Chamber straight to a wind farm and it stutters. Put a cube between them and the same farm runs it smoothly, because the cube absorbs the peaks."
+				""
+				"&e&lConfigure the sides.&r Right-click, open the config tab, and set each face to input or output. A cube with every side on the same mode will happily push power back into your generators and do nothing useful. This is the most common wiring mistake in Mekanism."
+				""
+				"&e&lFour tiers&r - Basic, Advanced, Elite, Ultimate - each holding far more and transferring faster. Upgrade in place with the tier installers; you keep the stored charge."
+				""
+				"&7They are portable. A charged cube in your inventory will refill Free Runners, a Meka-Tool or a jetpack in the field.&r"
+				""
+				"&8Put one next to any machine that runs intermittently. It is cheaper than a bigger generator and fixes the same problem."
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "2103000000000006"
+			rewards: [{
+				id: "2103000000000106"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Buffer your grid"
+			tasks: [{
+				id: "2103000000000206"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "&9Store Some Power"
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"The &eInduction Matrix&r is Mekanism's mega-battery - a multiblock that stores millions of FE and buffers your whole reactor output."
+				""
+				"Build the casing and a cell. Your endgame machines will drain more than any single generator can push; this is what feeds them."
+			]
+			icon: "mekanism:induction_casing"
+			id: "210300000000000A"
+			rewards: [{
+				id: "210300000000010A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "gear"
+			subtitle: "&7Mega power storage"
+			tasks: [
+				{
+					count: 4L
+					id: "210300000000020A"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "210300000000021B"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+			]
+			title: "&9The Induction Matrix"
+			x: -7.0d
+			y: -3.0d
 		}
 	]
 	title: "&9Tech Branch · Mekanism"

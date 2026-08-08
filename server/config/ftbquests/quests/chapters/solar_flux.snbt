@@ -1,0 +1,225 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "solar_flux"
+	group: "1A2B000000000002"
+	icon: "solarflux:sp_4"
+	id: "3C1F00000000001A"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e&lSolar Flux Reborn.&r The one resource a floating island has in unlimited supply is unobstructed sky."
+				""
+				"&7Eight panel tiers, six cell tiers, and an upgrade system that keeps early panels useful long after you have outgrown them. No fuel, no water, no ash - place them on the roof and forget they exist.&r"
+				""
+				"&8It stops at night. Pair it with a buffer or a fuel generator and it will quietly carry your base's baseline load forever."
+			]
+			icon: "solarflux:sp_1"
+			id: "7D00000000000001"
+			rewards: [{
+				id: "7D01000000000001"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Eight tiers of free power"
+			tasks: [{
+				id: "7D02000000000001"
+				title: "Begin"
+				type: "checkmark"
+			}]
+			title: "&eSolar Flux"
+			x: -6.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["7D00000000000001"]
+			description: [
+				"On a void skyblock you have one resource in genuinely infinite supply: unobstructed sky."
+				""
+				"&eSolar Flux Reborn&r turns that into power, and unlike vanilla-style solars it scales all the way up - eight tiers, each a straight upgrade of the last, with &eupgrade&r slots for capacity, efficiency and dispersion so a panel you place now stays useful much later."
+				""
+				"No fuel, no water, no ash. Put them on the roof and forget them."
+			]
+			icon: "solarflux:sp_1"
+			id: "7E30300000000001"
+			rewards: [{
+				id: "7E30300000000101"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Free power, infinite sky"
+			tasks: [
+				{
+					id: "7E30300000000201"
+					item: "solarflux:photovoltaic_cell_1"
+					type: "item"
+				}
+				{
+					id: "7E30300000000211"
+					item: "solarflux:sp_1"
+					type: "item"
+				}
+			]
+			title: "&9Solar Flux"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E30300000000001"]
+			description: [
+				"&ePhotovoltaic Cells&r are what each solar panel tier is built around - six cell tiers feeding eight panel tiers."
+				""
+				"&e&lEach cell is crafted from the one below it&r, so the ladder is cumulative. Budget for that: a tier-6 cell contains every cell beneath it."
+				""
+				"&7Blazing Coating, Emerald Glass and Ender Glass are the other inputs as you climb. Ender Glass in particular means ender pearls, which on a void island means a Neural Networks enderman model or Mystical Agriculture.&r"
+			]
+			icon: "solarflux:photovoltaic_cell_1"
+			id: "7D00000000000002"
+			rewards: [{
+				id: "7D01000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The component in every panel"
+			tasks: [
+				{
+					id: "7D02000000000200"
+					item: "solarflux:photovoltaic_cell_1"
+					type: "item"
+				}
+			]
+			title: "&ePhotovoltaic Cells"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D00000000000002"]
+			description: [
+				"Solar Flux panels run &7sp_1&r through &7sp_8&r, and unlike most solar mods the top tiers are genuinely worth having - the ladder does not flatten out."
+				""
+				"&e&lUpgrade in place.&r A higher-tier panel can be crafted around a lower one, so panels you place now are not wasted when you climb."
+				""
+				"&c&lThey produce nothing at night and less in bad weather.&r Pair the array with an Energy Cell sized to carry your base until dawn, or run Powah Furnators alongside to cover the gap."
+				""
+				"&7A floating island is close to the ideal site - nothing shadows anything, so every panel runs at full output all day.&r"
+			]
+			icon: "solarflux:sp_4"
+			id: "7D00000000000003"
+			rewards: [{
+				id: "7D01000000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Eight rungs, each a straight upgrade"
+			tasks: [
+				{
+					id: "7D02000000000300"
+					item: "solarflux:sp_4"
+					type: "item"
+				}
+			]
+			title: "&ePanel Tiers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D00000000000003"]
+			description: [
+				"Every panel has upgrade slots, and this is what separates Solar Flux from ordinary solar panels."
+				""
+				"&e&lThe ones that matter:&r"
+				"&7- &fEfficiency&7 - more FE per tick"
+				"&7- &fCapacity&7 - bigger internal buffer, so a panel carries further into the night"
+				"&7- &fTransfer Rate&7 - pushes power out faster"
+				"&7- &fLow Light&7 - keeps producing in rain and at dusk"
+				"&7- &fTraversal&7 - the panel pushes power to machines through blocks, no cable needed"
+				"&7- &fDispersive&7 - charges items in nearby players' inventories"
+				"&7- &fBlock Charging&7 - charges adjacent machines directly"
+				""
+				"&e&lTraversal plus Dispersive is the combination worth building for&r - a roof of panels that silently keeps your whole base and your gear charged with no wiring at all."
+			]
+			icon: "solarflux:efficiency_upgrade"
+			id: "7D00000000000004"
+			rewards: [{
+				id: "7D01000000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Where Solar Flux gets interesting"
+			tasks: [
+				{
+					id: "7D02000000000400"
+					item: "solarflux:blank_upgrade"
+					type: "item"
+				}
+			]
+			title: "&eUpgrades"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D00000000000003"]
+			description: [
+				"A &eMirror&r placed near a panel reflects extra sunlight into it, raising that panel's output."
+				""
+				"&e&lMirrors are far cheaper than panels&r, so ringing one high-tier panel with mirrors is usually better value than placing several more panels."
+				""
+				"&7They need line of sight to the panel and to the sky. On a flat roof they work; tucked between blocks they do nothing.&r"
+			]
+			icon: "solarflux:mirror"
+			id: "7D00000000000005"
+			rewards: [{
+				id: "7D01000000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Point more sun at one panel"
+			tasks: [
+				{
+					id: "7D02000000000500"
+					item: "solarflux:mirror"
+					type: "item"
+				}
+			]
+			title: "&eMirrors"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D00000000000004"
+				"7D00000000000005"
+			]
+			description: [
+				"&e&lA full Solar Flux array asks nothing of you again.&r No fuel, no water, no waste, no maintenance."
+				""
+				"&7It will not run a fission reactor or an Ultimate Factory bank on its own - for that you want Powah reactors or a Mekanism turbine. But as the baseline that keeps lights, sieves and storage alive with zero attention, it is the best value in the pack.&r"
+				""
+				"&8Solar panels also work on other planets. Output scales with distance from the sun - excellent on Mercury and Venus, poor on Glacio."
+			]
+			icon: "solarflux:sp_8"
+			id: "7D00000000000006"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7D01000000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Free power, forever"
+			tasks: [{
+				id: "7D02000000000600"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&e&lSolar Complete"
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "&eSolar Flux"
+}

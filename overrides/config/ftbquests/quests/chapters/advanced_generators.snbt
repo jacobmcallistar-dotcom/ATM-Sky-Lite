@@ -1,0 +1,276 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "advanced_generators"
+	group: "1A2B000000000002"
+	icon: "advgenerators:controller"
+	id: "3C1F00000000001B"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6&lAdvanced Generators.&r Every other power mod hands you a machine. This one hands you parts."
+				""
+				"&7You assemble a hollow multiblock from frames and modules - a controller, a fuel input, a heat source, a turbine, an output - and the mod derives the machine's stats from whatever you built. Want more power? Build a bigger box.&r"
+				""
+				"&e&lIt runs on almost anything&r - solid fuel, liquid fuel or gas - which makes it the natural home for whatever by-product you happen to have too much of."
+				""
+				"&8Cheap materials, high ceiling, and no tier ladder to grind."
+			]
+			icon: "advgenerators:controller"
+			id: "7E00000000000001"
+			rewards: [{
+				id: "7E01000000000001"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Design the machine yourself"
+			tasks: [{
+				id: "7E02000000000001"
+				title: "Begin"
+				type: "checkmark"
+			}]
+			title: "&6Advanced Generators"
+			x: -6.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["7E00000000000001"]
+			description: [
+				"Panels get you started. &eAdvanced Generators&r is what you build when \"more panels\" stops being an answer."
+				""
+				"It is a multiblock kit rather than a machine: assemble a frame from &eIron Frames&r and &eTubing&r, add a &eController&r, then bolt on the pieces you actually need - fuel tanks, item and fluid inputs, power outputs, heat exchangers, turbine rotors."
+				""
+				"You design the generator's shape and capacity yourself, which means it scales to whatever your base is actually drawing rather than to a fixed tier."
+			]
+			icon: "advgenerators:controller"
+			id: "7E30300000000002"
+			rewards: [
+				{
+					id: "7E30300000000102"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7E30300000000103"
+					type: "random"
+				}
+			]
+			subtitle: "&7Build the generator you need"
+			tasks: [
+				{
+					count: 8L
+					id: "7E30300000000202"
+					item: "advgenerators:iron_frame"
+					type: "item"
+				}
+				{
+					id: "7E30300000000212"
+					item: "advgenerators:controller"
+					type: "item"
+				}
+				{
+					id: "7E30300000000222"
+					item: "advgenerators:fe_output"
+					type: "item"
+				}
+			]
+			title: "&9Advanced Generators"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E30300000000002"]
+			description: [
+				"&eAdvanced Generators&r builds generators as multiblocks you design yourself, and the &7Controller&r is the block that makes a pile of parts into a machine."
+				""
+				"&e&lThe idea:&r you assemble a hollow box from generator modules - a controller, power output, fuel input, and as many capacity modules as you want - and the mod works out its stats from what you built. A bigger box makes more power."
+				""
+				"&7Right-click the controller to see the assembled machine's rating and whether it is missing anything. It tells you what is wrong rather than silently failing.&r"
+				""
+				"&8This is the most build-it-yourself power mod in the pack. If you like designing machines rather than placing them, this is your chapter."
+			]
+			icon: "advgenerators:controller"
+			id: "7E00000000000002"
+			rewards: [{
+				id: "7E01000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every generator starts here"
+			tasks: [
+				{
+					id: "7E02000000000200"
+					item: "advgenerators:controller"
+					type: "item"
+				}
+			]
+			title: "&6The Controller"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E00000000000002"]
+			description: [
+				"&eIron Frames&r, &eTubing&r and &eWiring&r are the structural blocks every Advanced Generators multiblock is built from."
+				""
+				"&e&lThey are deliberately cheap.&r The cost of a big generator here is bulk iron, not exotic materials - which suits a pack where you are sieving iron by the stack anyway."
+				""
+				"&7Build the shell first, then fit modules. An incomplete shell will not form, and the controller will tell you which face is open.&r"
+			]
+			icon: "advgenerators:iron_frame"
+			id: "7E00000000000003"
+			rewards: [{
+				id: "7E01000000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7The shell"
+			tasks: [
+				{
+					id: "7E02000000000300"
+					item: "advgenerators:iron_frame"
+					type: "item"
+				}
+				{
+					id: "7E02000000000301"
+					item: "advgenerators:iron_tubing"
+					type: "item"
+				}
+			]
+			title: "&6Frames & Tubing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E00000000000003"]
+			description: [
+				"A &eHeating Chamber&r burns fuel to make heat; a &eFuel Tank&r buffers what it burns."
+				""
+				"&e&lWhat you can feed it:&r solid fuel, liquid fuel, or gas. That flexibility is the reason to build one - it will happily run on whatever you have surplus of, which changes as the pack progresses."
+				""
+				"&7Bio fuel from your Mekanism Crusher, ethene from the PRC, or plain charcoal from surplus saplings all work. Pipe it in and buffer it - a generator fed directly from production stalls whenever production hiccups.&r"
+			]
+			icon: "advgenerators:heating_chamber"
+			id: "7E00000000000004"
+			rewards: [{
+				id: "7E01000000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Feeding the machine"
+			tasks: [
+				{
+					id: "7E02000000000400"
+					item: "advgenerators:heating_chamber"
+					type: "item"
+				}
+				{
+					id: "7E02000000000401"
+					item: "advgenerators:fuel_tank"
+					type: "item"
+				}
+			]
+			title: "&6Fuel & Heat"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E00000000000004"]
+			description: [
+				"A &eSteam Turbine&r converts heat and water into rotational power and then FE; a &eHeat Exchanger&r moves heat between parts of the system."
+				""
+				"&e&lTurbine kits and rotors come in five tiers&r, and the tier sets both throughput and efficiency. As with Mekanism's Industrial Turbine, the usual bottleneck is not the rotor but everything around it - check the controller readout rather than guessing."
+				""
+				"&7There is also a Fuel Turbine that burns fuel directly, skipping the steam stage. Less efficient, far simpler, and a reasonable first build.&r"
+			]
+			icon: "advgenerators:steam_turbine_controller"
+			id: "7E00000000000005"
+			rewards: [{
+				id: "7E01000000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Heat into power"
+			tasks: [
+				{
+					id: "7E02000000000500"
+					item: "advgenerators:steam_turbine_controller"
+					type: "item"
+				}
+			]
+			title: "&6Turbines & Exchangers"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E00000000000004"]
+			description: [
+				"An &eFE Output&r module is how power leaves the multiblock, and &ePower Capacitors&r buffer it inside."
+				""
+				"&c&lA generator with no output module produces nothing you can use.&r It will happily run, fill its internal buffer and stop. This is the single most common Advanced Generators mistake."
+				""
+				"&e&lCapacitor tiers raise internal storage&r, which smooths delivery to a spiky load - the same reasoning as a Mekanism Energy Cube, built into the machine."
+				""
+				"&7Efficiency Upgrades reduce fuel consumption per FE. On a fuel-limited setup they pay for themselves quickly.&r"
+			]
+			icon: "advgenerators:fe_output"
+			id: "7E00000000000006"
+			rewards: [{
+				id: "7E01000000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Getting the power out"
+			tasks: [
+				{
+					id: "7E02000000000600"
+					item: "advgenerators:fe_output"
+					type: "item"
+				}
+				{
+					id: "7E02000000000601"
+					item: "advgenerators:power_capacitor_tier1"
+					type: "item"
+				}
+			]
+			title: "&6Output & Capacitors"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7E00000000000005"
+				"7E00000000000006"
+			]
+			description: [
+				"&6&lYou designed a power plant rather than placing one.&r"
+				""
+				"&7Advanced Generators is the odd one out among this pack's power mods - it has no tier ladder to climb, just a box you make as big as you need and a set of modules to fit. Two players' builds will not look alike.&r"
+				""
+				"&8Between this, Powah, Solar Flux, Mekanism turbines and Create alternators, there are five completely different ways to power this base. None of them is wrong."
+			]
+			icon: "advgenerators:controller"
+			id: "7E00000000000007"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7E01000000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7A generator you designed"
+			tasks: [{
+				id: "7E02000000000700"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&6&lBuilt To Spec"
+			x: 4.0d
+			y: 1.5d
+		}
+	]
+	title: "&6Advanced Generators"
+}

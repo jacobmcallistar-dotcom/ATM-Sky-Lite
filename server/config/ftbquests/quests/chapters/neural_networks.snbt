@@ -1,0 +1,361 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "neural_networks"
+	group: "1A2B000000000002"
+	icon: "hostilenetworks:deep_learner"
+	id: "3C1F000000000019"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&9&lHostile Neural Networks.&r Kill a mob once, and then farm it forever without ever seeing another one."
+				""
+				"&7A void island has no biomes, no structures and almost nowhere for mobs to spawn. This mod sidesteps the entire problem: train a &fData Model&7 by killing a mob while carrying it, then run that model in a &fSimulation Chamber&7 to produce that mob's drops on demand.&r"
+				""
+				"&e&lThe loop:&r &7train the model &8→&7 simulate it &8→&7 get Predictions &8→&7 fabricate the exact drop you want&r."
+				""
+				"&8Everything here runs on Forge Energy and everything automates. It is the most reliable drop source in the pack."
+			]
+			icon: "hostilenetworks:sim_chamber"
+			id: "7C00000000000001"
+			rewards: [{
+				id: "7C01000000000001"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Farm mobs that cannot spawn"
+			tasks: [{
+				id: "7C02000000000001"
+				title: "Begin"
+				type: "checkmark"
+			}]
+			title: "&9Neural Networks"
+			x: -8.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["7C00000000000001"]
+			description: [
+				"&9Hostile Neural Networks&r farms mobs without a mob farm. Put a blank Data Model in a &eDeep Learner&r, hold it while you kill that mob, and the model learns."
+				""
+				"Train a Wither Skeleton, a Blaze, an Enderman - anything you would rather not hunt by hand."
+			]
+			icon: "hostilenetworks:deep_learner"
+			id: "2103000000000008"
+			rewards: [{
+				count: 2
+				id: "2103000000000108"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			subtitle: "&7Teach a machine to hunt"
+			tasks: [{
+				id: "2103000000000208"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
+			title: "&9Learning to Kill"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000008"]
+			description: [
+				"The &eSimulation Chamber&r runs a trained model over and over, on power, forever. The &eLoot Fabricator&r turns its predictions into the real drops."
+				""
+				"Wither skulls, ender pearls, blaze rods, gunpowder - on tap, while you sleep. Your mob problem is now a mob subscription."
+			]
+			icon: "hostilenetworks:sim_chamber"
+			id: "2103000000000009"
+			rewards: [{
+				count: 8
+				id: "2103000000000109"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Drops on demand"
+			tasks: [
+				{
+					id: "2103000000000209"
+					item: "hostilenetworks:sim_chamber"
+					type: "item"
+				}
+				{
+					id: "210300000000021A"
+					item: "hostilenetworks:loot_fabricator"
+					type: "item"
+				}
+			]
+			title: "&9The Kill Simulator"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2103000000000009"]
+			description: [
+				"Your Simulation Chamber pays out in &ePredictions&r - proof of simulated kills. The Loot Fabricator converts them into that mob's real drop table."
+				""
+				"Stack up Overworld Predictions and you have a mob grinder that fits on a shelf."
+			]
+			icon: "hostilenetworks:overworld_prediction"
+			id: "210300000000000E"
+			rewards: [{
+				count: 2
+				id: "2103000000000110"
+				item: "hostilenetworks:nether_prediction"
+				type: "item"
+			}]
+			subtitle: "&7Simulated kills, real loot"
+			tasks: [{
+				count: 4L
+				id: "210300000000020E"
+				item: "hostilenetworks:overworld_prediction"
+				type: "item"
+			}]
+			title: "&9Prediction Economy"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["210300000000000E"]
+			description: ["&eExtra Hostile Neural Networks&r adds the Merger Camera: combine 4 data models into a single, better one. Fewer Simulation Chambers cluttering your farm, more prediction output per machine."]
+			icon: "extrahnn:merger_camera"
+			id: "3A913DD38D067B8F"
+			rewards: [{
+				id: "5935DE0F918BBF0A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&74 models into 1"
+			tasks: [{
+				id: "44CE0D628477B7A4"
+				item: "extrahnn:merger_camera"
+				type: "item"
+			}]
+			title: "&9Model Merging"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C00000000000001"]
+			description: [
+				"The &eDeep Learner&r holds up to four Data Models and trains them while you fight."
+				""
+				"&e&lThis is the whole mod in one item.&r Put a model in the Learner, hold or wear it, and every kill of that mob feeds the model. When it reaches the next tier it produces better output in the Simulation Chamber."
+				""
+				"&e&lThe tier ladder:&r &7Faulty &8→ &7Basic &8→ &7Advanced &8→ &7Superior &8→ &7Self Aware&r. Each tier needs more kills than the last, and yields more predictions per simulation."
+				""
+				"&c&lIn a void world this is how you farm mobs you cannot spawn.&r No overworld, no biomes, no structures - but a model trained once produces that mob's drops forever. Blaze, Wither Skeleton, Enderman, all of it."
+				""
+				"&7Kills only count while the model is in a Deep Learner you are carrying. Killing things with the model in a chest teaches it nothing.&r"
+			]
+			icon: "hostilenetworks:deep_learner"
+			id: "7C00000000000002"
+			rewards: [{
+				id: "7C01000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Wear your models to train them"
+			tasks: [
+				{
+					id: "7C02000000000200"
+					item: "hostilenetworks:deep_learner"
+					type: "item"
+				}
+			]
+			title: "&9The Deep Learner"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C00000000000002"]
+			description: [
+				"A &eBlank Data Model&r becomes a mob-specific model the first time you kill that mob while carrying it in a Deep Learner."
+				""
+				"&e&lChoose deliberately.&r A model is locked to whatever you killed first, so do not walk into a zombie with a blank model in your Learner unless zombies are what you wanted."
+				""
+				"&e&lThe models worth making early:&r"
+				"&7- &fBlaze&7 - rods, and you have no Nether fortress"
+				"&7- &fEnderman&7 - pearls, which Powah and AE2 both eat"
+				"&7- &fWither Skeleton&7 - skulls, so the Wither becomes repeatable"
+				"&7- &fGuardian / Shulker&7 - drops with no other source on an island"
+				""
+				"&8Blanks are cheap. Make several and train them in parallel across multiple Deep Learners."
+			]
+			icon: "hostilenetworks:blank_data_model"
+			id: "7C00000000000003"
+			rewards: [{
+				id: "7C01000000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7One per mob you want to farm"
+			tasks: [
+				{
+					id: "7C02000000000300"
+					item: "hostilenetworks:blank_data_model"
+					type: "item"
+				}
+			]
+			title: "&9Blank Data Models"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2103000000000009"]
+			description: [
+				"A &ePrediction Matrix&r is the blank that the Simulation Chamber fills. Feed matrices in, get mob-specific &7Predictions&r out."
+				""
+				"&e&lThis is the consumable that makes the whole loop run&r, and it is the thing you will always be short of. Automate matrix production before you scale up simulation, or your chambers idle waiting on input."
+				""
+				"&7The chamber consumes one matrix per simulation and returns a Prediction of the model's mob. Higher model tiers mean a better chance of a filled prediction rather than a wasted matrix.&r"
+				""
+				"&8Pipe matrices in and predictions out with any item transport - Mekanism transporters, Pipez, AE2 buses. This is a factory, not a hand-crank."
+			]
+			icon: "hostilenetworks:prediction_matrix"
+			id: "7C00000000000004"
+			rewards: [{
+				id: "7C01000000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Turn data into drops"
+			tasks: [
+				{
+					id: "7C02000000000400"
+					item: "hostilenetworks:prediction_matrix"
+					type: "item"
+				}
+			]
+			title: "&9Prediction Matrix"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C00000000000004"]
+			description: [
+				"The &eLoot Fabricator&r converts Predictions into that mob's actual drops - and you choose which drop."
+				""
+				"&e&lThat last part is the point.&r A real mob farm gives you whatever the loot table rolls. This gives you exactly the drop you selected, every time. Want only blaze rods and never blaze powder? Set it and walk away."
+				""
+				"&e&lThe full loop:&r"
+				"&7Deep Learner trains model &8→&7 Sim Chamber + matrix &8→&7 Prediction &8→&7 Loot Fabricator &8→&7 chosen drop&r"
+				""
+				"&7Every stage takes FE and every stage automates. Once built, this is the most reliable drop source in the pack - no spawn conditions, no light levels, no platform.&r"
+			]
+			icon: "hostilenetworks:loot_fabricator"
+			id: "7C00000000000005"
+			rewards: [{
+				id: "7C01000000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Predictions into actual items"
+			tasks: [
+				{
+					id: "7C02000000000500"
+					item: "hostilenetworks:loot_fabricator"
+					type: "item"
+				}
+			]
+			title: "&9The Loot Fabricator"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C00000000000004"]
+			description: [
+				"Beyond mob drops, the chamber produces &eOverworld&r, &eNether&r, &eEnd&r and &eTwilight Predictions&r - dimensional loot tables rather than a single mob's drops."
+				""
+				"&e&lThe Twilight prediction is the interesting one here&r, because this pack gates so much behind the Twilight Forest. It is not a substitute for killing the bosses - trophies and Fiery Blood are boss-only - but it does supply the ordinary Twilight materials without repeated trips."
+				""
+				"&7Each dimensional prediction rolls from that dimension's general loot rather than giving a chosen item, so treat them as bulk supply rather than targeted farming.&r"
+			]
+			icon: "hostilenetworks:nether_prediction"
+			id: "7C00000000000006"
+			rewards: [{
+				id: "7C01000000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Nether, End and Twilight tables"
+			tasks: [
+				{
+					id: "7C02000000000600"
+					item: "hostilenetworks:nether_prediction"
+					type: "item"
+				}
+			]
+			title: "&9Dimensional Predictions"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A913DD38D067B8F"]
+			description: [
+				"&eExtra HNN&r's &7Merger Camera&r combines four data models of the same mob into a single higher-tier model."
+				""
+				"&e&lThis is the answer to Simulation Chamber sprawl.&r Rather than running eight chambers on eight half-trained models, merge them and run two chambers on fully-trained ones. Same output, a quarter of the blocks ticking."
+				""
+				"&7That matters on this server specifically - every chamber is a block ticking constantly, and the standing rule here is nothing that slows the machine down.&r"
+				""
+				"&8Extra HNN also adds the Ultimate Loot Fabricator, which processes far more predictions per operation than the base version."
+			]
+			icon: "extrahnn:merger_camera"
+			id: "7C00000000000007"
+			rewards: [{
+				id: "7C01000000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Four models into one"
+			tasks: [
+				{
+					id: "7C02000000000700"
+					item: "extrahnn:merger_camera"
+					type: "item"
+				}
+			]
+			title: "&9Model Merging"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7C00000000000005"
+				"7C00000000000007"
+			]
+			description: [
+				"&9&lA Self Aware model is the ceiling&r - maximum prediction yield per simulation, and the point at which a single model out-produces most conventional farms."
+				""
+				"&7Getting there is a grind of kills, which is exactly what the Deep Learner is for: it trains passively while you do everything else. Wear one permanently and your models level themselves while you mine, build and fight.&r"
+				""
+				"&8Between this and Mystical Agriculture, a void island can produce essentially every material in the game without a single spawner."
+			]
+			icon: "hostilenetworks:data_model"
+			id: "7C00000000000008"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7C01000000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Top tier, every model"
+			tasks: [{
+				id: "7C02000000000800"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&9&lSelf Aware"
+			x: 8.0d
+			y: 0.8d
+		}
+	]
+	title: "&9Neural Networks"
+}

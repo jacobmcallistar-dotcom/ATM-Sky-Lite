@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "thermal:machine_pulverizer"
 	id: "3C1F000000000017"
-	order_index: 12
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{

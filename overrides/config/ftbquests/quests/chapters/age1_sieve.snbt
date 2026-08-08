@@ -788,6 +788,116 @@
 			x: -8.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."
+				""
+				"&e&lThis is the second half of Age I's automation&r - the Flux Sieve handled sifting, this handles the hammering that feeds it. Together they replace the entire manual chain you started the pack with."
+				""
+				"&e&lThe full hands-off line:&r"
+				"&7Cobble generator &8→&7 &fMechanical Hammer&7 &8→&7 gravel &8→&7 &fFlux Sieve&7 &8→&7 ore chunks &8→&7 &fEnergized Smelter&7 &8→&7 ingots&r"
+				""
+				"Every stage takes FE, and every stage runs while you are asleep, in the Twilight Forest, or on Mars."
+				""
+				"&7Unlike a hand hammer it has no durability and never needs replacing. Unlike the Create Millstone it does not care about rotation speed or stress - it just wants power.&r"
+				""
+				"&8Put a filtered pipe on the output so gravel goes to the sieve and sand goes wherever you want it. Left unsorted, the hammer will happily crush its own output down to dust."
+			]
+			icon: "exdeorum:mechanical_hammer"
+			id: "210300000000000C"
+			rewards: [{
+				id: "210300000000010D"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "gear"
+			subtitle: "&7Your wrists are free"
+			tasks: [{
+				id: "210300000000020C"
+				item: "exdeorum:mechanical_hammer"
+				type: "item"
+			}]
+			title: "&9The Mechanical Hammer"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"The &eMechanical Sieve&r is the moment skyblock changes forever: powered, automatic sieving. Ore chunks, gems and seeds pour out while you build somewhere else."
+				""
+				"Hopper in gravel, cable in power, pipe out the loot. The hand-sieve retires today."
+			]
+			icon: "exdeorum:mechanical_sieve"
+			id: "210300000000000D"
+			rewards: [
+				{
+					count: 16
+					id: "210300000000010E"
+					item: "exdeorum:compressed_gravel"
+					type: "item"
+				}
+				{
+					id: "210300000000010F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Sieving, fully automated"
+			tasks: [{
+				id: "210300000000020D"
+				item: "exdeorum:mechanical_sieve"
+				type: "item"
+			}]
+			title: "&9The Mechanical Sieve"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"Your Mechanical Sieve quest handed you &e16 Compressed Gravel&r. This is what it was for - and the book never told you until now."
+				""
+				"&e9 blocks compress into 1.&r A &eCompressed Sieve&r sifts that compressed block in a single pass, rolling all nine loot chances at once. Same for the &eCompressed Hammer&r line."
+				""
+				"&7Cobblestone &8→&r Compressed Cobblestone &8(9:1)&r"
+				"&7Compressed Hammer &8→&r Compressed Gravel &8→&r Compressed Sand &8→&r Compressed Dust&r"
+				"&7Compressed Sieve + mesh &8→&r nine sieves' worth of ore, in one go&r"
+				""
+				"The Mechanical Sieve and Mechanical Hammer both accept compressed blocks. Feed them compressed instead of loose and your whole ore chain runs &l9x&r without another watt of power."
+				""
+				"&8This is the single biggest throughput jump in the pack, and nothing else in the book mentions it."
+			]
+			icon: "exdeorum:oak_compressed_sieve"
+			id: "0AC0000000000001"
+			rewards: [
+				{
+					count: 16
+					id: "0AC0000000000101"
+					item: "exdeorum:compressed_gravel"
+					type: "item"
+				}
+				{
+					id: "0AC0000000000102"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&7Nine sieves in one pass"
+			tasks: [{
+				id: "0AC0000000000201"
+				item: "exdeorum:oak_compressed_sieve"
+				type: "item"
+			}]
+			title: "&9The Compressed Sieve"
+			x: 18.0d
+			y: 2.0d
+		}
 	]
 	title: "&2Age I · The Sieve"
 }

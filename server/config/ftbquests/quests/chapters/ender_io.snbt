@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "enderio:alloy_smelter"
 	id: "3C1F00000000000D"
-	order_index: 6
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
