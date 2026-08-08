@@ -546,6 +546,994 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["44EA000000000003"]
+			description: [
+				"A &eGearbox&r takes rotation in one axis and sends it out on another. Vertical shaft to horizontal, and back."
+				""
+				"&c&lIt reverses direction on the opposite side.&r Two outputs from one gearbox spin opposite ways. This is either exactly what you want or the reason your contraption is fighting itself."
+				""
+				"&7A &fVertical Gearbox&r does the same job in the other orientation. Use the Engineer's Goggles to see which way anything is actually turning.&r"
+				""
+				"&8Encased shafts and gearboxes look tidier and stop the rotation snagging on adjacent cogs you did not mean to connect."
+			]
+			icon: "create:gearbox"
+			id: "7F00000000000001"
+			rewards: [{
+				id: "7F01000000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Turn a corner"
+			tasks: [
+				{
+					id: "7F02000000000100"
+					item: "create:gearbox"
+					type: "item"
+				}
+			]
+			title: "&eGearboxes"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F00000000000001"]
+			description: [
+				"A &eClutch&r cuts rotation when powered. A &eGearshift&r reverses it."
+				""
+				"&e&lThese are your on/off switch and your reverse gear.&r Without them, a Create build runs the moment it has torque and never stops."
+				""
+				"&7Clutch: redstone on = downstream stops. Gearshift: redstone on = downstream spins the other way.&r"
+				""
+				"&e&lThe classic use is a piston contraption&r that needs to go out and come back - gearshift on the return, triggered by an observer or a timer."
+				""
+				"&8Pair with the Sequenced Gearshift below when you need timed, repeatable motion rather than a simple toggle."
+			]
+			icon: "create:clutch"
+			id: "7F00000000000002"
+			rewards: [{
+				id: "7F01000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Redstone control of rotation"
+			tasks: [
+				{
+					id: "7F02000000000200"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					id: "7F02000000000201"
+					item: "create:gearshift"
+					type: "item"
+				}
+			]
+			title: "&eClutch & Gearshift"
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F00000000000002"]
+			description: [
+				"The &eSequenced Gearshift&r runs a short program of rotation: turn this many degrees, wait, reverse, repeat."
+				""
+				"&e&lThis is how contraptions do precise, repeatable movement.&r A door that opens exactly 90 degrees, a drill that extends five blocks and retracts, a bridge that unfolds."
+				""
+				"&7Right-click to open the instruction list. Each row is one step - turn by angle, turn by distance, wait, or await a redstone signal. It runs the list once per redstone pulse.&r"
+				""
+				"&8The single most useful Create block for anyone who wants machines that look alive rather than just spinning."
+			]
+			icon: "create:sequenced_gearshift"
+			id: "7F00000000000003"
+			rewards: [{
+				id: "7F01000000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Programmed motion"
+			tasks: [
+				{
+					id: "7F02000000000300"
+					item: "create:sequenced_gearshift"
+					type: "item"
+				}
+			]
+			title: "&eSequenced Gearshift"
+			x: -12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F00000000000002"]
+			description: [
+				"The &eRotation Speed Controller&r sets the speed of a Large Cogwheel above it to any value you choose, regardless of input speed."
+				""
+				"&e&lThis removes the whole gearing puzzle.&r Instead of chaining cogwheels to reach a speed, you dial it in - including negative values to reverse."
+				""
+				"&c&lIt is expensive in stress.&r Speeding rotation up costs stress proportionally, so a controller cranked to maximum on a big network will brown out everything else."
+				""
+				"&7The correct use is one machine that needs a specific speed - a Mechanical Saw that wants to be slow, or a Millstone you want fast - rather than as the backbone of the whole build.&r"
+			]
+			icon: "create:rotation_speed_controller"
+			id: "7F00000000000004"
+			rewards: [{
+				id: "7F01000000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Set an exact RPM"
+			tasks: [
+				{
+					id: "7F02000000000400"
+					item: "create:rotation_speed_controller"
+					type: "item"
+				}
+			]
+			title: "&eRotation Speed Controller"
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F00000000000004"]
+			description: [
+				"A &eHand Crank&r gives you a burst of rotation on demand. A &eWindmill Bearing&r plus sails gives you free rotation forever."
+				""
+				"&e&lWindmills are the skyblock answer.&r Build a bearing, attach a cross of sail blocks, glue it together and start it. More sails means more stress capacity, and unlike a water wheel it needs no water and no fall."
+				""
+				"&7You need at least eight sail blocks for it to start. Bigger windmills are dramatically stronger - and on a floating island there is nothing to obstruct one.&r"
+				""
+				"&8Hand cranks are for one-off jobs: a single deployer, a door, a mechanical crafter you use twice. Do not build a base around one."
+			]
+			icon: "create:hand_crank"
+			id: "7F00000000000005"
+			rewards: [{
+				id: "7F01000000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Power without a water wheel"
+			tasks: [
+				{
+					id: "7F02000000000500"
+					item: "create:hand_crank"
+					type: "item"
+				}
+				{
+					id: "7F02000000000501"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			title: "&eHand Crank & Windmill"
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["44EA000000000005"]
+			description: [
+				"&eMechanical Belts&r carry items between machines. Place two shafts and connect them with a Belt Connector."
+				""
+				"&e&lBelts also transmit rotation&r along their length, so a belt is both a conveyor and a driveshaft. That is often the tidiest way to power a machine at the far end of a line."
+				""
+				"&7Items on a belt can be filtered, ejected, washed by a fan, pressed, or deployed onto - the belt is the surface most Create processing happens on.&r"
+				""
+				"&8Belts must run in a straight line between their two ends, at the same height or on a consistent diagonal. They will not curve."
+			]
+			icon: "create:belt_connector"
+			id: "7F00000000000006"
+			rewards: [{
+				id: "7F01000000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Move items with rotation"
+			tasks: [
+				{
+					id: "7F02000000000600"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Belts"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F00000000000006"]
+			description: [
+				"&eFunnels&r move items between belts, chests and machines - the connective tissue of every Create build."
+				""
+				"&e&lAndesite versus Brass:&r andesite funnels move items and nothing more. &7Brass funnels take a filter&r, so they only move what you tell them to."
+				""
+				"&c&lDirection matters and is easy to get backwards.&r Right-click a funnel with a wrench to flip whether it is inserting or extracting. A funnel facing the wrong way looks identical to a broken one."
+				""
+				"&7Funnels on a belt pull items off it; funnels on a chest push items onto it. Same block, opposite jobs, decided by which side you attached it to.&r"
+			]
+			icon: "create:andesite_funnel"
+			id: "7F00000000000007"
+			rewards: [{
+				id: "7F01000000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7In and out of everything"
+			tasks: [
+				{
+					id: "7F02000000000700"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "7F02000000000701"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			title: "&eFunnels"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F00000000000007"]
+			description: [
+				"&eChutes&r move items vertically - the thing belts cannot do."
+				""
+				"&e&lThey work both ways.&r Items fall down a chute by gravity, or an Encased Fan blowing upward through one will lift them. That is how you get output from a machine on the floor to a chest on the ceiling."
+				""
+				"&e&lSmart Chutes take a filter&r, exactly like brass funnels, so you can sort vertically."
+				""
+				"&7Chutes also pick items up off the ground beneath them, which makes them the neatest way to collect drops from a Mechanical Saw or a block breaker.&r"
+			]
+			icon: "create:chute"
+			id: "7F00000000000008"
+			rewards: [{
+				id: "7F01000000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Vertical item movement"
+			tasks: [
+				{
+					id: "7F02000000000800"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "7F02000000000801"
+					item: "create:smart_chute"
+					type: "item"
+				}
+			]
+			title: "&eChutes"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F00000000000008"]
+			description: [
+				"The &eWeighted Ejector&r flings items to a target you select with a wrench - across a gap, up a level, into a machine."
+				""
+				"&e&lIt is the cheapest way to cross a gap&r that a belt cannot span, and it looks considerably better than a chute-and-funnel chain."
+				""
+				"&7Set the target by wrenching the ejector then clicking the destination block. It shows you the arc before you commit.&r"
+				""
+				"&e&lIt also has a stack-size threshold&r - hold items until N have accumulated, then throw them all at once. Useful for batching."
+			]
+			icon: "create:weighted_ejector"
+			id: "7F00000000000009"
+			rewards: [{
+				id: "7F01000000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Launch items where you want them"
+			tasks: [
+				{
+					id: "7F02000000000900"
+					item: "create:weighted_ejector"
+					type: "item"
+				}
+			]
+			title: "&eWeighted Ejector"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000008"]
+			description: [
+				"&eItem Vaults&r are large-capacity storage blocks that &lmerge with each other&r into a single bigger inventory."
+				""
+				"&e&lPlace them in a rectangle and they become one container.&r A 3x3x3 of vaults is one enormous inventory with one access point - far tidier than a wall of chests, and much easier to pipe into."
+				""
+				"&7They accept funnels, chutes and belts on any face, so they slot straight into a Create line without adapters.&r"
+				""
+				"&8Good intermediate storage before you have AE2. Not sorted, but enormous and cheap."
+			]
+			icon: "create:item_vault"
+			id: "7F0000000000000A"
+			rewards: [{
+				id: "7F0100000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Bulk storage that connects"
+			tasks: [
+				{
+					id: "7F02000000000A00"
+					item: "create:item_vault"
+					type: "item"
+				}
+			]
+			title: "&eItem Vaults"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44EA000000000006"]
+			description: [
+				"The &eMechanical Saw&r cuts logs into planks, planks into slabs, and - pointed upward - fells entire trees."
+				""
+				"&e&lTree farming is the real use.&r A saw facing up under a sapling, a Deployer with bone meal, and a chute to collect - that is a fully automatic wood farm in four blocks, and wood is your charcoal, your Furnator fuel and your bio fuel."
+				""
+				"&c&lIt damages entities that walk into it.&r Fence it off or fit it into a wall."
+				""
+				"&7Placed horizontally on a belt it processes items passing over it; placed vertically it acts as a block breaker.&r"
+			]
+			icon: "create:mechanical_saw"
+			id: "7F0000000000000B"
+			rewards: [{
+				id: "7F0100000000000B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Logs, planks and trees"
+			tasks: [
+				{
+					id: "7F02000000000B00"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Saw"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F0000000000000B"]
+			description: [
+				"The &eMechanical Drill&r breaks the block in front of it, continuously, as long as it has rotation."
+				""
+				"&e&lOn a contraption it becomes a tunnel borer.&r Mount drills on the front of a moving Mechanical Bearing or piston contraption and it mines as it travels - which is how Create does quarries."
+				""
+				"&7Static drills are the standard way to break cobble from a generator, or to feed a crushing line.&r"
+				""
+				"&8Faster rotation means faster breaking. This is one of the few places where cranking the speed genuinely pays."
+			]
+			icon: "create:mechanical_drill"
+			id: "7F0000000000000C"
+			rewards: [{
+				id: "7F0100000000000C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Break blocks with rotation"
+			tasks: [
+				{
+					id: "7F02000000000C00"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Drill"
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F0000000000000B"]
+			description: [
+				"A &eSpout&r pours fluid onto an item beneath it; an &eItem Drain&r pulls fluid out of one passing over it."
+				""
+				"&e&lTogether they are Create's fluid-item interface.&r Filling bottles, charging tools, applying fluids in a recipe - all of it passes through these two blocks."
+				""
+				"&7The Item Drain is the fastest way to empty a stack of buckets or fluid containers - just belt them across it.&r"
+				""
+				"&e&lThe Spout is required for several recipes in this pack&r, so build one even if you have no fluid plans."
+			]
+			icon: "create:spout"
+			id: "7F0000000000000D"
+			rewards: [{
+				id: "7F0100000000000D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Fluids onto items, and off"
+			tasks: [
+				{
+					id: "7F02000000000D00"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "7F02000000000D01"
+					item: "create:item_drain"
+					type: "item"
+				}
+			]
+			title: "&eSpout & Item Drain"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F0000000000000D"]
+			description: [
+				"&eFluid Pipes&r carry liquid; a &eMechanical Pump&r is what actually moves it, and it needs rotation."
+				""
+				"&c&lA pipe network with no pump does nothing.&r This is the number one Create fluid mistake. The pipes are passive."
+				""
+				"&e&lPump direction is set by rotation direction&r and shown by an arrow. Wrench the pump to flip it if the fluid is going the wrong way."
+				""
+				"&7Create pipes only show fluid when they are actually flowing, which makes debugging easy - a dry-looking pipe is a stalled pipe.&r"
+				""
+				"&8Fluid Tanks buffer, and window blocks let you see the level. Build the tank before the machine that needs it."
+			]
+			icon: "create:mechanical_pump"
+			id: "7F0000000000000E"
+			rewards: [{
+				id: "7F0100000000000E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Create's plumbing"
+			tasks: [
+				{
+					id: "7F02000000000E00"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "7F02000000000E01"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Pump & Pipes"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F0000000000000E"]
+			description: [
+				"&eFluid Tanks&r stack into multiblocks - place them in a rectangle and they merge into one large tank."
+				""
+				"&e&lThey have a window variant&r so you can see the level at a glance, which is more useful than it sounds when debugging a line."
+				""
+				"&7Tanks are the correct thing between any producer and consumer. A Spout fed directly from a pump stalls every time the pump hiccups; fed from a tank it does not.&r"
+			]
+			icon: "create:fluid_tank"
+			id: "7F0000000000000F"
+			rewards: [{
+				id: "7F0100000000000F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Buffer and store"
+			tasks: [
+				{
+					id: "7F02000000000F00"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "&eFluid Tanks"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["44EA00000000000A"]
+			description: [
+				"A &eMechanical Bearing&r rotates whatever is attached to it - the entry point to Create contraptions."
+				""
+				"&e&lAttach blocks, apply rotation, and the whole assembly turns as one object.&r Windmills, rotating platforms, drawbridges and clock hands all start here."
+				""
+				"&c&lBlocks only travel together if they are connected.&r Use &7Super Glue&r or a &7Linear Chassis&r to bind loose blocks into one contraption - otherwise the bearing spins and leaves them behind."
+				""
+				"&7Contraptions can carry working machinery - drills, saws, harvesters - which is how a single bearing becomes a quarry or a farm.&r"
+			]
+			icon: "create:mechanical_bearing"
+			id: "7F00000000000010"
+			rewards: [{
+				id: "7F01000000000010"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Make things move"
+			tasks: [
+				{
+					id: "7F02000000001000"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Bearing"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F00000000000010"]
+			description: [
+				"&eSuper Glue&r sticks blocks to each other; a &eLinear Chassis&r grabs a configurable range of blocks in one direction."
+				""
+				"&e&lThis is the step everyone skips and then wonders why half their build stayed behind.&r A contraption moves only what is attached."
+				""
+				"&7Glue is for irregular shapes - right-click-drag over the faces you want bound. Chassis is for regular ones - set a radius with the wrench and it grabs everything in that range automatically.&r"
+				""
+				"&8Chassis is far less fiddly for anything rectangular. Save the glue for decoration and odd corners."
+			]
+			icon: "create:super_glue"
+			id: "7F00000000000011"
+			rewards: [{
+				id: "7F01000000000011"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Bind a contraption together"
+			tasks: [
+				{
+					id: "7F02000000001100"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "7F02000000001101"
+					item: "create:super_glue"
+					type: "item"
+				}
+			]
+			title: "&eChassis & Super Glue"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F00000000000011"]
+			description: [
+				"A &eMechanical Harvester&r cuts crops it passes over without breaking the farmland; a &eMechanical Plough&r tills soil and breaks non-solid blocks."
+				""
+				"&e&lMounted on a bearing or a moving contraption, these are a fully automatic farm&r - the contraption travels the field, harvests, and a chute or vacuum collects behind it."
+				""
+				"&7Unlike the Cyclic Harvester, this one leaves the crop stem intact where the plant supports it, so many crops regrow without replanting.&r"
+				""
+				"&8Pair with a Portable Storage Interface so the contraption unloads automatically at the end of each pass."
+			]
+			icon: "create:mechanical_harvester"
+			id: "7F00000000000012"
+			rewards: [{
+				id: "7F01000000000012"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Farming contraptions"
+			tasks: [
+				{
+					id: "7F02000000001200"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "7F02000000001201"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+			]
+			title: "&eHarvester & Plough"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F00000000000012"]
+			description: [
+				"A &ePortable Storage Interface&r lets a moving contraption exchange items with a stationary one as it passes."
+				""
+				"&e&lOne on the contraption, one on the ground.&r When they line up, items transfer - the contraption pauses briefly, unloads its harvest or takes on fuel, then carries on."
+				""
+				"&7This is what turns a contraption from a toy into a machine. A harvester that fills up and stops is useless; one that empties itself every lap runs forever.&r"
+				""
+				"&8There is a fluid version too, for contraptions that need refilling rather than emptying."
+			]
+			icon: "create:portable_storage_interface"
+			id: "7F00000000000013"
+			rewards: [{
+				id: "7F01000000000013"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Load and unload moving machines"
+			tasks: [
+				{
+					id: "7F02000000001300"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+			]
+			title: "&ePortable Storage Interface"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44EA00000000000E"]
+			description: [
+				"&eMechanical Crafters&r arranged in the shape of a recipe will craft it continuously from piped-in ingredients."
+				""
+				"&e&lThe arrangement IS the recipe.&r Place crafters in the same pattern as the crafting grid, wrench them so their arrows form a single path ending at one output, give them rotation, and feed each one its ingredient."
+				""
+				"&c&lEvery crafter in the group must be connected by arrows into one chain.&r A broken path is the usual reason nothing happens."
+				""
+				"&7It is more work than an AE2 assembler and considerably more satisfying. It is also available in Age II, long before AE2 exists.&r"
+				""
+				"&8The Precision Mechanism itself can be automated this way - which is worth doing, since Mekanism will want several."
+			]
+			icon: "create:mechanical_crafter"
+			id: "7F00000000000014"
+			rewards: [{
+				id: "7F01000000000014"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automated crafting, Create style"
+			tasks: [
+				{
+					id: "7F02000000001400"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Crafters"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F00000000000014"]
+			description: [
+				"A &eMechanical Arm&r picks items from up to twelve inputs and distributes them to up to twelve outputs, with filters on each."
+				""
+				"&e&lIt replaces an entire pipe network with one block.&r Wrench the arm, then click each source and each destination to program it. It remembers the order."
+				""
+				"&7Perfect for feeding a bank of Mechanical Crafters, or splitting a belt's output between several machines by filter.&r"
+				""
+				"&8It is slow compared to pipes but takes almost no space and needs no routing. For a crafting array it is usually the right answer."
+			]
+			icon: "create:mechanical_arm"
+			id: "7F00000000000015"
+			rewards: [{
+				id: "7F01000000000015"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Sorting without pipes"
+			tasks: [
+				{
+					id: "7F02000000001500"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+			]
+			title: "&eMechanical Arm"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F00000000000014"]
+			description: [
+				"A &eRedstone Link&r transmits a redstone signal wirelessly between two points; a &eStockpile Switch&r emits one based on how full a container is."
+				""
+				"&e&lTogether they are automation's feedback loop.&r Stockpile Switch on your output chest, Redstone Link back to the machine, and production stops when you have enough and restarts when you spend it."
+				""
+				"&7Links are paired by putting the same two items in both ends' frequency slots - any two items, so you have effectively unlimited channels.&r"
+				""
+				"&8This is how you stop a Create farm filling every chest you own while you are away."
+			]
+			icon: "create:redstone_link"
+			id: "7F00000000000016"
+			rewards: [{
+				id: "7F01000000000016"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Wireless control"
+			tasks: [
+				{
+					id: "7F02000000001600"
+					item: "create:redstone_link"
+					type: "item"
+				}
+				{
+					id: "7F02000000001601"
+					item: "create:stockpile_switch"
+					type: "item"
+				}
+			]
+			title: "&eRedstone Link & Stockpile Switch"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F00000000000016"]
+			description: [
+				"A &eDisplay Link&r reads information from a block and writes it to a &eDisplay Board&r - item counts, fluid levels, stress, time, kills."
+				""
+				"&e&lThis is Create's monitoring layer&r, and it needs no computer. Point a link at a tank and it prints the level; point it at a Stockpile Switch and it prints the percentage."
+				""
+				"&7Boards tile into larger screens, so a wall of them becomes a factory dashboard.&r"
+				""
+				"&8Cosmetic in the strictest sense, genuinely useful in practice - a base you can read at a glance is a base you notice problems in."
+			]
+			icon: "create:display_link"
+			id: "7F00000000000017"
+			rewards: [{
+				id: "7F01000000000017"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Read your factory"
+			tasks: [
+				{
+					id: "7F02000000001700"
+					item: "create:display_link"
+					type: "item"
+				}
+				{
+					id: "7F02000000001701"
+					item: "create:display_board"
+					type: "item"
+				}
+			]
+			title: "&eDisplay Link & Board"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F00000000000017"]
+			description: [
+				"A &eSchematic Table&r saves and loads structures; a &eSchematicannon&r builds them for you from a chest of materials."
+				""
+				"&e&lThe workflow:&r select a region with a Schematic and Quill, save it at the table, place the schematic in the world to position it, then let the Schematicannon fire."
+				""
+				"&7It consumes real materials from an adjacent chest and gunpowder as fuel. It is not free building - it is automated building.&r"
+				""
+				"&e&lWorth it for anything repetitive&r - a bank of identical machine rooms, a wall of Item Vaults, a second identical farm."
+				""
+				"&8Also the easiest way to move a build to another island, or to another dimension."
+			]
+			icon: "create:schematic_table"
+			id: "7F00000000000018"
+			rewards: [{
+				id: "7F01000000000018"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Copy and paste builds"
+			tasks: [
+				{
+					id: "7F02000000001800"
+					item: "create:schematic_table"
+					type: "item"
+				}
+				{
+					id: "7F02000000001801"
+					item: "create:schematicannon"
+					type: "item"
+				}
+			]
+			title: "&eSchematics"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7592B47334DC838E"]
+			description: [
+				"An &eExtendo Grip&r extends your reach; a &ePotato Cannon&r fires vegetables hard enough to kill things."
+				""
+				"&e&lThe Extendo Grip is genuinely useful for building&r - placing blocks several metres away, or reaching into a contraption without dismantling it. Hold one in each hand for even more reach."
+				""
+				"&7The Potato Cannon does real damage and different ammo has different effects - some knock back, some set on fire. It is powered by your Copper Backtank.&r"
+				""
+				"&8Both are Create at its most Create. Neither is required. Both are worth ten minutes."
+			]
+			icon: "create:extendo_grip"
+			id: "7F00000000000019"
+			rewards: [{
+				id: "7F01000000000019"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Create's odd weapons"
+			tasks: [
+				{
+					id: "7F02000000001900"
+					item: "create:extendo_grip"
+					type: "item"
+				}
+				{
+					id: "7F02000000001901"
+					item: "create:potato_cannon"
+					type: "item"
+				}
+			]
+			title: "&eExtendo Grip & Potato Cannon"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F00000000000019"]
+			description: [
+				"A &eCopper Backtank&r stores compressed air on your back. A &eDiving Helmet&r lets you breathe it underwater."
+				""
+				"&e&lThe backtank is the battery for Create's handheld tools&r - the Potato Cannon and the Extendo Grip both draw from it."
+				""
+				"&7Refill it by standing near a running Mechanical Press or by placing it and feeding it rotation. A netherite version holds far more.&r"
+				""
+				"&8Diving boots let you walk on the bottom rather than floating - useful when you are building an underwater intake, less so on a floating island."
+			]
+			icon: "create:copper_backtank"
+			id: "7F0000000000001A"
+			rewards: [{
+				id: "7F0100000000001A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Air, and the power for your tools"
+			tasks: [
+				{
+					id: "7F02000000001A00"
+					item: "create:copper_backtank"
+					type: "item"
+				}
+				{
+					id: "7F02000000001A01"
+					item: "create:copper_diving_helmet"
+					type: "item"
+				}
+			]
+			title: "&eBacktank & Diving Gear"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F0000000000001A"]
+			description: [
+				"&eFilters&r slot into brass funnels, smart chutes, mechanical arms and belts to control exactly what passes."
+				""
+				"&e&lTwo kinds:&r a plain &7Filter&r matches a list of items; an &7Attribute Filter&r matches a property - damaged, enchanted, food, smeltable, in a tag."
+				""
+				"&e&lAttribute filters are the powerful ones.&r 'Everything smeltable' or 'anything damaged' is a rule you can write once and never revisit as the pack grows."
+				""
+				"&7Filters can be set to whitelist or blacklist, and to respect or ignore stack size and NBT.&r"
+			]
+			icon: "create:filter"
+			id: "7F0000000000001B"
+			rewards: [{
+				id: "7F0100000000001B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Tell Create what to move"
+			tasks: [
+				{
+					id: "7F02000000001B00"
+					item: "create:filter"
+					type: "item"
+				}
+				{
+					id: "7F02000000001B01"
+					item: "create:attribute_filter"
+					type: "item"
+				}
+			]
+			title: "&eFilters"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F0000000000000F"]
+			description: [
+				"A &eSteam Engine&r mounted on a boiler of water, heated by Blaze Burners, produces vastly more stress capacity than water wheels."
+				""
+				"&e&lThis is Create's real power tier.&r A modest boiler with a few engines outclasses a wall of water wheels and takes a fraction of the space."
+				""
+				"&e&lThe boiler scales in stages&r - more water tanks and more heat move it up levels, and each level supports more engines at higher output. The boiler's tooltip tells you exactly what it needs to reach the next level."
+				""
+				"&c&lSuper-heated Blaze Burners are the usual bottleneck&r, and they want a steady blaze cake or lava supply. Plan the fuel before the boiler."
+				""
+				"&7Feed the output into a Crafts & Additions Alternator and this becomes your whole base's electricity too.&r"
+			]
+			icon: "create:steam_engine"
+			id: "7F0000000000001C"
+			rewards: [{
+				id: "7F0100000000001C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Serious rotational power"
+			tasks: [
+				{
+					id: "7F02000000001C00"
+					item: "create:steam_engine"
+					type: "item"
+				}
+			]
+			title: "&eSteam Engine"
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6187A9055B14303B"]
+			description: [
+				"A &eTrack Station&r is where trains are assembled and dispatched; a &eSchedule&r is the program that tells one where to go."
+				""
+				"&e&lThe schedule is the actual feature.&r Go to station A, wait until cargo is full, go to station B, unload, wait 30 seconds, repeat - handed to a Conductor, the train runs that loop forever with nobody aboard."
+				""
+				"&7Name your stations clearly. Schedules reference them by name, and debugging a train that will not move is usually a typo.&r"
+				""
+				"&8On a floating island, trains between platforms are genuinely practical - too far to belt, too close to justify an ME network."
+			]
+			icon: "create:track_station"
+			id: "7F0000000000001D"
+			rewards: [{
+				id: "7F0100000000001D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Trains that drive themselves"
+			tasks: [
+				{
+					id: "7F02000000001D00"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "7F02000000001D01"
+					item: "create:schedule"
+					type: "item"
+				}
+			]
+			title: "&eStations & Schedules"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7F00000000000018"
+				"7F00000000000013"
+				"7F0000000000001C"
+				"7F0000000000001D"
+				"7F0000000000001B"
+			]
+			description: [
+				"&e&lYou have run the whole of Create.&r"
+				""
+				"Rotation you can switch, reverse and dial to an exact speed. Belts, chutes and arms moving everything. Contraptions that harvest, drill and unload themselves. A boiler making more stress than a river of water wheels. And a machine that copies your builds for you."
+				""
+				"&7Create is the only mod in this pack where the machine you build is genuinely &lyours&r - two players solving the same problem will not produce the same factory.&r"
+				""
+				"&8Everything after this runs on Forge Energy. But the Precision Mechanism that opened it came out of a line of Deployers you sequenced by hand."
+			]
+			icon: "create:precision_mechanism"
+			id: "7F0000000000001E"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7F0100000000001E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every system, turning"
+			tasks: [{
+				id: "7F02000000001E00"
+				title: "Master Create"
+				type: "checkmark"
+			}]
+			title: "&e&lMaster of Kinetics"
+			x: 10.0d
+			y: 0.0d
+		}
 	]
 	title: "&eAge II · The Kinetic Age"
 }
