@@ -1,2 +1,39 @@
-# RAM for the server. You have 16 GB; 6G leaves room for the OS + your own game client.
--Xmx6G
+# ---------------------------------------------------------------------------
+# ATM Sky Lite - server JVM arguments
+#
+# You have 16 GB. Your Minecraft CLIENT is also set to 6 GB, so the old
+# "-Xmx6G" here meant 12 GB of 16 GB went to Java and Windows was left
+# paging to disk. That is what made the whole machine feel unresponsive.
+#
+# 4 GB is plenty for this server: the world is ~50 MB and it is 1-2 players.
+# Xms = Xmx means the heap never resizes mid-game (resizing = a stutter).
+#
+# AlwaysPreTouch is deliberately NOT used. It would commit all 4 GB at boot;
+# leaving it off lets the server settle at whatever it actually needs (~3 GB)
+# while still never resizing. On a 16 GB box that spare GB matters.
+# ---------------------------------------------------------------------------
+-Xms4G
+-Xmx4G
+
+# --- Aikar's flags: G1 garbage collector tuned for Minecraft -----------------
+# Default G1 collects rarely but in long pauses. Every long pause is a frozen
+# server. These settings collect more often, in short bursts you cannot feel.
+-XX:+UseG1GC
+-XX:+ParallelRefProcEnabled
+-XX:MaxGCPauseMillis=200
+-XX:+UnlockExperimentalVMOptions
+-XX:+DisableExplicitGC
+-XX:G1NewSizePercent=30
+-XX:G1MaxNewSizePercent=40
+-XX:G1HeapRegionSize=8M
+-XX:G1ReservePercent=20
+-XX:G1HeapWastePercent=5
+-XX:G1MixedGCCountTarget=4
+-XX:InitiatingHeapOccupancyPercent=15
+-XX:G1MixedGCLiveThresholdPercent=90
+-XX:G1RSetUpdatingPauseTimePercent=5
+-XX:SurvivorRatio=32
+-XX:+PerfDisableSharedMem
+-XX:MaxTenuringThreshold=1
+-Dusing.aikars.flags=https://mcflags.emc.gs
+-Daikars.new.flags=true
