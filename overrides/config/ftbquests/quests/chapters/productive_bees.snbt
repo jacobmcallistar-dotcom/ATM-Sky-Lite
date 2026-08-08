@@ -235,26 +235,23 @@
 				"&7Expansion Boxes raise capacity further. A well-upgraded hive out-produces a wall of vanilla ones.&r"
 			]
 			icon: "productivebees:advanced_oak_beehive"
-			id: "9400000000000001"
+			id: "20B31D31E1B88AB8"
 			rewards: [{
-				id: "9400A00000000001"
+				id: "532E4794FC92BDE4"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Better homes, better yield"
-			tasks: [
-				{
-					id: "9400B00000000100"
-					item: "productivebees:advanced_oak_beehive"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1826724A8D2BC74D"
+				item: "productivebees:advanced_oak_beehive"
+				type: "item"
+			}]
 			title: "&eAdvanced Hives"
 			x: -6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9400000000000001"]
 			description: [
 				"The &eCentrifuge&r processes honeycombs into their actual output - ingots, gems, dusts."
 				""
@@ -263,26 +260,23 @@
 				"&7The powered version is far faster and takes upgrades. Feed it from the hives with any item transport.&r"
 			]
 			icon: "productivebees:centrifuge"
-			id: "9400000000000002"
+			id: "107ED1DCF6FE6DA7"
 			rewards: [{
-				id: "9400A00000000002"
+				id: "1AE4DA3A1BD6587B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Combs into resources"
-			tasks: [
-				{
-					id: "9400B00000000200"
-					item: "productivebees:centrifuge"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0C99C97594CE8C09"
+				item: "productivebees:centrifuge"
+				type: "item"
+			}]
 			title: "&eCentrifuge"
 			x: -4.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9400000000000002"]
 			description: [
 				"New bee species come from &ebreeding&r two parents, or from &emutation&r - putting a bee near a specific block until it changes."
 				""
@@ -293,26 +287,23 @@
 				"&8Start with the common ore bees. The exotic ones are a long project."
 			]
 			icon: "productivebees:bee_cage"
-			id: "9400000000000003"
+			id: "52B75C6EA4A59266"
 			rewards: [{
-				id: "9400A00000000003"
+				id: "26E7D4DE353EF8FE"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Make the bee you need"
-			tasks: [
-				{
-					id: "9400B00000000300"
-					item: "productivebees:bee_cage"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "59821170754616B2"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
 			title: "&eBreeding & Mutation"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9400000000000001"]
 			description: [
 				"A &eFeeding Slab&r supplies bees with what they need without you replanting flowers constantly."
 				""
@@ -321,55 +312,46 @@
 				"&8On a void island this matters more than usual; there is no meadow to forage."
 			]
 			icon: "productivebees:feeder"
-			id: "9400000000000004"
+			id: "05BBFC8486403625"
 			rewards: [{
-				id: "9400A00000000004"
+				id: "19D508551E0403D9"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Keep them working"
-			tasks: [
-				{
-					id: "9400B00000000400"
-					item: "productivebees:feeder"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "513A6993A68C9BFF"
+				item: "productivebees:feeder"
+				type: "item"
+			}]
 			title: "&eFeeding Slabs & Flowers"
 			x: -6.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9400000000000004"]
 			description: [
 				"Bees produce honey as well as combs, and the &eHoney Generator&r burns it for FE."
 				""
 				"&7Modest power, but it is a by-product you were producing anyway. Pipe it rather than voiding it.&r"
 			]
 			icon: "productivebees:honey_generator"
-			id: "9400000000000005"
+			id: "368F353187DBBC87"
 			rewards: [{
-				id: "9400A00000000005"
+				id: "529EDE4C96B5EB30"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The other output"
-			tasks: [
-				{
-					id: "9400B00000000500"
-					item: "productivebees:honey_generator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6B22471924CBD359"
+				item: "productivebees:honey_generator"
+				type: "item"
+			}]
 			title: "&eHoney & Fluids"
 			x: -4.0d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"9400000000000003"
-				"9400000000000005"
-			]
 			description: [
 				"&e&lProductive Bees is the slowest resource mod in this pack and the least demanding.&r"
 				""
@@ -378,16 +360,16 @@
 				"&8Productive Trees is the sister mod - same logic, rooted in the ground."
 			]
 			icon: "productivebees:centrifuge"
-			id: "9400000000000006"
+			id: "5BD3826C956F9FFB"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9400A00000000006"
+				id: "14B2A2454B57AA96"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Resources from insects"
 			tasks: [{
-				id: "9400B00000000600"
+				id: "1773CB80CA1C4BD3"
 				title: "Complete"
 				type: "checkmark"
 			}]

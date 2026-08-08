@@ -76,15 +76,15 @@
 				"&8Quest completion is per-team by default in this pack, so joining a team mid-game inherits progress."
 			]
 			icon: "minecraft:player_head"
-			id: "9700000000000001"
+			id: "42FB9CBD239E9B4D"
 			rewards: [{
-				id: "9700A00000000001"
+				id: "19C2B291D6EB9605"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Shared claims and progress"
 			tasks: [{
-				id: "9700B00000000100"
+				id: "37831624F532BC2A"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -93,7 +93,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["9700000000000001"]
 			description: [
 				"&bM&r opens the world map, &bJ&r toggles the minimap, &bB&r drops a waypoint."
 				""
@@ -102,15 +101,15 @@
 				"&8The FTB Chunks claim screen is a separate map - check your keybinds if the two are confusing you."
 			]
 			icon: "minecraft:filled_map"
-			id: "9700000000000002"
+			id: "2BE3EC033E4B2F29"
 			rewards: [{
-				id: "9700A00000000002"
+				id: "5093CEBAC2CA7B12"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Xaero's, and the claim screen"
 			tasks: [{
-				id: "9700B00000000200"
+				id: "5CD0F9D15F66C8C1"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -119,7 +118,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["9700000000000002"]
 			description: [
 				"You have a limited number of claims and a smaller number of force-loads."
 				""
@@ -128,15 +126,15 @@
 				"&7The counter is in the corner of the claim screen. If a farm stops working while you are elsewhere, this is the first thing to check.&r"
 			]
 			icon: "minecraft:redstone_torch"
-			id: "9700000000000003"
+			id: "0F865C3DDB18FA11"
 			rewards: [{
-				id: "9700A00000000003"
+				id: "12BD14E53CA7B651"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Spend them deliberately"
 			tasks: [{
-				id: "9700B00000000300"
+				id: "5856A6599B116896"
 				title: "Complete"
 				type: "checkmark"
 			}]

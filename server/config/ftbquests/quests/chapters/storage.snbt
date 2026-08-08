@@ -398,26 +398,23 @@
 				"&e&lDrawers are the cheapest bulk storage in the pack by a wide margin&r, and an AE2 storage bus on a drawer controller exposes them all to your network for free.&r"
 			]
 			icon: "storagedrawers:iron_storage_upgrade"
-			id: "9500000000000001"
+			id: "0ABF719EF64C1A6A"
 			rewards: [{
-				id: "9500A00000000001"
+				id: "216825CE7D51DF10"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Capacity, void, vending"
-			tasks: [
-				{
-					id: "9500B00000000100"
-					item: "storagedrawers:iron_storage_upgrade"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7A8A901766CF2016"
+				item: "storagedrawers:iron_storage_upgrade"
+				type: "item"
+			}]
 			title: "&fDrawer Upgrades"
 			x: -6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9500000000000001"]
 			description: [
 				"&eSophisticated Backpacks&r take the same upgrade system as the barrels - stack, pickup, magnet, filter, compacting, void."
 				""
@@ -426,26 +423,23 @@
 				"&7A well-upgraded backpack means you never stop mining to manage inventory. It is the single biggest early quality-of-life item in the pack.&r"
 			]
 			icon: "sophisticatedstorage:iron_barrel"
-			id: "9500000000000002"
+			id: "3EA78A38B3B566A6"
 			rewards: [{
-				id: "9500A00000000002"
+				id: "383A7525C86E29F4"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Storage that follows you"
-			tasks: [
-				{
-					id: "9500B00000000200"
-					item: "sophisticatedstorage:iron_barrel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7A4D8EDFC5E0F972"
+				item: "sophisticatedstorage:iron_barrel"
+				type: "item"
+			}]
 			title: "&fSophisticated Backpacks"
 			x: -4.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9500000000000002"]
 			description: [
 				"Tom's Simple Storage gives you a searchable terminal across connected inventories with no channels, no cables and no power."
 				""
@@ -456,26 +450,23 @@
 				"&8Keep it even after AE2. It costs nothing to run and it sees chests your ME network does not."
 			]
 			icon: "toms_storage:ts.storage_terminal"
-			id: "9500000000000003"
+			id: "673BB2A9C6BE17B5"
 			rewards: [{
-				id: "9500A00000000003"
+				id: "0F5275651646C55D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Search everything, cheaply"
-			tasks: [
-				{
-					id: "9500B00000000300"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "702CD98C356C7E24"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
 			title: "&fTom's Storage Terminal"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["9500000000000003"]
 			description: [
 				"Ender Chests and EnderTanks link by a three-colour code - any two with the same code share contents, across any distance or dimension."
 				""
@@ -486,26 +477,23 @@
 				"&8Put one on the Moon on your first landing. It is the simplest way to send Desh home."
 			]
 			icon: "enderstorage:ender_chest"
-			id: "9500000000000004"
+			id: "43933B7E6ACB3F26"
 			rewards: [{
-				id: "9500A00000000004"
+				id: "538D0AE20553FEE3"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Colour-coded, anywhere"
-			tasks: [
-				{
-					id: "9500B00000000400"
-					item: "enderstorage:ender_chest"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5DB9F9BC89CB99C4"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
 			title: "&fEnder Storage & Tanks"
 			x: -4.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["9500000000000004"]
 			description: [
 				"&eEntangled&r links any two blocks so that interacting with one operates the other - across dimensions."
 				""
@@ -514,15 +502,15 @@
 				"&7This pack has no Flux Networks, and Entangled fills part of that gap: bind one to a power acceptor and you have a wireless power endpoint.&r"
 			]
 			icon: "entangled:block"
-			id: "9500000000000005"
+			id: "6E361E8E70121054"
 			rewards: [{
-				id: "9500A00000000005"
+				id: "221F6ACD7158C2B8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Link any two blocks"
 			tasks: [{
-				id: "9500B00000000500"
+				id: "577E1BD5393AEF5B"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -531,10 +519,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"9500000000000005"
-				"9500000000000003"
-			]
 			description: [
 				"&f&lYou can find anything you own.&r"
 				""
@@ -543,16 +527,16 @@
 				"&7None of this is required. All of it saves you more time than it costs.&r"
 			]
 			icon: "toms_storage:ts.storage_terminal"
-			id: "9500000000000006"
+			id: "37FE4D0CC86E2F13"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9500A00000000006"
+				id: "5939D4A5196D1320"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Everything, findable"
 			tasks: [{
-				id: "9500B00000000600"
+				id: "1FE69D5328CC9F92"
 				title: "Complete"
 				type: "checkmark"
 			}]

@@ -170,15 +170,15 @@
 				"&8Cheaper and available far earlier than Mekanism teleporters or Draconic dislocators."
 			]
 			icon: "waystones:blackstone_waystone"
-			id: "9600000000000001"
+			id: "3050DF499BBA65D3"
 			rewards: [{
-				id: "9600A00000000001"
+				id: "75A9ABA31C4B3C9C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Fast travel"
 			tasks: [{
-				id: "9600B00000000100"
+				id: "33E8B1EEC0747637"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -199,15 +199,15 @@
 				"&e&lIn a 167-mod pack, several mods usually make the same thing.&r JEI is how you find the cheapest route rather than the first one."
 			]
 			icon: "minecraft:book"
-			id: "9600000000000002"
+			id: "28F378B97B653BA7"
 			rewards: [{
-				id: "9600A00000000002"
+				id: "38CE192263FCE8E8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The tool you already have"
 			tasks: [{
-				id: "9600B00000000200"
+				id: "64F9BECF5ED9F329"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -225,15 +225,15 @@
 				"&8Nothing to craft. Worth knowing they are there before you go looking for a lag cause."
 			]
 			icon: "minecraft:redstone"
-			id: "9600000000000003"
+			id: "129C84C600D19E35"
 			rewards: [{
-				id: "9600A00000000003"
+				id: "4EDA6272C43DE5D3"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Why this pack runs"
 			tasks: [{
-				id: "9600B00000000300"
+				id: "065FA4BD1018A724"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -242,27 +242,22 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"9600000000000001"
-				"9600000000000002"
-				"9600000000000003"
-			]
 			description: [
 				"&f&lNone of this chapter is required. All of it is why the pack is pleasant.&r"
 				""
 				"&7Jade tells you why a machine stopped. IPN sorts your chests. Waystones remove the walking. Clumps stops your mob farm killing your framerate.&r"
 			]
 			icon: "minecraft:crafting_table"
-			id: "9600000000000004"
+			id: "075A1203E0EAD553"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "9600A00000000004"
+				id: "753EA3868DA65998"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Quality of life"
 			tasks: [{
-				id: "9600B00000000400"
+				id: "2685846E9CFAAB22"
 				title: "Complete"
 				type: "checkmark"
 			}]
