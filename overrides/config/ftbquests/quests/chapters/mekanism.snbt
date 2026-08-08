@@ -778,6 +778,1156 @@
 			x: 1.0d
 			y: -4.5d
 		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"The &eConfigurator&r is Mekanism's wrench, and it does far more than turn blocks."
+				""
+				"&e&lCycle its mode with the mode key&r (default &bM&r while holding it):"
+				"&7- &fConfigure&7 - recolour a machine's sides for input/output. This is the mode you will live in."
+				"&7- &fEmpty&7 - drain a machine's internal tanks and buffers."
+				"&7- &fRotate&7 - turn a block without breaking it."
+				"&7- &fWrench&7 - pick a machine up whole, keeping its inventory and settings."
+				""
+				"&c&lAlmost every 'my machine does nothing' problem is a side config problem.&r A machine face set to the wrong colour will not accept input or push output. Open the machine's side-config tab and match the colours to what your pipes expect."
+				""
+				"&8Craft this before your second machine, not after your tenth."
+			]
+			icon: "mekanism:configurator"
+			id: "7ADE000000000001"
+			rewards: [{
+				id: "7ADF000000000001"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Rotate, wrench, empty, configure"
+			tasks: [
+				{
+					id: "7AE0000000000100"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			title: "&9The Configurator"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7ADE000000000001"]
+			description: [
+				"&eUniversal Cables&r move Forge Energy between anything - Mekanism machines, Powah reactors, AE2 acceptors, all of it."
+				""
+				"&e&lFour tiers, each moving far more per tick:&r &7Basic &8→ &7Advanced &8→ &7Elite &8→ &7Ultimate&r. Upgrade in place with the tier installers."
+				""
+				"&c&lThroughput is the thing that catches people.&r A Basic cable feeding an Ultimate Factory is a bottleneck you cannot see - the machine simply runs slowly and looks broken. If a machine is starved, check the cable tier before you build another generator."
+				""
+				"&7Cables have a small internal buffer, so a long run behaves like a tiny battery. That is usually helpful, but it means a freshly-placed line takes a moment to fill before machines spin up.&r"
+			]
+			icon: "mekanism:basic_universal_cable"
+			id: "7ADE000000000002"
+			rewards: [{
+				id: "7ADF000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Energy, tiered"
+			tasks: [
+				{
+					id: "7AE0000000000200"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+			]
+			title: "&9Universal Cables"
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7ADE000000000001"]
+			description: [
+				"&eMechanical Pipes&r carry fluids - water to your Electrolytic Separator, lava to your generators, brine across an evaporation plant."
+				""
+				"&e&lSet the pull side with the Configurator.&r A pipe touching a tank does nothing until one end is set to pull. This is the single most common fluid-logistics mistake."
+				""
+				"&e&lTiers matter more here than with cables&r because fluid recipes consume in large gulps. A Basic pipe will not keep a Thermal Evaporation Plant fed."
+				""
+				"&7Pipes will happily mix fluids if two sources feed the same network and it will jam. Keep one fluid per pipe network, or use the Configurator to colour-separate them.&r"
+			]
+			icon: "mekanism:basic_mechanical_pipe"
+			id: "7ADE000000000003"
+			rewards: [{
+				id: "7ADF000000000003"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Fluids"
+			tasks: [
+				{
+					id: "7AE0000000000300"
+					item: "mekanism:basic_mechanical_pipe"
+					type: "item"
+				}
+			]
+			title: "&9Mechanical Pipes"
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7ADE000000000002"]
+			description: [
+				"&ePressurised Tubes&r carry gases: oxygen, hydrogen, chlorine, sulfuric acid, polonium and the rest."
+				""
+				"&c&lGases do not travel in item pipes, fluid pipes or cables.&r They need these specifically. Every 'my Purification Chamber will not run' report comes down to oxygen having no route."
+				""
+				"&e&lBuffer with a Chemical Tank.&r Gas production is bursty and consumption is steady. A tank between the two stops your Electrolytic Separator throttling itself every time the chamber pauses."
+				""
+				"&7Same four tiers as everything else. Gas throughput becomes a real constraint once you are running the 4x and 5x ore chains simultaneously.&r"
+			]
+			icon: "mekanism:basic_pressurized_tube"
+			id: "7ADE000000000004"
+			rewards: [{
+				id: "7ADF000000000004"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Gases - their own plumbing"
+			tasks: [
+				{
+					id: "7AE0000000000400"
+					item: "mekanism:basic_pressurized_tube"
+					type: "item"
+				}
+			]
+			title: "&9Pressurised Tubes"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7ADE000000000003"]
+			description: [
+				"&eLogistical Transporters&r are Mekanism's item pipes - and unlike hoppers they are genuinely smart."
+				""
+				"&e&lItems travel to a destination that will accept them&r, and bounce back to their origin if nothing will. Nothing voids, nothing jams on a full chest."
+				""
+				"&e&lThe variants are worth knowing:&r"
+				"&7- &fLogistical Transporter&7 - the normal item pipe."
+				"&7- &fRestrictive&7 - only used as a last resort, so you can build an overflow path."
+				"&7- &fDiversion&7 - redstone-controlled on/off. Route switching without rebuilding."
+				""
+				"&8Combine with the Logistical Sorter in the next quest and you have a full sorting system with no mod other than Mekanism."
+			]
+			icon: "mekanism:basic_logistical_transporter"
+			id: "7ADE000000000005"
+			rewards: [{
+				id: "7ADF000000000005"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Items that route themselves"
+			tasks: [
+				{
+					id: "7AE0000000000500"
+					item: "mekanism:basic_logistical_transporter"
+					type: "item"
+				}
+			]
+			title: "&9Logistical Transporters"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7ADE000000000005"]
+			description: [
+				"A &eLogistical Sorter&r sits on the output face of a machine or chest and pushes items into a transporter network by filter."
+				""
+				"&e&lFilter types:&r"
+				"&7- &fItem&7 - a specific item."
+				"&7- &fTag&7 - everything matching a tag, e.g. all ingots."
+				"&7- &fMaterial&7 - everything made of one material."
+				"&7- &fMod ID&7 - everything from one mod. Enormously useful for bulk sorting."
+				""
+				"&e&lColour-coding is the clever part.&r Assign a colour to a filter and only transporters set to that colour will carry it. One physical pipe run can carry several logical routes."
+				""
+				"&7Set 'Auto Eject' on the machine and the sorter does the rest. This is how you turn a wall of machines into a factory that feeds itself.&r"
+			]
+			icon: "mekanism:logistical_sorter"
+			id: "7ADE000000000006"
+			rewards: [{
+				id: "7ADF000000000006"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Filtered output, colour-coded"
+			tasks: [
+				{
+					id: "7AE0000000000600"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+			]
+			title: "&9The Logistical Sorter"
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ADE000000000006"]
+			description: [
+				"&eThermodynamic Conductors&r move &lheat&r - the fourth thing Mekanism pipes, after energy, fluids and gases."
+				""
+				"&e&lHeat matters for two systems:&r the &7Thermoelectric Boiler&r, which needs heat delivered to boil water, and the &7Fission Reactor&r, which needs heat carried away before it melts down."
+				""
+				"&c&lThat second one is not optional.&r An under-cooled fission reactor in this pack will destroy your base. Conductors are part of the safety system, not a nicety."
+				""
+				"&7You can also run them from a Resistive Heater to boil water with pure electricity - inefficient, but it works anywhere and needs no fuel.&r"
+			]
+			icon: "mekanism:basic_thermodynamic_conductor"
+			id: "7ADE000000000007"
+			rewards: [{
+				id: "7ADF000000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Heat is a resource here"
+			tasks: [
+				{
+					id: "7AE0000000000700"
+					item: "mekanism:basic_thermodynamic_conductor"
+					type: "item"
+				}
+			]
+			title: "&9Thermodynamic Conductors"
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ECDAF64265C939E"]
+			description: [
+				"The &eChemical Dissolution Chamber&r dissolves ore in &7sulfuric acid&r, producing a dirty slurry. This is step one of &a5x&r ore processing."
+				""
+				"&e&lThe full 5x chain, five machines deep:&r"
+				"&71.&r &fDissolution Chamber&7 - ore + sulfuric acid &8→&7 dirty slurry"
+				"&72.&r &fChemical Washer&7 - dirty slurry + water &8→&7 clean slurry"
+				"&73.&r &fChemical Crystallizer&7 - clean slurry &8→&7 crystal"
+				"&74.&r &fEnrichment Chamber&7 - crystal &8→&7 shard, then dust"
+				"&75.&r &fEnergized Smelter&7 - dust &8→&7 ingot"
+				""
+				"&e&lSulfuric acid needs its own production line:&r sulfur dioxide from the &7Chemical Oxidizer&r, then the &7Chemical Infuser&r. Build that before this machine or it sits idle."
+				""
+				"&8Five ingots per ore. It is a lot of infrastructure for a 25% gain over 4x - build it because you want the factory, not because you need the ore."
+			]
+			icon: "mekanism:chemical_dissolution_chamber"
+			id: "7ADE000000000008"
+			rewards: [{
+				id: "7ADF000000000008"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Start of the 5x chain"
+			tasks: [
+				{
+					id: "7AE0000000000800"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+			]
+			title: "&9Chemical Dissolution Chamber"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7ADE000000000008"]
+			description: [
+				"The &eChemical Washer&r takes the dirty slurry from the Dissolution Chamber and washes it with water into clean slurry."
+				""
+				"&e&lIt drinks water continuously.&r Feed it from an Electric Pump on an infinite source rather than hauling buckets - this machine will out-consume anything you do by hand."
+				""
+				"&7Both slurries are gases, so everything in and out of this machine travels by Pressurised Tube. If it looks stuck, check the tube run before the machine.&r"
+				""
+				"&8Slurry is per-metal. Iron slurry and gold slurry are different gases, and mixing their tube networks will jam both. Colour-code with the Configurator or run separate lines."
+			]
+			icon: "mekanism:chemical_washer"
+			id: "7ADE000000000009"
+			rewards: [{
+				id: "7ADF000000000009"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Dirty slurry into clean"
+			tasks: [
+				{
+					id: "7AE0000000000900"
+					item: "mekanism:chemical_washer"
+					type: "item"
+				}
+			]
+			title: "&9Chemical Washer"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7ADE000000000009"]
+			description: [
+				"The &eChemical Crystallizer&r turns clean slurry back into a solid - an ore crystal, ready to re-enter the machines you already own."
+				""
+				"&e&lThis is where the chain rejoins familiar ground.&r Crystal into the Enrichment Chamber gives you shards, then dust, then the Energized Smelter finishes the job. The last two machines are the same ones you built in Age III."
+				""
+				"&a&lWith all five stages running you are at 5x&r - five ingots from one ore chunk, the ceiling of Mekanism ore processing."
+				""
+				"&7Automate the hand-offs with Logistical Transporters and a Sorter. A 5x line moved by hand is not worth building.&r"
+			]
+			icon: "mekanism:chemical_crystallizer"
+			id: "7ADE00000000000A"
+			rewards: [{
+				id: "7ADF00000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Slurry back into solids"
+			tasks: [
+				{
+					id: "7AE0000000000A00"
+					item: "mekanism:chemical_crystallizer"
+					type: "item"
+				}
+			]
+			title: "&9Chemical Crystallizer"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7ADE00000000000A"]
+			description: [
+				"The &eThermal Evaporation Plant&r is a multiblock tower that boils water into &7brine&r, and brine into &7lithium&r."
+				""
+				"&e&lThe build:&r a hollow tower of Thermal Evaporation Blocks with a Controller, valves for input and output, and height. &lTaller is faster&r - the plant's speed scales with how many layers you stack."
+				""
+				"&e&lSpeed also scales with heat and sunlight.&r Put it under open sky, or feed it heat from a Resistive Heater or Fuelwood Heater through Thermodynamic Conductors."
+				""
+				"&e&lWhat it feeds:&r lithium is the input for the &7Isotopic Centrifuge&r and the fusion line, and brine is needed for sodium and chlorine. This is the gateway to Mekanism's late chemistry."
+				""
+				"&8It is slow. Build it early and let it run in the background while you do other things - it does not need attention, only time."
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "7ADE00000000000B"
+			rewards: [{
+				id: "7ADF00000000000B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Brine, lithium, and a big build"
+			tasks: [
+				{
+					id: "7AE0000000000B00"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+			]
+			title: "&9Thermal Evaporation Plant"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["742152612BC35B66"]
+			description: [
+				"The &eChemical Infuser&r combines two gases into a third. It is the heart of Mekanism's chemistry."
+				""
+				"&e&lThe combinations you will actually use:&r"
+				"&7- &fHydrogen + Chlorine&7 &8→&7 &fHydrogen Chloride&7 - the 4x ore chain"
+				"&7- &fSulfur Dioxide + Oxygen&7 &8→&7 &fSulfur Trioxide&7"
+				"&7- &fSulfur Trioxide + Water Vapour&7 &8→&7 &fSulfuric Acid&7 - the 5x ore chain"
+				"&7- &fDeuterium + Tritium&7 &8→&7 &fD-T Fuel&7 - fusion"
+				""
+				"&c&lNote the sulfuric acid chain runs through this machine twice.&r Build two rather than trying to time-share one, or your 5x line will stall constantly."
+				""
+				"&7Every input and output is a gas, so this whole area of your base is Pressurised Tubes and Chemical Tanks.&r"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "7ADE00000000000C"
+			rewards: [{
+				id: "7ADF00000000000C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Two gases into one"
+			tasks: [
+				{
+					id: "7AE0000000000C00"
+					item: "mekanism:chemical_infuser"
+					type: "item"
+				}
+			]
+			title: "&9Chemical Infuser"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7ADE00000000000C"]
+			description: [
+				"The &ePRC&r takes an item, a fluid and a gas simultaneously and produces an item and a gas. It is the most demanding machine to plumb in the mod."
+				""
+				"&e&lWhat it makes that you care about:&r"
+				"&7- &fSubstrate&7 - from bio fuel, water and hydrogen. Feeds HDPE."
+				"&7- &fHDPE&7 - Mekanism's plastic, in everything late-tier."
+				"&7- &fFissile Fuel&7 - from polonium. This is the fission reactor's food."
+				""
+				"&c&lThree different input types means three different pipe systems converging on one block.&r Plan the space before you place it - retrofitting pipes around a PRC is miserable."
+				""
+				"&7Bio Fuel comes from your Crusher fed with surplus saplings, which you already have in quantity from the Crook.&r"
+			]
+			icon: "mekanism:pressurized_reaction_chamber"
+			id: "7ADE00000000000D"
+			rewards: [{
+				id: "7ADF00000000000D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Item + fluid + gas at once"
+			tasks: [
+				{
+					id: "7AE0000000000D00"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+			]
+			title: "&9Pressurised Reaction Chamber"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7ADE00000000000D"]
+			description: [
+				"The &eRotary Condensentrator&r converts a gas into its fluid form or the reverse, toggled with a button on its GUI."
+				""
+				"&e&lWhy you need it:&r some machines want liquid, some want gas, and Mekanism is strict about it. Liquid oxygen, liquid chlorine and liquid hydrogen all exist and all have uses - this block is the translator."
+				""
+				"&c&lCheck the direction toggle first.&r A condensentrator set the wrong way looks exactly like a broken machine: it takes input and produces nothing."
+				""
+				"&7Also the practical way to &lstore&r gas in bulk - convert to fluid, park it in a Dynamic Tank, convert back on demand. Fluid storage is far cheaper than gas storage.&r"
+			]
+			icon: "mekanism:rotary_condensentrator"
+			id: "7ADE00000000000E"
+			rewards: [{
+				id: "7ADF00000000000E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Gas to fluid, and back"
+			tasks: [
+				{
+					id: "7AE0000000000E00"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			title: "&9Rotary Condensentrator"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7ADE00000000000C"]
+			description: [
+				"The &eIsotopic Centrifuge&r separates isotopes - most importantly turning deuterium into &7tritium&r."
+				""
+				"&e&lThe fusion fuel chain:&r"
+				"&7Water &8→&7 &fElectrolytic Separator&7 &8→&7 heavy water &8→&7 &fCentrifuge&7 &8→&7 deuterium &8→&7 &fCentrifuge&7 &8→&7 tritium&r"
+				"&7Then deuterium + tritium &8→&7 &fChemical Infuser&7 &8→&7 &fD-T Fuel&r"
+				""
+				"&e&lIt is deliberately slow.&r Fusion is meant to be an infrastructure project, not a crafting recipe. Run several centrifuges in parallel and let them accumulate."
+				""
+				"&8Also produces plutonium and polonium from nuclear waste, which is how the Ascension chapter's antimatter line begins."
+			]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "7ADE00000000000F"
+			rewards: [{
+				id: "7ADF00000000000F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Toward fusion"
+			tasks: [
+				{
+					id: "7AE0000000000F00"
+					item: "mekanism:isotopic_centrifuge"
+					type: "item"
+				}
+			]
+			title: "&9Isotopic Centrifuge"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7ADE00000000000D"]
+			description: [
+				"An &eElectric Pump&r sits in a fluid source and pumps it into your pipe network indefinitely."
+				""
+				"&e&lThis is what makes the whole chemistry tree practical.&r The Electrolytic Separator, Chemical Washer and Thermal Evaporation Plant all drink water continuously. Carrying buckets is not a strategy."
+				""
+				"&e&lWith a Filter Upgrade&r it becomes a &7heavy water&r extractor - drawing the trace heavy water out of an ordinary water source. That is the first step of the fusion fuel chain."
+				""
+				"&7Pumps lava too, which pairs neatly with a Thermo Generator bank or an obsidian line.&r"
+				""
+				"&8One pump on an infinite water source will supply an entire base. Build it early."
+			]
+			icon: "mekanism:electric_pump"
+			id: "7ADE000000000010"
+			rewards: [{
+				id: "7ADF000000000010"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Infinite water, no buckets"
+			tasks: [
+				{
+					id: "7AE0000000001000"
+					item: "mekanism:electric_pump"
+					type: "item"
+				}
+			]
+			title: "&9Electric Pump"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7ADE00000000000E"]
+			description: [
+				"A &eChemical Tank&r buffers gas; a &eFluid Tank&r buffers liquid. Both are portable and keep their contents when broken."
+				""
+				"&c&lBuffers are not optional in Mekanism.&r Production is bursty, consumption is steady, and a machine with nowhere to put its output &lstops&r. One tank between every producer and consumer removes an entire category of problem."
+				""
+				"&e&lThe portable part is underrated.&r A filled tank in your inventory is how you carry oxygen to a Moon base, or move a stock of hydrogen to a new build without piping across the island."
+				""
+				"&7For serious volume, the &fDynamic Tank&r multiblock scales to whatever size you build it - far cheaper per bucket than stacking single tanks.&r"
+			]
+			icon: "mekanism:basic_chemical_tank"
+			id: "7ADE000000000011"
+			rewards: [{
+				id: "7ADF000000000011"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Stop your chemistry stalling"
+			tasks: [
+				{
+					id: "7AE0000000001100"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "7AE0000000001101"
+					item: "mekanism:basic_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "&9Tanks & Buffers"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0FBFBB69863D68E7"]
+			description: [
+				"The &eQIO Drive Array&r holds QIO drives - Mekanism's answer to AE2, built entirely from things you already make."
+				""
+				"&e&lQIO versus AE2, honestly:&r"
+				"&7- &fNo channels, no cables, no controller.&7 Components just need to be near each other."
+				"&7- &fFar simpler to set up&7 - a Drive Array, a Dashboard, done."
+				"&7- &fNo autocrafting.&7 This is the real trade. QIO stores; AE2 crafts."
+				""
+				"&e&lIt is genuinely useful alongside AE2&r, not instead of it - QIO for bulk material overflow, AE2 for the crafting brain."
+				""
+				"&7Drives come in four tiers and, unlike AE2 cells, hold a sane number of item types at every tier.&r"
+			]
+			icon: "mekanism:qio_drive_array"
+			id: "7ADE000000000012"
+			rewards: [{
+				id: "7ADF000000000012"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Mekanism's own storage network"
+			tasks: [
+				{
+					id: "7AE0000000001200"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+			]
+			title: "&9QIO Drive Array"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7ADE000000000012"]
+			description: [
+				"The &eQIO Dashboard&r is your window into the QIO network - search, withdraw, insert, and a crafting grid attached."
+				""
+				"&e&lThere is also a &fPortable QIO Dashboard&e&l item&r that gives you the same access from your inventory anywhere in range of the network. No wireless terminal, no access point, no boosters."
+				""
+				"&e&lFrequencies work like the Entangloporter's&r - name a frequency, set every QIO component to it, and they are one system. Private frequencies keep other players out on a shared server."
+				""
+				"&7The Dashboard also feeds the Formulaic Assemblicator, which is as close to autocrafting as QIO gets.&r"
+			]
+			icon: "mekanism:qio_dashboard"
+			id: "7ADE000000000013"
+			rewards: [{
+				id: "7ADF000000000013"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Search and pull, no channels"
+			tasks: [
+				{
+					id: "7AE0000000001300"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+			]
+			title: "&9QIO Dashboard"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7ADE000000000013"]
+			description: [
+				"&eQIO Importers&r pull items from a machine into the network; &eExporters&r push them back out. Same idea as AE2's buses, without the channel budget."
+				""
+				"&e&lBoth take filters&r, so you can pull only the outputs you want and feed only the inputs a machine needs."
+				""
+				"&e&lThe &fQIO Redstone Adapter&e&r is the piece people miss:&r it emits a redstone signal when a chosen item drops below a set count. Wire that to a machine and you have automatic restocking with no computer and no crafting card."
+				""
+				"&8That trio - Importer, Exporter, Redstone Adapter - is a complete factory automation loop using nothing but Mekanism."
+			]
+			icon: "mekanism:qio_importer"
+			id: "7ADE000000000014"
+			rewards: [{
+				id: "7ADF000000000014"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automate the network"
+			tasks: [
+				{
+					id: "7AE0000000001400"
+					item: "mekanism:qio_importer"
+					type: "item"
+				}
+				{
+					id: "7AE0000000001401"
+					item: "mekanism:qio_exporter"
+					type: "item"
+				}
+			]
+			title: "&9QIO Importers & Exporters"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ADE000000000013"]
+			description: [
+				"The &eFormulaic Assemblicator&r stores a crafting recipe as a &7Crafting Formula&r and repeats it forever from piped-in materials."
+				""
+				"&e&lHow to set one up:&r"
+				"&71.&r Craft a blank &7Crafting Formula&r."
+				"&72.&r Put it in the Assemblicator with the recipe laid out in the grid."
+				"&73.&r Encode it. The formula now remembers that recipe."
+				"&74.&r Feed materials in and it produces continuously."
+				""
+				"&e&lThis is Mekanism's autocrafting&r - one recipe per machine, rather than AE2's request-anything network. For high-volume repeats like circuits, alloys or casings it is arguably better: no CPU to tie up, no craft to queue, it simply always has stock."
+				""
+				"&7Pair with a QIO Importer on the output and your circuit supply solves itself.&r"
+			]
+			icon: "mekanism:formulaic_assemblicator"
+			id: "7ADE000000000015"
+			rewards: [{
+				id: "7ADF000000000015"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Repeat crafting, automated"
+			tasks: [
+				{
+					id: "7AE0000000001500"
+					item: "mekanism:formulaic_assemblicator"
+					type: "item"
+				}
+			]
+			title: "&9Formulaic Assemblicator"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19236F17F30F94C7"]
+			description: [
+				"A &eResistive Heater&r turns Forge Energy directly into heat. Inefficient, entirely controllable, and it works anywhere."
+				""
+				"&e&lWhy bother when lava is free?&r Because heat output here is a &lnumber you set&r. A boiler fed by lava is at the mercy of your lava supply; a boiler fed by resistive heaters produces exactly as much steam as you tell it to."
+				""
+				"&e&lIt is the standard way to drive a Thermoelectric Boiler&r when you have surplus power and want it as steam for a turbine - which sounds circular until you are load-balancing a fission plant."
+				""
+				"&7Also the simplest heat source for a Thermal Evaporation Plant that is not getting enough sun.&r"
+			]
+			icon: "mekanism:resistive_heater"
+			id: "7ADE000000000016"
+			rewards: [{
+				id: "7ADF000000000016"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Electricity into heat"
+			tasks: [
+				{
+					id: "7AE0000000001600"
+					item: "mekanism:resistive_heater"
+					type: "item"
+				}
+			]
+			title: "&9Resistive Heater"
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7ADE000000000016"]
+			description: [
+				"The &eThermoelectric Boiler&r is a multiblock that turns heat and water into steam. It is half of Mekanism's serious power generation."
+				""
+				"&e&lThe build:&r a hollow box of Boiler Casing with &7Pressure Disperser&r plates dividing water below from steam above, a &7Superheating Element&r for each heat source, and valves for input and output."
+				""
+				"&e&lIts output is steam, not power.&r The boiler makes steam; an &7Industrial Turbine&r turns steam into FE. Neither is useful without the other, so plan to build both together."
+				""
+				"&c&lSize it to your heat source.&r An oversized boiler with two superheating elements produces no more steam than a small one - it just cost more. Check the boiler's stats screen, which tells you its maximum boil rate."
+				""
+				"&8This is the block your Fission Reactor will feed in Ascension. Building it now with resistive heaters is good practice at low stakes."
+			]
+			icon: "mekanism:boiler_casing"
+			id: "7ADE000000000017"
+			rewards: [{
+				id: "7ADF000000000017"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Water into steam, at scale"
+			tasks: [
+				{
+					id: "7AE0000000001700"
+					item: "mekanism:boiler_casing"
+					type: "item"
+				}
+			]
+			title: "&9Thermoelectric Boiler"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7ADE000000000017"]
+			description: [
+				"The &eIndustrial Turbine&r is a multiblock that converts steam into Forge Energy - and at full size it produces more power than anything else in the pack short of fusion."
+				""
+				"&e&lThe build, from the bottom up:&r a Turbine Casing shell, a &7Turbine Rotor&r column up the centre with &7Turbine Blades&r on it, &7Pressure Dispersers&r above, a &7Rotational Complex&r, coils, and vents to release spent steam."
+				""
+				"&e&lMore blades and more vents means more throughput.&r The turbine's own stats screen tells you its maximum flow rate and whether your vents are limiting it - read it rather than guessing."
+				""
+				"&c&lVents are the usual bottleneck.&r A turbine that will not hit its rated output almost always needs more vents, not more blades."
+				""
+				"&7Pair with the boiler above and an Induction Matrix to store the output, and your power problems are over for the rest of the pack.&r"
+			]
+			icon: "mekanismgenerators:turbine_casing"
+			id: "7ADE000000000018"
+			rewards: [{
+				id: "7ADF000000000018"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Steam into serious power"
+			tasks: [
+				{
+					id: "7AE0000000001800"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+			]
+			title: "&9Industrial Turbine"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7ADE000000000018"]
+			description: [
+				"The &eGas-Burning Generator&r burns combustible gas - most usefully the &7hydrogen&r your Electrolytic Separator is already producing as a by-product."
+				""
+				"&e&lThis closes a loop you already have open.&r You are splitting water for oxygen to feed the Purification Chamber. The hydrogen half is usually vented or ignored. Feed it here instead and your ore chain part-funds its own power."
+				""
+				"&e&lIt also burns ethene&r, which the PRC makes from bio fuel - so surplus saplings become electricity through a slightly longer road."
+				""
+				"&7Buffer the gas with a Chemical Tank. Feeding a generator directly from a separator means both stall whenever either hiccups.&r"
+			]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "7ADE000000000019"
+			rewards: [{
+				id: "7ADF000000000019"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Burn hydrogen for power"
+			tasks: [
+				{
+					id: "7AE0000000001900"
+					item: "mekanismgenerators:gas_burning_generator"
+					type: "item"
+				}
+			]
+			title: "&9Gas-Burning Generator"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["21557404ADD43A57"]
+			description: [
+				"The &eModification Station&r installs modules into MekaSuit pieces and the Meka-Tool. Without it the suit is just expensive armour."
+				""
+				"&e&lModules are the whole point of the MekaSuit.&r A short list of the ones that change how you play:"
+				"&7- &fJetpack Unit&7 - flight, on the chestplate"
+				"&7- &fGravitational Modulating Unit&7 - proper creative-style flight, late"
+				"&7- &fInhalation Purification&7 - immunity to most status effects"
+				"&7- &fElytra Unit&7 - gliding without an elytra"
+				"&7- &fVein Mining&7 and &fFarming&7 units on the Meka-Tool - mine a whole ore vein or till a field in one click"
+				"&7- &fTeleportation Unit&7 - short-range blink"
+				""
+				"&c&lModules cost power from the suit&r, and several running at once will drain it fast. An Energy Cube or a charger at base is not optional."
+				""
+				"&8Install modules one at a time and try them. Some conflict, and the station will tell you."
+			]
+			icon: "mekanism:modification_station"
+			id: "7ADE00000000001A"
+			rewards: [{
+				id: "7ADF00000000001A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Where MekaSuit becomes yours"
+			tasks: [
+				{
+					id: "7AE0000000001A00"
+					item: "mekanism:modification_station"
+					type: "item"
+				}
+			]
+			title: "&9Modification Station"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7ADE00000000001A"]
+			description: [
+				"The &eRobit&r is a small robot that follows you around, picks up drops, and carries a crafting table and a furnace inside it."
+				""
+				"&e&lWhat it is genuinely good for:&r a portable crafting grid and item pickup while you are out mining or exploring, without going home. It also fights, badly."
+				""
+				"&e&lIt needs charging&r at a &7Chargepad&r, and it will follow you into other dimensions."
+				""
+				"&7Name it. It keeps the name, and it is the only thing in this pack that will follow you to Venus voluntarily.&r"
+			]
+			icon: "mekanism:robit"
+			id: "7ADE00000000001B"
+			rewards: [{
+				id: "7ADF00000000001B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7A follower that crafts and fetches"
+			tasks: [
+				{
+					id: "7AE0000000001B00"
+					item: "mekanism:robit"
+					type: "item"
+				}
+			]
+			title: "&9The Robit"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7ADE00000000001B"]
+			description: [
+				"The &eSecurity Desk&r sets access rules on every Mekanism machine you own - public, trusted-players-only, or private."
+				""
+				"&e&lOn a shared server this is worth ten minutes of setup.&r Without it, anything you build is open to anyone who wanders past, including your Induction Matrix and your fission reactor controls."
+				""
+				"&7Add trusted players by name and they can use your machines without being able to reconfigure them.&r"
+				""
+				"&8Also protects Entangloporter and Teleporter frequencies, which are otherwise a genuinely open door into your base."
+			]
+			icon: "mekanism:security_desk"
+			id: "7ADE00000000001C"
+			rewards: [{
+				id: "7ADF00000000001C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Lock your machines"
+			tasks: [
+				{
+					id: "7AE0000000001C00"
+					item: "mekanism:security_desk"
+					type: "item"
+				}
+			]
+			title: "&9Security Desk"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7ADE00000000001B"]
+			description: [
+				"A &eCardboard Box&r placed on any block picks it up &lwhole&r - contents, settings, orientation and all - and turns it into an item you can carry."
+				""
+				"&e&lIt works on almost anything, including blocks from other mods&r - a full AE2 drive, a chest with items still in it, a machine mid-recipe."
+				""
+				"&c&lThis is the single best base-moving tool in the pack.&r Rebuilding a machine room by hand is hours; boxing it is minutes."
+				""
+				"&7Crouch to place the box without triggering it if you just want to store boxes.&r"
+				""
+				"&8Craft a stack. You will use more than you expect the first time you decide your base layout was a mistake."
+			]
+			icon: "mekanism:cardboard_box"
+			id: "7ADE00000000001D"
+			rewards: [{
+				id: "7ADF00000000001D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Move a machine without losing it"
+			tasks: [
+				{
+					id: "7AE0000000001D00"
+					item: "mekanism:cardboard_box"
+					type: "item"
+				}
+			]
+			title: "&9Cardboard Box"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7ADE00000000001D"]
+			description: [
+				"The &eSeismic Vibrator&r scans the chunk it sits in and, read with a &7Seismic Reader&r, tells you exactly what blocks are in the column beneath you and at what depth."
+				""
+				"&e&lOn a void island this is nearly useless&r - there is nothing beneath you. Its value is entirely off-world: the Moon, Mars, Venus, Glacio and the Twilight Forest all have real terrain and real ore."
+				""
+				"&7Pair it with the Digital Miner. Vibrator to find out whether a spot is worth mining, Digital Miner to strip it without digging.&r"
+				""
+				"&8Cheap, one-off, and it saves a lot of pointless tunnelling on planets where the air is trying to kill you."
+			]
+			icon: "mekanism:seismic_vibrator"
+			id: "7ADE00000000001E"
+			rewards: [{
+				id: "7ADF00000000001E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Read the ground"
+			tasks: [
+				{
+					id: "7AE0000000001E00"
+					item: "mekanism:seismic_vibrator"
+					type: "item"
+				}
+			]
+			title: "&9Seismic Vibrator"
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7ADE00000000001E"]
+			description: [
+				"The &eOredictionificator&r converts an item into another item that shares the same tag - one mod's copper into another's, one variant of a resource into the one your recipe wants."
+				""
+				"&e&lIn a 167-mod pack this comes up constantly.&r Several mods add their own version of the same material, and recipes are often picky about which one they take. This block quietly makes the problem go away."
+				""
+				"&7Set the filter to the tag you want to normalise, feed the mixed items in, and get one consistent output.&r"
+				""
+				"&8Particularly handy downstream of the sieve, where ore chunks from different mods pile up alongside each other."
+			]
+			icon: "mekanism:oredictionificator"
+			id: "7ADE00000000001F"
+			rewards: [{
+				id: "7ADF00000000001F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Convert between equivalents"
+			tasks: [
+				{
+					id: "7AE0000000001F00"
+					item: "mekanism:oredictionificator"
+					type: "item"
+				}
+			]
+			title: "&9Oredictionificator"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7ADE000000000019"]
+			description: [
+				"A &eRadioactive Waste Barrel&r holds nuclear waste and slowly decays it away."
+				""
+				"&c&lThis is a safety device, and Mekanism radiation is not cosmetic.&r Waste released into the world irradiates the area, gives you lasting radiation poisoning, and does not clean itself up quickly. A leak near your base is a genuine problem."
+				""
+				"&e&lThe fission reactor produces waste continuously.&r You have three options: barrel it, decay it, or feed it into the &7Solar Neutron Activator&r for polonium - which the Ascension chapter needs anyway. The third is strictly better."
+				""
+				"&7Carry a &fGeiger Counter&r and a &fDosimeter&r before you start the fission line. One tells you how irradiated an area is, the other how irradiated &lyou&r are.&r"
+				""
+				"&8Never break a pipe carrying waste. Empty it with the Configurator first."
+			]
+			icon: "mekanism:radioactive_waste_barrel"
+			id: "7ADE000000000020"
+			rewards: [{
+				id: "7ADF000000000020"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Store it or vent it"
+			tasks: [
+				{
+					id: "7AE0000000002000"
+					item: "mekanism:radioactive_waste_barrel"
+					type: "item"
+				}
+			]
+			title: "&9Radioactive Waste Barrel"
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7ADE000000000020"]
+			description: [
+				"A &eLaser&r fires a beam that breaks blocks at range, and can be chained through &7Laser Amplifiers&r to store and release enormous energy in one pulse."
+				""
+				"&e&lThe practical use is the &fLaser Tractor Beam&e&r, which collects everything the laser breaks and pipes it to a chest - a mining setup with no moving parts."
+				""
+				"&e&lThe Amplifier is the clever part.&r It charges up and fires only when it reaches a threshold you set, so a slow trickle of power becomes a beam strong enough to break blocks a plain laser could not."
+				""
+				"&7Lasers pass through Structural Glass, which is how you aim one out of a sealed room.&r"
+				""
+				"&8Mostly a toy on a void island, genuinely useful on a planet with terrain."
+			]
+			icon: "mekanism:laser"
+			id: "7ADE000000000021"
+			rewards: [{
+				id: "7ADF000000000021"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Precision cutting, and a big battery"
+			tasks: [
+				{
+					id: "7AE0000000002100"
+					item: "mekanism:laser"
+					type: "item"
+				}
+			]
+			title: "&9Lasers"
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7ADE000000000021"]
+			description: [
+				"The &eDimensional Stabilizer&r keeps chunks loaded around it, powered by FE."
+				""
+				"&e&lWhy this matters more than FTB Chunks here:&r your force-load allowance is limited and shared, and it does not follow you off-world. A Stabilizer on the Moon keeps your Moon base running whether or not you have chunk claims there."
+				""
+				"&e&lIt costs power per chunk&r, and the cost rises with how many you load. Load the chunk the machines are in, not a comfortable radius around them."
+				""
+				"&c&lRemember the standing rule on this server:&r nothing that slows the machine down. Every loaded chunk ticks forever - be deliberate about which ones."
+				""
+				"&7Between this, FTB Chunks and the Quantum Entangloporter, an off-world outpost can run completely unattended.&r"
+			]
+			icon: "mekanism:dimensional_stabilizer"
+			id: "7ADE000000000022"
+			rewards: [{
+				id: "7ADF000000000022"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Chunk loading, Mekanism-style"
+			tasks: [
+				{
+					id: "7AE0000000002200"
+					item: "mekanism:dimensional_stabilizer"
+					type: "item"
+				}
+			]
+			title: "&9Dimensional Stabilizer"
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7ADE000000000022"]
+			description: [
+				"The &eFlamethrower&r burns hydrogen from your gas network - the same hydrogen the Electrolytic Separator makes as a by-product."
+				""
+				"&e&lThree modes&r, cycled with the mode key: &7Combat&r for burning things, &7Heat&r for smelting blocks in place, and &7Inferno&r for setting large areas alight."
+				""
+				"&e&lHeat mode is the interesting one&r - it smelts blocks where they stand, so you can cook a wall of ore into ingots without touching a furnace."
+				""
+				"&c&lIt sets you on fire as readily as anything else.&r Fire resistance, or stand well back."
+				""
+				"&8Refill it from any Chemical Tank of hydrogen. Free ammunition, given you are already making it."
+			]
+			icon: "mekanism:flamethrower"
+			id: "7ADE000000000023"
+			rewards: [{
+				id: "7ADF000000000023"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Hydrogen, weaponised"
+			tasks: [
+				{
+					id: "7AE0000000002300"
+					item: "mekanism:flamethrower"
+					type: "item"
+				}
+			]
+			title: "&9Flamethrower"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"7ADE000000000023"
+				"7ADE000000000015"
+				"7ADE000000000019"
+				"7ADE00000000000B"
+			]
+			description: [
+				"&9&lYou have built all of it.&r"
+				""
+				"Ore processing at 5x. A chemistry line making its own acids. Steam power from a boiler and turbine you sized yourself. Storage that indexes itself, crafting that repeats itself, and a suit that flies."
+				""
+				"&7What is left is in &fAge VIII &7- the fission reactor, the Solar Neutron Activator, polonium, the SPS, and two pellets of antimatter for the Heart of the Sky.&r"
+				""
+				"&8Everything you built here is a prerequisite for that. Nothing was wasted."
+			]
+			icon: "mekanism:pellet_antimatter"
+			id: "7ADE000000000024"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7ADF000000000024"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every system, running"
+			tasks: [{
+				id: "7AE0000000002400"
+				title: "Master Mekanism"
+				type: "checkmark"
+			}]
+			title: "&9&lMaster of Mekanism"
+			x: 1.0d
+			y: 6.5d
+		}
 	]
 	title: "&9Tech Branch · Mekanism"
 }
