@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (167 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (170 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 167 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 170 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,34 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 167 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 170 mods — remove any extras or you'll be kicked on join.
 
-> **Latest: v1.20.0 — The quest book, rebuilt. 357 → 578 quests, one mod per chapter.
+> **Unreleased — Performance + the keystone bridge fix. 170 mods.**
+>
+> **Crafting a stack no longer freezes the server.** The pack has **30,765 recipes**, and
+> vanilla matches a craft by scanning that list linearly *every single time*. Shift-clicking
+> a stack is up to 64 crafts back to back, which stalls the server mid-tick. Two mods fix it:
+> **FastWorkbench** caches the last recipe and only re-matches when the grid contents actually
+> change (cutting match operations from ~600 to **1**), and **FastSuite** replaces linear
+> scanning with an indexed lookup across the whole recipe system. Both are MIT, by the
+> Apotheosis author, and rely on Placebo which the pack already ships.
+>
+> Crafting cannot be made client-side — it is server-authoritative by design, or clients
+> could craft anything. Making the server's lookup cheap is the fix.
+>
+> **Four keystone bridge recipes were colliding.** `ae2_bridge_certus`,
+> `mekanism_bridge_fluorite`, `mekanism_bridge_osmium` and `powah_bridge_uraninite` were all
+> shapeless with the *identical* ingredient set — 1 keystone + 2 sky dust. Minecraft returns
+> the first shapeless match, so only one of the four was craftable and the other three were
+> dead. Since a void world has no ore, that silently gated AE2, the Mekanism fission fuel
+> line and Powah behind a coin flip. All four are now **shaped** with distinct arrangements —
+> same cost, same outputs, no balance change.
+>
+> Also added **spark** (`/spark health`, `/spark profiler`) and tuned the server JVM:
+> `-Xms4G -Xmx4G` with Aikar's flags, down from an untuned `-Xmx6G`. Combined with the
+> client dropping 6G → 5G, that returns ~3 GB to the OS on a 16 GB machine.
+
+> **v1.20.0 — The quest book, rebuilt. 357 → 578 quests, one mod per chapter.
 > 167 mods.**
 >
 > No mod changes and no recipe changes. This is the release v1.19.0 should have been.
