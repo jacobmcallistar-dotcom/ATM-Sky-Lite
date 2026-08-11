@@ -1,13 +1,15 @@
 {
-  "__comment": "Void worlds have no osmium ore - this keystone bridge is the skyblock entry into Mekanism.",
+  "__comment": "Void worlds have no osmium ore - this keystone bridge is the skyblock entry into Mekanism. SHAPED, not shapeless: all four keystone bridges (certus/fluorite/osmium/uraninite) used the identical shapeless set of 1 keystone + 2 sky dust, so Minecraft only ever matched the first one and the other three were uncraftable. Same cost, distinct arrangement.",
   "conditions": [
     { "type": "forge:mod_loaded", "modid": "mekanism" }
   ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    { "item": "skyforge:industrial_keystone" },
-    { "item": "skyforge:sky_dust" },
-    { "item": "skyforge:sky_dust" }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DKD"
   ],
+  "key": {
+    "K": { "item": "skyforge:industrial_keystone" },
+    "D": { "item": "skyforge:sky_dust" }
+  },
   "result": { "item": "mekanism:ingot_osmium", "count": 2 }
 }
