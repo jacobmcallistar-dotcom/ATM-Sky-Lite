@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "realms_beyond"
 	group: "1A2B000000000002"
-	icon: "twilightforest:twilight_portal_miniature_structure"
+	icon: "aether:gold_dungeon_key"
 	id: "3C1F000000000005"
 	order_index: 17
 	quest_links: [ ]
@@ -11,13 +11,13 @@
 		{
 			dependencies: ["75B7246A1B0C350B"]
 			description: [
-				"&c&lAge VII · Realms Beyond.&r Your sky island is not the only world - but the old doors are sealed, and space holds every key."
+				"&c&lAge VII · Realms Beyond.&r Your sky island is not the only world - but the old doors are sealed, and space holds most of the keys."
 				""
-				"&7The Twilight Forest&r opens to those who have walked the &eMoon&r - a Desh Ingot lights its pool now, not a diamond."
+				"&7The Aether&r needs no planet at all - glowstone and a bucket of water will open it. Its &edungeons&r are the gate, not its door."
 				"&7The Undergarden&r demands a catalyst cored with &eMars&r ostrum."
 				"&7The Everbright&r ignites only with a lighter forged from &eVenus&r calorite."
 				""
-				"One planet, one realm. Climb the solar system and the dimensions fall open behind you. Their bosses guard the metals your fission reactor will demand."
+				"Climb the solar system and two of the three dimensions fall open behind you. The Aether is open from the first day - but its bosses guard the keys your endgame demands."
 			]
 			icon: "minecraft:ender_pearl"
 			id: "7EF5DDBB65C58DDC"
@@ -41,133 +41,131 @@
 		{
 			dependencies: ["7EF5DDBB65C58DDC"]
 			description: [
-				"Fill a 2x2 pool with water, ring it with flowers/grass - and toss in a &eDesh Ingot&r. In this pack, moon metal opens the Twilight, not diamonds."
+				"Build a frame of &eGlowstone&r - any shape a Nether portal would accept - and fill it with a &ebucket of water&r. The surface shimmers, and you fall &lupward&r."
 				""
-				"&cThe portal stays dead until you have set foot on the Moon&r - the forest only answers to those who've left the sky."
+				"&aNo gate, no planet, no boss.&r The Aether is the one dimension you can reach on day one. That is deliberate: the Aether is where you go to &lget&r strong, not a reward for already being strong."
 				""
-				"A whole shadowed overworld of dungeons and a strict boss order awaits. Its Fiery Ingots are the only metal your fission reactor accepts."
+				"&e&lWhat you are walking into:&r an endless sky of floating islands, Holystone and Aercloud, with three dungeons buried in it - &6Bronze&r, &7Silver&r and &eGold&r. Each is sealed by a boss, and each boss drops exactly one key."
+				""
+				"&c&lThose four keys are the pack's ending.&r Bronze, Silver, Gold and Deep Aether's Brass are four of the five components of the &bCelestial Core&r. Do not spend them casually."
+				""
+				"&8Falling off the edge of the Aether does not kill you - it drops you back into the overworld. In a skyblock, that means falling into the void. Bring blocks."
 			]
-			icon: "twilightforest:twilight_portal_miniature_structure"
+			icon: "minecraft:glowstone"
 			id: "67BC6ABF61224134"
 			rewards: [{
 				count: 16
 				id: "2EB10EA25CB53217"
-				item: "minecraft:diamond"
+				item: "minecraft:glowstone"
 				type: "item"
 			}]
 			subtitle: "&aOpen from the start - no gate"
 			tasks: [{
-				dimension: "twilightforest:twilight_forest"
+				dimension: "aether:the_aether"
 				id: "4BA53916264ABFE6"
 				type: "dimension"
 			}]
-			title: "Into the Twilight"
+			title: "Into the Aether"
 			x: -6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["67BC6ABF61224134"]
 			description: [
-				"The &aNaga&r guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."
+				"The &6Slider&r sleeps inside the Bronze Dungeon, buried under the islands. Wake it and the room becomes the fight."
 				""
-				"&e&lThe Naga is the doorway to the rest of the Twilight.&r Killing it unlocks the next hollow hill, and the chain of bosses that follows ends in trophies you need for the Celestial Core."
+				"&e&lThis is the Aether's tutorial boss&r - and the first Celestial Core component. Killing it drops the &6Bronze Key&r. &lKeep the key.&r"
 				""
-				"&e&lThe fight:&r a spiral courtyard with a segmented serpent that charges in straight lines and smashes the pillars. It cannot be outrun."
-				"&7- &fUse the pillars.&7 Break its charge by putting stone between you. It destroys them, which is fine - there are plenty."
-				"&7- &fHit the head&7, not the body segments."
-				"&7- &fIt alternates&7 between charging and a slower circling phase. Attack during the circle, hide during the charge."
-				"&7- &fBring a shield&7 and food. This is a stamina fight, not a burst fight."
+				"&e&lThe fight:&r an animated stone cube that slams along the axes of its chamber, ricocheting between the walls. It does not chase you the way a mob does - it lines up and fires itself."
+				"&7- &fMove diagonally.&7 It can only travel along one axis at a time, so a corner is the safest place in the room."
+				"&7- &fHit it when it stops.&7 It pauses to re-aim between slams - that window is your entire damage output."
+				"&7- &fDo not melee it while it is moving&7; you will be crushed against the wall."
+				"&7- &fThe chamber is sealed&7 until it dies. There is no retreating, so bring food and a shield in with you."
 				""
-				"&e&lDrops:&r &7Naga Scales&r (a full armour set) plus the &7Naga Trophy&r - one of the five you will need for the Celestial Core. &lKeep the trophy.&r"
+				"&e&lDrops:&r the &6Bronze Dungeon Key&r and Carved Stone. The dungeon's reward chest holds Zanite gear, the Hammer of Kingbdogz and the Agility Cape."
 				""
-				"&8Iron gear is enough if you use the terrain. Diamond makes it comfortable. Do not bring your only good sword and no backup."
+				"&8Iron gear is genuinely enough here if you respect the corners. This is the friendliest boss in the chapter - the difficulty climbs steeply after it."
 			]
-			icon: "twilightforest:naga_trophy"
+			icon: "aether:bronze_dungeon_key"
 			id: "321DE9424210F3F1"
 			rewards: [{
-				count: 9
+				count: 6
 				id: "51A7A36D2BE9D256"
-				item: "twilightforest:naga_scale"
+				item: "aether:zanite_gemstone"
 				type: "item"
 			}]
-			subtitle: "&7Scale armour and the first trophy"
+			subtitle: "&7Bronze Key - Core component one"
 			tasks: [{
-				entity: "twilightforest:naga"
+				entity: "aether:slider"
 				id: "0481725F962E0ED5"
 				type: "kill"
 				value: 1L
 			}]
-			title: "The Naga"
+			title: "The Slider"
 			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["321DE9424210F3F1"]
 			description: [
-				"The &5Lich&r in his tower is the gatekeeper of the whole dimension. Beat him and the deeper biomes stop hurting you."
+				"The &7Valkyrie Queen&r holds the Silver Dungeon - and she will not so much as look at you until you have earned the right to ask."
 				""
-				"&c&lHe is a hard progression lock, not an optional boss.&r Until the Lich dies the Twilight Forest actively punishes you for entering its deeper biomes - you take escalating damage and simply cannot proceed. Everything past this point in the chapter needs him dead first."
+				"&c&lThis kill unlocks Draconic Evolution.&r The &bDraconium Core&r - the root of the entire Draconic tree and therefore all of Act IV - is now pinned with the &7Silver Dungeon Key&r. No Valkyrie Queen, no Draconic."
 				""
-				"&e&lThe fight has three distinct phases:&r"
-				"&71.&r &7Shield phase&7 - he floats behind orbiting shields and fires homing bolts. &lReflect them back with a sword&r; each reflected bolt breaks one shield. Melee is useless here."
-				"&72.&r &7Summon phase&7 - shields down, he teleports and spawns zombies and skeletons. Clear adds, chase him down."
-				"&73.&r &7Melee phase&7 - out of tricks, he fights directly. This part is short."
+				"&e&lYou cannot simply attack her.&r Talk to her and she demands &7Victory Medals&r - dropped by the ordinary Valkyries patrolling the dungeon. Kill enough of them, hand the medals over, and only then does the fight begin. The dungeon crawl IS the boss gate."
 				""
-				"&7A shield helps enormously in phase one. Do not waste arrows on him while the shields are up.&r"
+				"&e&lThe fight:&r she flies, teleports, and hits far harder than anything you have met. Her Valkyries do not join in, but the arena is open and she uses all of it."
+				"&7- &fShe closes distance instantly.&7 Ranged will not save you - expect melee."
+				"&7- &fFight her on the ground&7 where you can strafe; do not get cornered against the arena walls."
+				"&7- &fBring golden apples.&7 Her burst damage is the highest so far in the pack."
 				""
-				"&e&lDrops:&r scepters (the Twilight and Zombie scepters are genuinely useful) and the &7Lich Trophy&r - Celestial Core component number two. &lKeep the trophy.&r"
+				"&e&lDrops:&r the &7Silver Dungeon Key&r. The reward chest holds the Holy Sword, Invisibility Cloak and Enchanted Gravitite. &lKeep the key.&r"
 				""
-				"&8The tower is full of lesser liches on the lower floors. Clear them first so nothing interrupts the real fight."
+				"&8Clear the Valkyries first and bank the medals before you commit. Dying mid-negotiation means walking the whole dungeon again."
 			]
-			icon: "twilightforest:lich_trophy"
+			icon: "aether:silver_dungeon_key"
 			id: "7194AE474BDDA510"
 			rewards: [{
+				count: 8
 				id: "7D6E4A4E7E1C768C"
-				item: {
-					Count: 1
-					id: "twilightforest:lifedrain_scepter"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "aether:golden_amber"
 				type: "item"
 			}]
-			subtitle: "&7Trophy for the Celestial Core"
+			subtitle: "&cSilver Key gates Draconic"
 			tasks: [{
-				entity: "twilightforest:lich"
+				entity: "aether:valkyrie_queen"
 				id: "219FACD6690D1306"
 				type: "kill"
 				value: 1L
 			}]
-			title: "The Lich"
+			title: "The Valkyrie Queen"
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["7194AE474BDDA510"]
 			description: [
-				"The &cHydra&r of the Fire Swamp: three heads, a lot of fire. Its blood forges some of the best gear in the realm."
+				"At the bottom of the Gold Dungeon, in a hall of fire, waits the &eSun Spirit&r - the Aether's final boss."
 				""
-				"&c&lThis fight pays for wireless AE2.&r Fiery Blood smelts into &7Fiery Ingots&r, and Fiery Ingots are the frame of the &bQuantum Ring&r - the block that links your island network to the Moon, Mars and everywhere else. It also forges &7Fission Reactor Casings&r, so Ascension runs through here too."
+				"&c&lThis fight pays for wireless AE2.&r The &eGold Dungeon Key&r is the frame of the &bQuantum Ring&r - the block that links your island network to the Moon, Mars and everywhere else. It is also Celestial Core component three."
 				""
-				"&e&lThe fight:&r three heads that attack independently, breathe fire, and bite. Heads you destroy grow back unless you are fast."
-				"&7- &fFire resistance is close to mandatory.&7 Potion, or Fiery armour if you already have some."
-				"&7- &fKill heads quickly&7 - damaged heads regenerate if you take too long between them."
-				"&7- &fStay under it&7 where the fire breath cannot easily track you."
-				"&7- &fBring a bow&7 for the heads you cannot safely reach."
-				"&7- &fBlock up the swamp approach&7 - the surrounding area is hostile and you do not want adds mid-fight."
+				"&e&lThe fight is a puzzle, not a slugfest.&r He is immune to your weapons. He hovers, laughing, and throws fire while summoning Fire Minions."
+				"&7- &fHe can only be hurt by snowballs.&7 Bring stacks of them - this is not a joke, it is the entire mechanic."
+				"&7- &fThe arena is lava-floored.&7 Fire resistance is close to mandatory and a single knockback can end the run."
+				"&7- &fKill the Fire Minions&7 or they will chip you to death while you are aiming."
+				"&7- &fIcestone from the Aether&7 makes snowballs renewable - stock up before you go down."
 				""
-				"&e&lDrops:&r &7Fiery Blood&r (smelt for Fiery Ingots) and the &7Hydra Trophy&r - Celestial Core component number three. &lKeep the trophy.&r"
+				"&e&lDrops:&r the &eGold Dungeon Key&r and the &7Sun Altar&r, which lets you set the Aether's time of day forever after. The reward chest holds Gravitite gear, the Vampire Blade and Life Shards."
 				""
-				"&8Do not attempt this in iron. This is the first Twilight boss that genuinely expects enchanted diamond or better."
+				"&8Beating him permanently ends the Aether's eternal-day cycle if you want it to. Come with your best armour, fire resistance, and more snowballs than you think you need."
 			]
-			icon: "twilightforest:hydra_trophy"
+			icon: "aether:gold_dungeon_key"
 			id: "10583B7DED57F345"
 			rewards: [
 				{
 					count: 2
 					id: "685E2A775367F887"
-					item: "twilightforest:hydra_chop"
+					item: "aether:life_shard"
 					type: "item"
 				}
 				{
@@ -176,15 +174,57 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "&cFiery Blood for the Quantum Ring"
+			subtitle: "&cGold Key gates the Quantum Ring"
 			tasks: [{
-				entity: "twilightforest:hydra"
+				entity: "aether:sun_spirit"
 				id: "548FA859046E1025"
 				type: "kill"
 				value: 1L
 			}]
-			title: "The Hydra"
+			title: "The Sun Spirit"
 			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10583B7DED57F345"]
+			description: [
+				"Deep Aether's own contribution: the &b&lEye of the Storm&r, a serpent of cloud and lightning coiled in the Brass Dungeon."
+				""
+				"&c&lCelestial Core component four.&r The &6Brass Dungeon Key&r drops from this fight and nowhere else. &lKeep it.&r"
+				""
+				"&e&lThe fight:&r a segmented storm-serpent that circles the arena in the air and dives through it. Like the Slider it commits to a line, but unlike the Slider it does so in three dimensions."
+				"&7- &fThe head is the target.&7 The trailing segments are armour, not health."
+				"&7- &fIt calls lightning&7 on your position - keep moving, never stand still to drink a potion."
+				"&7- &fRanged is viable here&7 for once, because it spends most of the fight out of reach."
+				"&7- &fBuild cover.&7 A two-block wall breaks line of sight on the storm arrows."
+				""
+				"&8This is the last key. With Bronze, Silver, Gold and Brass in hand you need only one more component - a &7Monstrous Horn&r from Cataclysm's Netherite Monstrosity - and the Celestial Core is yours."
+			]
+			icon: "deep_aether:brass_dungeon_key"
+			id: "0DABDEE4D0A6CA1A"
+			rewards: [
+				{
+					count: 10
+					id: "7F00AAAA00000001"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+				{
+					id: "7F00AAAA00000004"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&bBrass Key - the last of the four"
+			tasks: [{
+				entity: "deep_aether:eots_controller"
+				id: "7F00BBBB00000001"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&5Eye of the Storm"
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -337,206 +377,6 @@
 			title: "Forgotten Guardian"
 			x: -4.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["10583B7DED57F345"]
-			description: [
-				"In the Labyrinth beneath the swamp waits the &6Minoshroom&r. Slay it - the Mazebreaker pickaxe is your key deeper in."
-				""
-				"&e&lThe Labyrinth is the real obstacle, not the boss.&r It is a huge underground maze full of minotaurs, and the walls resist ordinary tools. The Minoshroom sits in a chamber at its heart."
-				""
-				"&e&lThe fight:&r a minotaur that charges in straight lines like the Naga but hits far harder, in a confined room with no space to retreat."
-				"&7- &fSidestep the charge&7 - it commits to a direction and cannot correct."
-				"&7- &fIt heals from nearby mushrooms.&7 Break them before engaging."
-				"&7- &fBring milk or a cleansing option&7 - it inflicts hunger and nausea."
-				""
-				"&e&lThe drop that matters is the &7Meef Stroganoff&e and the Diamond Minotaur Axe&r, but progression-wise this kill unlocks the &7Mazebreaker&r - the only pickaxe that breaks Maze Stone quickly, and the tool you need before the Dark Tower."
-				""
-				"&8Map as you go or bring blocks to mark turns. The Labyrinth genuinely will get you lost, and dying deep inside means a long walk back to your gravestone."
-			]
-			icon: "twilightforest:minoshroom_trophy"
-			id: "0DABDEE4D0A6CA1A"
-			rewards: [{
-				count: 6
-				id: "7F00AAAA00000001"
-				item: "twilightforest:steeleaf_ingot"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "&7Labyrinth, under the maze"
-			tasks: [{
-				entity: "twilightforest:minoshroom"
-				id: "7F00BBBB00000001"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Minoshroom"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7F00000000000001"]
-			description: [
-				"The Goblin Knight Stronghold is ruled by the &7Knight Phantom&r - armoured ghosts on spectral steeds. Break them for Knightmetal."
-				""
-				"&c&lThis kill unlocks Draconic Evolution.&r The &bDraconium Core&r - the root of the entire Draconic tree and therefore all of Act IV - is now pinned with &7Knightmetal Ingots&r. No Knight Phantom, no Draconic."
-				""
-				"&e&lThe fight:&r several armoured phantoms that phase in and out, fight from the air, and hit hard with lances."
-				"&7- &fThey are invulnerable while transparent.&7 Wait for them to solidify."
-				"&7- &fThey fight in a sealed trophy room&7 - no retreating, so bring supplies in with you."
-				"&7- &fThey come in waves.&7 Heal between them."
-				"&7- &fRanged is awkward&7 because of the phasing. Melee on the ground when they descend."
-				""
-				"&e&lDrops:&r &7Knightmetal Ingots&r and &7Armor Shards&r - Knightmetal armour and tools are excellent, and Knightmetal is now a hard requirement for Draconic. Plus the Knight Phantom Trophy."
-				""
-				"&8Getting in requires clearing the Goblin Stronghold, which is a dungeon in its own right. Bring building blocks - the mazes are easier to cheat through than to solve."
-			]
-			icon: "twilightforest:knight_phantom_trophy"
-			id: "57369136D708C9BF"
-			rewards: [{
-				count: 6
-				id: "7F00AAAA00000002"
-				item: "twilightforest:knightmetal_ingot"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "&cKnightmetal gates Draconic"
-			tasks: [{
-				entity: "twilightforest:knight_phantom"
-				id: "7F00BBBB00000002"
-				type: "kill"
-				value: 1L
-			}]
-			title: "Knight Phantom"
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7F00000000000002"]
-			description: [
-				"Atop the Dark Tower floats the &4Ur-Ghast&r, weeping fire. Bring a Lamp of Cinders and nerves of steel."
-				""
-				"&c&lCelestial Core component number four.&r Keep the trophy - without it the pack has no ending."
-				""
-				"&e&lThe fight:&r a giant ghast that hovers above an open tower roof, rains fireballs, and summons smaller ghasts constantly."
-				"&7- &fReflect its fireballs&7 back at it. That is the primary damage source - your bow will not carry this alone."
-				"&7- &fIt periodically retreats to the ceiling&7 and becomes untargetable while it heals. Kill the adds during that window."
-				"&7- &fBring blocks.&7 The arena is open to a very long fall and the ghasts will knock you off it."
-				"&7- &fFire resistance again.&7 Everything here is fire."
-				""
-				"&e&lGetting there is half the fight.&r The Dark Tower is full of ghast traps and locked block-puzzle doors. A &7Lamp of Cinders&r clears the thorns on the approach; the tower's coloured key-blocks are opened by killing the tower's mini-bosses."
-				""
-				"&e&lDrops:&r &7Carminite&r, &7Fiery Tears&r, and the &7Ur-Ghast Trophy&r."
-				""
-				"&8This is the hardest Twilight boss before the Snow Queen. Come with the best gear you own and a stack of golden apples."
-			]
-			icon: "twilightforest:ur_ghast_trophy"
-			id: "25B739B6205C0331"
-			rewards: [
-				{
-					count: 6
-					id: "7F00AAAA00000003"
-					item: "twilightforest:fiery_ingot"
-					type: "item"
-				}
-				{
-					id: "7F00AAAA00000004"
-					type: "random"
-				}
-			]
-			shape: "diamond"
-			subtitle: "&cTrophy for the Celestial Core"
-			tasks: [{
-				entity: "twilightforest:ur_ghast"
-				id: "7F00BBBB00000003"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Ur-Ghast"
-			x: 4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7F00000000000003"]
-			description: [
-				"Deep in the Snowy Forest, the &fAlpha Yeti&r guards its lair. Beat it to brave the frozen peaks above."
-				""
-				"&c&lThis is the gate to the Snow Queen&r - and the Snow Queen's trophy is the fifth and last piece of the Celestial Core. You cannot finish the pack without coming through here."
-				""
-				"&e&lThe fight:&r a large yeti in a cave lair that grabs you, carries you into the air and throws you."
-				"&7- &fThe grab is the whole fight.&7 It picks you up, climbs, and drops you - the fall is what kills people, not the melee."
-				"&7- &fFight near the floor&7 and keep something soft or a water bucket below you."
-				"&7- &fIt is fast&7 - do not plan on outrunning it in a confined lair."
-				""
-				"&e&lDrops:&r &7Alpha Yeti Fur&r, which crafts into &7Arctic Armour&r - the gear that keeps you alive in the Glacier biome above. That biome is where the Aurora Palace and the Snow Queen are."
-				""
-				"&7So the order is: Alpha Yeti, then Arctic Armour, then the Glacier, then the Snow Queen. Skipping the armour means freezing to death on the approach.&r"
-				""
-				"&8Take fall-damage protection if you have it. Free Runners, a Draconic shield, or feather falling all turn the yeti's signature move into an inconvenience."
-			]
-			icon: "twilightforest:alpha_yeti_trophy"
-			id: "630F29D7A31F391E"
-			rewards: [{
-				count: 8
-				id: "7F00AAAA00000005"
-				item: "twilightforest:ironwood_ingot"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "&7Fur for arctic gear"
-			tasks: [{
-				entity: "twilightforest:alpha_yeti"
-				id: "7F00BBBB00000004"
-				type: "kill"
-				value: 1L
-			}]
-			title: "Alpha Yeti"
-			x: 6.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7F00000000000004"]
-			description: [
-				"The Snow Queen reigns in the Aurora Palace - the final boss of the Twilight Forest."
-				""
-				"Defeat her and you have conquered the entire dimension. Only the Final Castle remains for the truly obsessed."
-			]
-			icon: "twilightforest:snow_queen_trophy"
-			id: "2A170433DB798C1C"
-			rewards: [
-				{
-					id: "7F00AAAA00000006"
-					item: {
-						Count: 1
-						id: "twilightforest:lamp_of_cinders"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7F00AAAA00000007"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-				{
-					id: "7F00AAAA00000008"
-					type: "random"
-				}
-			]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Twilight Forest conquered"
-			tasks: [{
-				entity: "twilightforest:snow_queen"
-				id: "7F00BBBB00000005"
-				type: "kill"
-				value: 1L
-			}]
-			title: "&5The Snow Queen"
-			x: 8.0d
-			y: 4.5d
 		}
 	]
 	title: "&cAge VII · Realms Beyond"

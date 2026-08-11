@@ -42,24 +42,26 @@
 				"10583B7DED57F345"
 			]
 			description: [
-				"&cThe fission gate.&r In this pack, every batch of Fission Reactor Casings is forged around a &eFiery Ingot&r - Twilight Forest metal, smelted from iron and the Hydra's blood (or the Ur-Ghast's tears)."
+				"&cThe fission gate.&r In this pack, Fission Reactor Casings are forged around a &eGold Dungeon Key&r - the key the &eSun Spirit&r drops when it dies at the bottom of the Aether's Gold Dungeon."
 				""
-				"No Twilight conquest, no reactor. Stock four ingots and the atom is yours to split."
+				"No Aether conquest, no reactor. One key forges sixteen casings, so a single Sun Spirit covers a whole reactor - but you have to beat him in a lava-floored hall with a pocket full of snowballs first."
+				""
+				"&8The same key also frames the Quantum Ring. Decide which you want first, or go back down for another."
 			]
-			icon: "twilightforest:fiery_ingot"
+			icon: "aether:gold_dungeon_key"
 			id: "2106000000000010"
 			rewards: [{
-				count: 2
+				count: 4
 				id: "2106000000000110"
-				item: "twilightforest:fiery_ingot"
+				item: "aether:enchanted_gravitite"
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "&7The Twilight's toll"
+			subtitle: "&7The Sun Spirit's toll"
 			tasks: [{
-				count: 4L
+				count: 1L
 				id: "2106000000000230"
-				item: "twilightforest:fiery_ingot"
+				item: "aether:gold_dungeon_key"
 				type: "item"
 			}]
 			title: "&5Trial of Fire"

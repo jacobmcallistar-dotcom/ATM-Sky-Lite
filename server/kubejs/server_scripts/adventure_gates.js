@@ -14,7 +14,7 @@
 // Every travel destination in the pack was locked behind the space program,
 // and the space program was locked behind the Wither:
 //
-//   Twilight Forest  <- ad_astra:moon advancement
+//   Twilight Forest  <- ad_astra:moon advancement   (mod since removed)
 //   The Undergarden  <- Ostrum   (Mars)
 //   Blue Skies       <- Calorite (Venus)
 //   Ad Astra itself  <- Nether Star on the NASA Workbench (kill the Wither)
@@ -37,9 +37,27 @@
 // mandatory kill; it just no longer blocks the mid-game.
 //
 // Combat now gates only late-game power:
-//   Hydra          -> wireless AE2
-//   Knight Phantom -> Draconic Evolution
+//   Sun Spirit     -> wireless AE2
+//   Valkyrie Queen -> Draconic Evolution
 //   Wither         -> Heart of the Sky (via SkyForge's recipe)
+//
+// TWILIGHT FOREST -> THE AETHER  (2026-08-11)
+// -------------------------------------------
+// Twilight Forest was removed from the pack. The Aether replaces it as the
+// adventure dimension, and the two combat gates below moved onto Aether bosses.
+//
+// The mapping rule is now uniform and worth stating once: EVERY combat gate in
+// this pack is a DUNGEON KEY, dropped by the boss that guards that dungeon.
+// Keys are a guaranteed single drop per kill - they cannot be sieved, traded,
+// bred or duplicated - and because Aether dungeons keep generating across the
+// dimension, a player who needs another one can go and earn another one. That
+// is the same "kill it again" cost the old trophies had, with none of TF's
+// mixture of ingots, trophies and stronghold loot.
+//
+//   Bronze Dungeon / Slider          -> aether:bronze_dungeon_key
+//   Silver Dungeon / Valkyrie Queen  -> aether:silver_dungeon_key
+//   Gold Dungeon   / Sun Spirit      -> aether:gold_dungeon_key
+//   Brass Dungeon  / Eye of the Storm-> deep_aether:brass_dungeon_key
 // ---------------------------------------------------------------------------
 
 ServerEvents.recipes(event => {
@@ -137,22 +155,52 @@ ServerEvents.recipes(event => {
   // LATE-GAME - COMBAT. Finishing the game, not learning it.
   // =========================================================================
 
-  // Fiery Ingots are smelted from Fiery Blood, which only the Hydra drops.
+  // The Gold Key drops only from the Sun Spirit, the Aether's final boss, at
+  // the bottom of a Gold Dungeon. This is the old Hydra slot: the hardest fight
+  // in the adventure dimension guards wireless AE2.
   gate(
     'ae2:network/blocks/quantum_ring',
     '#forge:ingots/iron',
-    'twilightforest:fiery_ingot',
-    'Quantum Ring <- Hydra'
+    'aether:gold_dungeon_key',
+    'Quantum Ring <- Sun Spirit'
   )
 
-  // Knightmetal comes from the Goblin Stronghold. The Draconium Core is the
-  // root of the entire Draconic tree.
+  // The Silver Key drops from the Valkyrie Queen, who will not even fight you
+  // until you have collected Victory Medals from her Valkyries - so this gate
+  // is a dungeon crawl, not a single ambush. The Draconium Core is the root of
+  // the entire Draconic tree. This is the old Knight Phantom slot.
   gate(
     'draconicevolution:components/draconium_core',
     '#forge:ingots/gold',
-    'twilightforest:knightmetal_ingot',
-    'Draconium Core <- Knight Phantom'
+    'aether:silver_dungeon_key',
+    'Draconium Core <- Valkyrie Queen'
   )
+
+  // --- The fission gate ----------------------------------------------------
+  // SkyForge's own datapack ships
+  //   data/mekanismgenerators/recipes/fission_reactor/casing.json
+  // which overrode the Mekanism casing recipe to demand a Twilight Forest
+  // Fiery Ingot. That item no longer exists, so as of the Aether swap that
+  // recipe fails to load and the casing became UNCRAFTABLE - which would have
+  // dead-ended Age VI silently. This restores it on the Aether ladder.
+  //
+  // Two deliberate changes from the SkyForge original:
+  //   - Fiery Ingot -> Gold Dungeon Key, so fission stays a COMBAT gate (the
+  //     Sun Spirit) rather than quietly becoming a mining gate.
+  //   - output 4 -> 16, because a key is one guaranteed drop per boss kill
+  //     whereas Fiery Ingots came in batches. At 4 per craft a reactor would
+  //     have cost several Gold Dungeons; at 16 a single Sun Spirit covers it.
+  event.remove({ id: 'mekanismgenerators:fission_reactor/casing' })
+  event.shaped('16x mekanismgenerators:fission_reactor_casing', [
+    ' I ',
+    'IXI',
+    ' F '
+  ], {
+    I: '#forge:ingots/lead',
+    F: 'aether:gold_dungeon_key',
+    X: 'mekanism:steel_casing'
+  }).id('mekanismgenerators:fission_reactor/casing')
+  console.log('[gates] fission casing re-gated: twilightforest:fiery_ingot -> aether:gold_dungeon_key (x16)')
 
   // =========================================================================
   // NASA WORKBENCH - the Nether Star STAYS.  (Jacob's call, stated twice.)
@@ -176,5 +224,5 @@ ServerEvents.recipes(event => {
   // ask for more killing.
   // =========================================================================
 
-  console.log('[gates] v3 applied - Wither gates the Moon; beyond that, travel only')
+  console.log('[gates] v4 applied - Wither gates the Moon; Aether bosses gate late-game power')
 })
