@@ -98,15 +98,15 @@
 				"&8Start with a Normal. Upgrading later means rebuilding the interior, so leave yourself room."
 			]
 			icon: "compactmachines:machine_normal"
-			id: "26846F680FA84EA4"
+			id: "1D2C61639894A583"
 			rewards: [{
-				id: "204B00CB12ABA731"
+				id: "1672CE6660F5E872"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Tiny to Maximum"
 			tasks: [{
-				id: "1A781539B4A0AACE"
+				id: "23DDBC83BCB93627"
 				item: "compactmachines:machine_tiny"
 				type: "item"
 			}]
@@ -125,15 +125,15 @@
 				"&7You can have many tunnels per machine, so a single Compact Machine can take power in, materials in, and push three different outputs to three different destinations.&r"
 			]
 			icon: "compactmachines:tunnel"
-			id: "4BBBE538189B4263"
+			id: "3FDACB0764D6A0FF"
 			rewards: [{
-				id: "4E023182868F349B"
+				id: "56AE56888A210407"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Item, fluid, energy"
 			tasks: [{
-				id: "5E8E9408FEA72869"
+				id: "1F08CE73396987DD"
 				item: "compactmachines:tunnel"
 				type: "item"
 			}]
@@ -150,15 +150,15 @@
 				"&8Keep one in your hotbar permanently once you start using Compact Machines seriously."
 			]
 			icon: "compactmachines:personal_shrinking_device"
-			id: "6DE3AC66535021CD"
+			id: "7F78134F3F83264C"
 			rewards: [{
-				id: "19697A7B0EABAE48"
+				id: "3351BF7017520155"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Walk in and out"
 			tasks: [{
-				id: "6492CF8B409B2E72"
+				id: "2405A6FAA73DE0A6"
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
@@ -177,15 +177,15 @@
 				"&7Combined with the standing rule on this server about not slowing things down, Compact Machines are the tidiest way to run a lot of machinery.&r"
 			]
 			icon: "compactmachines:wall"
-			id: "5D0D79C915D77217"
+			id: "6FAC5A51117932D7"
 			rewards: [{
-				id: "1ED27D3C1BEA831A"
+				id: "71538E0B704DAB6B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Ticking inside the block"
 			tasks: [{
-				id: "49B07030C391DDE1"
+				id: "7D03B138BAE8EA82"
 				item: "compactmachines:wall"
 				type: "item"
 			}]
@@ -200,15 +200,15 @@
 				"&7Compact Machines does not add power, ore or automation. It adds &lspace&r - which on a floating island in the void is the one resource you genuinely cannot make more of.&r"
 			]
 			icon: "compactmachines:machine_maximum"
-			id: "3C0ADEF377BE414F"
+			id: "75FE7E12CDE5D705"
 			rewards: [{
-				id: "7EC016B185E2B715"
+				id: "3BCF9BADB54566FB"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Space, solved"
 			tasks: [{
-				id: "4C534E9748F6038C"
+				id: "02BFFBDCDC31D26A"
 				title: "Complete"
 				type: "checkmark"
 			}]

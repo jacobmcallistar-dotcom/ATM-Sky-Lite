@@ -76,15 +76,15 @@
 				"&8Quest completion is per-team by default in this pack, so joining a team mid-game inherits progress."
 			]
 			icon: "minecraft:player_head"
-			id: "42FB9CBD239E9B4D"
+			id: "218AC0955299D71E"
 			rewards: [{
-				id: "19C2B291D6EB9605"
+				id: "1F8ACA75F12A2CCA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Shared claims and progress"
 			tasks: [{
-				id: "37831624F532BC2A"
+				id: "57AB9FEB7F871D13"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -101,15 +101,15 @@
 				"&8The FTB Chunks claim screen is a separate map - check your keybinds if the two are confusing you."
 			]
 			icon: "minecraft:filled_map"
-			id: "2BE3EC033E4B2F29"
+			id: "29CBE1D4AFD3231C"
 			rewards: [{
-				id: "5093CEBAC2CA7B12"
+				id: "6C329A56E456E9A6"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Xaero's, and the claim screen"
 			tasks: [{
-				id: "5CD0F9D15F66C8C1"
+				id: "2DB33990312FAF85"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -126,15 +126,15 @@
 				"&7The counter is in the corner of the claim screen. If a farm stops working while you are elsewhere, this is the first thing to check.&r"
 			]
 			icon: "minecraft:redstone_torch"
-			id: "0F865C3DDB18FA11"
+			id: "26046C8C84880783"
 			rewards: [{
-				id: "12BD14E53CA7B651"
+				id: "4D0931F52911D58B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Spend them deliberately"
 			tasks: [{
-				id: "5856A6599B116896"
+				id: "46D22519B3B37670"
 				title: "Complete"
 				type: "checkmark"
 			}]

@@ -174,9 +174,11 @@
 			description: [
 				"The ME Controller is the heart of a network - it powers and organises everything wired to it. One Controller runs the whole system; a second one placed nearby will conflict with the first."
 				""
-				"&c&lThis is where the island stops being enough.&r The Controller's corners are no longer sky stone - they are &eNaga Scales&r, and the Naga only dies in the Twilight Forest."
+				"&c&lThis is where the island stops being enough.&r The Controller's corners are no longer sky stone - they are &eDesh Ingots&r, and Desh only exists on the Moon."
 				""
-				"&7And the Twilight portal will not light until you have stood on the Moon.&r So the road to a real ME network runs: rocket, Moon, portal, Naga. Everything below this quest you can build at home. Nothing above it."
+				"&7So the road to a real ME network runs: Nether Star, NASA Workbench, rocket, Moon. Everything below this quest you can build at home. Nothing above it.&r"
+				""
+				"&8You only have to make the trip once. A Desh Bee - a Steel Bee shown a Desh Block - turns the Moon into a renewable supply you can automate."
 			]
 			icon: "ae2:controller"
 			id: "4275E6A1A07E4C54"
@@ -185,7 +187,7 @@
 				type: "xp"
 				xp: 40
 			}]
-			subtitle: "&7Four Naga Scales and a dead snake"
+			subtitle: "&7Desh from the Moon"
 			tasks: [{
 				id: "2C5A3FCB1805B570"
 				item: "ae2:controller"
@@ -1547,6 +1549,82 @@
 			title: "&b&lMaster of the Grid"
 			x: 9.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"&dArs Energistique&r lets an ME network store and move Ars Nouveau &eSource&r exactly the way it handles items and fluids."
+				""
+				"&7Source Cells go in an ordinary Drive. A &fSource Acceptor&r pulls from your Source Jars into the network.&r"
+				""
+				"&8Only worth building once Ars Nouveau is running - see the Ars chapter."
+			]
+			icon: "arseng:source_storage_cell_1k"
+			id: "6A414D159FF453F9"
+			rewards: [{
+				id: "0BF3144457D768FE"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Source in your ME system"
+			tasks: [{
+				id: "3437508B4EFB187C"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&dArs Energistique"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"&dApplied Botanics&r does for Botania &eMana&r what Ars Energistique does for Source - Mana Cells in a Drive bay."
+				""
+				"&7It turns a mana pool from something you stand next to into something your base draws on automatically.&r"
+			]
+			icon: "appbot:mana_storage_cell_1k"
+			id: "5D6E06F2C1668645"
+			rewards: [{
+				id: "761ABF15530245E4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Mana in your ME system"
+			tasks: [{
+				id: "2BCD60C710748176"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&dApplied Botanics"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FA9577AA6C0D787"]
+			description: [
+				"&dApplied Flux&r stores &eFE&r inside ME cells."
+				""
+				"&e&lThe practical use is a buffer&r - a drive of energy cells rides out the gap when a reactor is down or a solar array is in shadow, without a wall of Powah cells."
+				""
+				"&c&lIt stores power, it does not make any.&r"
+			]
+			icon: "appflux:fe_1k_cell"
+			id: "71BCA6004C6D22BA"
+			rewards: [{
+				id: "489275C68DCBDC92"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Power cells in a drive bay"
+			tasks: [{
+				id: "3C94CD9F616C6C01"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&dApplied Flux"
+			x: 10.0d
+			y: 4.0d
 		}
 	]
 	title: "&bTech Branch · Applied Energistics"

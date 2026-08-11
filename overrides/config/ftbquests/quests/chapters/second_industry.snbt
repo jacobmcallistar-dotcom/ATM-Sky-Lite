@@ -759,6 +759,107 @@
 			x: 0.0d
 			y: 3.8d
 		}
+		{
+			dependencies: ["7E20000000000001"]
+			description: [
+				"&aThermal Cultivation&r adds the farming half of the Thermal series."
+				""
+				"&e&lThe useful part is &fPhytosoil&r&e:&r soil that grows crops without water and takes fertiliser for a straight yield increase."
+				""
+				"&7The Watering Can works by hand or in a dispenser. Phyto-Gro is the fertiliser, made in the Insolator from any plant matter.&r"
+				""
+				"&8On a void island this pairs well with Botany Pots - Phytosoil for volume, pots for automation."
+			]
+			icon: "thermal:phytosoil"
+			id: "2693C2D41FA82007"
+			rewards: [{
+				id: "4D74A782967C6CD0"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Farming, watered and fed"
+			tasks: [{
+				id: "663B61A76F6DA7F5"
+				item: "thermal:watering_can"
+				type: "item"
+			}]
+			title: "&aThermal Cultivation"
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"&aThermal Innovation&r is the tool module - the &fFlux Drill&r, &fFlux Saw&r, &fInjector&r and &fPotion Infuser&r."
+				""
+				"&e&lThey take Redstone Flux and augments&r, so one drill covers speed, area and silk-touch-or-fortune depending on what you slot in."
+				""
+				"&7Cheap, early, and they cover most of what you would otherwise wait for a Meka-Tool to do.&r"
+			]
+			icon: "thermal:flux_drill"
+			id: "072740F789D579E2"
+			rewards: [{
+				id: "7925ADE665F26A31"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Powered tools that are actually good"
+			tasks: [{
+				id: "6B29AB1D8F9B738B"
+				item: "thermal:flux_drill"
+				type: "item"
+			}]
+			title: "&aThermal Innovation"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"&aThermal Locomotion&r adds the cart and rail content to the Thermal line - energy and fluid minecarts, crossover rails, and the various TNT carts."
+				""
+				"&7Optional. If you are running Create trains you will not need it; it is here because the Thermal series is now complete.&r"
+			]
+			icon: "thermal:energy_minecart"
+			id: "11D39FDCC9CADCCC"
+			rewards: [{
+				id: "1DB4849A471CF1B3"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Rails and carts"
+			tasks: [{
+				id: "30AD38BDD2F96C94"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&aThermal Locomotion"
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"&aThermal Integration&r is the cross-mod module - it wires the Thermal machines into the rest of the pack rather than adding machines of its own."
+				""
+				"&7Nothing to build here. It is the reason your Thermal machines accept and emit things they otherwise would not.&r"
+				""
+				"&8With this installed the pack now runs the full seven-module Thermal series."
+			]
+			icon: "thermal:machine_sawmill"
+			id: "10322DBD4F59FE5F"
+			rewards: [{
+				id: "1FFA631389D4E95D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Thermal talks to everything else"
+			tasks: [{
+				id: "3FD10C47A1AD3002"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&aThermal Integration"
+			x: -5.0d
+			y: 5.5d
+		}
 	]
 	title: "&6Side Quest · The Second Industry"
 }

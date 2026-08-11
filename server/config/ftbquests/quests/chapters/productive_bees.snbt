@@ -377,6 +377,67 @@
 			x: 0.0d
 			y: 3.8d
 		}
+		{
+			dependencies: ["0BEE000000000001"]
+			description: [
+				"Before the planet bees you need a &eSteel Bee&r - it is the parent all three convert from."
+				""
+				"&7Bee conversion works by keeping a bee near a specific block until it changes. Steel comes from the ordinary metal line.&r"
+				""
+				"&e&lThis quest exists because of the one next to it.&r Read that before you write the travel gates off as a grind."
+			]
+			icon: "productivebees:bee_cage"
+			id: "3CE01C91CEB34572"
+			rewards: [{
+				id: "756740C703A594DB"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Parent of every planet bee"
+			tasks: [{
+				id: "227C8A6EE984833B"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&eThe Steel Bee"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&e&lThis is the most useful thing in this chapter and almost nobody finds it.&r"
+				""
+				"&fDesh&r, &fOstrum&r and &fCalorite&r gate a great deal of the pack - the ME Controller, AE2 autocrafting, Powah's Niotic/Spirited/Nitro crystals and Mekanism's Elite and Ultimate circuits."
+				""
+				"&a&lYou do not have to keep flying back for them.&r Keep a &fSteel Bee&r beside a block of the metal and it converts:"
+				""
+				"&7- &fBlock of Desh&r &7-> Desh Bee"
+				"&7- &fBlock of Ostrum&r &7-> Ostrum Bee"
+				"&7- &fBlock of Calorite&r &7-> Calorite Bee"
+				""
+				"&e&lSo each planet costs ONE trip.&r Bring home nine ingots, press them into a block, convert a bee, and that metal is renewable and fully automatable from then on."
+				""
+				"&7Centrifuge the combs to get the ingots back out.&r"
+				""
+				"&8This is the reason the gates are travel rather than grind."
+			]
+			icon: "productivebees:centrifuge"
+			id: "030531CC8169455E"
+			rewards: [{
+				id: "011C5672430050DD"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Every travel gate becomes renewable"
+			tasks: [{
+				id: "6B134193C320C5DC"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&e&lDesh, Ostrum and Calorite Bees"
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "&eProductive Bees"
 }

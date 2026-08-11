@@ -1542,6 +1542,83 @@
 			x: 10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["44EA000000000001"]
+			description: [
+				"&6Create: Enchantment Industry&r turns enchanting into a Create process instead of a gamble at a table."
+				""
+				"&e&lThe loop:&r a &fMechanical Grindstone&r strips enchantments into &fExperience&r as a fluid, and the &fBlaze Enchanter&r spends that fluid to apply them."
+				""
+				"&7The &fPrinter&r copies enchanted books, so once you have one good book you can mass-produce it.&r"
+				""
+				"&8It also hooks into Apotheosis - the affix templates and Gem Cutter are from this mod, not Apotheosis itself."
+			]
+			icon: "create_enchantment_industry:blaze_enchanter"
+			id: "31B1A75FE671815D"
+			rewards: [{
+				id: "7CBA48B83BA4BC07"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Automate the enchanting table"
+			tasks: [{
+				id: "7E4796D495B4A258"
+				item: "create_enchantment_industry:blaze_enchanter"
+				type: "item"
+			}]
+			title: "&6Enchantment Industry"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["44EA000000000001"]
+			description: [
+				"&6Create Deco&r is purely decorative - catwalks, sheet metal, bars, doors and ladders in every Create palette."
+				""
+				"&7No mechanics and nothing gated. It exists so a factory can look like a factory.&r"
+			]
+			icon: "createdeco:andesite_catwalk"
+			id: "55295C3B6E054F67"
+			rewards: [{
+				id: "3A43810A42208909"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Blocks that match your machines"
+			tasks: [{
+				id: "34AA94556060D37E"
+				title: "Complete"
+				type: "checkmark"
+			}]
+			title: "&6Create Deco"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&6Create Jetpack&r runs on Create's own power rather than FE."
+				""
+				"&e&lIt fills the gap&r between no flight at all and the very late options - Iron Jetpacks, the MekaSuit or Draconic."
+				""
+				"&7It sits in a Curios slot, so it does not cost you your chestplate. A Netherite version exists for the heat protection.&r"
+			]
+			icon: "create_jetpack:jetpack"
+			id: "0A573B8BD45CFAAE"
+			rewards: [{
+				id: "2EB850319561C0E4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Flight, Create-style"
+			tasks: [{
+				id: "7B803C0E062C5F80"
+				item: "create_jetpack:jetpack"
+				type: "item"
+			}]
+			title: "&6Create Jetpack"
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "&eAge II · The Kinetic Age"
 }

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "space_program"
-	group: "1A2B000000000003"
+	group: "1A2B000000000002"
 	icon: "ad_astra:tier_4_rocket"
 	id: "3C1F000000000012"
-	order_index: 2
+	order_index: 16
 	quest_links: [ ]
 	quests: [
 		{

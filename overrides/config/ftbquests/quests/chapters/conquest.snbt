@@ -1,0 +1,260 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "conquest"
+	group: "1A2B000000000003"
+	icon: "cataclysm:void_core"
+	id: "3D70A388203229D6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&5&lDraconic Evolution.&r Found in a &eChaos Island&r - a floating obsidian ring far out in the End, thousands of blocks from the main island."
+				""
+				"&e&lNo summoning.&r Fly out and find one. Use the End dimension map or just pick a direction and commit."
+				""
+				"&c&lBring:&r full Draconic or Wyvern armour, an elytra, and a way home. It flies, it shoots chaos bolts, and the crystals around the arena heal it - break those first."
+				""
+				"&e&lDrops &7Chaos Shards&r - the root of every awakened Draconic item. Nothing above Wyvern tier exists without this fight."
+			]
+			icon: "draconicevolution:chaos_shard"
+			id: "7F3DAB910670E58D"
+			rewards: [{
+				id: "452DFF95CDFDF25B"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Draconic Evolution - the End rings"
+			tasks: [{
+				entity: "draconicevolution:draconic_guardian"
+				id: "33D7BC4D6EA841F1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&5The Chaos Guardian"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&d&lBotania.&r This one you summon, and the setup is the whole difficulty."
+				""
+				"&e&lYou need:&r a &fBeacon&r with a full base, ringed by &fGaia Pylons&r, then throw a &fGaia Ingot&r onto the beacon."
+				""
+				"&7The arena must be a 21x21 clear space or it refuses to spawn. It teleports constantly and summons copies of you.&r"
+				""
+				"&e&lDrops &7Dice of Fate&r and &7Life Essence&r - Life Essence is required for the strongest Botania relics."
+			]
+			icon: "botania:life_essence"
+			id: "4466F97309B32BED"
+			rewards: [{
+				id: "402913B2A8D036BD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Botania - you build the arena"
+			tasks: [{
+				entity: "botania:doppleganger"
+				id: "176EA8A3EB08140B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&dThe Guardian of Gaia"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&a&lArs Nouveau.&r Summoned with the &fRitual of the Wilden&r."
+				""
+				"&e&lYou need:&r a Ritual Brazier, the Wilden ritual tablet, and one each of &fWilden Wing&r, &fWilden Horn&r and &fWilden Spike&r - all dropped by ordinary Wilden mobs."
+				""
+				"&7It changes phase mid-fight: flying, charging, then summoning. Each phase is immune to something different, so bring more than one damage type.&r"
+				""
+				"&e&lDrops &7Chimera loot&r used in the highest-tier Ars armour and the Enchanter's Sword."
+			]
+			icon: "ars_nouveau:wilden_wing"
+			id: "5FA78C8707D9853D"
+			rewards: [{
+				id: "28FA8B00737F518A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Ars Nouveau - ritual summon"
+			tasks: [{
+				entity: "ars_nouveau:wilden_chimera"
+				id: "323EA8513D7D7EED"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&aThe Wilden Chimera"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&3&lCataclysm.&r A sunken warship boss in deep ocean biomes."
+				""
+				"&e&lYou need:&r the &fMechanical Ignition&r, crafted from parts found in the Sunken City. Use it on the ship to wake it."
+				""
+				"&c&lIt is invincible outside water&r - the game will tell you so. You have to fight it in its element, so bring Respiration, Depth Strider and a way to breathe."
+				""
+				"&e&lDrops &7Tidal Claws&r and the materials for Black Steel gear."
+			]
+			icon: "cataclysm:tidal_claws"
+			id: "1BF59C88ADDDE2B3"
+			rewards: [{
+				id: "0A6B21522468CEFC"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Cataclysm - ocean, needs a summon item"
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "361A17A89D44C11C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&3The Leviathan"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&3&lCataclysm.&r Guards the &eSunken City&r structure on the ocean floor."
+				""
+				"&e&lNo summoning&r - find the city and it is waiting."
+				""
+				"&7Fast, melee, and it drags you. Fight it on land if you can bait it up, or clear a dry room first.&r"
+			]
+			icon: "cataclysm:the_incinerator"
+			id: "2FE548C732DF3958"
+			rewards: [{
+				id: "63888D0750B7D89A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Cataclysm - the Sunken City"
+			tasks: [{
+				entity: "cataclysm:scylla"
+				id: "0E2083D5B8E68D33"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&3Scylla"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&6&lCataclysm.&r Sits in a gladiator arena structure - it does not wander."
+				""
+				"&e&lNo summoning.&r Walking into the arena starts it."
+				""
+				"&7A straight melee duel with adds. The simplest fight on this page and a reasonable first Cataclysm boss.&r"
+			]
+			icon: "cataclysm:koboleton_bone"
+			id: "5B0D2B5F64A2F6B5"
+			rewards: [{
+				id: "6BCDA4AA3ACC2267"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Cataclysm - arena structure"
+			tasks: [{
+				entity: "cataclysm:kobolediator"
+				id: "62F6433456FA566F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&6The Kobolediator"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&5&lCataclysm.&r Deep inside the &eAncient Factory&r structure."
+				""
+				"&e&lNo summoning&r - it activates when you reach its chamber."
+				""
+				"&c&lRanged and relentless.&r Cover matters more than damage; the arena has pillars, use them."
+				""
+				"&e&lDrops the &7Void Core&r, used in the strongest Cataclysm weapons."
+			]
+			icon: "cataclysm:void_core"
+			id: "7C1EA4AC2E05740D"
+			rewards: [{
+				id: "43E2CC88F019329A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Cataclysm - the Ancient Factory"
+			tasks: [{
+				entity: "cataclysm:the_watcher"
+				id: "051C7533663A8A76"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&5The Watcher"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&b&lBlue Skies.&r The boss of the &eEverbright&r dungeon - the bright, frozen half of the dimension."
+				""
+				"&e&lNo summoning.&r Find the dungeon, clear it, and the boss room unlocks at the end."
+				""
+				"&7It throws potions and splits the arena into hazard zones. Milk buckets are worth the inventory slot.&r"
+				""
+				"&8Blue Skies is reached with a &fZeal Lighter&r, which needs Ostrum from Mars."
+			]
+			icon: "blue_skies:moonstone_crystal"
+			id: "2BDD114DEF08FE48"
+			rewards: [{
+				id: "220567F97AFDB8DD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Blue Skies - Everbright dungeon"
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				id: "7E6B20D54C37CC01"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&bThe Alchemist"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&6&lBlue Skies.&r The boss of the &eEverdawn&r dungeon - the warm, red half of the dimension."
+				""
+				"&e&lNo summoning.&r Same as the Alchemist: clear the dungeon to reach it."
+				""
+				"&c&lIt does exactly what its name says&r - the danger is the volume of adds, not the boss. Bring AOE and something to hold a doorway.&r"
+			]
+			icon: "blue_skies:pyrope_gem"
+			id: "4EE300434C303345"
+			rewards: [{
+				id: "03986DE874F1FC50"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&7Blue Skies - Everdawn dungeon"
+			tasks: [{
+				entity: "blue_skies:summoner"
+				id: "71470F461D6B1460"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&6The Summoner"
+			x: 3.0d
+			y: 2.0d
+		}
+	]
+	subtitle: ["&7Nine fights nobody told you about"]
+	title: "&cThe Bestiary"
+}

@@ -398,15 +398,15 @@
 				"&e&lDrawers are the cheapest bulk storage in the pack by a wide margin&r, and an AE2 storage bus on a drawer controller exposes them all to your network for free.&r"
 			]
 			icon: "storagedrawers:iron_storage_upgrade"
-			id: "0ABF719EF64C1A6A"
+			id: "17E079B5D07051A0"
 			rewards: [{
-				id: "216825CE7D51DF10"
+				id: "3C37B28CF58651ED"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Capacity, void, vending"
 			tasks: [{
-				id: "7A8A901766CF2016"
+				id: "2C57D2063D10311E"
 				item: "storagedrawers:iron_storage_upgrade"
 				type: "item"
 			}]
@@ -423,15 +423,15 @@
 				"&7A well-upgraded backpack means you never stop mining to manage inventory. It is the single biggest early quality-of-life item in the pack.&r"
 			]
 			icon: "sophisticatedstorage:iron_barrel"
-			id: "3EA78A38B3B566A6"
+			id: "10048E3F1AFFD2C0"
 			rewards: [{
-				id: "383A7525C86E29F4"
+				id: "08D43AFC8DDA96F9"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Storage that follows you"
 			tasks: [{
-				id: "7A4D8EDFC5E0F972"
+				id: "51A1480C190E24AD"
 				item: "sophisticatedstorage:iron_barrel"
 				type: "item"
 			}]
@@ -450,15 +450,15 @@
 				"&8Keep it even after AE2. It costs nothing to run and it sees chests your ME network does not."
 			]
 			icon: "toms_storage:ts.storage_terminal"
-			id: "673BB2A9C6BE17B5"
+			id: "0CACF7531F2ECACC"
 			rewards: [{
-				id: "0F5275651646C55D"
+				id: "332888EE1400A492"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Search everything, cheaply"
 			tasks: [{
-				id: "702CD98C356C7E24"
+				id: "7B102BE7DA028B95"
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
@@ -477,15 +477,15 @@
 				"&8Put one on the Moon on your first landing. It is the simplest way to send Desh home."
 			]
 			icon: "enderstorage:ender_chest"
-			id: "43933B7E6ACB3F26"
+			id: "779CDE189BE342A6"
 			rewards: [{
-				id: "538D0AE20553FEE3"
+				id: "655461E3F71B657E"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Colour-coded, anywhere"
 			tasks: [{
-				id: "5DB9F9BC89CB99C4"
+				id: "26938BFFF252AB81"
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
@@ -502,15 +502,15 @@
 				"&7This pack has no Flux Networks, and Entangled fills part of that gap: bind one to a power acceptor and you have a wireless power endpoint.&r"
 			]
 			icon: "entangled:block"
-			id: "6E361E8E70121054"
+			id: "41745B9A3865534D"
 			rewards: [{
-				id: "221F6ACD7158C2B8"
+				id: "552658FAEEE26D6A"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Link any two blocks"
 			tasks: [{
-				id: "577E1BD5393AEF5B"
+				id: "0AF7C521FF4ACEAE"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -527,16 +527,16 @@
 				"&7None of this is required. All of it saves you more time than it costs.&r"
 			]
 			icon: "toms_storage:ts.storage_terminal"
-			id: "37FE4D0CC86E2F13"
+			id: "5D45B2948A116A1A"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "5939D4A5196D1320"
+				id: "4DF700D59EA6C811"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Everything, findable"
 			tasks: [{
-				id: "1FE69D5328CC9F92"
+				id: "69DA93CA346B7720"
 				title: "Complete"
 				type: "checkmark"
 			}]

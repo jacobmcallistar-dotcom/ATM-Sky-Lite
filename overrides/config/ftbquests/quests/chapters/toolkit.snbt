@@ -265,6 +265,30 @@
 			x: 0.0d
 			y: 2.5d
 		}
+		{
+			dependencies: ["5CF5F404538F3494"]
+			description: [
+				"&fCrafting on a Stick&r gives you portable versions of the common workstations - crafting table, anvil, stonecutter, furnace and more."
+				""
+				"&7Right-click to open the interface anywhere. On a void island, where every station is a trip back to base, it saves more time than it has any right to.&r"
+			]
+			icon: "crafting_on_a_stick:crafting_table"
+			id: "02988D52BAAF740D"
+			rewards: [{
+				id: "428B36553EC36D2D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Workstations in your pocket"
+			tasks: [{
+				id: "078E890EBD23E8A2"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
+			title: "&fCrafting on a Stick"
+			x: 3.0d
+			y: 1.0d
+		}
 	]
 	title: "&fThe Toolkit"
 }

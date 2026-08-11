@@ -120,15 +120,15 @@
 				"&7Bring plenty of ostrum home. Every peripheral in this chapter needs one of these.&r"
 			]
 			icon: "advancedperipherals:peripheral_casing"
-			id: "6EC68AA807DC3C97"
+			id: "0507867239728CFD"
 			rewards: [{
-				id: "68BC517AF21AE2BB"
+				id: "38984279A9D554FD"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The Mars gate"
 			tasks: [{
-				id: "0FE8C52F8950E896"
+				id: "75C7815D16AD44E7"
 				item: "advancedperipherals:peripheral_casing"
 				type: "item"
 			}]
@@ -145,21 +145,21 @@
 				"&7NBT Storage matters because computer state is otherwise lost on chunk unload. Anything that needs to remember - a queue, a counter, a config - goes here.&r"
 			]
 			icon: "advancedperipherals:block_reader"
-			id: "6B04EA3347E3ED36"
+			id: "3837B07CDC7CAFFF"
 			rewards: [{
-				id: "775186272AA5FE44"
+				id: "67D70666C570EAC5"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Let a computer see the world"
 			tasks: [
 				{
-					id: "59AE2D868C571962"
+					id: "1A4D7A1FA7EAEF73"
 					item: "advancedperipherals:block_reader"
 					type: "item"
 				}
 				{
-					id: "4CA7801EEBE23733"
+					id: "177B81FDB2301217"
 					item: "advancedperipherals:nbt_storage"
 					type: "item"
 				}
@@ -177,15 +177,15 @@
 				"&7It also reads armour and offhand, so a script can warn you before you launch a rocket without a full space suit.&r"
 			]
 			icon: "advancedperipherals:inventory_manager"
-			id: "66EEDCA76E574801"
+			id: "54DF490988C28146"
 			rewards: [{
-				id: "0790BA8FE13E335E"
+				id: "0296B48C76D162E6"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Reach into a player"
 			tasks: [{
-				id: "2FCB20494AC5B8B3"
+				id: "679BCD073813CC14"
 				item: "advancedperipherals:inventory_manager"
 				type: "item"
 			}]
@@ -202,21 +202,21 @@
 				"&7The Energy Detector is the one you will use most: put it inline on a cable and a script can graph your actual throughput.&r"
 			]
 			icon: "advancedperipherals:player_detector"
-			id: "3C66048EA8A0D3A8"
+			id: "5555D212FA58CEFF"
 			rewards: [{
-				id: "5998B2E0068008C4"
+				id: "29C2A3308231E5CA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Sensors for your scripts"
 			tasks: [
 				{
-					id: "25B0A3FC6634661B"
+					id: "728336BA620231E9"
 					item: "advancedperipherals:player_detector"
 					type: "item"
 				}
 				{
-					id: "7EE47B0363A3A321"
+					id: "573B4D86318D79F0"
 					item: "advancedperipherals:energy_detector"
 					type: "item"
 				}
@@ -234,21 +234,21 @@
 				"&7The Redstone Integrator is placed anywhere in the world and controlled remotely over a wired modem, so one computer can switch redstone across your whole base.&r"
 			]
 			icon: "advancedperipherals:chat_box"
-			id: "2267A03F3B395D87"
+			id: "68920AB6DE93D2F2"
 			rewards: [{
-				id: "46FBC12D19E399D2"
+				id: "36DA5F6C5E737176"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Talk and switch"
 			tasks: [
 				{
-					id: "4F16102AEBDC79ED"
+					id: "5CF77C2A997443CB"
 					item: "advancedperipherals:chat_box"
 					type: "item"
 				}
 				{
-					id: "0DD255914A235FBA"
+					id: "5E28A5728070396D"
 					item: "advancedperipherals:redstone_integrator"
 					type: "item"
 				}
@@ -266,15 +266,15 @@
 				"&7It has a cooldown that scales with radius, so scripts should scan coarsely first and refine.&r"
 			]
 			icon: "advancedperipherals:geo_scanner"
-			id: "7FF5E67C321F7821"
+			id: "7B2243D45202FE08"
 			rewards: [{
-				id: "40CC7C1295DC4E7E"
+				id: "2D4DAA8D4B68A9F3"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Read the ground"
 			tasks: [{
-				id: "043A67359A87BB1F"
+				id: "736BB206BD6CEC5D"
 				item: "advancedperipherals:geo_scanner"
 				type: "item"
 			}]
@@ -291,15 +291,15 @@
 				"&c&lThat matters on this server&r, where the standing rule is nothing that slows the machine down. Conditional loading is strictly better than blanket claims.&r"
 			]
 			icon: "advancedperipherals:chunk_controller"
-			id: "793E2A825D04B2F5"
+			id: "1294F6D9AFB35C89"
 			rewards: [{
-				id: "15B45EBC795F6D56"
+				id: "02BA2B5E9EF7C1A8"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Keep it loaded from Lua"
 			tasks: [{
-				id: "0B633C55A52A080C"
+				id: "4D1DEDF8C03174C9"
 				item: "advancedperipherals:chunk_controller"
 				type: "item"
 			}]
@@ -316,16 +316,16 @@
 				"&7Everything here needed a trip to Mars first. That was the point.&r"
 			]
 			icon: "advancedperipherals:me_bridge"
-			id: "7FD4CC95E696AD1F"
+			id: "3C1E0943B2EC14BD"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "4A5945D4EF3C2B2A"
+				id: "0900BEC9DDA83F64"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Scripts, not switches"
 			tasks: [{
-				id: "2083EFC7A393047D"
+				id: "35A65AB1B90A0F0E"
 				title: "Complete"
 				type: "checkmark"
 			}]

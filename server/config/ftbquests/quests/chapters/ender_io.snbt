@@ -281,21 +281,21 @@
 				"&8Conduit Binder Composite is the crafting base for all of them. Make it in bulk."
 			]
 			icon: "enderio:energy_conduit"
-			id: "0D20E9DD271BC43C"
+			id: "4B5FA06D3C9BDCCF"
 			rewards: [{
-				id: "04EA1C124966495F"
+				id: "57BFFE81D0F2BF0B"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Six services, one block space"
 			tasks: [
 				{
-					id: "14E886BB5130CEE4"
+					id: "19DCBA147BFCC565"
 					item: "enderio:conduit_binder_composite"
 					type: "item"
 				}
 				{
-					id: "1D8EB96659F281D6"
+					id: "5E586A25F08540F3"
 					item: "enderio:energy_conduit"
 					type: "item"
 				}
@@ -313,15 +313,15 @@
 				"&7Crouch-clicking with it toggles conduit visibility, which is how you hide a full six-service bundle inside a wall.&r"
 			]
 			icon: "enderio:yeta_wrench"
-			id: "565273ACBA470EC9"
+			id: "4DD0A2571FCB5399"
 			rewards: [{
-				id: "525715B888916CB1"
+				id: "74705E4906B0F1AA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The only tool conduits accept"
 			tasks: [{
-				id: "4737AE9BE2F7F885"
+				id: "5F9064D4626D27B1"
 				item: "enderio:yeta_wrench"
 				type: "item"
 			}]
@@ -340,21 +340,21 @@
 				"&8The Soul Binder is also used to upgrade several Ender IO items, so it earns its space regardless."
 			]
 			icon: "enderio:powered_spawner"
-			id: "4E6CFD492BA4A82A"
+			id: "5F4EA7EF822AC470"
 			rewards: [{
-				id: "2ECEE5CFA3018872"
+				id: "6DBBB836CFC86E4C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Mob farms without a dungeon"
 			tasks: [
 				{
-					id: "41B89816F608611F"
+					id: "62C1BB45FFC7CCD0"
 					item: "enderio:soul_binder"
 					type: "item"
 				}
 				{
-					id: "46ADBAEBEFEE00E9"
+					id: "0BE2819E3C70F1EB"
 					item: "enderio:powered_spawner"
 					type: "item"
 				}
@@ -372,15 +372,15 @@
 				"&7Vibrant Crystals need a Soul Binder and an ender pearl, so this tier arrives after you have a mob source.&r"
 			]
 			icon: "enderio:vibrant_crystal"
-			id: "4E59D4709E4457AC"
+			id: "0E92A8D7E034014A"
 			rewards: [{
-				id: "16665EDE5F0469FA"
+				id: "0E140688CA58D34D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7The upgrade currency"
 			tasks: [{
-				id: "5C808DA9AF3C2DA9"
+				id: "50EE858DE0671306"
 				item: "enderio:vibrant_crystal"
 				type: "item"
 			}]
@@ -399,15 +399,15 @@
 				"&8Anchors can be named and access-restricted, which matters on a shared server."
 			]
 			icon: "enderio:travel_anchor"
-			id: "11F2BC9831A0F71B"
+			id: "1C4A6F654591B4E5"
 			rewards: [{
-				id: "397EC9A86D275070"
+				id: "36973A193D8B2A9F"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Blink around the base"
 			tasks: [{
-				id: "6C1A16F579BEECFD"
+				id: "019F2BD8A6EE96CD"
 				item: "enderio:travel_anchor"
 				type: "item"
 			}]
@@ -424,15 +424,15 @@
 				"&7Ender IO also has an Aversion Obelisk (stops mobs spawning in a radius) and an Attractor Obelisk (pulls them in) - the two halves of a controlled spawn platform.&r"
 			]
 			icon: "enderio:xp_vacuum"
-			id: "2F4552DF51983A93"
+			id: "275FED305ED982D7"
 			rewards: [{
-				id: "0D18DDD4496F55DC"
+				id: "171E4605DBF3EC54"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Enchanting infrastructure"
 			tasks: [{
-				id: "16BCF02579D00626"
+				id: "5F2F98127C9622AB"
 				item: "enderio:xp_vacuum"
 				type: "item"
 			}]
@@ -449,21 +449,21 @@
 				"&7The Wired Charger is the tidiest way to keep Free Runners, jetpacks and a Meka-Tool topped up at base.&r"
 			]
 			icon: "enderio:impulse_hopper"
-			id: "657B93B8DF76CB7F"
+			id: "7325D3EDF0CB2619"
 			rewards: [{
-				id: "0491A3BAAE989E13"
+				id: "7E6331459AF266C1"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Small machines that matter"
 			tasks: [
 				{
-					id: "7E270B5F862D6243"
+					id: "459261D5D169CA63"
 					item: "enderio:impulse_hopper"
 					type: "item"
 				}
 				{
-					id: "5F64DF5EE248BFBE"
+					id: "1ED0E31039D6FFD0"
 					item: "enderio:wired_charger"
 					type: "item"
 				}
@@ -489,15 +489,15 @@
 					Damage: 0
 				}
 			}
-			id: "45434F236056082E"
+			id: "295F6D5F1073B703"
 			rewards: [{
-				id: "18E042A4AD8A458E"
+				id: "4C688052FCFF94A4"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Upgradeable armour and tools"
 			tasks: [{
-				id: "4CAC15C112F92A4B"
+				id: "4A5473B517A7DAEE"
 				item: {
 					Count: 1
 					id: "enderio:dark_steel_sword"
@@ -520,15 +520,15 @@
 				"&8On a floating island every panel runs unshaded, so whichever you pick performs at its stated maximum."
 			]
 			icon: "enderio:photovoltaic_cell"
-			id: "2FB1B0112FBB747B"
+			id: "4DA891BBCE33466C"
 			rewards: [{
-				id: "421872683D71AF9C"
+				id: "33CBB05FAD15D3BC"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7EnderIO's solar tier"
 			tasks: [{
-				id: "402D4AA75152A33C"
+				id: "3E6E07196DA82E11"
 				item: "enderio:photovoltaic_cell"
 				type: "item"
 			}]
@@ -545,16 +545,16 @@
 				"&7Ender IO's real contribution to this pack is &lspace&r - it does what four other mods do, in a fraction of the room.&r"
 			]
 			icon: "enderio:energy_conduit"
-			id: "5C88BABC76FF7570"
+			id: "79DF3534AF78D3AA"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "1C38B1C6FDC26BA6"
+				id: "06FDD5FA406AEC9D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One block, six services"
 			tasks: [{
-				id: "206152AC2FAF2BD4"
+				id: "6295F01EB2345881"
 				title: "Complete"
 				type: "checkmark"
 			}]

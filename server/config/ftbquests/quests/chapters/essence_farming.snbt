@@ -275,21 +275,19 @@
 		{
 			dependencies: ["655E000000000007"]
 			description: [
-				"&5&lThe only resources in this pack you cannot automate are the ones under your rocket.&r"
+				"&5&lThe space metals are the ones people assume they can never automate.&r"
 				""
-				"Desh, ostrum and calorite are hand-mined on the Moon, Mars and Venus. There is no quarry mod here. Every ingot of the space tier costs you a trip - forever."
+				"Desh, ostrum and calorite are hand-mined on the Moon, Mars and Venus, and they gate a great deal of the pack - the ME Controller, AE2 autocrafting, Powahs high crystals and Mekanisms Elite and Ultimate circuits."
 				""
-				"So &eSkyForge&r plants them:"
+				"&a&lThey are renewable, just not through Mystical Agriculture.&r There are no essence seeds for them. The answer is &eProductive Bees&r:"
 				""
-				"&7Desh Seeds&r &8·&r Tier 4 &8·&r Imperium essence + a Desh Ingot"
-				"&7Ostrum Seeds&r &8·&r Tier 5 &8·&r Supremium essence + an Ostrum Ingot"
-				"&7Calorite Seeds&r &8·&r Tier 5 &8·&r Supremium essence + a Calorite Ingot"
+				"&7Show a &fSteel Bee&r &7a &fBlock of Desh&r &7and it becomes a &fDesh Bee&r&7. Same for Ostrum and Calorite.&r"
 				""
-				"You still have to &ogo&r and bring one ingot of each home - the seed needs a sample. After that the planet grows in your garden and pipes into your ME system like anything else."
+				"So each planet costs &lone trip&r. Bring home nine ingots, press them into a block, convert a bee, and centrifuge the combs from then on."
 				""
-				"&8Find them in JEI under &7mysticalagriculture:desh_seeds&8 - not skyforge. Mystical Agriculture stamps its own name on every seed it builds, whichever mod supplied the crop."
+				"&8See &7Desh, Ostrum and Calorite Bees&8 in the Productive Bees chapter for the full loop."
 			]
-			icon: "mysticalagriculture:desh_seeds"
+			icon: "ad_astra:desh_ingot"
 			id: "0AC0000000000003"
 			rewards: [
 				{
@@ -306,13 +304,13 @@
 			]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "&7Farm the planets"
+			subtitle: "&7One trip, then bees"
 			tasks: [{
 				id: "0AC0000000000203"
-				item: "mysticalagriculture:desh_seeds"
+				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "&5Seeds From Space"
+			title: "&5Automating the Space Metals"
 			x: -2.0d
 			y: 1.5d
 		}

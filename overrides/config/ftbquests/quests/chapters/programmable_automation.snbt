@@ -531,15 +531,15 @@
 				"&8Label everything as you build it. Retrofitting labels onto an existing base is the tedious part."
 			]
 			icon: "sfm:labelgun"
-			id: "0E021885C5312E6F"
+			id: "607804A8645EDE2E"
 			rewards: [{
-				id: "1E0A68860C5D26D6"
+				id: "29838CBBA8EED71D"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Name things, then program them"
 			tasks: [{
-				id: "59CA38F58A2F9B95"
+				id: "263C67086DCBAD0C"
 				item: "sfm:labelgun"
 				type: "item"
 			}]
@@ -562,15 +562,15 @@
 				"&c&lOne manager can replace an entire base's pipework.&r That is not an exaggeration - this is the single biggest quality-of-life mod in the pack."
 			]
 			icon: "sfm:manager"
-			id: "15A795A221272CD3"
+			id: "725479E5D38351E6"
 			rewards: [{
-				id: "54EBD2E6019608BF"
+				id: "5E831686D3A6BEA7"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Plain-English automation"
 			tasks: [{
-				id: "3AE3644E071B0411"
+				id: "378065B63A390C69"
 				item: "sfm:manager"
 				type: "item"
 			}]
@@ -589,15 +589,15 @@
 				"&8The in-game documentation covers the full syntax. It is short and worth reading once."
 			]
 			icon: "sfm:manager"
-			id: "2A945F8800FE246C"
+			id: "194714DFFD141AFE"
 			rewards: [{
-				id: "0013D6CA49F6D626"
+				id: "3AA4E2EE9DB87CAD"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Conditionals and resource tracking"
 			tasks: [{
-				id: "317238B5BC64A2B7"
+				id: "7B8DA875FA248AB7"
 				title: "Complete"
 				type: "checkmark"
 			}]
@@ -615,21 +615,21 @@
 				"&7That central configuration is XNet's advantage over pipes: changing a filter means opening one screen, not finding one block.&r"
 			]
 			icon: "xnet:controller"
-			id: "212BF90B5D46FDCC"
+			id: "0626ED59A561D82D"
 			rewards: [{
-				id: "08B53A6318B35AFC"
+				id: "642A2A99A83E01FA"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Channels, centrally configured"
 			tasks: [
 				{
-					id: "6EB849DBA5BB78DB"
+					id: "53D6C240B0A5AB1F"
 					item: "xnet:controller"
 					type: "item"
 				}
 				{
-					id: "4F4D765E35DC729F"
+					id: "6E5FC9C5675B0E1A"
 					item: "xnet:connector_routing"
 					type: "item"
 				}
@@ -649,15 +649,15 @@
 				"&8SFM and XNet solve the same problem differently - SFM is a program, XNet is a control panel. Most people end up using both."
 			]
 			icon: "xnet:connector_blue"
-			id: "68EB3463EEABDFD6"
+			id: "7F4C15D76B05B615"
 			rewards: [{
-				id: "26A3C31884A8F791"
+				id: "493B28712FDAD805"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Per-side control"
 			tasks: [{
-				id: "02E572D7BB0CA03B"
+				id: "000759E269DDB894"
 				item: "xnet:connector_blue"
 				type: "item"
 			}]
@@ -676,15 +676,15 @@
 				"&7Cheap, available very early, and one router genuinely replaces a small pipe network.&r"
 			]
 			icon: "modularrouters:modular_router"
-			id: "40B8EE418EA4FA8E"
+			id: "6B4604D00FAB05D0"
 			rewards: [{
-				id: "075A2C8C036EF49F"
+				id: "50092DF85DEC7999"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7One block, nine modules"
 			tasks: [{
-				id: "744F4DAEFC69920F"
+				id: "7D12BCF4CF6FBD8D"
 				item: "modularrouters:modular_router"
 				type: "item"
 			}]
@@ -703,15 +703,15 @@
 				"&8Not a replacement for AE2 at scale, but it fills the entire mid-game gap where AE2 is unaffordable."
 			]
 			icon: "prettypipes:crafting_terminal"
-			id: "39F1651A7521EB9B"
+			id: "342E63BE6A5852DD"
 			rewards: [{
-				id: "255B7BEEF23D58A9"
+				id: "0022190DD24CB201"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Cheap pipes with a terminal"
 			tasks: [{
-				id: "6F12C0D35EA370CB"
+				id: "44336C1BC00767E0"
 				item: "prettypipes:crafting_terminal"
 				type: "item"
 			}]
@@ -728,16 +728,16 @@
 				"&8Pick per problem rather than per mod. Using all five in one base is normal here."
 			]
 			icon: "sfm:manager"
-			id: "4041B3AC4C3562F7"
+			id: "6560493FC437CBED"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "659AD7A39239EBF8"
+				id: "4F728D2273BAAE7C"
 				type: "xp"
 				xp: 30
 			}]
 			subtitle: "&7Five ways to move an item"
 			tasks: [{
-				id: "2D52B074869553F5"
+				id: "5A6DF7AC194F65EE"
 				title: "Complete"
 				type: "checkmark"
 			}]

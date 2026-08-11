@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "realms_beyond"
-	group: "1A2B000000000003"
+	group: "1A2B000000000002"
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "3C1F000000000005"
-	order_index: 1
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -55,7 +55,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			subtitle: "&cNeeds Desh - go to the Moon first"
+			subtitle: "&aOpen from the start - no gate"
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "4BA53916264ABFE6"
@@ -70,7 +70,7 @@
 			description: [
 				"The &aNaga&r guards the first hollow hill. Kill it to begin the Twilight Forest progression - the book unlocks the next boss."
 				""
-				"&c&lThis is the most important kill in the pack.&r Naga Scales are the corners of the &bME Controller&r. Until this snake is dead you have no AE2 network - no drives, no terminal, no autocrafting road at all. Everything digital waits here."
+				"&e&lThe Naga is the doorway to the rest of the Twilight.&r Killing it unlocks the next hollow hill, and the chain of bosses that follows ends in trophies you need for the Celestial Core."
 				""
 				"&e&lThe fight:&r a spiral courtyard with a segmented serpent that charges in straight lines and smashes the pillars. It cannot be outrun."
 				"&7- &fUse the pillars.&7 Break its charge by putting stone between you. It destroys them, which is fine - there are plenty."
@@ -78,7 +78,7 @@
 				"&7- &fIt alternates&7 between charging and a slower circling phase. Attack during the circle, hide during the charge."
 				"&7- &fBring a shield&7 and food. This is a stamina fight, not a burst fight."
 				""
-				"&e&lDrops:&r &7Naga Scales&r (armour, and your ME Controller) plus the &7Naga Trophy&r - one of the five you will need for the Celestial Core. &lKeep the trophy.&r"
+				"&e&lDrops:&r &7Naga Scales&r (a full armour set) plus the &7Naga Trophy&r - one of the five you will need for the Celestial Core. &lKeep the trophy.&r"
 				""
 				"&8Iron gear is enough if you use the terrain. Diamond makes it comfortable. Do not bring your only good sword and no backup."
 			]
@@ -90,7 +90,7 @@
 				item: "twilightforest:naga_scale"
 				type: "item"
 			}]
-			subtitle: "&cScales for your ME Controller"
+			subtitle: "&7Scale armour and the first trophy"
 			tasks: [{
 				entity: "twilightforest:naga"
 				id: "0481725F962E0ED5"
@@ -226,7 +226,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7Blue Skies, lit by Venus"
+			subtitle: "&7Zeal Lighter - needs Mars ostrum"
 			tasks: [{
 				dimension: "blue_skies:everbright"
 				id: "15E0BA1DF348E888"
@@ -299,7 +299,7 @@
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
-			subtitle: "&7Opened with Mars ostrum"
+			subtitle: "&7Catalyst - needs Moon desh"
 			tasks: [{
 				dimension: "undergarden:undergarden"
 				id: "095B56AFAA98D898"
