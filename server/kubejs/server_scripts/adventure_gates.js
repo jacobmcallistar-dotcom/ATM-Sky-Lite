@@ -1,20 +1,44 @@
-// ATM Sky Lite - Adventure Gating
+// ATM Sky Lite - Adventure Gating  (REBALANCED)
 // ---------------------------------------------------------------------------
-// Purpose: stop AE2 automation and computer automation from being reachable
-// without ever leaving the island. Every gate below swaps ONE ingredient of an
-// existing recipe for a material that can only be obtained by killing a
-// Twilight Forest boss or by flying to an Ad Astra planet.
+// Every gate swaps ONE ingredient of an existing recipe for a material that can
+// only be obtained by killing a boss or flying to a planet. The recipe SHAPE is
+// never changed, so JEI still shows a familiar layout.
 //
-// The recipe SHAPE is never changed - only an ingredient is substituted - so
-// JEI still shows a familiar layout and nothing else in the pack breaks.
+// WHY THIS WAS REBALANCED
+// -----------------------
+// The first version gated the ME CONTROLLER behind the Naga. That sounds mild
+// until you follow the whole chain, because the Twilight portal is itself
+// locked behind the Moon:
 //
-// Gate ladder:
-//   Naga Scale     -> Twilight Forest, Naga (first boss)
-//   Fiery Ingot    -> Twilight Forest, Hydra (Fiery Blood)
-//   Knightmetal    -> Twilight Forest, Knight Phantom (Goblin Stronghold)
-//   Desh Ingot     -> The Moon        (Ad Astra tier 1 rocket)
-//   Ostrum Ingot   -> Mars            (Ad Astra tier 2 rocket)
-//   Calorite Ingot -> Venus           (Ad Astra tier 3 rocket)
+//     Wither -> NASA Workbench -> rocket -> Moon -> Twilight portal unlocks
+//       -> fight to the Naga -> kill it -> only THEN can you build a Controller
+//
+// A full space program, to unlock basic storage. That is inverted: the ME
+// Controller is infrastructure, not a trophy, and Twilight Forest is a mid-game
+// dimension that should come BEFORE space, not after it.
+//
+// The rule now is: getting INTO a mod is mid-game, mastering it is earned.
+//
+//   BASIC AE2 (controller, drives, terminals, cells, buses)  ungated
+//       - still gated in practice by the Inscriber, which SkyForge's datapack
+//         already requires a Mekanism Advanced Control Circuit to build.
+//         "The digital age requires the electric age" is a fair ask.
+//
+//   AUTOCRAFTING (Crafting Unit + Molecular Assembler)       Naga
+//       - the single biggest power jump in AE2, so it stays earned - but the
+//         FIRST Twilight boss now, not a planet.
+//
+//   COMPUTERS (Advanced Computer, Peripheral Casing)         Mars
+//   WIRELESS  (Quantum Ring)                                 Hydra
+//   ENDGAME   (Spatial IO, all MEGA cells)                   Venus
+//   DRACONIC  (Draconium Core)                               Knight Phantom
+//
+// Paired with twilightforest-common.toml, where portalUnlockedByAdvancement was
+// cleared so the Twilight Forest opens on its own merits.
+//
+// Resulting ladder:
+//   island -> Mekanism power -> AE2 network -> Twilight -> autocrafting
+//          -> Wither -> space -> computers/wireless -> Venus -> Draconic
 // ---------------------------------------------------------------------------
 
 ServerEvents.recipes(event => {
@@ -29,42 +53,33 @@ ServerEvents.recipes(event => {
   }
 
   // -------------------------------------------------------------------------
-  // TIER 1 - Twilight Forest, the Naga.
-  // The ME Controller is the gate to having a network at all. You cannot run
-  // AE2 beyond a trivial ad-hoc setup until the first boss is dead.
-  // -------------------------------------------------------------------------
-  gate(
-    'ae2:network/blocks/controller',
-    'ae2:smooth_sky_stone_block',
-    'twilightforest:naga_scale',
-    'ME Controller <- Naga'
-  )
-
-  // -------------------------------------------------------------------------
-  // TIER 2 - The Moon. Autocrafting.
-  // Both halves of autocrafting (the CPU and the assembler) now need Desh,
-  // which only generates on the Moon. Storage and terminals still work before
-  // this, so the network stays useful while you build the rocket.
+  // TIER 1 - Twilight Forest, the Naga. AUTOCRAFTING.
+  //
+  // The ME Controller is deliberately NOT gated - you can build a real network,
+  // store everything and use terminals as soon as you have Mekanism circuits.
+  // What you cannot do is make the network build things FOR you until the first
+  // boss is dead. That is the difference between storage and automation, and it
+  // is the right place to ask for effort.
   // -------------------------------------------------------------------------
   gate(
     'ae2:network/crafting/cpu_crafting_unit',
     '#forge:ingots/iron',
-    'ad_astra:desh_ingot',
-    'Crafting Unit <- Moon'
+    'twilightforest:naga_scale',
+    'Crafting Unit <- Naga'
   )
 
   gate(
     'ae2:network/crafting/molecular_assembler',
     '#forge:ingots/iron',
-    'ad_astra:desh_ingot',
-    'Molecular Assembler <- Moon'
+    'twilightforest:naga_scale',
+    'Molecular Assembler <- Naga'
   )
 
   // -------------------------------------------------------------------------
-  // TIER 3 - Mars. Computers.
-  // One Ostrum per Advanced Computer: a real gate without being punishing,
-  // since you craft a lot of these. The Peripheral Casing is the true choke
-  // point - every Advanced Peripherals block is built on top of it.
+  // TIER 2 - Mars. Computers.
+  // One Ostrum per Advanced Computer: a real gate without being punishing.
+  // The Peripheral Casing is the true choke point - every Advanced Peripherals
+  // block is built on top of it.
   // -------------------------------------------------------------------------
   gate(
     'computercraft:computer_advanced',
@@ -81,7 +96,7 @@ ServerEvents.recipes(event => {
   )
 
   // -------------------------------------------------------------------------
-  // TIER 4 - Twilight Forest, the Hydra. Wireless AE2.
+  // TIER 3 - Twilight Forest, the Hydra. Wireless AE2.
   // Fiery Ingots are smelted from Fiery Blood, which only the Hydra drops.
   // -------------------------------------------------------------------------
   gate(
@@ -92,7 +107,7 @@ ServerEvents.recipes(event => {
   )
 
   // -------------------------------------------------------------------------
-  // TIER 5 - Venus. Endgame storage.
+  // TIER 4 - Venus. Endgame storage.
   // Spatial IO and the whole MEGA Cells line sit behind the hottest planet.
   // sky_steel_ingot is the base of every MEGA cell, so gating it gates them all.
   // -------------------------------------------------------------------------
@@ -111,7 +126,7 @@ ServerEvents.recipes(event => {
   )
 
   // -------------------------------------------------------------------------
-  // TIER 6 - Twilight Forest, the Knight Phantom. Draconic Evolution.
+  // TIER 5 - Twilight Forest, the Knight Phantom. Draconic Evolution.
   // Knightmetal comes from the Goblin Stronghold. The Draconium Core is the
   // root of the entire Draconic tree, so this gates Act IV behind real combat.
   // -------------------------------------------------------------------------
@@ -122,5 +137,5 @@ ServerEvents.recipes(event => {
     'Draconium Core <- Knight Phantom'
   )
 
-  console.log('[adventure_gates] adventure gating applied')
+  console.log('[adventure_gates] adventure gating applied (rebalanced: basic AE2 ungated)')
 })

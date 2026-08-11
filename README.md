@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (170 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (184 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 170 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 184 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,44 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 170 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 184 mods — remove any extras or you'll be kicked on join.
 
-> **Unreleased — Performance + the keystone bridge fix. 170 mods.**
+> **Unreleased — Progression rebalance + 13 addons + performance. 184 mods.**
+>
+> **AE2 was locked behind a full space program.** The chain to a *basic* ME network was:
+> kill the Wither → NASA Workbench → build a rocket → fly to the Moon → *that* unlocks the
+> Twilight portal → fight to the Naga → kill it → only then can you craft an ME Controller.
+>
+> Three gates had stacked without anyone noticing they compounded: SkyForge's datapack put a
+> Nether Star on the NASA Workbench, `twilightforest-common.toml` had
+> `portalUnlockedByAdvancement = "ad_astra:moon"`, and the adventure-gating script put the ME
+> Controller behind the Naga. Twilight Forest is a **mid-game** dimension — gating it behind
+> space inverted the whole pack.
+>
+> The rule now is **getting into a mod is mid-game, mastering it is earned**:
+>
+> | Stage | Gate |
+> |---|---|
+> | Basic AE2 — controller, drives, terminals, cells, buses | **ungated** |
+> | Twilight Forest | **portal now open from the start** |
+> | AE2 autocrafting — Crafting Unit, Molecular Assembler | Naga |
+> | Space | Nether Star (Wither) |
+> | Computers, Advanced Peripherals | Mars |
+> | Wireless AE2 — Quantum Ring | Hydra |
+> | Spatial IO, all MEGA cells | Venus |
+> | Draconic Evolution | Knight Phantom |
+>
+> Basic AE2 is not a free ride — the Inscriber still requires a Mekanism Advanced Control
+> Circuit, so you earn *storage* by building a power base and *automation* by killing something.
+>
+> **13 addons added**, every mandatory dependency verified before install:
+> **Thermal** Cultivation, Innovation, Locomotion and Integration (the four official modules the
+> pack was missing alongside Foundation/Expansion/Dynamics); **Ars Énergistique**, **Applied
+> Botanics** and **Applied Flux** (Ars Nouveau, Botania and Thermal bridges into AE2);
+> **Create: Enchantment Industry**, **Create Deco** and **Create Jetpack** (plus **Create:
+> Dragons Plus**, a required library); **Ars Creo**; and **Crafting on a Stick**.
+>
+> ⚠️ These register items, so a client without them **will** be rejected on join.
 >
 > **Crafting a stack no longer freezes the server.** The pack has **30,765 recipes**, and
 > vanilla matches a craft by scanning that list linearly *every single time*. Shift-clicking
@@ -53,8 +88,13 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 > same cost, same outputs, no balance change.
 >
 > Also added **spark** (`/spark health`, `/spark profiler`) and tuned the server JVM:
-> `-Xms4G -Xmx4G` with Aikar's flags, down from an untuned `-Xmx6G`. Combined with the
-> client dropping 6G → 5G, that returns ~3 GB to the OS on a 16 GB machine.
+> `-Xms4G -Xmx4G` with Aikar's flags, down from an untuned `-Xmx6G` — about 2 GB back to
+> the OS on a 16 GB machine.
+>
+> **Client JVM args must be set in the launcher UI, not by editing
+> `launcher_profiles.json`.** The Minecraft launcher keeps that file in memory and rewrites
+> it on exit, silently discarding any external edit. Installations → your Forge profile →
+> ⋯ → Edit → More Options → JVM arguments.
 
 > **v1.20.0 — The quest book, rebuilt. 357 → 578 quests, one mod per chapter.
 > 167 mods.**
