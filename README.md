@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (184 mods) built around Mekanism +
+A Minecraft **1.20.1 Forge** void-skyblock modpack (191 mods) built around Mekanism +
 Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 184 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 191 mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,39 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 184 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** these 191 mods — remove any extras or you'll be kicked on join.
 
-> **Unreleased — Progression rebalance + 13 addons + performance. 184 mods.**
+> **Unreleased — The Twilight Forest is gone. The Aether replaces it. 191 mods.**
+>
+> Twilight Forest was removed and the Aether installed in its place as the pack's adventure
+> dimension — `aether`, `aether-redux`, `ancient_aether`, `deep_aether`, `lost_aether_content`
+> and `AetherVillages`, plus the `aeroblender` and `TerraBlender` libraries they depend on.
+>
+> **Every combat gate is now a dungeon key.** A key is a single *guaranteed* drop from the boss
+> that guards its dungeon — it cannot be sieved, traded, bred or duplicated, and because Aether
+> dungeons keep generating, another key always costs another fight. That replaces Twilight's
+> mixture of ingots, trophies and stronghold loot with one uniform rule.
+>
+> | Gate | Was (Twilight) | Now (Aether) |
+> |---|---|---|
+> | Quantum Ring — wireless AE2 | Hydra, Fiery Ingot | **Sun Spirit**, Gold Key |
+> | Draconium Core — all of Draconic | Knight Phantom, Knightmetal | **Valkyrie Queen**, Silver Key |
+> | Fission Reactor Casing | Hydra, Fiery Ingot | **Sun Spirit**, Gold Key ×16 |
+>
+> **A silent dead-end was caught in the process.** SkyForge's datapack ships a Fission Reactor
+> Casing recipe demanding a Twilight `fiery_ingot`. With Twilight removed that item no longer
+> exists, so the recipe failed to load and the casing became **uncraftable** — which would have
+> blocked Age VI with no error message. It is re-gated onto the Aether ladder.
+>
+> **The Celestial Core** — the centre of the win condition — was five Twilight trophies. Four
+> map onto Aether dungeon keys (Slider, Valkyrie Queen, Sun Spirit, and Deep Aether's Eye of the
+> Storm); the fifth went to Cataclysm's Netherite Monstrosity, because the Aether has no fifth
+> boss. Ad Astra was considered and rejected — it ships no entity loot tables at all, so it has
+> no bosses to gate on, and it is already represented by its three planet metals.
+>
+> **v1.22.x — Progression rebalance + 13 addons + performance. 184 mods.**
+>
+> &nbsp;&nbsp;*(Superseded above: the Twilight gates described here are now Aether gates.)*
 >
 > **AE2 was locked behind a full space program.** The chain to a *basic* ME network was:
 > kill the Wither → NASA Workbench → build a rocket → fly to the Moon → *that* unlocks the
