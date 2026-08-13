@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (216 server / 218 client mods) built around
+A Minecraft **1.20.1 Forge** void-skyblock modpack (210 server / 211 client mods) built around
 Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -30,6 +30,44 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
+
+> **Unreleased — Create trimmed, Mekanism addons added. 210 server / 211 client mods.**
+>
+> **13 Create addons removed** — the food set (Food, Bitterballen, Central Kitchen), the
+> decorative set (Copycats+, Encased, Rechiseled and its Fusion library, Oxidized, Bells &
+> Whistles) and the economy set (Numismatics, Trading Floor, Radars, Hypertube). Nothing in the
+> pack declared a mandatory dependency on any of them, verified before removal.
+>
+> **The Factory Must Grow stays**, along with the performance and functional Create mods:
+> Slice & Dice, CreateBetterFps, Utilities, Power Loader, Pattern Schematics, Contraption
+> Terminals, Railways Navigator, New Age, Diesel Generators, Factory, Stuff 'n Additions,
+> KubeJS Create. Oculus stays too — CreateBetterFps requires it.
+>
+> **7 added on the Mekanism side:** Mekanism Turrets (weapons/defence), Better Fusion Reactor,
+> Create Nuclear, More Mekanism Processing, Mekanism TFMG Compat, and two aimed squarely at the
+> beginner-friendliness goal — **Mekanism: Ponders** (Create-style animated in-game guides for
+> Mekanism multiblocks) and **Just Enough Mekanism Multiblocks** (multiblock structures shown in
+> JEI). Mekanism multiblocks are where new players stall, and neither the base mod nor the quest
+> book explains them well.
+>
+> Note that Mekanism **weapons and reactors already existed** — `MekanismTools` is the
+> weapons/armour module and `MekanismGenerators` already ships fission *and* fusion.
+>
+> ### Forge 47.3.0 is now blocking 8 mods
+>
+> Forge 47.4 lets a mod declare a constructor taking `FMLJavaModLoadingContext`. On 47.3.0 Forge
+> looks for a no-arg constructor instead and the mod dies with `NoSuchMethodException` — or
+> `VerifyError` if it merely *references* the newer signature. Some of these declare a compatible
+> `versionRange` and fail anyway, so the only reliable detection is booting, or scanning class
+> bytecode for that signature.
+>
+> | Blocked | |
+> |---|---|
+> | Create | Connected, Interiors, Tweaked Controllers, Ultimine, Compatible Storage |
+> | Mekanism | Extras, More Machine, MoreModules |
+>
+> Updating to Forge 47.4.x would unlock all eight. It is a minor update within 1.20.1 but changes
+> the version every client must install.
 
 > **v1.24.0 — 25 Create addons, quest-book restructure. 216 server / 218 client mods.**
 >
