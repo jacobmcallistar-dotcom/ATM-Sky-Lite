@@ -2,15 +2,15 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "productive_bees"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "productivebees:configurable_honeycomb"
 	id: "3C1F000000000013"
-	order_index: 10
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"&e&lSide Quest · Productive Bees.&r"
+				"&e&lProductive Bees.&r"
 				""
 				"A whole different way to automate: you don't build a machine, you breed a &olivestock&r that makes the resource for you."
 				""
@@ -439,5 +439,5 @@
 			y: 6.0d
 		}
 	]
-	title: "&eProductive Bees"
+	title: "&bProductive Bees"
 }

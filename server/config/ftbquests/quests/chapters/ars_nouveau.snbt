@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ars_nouveau"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "ars_nouveau:apprentice_spell_book"
 	id: "77BC0A8FF6938B38"
-	order_index: 18
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
@@ -540,5 +540,5 @@
 			y: 3.0d
 		}
 	]
-	title: "&dSide Quest · The Magic Branch"
+	title: "&bArs Nouveau"
 }

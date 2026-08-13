@@ -64,7 +64,7 @@
 				"2. Craft a &eHammer&r and smash cobble into gravel, gravel into sand, sand into dust."
 				"3. Craft a &eSieve&r and a &eMesh&r, then sift those for ores, seeds and treasure."
 				""
-				"Every ingot in this pack traces back to the sieve. As you upgrade your mesh (&7string &8→ &7flint &8→ &7iron &8→ &7diamond &8→ &7netherite&r) rarer drops appear. &aAge I teaches all of it, step by step.&r"
+				"Every ingot in this pack traces back to the sieve. As you upgrade your mesh (&7string &8→ &7flint &8→ &7iron &8→ &7diamond &8→ &7netherite&r) rarer drops appear. &aThe Sieve teaches all of it, step by step.&r"
 			]
 			icon: "exdeorum:oak_sieve"
 			id: "30B0000000000002"
@@ -116,18 +116,18 @@
 			description: [
 				"The whole book is one continuous climb. Complete an Age's &lcapstone&r to unlock the next - and the world itself is locked to match:"
 				""
-				"&2Age I &8· &2The Sieve&r - sift the void into metal, forge Sky Steel, automate the forge."
-				"&eAge II &8· &eThe Kinetic Age&r - Create: water wheels, presses, brass, fan-washing."
-				"&2Age III &8· &2First Machines&r - kinetics buy electricity. Mekanism opens."
-				"&9Age IV &8· &9Power & Automation&r - Powah reactors, mob simulation, mechanical sieving. AE2 &lstorage&r opens here; its &lautocrafting&r waits for the Moon."
-				"&cAge V &8· &cWar in the Sky&r - Apotheosis gear, allies, and the &lWither&r."
-				"&6Age VI &8· &6The Space Program&r - a Nether Star buys your launch codes. Moon to Glacio."
-				"&cAge VII &8· &cRealms Beyond&r - each planet you conquer unseals a dimension."
-				"&5Age VIII &8· &5Ascension&r - Twilight fire splits the atom. Antimatter. The Heart."
+				"&2&lAct I · Foundations&r - everything up to your first real power."
+				"&7The Sieve, The Kinetic Age, First Machines, Claim Your Island."
+				""
+				"&9&lAct II · Industry&r - the tech ladder you must climb to finish."
+				"&7Powah, Solar Flux, Advanced Generators, Mekanism, Applied Energistics,"
+				"&7The Space Program, The Aether."
+				"&c&lAct III · Conquest&r - War in the Sky, The Void Signal, The Bestiary."
+				"&5&lAct IV · Ascension&r - antimatter, and the Heart of the Sky."
 				""
 				"&8Green = done. Blue = available. &lThere is a real ending. Go take it.&r"
 				""
-				"&7Side quests: &fStash & Sort&7 (drawers, backpacks, search-everything terminals - start this EARLY), &bSky Gadgets&7 (Cyclic conveniences) and &dEssence Farming&7 (Mystical Agriculture - grow diamonds, then nether stars, then godhood). Optional. Recommended. OP.&r"
+				"&b&lAdditions&r &7- everything else. Not required to finish, all of it useful. Storage (drawers, backpacks, terminals - start this EARLY), &bSky Gadgets&7 (Cyclic conveniences) and &dEssence Farming&7 (Mystical Agriculture - grow diamonds, then nether stars, then godhood). Optional. Recommended. OP.&r"
 			]
 			icon: "ftbquests:book"
 			id: "30B0000000000004"
@@ -156,7 +156,7 @@
 				"&7Keystone + 2 Sky Dust&r &8→&r Uraninite &8(starts Powah)"
 				"&7Keystone + 2 Sky Steel&r &8→&r Mekanism Steel"
 				""
-				"You can also &osieve&r your way to osmium and certus the slow way - the keystone is just the reliable shortcut. Age II walks you through it."
+				"You can also &osieve&r your way to osmium and certus the slow way - the keystone is just the reliable shortcut. The Kinetic Age walks you through it."
 			]
 			icon: "skyforge:industrial_keystone"
 			id: "30B0000000000005"
@@ -266,5 +266,5 @@
 			y: 2.5d
 		}
 	]
-	title: "&fHow to Play"
+	title: "&2How to Play"
 }

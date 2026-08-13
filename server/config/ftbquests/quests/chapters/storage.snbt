@@ -2,16 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "storage"
-	group: "1A2B000000000001"
+	group: "1A2B000000000005"
 	icon: "toms_storage:ts.storage_terminal"
 	id: "3C1F00000000000B"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2101000000000004"]
 			description: [
-				"&f&lSide Quest · Stash & Sort.&r"
+				"&f&lStorage.&r"
 				""
 				"The sieve is about to bury you: chunks, seeds, gems, dust, pebbles - sixteen kinds of everything, forever. Double chests are where items go to disappear."
 				""
@@ -271,7 +271,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Storage side quest complete"
+			subtitle: "&7Chapter complete"
 			tasks: [{
 				id: "57D0000000000209"
 				item: "toms_storage:ts.crafting_terminal"
@@ -545,5 +545,5 @@
 			y: 3.8d
 		}
 	]
-	title: "&fSide Quest · Stash & Sort"
+	title: "&bStorage"
 }

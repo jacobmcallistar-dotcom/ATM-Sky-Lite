@@ -2,16 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ender_io"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "enderio:alloy_smelter"
 	id: "3C1F00000000000D"
-	order_index: 9
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["210200000000000E"]
 			description: [
-				"&a&lTech Branch · Ender IO.&r"
+				"&a&lEnder IO.&r"
 				""
 				"The compact-tech mod: machines that do one job brutally well, and &econduits&r - item, energy and fluid lines that all share &lone block space&r. Your machine rooms are about to get very, very clean."
 				""
@@ -32,7 +32,7 @@
 				title: "Open the toolbox of the End"
 				type: "checkmark"
 			}]
-			title: "&aTech Branch · Ender IO"
+			title: "&aEnder IO"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -563,5 +563,5 @@
 			y: 2.2d
 		}
 	]
-	title: "&aTech Branch · Ender IO"
+	title: "&bEnder IO"
 }

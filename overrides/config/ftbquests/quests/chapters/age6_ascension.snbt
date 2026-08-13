@@ -11,7 +11,7 @@
 		{
 			dependencies: ["3811F52536EF179D"]
 			description: [
-				"&5&lAge VIII · Ascension.&r"
+				"&5&lAscension.&r"
 				""
 				"You have stood at the edge of the solar system. Only now does the summit open."
 				""
@@ -32,7 +32,7 @@
 				title: "Begin the ascent"
 				type: "checkmark"
 			}]
-			title: "&5Age VIII · Ascension"
+			title: "&5Ascension"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -535,5 +535,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&5Age VIII · Ascension"
+	title: "&5Ascension"
 }

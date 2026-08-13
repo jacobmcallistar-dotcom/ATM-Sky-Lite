@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "powah:reactor_basic"
 	id: "3C1F000000000018"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -44,9 +44,9 @@
 				""
 				"&e&lThis is a bridge recipe, not a real supply.&r SkyForge exists to break chicken-and-egg problems: Powah needs uraninite, uraninite needs an overworld, and you do not have one. The keystone gets you started - it does not scale."
 				""
-				"&e&lThe scalable answer is Mystical Agriculture.&r Uraninite seeds turn reactor fuel into a crop you harvest. If you intend to run reactors seriously - and Age IV assumes you will - get that farm going early rather than bridging one ingot at a time."
+				"&e&lThe scalable answer is Mystical Agriculture.&r Uraninite seeds turn reactor fuel into a crop you harvest. If you intend to run reactors seriously - and this chapter assumes you will - get that farm going early rather than bridging one ingot at a time."
 				""
-				"&e&lWhat it feeds:&r Powah's &7Uraninite &8→&7 Uranium&r line, and from there the Reactor tiers that carry your grid from Age III to the fission plant in Ascension."
+				"&e&lWhat it feeds:&r Powah's &7Uraninite &8→&7 Uranium&r line, and from there the Reactor tiers that carry your grid from First Machines to the fission plant in Ascension."
 				""
 				"&7Powah reactors consume fuel continuously while running, unlike the Thermo and Wind generators you have been leaning on. Budget for a steady supply before you commit your base to one.&r"
 				""
@@ -109,7 +109,7 @@
 				""
 				"&e&lIt is slow but utterly reliable&r - no fuel logistics, no moving parts, no maintenance. Build a bank of them as your baseline grid and let the reactors handle peaks."
 				""
-				"&8Between this and wind, you can run all of Age III without ever crafting a fuel-burning generator."
+				"&8Between this and wind, you can run all of First Machines without ever crafting a fuel-burning generator."
 			]
 			icon: "powah:thermo_generator_basic"
 			id: "2103000000000004"
@@ -616,6 +616,43 @@
 			title: "&9&lPowah Complete"
 			x: 10.0d
 			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2103000000000007"
+				"2103000000000009"
+				"210300000000000A"
+			]
+			description: [
+				"Reactor humming, matrix charged, mobs on tap. You have industrial power and industrial resources."
+				""
+				"&cAct III opens: War in the Sky, The Void Signal and The Bestiary.&r"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "210300000000000B"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "210300000000010B"
+					type: "random"
+				}
+				{
+					id: "210300000000010C"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Chapter complete"
+			tasks: [{
+				id: "210300000000020B"
+				title: "The grid is online"
+				type: "checkmark"
+			}]
+			title: "&9Powered Up"
+			x: 12.0d
+			y: 0.0d
 		}
 	]
 	title: "&9Powah"

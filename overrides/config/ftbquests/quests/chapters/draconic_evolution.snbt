@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "draconic_evolution"
-	group: "1A2B000000000004"
+	group: "1A2B000000000005"
 	icon: "draconicevolution:draconium_ingot"
 	id: "256742505B017DD8"
-	order_index: 1
+	order_index: 13
 	quest_links: [ ]
 	quests: [
 		{
@@ -442,5 +442,5 @@
 			y: 2.2d
 		}
 	]
-	title: "&cDraconic Evolution"
+	title: "&bDraconic Evolution"
 }

@@ -5,11 +5,11 @@
 	group: "1A2B000000000002"
 	icon: "mekanism:steel_casing"
 	id: "3C1F000000000010"
-	order_index: 5
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2102000000000004"]
+			dependencies: ["210200000000000E"]
 			description: [
 				"&9Mekanism&r is the industrial heart of this pack: processing, chemicals, and enough power to bend the world."
 				""
@@ -45,102 +45,6 @@
 		{
 			dependencies: ["6C0C75598D65CE7D"]
 			description: [
-				"The &eEnrichment Chamber&r doubles ores and makes enriched materials, compressed redstone, and more. Your first real processing machine."
-				""
-				"&e&lIt does far more than double ore.&r It is the machine you will keep coming back to:"
-				"&7- &fOre &8→&7 2x dust&r - the 2x tier"
-				"&7- &fRedstone &8→&7 Enriched Redstone&r - feeds every circuit"
-				"&7- &fCoal &8→&7 Enriched Carbon&r, &fdiamond &8→&7 Enriched Diamond&r, &fobsidian &8→&7 Enriched Obsidian&r - all four infusion types come from here"
-				"&7- &fDirty Dust &8→&7 clean Dust&r - a required stage of the 3x, 4x and 5x chains"
-				""
-				"&c&lThat last one is why you never remove it.&r Every higher ore tier routes back through this machine. It is not tier-2 equipment you outgrow - it is permanent infrastructure."
-				""
-				"&7Build two: one dedicated to the ore line, one for infusion materials. Sharing a single chamber between both means your circuit production stalls every time you process a batch of ore.&r"
-				""
-				"&8Slot in a Muffling Upgrade immediately. This machine runs constantly and it is loud."
-			]
-			icon: "mekanism:enrichment_chamber"
-			id: "6B5334AE80D3748E"
-			rewards: [{
-				id: "425E32736F06F3CB"
-				type: "xp"
-				xp: 20
-			}]
-			subtitle: "&7Doubling starts here"
-			tasks: [{
-				id: "36BAA084C8543C4D"
-				item: "mekanism:enrichment_chamber"
-				type: "item"
-			}]
-			title: "Enrichment Chamber"
-			x: -7.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["6C0C75598D65CE7D"]
-			description: [
-				"The &eCrusher&r grinds ingots to dust and biomass to bio fuel. Pair it with the Enrichment Chamber to start doubling metals."
-				""
-				"&e&lTwo jobs, and the second one is easy to miss:&r"
-				"&71.&r &7Ingots and clumps into dust&r - its role in every ore tier above 2x."
-				"&72.&r &7Any plant matter into Bio Fuel&r - saplings, seeds, flowers, rotten flesh, all of it."
-				""
-				"&e&lBio Fuel is free power.&r Feed it to a &7Bio-Generator&r and your surplus sieve saplings become electricity. In a void world where you are already producing endless saplings from the Crook, this is the cheapest generator you will ever run - and it costs you nothing you were using."
-				""
-				"&7It also recycles. Worn tools, spare armour, and anything metal you no longer want go in and come back as dust, then ingots. Nothing is wasted.&r"
-				""
-				"&8Pair with a Muffling Upgrade. Crushers are relentless."
-			]
-			icon: "mekanism:crusher"
-			id: "736B27013214BE28"
-			rewards: [{
-				id: "330EA3C96DB0811E"
-				type: "xp"
-				xp: 20
-			}]
-			subtitle: "&7Ingots back into dust"
-			tasks: [{
-				id: "3EFC495C19FC88FD"
-				item: "mekanism:crusher"
-				type: "item"
-			}]
-			title: "Crusher"
-			x: -7.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6C0C75598D65CE7D"]
-			description: [
-				"The &eEnergized Smelter&r is a furnace that runs on power - no fuel, and it feeds into factories later."
-				""
-				"&e&lIt is the last stage of every ore chain you will ever build.&r 2x, 3x, 4x, 5x - they all end with dust going into a smelter. Whatever else changes upstream, this block stays."
-				""
-				"&e&lWhich is exactly why it should be your first Factory.&r A Smelting Factory has 3, 5, 7 or 9 parallel slots depending on tier, and your ore line will saturate a single smelter long before it saturates anything else. When you get to the Factory quest, upgrade this one first."
-				""
-				"&7No fuel slot means no hoppers full of coal, no ash, and no stalling overnight when the charcoal runs out. Power is the only input.&r"
-				""
-				"&8Speed Upgrades pay off here more than almost anywhere else, because this machine is nearly always the bottleneck rather than the thing waiting on input."
-			]
-			icon: "mekanism:energized_smelter"
-			id: "62AB81D872055048"
-			rewards: [{
-				id: "3ED07579B89CE98B"
-				type: "xp"
-				xp: 20
-			}]
-			subtitle: "&7Furnace, without the fuel"
-			tasks: [{
-				id: "2FCAE77421C9A493"
-				item: "mekanism:energized_smelter"
-				type: "item"
-			}]
-			title: "Energized Smelter"
-			x: -7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6C0C75598D65CE7D"]
-			description: [
 				"Machines need power. A Basic Energy Cube stores it and acts as a battery/adapter between generators and machines."
 				""
 				"Feed it from your Powah or Mekanism generators."
@@ -164,8 +68,7 @@
 		}
 		{
 			dependencies: [
-				"6B5334AE80D3748E"
-				"736B27013214BE28"
+				"6C0C75598D65CE7D"
 			]
 			description: [
 				"The &eElectrolytic Separator&r splits water into Hydrogen and Oxygen - the gases that unlock advanced processing."
@@ -178,7 +81,7 @@
 				""
 				"&e&lPlumbing it:&r water in via &7Mechanical Pipes&r or a fluid tank, gases out via &7Pressurised Tubes&r. Gases do not travel in item pipes or fluid pipes - they need their own tubing. Put a &7Chemical Tank&r on each output as a buffer, or the separator throttles itself the moment one side backs up."
 				""
-				"&c&lIt is power-hungry.&r This is usually the point where a hand-fed generator stops being enough and you need a real power plant. Age IV's Powah reactors exist for exactly this."
+				"&c&lIt is power-hungry.&r This is usually the point where a hand-fed generator stops being enough and you need a real power plant. Powah's reactors exist for exactly this."
 				""
 				"&8Water is free and infinite - a single Aqueous Accumulator or an infinite water source keeps it fed forever."
 			]
@@ -196,7 +99,7 @@
 				type: "item"
 			}]
 			title: "Split the Water"
-			x: -5.0d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
@@ -234,39 +137,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["742152612BC35B66"]
-			description: [
-				"The &eOsmium Compressor&r stamps Osmium onto materials to make Refined Obsidian, Glowstone ingots, and control-circuit ingredients."
-				""
-				"&e&lIt consumes osmium as a gas.&r Feed osmium ingots or dust into the gas slot and it liquefies them into an internal buffer; that buffer is then spent on whatever item you push through. An empty gas buffer looks identical to a broken machine."
-				""
-				"&e&lWhat it makes, and why each matters:&r"
-				"&7- &fRefined Obsidian Ingot&7 - the wall in front of Atomic Alloy and every Ultimate-tier item"
-				"&7- &fRefined Glowstone Ingot&7 - Energy Cubes and lighting"
-				"&7- &fBasic Control Circuits&7 - the component you consume forever"
-				""
-				"&c&lOsmium supply is the real constraint on all of Mekanism&r, and it does not drop below an iron sieve mesh. If this machine keeps running dry, add sieves - a bigger compressor will not help."
-				""
-				"&7Mystical Agriculture osmium seeds turn this from a bottleneck into a farm. Worth doing before you start the Ultimate tier.&r"
-			]
-			icon: "mekanism:osmium_compressor"
-			id: "20BFAAABC4357F1F"
-			rewards: [{
-				id: "2AA1AA0487FEA1DC"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "&7The ingot everything needs"
-			tasks: [{
-				id: "319844816D2CC0FB"
-				item: "mekanism:osmium_compressor"
-				type: "item"
-			}]
-			title: "Osmium Compressor"
-			x: -5.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["43FBE8C75E6299BE"]
 			description: [
 				"The Chemical Injection Chamber uses Hydrogen Chloride to shatter ores into 4 shards each - QUADRUPLING."
@@ -291,41 +161,8 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["20BFAAABC4357F1F"]
-			description: [
-				"Control Circuits are the currency of Mekanism upgrades. The Basic circuit gates everything above tier 1."
-				""
-				"Make one in a Metallurgic Infuser (redstone + osmium)."
-			]
-			icon: "mekanism:basic_control_circuit"
-			id: "0FF4B3FC8DFFDE04"
-			rewards: [{
-				id: "4D780B1D95D2426B"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "&7Osmium and redstone"
-			tasks: [{
-				id: "6E37B7A4F12EE519"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
-			title: "Basic Circuits"
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0FF4B3FC8DFFDE04"]
-			description: [
-				"&eAdvanced Control Circuits&r need enriched circuits and gold. They gate tier-2 machines and factories."
-				""
-				"&c&lThis is the circuit that unlocks AE2.&r The Inscriber in this pack is built around one, which is the pack's way of saying the digital age does not start until the electric one is running properly. If you are impatient to start AE2, this quest is the whole bottleneck."
-				""
-				"&e&lThey are also the gate on:&r Advanced Factories, the Digital Miner, tier-2 Energy Cubes, and most of the machines worth owning."
-				""
-				"&7Make far more than you think you need. Circuits are consumed by every upgrade, every factory tier and every new machine - and hand-crafting them in batches of four is the thing that will make you finally build autocrafting.&r"
-				""
-				"&8Enriched Alloy is the ingredient that limits you, and it comes from the Metallurgic Infuser with an infused-redstone buffer. Keep that machine fed and circuits stop being a problem."
+			dependencies: [
+				"6C0C75598D65CE7D"
 			]
 			icon: "mekanism:advanced_control_circuit"
 			id: "267D2B1D2D8750CC"
@@ -385,8 +222,7 @@
 		}
 		{
 			dependencies: [
-				"0FF4B3FC8DFFDE04"
-				"62AB81D872055048"
+				"267D2B1D2D8750CC"
 			]
 			description: [
 				"A Factory does the job of one machine, but on many items at once, in parallel."
@@ -1051,7 +887,7 @@
 			description: [
 				"The &eChemical Crystallizer&r turns clean slurry back into a solid - an ore crystal, ready to re-enter the machines you already own."
 				""
-				"&e&lThis is where the chain rejoins familiar ground.&r Crystal into the Enrichment Chamber gives you shards, then dust, then the Energized Smelter finishes the job. The last two machines are the same ones you built in Age III."
+				"&e&lThis is where the chain rejoins familiar ground.&r Crystal into the Enrichment Chamber gives you shards, then dust, then the Energized Smelter finishes the job. The last two machines are the same ones you built in First Machines."
 				""
 				"&a&lWith all five stages running you are at 5x&r - five ingots from one ore chunk, the ceiling of Mekanism ore processing."
 				""
@@ -1840,7 +1676,7 @@
 				""
 				"Ore processing at 5x. A chemistry line making its own acids. Steam power from a boiler and turbine you sized yourself. Storage that indexes itself, crafting that repeats itself, and a suit that flies."
 				""
-				"&7What is left is in &fAge VIII &7- the fission reactor, the Solar Neutron Activator, polonium, the SPS, and two pellets of antimatter for the Heart of the Sky.&r"
+				"&7What is left is in &fAscension &7- the fission reactor, the Solar Neutron Activator, polonium, the SPS, and two pellets of antimatter for the Heart of the Sky.&r"
 				""
 				"&8Everything you built here is a prerequisite for that. Nothing was wasted."
 			]
@@ -1964,5 +1800,5 @@
 			y: -3.0d
 		}
 	]
-	title: "&9Tech Branch · Mekanism"
+	title: "&9Mekanism"
 }

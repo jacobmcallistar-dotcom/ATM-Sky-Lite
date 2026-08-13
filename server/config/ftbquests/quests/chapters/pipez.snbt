@@ -2,16 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "pipez"
-	group: "1A2B000000000001"
+	group: "1A2B000000000005"
 	icon: "pipez:item_pipe"
 	id: "3C1F000000000015"
-	order_index: 8
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2101000000000004"]
 			description: [
-				"&f&lSide Quest · Pipe Dreams.&r"
+				"&f&lPipes.&r"
 				""
 				"Hoppers are slow, chest-to-chest by hand is worse, and the sieve never stops. Sooner or later every base needs things to move themselves."
 				""
@@ -262,7 +262,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Pipe side quest complete"
+			subtitle: "&7Chapter complete"
 			tasks: [
 				{
 					id: "7E10000000000209"
@@ -410,5 +410,5 @@
 			y: 3.0d
 		}
 	]
-	title: "&bSide Quest · Pipe Dreams"
+	title: "&bPipes"
 }

@@ -5,13 +5,13 @@
 	group: "1A2B000000000002"
 	icon: "aether:gold_dungeon_key"
 	id: "3C1F000000000005"
-	order_index: 17
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["75B7246A1B0C350B"]
 			description: [
-				"&c&lAge VII · Realms Beyond.&r Your sky island is not the only world - but the old doors are sealed, and space holds most of the keys."
+				"&c&lThe Aether.&r Your sky island is not the only world - but the old doors are sealed, and space holds most of the keys."
 				""
 				"&7The Aether&r needs no planet at all - glowstone and a bucket of water will open it. Its &edungeons&r are the gate, not its door."
 				"&7The Undergarden&r demands a catalyst cored with &eMars&r ostrum."
@@ -379,5 +379,5 @@
 			y: -2.5d
 		}
 	]
-	title: "&cAge VII · Realms Beyond"
+	title: "&9The Aether"
 }

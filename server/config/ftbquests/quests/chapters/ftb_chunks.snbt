@@ -5,7 +5,7 @@
 	group: "1A2B000000000001"
 	icon: "minecraft:filled_map"
 	id: "36B78FC1BC203848"
-	order_index: 6
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -143,5 +143,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&2FTB Chunks"
+	title: "&2Claim Your Island"
 }

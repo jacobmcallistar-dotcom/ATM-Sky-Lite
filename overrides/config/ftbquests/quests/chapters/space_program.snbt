@@ -5,13 +5,13 @@
 	group: "1A2B000000000002"
 	icon: "ad_astra:tier_4_rocket"
 	id: "3C1F000000000012"
-	order_index: 16
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["6B7800000000D005"]
 			description: [
-				"&6Age VI · The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
+				"&6The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
 				""
 				"Ad Astra takes you off-world: the Moon, Mars, Venus, Mercury, and the frozen exoplanet Glacio. Each needs a bigger rocket and better gear to survive."
 				""
@@ -837,5 +837,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&6Age VI · The Space Program"
+	title: "&9The Space Program"
 }

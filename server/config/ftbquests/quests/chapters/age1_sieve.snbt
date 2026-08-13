@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"&2&lAge I · The Sieve.&r"
+				"&2&lThe Sieve.&r"
 				""
 				"You have a tree, a block of dirt, and a whole lot of nothing. By the end of this Age you will have turned that nothing into metal, machines, and the first automated forge in the sky."
 				""
@@ -40,7 +40,7 @@
 				title: "Take flight"
 				type: "checkmark"
 			}]
-			title: "&2Age I · The Sieve"
+			title: "&2The Sieve"
 			x: -14.0d
 			y: 0.0d
 		}
@@ -125,7 +125,7 @@
 				""
 				"&8Do not throw meshes away when you upgrade. Multiple sieves running different meshes side by side is faster than one sieve you keep re-fitting."
 				""
-				"&7Sieving by hand is the bottleneck of Age I. Look ahead to &fPowered Sieving&7 - the moment you automate this, the whole pack opens up.&r"
+				"&7Sieving by hand is the early bottleneck. Look ahead to &fPowered Sieving&7 - the moment you automate this, the whole pack opens up.&r"
 			]
 			icon: "exdeorum:string_mesh"
 			id: "2101000000000004"
@@ -166,7 +166,7 @@
 				"&7- &f+ Chemical Injection&7 - &a4x&7"
 				"&7- &f+ Dissolution / full 5-stage&7 - &a5x&7"
 				""
-				"&8Every chunk you burn now is four you will not have later. Smelt what you need for the next machine and stockpile the rest - a chest of raw chunks is the best investment in Age I."
+				"&8Every chunk you burn now is four you will not have later. Smelt what you need for the next machine and stockpile the rest - a chest of raw chunks is the best investment you can make early."
 				""
 				"&7Copper is the one people under-collect. Create runs on brass, brass runs on copper, and you will want hundreds.&r"
 			]
@@ -203,7 +203,7 @@
 				"Smelt your iron ore chunks into ingots. The first real metal in the sky - it goes into hammers, meshes, and your first machines."
 				""
 				"&e&lWhere your early iron goes.&r Budget for these before you spend it on armour:"
-				"&7- &fIron Hammer&7 - lasts far longer than stone and is the tool you use most in Age I."
+				"&7- &fIron Hammer&7 - lasts far longer than stone and is the tool you use most early on."
 				"&7- &fIron Mesh&7 - the first mesh that pays for itself. Gets you the rarer chunks."
 				"&7- &fBlast Furnace&7 - 5 iron, and the only route to Sky Steel."
 				"&7- &fBuckets&7 - you will need several for lava, water and the crucible."
@@ -274,7 +274,7 @@
 			description: [
 				"A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."
 				""
-				"&e&lWhy this matters more than it looks.&r &7Sky Steel&r is the backbone of Age I - it goes into the Sky Assembler, the Crucible line, and the keystone bridges that unlock Mekanism, AE2 and Powah. A normal furnace will never make it. This block is the gate."
+				"&e&lWhy this matters more than it looks.&r &7Sky Steel&r is the backbone of the early game - it goes into the Sky Assembler, the Crucible line, and the keystone bridges that unlock Mekanism, AE2 and Powah. A normal furnace will never make it. This block is the gate."
 				""
 				"&7Blast Furnaces only accept ores, raw metals and metal tools - no food, no sand, no wood. Keep an ordinary furnace running alongside it.&r"
 				""
@@ -424,7 +424,7 @@
 				""
 				"&7Sieve &fdust&r with this, not just gravel. Dust is where redstone, lapis and glowstone live, and those become the bottleneck the moment you start building Mekanism machines in quantity.&r"
 				""
-				"&8Netherite mesh exists above this one, but the jump is small compared to iron-to-diamond. Do not stall Age I chasing it - get diamond, automate, and move on to Create."
+				"&8Netherite mesh exists above this one, but the jump is small compared to iron-to-diamond. Do not stall here chasing it - get diamond, automate, and move on to Create."
 			]
 			icon: "exdeorum:diamond_mesh"
 			id: "2101000000000009"
@@ -449,7 +449,7 @@
 			description: [
 				"&bApplied Energistics starts here.&r Sift &esand&r (not gravel) with an iron mesh or better and &eCertus Quartz&r crystals drop."
 				""
-				"No meteors fall in the void, so this is your organic path into AE2. Bank a few crystals - Age II turns them into a digital brain."
+				"No meteors fall in the void, so this is your organic path into AE2. Bank a few crystals - The Kinetic Age turns them into a digital brain."
 			]
 			icon: "ae2:certus_quartz_crystal"
 			id: "210100000000000E"
@@ -476,7 +476,7 @@
 			description: [
 				"&9Mekanism starts here.&r With an iron mesh, gravel also drops &eOsmium Ore Chunks&r. Smelt them into Osmium Ingots - the metal every Mekanism machine is built from."
 				""
-				"The keystone bridge in Age II is faster, but you can bootstrap Mekanism from the sieve alone."
+				"The keystone bridge in The Kinetic Age is faster, but you can bootstrap Mekanism from the sieve alone."
 			]
 			icon: "mekanism:ingot_osmium"
 			id: "2101000000000012"
@@ -584,9 +584,9 @@
 		{
 			dependencies: ["2101000000000010"]
 			description: [
-				"Power the Assembler, feed it dust, and let it run. When you have a real stockpile of Sky Steel, Age I is complete."
+				"Power the Assembler, feed it dust, and let it run. When you have a real stockpile of Sky Steel, The Sieve is complete."
 				""
-				"&2You turned a void into a forge. Age II opens: shafts, cogwheels, and water-driven industry - the Kinetic Age.&r"
+				"&2You turned a void into a forge. Next: &eThe Kinetic Age&r - shafts, cogwheels and water-driven industry.&r"
 			]
 			icon: "skyforge:sky_steel_ingot"
 			id: "2101000000000011"
@@ -609,7 +609,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Age I capstone"
+			subtitle: "&7Chapter complete"
 			tasks: [{
 				count: 16L
 				id: "2101000000000211"
@@ -748,7 +748,7 @@
 			description: [
 				"&eEx Machinis: Divitiae Deorum&r automates the exact chain you've been doing by hand - RF-powered &eFlux Sieve&r, &eFlux Hammer&r and &eFlux Compactor&r. Feed them power instead of your own clicks."
 				""
-				"&6&lThis is the most important quest in Age I.&r Everything above this point scales with how long you are willing to hold right-click. Everything below it scales with how much power you can make. That is the whole difference between a skyblock and a factory."
+				"&6&lThis is the most important quest in this chapter.&r Everything above this point scales with how long you are willing to hold right-click. Everything below it scales with how much power you can make. That is the whole difference between a skyblock and a factory."
 				""
 				"&e&lThe full automated line:&r"
 				"&7Cobble generator &8→&7 Flux Hammer &8→&7 gravel &8→&7 Flux Sieve &8→&7 ore chunks &8→&7 furnace &8→&7 ingots&r"
@@ -757,7 +757,7 @@
 				""
 				"&7Build the sieve first, the hammer second.&r Hammering is the less painful half by hand; sieving is what actually eats your evenings."
 				""
-				"&8Feed the output into a chest and walk away. Come back to stacks of chunks. From here Age II is about spending them, not gathering them."
+				"&8Feed the output into a chest and walk away. Come back to stacks of chunks. From here The Kinetic Age is about spending them, not gathering them."
 			]
 			icon: "exmachinis:flux_sieve"
 			id: "1A1162A344DAAC99"
@@ -793,7 +793,7 @@
 			description: [
 				"The &eMechanical Hammer&r crushes cobble to gravel to sand to dust on Forge Energy - no durability, no clicking, no mercy. Feed it with a hopper and walk away."
 				""
-				"&e&lThis is the second half of Age I's automation&r - the Flux Sieve handled sifting, this handles the hammering that feeds it. Together they replace the entire manual chain you started the pack with."
+				"&e&lThis is the second half of the sieve's automation&r - the Flux Sieve handled sifting, this handles the hammering that feeds it. Together they replace the entire manual chain you started the pack with."
 				""
 				"&e&lThe full hands-off line:&r"
 				"&7Cobble generator &8→&7 &fMechanical Hammer&7 &8→&7 gravel &8→&7 &fFlux Sieve&7 &8→&7 ore chunks &8→&7 &fEnergized Smelter&7 &8→&7 ingots&r"
@@ -899,5 +899,5 @@
 			y: 2.0d
 		}
 	]
-	title: "&2Age I · The Sieve"
+	title: "&2The Sieve"
 }

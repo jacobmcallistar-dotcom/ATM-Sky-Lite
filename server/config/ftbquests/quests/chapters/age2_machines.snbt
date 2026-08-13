@@ -11,7 +11,7 @@
 		{
 			dependencies: ["44EA00000000000E"]
 			description: [
-				"&2&lAge III · First Machines.&r"
+				"&2&lFirst Machines.&r"
 				""
 				"Water gave you torque; now torque buys you &lelectricity&r. An Industrial Keystone, your first Mekanism machines, and grid power that never sleeps."
 				""
@@ -32,7 +32,7 @@
 				title: "Enter the Machine Age"
 				type: "checkmark"
 			}]
-			title: "&2Age III · First Machines"
+			title: "&2First Machines"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -196,7 +196,7 @@
 				""
 				"&7Right-click the machine, open the upgrade slot on the left, and drop them in. Up to 8 of each.&r"
 				""
-				"&e&lWire it into the ore line:&r Crusher or Enrichment Chamber output &8→&7 Energized Smelter &8→&7 ingot chest&r. That is your Age I sieve chain finally running end to end without you."
+				"&e&lWire it into the ore line:&r Crusher or Enrichment Chamber output &8→&7 Energized Smelter &8→&7 ingot chest&r. That is your sieve chain finally running end to end without you."
 			]
 			icon: "mekanism:energized_smelter"
 			id: "2102000000000007"
@@ -392,7 +392,7 @@
 				""
 				"&e&lThe alloy ladder behind those tiers&r runs through the Metallurgic Infuser: &7Enriched Alloy&r (iron + infused redstone), then &7Reinforced&r (enriched + infused diamond), then &7Atomic&r (reinforced + infused refined obsidian). Build the infuser line once and every circuit tier becomes cheap."
 				""
-				"&8Automate basic circuits early. They are consumed by the dozen and hand-crafting them will become the thing you hate most about Age III."
+				"&8Automate basic circuits early. They are consumed by the dozen and hand-crafting them will become the thing you hate most about this chapter."
 			]
 			icon: "mekanism:basic_control_circuit"
 			id: "210200000000000D"
@@ -420,9 +420,11 @@
 				"2102000000000007"
 			]
 			description: [
-				"Power flows, ore doubles, circuits stamp out. Age III is done."
+				"Power flows, ore doubles, circuits stamp out. First Machines is done."
 				""
-				"&9Act II opens: dive the deep Mekanism tree, push to Advanced Circuits to crack open AE2, then spin up Age IV - Powah reactors and mass power.&r"
+				"&9Act II opens: dive the deep Mekanism tree, push to Advanced Circuits to crack open AE2, then spin up &9Powah&r - reactors and mass power.&r"
+				""
+				"&7Next: &9Act II · Industry&7 opens with the &fMekanism&7 chapter, which picks up exactly here - gases, ore quadrupling and factory tiers.&r"
 			]
 			icon: "mekanism:steel_casing"
 			id: "210200000000000E"
@@ -446,7 +448,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Age II capstone"
+			subtitle: "&7Chapter complete"
 			tasks: [
 				{
 					count: 4L
@@ -466,5 +468,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&2Age III · First Machines"
+	title: "&2First Machines"
 }

@@ -2,16 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "essence_farming"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "mysticalagriculture:inferium_essence"
 	id: "3C1F000000000009"
-	order_index: 8
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["210200000000000E"]
 			description: [
-				"&d&lSide Quest · Essence Farming.&r"
+				"&d&lMystical Agriculture.&r"
 				""
 				"Mystical Agriculture grows &oresources&r. Iron. Diamonds. Nether stars, eventually. You plant a seed, and the thing you used to sieve for just... grows."
 				""
@@ -410,7 +410,7 @@
 			description: [
 				"The &eAwakening Altar&r infuses Supremium with the elements into &eAwakened Supremium&r - the final metal of the farming path."
 				""
-				"Craft an Awakened Supremium Ingot and this side quest is conquered. You grew your way to godhood. The bosses never stood a chance."
+				"Craft an Awakened Supremium Ingot and this chapter is conquered. You grew your way to godhood. The bosses never stood a chance."
 			]
 			icon: "mysticalagriculture:awakened_supremium_ingot"
 			id: "655E00000000000C"
@@ -487,5 +487,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&dSide Quest · Essence Farming"
+	title: "&bMystical Agriculture"
 }

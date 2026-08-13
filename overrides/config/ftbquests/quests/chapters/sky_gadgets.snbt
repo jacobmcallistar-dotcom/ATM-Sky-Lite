@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "sky_gadgets"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "cyclic:solidifier"
 	id: "3C1F000000000008"
-	order_index: 7
+	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
@@ -420,5 +420,5 @@
 			y: 1.5d
 		}
 	]
-	title: "&bSky Gadgets"
+	title: "&bQuality of Life"
 }

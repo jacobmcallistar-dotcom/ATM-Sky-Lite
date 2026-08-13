@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "neural_networks"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "hostilenetworks:deep_learner"
 	id: "3C1F000000000019"
-	order_index: 2
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -345,5 +345,5 @@
 			y: 0.8d
 		}
 	]
-	title: "&9Neural Networks"
+	title: "&bNeural Networks"
 }

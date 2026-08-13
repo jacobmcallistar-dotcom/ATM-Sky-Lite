@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "advanced_peripherals"
-	group: "1A2B000000000002"
+	group: "1A2B000000000005"
 	icon: "advancedperipherals:geo_scanner"
 	id: "353534BEE9A95F72"
-	order_index: 12
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -334,5 +334,5 @@
 			y: 2.2d
 		}
 	]
-	title: "&cAdvanced Peripherals"
+	title: "&bComputers"
 }
