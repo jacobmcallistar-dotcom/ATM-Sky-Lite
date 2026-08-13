@@ -11,43 +11,33 @@
 		{
 			dependencies: ["6C0C75598D65CE7D"]
 			description: [
-				"Machines need power. A Basic Energy Cube stores it and acts as a battery/adapter between generators and machines."
+				"&e&lGeneration is never steady and demand is never flat.&r Storage is what sits between them, and Mekanism gives you two sizes of it."
 				""
-				"Feed it from your Powah or Mekanism generators."
+				"&e&lThe Basic Energy Cube&r is the small answer. It buffers spikes, and it doubles as an adapter - it will accept power from anything and hand it to anything, so it is also how you bridge Powah, Create or Solar Flux into a Mekanism machine."
+				""
+				"&e&lThe Induction Matrix&r is the large one. It is a multiblock: a shell of &eInduction Casing&r, then &eCells&r for capacity and &eProviders&r for transfer rate, and those two are separate numbers you tune independently."
+				""
+				"&7- More &fCells&7 = holds more."
+				"&7- More &fProviders&7 = fills and empties faster."
+				""
+				"&c&lYou will need this before a fission reactor, not after.&r A reactor produces far more than any machine can take at once, and without somewhere to put the surplus you are throwing most of it away - or worse, letting the reactor idle hot."
+				""
+				"&8Start with the cube. Build the matrix when the cube starts running empty."
 			]
-			icon: "mekanism:basic_energy_cube"
+			icon: "mekanism:induction_casing"
 			id: "19236F17F30F94C7"
 			rewards: [{
 				id: "4BC9362F1B95B08A"
 				type: "xp"
-				xp: 20
-			}]
-			subtitle: "&7Energy Cubes buffer the spikes"
-			tasks: [{
-				id: "1058026C0E645742"
-				item: "mekanism:basic_energy_cube"
-				type: "item"
-			}]
-			title: "Store Some Power"
-			x: -7.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["19236F17F30F94C7"]
-			description: [
-				"The Induction Matrix is a multiblock battery that stores absurd amounts of power - the buffer your fission reactor will need."
-				""
-				"Build the casing and at least one cell + provider."
-			]
-			icon: "mekanism:induction_casing"
-			id: "2B928184B2E69250"
-			rewards: [{
-				id: "3E4C55513718AB1F"
-				type: "xp"
 				xp: 60
 			}]
-			subtitle: "&7Terabuffer for the whole base"
+			subtitle: "&7From a cube to a terabuffer"
 			tasks: [
+				{
+					id: "1058026C0E645742"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
 				{
 					id: "366E1D9C05994B40"
 					item: "mekanism:induction_casing"
@@ -59,9 +49,9 @@
 					type: "item"
 				}
 			]
-			title: "The Induction Matrix"
+			title: "Store Some Power"
 			x: -7.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7ADE000000000006"]
