@@ -1,0 +1,383 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_powergrid"
+	group: "1A2B000000000002"
+	icon: "powergrid:generator_housing"
+	id: "5E2F000000000000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&b&lCreate Power Grid does not simulate FE. It simulates electricity.&r"
+				""
+				"Everything else in this pack treats power as one number in a bucket. This mod splits it into the two numbers real electricity actually has, and they behave the way they do in the real world."
+				""
+				"&b&lVoltage (V)&r is pressure - how hard the electricity is being pushed."
+				"&b&lCurrent (A)&r is flow - how much is actually moving."
+				"&b&lPower (W)&r is the two multiplied. &fV x A = W&r."
+				""
+				"&e&lThe consequence that catches everyone:&r the same wattage can be delivered as high voltage with low current, or low voltage with high current. Those are not equivalent. Current is what heats a wire and burns it out; voltage is what lets you send power a long way without losing it."
+				""
+				"&e&lSo the real-world pattern applies here too:&r generate, step &lup&r to high voltage for transmission, step &ldown&r near the machines. That is why every pylon you have ever driven past exists."
+				""
+				"&7Craft a &eMultimeter&r first. You cannot debug a circuit you cannot measure, and this mod will not tell you what is wrong - you have to go and read it.&r"
+			]
+			icon: "powergrid:multimeter"
+			id: "5E20000000000001"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Voltage, current, and why both matter"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:multimeter", type: "item" }
+			]
+			title: "&bReal Electricity"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000001"]
+			description: [
+				"A generator here is a real one: a &erotor&r spinning inside a &ehousing&r, with a &ecommutator&r taking the current off it."
+				""
+				"&e&lThree parts, and you need all three:&r"
+				"&7- &fGenerator Housing&7 - the frame."
+				"&7- &fInduction Rotor&7 - the spinning part. Built on &lMechanical Crafters&r, so The Steam Age comes first."
+				"&7- &fCommutator&7 - takes current off the rotor. There is a vertical variant if your build needs the axis the other way."
+				""
+				"&e&lOutput scales with rotation speed.&r Spin it faster and you get more voltage. This is the one place where the Kinetic Age's gearing lessons pay off directly - a Rotation Speed Controller in front of a generator is a voltage dial."
+				""
+				"&7A &eGenerator Clutch&r lets you disconnect it under load without tearing the drivetrain apart.&r"
+			]
+			icon: "powergrid:generator_housing"
+			id: "5E20000000000002"
+			subtitle: "&7Rotation in, current out"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:generator_housing", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:generator_induction_rotor", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:generator_commutator", type: "item" }
+			]
+			title: "&bThe Generator"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000002"]
+			description: [
+				"&e&lWire is not free.&r Every length has resistance, and resistance turns your power into heat instead of work. Long thin runs lose more than short thick ones - exactly as in reality."
+				""
+				"&7- &fWire&7 and &fInsulated Copper Wire&7 for general runs."
+				"&7- &fIron&7 and &fGolden Wire&7 where the properties suit."
+				"&7- &fWire Connector&7 for ordinary taps, &fHeavy Wire Connector&7 for serious current."
+				"&7- &fWire Cutter&7 to take it apart without breaking blocks."
+				""
+				"&e&lThe Grounding Rod is not decoration.&r Faults need somewhere to go. A grounded circuit fails safely; an ungrounded one fails through whatever is nearest, which may be you."
+				""
+				"&8If a distant machine underperforms, measure the voltage at the machine rather than at the generator. The difference is what your wire ate."
+			]
+			icon: "powergrid:wire"
+			id: "5E20000000000003"
+			subtitle: "&7Every metre costs you"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:wire", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:wire_connector", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:wire_cutter", type: "item" }
+			]
+			title: "&bWire and Resistance"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000003"]
+			description: [
+				"A &eTransformer&r trades voltage against current. Step voltage &lup&r and current drops proportionally; step it &ldown&r and current rises. Power stays roughly the same either way, minus losses."
+				""
+				"&e&lThis is the single most important block in the mod&r, because it is what makes long-distance transmission viable. High voltage travels well precisely because the current is low, and low current means low losses in the wire."
+				""
+				"&7- &fTransformer Core&7 - the shared component, built from &eWinding&r."
+				"&7- &fSmall&7 and &fMedium&7 transformers for different throughputs."
+				""
+				"&e&lThe grid pattern that works:&r generate at whatever the generator gives you, step UP immediately, run the high-voltage line across your base, step DOWN at each machine room. Never run low voltage a long way."
+			]
+			icon: "powergrid:transformer_core"
+			id: "5E20000000000004"
+			subtitle: "&7Step up to travel, step down to use"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:transformer_core", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:transformer_small", type: "item" }
+			]
+			title: "&bTransformers"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000004"]
+			description: [
+				"The mod sorts everything into three voltage bands, and the hardware is rated per band - a low-voltage switch will not survive a high-voltage line."
+				""
+				"&7- &fLV&7 - low voltage. Lights, small devices, anything near a player."
+				"&7- &fMV&7 - medium. The workhorse tier for a base."
+				"&7- &fHV&7 - high. Transmission, and the big machines."
+				""
+				"&eLV / MV / HV Switches&r let you isolate a section by hand - which you will want every time you extend the grid, because working on a live circuit is how you lose components."
+				""
+				"&7The &eLV Button&r is the momentary version, for things you want on only while held.&r"
+			]
+			icon: "powergrid:lv_switch"
+			id: "5E20000000000005"
+			subtitle: "&7Three tiers, three switchgears"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:lv_switch", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:mv_switch", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:hv_switch", type: "item" }
+			]
+			title: "&bLV, MV, HV"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000005"]
+			description: [
+				"&c&lSomething in your grid is going to fail. Decide what.&r"
+				""
+				"A &eFuse&r is a deliberate weak point. Too much current and the fuse dies instead of the expensive thing behind it. Replace the fuse, carry on."
+				""
+				"An &eHV Breaker&r does the same job but resets rather than being consumed, and handles the high-voltage tier where a fuse would not survive."
+				""
+				"&e&lRelays and Contactors&r switch a big circuit using a small one. A &eRedstone Relay&r bridges the gap to vanilla redstone, so your existing automation can throw electrical switches."
+				""
+				"&7- &fRelay DPDT&7 - double pole, double throw. Switches two circuits at once, or flips between two sources."
+				""
+				"&8Protection is the part everyone skips and then rebuilds their base over."
+			]
+			icon: "powergrid:fuse_holder"
+			id: "5E20000000000006"
+			subtitle: "&7Fail on purpose"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:fuse_holder", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:relay", type: "item" }
+			]
+			title: "&bFuses and Breakers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000006"]
+			description: [
+				"Four instruments, and you want all of them:"
+				""
+				"&7- &fVoltage Gauge&7 - pressure at a point."
+				"&7- &fCurrent Gauge&7 - flow through a line."
+				"&7- &fPower Gauge&7 - the two combined, in watts."
+				"&7- &fMultimeter&7 - handheld, checks anything you point it at."
+				""
+				"&e&lThe diagnostic that solves most problems:&r measure voltage at the generator, then at the machine. If it is high at one end and low at the other, your wire or your transformer is the problem. If it is low at both, your generator is not spinning fast enough."
+				""
+				"&7A &eThermometer&r tells you what is overheating, and a &ePlotter&r graphs a value over time - which is the only way to catch a fault that only appears under load.&r"
+			]
+			icon: "powergrid:voltage_gauge"
+			id: "5E20000000000007"
+			subtitle: "&7You cannot fix what you cannot see"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:voltage_gauge", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:current_gauge", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:power_gauge", type: "item" }
+			]
+			title: "&bMeasure It"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E20000000000007"]
+			description: [
+				"&e&lA Resistor&r limits current. That is all it does, and it is essential - plenty of components will destroy themselves given unlimited current, and a resistor is what stands between them and that."
+				""
+				"The &ePower Resistor&r handles far more load and dumps the difference as heat. A &eResistive Coil&r is the same principle used deliberately, to make heat rather than to waste it."
+				""
+				"&e&lA Capacitor&r stores charge and releases it quickly. In a grid it smooths ripple; in a circuit it can delay a signal or block DC while letting changes through."
+				""
+				"&e&lA Varistor&r changes resistance depending on the voltage across it - which makes it a surge protector. It sits there doing nothing until something spikes, then conducts and absorbs it."
+			]
+			icon: "powergrid:resistor"
+			id: "5E20000000000008"
+			subtitle: "&7The passive components"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:resistor", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:capacitor", type: "item" }
+			]
+			title: "&bResistors and Capacitors"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E20000000000008"]
+			description: [
+				"Three ways to change a value by hand instead of rebuilding:"
+				""
+				"&7- &fRheostat&7 - variable resistor for current."
+				"&7- &fPotentiometer&7 - variable voltage divider. This is the volume knob of electronics."
+				"&7- &fVariac&7 - variable transformer. Adjusts voltage continuously rather than in fixed steps."
+				""
+				"&e&lWhy this matters here:&r a machine that wants an exact voltage is painful to feed from a fixed transformer. Put a Variac in front of it and tune until the gauge reads what you want."
+				""
+				"&7A &eServo&r turns an electrical signal into movement, which is how you get a circuit to physically operate something.&r"
+			]
+			icon: "powergrid:potentiometer"
+			id: "5E20000000000009"
+			subtitle: "&7Adjustable resistance"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:potentiometer", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:rheostat", type: "item" }
+			]
+			title: "&bDialling It In"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E20000000000009"]
+			description: [
+				"&e&lA Diode&r lets current pass one way and blocks it the other. Wire it backwards and nothing happens - which is a feature, because it is how you stop power flowing back into something that should only ever send."
+				""
+				"&e&lA Transistor&r is a switch with no moving parts: a small current at one terminal controls a much larger one across the other two. That is amplification, and it is the entire basis of modern electronics."
+				""
+				"&7- &fBJT NPN&7 and &fBJT PNP&7 - the two polarities. NPN switches on with a positive signal, PNP with a negative one. Which you want depends on whether you are switching the high side or the low side."
+				"&7- &fVFET&7 - voltage-controlled instead of current-controlled. Handles more power and needs almost nothing to drive it."
+				""
+				"&8A relay does the same job mechanically and audibly. A transistor does it silently, instantly, and a million times a second."
+			]
+			icon: "powergrid:diode"
+			id: "5E2000000000000A"
+			subtitle: "&7One-way doors and switches"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:diode", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:bjt_npn", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:vfet", type: "item" }
+			]
+			title: "&bSemiconductors"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E2000000000000A"]
+			description: [
+				"&e&lThis is the deepest part of the mod, and it is worth doing properly.&r"
+				""
+				"A circuit board is made the way real ones are: start with a copper-clad blank, mask the pattern you want to keep, and dissolve the rest in &cacid&r. What survives is your wiring."
+				""
+				"&7- &fEmpty Circuit&7 - the blank."
+				"&7- &fCircuit Design Table&7 - where you lay out the pattern."
+				"&7- &fCircuit Schematic&7 - a saved design you can repeat."
+				"&7- &fUnetched Circuit&7 &8->&7 acid &8->&7 &fCircuit Board&7."
+				"&7- &fIntegrated Circuit&7 - the finished, populated article."
+				""
+				"&e&lThe payoff:&r a designed circuit does in one block what a room full of relays would do, and it does it faster. Once you can etch, you can build logic instead of wiring it."
+				""
+				"&8Yes, you can automate the etching line. Yes, you should."
+			]
+			icon: "powergrid:circuit_board"
+			id: "5E2000000000000B"
+			subtitle: "&7Acid, copper, patience"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:empty_circuit", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:circuit_design_table", type: "item" }
+				{ id: "5E200000000000T2", item: "powergrid:circuit_board", type: "item" }
+			]
+			title: "&bEtching Circuits"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E2000000000000B"]
+			description: [
+				"Electricity that never does anything is just an expensive hobby. These are the outputs:"
+				""
+				"&7- &fElectric Motor&7 - current back into rotation, closing the loop with Create."
+				"&7- &fConstant Speed Motor&7 - holds one RPM regardless of load, which matters for machines with a minimum speed."
+				"&7- &fHeating Coil&7 and &fBasin Heater&7 - controlled heat, including under a Create basin."
+				"&7- &fElectric Fan&7 - a fan you do not have to build a drivetrain for."
+				""
+				"&e&lThe Basin Heater is the quiet winner.&r Create's Blaze Burner needs feeding forever. An electric heater needs a wire."
+			]
+			icon: "powergrid:electric_motor"
+			id: "5E2000000000000C"
+			subtitle: "&7Making electricity do work"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:electric_motor", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:heating_coil", type: "item" }
+			]
+			title: "&bMotors and Heat"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E2000000000000C"]
+			description: [
+				"&e&lLighting that runs on your grid&r, rather than torches you place and forget."
+				""
+				"&7- &fLight Bulb&7 and &fLV Light Bulb&7 - the basics."
+				"&7- &fNeon Bulb&7 - signage and indicators."
+				"&7- &fLight Fixture&7 and &fString Lights&7 - actual base lighting."
+				"&7- &fGrowth Lamp&7 - drives plant growth, which matters in a void world with no reliable sky."
+				""
+				"&e&lAn Alarm Bell on a fault circuit&r is the difference between noticing a failure and finding out three hours later that your entire ore line has been stopped."
+			]
+			icon: "powergrid:light_bulb"
+			id: "5E2000000000000D"
+			subtitle: "&7The visible layer"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:light_bulb", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:light_fixture", type: "item" }
+			]
+			title: "&bLight and Alarm"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E2000000000000D"]
+			description: [
+				"&e&lThe mod goes further than you expect.&r"
+				""
+				"A &ePunch Card&r stores a pattern of holes. A &ePunch Card Reader&r reads it back as a signal. That is genuinely how computers were programmed before keyboards, and it works the same way here: encode a sequence, feed it in, get behaviour out."
+				""
+				"A &eCRT&r displays output. &eBarretter&r and &eRegulator Tubes&r are vacuum-tube era components - the things transistors replaced."
+				""
+				"&7This is the part of the mod with no practical necessity and the highest ceiling. If you want to build something that genuinely computes rather than merely switches, it is all here.&r"
+			]
+			icon: "powergrid:punch_card"
+			id: "5E2000000000000E"
+			subtitle: "&7Actual computing"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:punch_card", type: "item" }
+				{ id: "5E200000000000T1", item: "powergrid:punch_card_reader", type: "item" }
+			]
+			title: "&bPunch Cards and the CRT"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E2000000000000E", "5E20000000000007"]
+			description: [
+				"&6&lYou have built a power station.&r"
+				""
+				"Not a block that emits FE - a generator turning at a speed you chose, stepped up through a transformer, carried on wire you sized, protected by fuses you specified, switched by logic you etched, and stepped back down at the machines."
+				""
+				"&e&lAnd it all still speaks FE at the boundary&r, so every Mekanism, AE2 and Powah machine in the pack will accept it without knowing or caring how it was made."
+				""
+				"&8Powah, Solar Flux and Advanced Generators are simpler answers to the same question, and there is no shame in using them. But nothing else in this pack lets you build the actual thing."
+			]
+			icon: "powergrid:integrated_circuit"
+			id: "5E2000000000000F"
+			shape: "diamond"
+			subtitle: "&7Generation, transmission, control"
+			tasks: [
+				{ id: "5E200000000000T0", item: "powergrid:integrated_circuit", type: "item" }
+			]
+			title: "&6The Grid"
+			x: 6.0d
+			y: 0.8d
+		}
+	]
+	subtitle: ["&7Voltage, transformers and etched circuits"]
+	title: "&bCreate Power Grid"
+}

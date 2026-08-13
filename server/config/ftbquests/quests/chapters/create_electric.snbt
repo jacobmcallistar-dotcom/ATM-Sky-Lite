@@ -1,0 +1,167 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_electric"
+	group: "1A2B000000000002"
+	icon: "createaddition:alternator"
+	id: "5E1F000000000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e&lYou have torque. Mekanism wants amps.&r"
+				""
+				"Every machine from here on runs on &eFE&r - Forge Energy - and Create does not make any. The Kinetic Age gave you rotation; this chapter converts it."
+				""
+				"&e&lFE and SU are nothing alike, and mixing them up will cost you hours:&r"
+				"&7- &fSU&7 is a &lbudget&r&7. It is not stored, not consumed, and not transported. Add a machine, spend capacity. Remove it, get the capacity back."
+				"&7- &fFE&7 is a &lquantity&r&7. It is generated, stored in a buffer, moved down a wire, and used up. Run out and things stop until you make more."
+				""
+				"The &eAlternator&r is the bridge. Spin it and it produces FE - faster rotation, more FE, up to its cap. It draws SU from your network to do it, so a big alternator bank needs a matching water wheel bank behind it."
+				""
+				"&8This is the smallest possible answer to \"how do I power a Metallurgic Infuser\". Everything else in this chapter is refinement."
+			]
+			icon: "createaddition:alternator"
+			id: "5E10000000000001"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Where FE comes from"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:alternator", type: "item" }
+			]
+			title: "&eRotation Into Electricity"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000001"]
+			description: [
+				"FE does not flow through thin air. You need a &eConnector&r on the machine that makes it, another on the machine that wants it, and &eWire&r between."
+				""
+				"&e&lThree wires, three throughputs:&r"
+				"&7- &fCopper&7 - cheap, lowest transfer rate. Fine near your generators."
+				"&7- &fGold&7 - middle."
+				"&7- &fElectrum&7 - the good stuff. Gold plus silver in a mixer."
+				""
+				"&e&lTwo connector sizes.&r The plain &eConnector&r handles ordinary loads. The &eLarge Connector&r moves far more per tick and is what you want between a generator bank and a machine room."
+				""
+				"&7Wire is placed by right-clicking one connector then the other - it strings across the gap and does not care about the blocks in between. Long runs are free. That is a genuine advantage over pipes.&r"
+			]
+			icon: "createaddition:connector"
+			id: "5E10000000000002"
+			subtitle: "&7Getting FE from A to B"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:connector", type: "item" }
+				{ id: "5E100000000000T1", item: "createaddition:copper_wire", type: "item" }
+			]
+			title: "&eWires and Connectors"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000002"]
+			description: [
+				"Generation is never perfectly steady and demand never perfectly flat. A &eCapacitor&r sits between them and absorbs the difference."
+				""
+				"&e&lWhy you want one immediately:&r a machine that briefly asks for more than your alternators produce will simply stall without a buffer. With one, it draws down the stored charge and carries on while generation catches up."
+				""
+				"&7Think of it as the difference between a tap and a water butt. The tap sets your long-run average; the butt covers the spikes.&r"
+			]
+			icon: "createaddition:capacitor"
+			id: "5E10000000000003"
+			subtitle: "&7A buffer, not a battery bank"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:capacitor", type: "item" }
+			]
+			title: "&eThe Capacitor"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000003"]
+			description: [
+				"A Capacitor smooths. An &eAccumulator&r &lstores&r."
+				""
+				"The &eModular Accumulator&r is the one that matters - place several in a rectangle and they merge into a single multiblock with pooled capacity. Bigger footprint, bigger reservoir, one connection point."
+				""
+				"&e&lBuild this before you think you need it.&r The moment you automate anything that runs in bursts - a furnace bank, an ore line, anything on a timer - you are relying on stored charge rather than instantaneous generation."
+			]
+			icon: "createaddition:accumulator"
+			id: "5E10000000000004"
+			subtitle: "&7Real storage"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:accumulator", type: "item" }
+			]
+			title: "&eThe Accumulator"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000004"]
+			description: [
+				"The &eElectric Motor&r is an Alternator in reverse: feed it FE and it outputs rotation."
+				""
+				"&e&lThis is more useful than it first sounds.&r It lets you run a Create contraption anywhere without dragging shafts to it - solar or a reactor on one side of the base, a motor next to the machine that needs turning on the other."
+				""
+				"&7Its speed is configurable with a wrench, which makes it a cleaner source than gearing down a water wheel when a machine needs one exact RPM.&r"
+				""
+				"&8Rotation to FE, FE to rotation. Once you have both, the two systems stop being separate and become one."
+			]
+			icon: "createaddition:electric_motor"
+			id: "5E10000000000005"
+			subtitle: "&7Back the other way"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:electric_motor", type: "item" }
+			]
+			title: "&eThe Electric Motor"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000005"]
+			description: [
+				"A &eTesla Coil&r charges anything with a battery in it - inside a radius, with no connector and no wire."
+				""
+				"Put one in your base and every powered tool, jetpack and backpack you walk past tops itself up. It will also happily electrocute mobs that wander into range, which is a defence system you did not have to design."
+				""
+				"&7Pair it with the &eDigital Adapter&r if you want redstone to read the state of your electrical network - useful for switching generators on only when storage drops.&r"
+			]
+			icon: "createaddition:tesla_coil"
+			id: "5E10000000000006"
+			subtitle: "&7Charging without wires"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:tesla_coil", type: "item" }
+			]
+			title: "&eThe Tesla Coil"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E10000000000006"]
+			description: [
+				"&6&lYou can now make, store, move and spend electricity.&r"
+				""
+				"That is the prerequisite for everything Act II asks of you. The Metallurgic Infuser, the Enrichment Chamber, the Crusher - all of them want FE and none of them care where it came from."
+				""
+				"&e&lTwo directions from here:&r"
+				"&7- &fMekanism&7 - go and power the machines this chapter was built for."
+				"&7- &fCreate Power Grid&7 - if you want electricity that behaves like real electricity, with voltage, transformers and circuits you etch yourself."
+				""
+				"&8Powah, Solar Flux and Advanced Generators are all later, larger answers to the same question. None of them is required to start Mekanism."
+			]
+			icon: "createaddition:electrum_wire"
+			id: "5E10000000000007"
+			shape: "diamond"
+			subtitle: "&7Act II can begin"
+			tasks: [
+				{ id: "5E100000000000T0", item: "createaddition:electrum_wire", type: "item" }
+			]
+			title: "&6Wired Up"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["&7Turning rotation into FE"]
+	title: "&eCreate Crafts & Additions"
+}

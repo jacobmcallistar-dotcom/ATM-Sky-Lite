@@ -46,32 +46,6 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
-			icon: "createaddition:alternator"
-			id: "7592B47334DC838E"
-			rewards: [{
-				id: "35E70C6D60B1DCF6"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "&7FE meets kinetics"
-			tasks: [
-				{
-					id: "3568529EB4586055"
-					item: "createaddition:alternator"
-					type: "item"
-				}
-				{
-					id: "6E2E4F44C1148700"
-					item: "createaddition:accumulator"
-					type: "item"
-				}
-			]
-			title: "&eCreate Crafts & Additions"
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7F00000000000000"]
 			icon: "railways:semaphore"
 			id: "6187A9055B14303B"
 			rewards: [{
@@ -818,7 +792,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7592B47334DC838E"]
+			dependencies: ["7F00000000000000"]
 			description: [
 				"An &eExtendo Grip&r extends your reach; a &ePotato Cannon&r fires vegetables hard enough to kill things."
 				""

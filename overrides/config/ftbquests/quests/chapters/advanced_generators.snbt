@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "advgenerators:controller"
 	id: "3C1F00000000001B"
-	order_index: 4
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
