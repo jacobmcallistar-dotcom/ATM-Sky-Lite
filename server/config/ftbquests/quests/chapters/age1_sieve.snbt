@@ -12,9 +12,18 @@
 			description: [
 				"&2&lThe Sieve.&r"
 				""
-				"You have a tree, a block of dirt, and a whole lot of nothing. By the end of this Age you will have turned that nothing into metal, machines, and the first automated forge in the sky."
+				"You have a tree. That is the entire starting inventory - no buckets, no water, no lava, and the chest on your island is empty."
 				""
-				"Follow the line left to right. The branches below teach mesh upgrades and the two crystals that open every tech mod."
+				"&e&lEverything comes out of that tree, in this order:&r"
+				"&7 1.&r Punch it. Planks, sticks, a crafting table."
+				"&7 2.&r Make a &eCrook&r and break the &eleaves&r with it - that drops &esilk worms&r and far more saplings."
+				"&7 3.&r Silk worms become &estring&r, and string becomes your first &eMesh&r."
+				"&7 4.&r Put leaves in a &eBarrel&r or &eCrucible&r to get &bwater&r."
+				"&7 5.&r Sieve &edirt&r with the string mesh for &estone pebbles&r. Four pebbles make cobblestone - that is where the first stone in this world comes from."
+				"&7 6.&r Melt cobble in a &ePorcelain Crucible&r for &clava&r."
+				"&7 7.&r &bWater&r + &clava&r = the cobble engine, and from there it never stops."
+				""
+				"&8Follow the line left to right. Nothing below is optional except the branches, which teach mesh upgrades and the two crystals that open every tech mod."
 			]
 			icon: "minecraft:oak_sapling"
 			id: "2101000000000001"
@@ -41,15 +50,19 @@
 				type: "checkmark"
 			}]
 			title: "&2The Sieve"
-			x: -14.0d
+			x: -16.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2101000000000001"]
+			dependencies: ["2101000000000013"]
 			description: [
-				"Your first factory is water and lava. Flowing water hitting a lava source makes cobblestone - break it, and it makes more, forever."
+				"&e&lNow&r you can build it."
 				""
-				"Everything downstream begins as cobble. Stock up."
+				"Flowing &bwater&r hitting a &clava&r source makes cobblestone. Break it and it comes straight back, forever, for free."
+				""
+				"&7This is why the Crucible came first - lava does not exist in the void until you melt cobble into it. Bucket the lava out of your crucible, place it, run water over it, and you are done hand-making stone.&r"
+				""
+				"&8Everything downstream - gravel, sand, dust, every ore in the pack - begins as cobblestone. Build two or three of these."
 			]
 			icon: "minecraft:cobblestone"
 			id: "2101000000000002"
@@ -67,10 +80,10 @@
 			}]
 			title: "&aThe Cobble Engine"
 			x: -12.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["2101000000000002"]
+			dependencies: ["2101000000000017"]
 			description: [
 				"Craft a &eWooden Hammer&r and smash your cobble down the chain:"
 				""
@@ -105,11 +118,11 @@
 				type: "item"
 			}]
 			title: "&aHammer Time"
-			x: -10.0d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2101000000000003"]
+			dependencies: ["2101000000000015"]
 			description: [
 				"Craft an &eOak Sieve&r and a &eString Mesh&r, drop the mesh into the sieve, and sift your gravel, sand and dust."
 				""
@@ -150,11 +163,11 @@
 				}
 			]
 			title: "&aThe Sieve & the Mesh"
-			x: -8.0d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2101000000000004"]
+			dependencies: ["2101000000000003"]
 			description: [
 				"Sift gravel and the void starts paying out. Ore chunks tumble free - iron, copper, gold, tin, lead and more."
 				""
@@ -299,7 +312,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2101000000000002"]
+			dependencies: ["2101000000000001"]
 			description: [
 				"A Crook strips leaves for saplings and silk worms without destroying them. Silk worms breed into string - and string makes your first mesh. It also speeds sapling farming for endless wood."
 				""
@@ -336,15 +349,17 @@
 				type: "item"
 			}]
 			title: "&aThe Crook"
-			x: -12.0d
+			x: -14.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["2101000000000002"]
+			dependencies: ["2101000000000001"]
 			description: [
-				"An &eEx Deorum Barrel&r is a workhorse. Fill it with water or lava, compost plant matter into dirt, or transform fluids."
+				"An &eEx Deorum Barrel&r is the cheapest thing you will ever build and it solves your water problem."
 				""
-				"A barrel of water beside your cobble generator means you never haul buckets again."
+				"&b&lWater from a tree.&r Drop &eleaves&r or saplings into a barrel and they render down into water - no bucket, no rain, no ice required. A barrel left out in the rain fills on its own too."
+				""
+				"Barrels also compost plant matter into &edirt&r, which matters more than it sounds: dirt is what you sieve for your first stone, so a barrel is renewable ground as well as renewable water."
 			]
 			icon: "exdeorum:oak_barrel"
 			id: "210100000000000D"
@@ -360,8 +375,8 @@
 				type: "item"
 			}]
 			title: "&aThe Barrel"
-			x: -10.0d
-			y: 1.5d
+			x: -16.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2101000000000004"]
@@ -621,11 +636,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["210100000000000D"]
+			dependencies: ["2101000000000017"]
 			description: [
-				"A &eCrucible&r melts what a barrel can't. The wooden one composts leaves into dirt - but the &ePorcelain Crucible&r (fired from clay and bone meal) melts cobblestone into &clava&r."
+				"A &ePorcelain Crucible&r is the only lava in this world."
 				""
-				"An infinite lava faucet in a world with none. Your smelting, your Thermo Generators, and your Nether portal all start here."
+				"Fire it from clay and bone meal, set a heat source under it, and feed it &ecobblestone&r - it melts into &clava&r. That is the one recipe that turns a void island into an industrial one."
+				""
+				"&c&lIt needs cobble first.&r Every lava recipe in Ex Deorum wants cobblestone, gravel, stone or netherrack, which is why First Cobble comes before this and the cobble engine comes after."
+				""
+				"&7The wooden crucible is a different block - it renders leaves into water. Both are worth having.&r"
+				""
+				"&8Your smelting, your Thermo Generators and your Nether portal all start here."
 			]
 			icon: "exdeorum:porcelain_crucible"
 			id: "2101000000000013"
@@ -649,13 +670,14 @@
 				}
 			]
 			title: "&aThe Crucible"
-			x: -10.0d
-			y: 3.0d
+			x: -14.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["210100000000000D"]
 			description: ["A &eWatering Can&r sprinkles crops, saplings and mushrooms to grow faster while you hold right-click. Tedious? Yes. Faster than waiting? Also yes. Cyclic's Sprinkler automates this later."]
 			icon: "exdeorum:wooden_watering_can"
+			dependencies: ["210100000000000D"]
 			id: "2101000000000014"
 			rewards: [{
 				count: 8
@@ -670,8 +692,8 @@
 				type: "item"
 			}]
 			title: "&aThe Watering Can"
-			x: -12.0d
-			y: 3.0d
+			x: -16.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["210100000000000A"]
@@ -681,6 +703,7 @@
 				"String means meshes, bows, and beds without ever seeing a spider."
 			]
 			icon: "exdeorum:silk_worm"
+			dependencies: ["210100000000000A"]
 			id: "2101000000000015"
 			rewards: [{
 				count: 8
@@ -695,8 +718,8 @@
 				type: "item"
 			}]
 			title: "&aSilk Worms"
-			x: -14.0d
-			y: 3.0d
+			x: -12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2101000000000003"]
@@ -897,6 +920,40 @@
 			title: "&9The Compressed Sieve"
 			x: 18.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["2101000000000004"]
+			description: [
+				"&e&lThe first stone in the world.&r"
+				""
+				"There is no lava yet, so there is no cobble generator yet. The stone has to come out of the sieve."
+				""
+				"Put &edirt&r in your sieve with the &7String Mesh&r and keep going. Among the seeds and flint you will get &estone pebbles&r."
+				""
+				"&7Four pebbles &8→&7 one cobblestone.&r"
+				""
+				"&e&lThis is the step that breaks the circle.&r Lava needs cobble to melt, and the cobble engine needs lava - so the sieve has to produce the very first stone by itself. Once you have a stack, the Crucible turns it into lava and the engine takes over."
+				""
+				"&8Short on dirt? Compost leaves and saplings in a Barrel. Dirt is renewable, so cobble is too - just slowly, until the engine is running."
+			]
+			icon: "minecraft:cobblestone"
+			id: "2101000000000017"
+			rewards: [{
+				count: 8
+				id: "2101000000000317"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "&7Sieve dirt, not stone"
+			tasks: [{
+				count: 16L
+				id: "2101000000000217"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "&aFirst Cobble"
+			x: -10.0d
+			y: 0.0d
 		}
 	]
 	title: "&2The Sieve"
