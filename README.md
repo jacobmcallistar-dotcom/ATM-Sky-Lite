@@ -1,7 +1,7 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (191 mods) built around Mekanism +
-Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
+A Minecraft **1.20.1 Forge** void-skyblock modpack (217 server / 219 client mods) built around
+Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
 > with `online-mode=true`.
@@ -20,7 +20,7 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 [**Releases**](../../releases) page (`ATM-Sky-Lite-client.zip`).
 
 > ⚠️ `manifest.json` is **not** currently importable — all 17 of its entries still carry
-> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the 191 mods. The client
+> `"fileID": "LATEST"` placeholders, and it lists only a fraction of the mods. The client
 > zip on the Releases page is the only supported install path.
 
 ## Install (to play)
@@ -29,9 +29,50 @@ Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
-   - Your `mods` folder must contain **exactly** these 191 mods — remove any extras or you'll be kicked on join.
+   - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
 
-> **Unreleased — The Twilight Forest is gone. The Aether replaces it. 191 mods.**
+> **Unreleased — 26 Create addons, quest-book restructure. 217 server / 219 client mods.**
+>
+> **Create is split in two.** The 49-quest Create chapter was one flat sprawl. It is now
+> **First SU** (14 quests, Act I) — the core spine ending at the Precision Mechanism — and
+> **The Steam Age** (36 quests, Act II) for contraptions, trains, logistics and automation.
+> First SU's root explains what SU actually is, which is the thing beginners get wrong: it is a
+> *budget*, not a battery. Nothing is stored and nothing is consumed; generators add capacity,
+> machines subtract, and going one point over stops the entire network at once.
+>
+> **Mekanism was being taught twice.** Enrichment Chamber, Crusher, Energized Smelter, Osmium
+> Compressor and Basic Circuits were quests in *both* Act I's First Machines and Act II's
+> Mekanism, with identical task items. The Act II copies are gone (63 → 58) and the chapters are
+> joined by a single progression link: First Machines' capstone → Mekanism's root. That link used
+> to point at *Metallurgy 101*, a quest in the middle of First Machines, so Act II opened before
+> Act I's own chapter had finished.
+>
+> **The Steam Age had no root.** After the split, nine of its quests depended on quests that now
+> live in First SU, so the chapter opened as nine disconnected islands with dependency lines
+> pointing at nothing visible. They now hang off one root.
+>
+> **Act II reordered** to `Steam Age → Mekanism → Powah → Solar Flux → Advanced Generators → AE2
+> → Space Program → Aether`. It previously listed three power mods *before* the chapter that
+> unlocks them.
+>
+> **26 Create addons added.** Create 6.0 broke the addon API, so most 1.20.1 addons target 0.5.1
+> and would hard-crash. Every candidate was checked at the jar level against Create 6.0.8 rather
+> than by name or download count.
+>
+> | Excluded | Why |
+> |---|---|
+> | Sifting | duplicates Ex Deorum, which *is* Age I |
+> | Ore Excavation | vein mining, in a pack with no ores |
+> | Big Cannons | combat overhaul that does not fit a skyblock |
+> | Interactive | requires Valkyrien Skies (rigid-body physics) |
+> | Connected, Interiors, Tweaked Controllers, Ultimine, Compatible Storage | need Forge 47.4+; pack is on 47.3.0 |
+>
+> **Inventory Profiles Next removed**, along with `libIPN` — nothing else required it.
+>
+> Client-only additions: **Oculus 1.8.0** (required by CreateBetterFps, pairs with Embeddium) and
+> **Fusion 1.3.12** (required by Rechiseled). Both are client-side, so the server stays at 217.
+
+> **Superseded — The Twilight Forest is gone. The Aether replaces it. 191 mods.**
 >
 > Twilight Forest was removed and the Aether installed in its place as the pack's adventure
 > dimension — `aether`, `aether-redux`, `ancient_aether`, `deep_aether`, `lost_aether_content`

@@ -5,7 +5,7 @@
 	group: "1A2B000000000002"
 	icon: "powah:reactor_basic"
 	id: "3C1F000000000018"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
