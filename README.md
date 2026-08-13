@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (217 server / 219 client mods) built around
+A Minecraft **1.20.1 Forge** void-skyblock modpack (216 server / 218 client mods) built around
 Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -31,7 +31,19 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
 
-> **Unreleased — 26 Create addons, quest-book restructure. 217 server / 219 client mods.**
+> **v1.24.0 — 25 Create addons, quest-book restructure. 216 server / 218 client mods.**
+>
+> **Create Goggles was pulled after release.** It collides with Create 6.0's own built-in goggle
+> overlay and throws a `ClassCastException` on `create:goggle_info` **every frame** — 493 of them
+> in one short session. It declares `side = "BOTH"`, so it had to come off the server as well.
+>
+> **A client OOM was diagnosed at the same time and is _not_ a pack bug.** The crash was
+> `OutOfMemoryError` inside `org.lwjgl.system.MemoryUtil.nmemReallocChecked`, in Embeddium's chunk
+> mesh builder. `MemoryUtil` allocates **off-heap**, so `-Xmx` does not cover it — this was the
+> machine running out of real RAM: 15.8 GB total, a 4 GB server holding ~5.2 GB private, and a
+> client asking for a 6 GB heap plus native buffers on top. Lower the client heap to **-Xmx4G**
+> when hosting and playing on the same box; a bigger heap makes this *worse*, not better, because
+> it steals the address space the native chunk buffers need.
 >
 > **Create is split in two.** The 49-quest Create chapter was one flat sprawl. It is now
 > **First SU** (14 quests, Act I) — the core spine ending at the Precision Mechanism — and
