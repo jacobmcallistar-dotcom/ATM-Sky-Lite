@@ -1067,7 +1067,6 @@
 				"&7It sits in a Curios slot, so it does not cost you your chestplate. A Netherite version exists for the heat protection.&r"
 			]
 			icon: "create_jetpack:jetpack"
-			dependencies: ["7592B47334DC838E"]
 			id: "0A573B8BD45CFAAE"
 			rewards: [{
 				id: "2EB850319561C0E4"

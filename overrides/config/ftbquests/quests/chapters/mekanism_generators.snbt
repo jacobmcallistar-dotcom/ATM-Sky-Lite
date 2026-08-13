@@ -1,0 +1,221 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_generators"
+	group: "1A2B000000000007"
+	icon: "mekanismgenerators:turbine_casing"
+	id: "5E3F000000000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"Machines need power. A Basic Energy Cube stores it and acts as a battery/adapter between generators and machines."
+				""
+				"Feed it from your Powah or Mekanism generators."
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "19236F17F30F94C7"
+			rewards: [{
+				id: "4BC9362F1B95B08A"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "&7Energy Cubes buffer the spikes"
+			tasks: [{
+				id: "1058026C0E645742"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "Store Some Power"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["19236F17F30F94C7"]
+			description: [
+				"The Induction Matrix is a multiblock battery that stores absurd amounts of power - the buffer your fission reactor will need."
+				""
+				"Build the casing and at least one cell + provider."
+			]
+			icon: "mekanism:induction_casing"
+			id: "2B928184B2E69250"
+			rewards: [{
+				id: "3E4C55513718AB1F"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Terabuffer for the whole base"
+			tasks: [
+				{
+					id: "366E1D9C05994B40"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "54FEFF2A0B98FD67"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+			]
+			title: "The Induction Matrix"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7ADE000000000006"]
+			description: [
+				"&eThermodynamic Conductors&r move &lheat&r - the fourth thing Mekanism pipes, after energy, fluids and gases."
+				""
+				"&e&lHeat matters for two systems:&r the &7Thermoelectric Boiler&r, which needs heat delivered to boil water, and the &7Fission Reactor&r, which needs heat carried away before it melts down."
+				""
+				"&c&lThat second one is not optional.&r An under-cooled fission reactor in this pack will destroy your base. Conductors are part of the safety system, not a nicety."
+				""
+				"&7You can also run them from a Resistive Heater to boil water with pure electricity - inefficient, but it works anywhere and needs no fuel.&r"
+			]
+			icon: "mekanism:basic_thermodynamic_conductor"
+			id: "7ADE000000000007"
+			rewards: [{
+				id: "7ADF000000000007"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Heat is a resource here"
+			tasks: [{
+				id: "7AE0000000000700"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
+			title: "&9Thermodynamic Conductors"
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ADE000000000016"]
+			description: [
+				"The &eThermoelectric Boiler&r is a multiblock that turns heat and water into steam. It is half of Mekanism's serious power generation."
+				""
+				"&e&lThe build:&r a hollow box of Boiler Casing with &7Pressure Disperser&r plates dividing water below from steam above, a &7Superheating Element&r for each heat source, and valves for input and output."
+				""
+				"&e&lIts output is steam, not power.&r The boiler makes steam; an &7Industrial Turbine&r turns steam into FE. Neither is useful without the other, so plan to build both together."
+				""
+				"&c&lSize it to your heat source.&r An oversized boiler with two superheating elements produces no more steam than a small one - it just cost more. Check the boiler's stats screen, which tells you its maximum boil rate."
+				""
+				"&8This is the block your Fission Reactor will feed in Ascension. Building it now with resistive heaters is good practice at low stakes."
+			]
+			icon: "mekanism:boiler_casing"
+			id: "7ADE000000000017"
+			rewards: [{
+				id: "7ADF000000000017"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Water into steam, at scale"
+			tasks: [{
+				id: "7AE0000000001700"
+				item: "mekanism:boiler_casing"
+				type: "item"
+			}]
+			title: "&9Thermoelectric Boiler"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7ADE000000000017"]
+			description: [
+				"The &eIndustrial Turbine&r is a multiblock that converts steam into Forge Energy - and at full size it produces more power than anything else in the pack short of fusion."
+				""
+				"&e&lThe build, from the bottom up:&r a Turbine Casing shell, a &7Turbine Rotor&r column up the centre with &7Turbine Blades&r on it, &7Pressure Dispersers&r above, a &7Rotational Complex&r, coils, and vents to release spent steam."
+				""
+				"&e&lMore blades and more vents means more throughput.&r The turbine's own stats screen tells you its maximum flow rate and whether your vents are limiting it - read it rather than guessing."
+				""
+				"&c&lVents are the usual bottleneck.&r A turbine that will not hit its rated output almost always needs more vents, not more blades."
+				""
+				"&7Pair with the boiler above and an Induction Matrix to store the output, and your power problems are over for the rest of the pack.&r"
+			]
+			icon: "mekanismgenerators:turbine_casing"
+			id: "7ADE000000000018"
+			rewards: [{
+				id: "7ADF000000000018"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Steam into serious power"
+			tasks: [{
+				id: "7AE0000000001800"
+				item: "mekanismgenerators:turbine_casing"
+				type: "item"
+			}]
+			title: "&9Industrial Turbine"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7ADE000000000018"]
+			description: [
+				"The &eGas-Burning Generator&r burns combustible gas - most usefully the &7hydrogen&r your Electrolytic Separator is already producing as a by-product."
+				""
+				"&e&lThis closes a loop you already have open.&r You are splitting water for oxygen to feed the Purification Chamber. The hydrogen half is usually vented or ignored. Feed it here instead and your ore chain part-funds its own power."
+				""
+				"&e&lIt also burns ethene&r, which the PRC makes from bio fuel - so surplus saplings become electricity through a slightly longer road."
+				""
+				"&7Buffer the gas with a Chemical Tank. Feeding a generator directly from a separator means both stall whenever either hiccups.&r"
+			]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "7ADE000000000019"
+			rewards: [{
+				id: "7ADF000000000019"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Burn hydrogen for power"
+			tasks: [{
+				id: "7AE0000000001900"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "&9Gas-Burning Generator"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"&eWind Generators&r love the void - they scale with altitude, and you live at the top of the sky. Place a field of them high up for cheap, clean Mekanism power."
+				""
+				"&e&lThis is the one generator a skyblock is actually good at.&r Output scales with Y level, and you start higher than most players ever build. Free real estate."
+				""
+				"&e&lThe rules that matter:&r"
+				"&7- &fOutput rises with altitude.&7 Build them on your highest platform, not at base level."
+				"&7- &fThey need open sky.&7 Blocks directly above kill them."
+				"&7- &fThey do not need fuel, water, or attention.&7 Ever."
+				"&7- &fSome dimensions have no wind at all&7 - do not plan a Moon base around them."
+				""
+				"&e&lThey are individually weak.&r One will not run a Purification Chamber. The answer is quantity - a field of twenty is trivially cheap, silent, and needs nothing from you again."
+				""
+				"&7Wire them into an Energy Cube rather than straight to machines. Wind output is steady but small, and the buffer is what turns a trickle into something that can handle a burst of demand.&r"
+				""
+				"&8Cheap enough to be your first real grid, weak enough that you will still want Powah reactors later. Build both."
+			]
+			icon: "mekanismgenerators:wind_generator"
+			id: "2103000000000005"
+			rewards: [{
+				id: "2103000000000105"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Power that scales with height"
+			tasks: [{
+				id: "2103000000000205"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			title: "&9Sky Power"
+			x: -11.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["&7Turbines, boilers and the Induction Matrix"]
+	title: "&dMekanism Generators"
+}

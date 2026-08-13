@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "immersive_engineering"
 	group: "1A2B000000000005"
-	icon: "immersiveengineering:hammer"
+	icon: {
+		Count: 1
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "7E21000000000000"
 	order_index: 16
 	quest_links: [ ]

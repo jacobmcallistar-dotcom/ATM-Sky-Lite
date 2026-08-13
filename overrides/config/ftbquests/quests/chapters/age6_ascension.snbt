@@ -59,7 +59,6 @@
 			shape: "diamond"
 			subtitle: "&7The Sun Spirit's toll"
 			tasks: [{
-				count: 1L
 				id: "2106000000000230"
 				item: "aether:gold_dungeon_key"
 				type: "item"

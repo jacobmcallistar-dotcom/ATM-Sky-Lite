@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_powergrid"
-	group: "1A2B000000000002"
+	group: "1A2B000000000006"
 	icon: "powergrid:generator_housing"
 	id: "5E2F000000000000"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,9 +29,11 @@
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Voltage, current, and why both matter"
-			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:multimeter", type: "item" }
-			]
+			tasks: [{
+				id: "26A61FB931B77398"
+				item: "powergrid:multimeter"
+				type: "item"
+			}]
 			title: "&bReal Electricity"
 			x: -10.0d
 			y: 0.0d
@@ -54,9 +56,21 @@
 			id: "5E20000000000002"
 			subtitle: "&7Rotation in, current out"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:generator_housing", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:generator_induction_rotor", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:generator_commutator", type: "item" }
+				{
+					id: "085576C727D6E317"
+					item: "powergrid:generator_housing"
+					type: "item"
+				}
+				{
+					id: "0E2B23E4AA87058C"
+					item: "powergrid:generator_induction_rotor"
+					type: "item"
+				}
+				{
+					id: "19320A3C0DA8B1FA"
+					item: "powergrid:generator_commutator"
+					type: "item"
+				}
 			]
 			title: "&bThe Generator"
 			x: -8.0d
@@ -80,9 +94,21 @@
 			id: "5E20000000000003"
 			subtitle: "&7Every metre costs you"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:wire", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:wire_connector", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:wire_cutter", type: "item" }
+				{
+					id: "0FBAFF2FA4B2F74B"
+					item: "powergrid:wire"
+					type: "item"
+				}
+				{
+					id: "5F73FD947E1D77E2"
+					item: "powergrid:wire_connector"
+					type: "item"
+				}
+				{
+					id: "481031E4CBE77721"
+					item: "powergrid:wire_cutter"
+					type: "item"
+				}
 			]
 			title: "&bWire and Resistance"
 			x: -6.0d
@@ -104,8 +130,16 @@
 			id: "5E20000000000004"
 			subtitle: "&7Step up to travel, step down to use"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:transformer_core", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:transformer_small", type: "item" }
+				{
+					id: "60735064A5F7B4E1"
+					item: "powergrid:transformer_core"
+					type: "item"
+				}
+				{
+					id: "43C71252CA6BC061"
+					item: "powergrid:transformer_small"
+					type: "item"
+				}
 			]
 			title: "&bTransformers"
 			x: -4.0d
@@ -128,9 +162,21 @@
 			id: "5E20000000000005"
 			subtitle: "&7Three tiers, three switchgears"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:lv_switch", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:mv_switch", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:hv_switch", type: "item" }
+				{
+					id: "07B1800AA77120BD"
+					item: "powergrid:lv_switch"
+					type: "item"
+				}
+				{
+					id: "2C59B3CBDF43DF29"
+					item: "powergrid:mv_switch"
+					type: "item"
+				}
+				{
+					id: "395AC64319527B58"
+					item: "powergrid:hv_switch"
+					type: "item"
+				}
 			]
 			title: "&bLV, MV, HV"
 			x: -2.0d
@@ -155,8 +201,16 @@
 			id: "5E20000000000006"
 			subtitle: "&7Fail on purpose"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:fuse_holder", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:relay", type: "item" }
+				{
+					id: "61A21B20D6046C3F"
+					item: "powergrid:fuse_holder"
+					type: "item"
+				}
+				{
+					id: "3618DA77AB8F8820"
+					item: "powergrid:relay"
+					type: "item"
+				}
 			]
 			title: "&bFuses and Breakers"
 			x: 0.0d
@@ -180,9 +234,21 @@
 			id: "5E20000000000007"
 			subtitle: "&7You cannot fix what you cannot see"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:voltage_gauge", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:current_gauge", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:power_gauge", type: "item" }
+				{
+					id: "5C5679DB0053B286"
+					item: "powergrid:voltage_gauge"
+					type: "item"
+				}
+				{
+					id: "68CDA0CF2C335146"
+					item: "powergrid:current_gauge"
+					type: "item"
+				}
+				{
+					id: "773F1103826A5B62"
+					item: "powergrid:power_gauge"
+					type: "item"
+				}
 			]
 			title: "&bMeasure It"
 			x: 2.0d
@@ -203,8 +269,16 @@
 			id: "5E20000000000008"
 			subtitle: "&7The passive components"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:resistor", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:capacitor", type: "item" }
+				{
+					id: "6837AF47191C422F"
+					item: "powergrid:resistor"
+					type: "item"
+				}
+				{
+					id: "04F7F870ABC3615D"
+					item: "powergrid:capacitor"
+					type: "item"
+				}
 			]
 			title: "&bResistors and Capacitors"
 			x: -8.0d
@@ -227,8 +301,16 @@
 			id: "5E20000000000009"
 			subtitle: "&7Adjustable resistance"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:potentiometer", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:rheostat", type: "item" }
+				{
+					id: "010FEA271264A1D4"
+					item: "powergrid:potentiometer"
+					type: "item"
+				}
+				{
+					id: "5A10FBA97737C57F"
+					item: "powergrid:rheostat"
+					type: "item"
+				}
 			]
 			title: "&bDialling It In"
 			x: -6.0d
@@ -250,9 +332,21 @@
 			id: "5E2000000000000A"
 			subtitle: "&7One-way doors and switches"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:diode", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:bjt_npn", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:vfet", type: "item" }
+				{
+					id: "5E9E57DBD07998BB"
+					item: "powergrid:diode"
+					type: "item"
+				}
+				{
+					id: "0C773F20CCB48EF6"
+					item: "powergrid:bjt_npn"
+					type: "item"
+				}
+				{
+					id: "4A42693A502E925B"
+					item: "powergrid:vfet"
+					type: "item"
+				}
 			]
 			title: "&bSemiconductors"
 			x: -4.0d
@@ -279,9 +373,21 @@
 			id: "5E2000000000000B"
 			subtitle: "&7Acid, copper, patience"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:empty_circuit", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:circuit_design_table", type: "item" }
-				{ id: "5E200000000000T2", item: "powergrid:circuit_board", type: "item" }
+				{
+					id: "5802E20E68853E6F"
+					item: "powergrid:empty_circuit"
+					type: "item"
+				}
+				{
+					id: "3FAA22B9ABBFC240"
+					item: "powergrid:circuit_design_table"
+					type: "item"
+				}
+				{
+					id: "605D02FB43B11D7D"
+					item: "powergrid:circuit_board"
+					type: "item"
+				}
 			]
 			title: "&bEtching Circuits"
 			x: -2.0d
@@ -303,8 +409,16 @@
 			id: "5E2000000000000C"
 			subtitle: "&7Making electricity do work"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:electric_motor", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:heating_coil", type: "item" }
+				{
+					id: "6742D9192E169A72"
+					item: "powergrid:electric_motor"
+					type: "item"
+				}
+				{
+					id: "1276DAF17C41E0B9"
+					item: "powergrid:heating_coil"
+					type: "item"
+				}
 			]
 			title: "&bMotors and Heat"
 			x: 0.0d
@@ -326,8 +440,16 @@
 			id: "5E2000000000000D"
 			subtitle: "&7The visible layer"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:light_bulb", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:light_fixture", type: "item" }
+				{
+					id: "037C64516F284359"
+					item: "powergrid:light_bulb"
+					type: "item"
+				}
+				{
+					id: "6256A36C242AD159"
+					item: "powergrid:light_fixture"
+					type: "item"
+				}
 			]
 			title: "&bLight and Alarm"
 			x: 2.0d
@@ -348,15 +470,26 @@
 			id: "5E2000000000000E"
 			subtitle: "&7Actual computing"
 			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:punch_card", type: "item" }
-				{ id: "5E200000000000T1", item: "powergrid:punch_card_reader", type: "item" }
+				{
+					id: "3DD99770D0A0ADD8"
+					item: "powergrid:punch_card"
+					type: "item"
+				}
+				{
+					id: "571BED0A5A0755AC"
+					item: "powergrid:punch_card_reader"
+					type: "item"
+				}
 			]
 			title: "&bPunch Cards and the CRT"
 			x: 4.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["5E2000000000000E", "5E20000000000007"]
+			dependencies: [
+				"5E2000000000000E"
+				"5E20000000000007"
+			]
 			description: [
 				"&6&lYou have built a power station.&r"
 				""
@@ -370,9 +503,11 @@
 			id: "5E2000000000000F"
 			shape: "diamond"
 			subtitle: "&7Generation, transmission, control"
-			tasks: [
-				{ id: "5E200000000000T0", item: "powergrid:integrated_circuit", type: "item" }
-			]
+			tasks: [{
+				id: "12E4F99C214C897D"
+				item: "powergrid:integrated_circuit"
+				type: "item"
+			}]
 			title: "&6The Grid"
 			x: 6.0d
 			y: 0.8d

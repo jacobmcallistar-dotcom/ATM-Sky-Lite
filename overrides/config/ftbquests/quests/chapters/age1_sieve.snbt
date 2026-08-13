@@ -677,7 +677,6 @@
 			dependencies: ["210100000000000D"]
 			description: ["A &eWatering Can&r sprinkles crops, saplings and mushrooms to grow faster while you hold right-click. Tedious? Yes. Faster than waiting? Also yes. Cyclic's Sprinkler automates this later."]
 			icon: "exdeorum:wooden_watering_can"
-			dependencies: ["210100000000000D"]
 			id: "2101000000000014"
 			rewards: [{
 				count: 8
@@ -703,7 +702,6 @@
 				"String means meshes, bows, and beds without ever seeing a spider."
 			]
 			icon: "exdeorum:silk_worm"
-			dependencies: ["210100000000000A"]
 			id: "2101000000000015"
 			rewards: [{
 				count: 8

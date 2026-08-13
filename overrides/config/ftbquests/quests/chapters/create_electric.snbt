@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_electric"
-	group: "1A2B000000000002"
+	group: "1A2B000000000006"
 	icon: "createaddition:alternator"
 	id: "5E1F000000000000"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -27,9 +27,11 @@
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "&7Where FE comes from"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:alternator", type: "item" }
-			]
+			tasks: [{
+				id: "59EEBE7A7497A16C"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
 			title: "&eRotation Into Electricity"
 			x: -8.0d
 			y: 0.0d
@@ -52,8 +54,16 @@
 			id: "5E10000000000002"
 			subtitle: "&7Getting FE from A to B"
 			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:connector", type: "item" }
-				{ id: "5E100000000000T1", item: "createaddition:copper_wire", type: "item" }
+				{
+					id: "552E92FBF8763929"
+					item: "createaddition:connector"
+					type: "item"
+				}
+				{
+					id: "05A5D23E778A8400"
+					item: "createaddition:copper_wire"
+					type: "item"
+				}
 			]
 			title: "&eWires and Connectors"
 			x: -6.0d
@@ -71,9 +81,11 @@
 			icon: "createaddition:capacitor"
 			id: "5E10000000000003"
 			subtitle: "&7A buffer, not a battery bank"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:capacitor", type: "item" }
-			]
+			tasks: [{
+				id: "324D8CA3B11FE777"
+				item: "createaddition:capacitor"
+				type: "item"
+			}]
 			title: "&eThe Capacitor"
 			x: -4.0d
 			y: 0.0d
@@ -90,9 +102,11 @@
 			icon: "createaddition:accumulator"
 			id: "5E10000000000004"
 			subtitle: "&7Real storage"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:accumulator", type: "item" }
-			]
+			tasks: [{
+				id: "3E7BACAFE6D0E0D8"
+				item: "createaddition:accumulator"
+				type: "item"
+			}]
 			title: "&eThe Accumulator"
 			x: -2.0d
 			y: 0.0d
@@ -111,9 +125,11 @@
 			icon: "createaddition:electric_motor"
 			id: "5E10000000000005"
 			subtitle: "&7Back the other way"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:electric_motor", type: "item" }
-			]
+			tasks: [{
+				id: "4D05EEA05644794F"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
 			title: "&eThe Electric Motor"
 			x: 0.0d
 			y: 0.0d
@@ -130,9 +146,11 @@
 			icon: "createaddition:tesla_coil"
 			id: "5E10000000000006"
 			subtitle: "&7Charging without wires"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:tesla_coil", type: "item" }
-			]
+			tasks: [{
+				id: "313A4EBA38938767"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
 			title: "&eThe Tesla Coil"
 			x: 2.0d
 			y: 0.0d
@@ -154,9 +172,11 @@
 			id: "5E10000000000007"
 			shape: "diamond"
 			subtitle: "&7Act II can begin"
-			tasks: [
-				{ id: "5E100000000000T0", item: "createaddition:electrum_wire", type: "item" }
-			]
+			tasks: [{
+				id: "510F0B77D0BE1ED2"
+				item: "createaddition:electrum_wire"
+				type: "item"
+			}]
 			title: "&6Wired Up"
 			x: 4.0d
 			y: 0.0d
