@@ -31,6 +31,48 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
 
+> **Unreleased — the quest book rebuilt. 38 chapters, 623 quests.**
+>
+> **The ending now costs industry, not just conquest.** Nine **Sky Seals**, each 8× a mod's
+> deepest craftable item around a keystone — Mekanism, AE2, Create, Powah, Draconic, Mystical
+> Agriculture, Productive Bees, Ender IO, RFTools. All nine are required.
+> `9 Seals → Sky Matrix → (+ Celestial Core) → Ascension Core → Heart of the Sky`.
+> The Celestial Core is untouched, so the boss ladder and all three planets still count.
+> Previously the only thing you had to *manufacture* to win was two Antimatter Pellets.
+>
+> **Ad Astra is no longer gated on the Wither.** The NASA Workbench's Nether Star is gone —
+> and so is the quest dependency that locked the entire Space Program chapter behind a boss
+> two Acts later, which is why its first quest could not be completed at all. The Wither is
+> still mandatory *for the ending*, via the Celestial Core.
+>
+> **Age I was unbuildable.** Quest 2 asked for a water-and-lava cobble generator, but the
+> island template lost its lava bucket on 2026-07-15 and the starting chest is empty. The
+> Barrel and Crucible both sat *downstream* of it. Rebuilt around the path that exists:
+> crook → silk worms → string mesh → sieve **dirt** → stone pebbles → cobble → crucible → lava.
+> New quest **First Cobble** teaches the step that breaks the circular dependency.
+>
+> **Create split in two** — **First SU** (14, the spine, ends at the Precision Mechanism) and
+> **The Steam Age** (35). First SU explains what SU actually is: a *budget*, not a battery.
+>
+> **Two new power chapters before Mekanism**, because Act II opened straight into machines that
+> need FE with nothing explaining where FE comes from: **Create Crafts & Additions** (the
+> bridge) and **Create Power Grid** (15 quests on real electricity — V×A=W, transformers,
+> LV/MV/HV, semiconductors, acid-etched circuit boards).
+>
+> **New acts:** *Ways to Power* (early/mid generation) and *End Game Power*. Mandatory mods
+> promoted off the "Additional" shelf onto the main line — Mystical Agriculture, Productive
+> Bees, Ender IO and RFTools to Act II, Draconic Evolution to Act III.
+>
+> **Act II ordered by gate.** AE2 used to be listed *before* the Space Program that unlocks its
+> ME Controller. Mekanism was being taught twice — five identical quests in both Act I and
+> Act II — and two more were exact duplicates left from an older merge.
+>
+> **Formatting:** 270 audited issues down to 60, all remaining deliberate. 19 quests still
+> described Twilight Forest bosses as live gates a month after the mod was removed; every gate
+> statement now matches `adventure_gates.js`. All **623 quests have a full description** —
+> including 9 that earlier re-parenting scripts of mine had silently destroyed, restored
+> verbatim from backup.
+
 > **Unreleased — Create trimmed, Mekanism addons added. 210 server / 211 client mods.**
 >
 > **13 Create addons removed** — the food set (Food, Bitterballen, Central Kitchen), the
