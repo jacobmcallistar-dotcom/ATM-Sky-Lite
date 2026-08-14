@@ -1,0 +1,232 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sky_seals"
+	group: "1A2B000000000004"
+	icon: "kubejs:sky_matrix"
+	id: "5E5F000000000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&5&lThe pack cannot be finished by fighting alone.&r"
+				""
+				"The Celestial Core proves you beat the bosses and stood on all three planets. It says nothing about whether you ever &obuilt&r anything - and until now, you could reach the ending with a chest and a crafting table."
+				""
+				"&e&lNine Seals fix that.&r Each one is &l8x&r a mod's deepest craftable item around a keystone. Expanded, a single seal is well over a hundred sub-crafts, and you need all nine."
+				""
+				"&c&lThis is not a grind you can hand-craft.&r That is the point. Eight Ultimate Control Circuits or eight Precision Mechanisms by hand is miserable; through a crafting CPU or a bank of Mechanical Crafters it is one click. Automation stops being a convenience here and becomes the requirement."
+				""
+				"&7Each quest below names its mod and its chapter. Nothing here is optional and nothing can be substituted.&r"
+			]
+			icon: "kubejs:sky_matrix"
+			id: "5E50000000000001"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7Nine industries, one lattice"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:sky_matrix", type: "item" }]
+			title: "&5The Nine Seals"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&98x Ultimate Control Circuit&r around an &9Atomic Alloy&r."
+				""
+				"The Ultimate circuit is the top of a four-step infusion ladder - basic, advanced, elite, ultimate - and each step needs the one below it. Eight of them is the largest single Mekanism order in the pack."
+				""
+				"&7Chapter: &fMekanism&7, Act II.&r"
+			]
+			icon: "kubejs:seal_circuits"
+			id: "5E50000000000002"
+			subtitle: "&7Mekanism"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_circuits", type: "item" }]
+			title: "&9Seal of Circuits"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&bEight processors&r - Engineering, Calculation and Logic - around a &bSingularity&r."
+				""
+				"All three processor types means the entire Inscriber line has to be running. The Singularity at the centre needs a Matter Condenser and a great deal of matter fed into it."
+				""
+				"&7Chapter: &fApplied Energistics&7, Act II.&r"
+			]
+			icon: "kubejs:seal_network"
+			id: "5E50000000000003"
+			subtitle: "&7Applied Energistics"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_network", type: "item" }]
+			title: "&bSeal of the Network"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&e8x Precision Mechanism&r around a &eBrass Casing&r."
+				""
+				"The Precision Mechanism is Create's deepest craft - cogs, brass sheets and gold, assembled in sequence. It is also the item that gates Mekanism, so you have made one before. Now make eight."
+				""
+				"&7Chapter: &fFirst SU&7, Act I.&r"
+			]
+			icon: "kubejs:seal_rotation"
+			id: "5E50000000000004"
+			subtitle: "&7Create"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_rotation", type: "item" }]
+			title: "&eSeal of Rotation"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&98x Nitro Crystal&r around a &9Nitro Capacitor&r."
+				""
+				"Nitro is Powah's top tier - the end of the energising ladder that starts with a basic reactor and climbs through Niotic and Spirited."
+				""
+				"&7Chapter: &fNitro Powah&7, End Game Power.&r"
+			]
+			icon: "kubejs:seal_flux"
+			id: "5E50000000000005"
+			subtitle: "&7Powah"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_flux", type: "item" }]
+			title: "&9Seal of Flux"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&58x Awakened Draconium&r around an &5Awakened Core&r."
+				""
+				"Awakening draconium needs a Fusion Crafting setup and a great deal of power. The whole tree hangs off the Draconium Core, which is pinned with a Silver Dungeon Key - so the Valkyrie Queen has to die first."
+				""
+				"&7Chapter: &fDraconic Evolution&7, Act III.&r"
+			]
+			icon: "kubejs:seal_dragon"
+			id: "5E50000000000006"
+			subtitle: "&7Draconic Evolution"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_dragon", type: "item" }]
+			title: "&5Seal of the Dragon"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&d8x Supremium Essence&r around &dInsanium Essence&r."
+				""
+				"Supremium is the top farmable tier; Insanium is the Mystical Agradditions step above it. Getting eight means a working essence farm, not a few seeds in a pot."
+				""
+				"&7Chapter: &fMystical Agriculture&7, Act II.&r"
+			]
+			icon: "kubejs:seal_growth"
+			id: "5E50000000000007"
+			subtitle: "&7Mystical Agriculture"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_growth", type: "item" }]
+			title: "&dSeal of Growth"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&68x Honeycomb&r around a &6Centrifuge&r."
+				""
+				"Any productive bee's comb counts, so this is about having an apiary that actually produces - and the Centrifuge at the centre means the processing line too, not just hives."
+				""
+				"&e&lWorth knowing:&r Productive Bees can make &eDesh, Ostrum and Calorite bees&r from a Steel Bee and a block of the metal. That turns one trip per planet into a renewable supply."
+				""
+				"&7Chapter: &fProductive Bees&7, Act II.&r"
+			]
+			icon: "kubejs:seal_swarm"
+			id: "5E50000000000008"
+			subtitle: "&7Productive Bees"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_swarm", type: "item" }]
+			title: "&6Seal of the Swarm"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&a8x Vibrant Crystal&r around an &aEnder Crystal&r."
+				""
+				"Vibrant Crystals need Ender IO's alloy chain running through the Alloy Smelter and SAG Mill - the mod's own machines, not a shortcut."
+				""
+				"&7Chapter: &fEnder IO&7, Act II.&r"
+			]
+			icon: "kubejs:seal_ender"
+			id: "5E50000000000009"
+			subtitle: "&7Ender IO"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_ender", type: "item" }]
+			title: "&aSeal of Ender"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E50000000000001"]
+			description: [
+				"&68x Infused Diamond&r around a &6Dimensional Shard&r."
+				""
+				"Infusing diamonds takes an RFTools Infuser and real power. Dimensional Shards are the backbone of the whole RFTools line."
+				""
+				"&7Chapter: &fRFTools&7, Act II.&r"
+			]
+			icon: "kubejs:seal_dimension"
+			id: "5E5000000000000A"
+			subtitle: "&7RFTools"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_dimension", type: "item" }]
+			title: "&6Seal of Dimensions"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E50000000000002", "5E50000000000003", "5E50000000000004", "5E50000000000005", "5E50000000000006", "5E50000000000007", "5E50000000000008", "5E50000000000009", "5E5000000000000A"]
+			description: [
+				"&5&lNine seals in one grid.&r"
+				""
+				"There is no partial credit and no alternative recipe. If one industry is not running, the Matrix does not exist."
+				""
+				"&7What it proves: circuits, a digital network, rotation, nitro-grade energy, awakened metal, a farm, an apiary, an alloy chain and a dimensional line - all working at once, on the same island.&r"
+			]
+			icon: "kubejs:sky_matrix"
+			id: "5E50000000000014"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "&7All nine, no substitutions"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:sky_matrix", type: "item" }]
+			title: "&5The Sky Matrix"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E50000000000014"]
+			description: [
+				"&5&lThe Celestial Core and the Sky Matrix, wound together.&r"
+				""
+				"&7- The &bCelestial Core&7 is what you &lkilled&r and where you &lwent&r - four Aether dungeon keys, the Monstrous Horn, a Nether Star, and one ingot from every planet."
+				"&7- The &5Sky Matrix&7 is what you &lbuilt&r."
+				""
+				"This is the last component. It goes in the centre of the Heart of the Sky, and the Heart ends the world you started on."
+				""
+				"&8Ascension is one chapter away."
+			]
+			icon: "kubejs:ascension_core"
+			id: "5E50000000000015"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "&7Conquest and industry in one hand"
+			tasks: [{ id: "5E500000000000T0", item: "kubejs:ascension_core", type: "item" }]
+			title: "&5The Ascension Core"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	subtitle: ["&7Nine mods, all mandatory"]
+	title: "&5The Nine Seals"
+}

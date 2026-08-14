@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "productive_bees"
-	group: "1A2B000000000005"
+	group: "1A2B000000000002"
 	icon: "productivebees:configurable_honeycomb"
 	id: "3C1F000000000013"
-	order_index: 11
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
