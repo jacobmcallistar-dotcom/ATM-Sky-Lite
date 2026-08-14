@@ -230,7 +230,13 @@
 		}
 		{
 			dependencies: ["6B7800000000D005"]
-			description: ["Through your hand-built portal: the End. The dragon doesn't know what's coming."]
+			description: [
+				"Through your hand-built portal: &5the End&r."
+				""
+				"&e&lThe dragon is not the hard part any more&r - by now you have better gear than the fight was designed for. What matters is what is behind it: the outer islands, Chorus fruit, Shulkers and elytra."
+				""
+				"&7Draconic Evolution wants End materials, and the Chaos Guardian on an outer island is where its final tier comes from. This is the doorway.&r"
+			]
 			icon: "minecraft:dragon_egg"
 			id: "6B7800000000D008"
 			rewards: [

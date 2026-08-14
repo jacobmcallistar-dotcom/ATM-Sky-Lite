@@ -228,7 +228,13 @@
 		}
 		{
 			dependencies: ["41C1000000000001"]
-			description: ["The &eFuel Generator&r burns anything a furnace would and makes FE - a cheap, dumb, reliable battery-topper for outposts where a reactor is overkill."]
+			description: [
+				"Cyclic's &bFuel Generator&r burns anything a furnace would and makes FE. No multiblock, no coolant, no setup."
+				""
+				"&e&lIt is not efficient and it does not need to be.&r This is the block you place when a machine needs power &oright now&r and your real generation is three chapters away."
+				""
+				"&7Perfectly reasonable to tear out later. Perfectly reasonable to leave in an outpost where a reactor would be absurd.&r"
+			]
 			icon: "cyclic:generator_fuel"
 			id: "41C1000000000008"
 			rewards: [{
@@ -338,7 +344,13 @@
 		}
 		{
 			dependencies: ["41C100000000000B"]
-			description: ["The &eBiplane&r: fast, fueled by furnace burnables, and pure joy over a void. Island-hop your whole world in minutes. Do not look down. Or do - that's the fun part."]
+			description: [
+				"The &bBiplane&r - fast, fuelled by ordinary furnace burnables, and the first real aircraft you can afford."
+				""
+				"&e&lOn a void island it changes how you build.&r Flying between platforms beats bridging to them, and it arrives long before an elytra or a jetpack is realistic."
+				""
+				"&7It takes damage on rough landings and can be repaired. Do not park it over the void.&r"
+			]
 			icon: "immersive_aircraft:biplane"
 			id: "41C100000000000C"
 			rewards: [{
@@ -360,7 +372,13 @@
 		}
 		{
 			dependencies: ["41C100000000000B"]
-			description: ["The &eAirship&r is slower but hauls: passenger seats, cargo space, graceful hangtime. A flying base-ferry for moving your whole operation between islands - or just cruising in style."]
+			description: [
+				"The &bAirship&r trades speed for lift, cargo and stability."
+				""
+				"&e&lIt hovers.&r That is the point - no runway, no stall, and it sits still in the air while you build from it. On a skyblock that is a mobile scaffold with chests attached."
+				""
+				"&7Slower and a bigger target than the biplane, but it carries passengers and freight, and it will not drop you the moment you stop moving.&r"
+			]
 			icon: "immersive_aircraft:airship"
 			id: "41C100000000000D"
 			rewards: [{

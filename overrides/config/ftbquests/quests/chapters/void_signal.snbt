@@ -394,7 +394,13 @@
 		}
 		{
 			dependencies: ["3055000000000005"]
-			description: ["An anomaly on the Martian scans: something royal, buried in the red sand, older than the signal itself. This beacon wakes the &ePharaoh of the Red Planet&r. Optional. Angry. Loot-rich."]
+			description: [
+				"&cAn anomaly on the Martian scans&r - something royal, buried in the red sand, older than the signal itself."
+				""
+				"&e&lClaiming this quest lights the beacon and summons the fight.&r Build the arena before you claim it, not after."
+				""
+				"&7Optional. Nothing in the ending depends on the Pharaoh - this is for the loot and the fight.&r"
+			]
 			icon: "cataclysm:ancient_remnant_spawn_egg"
 			id: "305500000000000C"
 			rewards: [{
@@ -414,7 +420,13 @@
 		}
 		{
 			dependencies: ["305500000000000C"]
-			description: ["The &eAncient Remnant&r fights with sandstorms, charges and quake-waves. Put the king back in the ground."]
+			description: [
+				"The &cAncient Remnant&r fights with sandstorms, charges and quake-waves that travel along the ground."
+				""
+				"&e&lHeight beats armour here.&r The quake-waves only hit what is standing on the floor, and the charge needs a straight line - break both and the fight halves in difficulty."
+				""
+				"&7Put the king back in the ground.&r"
+			]
 			icon: "cataclysm:desert_eye"
 			id: "305500000000000D"
 			rewards: [
@@ -442,7 +454,13 @@
 		}
 		{
 			dependencies: ["3055000000000009"]
-			description: ["A second reading on Glacio: a knight's shade, circling the ice like a moth. This beacon calls the &eMaledictus&r. Optional. It remembers how to fight."]
+			description: [
+				"&bA second reading, on Glacio&r - a knight's shade circling the ice like a moth around a lamp."
+				""
+				"&e&lClaiming this quest calls the Maledictus.&r Same rule as the Pharaoh: have the arena ready first."
+				""
+				"&7Optional. It remembers how to fight, and it is not required for the ending.&r"
+			]
 			icon: "cataclysm:maledictus_spawn_egg"
 			id: "305500000000000E"
 			rewards: [{
@@ -462,7 +480,13 @@
 		}
 		{
 			dependencies: ["305500000000000E"]
-			description: ["The &eMaledictus&r - a phantom knight with a halberd and a grudge. Its aerial charges hit like a rocket. Ground it permanently."]
+			description: [
+				"The &bMaledictus&r - a phantom knight with a halberd and a grudge."
+				""
+				"&e&lIts aerial charges hit like a rocket&r and it spends most of the fight airborne. Anything that grounds or slows it is worth more than raw damage."
+				""
+				"&7Ground it permanently.&r"
+			]
 			icon: "cataclysm:cursed_eye"
 			id: "305500000000000F"
 			rewards: [

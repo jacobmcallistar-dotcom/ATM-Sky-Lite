@@ -95,7 +95,14 @@
 		}
 		{
 			dependencies: ["025F9F5BB50F3C61"]
-			description: ["A Coal Generator and an Energizer give you the FE that every Ad Astra machine drinks."]
+			description: [
+				"Every Ad Astra machine drinks FE, and these two are the starter supply."
+				""
+				"&7- &fCoal Generator&7 - burns coal, exactly as it sounds."
+				"&7- &fEnergizer&7 - stores what it makes and charges items."
+				""
+				"&e&lYou do not have to use them.&r Ad Astra machines accept FE from anything - Powah, Create, Mekanism, the Power Grid. If you already have generation, wire it in and skip the coal."
+			]
 			icon: "ad_astra:coal_generator"
 			id: "1654EA4BC9A74F79"
 			rewards: [{
@@ -454,7 +461,13 @@
 		}
 		{
 			dependencies: ["7AEFF5201E41906E"]
-			description: ["Ostrum and a Tier 3 Rocket open the harsh worlds: Venus and Mercury."]
+			description: [
+				"&6Ostrum&r from Mars, and the &6Tier 3 Rocket&r it builds."
+				""
+				"&e&lTier 3 opens the harsh worlds&r - Venus and Mercury. Both will kill an under-equipped player quickly, so this is the point where the space suit stops being optional."
+				""
+				"&7Ostrum also gates AE2 autocrafting, Advanced Computers and the Blue Skies lighter, so you will be back for more of it regardless.&r"
+			]
 			icon: "ad_astra:ostrum_ingot"
 			id: "5B3D9DD3AF77FB22"
 			rewards: [{
@@ -517,7 +530,13 @@
 		}
 		{
 			dependencies: ["5B3D9DD3AF77FB22"]
-			description: ["Mercury: scorched, airless, closest to the sun. Plant your flag on the innermost world."]
+			description: [
+				"&cMercury&r - scorched, airless, and the closest world to the sun."
+				""
+				"&e&lNo atmosphere at all&r, so oxygen is not optional for a second, and the day side will cook an unprotected player."
+				""
+				"&7There is no gate hanging off Mercury. It is here because it is here - a flag to plant and a hostile rock to survive.&r"
+			]
 			icon: "ad_astra:venus_sand"
 			id: "6B7764A7A361338F"
 			rewards: [{
@@ -537,7 +556,13 @@
 		}
 		{
 			dependencies: ["45A0F1081A90EE29"]
-			description: ["Calorite is the top-tier metal. Forge a Tier 4 Rocket - the only ship that reaches the edge of the system."]
+			description: [
+				"&cCalorite&r is Ad Astra's top-tier metal, and the &cTier 4 Rocket&r is the only ship that leaves the solar system."
+				""
+				"&e&lCalorite is the endgame storage gate too.&r AE2's Spatial IO Port and every MEGA Cell are forged with it, so this trip pays for itself twice."
+				""
+				"&7Venus is where it comes from, and Venus is the most hostile world in the pack - acid, heat, and an atmosphere that eats standard gear.&r"
+			]
 			icon: "ad_astra:calorite_ingot"
 			id: "13FF1430C16D9379"
 			rewards: [{
@@ -565,7 +590,13 @@
 		}
 		{
 			dependencies: ["13FF1430C16D9379"]
-			description: ["Glacio: a frozen exoplanet beyond the solar system, and the final frontier of Ad Astra. Etrium ore waits in the ice."]
+			description: [
+				"&bGlacio&r - a frozen exoplanet beyond the solar system, and the last destination Ad Astra has."
+				""
+				"&e&lEtrium&r waits in the ice, and unlike the inner worlds Glacio has real terrain, real caves and real vegetation. It is the only planet that feels like somewhere you could live."
+				""
+				"&7Cold rather than lethal, which after Venus and Mercury is close to a holiday.&r"
+			]
 			icon: "ad_astra:glacio_stone"
 			id: "3811F52536EF179D"
 			rewards: [
@@ -757,7 +788,13 @@
 		}
 		{
 			dependencies: ["75B7246A1B0C350B"]
-			description: ["Low gravity is fun until you overshoot a jump into the void. The &eGravity Normalizer&r projects Earth-standard gravity through your moonbase. Home comforts, 384,000 klicks from home."]
+			description: [
+				"The &6Gravity Normalizer&r projects Earth-standard gravity through an area of a low-gravity world."
+				""
+				"&e&lThis matters more than it sounds.&r Building on the Moon in Moon gravity is miserable - you overshoot every jump and drift slowly onto the thing you meant to land beside. One of these and the base plays like home."
+				""
+				"&7It needs power and covers a radius, so one per build rather than one per room.&r"
+			]
 			icon: "ad_astra_giselle_addon:gravity_normalizer"
 			id: "2D5C000000000005"
 			rewards: [{

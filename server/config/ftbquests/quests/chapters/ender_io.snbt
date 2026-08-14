@@ -38,7 +38,14 @@
 		}
 		{
 			dependencies: ["61D0000000000001"]
-			description: ["The &eStirling Generator&r burns solids for FE; the &eAlloy Smelter&r fuses Ender IO's signature alloys - and doubles as a triple-slot furnace. The classic starter pair."]
+			description: [
+				"The classic Ender IO starter pair."
+				""
+				"&7- &fStirling Generator&7 - burns solid fuel for FE. Simple, and it will carry you until something better exists."
+				"&7- &fAlloy Smelter&7 - fuses Ender IO's signature alloys, and doubles as a &lthree-slot furnace&r, which makes it worth building on its own."
+				""
+				"&e&lThe alloys are the point.&r Electrical Steel, Energetic Alloy, Vibrant Alloy and Pulsating Alloy are the backbone of every machine, conduit and capacitor in the mod - and the Vibrant Crystal in the Seal of Ender is downstream of this block."
+			]
 			icon: "enderio:alloy_smelter"
 			id: "61D0000000000002"
 			rewards: [{
@@ -233,7 +240,13 @@
 		}
 		{
 			dependencies: ["61D0000000000005"]
-			description: ["A &eTravel Anchor&r teleports you between anchors with a jump - line them across your island chain and blink around your base like the void owes you rent. A &eVibrant Alloy&r batch seals branch mastery."]
+			description: [
+				"A &eTravel Anchor&r teleports you between anchors with a jump. Place them across your island chain and you blink around the base instead of walking it."
+				""
+				"&e&lRange scales with what you are wearing.&r A Travel Staff or Vibrant armour extends how far a hop can reach, so the network gets more useful as your gear improves."
+				""
+				"&7On a void skyblock this solves a real problem - the gaps between platforms are the thing you spend most of your time crossing.&r"
+			]
 			icon: "enderio:travel_anchor"
 			id: "61D0000000000007"
 			rewards: [

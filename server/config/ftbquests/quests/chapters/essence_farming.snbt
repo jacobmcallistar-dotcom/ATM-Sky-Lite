@@ -79,7 +79,13 @@
 		}
 		{
 			dependencies: ["655E000000000002"]
-			description: ["An &eInfusion Crystal&r compresses essence up the tiers: 4 of one tier = 1 of the next. It has 1,000 uses; the Master version, none. This little rock is the whole economy."]
+			description: [
+				"The &dInfusion Crystal&r is Mystical Agriculture's compressor: &l4 of one tier makes 1 of the next&r."
+				""
+				"&e&lIt is reusable.&r 1,000 uses on the basic version, unlimited on the Master. Craft it once and it never becomes a bottleneck."
+				""
+				"&7Everything above Inferium runs through this. Without it your farm produces one low tier and stops being interesting.&r"
+			]
 			icon: {
 				Count: 1
 				id: "mysticalagriculture:infusion_crystal"
@@ -183,7 +189,13 @@
 		}
 		{
 			dependencies: ["655E000000000003"]
-			description: ["Compress up the ladder: &ePrudentium&r, then &eTertium&r. Each tier unlocks stronger seeds and better gear. The grind is real; the payoff is worse mobs fearing you."]
+			description: [
+				"&dPrudentium&r, then &dTertium&r - the second and third rungs."
+				""
+				"&e&lEach tier unlocks better seeds and better gear&r, and each is four of the tier below. The cost compounds: one Tertium is sixteen Inferium."
+				""
+				"&7This is where a farm stops being a novelty. Manual harvesting will not keep up past Prudentium - a Harvester, a Botany Pot array or anything else that reaps for you starts paying for itself here.&r"
+			]
 			icon: "mysticalagriculture:tertium_essence"
 			id: "655E000000000006"
 			rewards: [{
@@ -212,7 +224,13 @@
 		}
 		{
 			dependencies: ["655E000000000006"]
-			description: ["&eImperium&r, then &eSupremium&r - the top of the base-mod ladder. Supremium makes gear that embarrasses netherite."]
+			description: [
+				"&dImperium&r, then &dSupremium&r - the top of the base mod's ladder."
+				""
+				"&e&lSupremium is where the mod stops being a farming mod&r and starts being an everything mod. Supremium seeds grow the materials other mods gate behind bosses and planets."
+				""
+				"&7Above this sits Insanium, from Mystical Agradditions - and the Seal of Growth wants eight Supremium around one Insanium, so this is not the end of the line.&r"
+			]
 			icon: "mysticalagriculture:supremium_essence"
 			id: "655E000000000007"
 			rewards: [{
@@ -359,7 +377,13 @@
 		}
 		{
 			dependencies: ["655E000000000007"]
-			description: ["Forge a full piece of &eSupremium&r gear. The armor gives creative-adjacent stats; the tools never quit. This is where 'optionally OP' stops being optional-sounding."]
+			description: [
+				"A full piece of &dSupremium gear&r - and it beats netherite outright."
+				""
+				"&e&lThe real feature is the augment slots.&r Supremium tools and armour take &eAugments&r - flight, step assist, auto-smelt, night vision, strength - so you assemble the kit you want rather than the one the mod hands you."
+				""
+				"&7It is also fully renewable. Once the farm runs, replacing gear costs time rather than a trip to a dungeon.&r"
+			]
 			icon: "mysticalagriculture:supremium_sword"
 			id: "655E00000000000A"
 			rewards: [{

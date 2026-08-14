@@ -63,7 +63,13 @@
 			y: 0.0d
 		}
 		{
-			description: ["A &eMatter Transmitter&r paired with a &eDialing Device&r teleports you between fixed points on your island chain - point, dial, arrive."]
+			description: [
+				"A &6Matter Transmitter&r paired with a &6Dialing Device&r teleports you between fixed points - point, dial, arrive."
+				""
+				"&e&lIt needs a Receiver at the far end and power at both.&r Once linked, the dialer remembers destinations, so a hub with one transmitter can reach every platform you have built."
+				""
+				"&7Cheaper and earlier than AE2 spatial or a Draconic teleporter, and it does not care how far apart the two ends are.&r"
+			]
 			icon: "rftoolsutility:matter_transmitter"
 			id: "7B3DC7246B77DA93"
 			rewards: [{
@@ -130,7 +136,14 @@
 			y: 0.0d
 		}
 		{
-			description: ["A &ePower Cell&r stores RF at massive scale for a single block, and the &eBlazing Generator&r burns blaze rods to fill it - RFTools' own power line, independent of Mekanism."]
+			description: [
+				"RFTools' own power line, independent of everything else."
+				""
+				"&7- &fPower Cell&7 - stores RF at massive scale, and cells placed adjacent merge into one larger bank."
+				"&7- &fBlazing Generator&7 - burns blaze rods to fill it."
+				""
+				"&e&lThe useful trick:&r Power Cells can be linked across dimensions with a Card, so power generated on your island is available on the Moon without running a single cable."
+			]
 			icon: "rftoolspower:cell1"
 			id: "2E836BF44B65F66F"
 			rewards: [{
@@ -229,7 +242,13 @@
 			y: 0.0d
 		}
 		{
-			description: ["The &eProgrammer&r and &eWorkbench&r let you script logic nodes directly - a lightweight automation layer that doesn't need a full computer."]
+			description: [
+				"The &6Programmer&r and &6Workbench&r let you build logic out of visual nodes instead of writing code."
+				""
+				"&e&lThis is the middle ground&r between redstone and ComputerCraft - more capable than a comparator chain, far less work than Lua. Drag nodes, wire them, drop the card into a Processor."
+				""
+				"&7Good for the jobs that are genuinely conditional: run this only when that tank is low, alarm if the reactor climbs, sort by NBT.&r"
+			]
 			icon: "rftoolscontrol:programmer"
 			id: "6775474E8AE4DC25"
 			rewards: [{

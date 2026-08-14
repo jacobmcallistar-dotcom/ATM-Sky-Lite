@@ -123,7 +123,13 @@
 		}
 		{
 			dependencies: ["210300000000000E"]
-			description: ["&eExtra Hostile Neural Networks&r adds the Merger Camera: combine 4 data models into a single, better one. Fewer Simulation Chambers cluttering your farm, more prediction output per machine."]
+			description: [
+				"The &9Merger Camera&r from Extra Hostile Neural Networks combines &l4 data models into 1&r."
+				""
+				"&e&lThis is the fix for the worst part of the mod:&r taking a model from Faulty to Self-Aware means hundreds of kills. Run four models in parallel - four Simulation Chambers, four sets of progress - then merge them."
+				""
+				"&7Fewer chambers cluttering the farm, and far less waiting for one model to crawl up alone.&r"
+			]
 			icon: "extrahnn:merger_camera"
 			id: "3A913DD38D067B8F"
 			rewards: [{

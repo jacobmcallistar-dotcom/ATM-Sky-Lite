@@ -59,7 +59,14 @@
 			y: -1.5d
 		}
 		{
-			description: ["The &eEnergy Detector&r and &eEnvironment Detector&r let a computer read your FE buffers and world conditions - the sensor layer for any automation script."]
+			description: [
+				"Two blocks that give a computer &esenses&r."
+				""
+				"&7- &fEnergy Detector&7 - reads an FE buffer, and can cap throughput like a fuse."
+				"&7- &fEnvironment Detector&7 - reads time, weather, biome, dimension, moon phase."
+				""
+				"&e&lThis is the sensor layer every real automation script needs.&r A program that switches generators on when storage drops, or lights a base at dusk, starts with one of these."
+			]
 			icon: "advancedperipherals:energy_detector"
 			id: "3610AD37D6DCD7C4"
 			rewards: [{

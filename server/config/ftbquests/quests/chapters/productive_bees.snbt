@@ -200,7 +200,13 @@
 		}
 		{
 			dependencies: ["0BEE000000000007"]
-			description: ["Productive Bees' sister mod. &eProductive Trees&r adds real fruit and nut trees you cross-pollinate for new varieties - same production logic as your bees, but rooted in the ground. Plant an almond sapling and let it grow."]
+			description: [
+				"&eProductive Trees&r is Productive Bees' sister mod - real fruit and nut trees you &ocross-pollinate&r for new varieties."
+				""
+				"&e&lSame logic as your bees, rooted in the ground.&r Plant two species near each other, wait, and a hybrid sapling appears. Every variety produces something the others do not."
+				""
+				"&7On a void island this matters more than it sounds - it is renewable food, renewable wood, and renewable crafting stock from a few saplings.&r"
+			]
 			icon: "productivetrees:almond_sapling"
 			id: "3757D9F44B4E1873"
 			rewards: [{

@@ -546,7 +546,15 @@
 		}
 		{
 			dependencies: ["398BE9895D2BED1B"]
-			description: ["&9Mekanism Additions&r - the official 4th module, sibling to Generators and Tools. Misc content that used to live in core Mekanism: extra plastic building sets, a walkie talkie for cross-base comms, and Obsidian TNT for when regular TNT isn't enough."]
+			description: [
+				"&9Mekanism Additions&r is the official fourth module, sibling to Generators and Tools."
+				""
+				"&7- &fObsidian TNT&7 - blast mining that actually dents obsidian."
+				"&7- &fPlastic&7 in every colour, as blocks, slabs, stairs, glow and reinforced variants. Genuinely the best building set in the pack."
+				"&7- &fWalkie-talkies&7, baby mobs, and voice server support."
+				""
+				"&8Nothing here gates anything. It is convenience and building material."
+			]
 			icon: "mekanismadditions:obsidian_tnt"
 			id: "40FD4EFB660EFE4F"
 			rewards: [{

@@ -821,7 +821,13 @@
 		}
 		{
 			dependencies: ["1AAE9BD0B22003F4"]
-			description: ["&eCable&r links every part of the network together, and a &eGrid&r is your window into it - search, insert, extract, craft. The Grid is where RS feels most different from an ME Terminal; try both before deciding which you prefer."]
+			description: [
+				"&eCable&r links every part of a Refined Storage network; a &eGrid&r is your window into it - search, insert, extract and craft from one screen."
+				""
+				"&e&lWhere RS differs from AE2:&r no channels. A cable is a cable, and you never have to plan a bus. That is the whole appeal - fewer rules, less planning, quicker to a working system."
+				""
+				"&7The trade is control. AE2 pays for its complexity with subnets and precise routing; RS just works.&r"
+			]
 			icon: "refinedstorage:grid"
 			id: "1912A7D531B8F103"
 			rewards: [{
@@ -875,7 +881,13 @@
 		}
 		{
 			dependencies: ["51D6738AB8937CEE"]
-			description: ["&eImporters&r and &eExporters&r move items into and out of the network automatically - the plumbing that turns Refined Storage from a chest into a factory hub. AE2 does this with import/export buses; same job, different name."]
+			description: [
+				"&eImporters&r pull items into the network, &eExporters&r push them out. Face them at a chest, a furnace or a machine and the network handles the rest."
+				""
+				"&e&lThis is what turns storage into a factory.&r Import from a mob farm, export into furnaces, import the results back - and you have a processing line with no pipes at all."
+				""
+				"&7AE2's equivalents are the Import and Export Bus. Same idea, different network.&r"
+			]
 			icon: "refinedstorage:importer"
 			id: "6B74132EA7DDC9DD"
 			rewards: [{

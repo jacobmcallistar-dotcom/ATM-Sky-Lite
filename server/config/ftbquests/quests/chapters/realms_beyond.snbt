@@ -278,7 +278,13 @@
 		}
 		{
 			dependencies: ["2D70B1458FF1A3FC"]
-			description: ["Deep in an Everbright dungeon, the Starlit Crusher rules. Its Summoning Table calls it - a proper arena boss fight."]
+			description: [
+				"The &bStarlit Crusher&r rules deep in an &bEverbright&r dungeon."
+				""
+				"&e&lIt does not wander - you summon it.&r Find its Summoning Table in the dungeon and activate it for a proper arena fight, doors closed."
+				""
+				"&7Blue Skies is reached with the &eZeal Lighter&r, which is forged with &eOstrum&r - so Mars comes first. Everbright is the bright half; Everdawn is the other.&r"
+			]
 			icon: "blue_skies:starlit_crusher_spawn_egg"
 			id: "259AC632D754FC36"
 			rewards: [{
@@ -301,7 +307,13 @@
 		}
 		{
 			dependencies: ["259AC632D754FC36"]
-			description: ["The Everdawn's Arachnarch - a spider queen the size of a house. Kill it for the realm's rarest crafting stock."]
+			description: [
+				"The &dArachnarch&r is the &dEverdawn&r's boss - a spider queen the size of a house."
+				""
+				"&e&lArea damage matters more than single-target here.&r She spawns broods while staying mobile, and the arena fills quickly if you only focus the boss."
+				""
+				"&7Her drops are the realm's rarest crafting stock. Same Zeal Lighter, other half of Blue Skies.&r"
+			]
 			icon: "blue_skies:arachnarch_spawn_egg"
 			id: "61DDC993C67CD36F"
 			rewards: [{
@@ -351,7 +363,13 @@
 		}
 		{
 			dependencies: ["10EA2E5B2105C715"]
-			description: ["The Forgotten Guardian, a colossal stone sentinel, sleeps in the deep. Wake it, break it, take its Forgotten gear."]
+			description: [
+				"The &7Forgotten Guardian&r is a colossal stone sentinel, asleep in the deep."
+				""
+				"&e&lWake it, break it, take its gear.&r Forgotten equipment is Blue Skies' top-tier reward and does not drop anywhere else."
+				""
+				"&7A slow, heavy fight - it hits hard and telegraphs, so patience beats panic.&r"
+			]
 			icon: "undergarden:forgotten_ingot"
 			id: "538F5CE511D220D9"
 			rewards: [

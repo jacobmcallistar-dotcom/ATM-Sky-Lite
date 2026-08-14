@@ -34,7 +34,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eMagebloom&r is Ars Nouveau's signature crop - a flax-like plant you grow, harvest and spin into fiber for robes, ropes and books."]
+			description: [
+				"&dMagebloom&r is Ars Nouveau's own crop - grown from a Magebloom Seed on tilled earth, harvested for &dMagebloom Fiber&r."
+				""
+				"&e&lYou will want a lot of it.&r Fiber goes into robes, ropes, and the Worn Notebook - which is the mod's actual documentation and the thing you should read before anything else here."
+				""
+				"&7It grows slowly and does not need light, so a corner of the base and some patience is enough.&r"
+			]
 			icon: "ars_nouveau:magebloom_crop"
 			id: "572C58F284A0C55F"
 			rewards: [{

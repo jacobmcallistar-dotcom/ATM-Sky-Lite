@@ -98,7 +98,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eQuests Additions&r gives this very book new task types - Place, Break, Repeatable, Create-Structure - for anything added to it down the line."]
+			description: [
+				"&fQuests Additions&r gives this book new task types - Place, Break, Repeatable, Create-Structure."
+				""
+				"&7This is a mod for whoever &owrites&r the quest book rather than whoever reads it. It is why some quests here can ask for things the base mod cannot express.&r"
+				""
+				"&8Nothing to build. Claim it and move on."
+			]
 			icon: "ftbquests:book"
 			id: "5C98246B859477C0"
 			rewards: [{
@@ -117,7 +123,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eTom's Performant Storage&r is a pure performance patch for Tom's Storage - same features, much less lag on big networks. Nothing to craft, it just works quietly in the background."]
+			description: [
+				"&fTom's Performant Storage&r is a pure optimisation patch for Tom's Simple Storage - same features, far less lag on a large network."
+				""
+				"&7It changes no recipes and adds no blocks. If you use Tom's terminal, this is doing work every time you type in the search box.&r"
+				""
+				"&8Nothing to build. Claim it and move on."
+			]
 			icon: "toms_storage:ts.storage_terminal"
 			id: "092716AC2F380CE9"
 			rewards: [{
@@ -136,7 +148,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["&eElytra Slot&r adds a dedicated back slot for your elytra, worn alongside full chestplate armor instead of instead of it."]
+			description: [
+				"&fElytra Slot&r gives the elytra a dedicated back slot, worn &oalongside&r a chestplate instead of instead of one."
+				""
+				"&e&lThat is the whole mod, and it is worth having.&r The vanilla trade between mobility and armour is the single most irritating thing about late-game movement."
+				""
+				"&8Nothing to build. Claim it and move on."
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:elytra"
