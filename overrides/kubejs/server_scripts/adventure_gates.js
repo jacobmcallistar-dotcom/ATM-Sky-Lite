@@ -203,26 +203,42 @@ ServerEvents.recipes(event => {
   console.log('[gates] fission casing re-gated: twilightforest:fiery_ingot -> aether:gold_dungeon_key (x16)')
 
   // =========================================================================
-  // NASA WORKBENCH - the Nether Star STAYS.  (Jacob's call, stated twice.)
+  // NASA WORKBENCH - the Nether Star is REMOVED.  (2026-08-14, Jacob's call.)
   //
-  // SkyForge's datapack puts a Nether Star on the workbench, so the Wither must
-  // die before any planet is reachable. I briefly removed it and put it back on
-  // request: the Wither is wanted as the gate to the Moon.
+  // SkyForge's datapack put a Nether Star on the workbench, which meant the
+  // Wither had to die before ANY planet was reachable. That made the whole
+  // space program - and therefore AE2, which hangs off Moon Desh - sit behind
+  // a boss fight, in a pack whose stated rule is:
   //
-  // The consequence, recorded here so it is not a surprise later: because AE2
-  // now hangs off Desh, the ME Controller sits behind exactly ONE boss kill.
-  // The chain is
+  //     MID-GAME  = learning the mods, gated by TRAVEL, no boss kills
+  //     LATE-GAME = finishing the game, gated by COMBAT
   //
-  //     power -> Wither -> NASA Workbench -> rocket -> Moon -> Desh -> AE2
+  // Ad Astra is the mid-game travel ladder, so it should not have been behind
+  // a boss at all. Restoring the vanilla Ad Astra recipe: the star slot goes
+  // back to being a steel plate, exactly as SkyForge's own comment describes
+  // the original ("minus one steel plate, plus a star").
   //
-  // That is a single, well-signposted fight rather than the old stack of three
-  // compounding gates, and the Wither is a summonable boss you can prepare for
-  // on your own island - no dimension crawl, no gear loss on the way in.
+  // THE WITHER IS STILL MANDATORY. The Heart of the Sky needs a Celestial
+  // Core, and that Core still costs a Nether Star (see endgame.js). So the
+  // Wither remains a required kill to FINISH the pack - it just no longer
+  // blocks the road to space.
   //
-  // Everything BEYOND the Moon is still pure travel: Mars for autocrafting and
-  // computers, Venus for MEGA and Spatial IO. Only wireless AE2 and Draconic
-  // ask for more killing.
+  // New chain:  power -> rocket -> Moon -> Desh -> AE2   (no combat)
+  //             Wither -> Celestial Core -> Heart of the Sky  (the ending)
   // =========================================================================
+  event.remove({ id: 'ad_astra:nasa_workbench' })
+  event.shaped('ad_astra:nasa_workbench', [
+    '|#|',
+    'TCT',
+    '#B#'
+  ], {
+    '#': '#ad_astra:steel_plates',
+    B: '#ad_astra:steel_blocks',
+    C: 'minecraft:crafting_table',
+    T: 'minecraft:redstone_torch',
+    '|': '#ad_astra:iron_rods'
+  }).id('ad_astra:nasa_workbench')
+  console.log('[gates] NASA Workbench: nether_star removed - space is travel-gated, not boss-gated')
 
   console.log('[gates] v4 applied - Wither gates the Moon; Aether bosses gate late-game power')
 })

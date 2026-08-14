@@ -9,13 +9,20 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6B7800000000D005"]
+			dependencies: ["6C0C75598D65CE7D"]
 			description: [
 				"&6The Space Program&r. Your island floats in the void - but there is a whole SOLAR SYSTEM out there to conquer."
 				""
 				"Ad Astra takes you off-world: the Moon, Mars, Venus, Mercury, and the frozen exoplanet Glacio. Each needs a bigger rocket and better gear to survive."
 				""
-				"&c&lThe gate:&r the NASA Workbench is built around a &eNether Star&r. Rocket science demands a Wither's heart - no star, no space. And the realms beyond the sky? They only open to those who've walked on other worlds."
+				"&a&lNothing has to die for this.&r Space is gated by &lwork&r, not by combat - steel, oil, oxygen and a launch pad. Build the rocket and go."
+				""
+				"&e&lWhat is actually out there:&r"
+				"&7- &fThe Moon&7 - &eDesh&7. This is the big one: the AE2 ME Controller is built from it, so your first real storage network starts here."
+				"&7- &fMars&7 - &eOstrum&7. AE2 autocrafting, Advanced Computers, and the Blue Skies lighter."
+				"&7- &fVenus&7 - &eCalorite&7. Spatial storage and MEGA cells."
+				""
+				"&8Mercury and Glacio have no gate hanging off them - they are there because they are there."
 			]
 			icon: "ad_astra:tier_1_rocket"
 			id: "0C5265A68B7CA881"
@@ -264,9 +271,11 @@
 		{
 			dependencies: ["1654EA4BC9A74F79"]
 			description: [
-				"The NASA Workbench is where rockets are assembled from nose cone, body, fins, and engine."
+				"The &eNASA Workbench&r is where rockets are assembled from nose cone, body, fins and engine. Every rocket in the pack is built here."
 				""
-				"&cIn this pack its recipe holds a &eNether Star&r&c at its crown&r - the Wither's heart is the only thing dense enough to calibrate a launch computer. Check JEI."
+				"&a&lIt is a steel recipe and nothing more.&r Steel plates, steel blocks, iron rods, a crafting table and two redstone torches. If you have been through Mekanism you can very likely build it right now."
+				""
+				"&7It is a multiblock-style crafting interface rather than a machine - place it, open it, and it shows you the rocket schematic slot by slot. Check JEI for the exact layout of each tier.&r"
 			]
 			icon: "ad_astra:nasa_workbench"
 			id: "51B90C3D7756A0EA"
