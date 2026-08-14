@@ -233,13 +233,13 @@
 				"&c✈&r The &eME Controller&r is cornered in &cDesh&r. No trip to the Moon, no network."
 				"&c⚔&r &eAutocrafting&r - Molecular Assembler and Crafting CPU - is framed in &cMoon Desh&r."
 				"&c⚔&r &eAdvanced Computers&r and every &eAdvanced Peripherals&r block need &cMars ostrum&r."
-				"&c⚔&r The &eQuantum Ring&r is bound in &cFiery Ingots&r - the Hydra's blood."
+				"&c⚔&r The &eQuantum Ring&r is bound with a &cGold Dungeon Key&r - the Sun Spirit's due."
 				"&c⚔&r &eSpatial Storage&r and every &eMEGA Cell&r are forged in &cVenus calorite&r."
-				"&c⚔&r The &eDraconium Core&r is pinned with &cKnightmetal&r - the Knight Phantom's due."
-				"&c⚔&r &eFission Reactor Casings&r are forged around &cFiery Ingots&r - the Twilight's bosses guard your atom."
+				"&c⚔&r The &eDraconium Core&r is pinned with a &cSilver Dungeon Key&r - the Valkyrie Queen's due."
+				"&c⚔&r &eFission Reactor Casings&r are forged around &cGold Dungeon Keys&r - the Sun Spirit guards your atom."
 				""
 				"&6&lTHE ENDING&r"
-				"&c⚔&r The &bCelestial Core&r wants &cfive Twilight trophies&r - Naga, Lich, Hydra, Ur-Ghast, Snow Queen - plus one ingot from &cevery planet&r. Trophies drop from the boss and nowhere else."
+				"&c⚔&r The &bCelestial Core&r wants &cfour Aether dungeon keys&r - Slider, Valkyrie Queen, Sun Spirit, Eye of the Storm - plus the &cMonstrous Horn&r, a &cNether Star&r, and one ingot from &cevery planet&r. Keys are a single guaranteed drop from the boss that guards the dungeon."
 				"&c⚔&r The &eHeart of the Sky&r takes that Core, &cfour Void Signal relics&r, and the remains of &cIgnis&r and the &cNetherite Monstrosity&r."
 				"&8Twelve bosses. One ending."
 				""
@@ -266,5 +266,6 @@
 			y: 2.5d
 		}
 	]
+	subtitle: ["&7Start here"]
 	title: "&2How to Play"
 }

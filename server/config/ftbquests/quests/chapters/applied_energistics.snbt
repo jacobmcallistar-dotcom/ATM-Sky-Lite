@@ -32,7 +32,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Digital storage & autocrafting"
+			subtitle: "&7Digital storage & autocrafting"
 			tasks: [{
 				id: "2DEA0BC44DC5E6F6"
 				title: "Begin AE2"
@@ -58,7 +58,7 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "Charge It Up"
+			title: "&bCharge It Up"
 			x: -7.0d
 			y: -1.0d
 		}
@@ -91,7 +91,7 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			title: "Fluix Crystals"
+			title: "&bFluix Crystals"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -126,7 +126,7 @@
 				item: "ae2:silicon"
 				type: "item"
 			}]
-			title: "Silicon"
+			title: "&bSilicon"
 			x: -7.0d
 			y: 1.0d
 		}
@@ -165,7 +165,7 @@
 					type: "item"
 				}
 			]
-			title: "The Processors"
+			title: "&bThe Processors"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -193,7 +193,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "The Controller"
+			title: "&bThe Controller"
 			x: -1.0d
 			y: 0.0d
 		}
@@ -232,7 +232,7 @@
 					type: "item"
 				}
 			]
-			title: "Power the Network"
+			title: "&bPower the Network"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -273,7 +273,7 @@
 					type: "item"
 				}
 			]
-			title: "First Digital Storage"
+			title: "&bFirst Digital Storage"
 			x: 1.0d
 			y: 0.0d
 		}
@@ -319,7 +319,7 @@
 					type: "item"
 				}
 			]
-			title: "Bigger On The Inside"
+			title: "&bBigger On The Inside"
 			x: 1.0d
 			y: -1.5d
 		}
@@ -355,7 +355,7 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			title: "The Terminal"
+			title: "&bThe Terminal"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -390,7 +390,7 @@
 					type: "item"
 				}
 			]
-			title: "Autocrafting Begins"
+			title: "&bAutocrafting Begins"
 			x: 5.0d
 			y: 0.5d
 		}
@@ -428,7 +428,7 @@
 					type: "item"
 				}
 			]
-			title: "Build a Crafting CPU"
+			title: "&bBuild a Crafting CPU"
 			x: 7.0d
 			y: 0.5d
 		}
@@ -462,7 +462,7 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			title: "Encode Patterns"
+			title: "&bEncode Patterns"
 			x: 5.0d
 			y: 2.0d
 		}
@@ -508,7 +508,7 @@
 					type: "item"
 				}
 			]
-			title: "Full Automation"
+			title: "&bFull Automation"
 			x: 9.0d
 			y: 0.5d
 		}
@@ -540,7 +540,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			title: "Go Wireless"
+			title: "&bGo Wireless"
 			x: 3.0d
 			y: 2.0d
 		}
@@ -579,7 +579,7 @@
 					type: "item"
 				}
 			]
-			title: "Spatial Storage"
+			title: "&bSpatial Storage"
 			x: 7.0d
 			y: 2.0d
 		}
@@ -588,9 +588,9 @@
 			description: [
 				"The Quantum Network Bridge links two networks across ANY distance or dimension via an entangled pair of Quantum Entangled Singularities. Craft the pair together, drop one in each chamber, and the two networks behave as one cable."
 				""
-				"Build a Quantum Ring and a Quantum Link Chamber to connect your island to the Moon, Mars, or the Twilight Forest."
+				"Build a Quantum Ring and a Quantum Link Chamber to connect your island to the Moon, Mars, or the Aether."
 				""
-				"&4&lThe Hydra pays for this one.&r The Ring's iron is now &eFiery Ingots&r, smelted from the &cFiery Blood&r that only the Hydra drops - deep in the Twilight Forest, well past the Naga that got you your Controller."
+				"&4&lThe Sun Spirit pays for this one.&r The Ring's iron is now a &eGold Dungeon Key&r, dropped only by the Sun Spirit at the bottom of an Aether Gold Dungeon - the hardest fight in the dimension, and a long way past the Moon trip that got you your Controller."
 				""
 				"&7Worth the fight: this is what makes off-world bases practical. Mine Ostrum on Mars and have it appear in your island's ME system.&r"
 			]
@@ -609,7 +609,7 @@
 			]
 			shape: "diamond"
 			size: 1.25d
-			subtitle: "&7Kill the Hydra, wire the solar system"
+			subtitle: "&7Kill the Sun Spirit, wire the solar system"
 			tasks: [
 				{
 					id: "6966C5030746D301"
@@ -622,7 +622,7 @@
 					type: "item"
 				}
 			]
-			title: "Quantum Bridge"
+			title: "&bQuantum Bridge"
 			x: 9.0d
 			y: 2.0d
 		}
@@ -651,7 +651,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "AE2 mastered"
+			subtitle: "&7AE2 mastered"
 			tasks: [{
 				id: "6F476792FFEFB55D"
 				item: "ae2:crafting_monitor"
@@ -791,7 +791,7 @@
 				item: "refinedstorage:controller"
 				type: "item"
 			}]
-			title: "&eRefined Storage"
+			title: "&bRefined Storage"
 			x: -4.0d
 			y: 4.0d
 		}
@@ -819,7 +819,7 @@
 					type: "item"
 				}
 			]
-			title: "&eCables & Grids"
+			title: "&bCables & Grids"
 			x: -2.0d
 			y: 4.0d
 		}
@@ -839,7 +839,7 @@
 				item: "refinedstorage:1k_storage_disk"
 				type: "item"
 			}]
-			title: "&eStorage Disks"
+			title: "&bStorage Disks"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -866,7 +866,7 @@
 					type: "item"
 				}
 			]
-			title: "&eImporters & Exporters"
+			title: "&bImporters & Exporters"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -886,7 +886,7 @@
 				item: "refinedstorage:external_storage"
 				type: "item"
 			}]
-			title: "&eExternal Storage"
+			title: "&bExternal Storage"
 			x: 4.0d
 			y: 4.0d
 		}
@@ -917,7 +917,7 @@
 					type: "item"
 				}
 			]
-			title: "&eCable Tiers"
+			title: "&bCable Tiers"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -954,7 +954,7 @@
 					type: "item"
 				}
 			]
-			title: "&eRequestify"
+			title: "&bRequestify"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -1572,7 +1572,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&dArs Energistique"
+			title: "&bArs Energistique"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -1596,7 +1596,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&dApplied Botanics"
+			title: "&bApplied Botanics"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -1622,10 +1622,11 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&dApplied Flux"
+			title: "&bApplied Flux"
 			x: 10.0d
 			y: 4.0d
 		}
 	]
+	subtitle: ["&7Digital storage and autocrafting"]
 	title: "&9Applied Energistics"
 }

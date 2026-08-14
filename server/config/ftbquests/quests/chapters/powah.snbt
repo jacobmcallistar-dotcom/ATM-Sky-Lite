@@ -389,5 +389,6 @@
 			y: 3.0d
 		}
 	]
-	title: "&9Powah"
+	subtitle: ["&7Reactors, cells and cables"]
+	title: "&6Powah"
 }

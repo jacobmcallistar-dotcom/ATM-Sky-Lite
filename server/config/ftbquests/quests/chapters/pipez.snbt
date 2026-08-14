@@ -410,5 +410,6 @@
 			y: 3.0d
 		}
 	]
+	subtitle: ["&7Moving things the simple way"]
 	title: "&bPipes"
 }

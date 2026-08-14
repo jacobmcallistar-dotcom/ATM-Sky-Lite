@@ -143,5 +143,6 @@
 			y: 1.5d
 		}
 	]
+	subtitle: ["&7Claim it before someone else does"]
 	title: "&2Claim Your Island"
 }

@@ -29,7 +29,7 @@
 				item: "draconicevolution:draconium_ingot"
 				type: "item"
 			}]
-			title: "&cDraconic Evolution"
+			title: "&5Draconic Evolution"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -37,7 +37,7 @@
 			description: [
 				"The &eDraconic Sword&r and &eDraconic Pickaxe&r are the tier-one lineup - draconium-forged, and already a serious step past netherite."
 				""
-				"&c&lRemember what it cost to get here.&r In this pack the &7Draconium Core&r at the root of this tree is pinned with &7Knightmetal&r - so every item in this chapter is downstream of killing the Knight Phantom in the Goblin Stronghold."
+				"&c&lRemember what it cost to get here.&r In this pack the &7Draconium Core&r at the root of this tree is pinned with a &7Silver Dungeon Key&r - so every item in this chapter is downstream of killing the Valkyrie Queen, who will not even fight you until you have collected her Valkyries' Victory Medals."
 				""
 				"&e&lThe tier ladder above this:&r"
 				"&7Draconic &8→&7 &fWyvern&7 &8→&7 &fDraconic (awakened)&7 &8→&7 &fChaotic&r"
@@ -68,7 +68,7 @@
 					type: "item"
 				}
 			]
-			title: "&cDraconic Tools"
+			title: "&5Draconic Tools"
 			x: -2.0d
 			y: -0.5d
 		}
@@ -106,7 +106,7 @@
 					type: "item"
 				}
 			]
-			title: "&cEnergy Core"
+			title: "&5Energy Core"
 			x: 0.0d
 			y: 0.5d
 		}
@@ -146,7 +146,7 @@
 					type: "item"
 				}
 			]
-			title: "&cWyvern Gear"
+			title: "&5Wyvern Gear"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -167,7 +167,7 @@
 				item: "draconicevolution:chaotic_sword"
 				type: "item"
 			}]
-			title: "&cChaotic Gear"
+			title: "&5Chaotic Gear"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -421,7 +421,7 @@
 				""
 				"The Heart of the Sky is the win condition, but this is the power fantasy - flight, a regenerating shield, a pickaxe that removes rooms, and a reactor that could power everything you will ever build or level your island, depending on how carefully you wired it."
 				""
-				"&c&lRemember the Draconium Core that started this chapter is pinned with Knightmetal.&r None of this existed until you killed the Knight Phantom."
+				"&c&lRemember the Draconium Core that started this chapter is pinned with a Silver Dungeon Key.&r None of this existed until you killed the Valkyrie Queen."
 			]
 			icon: "draconicevolution:awakened_draconium_ingot"
 			id: "4A46C3DBDD028592"
@@ -442,5 +442,6 @@
 			y: 2.2d
 		}
 	]
+	subtitle: ["&7Awakened gear and the reactor"]
 	title: "&bDraconic Evolution"
 }

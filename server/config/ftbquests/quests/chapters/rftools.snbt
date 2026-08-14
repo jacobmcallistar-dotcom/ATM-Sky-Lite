@@ -552,7 +552,7 @@
 			description: [
 				"A &eCharged Porter&r is a handheld teleporter - charge it, link it to a Matter Transmitter, and use it to jump there from anywhere."
 				""
-				"&e&lIt is the escape hatch.&r Deep in the Twilight Forest with a full inventory and low health, this gets you home without a rocket, a portal or a walk."
+				"&e&lIt is the escape hatch.&r Deep in an Aether dungeon with a full inventory and low health, this gets you home without a rocket, a portal or a walk."
 				""
 				"&7It holds a charge and needs recharging between uses. The Advanced Charged Porter holds far more.&r"
 				""
@@ -681,5 +681,6 @@
 			y: 2.2d
 		}
 	]
+	subtitle: ["&7Dimensions, storage and tools"]
 	title: "&bRFTools"
 }

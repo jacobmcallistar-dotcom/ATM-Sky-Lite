@@ -15,7 +15,7 @@
 				""
 				"You have stood at the edge of the solar system. Only now does the summit open."
 				""
-				"Everything you built - the sieve, the forge, the reactors, the army, the fleet - converges on one craft that ends the world you started on. The road is long and every step is here: bridge fluorite, claim the Twilight's fire, spin fissile fuel, run a fission reactor, condense antimatter, gather the relics of the fallen, and forge the Heart."
+				"Everything you built - the sieve, the forge, the reactors, the army, the fleet - converges on one craft that ends the world you started on. The road is long and every step is here: bridge fluorite, take the Sun Spirit's key, spin fissile fuel, run a fission reactor, condense antimatter, gather the relics of the fallen, and forge the Heart."
 			]
 			icon: "skyforge:heart_of_the_sky"
 			id: "2106000000000001"
@@ -135,7 +135,7 @@
 			description: [
 				"Now build the reactor itself - a sealed multiblock of casings, a fuel assembly to hold the fissile fuel, a control rod to throttle it, and a port to pipe coolant in and steam out."
 				""
-				"&eEvery casing batch takes a Fiery Ingot&r - the Twilight's toll, paid in full."
+				"&eEvery casing batch takes a Gold Dungeon Key&r - the Sun Spirit's toll, paid in full."
 				""
 				"&cRun it carefully.&r An unmanaged fission reactor melts down and takes your island with it. Sodium or water cooling, and never let the temperature run away."
 			]
@@ -445,8 +445,8 @@
 				"&b&lThe Celestial Core.&r The last thing standing between you and the ending - and the only item in the pack that demands both adventure trees at once."
 				""
 				"&e&lFive trophies.&r Trophies drop from the boss itself and nothing else. They cannot be sieved, farmed, duplicated or traded for. Each one is a kill:"
-				"&7- &aNaga&7 - the spiral courtyard, first of the Twilight kings"
-				"&7- &aLich&7 - the tower above the Naga's ruin"
+				"&7- &aSlider&7 - the Bronze Dungeon, first of the Aether's guardians"
+				"&7- &aValkyrie Queen&7 - the Silver Dungeon, earned with Victory Medals"
 				"&7- &aHydra&7 - three heads, and they grow back"
 				"&7- &aUr-Ghast&7 - the Dark Tower, and it never lands"
 				"&7- &aSnow Queen&7 - the Aurora Palace, last of them all"
@@ -489,9 +489,9 @@
 				"2106000000000ACE"
 			]
 			description: [
-				"The four corners of the void. The remains of hell's worst. Antimatter that cost you gigajoules - and at the centre, no longer a bare Wither star, but the &bCelestial Core&r you carried back from five Twilight kings and three dead worlds."
+				"The four corners of the void. The remains of hell's worst. Antimatter that cost you gigajoules - and at the centre, no longer a bare Wither star, but the &bCelestial Core&r you carried back from four Aether dungeons, two Cataclysm bosses and three dead worlds."
 				""
-				"&6&lForge the HEART OF THE SKY.&r"
+				"&6&lForge the Heart of the Sky.&r"
 				""
 				"You started on a scrap of dirt with a single tree. You sieved a world out of nothing, built an industry, raised an army, flew to other planets, and put down every boss this sky could raise. This is the win. Well climbed, sky-dweller."
 			]
@@ -529,10 +529,11 @@
 				item: "skyforge:heart_of_the_sky"
 				type: "item"
 			}]
-			title: "&6&lHEART OF THE SKY"
+			title: "&6&lHeart of the Sky"
 			x: 6.5d
 			y: 0.0d
 		}
 	]
+	subtitle: ["&7Antimatter, and the end of the world"]
 	title: "&5Ascension"
 }

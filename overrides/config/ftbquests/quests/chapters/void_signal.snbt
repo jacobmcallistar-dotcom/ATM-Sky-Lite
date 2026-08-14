@@ -247,7 +247,7 @@
 				""
 				"&c&lThe last of the four Heart components.&r The &7Soul Star&r from the Void Lich is Void Signal relic number four - and with it the corners of the Heart of the Sky are complete."
 				""
-				"&c&lDo not confuse this with the Twilight Forest Lich.&r Different mod, different fight, different drop. You need both dead."
+				"&c&lThis is the Night Lich&r - Bosses of Mass Destruction's, summoned at its own beacon rather than found in a dungeon."
 				""
 				"&e&lThe Void Lich&r teleports constantly, summons skeletal minions, and fires homing soul projectiles. It is a mobility fight - you will spend more time chasing than swinging."
 				"&7- &fClear the adds first&7 or they will chip you down while you chase."
@@ -257,7 +257,7 @@
 				""
 				"&7Glacio is cold and dark but not corrosive - it is a kinder venue than Venus. Bring lighting; the permanent night means mobs spawn throughout.&r"
 				""
-				"&8Once this drops, you have all four relics. What remains between you and the ending is the Celestial Core - five Twilight trophies and three planet metals."
+				"&8Once this drops, you have all four relics. What remains between you and the ending is the Celestial Core - four Aether dungeon keys, the Monstrous Horn, a Nether Star and three planet metals."
 			]
 			icon: "minecraft:soul_torch"
 			id: "3055000000000008"
@@ -340,7 +340,7 @@
 		{
 			dependencies: ["305500000000000A"]
 			description: [
-				"&4&lTHE HARBINGER.&r The machine that has watched every launch since your first. Laser arrays, wither missiles, phase-two fury."
+				"&4&lThe Harbinger.&r The machine that has watched every launch since your first. Laser arrays, wither missiles, phase-two fury."
 				""
 				"Kill it, and the void goes quiet. Its arsenal is yours - and with the four corners in hand, &6the Heart of the Sky can finally be forged.&r"
 			]
@@ -388,7 +388,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4&lTHE HARBINGER"
+			title: "&4&lThe Harbinger"
 			x: 10.5d
 			y: 0.0d
 		}
@@ -489,5 +489,6 @@
 			y: 1.8d
 		}
 	]
+	subtitle: ["&7Four relics, four bosses"]
 	title: "&cThe Void Signal"
 }

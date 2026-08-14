@@ -221,7 +221,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Productive Trees"
+			title: "&eProductive Trees"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -439,5 +439,6 @@
 			y: 6.0d
 		}
 	]
+	subtitle: ["&7Bees that make metal"]
 	title: "&bProductive Bees"
 }

@@ -40,7 +40,7 @@
 				title: "Begin the Steam Age"
 				type: "checkmark"
 			}]
-			title: "&6The Steam Age"
+			title: "&eThe Steam Age"
 			x: -14.0d
 			y: 0.0d
 		}
@@ -1035,7 +1035,7 @@
 				item: "create_enchantment_industry:blaze_enchanter"
 				type: "item"
 			}]
-			title: "&6Enchantment Industry"
+			title: "&eEnchantment Industry"
 			x: -8.0d
 			y: 6.0d
 		}
@@ -1054,7 +1054,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&6Create Deco"
+			title: "&eCreate Deco"
 			x: -6.0d
 			y: 6.0d
 		}
@@ -1079,11 +1079,11 @@
 				item: "create_jetpack:jetpack"
 				type: "item"
 			}]
-			title: "&6Create Jetpack"
+			title: "&eCreate Jetpack"
 			x: -4.0d
 			y: 6.0d
 		}
 	]
 	subtitle: ["&7Contraptions, trains and automation"]
-	title: "&6The Steam Age"
+	title: "&9The Steam Age"
 }

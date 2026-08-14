@@ -33,7 +33,7 @@
 				title: "Read: The Industry Branch"
 				type: "checkmark"
 			}]
-			title: "&bIndustrial Foregoing"
+			title: "&2Industrial Foregoing"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -58,7 +58,7 @@
 				item: "industrialforegoing:plastic"
 				type: "item"
 			}]
-			title: "&bPlastic"
+			title: "&2Plastic"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -82,7 +82,7 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
-			title: "&bThe Pity Frame"
+			title: "&2The Pity Frame"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -113,7 +113,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBetter Frames"
+			title: "&2Better Frames"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -146,7 +146,7 @@
 					type: "item"
 				}
 			]
-			title: "&b&lThe Ore Laser"
+			title: "&2&lThe Ore Laser"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -170,7 +170,7 @@
 				item: "industrialforegoing:mob_crusher"
 				type: "item"
 			}]
-			title: "&bThe Mob Crusher"
+			title: "&2The Mob Crusher"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -194,7 +194,7 @@
 				item: "industrialforegoing:pity_black_hole_unit"
 				type: "item"
 			}]
-			title: "&bBottomless Storage"
+			title: "&2Bottomless Storage"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -235,7 +235,7 @@
 					type: "item"
 				}
 			]
-			title: "&bIF: Souls"
+			title: "&2IF: Souls"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -527,5 +527,6 @@
 			y: 2.2d
 		}
 	]
+	subtitle: ["&7Automation for everything else"]
 	title: "&bIndustrial Foregoing"
 }

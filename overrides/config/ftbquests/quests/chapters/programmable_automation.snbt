@@ -54,8 +54,8 @@
 				"Place a &eManager&r, open it, and type something close to English:"
 				""
 				"&7EVERY 20 TICKS DO&r"
-				"&7  INPUT FROM chest&r"
-				"&7  OUTPUT TO furnace&r"
+				"&7 INPUT FROM chest&r"
+				"&7 OUTPUT TO furnace&r"
 				"&7END&r"
 				""
 				"That's a working program. No cables to route by hand, no per-side config - the Manager reaches every inventory you've labelled."
@@ -553,8 +553,8 @@
 				""
 				"&e&lA real example:&r"
 				"&7EVERY 20 TICKS DO"
-				"&7  INPUT 64 iron_ingot FROM storage"
-				"&7  OUTPUT TO furnace_input"
+				"&7 INPUT 64 iron_ingot FROM storage"
+				"&7 OUTPUT TO furnace_input"
 				"&7END&r"
 				""
 				"&e&lIt handles items, fluids, energy and gases&r with the same syntax, across any distance the network reaches, with filters, priorities and round-robin built in."
@@ -746,5 +746,6 @@
 			y: 3.8d
 		}
 	]
+	subtitle: ["&7Logic, routing and control"]
 	title: "&bFactory Logic"
 }

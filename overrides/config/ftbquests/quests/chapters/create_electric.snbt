@@ -177,11 +177,11 @@
 				item: "createaddition:electrum_wire"
 				type: "item"
 			}]
-			title: "&6Wired Up"
+			title: "&eWired Up"
 			x: 4.0d
 			y: 0.0d
 		}
 	]
 	subtitle: ["&7Turning rotation into FE"]
-	title: "&eCreate Crafts & Additions"
+	title: "&6Create Crafts & Additions"
 }

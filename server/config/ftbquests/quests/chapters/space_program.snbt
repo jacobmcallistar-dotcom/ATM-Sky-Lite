@@ -39,7 +39,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Leave the atmosphere"
+			subtitle: "&7Leave the atmosphere"
 			tasks: [{
 				id: "12B64518BFDE5C15"
 				title: "Begin the Space Program"
@@ -89,7 +89,7 @@
 					type: "item"
 				}
 			]
-			title: "Aerospace Steel"
+			title: "&6Aerospace Steel"
 			x: -7.0d
 			y: -1.5d
 		}
@@ -116,7 +116,7 @@
 					type: "item"
 				}
 			]
-			title: "Ground Power"
+			title: "&6Ground Power"
 			x: -7.0d
 			y: 0.0d
 		}
@@ -152,7 +152,7 @@
 					type: "item"
 				}
 			]
-			title: "Something to Breathe"
+			title: "&6Something to Breathe"
 			x: -7.0d
 			y: 1.5d
 		}
@@ -183,7 +183,7 @@
 					type: "item"
 				}
 			]
-			title: "Fuel the Fire"
+			title: "&6Fuel the Fire"
 			x: -7.0d
 			y: 3.0d
 		}
@@ -264,7 +264,7 @@
 					type: "item"
 				}
 			]
-			title: "Suit Up"
+			title: "&6Suit Up"
 			x: -5.0d
 			y: 1.5d
 		}
@@ -290,7 +290,7 @@
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			title: "The NASA Workbench"
+			title: "&6The NASA Workbench"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -321,7 +321,7 @@
 			]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "T-minus 10..."
+			subtitle: "&7T-minus 10..."
 			tasks: [
 				{
 					id: "48681DB7BC6E0C52"
@@ -334,7 +334,7 @@
 					type: "item"
 				}
 			]
-			title: "&eLiftoff"
+			title: "&6Liftoff"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -345,7 +345,7 @@
 				""
 				"&6&lThis single landing unlocks two entire systems.&r"
 				"&7- &bAE2 autocrafting&7 - Molecular Assemblers and Crafting CPUs are framed in Desh. Storage worked without it; crafting does not."
-				"&7- &aThe Twilight Forest&7 - the portal will not light until you have stood here. Every Twilight boss, and therefore your ME Controller and the ending, is behind this trip."
+				"&7- &aThe Undergarden&7 - its catalyst is cored with &eDesh&7, so the Moon is what opens it."
 				""
 				"&c&lYou are the reason it is gated this way.&r Nothing else in the pack forces you off the island. This does."
 				""
@@ -363,13 +363,13 @@
 				item: "ad_astra:raw_desh"
 				type: "item"
 			}]
-			subtitle: "&cUnlocks the Twilight portal"
+			subtitle: "&7Desh, the ME Controller and the Undergarden"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				id: "66D267109143739F"
 				type: "dimension"
 			}]
-			title: "The Moon"
+			title: "&6The Moon"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -413,7 +413,7 @@
 					type: "item"
 				}
 			]
-			title: "Desh & Tier 2"
+			title: "&6Desh & Tier 2"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -448,7 +448,7 @@
 				id: "0D06BDC09913AB26"
 				type: "dimension"
 			}]
-			title: "Red Frontier"
+			title: "&6Red Frontier"
 			x: 4.0d
 			y: -1.0d
 		}
@@ -476,7 +476,7 @@
 					type: "item"
 				}
 			]
-			title: "Ostrum & Tier 3"
+			title: "&6Ostrum & Tier 3"
 			x: 6.0d
 			y: -1.0d
 		}
@@ -511,7 +511,7 @@
 				id: "3AE534BE40559A80"
 				type: "dimension"
 			}]
-			title: "Hell's Frontier"
+			title: "&6Hell's Frontier"
 			x: 8.0d
 			y: -1.5d
 		}
@@ -531,7 +531,7 @@
 				id: "542F68E4652B6C92"
 				type: "dimension"
 			}]
-			title: "The Scorched World"
+			title: "&6The Scorched World"
 			x: 8.0d
 			y: -0.5d
 		}
@@ -559,7 +559,7 @@
 					type: "item"
 				}
 			]
-			title: "Calorite & Tier 4"
+			title: "&6Calorite & Tier 4"
 			x: 10.0d
 			y: -1.5d
 		}
@@ -589,7 +589,7 @@
 				id: "50855D14DC4163DE"
 				type: "dimension"
 			}]
-			title: "The Edge of the System"
+			title: "&6The Edge of the System"
 			x: 12.0d
 			y: -1.5d
 		}
@@ -621,7 +621,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Master of the void"
+			subtitle: "&7Master of the void"
 			tasks: [{
 				id: "25FA8652F581974D"
 				item: {
@@ -846,5 +846,6 @@
 			y: 0.0d
 		}
 	]
+	subtitle: ["&7Rockets, planets and what is on them"]
 	title: "&9The Space Program"
 }

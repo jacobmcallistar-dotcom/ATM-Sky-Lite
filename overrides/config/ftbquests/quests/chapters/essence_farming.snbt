@@ -310,7 +310,7 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "&5Automating the Space Metals"
+			title: "&dAutomating the Space Metals"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -440,7 +440,7 @@
 					type: "item"
 				}
 			]
-			title: "&d&lAWAKENED"
+			title: "&d&lAwakened"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -487,5 +487,6 @@
 			y: 1.5d
 		}
 	]
+	subtitle: ["&7Grow anything, including metals"]
 	title: "&bMystical Agriculture"
 }

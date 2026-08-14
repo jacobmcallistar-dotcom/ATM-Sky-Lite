@@ -78,7 +78,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Advanced Generators"
+			title: "&6Advanced Generators"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -268,5 +268,6 @@
 			y: 1.5d
 		}
 	]
-	title: "&9Advanced Generators"
+	subtitle: ["&7Modular multiblock generators"]
+	title: "&6Advanced Generators"
 }

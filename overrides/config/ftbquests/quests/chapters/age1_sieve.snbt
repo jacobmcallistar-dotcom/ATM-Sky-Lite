@@ -49,7 +49,7 @@
 				title: "Take flight"
 				type: "checkmark"
 			}]
-			title: "&2The Sieve"
+			title: "&aThe Sieve"
 			x: -16.0d
 			y: 0.0d
 		}
@@ -482,7 +482,7 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "&bCertus From Sand"
+			title: "&aCertus From Sand"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -509,7 +509,7 @@
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
-			title: "&9Osmium From Gravel"
+			title: "&aOsmium From Gravel"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -631,7 +631,7 @@
 				item: "skyforge:sky_steel_ingot"
 				type: "item"
 			}]
-			title: "&2Ingots on Tap"
+			title: "&aIngots on Tap"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -819,7 +819,7 @@
 				"&e&lThe full hands-off line:&r"
 				"&7Cobble generator &8→&7 &fMechanical Hammer&7 &8→&7 gravel &8→&7 &fFlux Sieve&7 &8→&7 ore chunks &8→&7 &fEnergized Smelter&7 &8→&7 ingots&r"
 				""
-				"Every stage takes FE, and every stage runs while you are asleep, in the Twilight Forest, or on Mars."
+				"Every stage takes FE, and every stage runs while you are asleep, in the Aether, or on Mars."
 				""
 				"&7Unlike a hand hammer it has no durability and never needs replacing. Unlike the Create Millstone it does not care about rotation speed or stress - it just wants power.&r"
 				""
@@ -839,7 +839,7 @@
 				item: "exdeorum:mechanical_hammer"
 				type: "item"
 			}]
-			title: "&9The Mechanical Hammer"
+			title: "&aThe Mechanical Hammer"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -873,7 +873,7 @@
 				item: "exdeorum:mechanical_sieve"
 				type: "item"
 			}]
-			title: "&9The Mechanical Sieve"
+			title: "&aThe Mechanical Sieve"
 			x: 16.0d
 			y: 2.0d
 		}
@@ -915,7 +915,7 @@
 				item: "exdeorum:oak_compressed_sieve"
 				type: "item"
 			}]
-			title: "&9The Compressed Sieve"
+			title: "&aThe Compressed Sieve"
 			x: 18.0d
 			y: 2.0d
 		}
@@ -954,5 +954,6 @@
 			y: 0.0d
 		}
 	]
+	subtitle: ["&7From one tree to your first metal"]
 	title: "&2The Sieve"
 }

@@ -29,7 +29,7 @@
 				item: "compactmachines:machine_normal"
 				type: "item"
 			}]
-			title: "&2Compact Machines"
+			title: "&fCompact Machines"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -63,7 +63,7 @@
 				item: "compactmachines:tunnel_wall"
 				type: "item"
 			}]
-			title: "&2Tunnels"
+			title: "&fTunnels"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -82,7 +82,7 @@
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
-			title: "&2Personal Shrinking Device"
+			title: "&fPersonal Shrinking Device"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -217,5 +217,6 @@
 			y: 1.5d
 		}
 	]
+	subtitle: ["&7Rooms inside blocks"]
 	title: "&bCompact Machines"
 }

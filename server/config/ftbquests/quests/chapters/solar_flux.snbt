@@ -65,7 +65,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Solar Flux"
+			title: "&eSolar Flux"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -213,5 +213,6 @@
 			y: 1.5d
 		}
 	]
-	title: "&9Solar Flux"
+	subtitle: ["&7Panels that pay for themselves"]
+	title: "&6Solar Flux"
 }

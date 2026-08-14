@@ -32,7 +32,7 @@
 				title: "Open the toolbox of the End"
 				type: "checkmark"
 			}]
-			title: "&aEnder IO"
+			title: "&5Ender IO"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -60,7 +60,7 @@
 					type: "item"
 				}
 			]
-			title: "&aSmelt & Burn"
+			title: "&5Smelt & Burn"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -101,7 +101,7 @@
 					type: "item"
 				}
 			]
-			title: "&aConduits"
+			title: "&5Conduits"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -141,7 +141,7 @@
 					type: "item"
 				}
 			]
-			title: "&aThe SAG Mill"
+			title: "&5The SAG Mill"
 			x: -8.0d
 			y: -1.5d
 		}
@@ -182,7 +182,7 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			title: "&aDark Steel"
+			title: "&5Dark Steel"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -227,7 +227,7 @@
 					type: "item"
 				}
 			]
-			title: "&aSoul Industry"
+			title: "&5Soul Industry"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -263,7 +263,7 @@
 					type: "item"
 				}
 			]
-			title: "&aBlink Economy"
+			title: "&5Blink Economy"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -563,5 +563,6 @@
 			y: 2.2d
 		}
 	]
+	subtitle: ["&7Conduits, alloys and machines"]
 	title: "&bEnder IO"
 }

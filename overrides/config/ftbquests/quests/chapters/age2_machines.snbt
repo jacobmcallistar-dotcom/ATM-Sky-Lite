@@ -32,7 +32,7 @@
 				title: "Enter the Machine Age"
 				type: "checkmark"
 			}]
-			title: "&2First Machines"
+			title: "&9First Machines"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -59,7 +59,7 @@
 				item: "skyforge:industrial_keystone"
 				type: "item"
 			}]
-			title: "&2The Industrial Keystone"
+			title: "&9The Industrial Keystone"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -91,7 +91,7 @@
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
-			title: "&2Real Steel"
+			title: "&9Real Steel"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -331,7 +331,7 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			title: "&bFluix Crystals"
+			title: "&9Fluix Crystals"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -373,7 +373,7 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
-			title: "&bPress Start"
+			title: "&9Press Start"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -463,10 +463,11 @@
 					type: "item"
 				}
 			]
-			title: "&2The Machine Age"
+			title: "&9The Machine Age"
 			x: 0.0d
 			y: 0.0d
 		}
 	]
+	subtitle: ["&7Your first Mekanism line"]
 	title: "&2First Machines"
 }

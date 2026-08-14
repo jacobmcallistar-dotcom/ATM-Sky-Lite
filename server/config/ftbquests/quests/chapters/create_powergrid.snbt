@@ -508,11 +508,11 @@
 				item: "powergrid:integrated_circuit"
 				type: "item"
 			}]
-			title: "&6The Grid"
+			title: "&bThe Grid"
 			x: 6.0d
 			y: 0.8d
 		}
 	]
 	subtitle: ["&7Voltage, transformers and etched circuits"]
-	title: "&bCreate Power Grid"
+	title: "&6Create Power Grid"
 }

@@ -265,7 +265,9 @@
 			description: [
 				"Beyond mob drops, the chamber produces &eOverworld&r, &eNether&r, &eEnd&r and &eTwilight Predictions&r - dimensional loot tables rather than a single mob's drops."
 				""
-				"&e&lThe Twilight prediction is the interesting one here&r, because this pack gates so much behind the Twilight Forest. It is not a substitute for killing the bosses - trophies and Fiery Blood are boss-only - but it does supply the ordinary Twilight materials without repeated trips."
+				"&e&lThree predictions matter here&r - Overworld, Nether and End. Each one turns a tuned data model into that dimension's ordinary mob drops, on your island, without the trip."
+				""
+				"&8A Twilight prediction also exists in the item list. Ignore it - Twilight Forest is not installed in this pack, so it has nothing to produce."
 				""
 				"&7Each dimensional prediction rolls from that dimension's general loot rather than giving a chosen item, so treat them as bulk supply rather than targeted farming.&r"
 			]
@@ -276,7 +278,7 @@
 				type: "xp"
 				xp: 30
 			}]
-			subtitle: "&7Nether, End and Twilight tables"
+			subtitle: "&7Overworld, Nether and End tables"
 			tasks: [{
 				id: "7C02000000000600"
 				item: "hostilenetworks:nether_prediction"
@@ -345,5 +347,6 @@
 			y: 0.8d
 		}
 	]
+	subtitle: ["&7Mob drops without the mobs"]
 	title: "&bNeural Networks"
 }

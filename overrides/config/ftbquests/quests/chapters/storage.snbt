@@ -443,7 +443,7 @@
 			description: [
 				"Tom's Simple Storage gives you a searchable terminal across connected inventories with no channels, no cables and no power."
 				""
-				"&e&lIt is the correct mid-game answer.&r AE2 is expensive and gated behind the Naga; this needs a terminal, some trims and a few chests."
+				"&e&lIt is the correct mid-game answer.&r AE2 is expensive and gated behind a trip to the Moon; this needs a terminal, some trims and a few chests."
 				""
 				"&7Tom's Performant Storage is also installed - same features, far less lag on big networks.&r"
 				""
@@ -545,5 +545,6 @@
 			y: 3.8d
 		}
 	]
+	subtitle: ["&7Drawers, backpacks and terminals"]
 	title: "&bStorage"
 }

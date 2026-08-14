@@ -161,7 +161,7 @@
 					type: "item"
 				}
 			]
-			title: "&aBotania"
+			title: "&dBotania"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -201,7 +201,7 @@
 					type: "item"
 				}
 			]
-			title: "&aFunctional Flowers"
+			title: "&dFunctional Flowers"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -259,7 +259,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Occultism"
+			title: "&dOccultism"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -535,10 +535,11 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&aArs Creo"
+			title: "&dArs Creo"
 			x: 6.0d
 			y: 3.0d
 		}
 	]
+	subtitle: ["&7Spellcraft and automation"]
 	title: "&bArs Nouveau"
 }

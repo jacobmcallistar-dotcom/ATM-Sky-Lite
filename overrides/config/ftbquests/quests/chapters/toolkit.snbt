@@ -63,7 +63,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&bJade"
+			title: "&fJade"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -93,7 +93,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&6Inventory Profiles Next"
+			title: "&fInventory Profiles Next"
 			x: -1.5d
 			y: -1.5d
 		}
@@ -112,7 +112,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&6Quests Additions"
+			title: "&fQuests Additions"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -131,7 +131,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&aTom's Performant Storage"
+			title: "&fTom's Performant Storage"
 			x: 4.5d
 			y: -1.5d
 		}
@@ -156,7 +156,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&5Elytra Slot"
+			title: "&fElytra Slot"
 			x: -2.0d
 			y: 0.5d
 		}
@@ -290,5 +290,6 @@
 			y: 1.0d
 		}
 	]
+	subtitle: ["&7Small mods that earn their slot"]
 	title: "&bThe Toolkit"
 }

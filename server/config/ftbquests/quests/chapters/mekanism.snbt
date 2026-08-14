@@ -32,7 +32,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "The industrial backbone"
+			subtitle: "&7The industrial backbone"
 			tasks: [{
 				id: "1F8D57A48E28B9CF"
 				title: "Begin Mekanism"
@@ -72,7 +72,7 @@
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			title: "Split the Water"
+			title: "&9Split the Water"
 			x: -7.0d
 			y: -1.0d
 		}
@@ -106,7 +106,7 @@
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
-			title: "Triple Your Ores"
+			title: "&9Triple Your Ores"
 			x: -3.0d
 			y: -1.5d
 		}
@@ -130,7 +130,7 @@
 				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
-			title: "Quadruple Your Ores"
+			title: "&9Quadruple Your Ores"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -149,7 +149,7 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "Advanced Circuits"
+			title: "&9Advanced Circuits"
 			x: -1.0d
 			y: 1.5d
 		}
@@ -188,7 +188,7 @@
 					type: "item"
 				}
 			]
-			title: "Elite & Ultimate Circuits"
+			title: "&9Elite & Ultimate Circuits"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -212,7 +212,7 @@
 				item: "mekanism:basic_smelting_factory"
 				type: "item"
 			}]
-			title: "Automate It: Factories"
+			title: "&9Automate It: Factories"
 			x: -1.0d
 			y: 3.0d
 		}
@@ -260,7 +260,7 @@
 					type: "item"
 				}
 			]
-			title: "Mass Production"
+			title: "&9Mass Production"
 			x: 1.0d
 			y: 3.0d
 		}
@@ -280,7 +280,7 @@
 				""
 				"&c&lIt is genuinely expensive to run&r and gets more so with radius. Start small."
 				""
-				"&8On a void island the honest use is clearing terrain in other dimensions - the Twilight Forest and the planets have real ore, and this is how you strip-mine them without swinging a pickaxe."
+				"&8On a void island the honest use is clearing terrain in other dimensions - the Aether and the planets have real ore, and this is how you strip-mine them without swinging a pickaxe."
 			]
 			icon: "mekanism:digital_miner"
 			id: "6E9FFB8BA9EFA7A6"
@@ -295,7 +295,7 @@
 				item: "mekanism:digital_miner"
 				type: "item"
 			}]
-			title: "The Digital Miner"
+			title: "&9The Digital Miner"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -327,7 +327,7 @@
 				item: "mekanism:teleporter"
 				type: "item"
 			}]
-			title: "Teleporter"
+			title: "&9Teleporter"
 			x: -5.0d
 			y: 3.0d
 		}
@@ -359,7 +359,7 @@
 				item: "mekanism:quantum_entangloporter"
 				type: "item"
 			}]
-			title: "Quantum Logistics"
+			title: "&9Quantum Logistics"
 			x: 5.0d
 			y: 0.5d
 		}
@@ -403,7 +403,7 @@
 					type: "item"
 				}
 			]
-			title: "MekaSuit & Meka-Tool"
+			title: "&9MekaSuit & Meka-Tool"
 			x: 3.0d
 			y: 2.5d
 		}
@@ -432,7 +432,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Mekanism mastered"
+			subtitle: "&7Mekanism mastered"
 			tasks: [{
 				id: "32542E1805A8AB04"
 				item: "mekanism:steel_casing"
@@ -1316,7 +1316,7 @@
 			description: [
 				"The &eSeismic Vibrator&r scans the chunk it sits in and, read with a &7Seismic Reader&r, tells you exactly what blocks are in the column beneath you and at what depth."
 				""
-				"&e&lOn a void island this is nearly useless&r - there is nothing beneath you. Its value is entirely off-world: the Moon, Mars, Venus, Glacio and the Twilight Forest all have real terrain and real ore."
+				"&e&lOn a void island this is nearly useless&r - there is nothing beneath you. Its value is entirely off-world: the Moon, Mars, Venus, Glacio and the Aether all have real terrain and real ore."
 				""
 				"&7Pair it with the Digital Miner. Vibrator to find out whether a spot is worth mining, Digital Miner to strip it without digging.&r"
 				""
@@ -1522,5 +1522,6 @@
 			y: 6.5d
 		}
 	]
+	subtitle: ["&7The industrial backbone"]
 	title: "&9Mekanism"
 }

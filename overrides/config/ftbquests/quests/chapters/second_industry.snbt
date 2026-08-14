@@ -523,7 +523,7 @@
 				item: "thermal:watering_can"
 				type: "item"
 			}]
-			title: "&aThermal Cultivation"
+			title: "&6Thermal Cultivation"
 			x: -7.0d
 			y: 4.0d
 		}
@@ -548,7 +548,7 @@
 				item: "thermal:flux_drill"
 				type: "item"
 			}]
-			title: "&aThermal Innovation"
+			title: "&6Thermal Innovation"
 			x: -5.0d
 			y: 4.0d
 		}
@@ -571,7 +571,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&aThermal Locomotion"
+			title: "&6Thermal Locomotion"
 			x: -7.0d
 			y: 5.5d
 		}
@@ -596,10 +596,11 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&aThermal Integration"
+			title: "&6Thermal Integration"
 			x: -5.0d
 			y: 5.5d
 		}
 	]
+	subtitle: ["&7Thermal machines and dynamos"]
 	title: "&bThermal Series"
 }

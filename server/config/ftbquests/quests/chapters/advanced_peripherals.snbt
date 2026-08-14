@@ -29,7 +29,7 @@
 				item: "advancedperipherals:geo_scanner"
 				type: "item"
 			}]
-			title: "&cAdvanced Peripherals"
+			title: "&bAdvanced Peripherals"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -48,7 +48,7 @@
 				item: "advancedperipherals:chat_box"
 				type: "item"
 			}]
-			title: "&cChat Box"
+			title: "&bChat Box"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -74,7 +74,7 @@
 					type: "item"
 				}
 			]
-			title: "&cDetectors"
+			title: "&bDetectors"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -106,7 +106,7 @@
 				item: "advancedperipherals:me_bridge"
 				type: "item"
 			}]
-			title: "&cME Bridge"
+			title: "&bME Bridge"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -261,7 +261,7 @@
 			description: [
 				"The &eGeo Scanner&r returns every block in a radius as data a script can process."
 				""
-				"&e&lUseless at home, excellent off-world.&r Your island is hollow. The Moon, Mars, Venus, Glacio and the Twilight Forest all have real terrain worth scanning before you commit a Digital Miner."
+				"&e&lUseless at home, excellent off-world.&r Your island is hollow. The Moon, Mars, Venus, Glacio and the Aether all have real terrain worth scanning before you commit a Digital Miner."
 				""
 				"&7It has a cooldown that scales with radius, so scripts should scan coarsely first and refine.&r"
 			]
@@ -334,5 +334,6 @@
 			y: 2.2d
 		}
 	]
+	subtitle: ["&7Computers that touch the world"]
 	title: "&bComputers"
 }
