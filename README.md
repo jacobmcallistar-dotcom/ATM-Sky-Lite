@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (210 server / 211 client mods) built around
+A Minecraft **1.20.1 Forge** void-skyblock modpack (216 server / 217 client mods) built around
 Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -25,11 +25,32 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
 
 ## Install (to play)
 
-1. Install **Forge 1.20.1 – 47.3.0** from <https://files.minecraftforge.net/> ("Install client").
+1. Install **Forge 1.20.1 – 47.4.10** from <https://files.minecraftforge.net/> ("Install client").
 2. Launch the Minecraft launcher once, pick the new Forge profile, then close it.
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
+
+> **Unreleased — Forge 47.4.10. 216 server / 217 client mods.**
+>
+> **The pack has moved from Forge 47.3.0 to 47.4.10** (Forge's *recommended* build, not the
+> 47.4.22 latest). Everyone must reinstall Forge — an old 47.3.0 client will not connect.
+>
+> Forge 47.4 lets a mod declare a constructor taking `FMLJavaModLoadingContext`. On 47.3.0
+> Forge looked for a no-arg constructor instead, so those mods died with
+> `NoSuchMethodException` — or `VerifyError` if they merely *referenced* the newer signature.
+> Several declared a compatible `versionRange` and failed anyway, which is why the only
+> reliable detection was booting or scanning class bytecode for that signature.
+>
+> **Six mods unblocked and installed:** Create Connected, Create Tweaked Controllers, Create
+> Compatible Storage, Mekanism Extras, Mekanism More Machine, Mekanism MoreModules.
+>
+> Two of the eight stayed out on purpose:
+>
+> | Not re-added | Why |
+> |---|---|
+> | Create Interiors | decorative, and the decorative set was deliberately trimmed |
+> | Create Ultimine | needs FTB Ultimine ≥ 2001.1.8; the pack has 2001.1.4 and FTB Ultimine is CurseForge-only |
 
 > **Unreleased — the quest book rebuilt. 38 chapters, 623 quests.**
 >
