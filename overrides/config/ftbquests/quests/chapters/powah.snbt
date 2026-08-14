@@ -388,6 +388,272 @@
 			x: -2.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["7B00000000000009"]
+			description: [
+				"Powah's &eReactor&r is a multiblock that consumes uraninite and produces FE continuously - the backbone of a serious base."
+				""
+				"&e&lThe build is a solid cube of reactor blocks&r with a controller. Bigger tiers mean bigger cubes and far more output."
+				""
+				"&e&lIt needs coolant.&r Feed it water, or better, a coolant fluid. An overheating reactor throttles itself down to nothing - it will not explode like Mekanism fission, but it will quietly stop paying you."
+				""
+				"&c&lFuel is consumed continuously&r, unlike your Thermo Generators. Get Mystical Agriculture uraninite seeds running before you commit the base to reactor power, or you will be babysitting fuel forever."
+				""
+				"&7Output scales hard with tier. A Nitro reactor makes a Basic one look like a decoration.&r"
+			]
+			icon: "powah:reactor_basic"
+			id: "7B0000000000000A"
+			rewards: [{
+				id: "7B0100000000000A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Uraninite into serious power"
+			tasks: [{
+				id: "7B02000000000A00"
+				item: "powah:reactor_basic"
+				type: "item"
+			}]
+			title: "&9Reactor Tiers"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B0000000000000A"]
+			description: [
+				"&eEnder Cells&r transfer energy wirelessly between linked cells - no cable, any distance, across dimensions."
+				""
+				"&e&lThis is the reason to care about Powah beyond generation.&r One cell at your reactor bank, another on the Moon, and your off-world base is powered from home. No Quantum Ring required."
+				""
+				"&e&lLink them with a &fBinding Card&r&e:&r right-click the source cell to bind the card, then right-click the destination. The &7dimensional&r binding card variant is what makes cross-planet links work."
+				""
+				"&7Tier sets transfer rate. A Basic ender cell will trickle; a Nitro one will run a full off-world machine room.&r"
+				""
+				"&8Between this and the Mekanism Entangloporter you never need to lay cable between islands again."
+			]
+			icon: "powah:ender_cell_basic"
+			id: "7B0000000000000B"
+			rewards: [{
+				id: "7B0100000000000B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Wireless energy, any distance"
+			tasks: [{
+				id: "7B02000000000B00"
+				item: "powah:ender_cell_basic"
+				type: "item"
+			}]
+			title: "&9Ender Cells"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B0000000000000B"]
+			description: [
+				"An &eEnder Gate&r is a hub that several Ender Cells can bind to, so you can distribute from one source to many destinations without pairing every cell individually."
+				""
+				"&e&lThe practical setup:&r gate at your main power bank, cells at each outpost bound to the gate. Add an outpost later and you bind one card rather than rewiring anything."
+				""
+				"&7It also lets you keep a single point of control - unbind the gate and every outpost drops at once, which is occasionally exactly what you want.&r"
+			]
+			icon: "powah:ender_gate_basic"
+			id: "7B0000000000000C"
+			rewards: [{
+				id: "7B0100000000000C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Many cells, one hub"
+			tasks: [{
+				id: "7B02000000000C00"
+				item: "powah:ender_gate_basic"
+				type: "item"
+			}]
+			title: "&9Ender Gates"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B0000000000000B"]
+			description: [
+				"The &ePlayer Transmitter&r beams energy directly into whatever you are carrying - jetpacks, Free Runners, a Meka-Tool, a Draconic pickaxe."
+				""
+				"&e&lBind it to yourself with a Binding Card&r and it keeps your gear topped up while you are in range. With a dimensional card, from anywhere."
+				""
+				"&c&lThis quietly solves the single most annoying failure mode in the pack&r - Free Runners going flat mid-fall, a jetpack cutting out over the void, a MekaSuit module dying when you need it."
+				""
+				"&7Feed it from an Energy Cell. It draws steadily rather than in bursts.&r"
+			]
+			icon: "powah:player_transmitter"
+			id: "7B0000000000000D"
+			rewards: [{
+				id: "7B0100000000000D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Charge yourself, wirelessly"
+			tasks: [{
+				id: "7B02000000000D00"
+				item: "powah:player_transmitter"
+				type: "item"
+			}]
+			title: "&9Player Transmitter"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B0000000000000D"]
+			description: [
+				"&eBatteries&r are portable FE storage - charge one at base, carry it, use it to top up tools and machines in the field."
+				""
+				"&e&lUseful specifically for building off-world&r, where you arrive with no grid and need to run an Oxygen Distributor immediately. A charged Nitro battery will hold a small outpost over until you get generation up."
+				""
+				"&7They charge from any FE source and will charge items in your inventory automatically.&r"
+				""
+				"&8Cheaper and more flexible than carrying an Energy Cell block, though it holds far less."
+			]
+			icon: "powah:battery_basic"
+			id: "7B0000000000000E"
+			rewards: [{
+				id: "7B0100000000000E"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Power in your pocket"
+			tasks: [{
+				id: "7B02000000000E00"
+				item: "powah:battery_basic"
+				type: "item"
+			}]
+			title: "&9Portable Batteries"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B0000000000000C"]
+			description: [
+				"The &eLens of Ender&r lets you see ore and blocks through terrain in a radius around you."
+				""
+				"&e&lPractically useless at home&r - your island is hollow. Genuinely good on the Moon, Mars, Venus, Glacio and in the Aether, where there is real stone hiding real ore."
+				""
+				"&7Pair it with the Mekanism Digital Miner: lens to find out whether a spot is worth mining, miner to strip it without digging.&r"
+				""
+				"&8Costs energy while active. Keep it charged or it simply does nothing."
+			]
+			icon: "powah:lens_of_ender"
+			id: "7B0000000000000F"
+			rewards: [{
+				id: "7B0100000000000F"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7See through the world"
+			tasks: [{
+				id: "7B02000000000F00"
+				item: "powah:lens_of_ender"
+				type: "item"
+			}]
+			title: "&9Lens of Ender"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B0000000000000F"]
+			description: [
+				"A &ePhotoelectric Pane&r is a flat, thin solar generator you can build into a roof or wall rather than placing as a machine."
+				""
+				"&e&lIt produces less than a proper solar panel&r, but it tiles, it looks like part of the building, and it costs almost nothing."
+				""
+				"&7On a floating island where your whole roof is exposed sky, a field of these is a surprisingly reasonable trickle supply for lighting and low-draw machines.&r"
+			]
+			icon: "powah:photoelectric_pane"
+			id: "7B00000000000010"
+			rewards: [{
+				id: "7B01000000000010"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Solar as a building block"
+			tasks: [{
+				id: "7B02000000001000"
+				item: "powah:photoelectric_pane"
+				type: "item"
+			}]
+			title: "&9Photoelectric Pane"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7B00000000000010"
+				"7B0000000000000E"
+				"7B0000000000000A"
+			]
+			description: [
+				"&9&lYou have run the whole Powah ladder.&r"
+				""
+				"Solid fuel, lava, sunlight, and finally a reactor. Cells to buffer it, cables to move it, and Ender Cells to throw it across the solar system without a single wire."
+				""
+				"&7Powah is deliberately the &lsimple&r power mod in this pack - no gas plumbing, no heat management, no meltdowns. It scales by tier rather than by complexity, which makes it the right thing to lean on while you build the harder systems in Mekanism.&r"
+				""
+				"&8If your base browns out, it is almost always cable tier or missing buffer - not generation."
+			]
+			icon: "powah:reactor_nitro"
+			id: "7B00000000000011"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7B01000000000011"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7From uraninite to wireless"
+			tasks: [{
+				id: "7B02000000001100"
+				title: "Master Powah"
+				type: "checkmark"
+			}]
+			title: "&9&lPowah Complete"
+			x: 10.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2103000000000007"
+				"2103000000000009"
+				"19236F17F30F94C7"
+			]
+			description: [
+				"Reactor humming, matrix charged, mobs on tap. You have industrial power and industrial resources."
+				""
+				"&cAct III opens: War in the Sky, The Void Signal and The Bestiary.&r"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "210300000000000B"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "210300000000010B"
+					type: "random"
+				}
+				{
+					id: "210300000000010C"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Chapter complete"
+			tasks: [{
+				id: "210300000000020B"
+				title: "The grid is online"
+				type: "checkmark"
+			}]
+			title: "&9Powered Up"
+			x: 12.0d
+			y: 0.0d
+		}
 	]
 	subtitle: ["&7Reactors, cells and cables"]
 	title: "&6Powah"
