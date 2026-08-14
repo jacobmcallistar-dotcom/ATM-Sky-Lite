@@ -5,7 +5,7 @@
 	group: "1A2B000000000005"
 	icon: "ars_nouveau:apprentice_spell_book"
 	id: "77BC0A8FF6938B38"
-	order_index: 12
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

@@ -44,7 +44,13 @@
 		}
 		{
 			dependencies: ["1FA9577AA6C0D787"]
-			description: ["Build a Charger and charge Certus Quartz into Charged Certus - the spark for Fluix."]
+			description: [
+				"The &eCharger&r turns Certus Quartz into &bCharged Certus Quartz&r - the form every AE2 recipe past the basics actually wants."
+				""
+				"It needs power and a little patience. Feed it from any FE source; it draws very little."
+				""
+				"&7Charged Certus is also half of Fluix - drop charged certus, redstone and nether quartz into water and it crystallises. Fluix is the backbone of every cable and processor you are about to make.&r"
+			]
 			icon: "ae2:charged_certus_quartz_crystal"
 			id: "122843FE1BF8B653"
 			rewards: [{
@@ -711,7 +717,13 @@
 		}
 		{
 			dependencies: ["1FB9000000000001"]
-			description: ["The &eWireless Universal Terminal&r puts crafting, storage and pattern access in your hand from anywhere in range - no more walking back to the network to check a recipe."]
+			description: [
+				"The &eWireless Universal Terminal&r is your whole network in your pocket - crafting, patterns and storage, without walking back to a wall."
+				""
+				"&e&lIt needs a Wireless Access Point&r placed and connected, and it has a range. Extend that with ME Wireless Boosters in the access point."
+				""
+				"&7\"Universal\" means it merges the separate terminals - crafting, pattern encoding, pattern access - into one item, so you carry one thing instead of four.&r"
+			]
 			icon: "ae2wtlib:wireless_universal_terminal"
 			id: "0199C6AC85B0298A"
 			rewards: [{
@@ -730,7 +742,13 @@
 			y: -4.0d
 		}
 		{
-			description: ["&eExtended AE&r's Expanded Pattern Provider holds 72 patterns instead of 9, and multiplies pattern encoding so a single stack becomes an entire crafting tree. Big-base automation QoL."]
+			description: [
+				"An ordinary Pattern Provider holds 9 patterns. The &eExpanded Pattern Provider&r holds &l72&r."
+				""
+				"&e&lThis is a space problem, not a power problem.&r Once autocrafting covers a whole mod, you run out of provider faces long before you run out of CPU. Eight times the density means one block where you had eight."
+				""
+				"&7Same rules as the vanilla provider - it pushes ingredients to the machine in front and expects the result back.&r"
+			]
 			icon: "expatternprovider:ex_pattern_provider"
 			id: "439099E3AEF701AA"
 			rewards: [{
@@ -749,7 +767,13 @@
 			y: -4.0d
 		}
 		{
-			description: ["&eMEGA Cells&r: a single storage cell that holds a colossal number of item types. When your 64k disk starts filling up, this is where you go instead of buying a second one."]
+			description: [
+				"&eMEGA Cells&r pick up where AE2's own storage stops. A 64M cell holds a thousand times what a 64k holds."
+				""
+				"&c&lThey are gated behind Venus.&r MEGA cells are forged from Sky Steel, which is made with Calorite - so this is an outer-planet project, not a mid-game one."
+				""
+				"&7Type count still matters as much as raw capacity. A cell with huge space and few types will fill up on variety long before it fills on volume.&r"
+			]
 			icon: "megacells:item_storage_cell_64m"
 			id: "4898530DE0904B6E"
 			rewards: [{
@@ -825,7 +849,13 @@
 		}
 		{
 			dependencies: ["1912A7D531B8F103"]
-			description: ["A &e1k Storage Disk&r is your first real capacity - slot it into a Disk Drive and the network has somewhere to actually put things. RS uses disks where AE2 uses cells; the idea is the same, the crafting chain is cheaper."]
+			description: [
+				"Refined Storage's answer to AE2 cells. A &e1k Storage Disk&r goes in a Disk Drive and gives the network somewhere to put things."
+				""
+				"&e&lRefined Storage is deliberately simpler than AE2&r - no channels, no controller placement rules, one network that just works. It is the gentler path, and there is nothing wrong with taking it."
+				""
+				"&7You can run both. They do not share storage, but nothing stops you using RS for bulk and AE2 for autocrafting.&r"
+			]
 			icon: "refinedstorage:1k_storage_disk"
 			id: "51D6738AB8937CEE"
 			rewards: [{
@@ -872,7 +902,13 @@
 		}
 		{
 			dependencies: ["6B74132EA7DDC9DD"]
-			description: ["An &eExternal Storage&r part reaches into a chest, barrel or drawer sitting outside the network and makes its contents visible and usable as if it were a disk. Every old chest on your island just joined the grid."]
+			description: [
+				"The &eExternal Storage&r block exposes an ordinary inventory - a chest, a barrel, a drawer wall - to the network as if it were a disk."
+				""
+				"&e&lThis is the cheapest storage upgrade in the pack.&r You already have chests full of things. One block per wall and the network can see all of them, with no cells to craft."
+				""
+				"&7Especially good pointed at Storage Drawers: the drawers do the bulk capacity, the network does the searching.&r"
+			]
 			icon: "refinedstorage:external_storage"
 			id: "3599AD744A70233F"
 			rewards: [{

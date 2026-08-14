@@ -5,7 +5,7 @@
 	group: "1A2B000000000005"
 	icon: "minecraft:end_portal_frame"
 	id: "6624A5986578FCC4"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -68,7 +68,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["A &ePersonal Shrinking Device&r lets you walk into your own pocket rooms at will - no crafting a door, just point and shrink."]
+			description: [
+				"The &ePersonal Shrinking Device&r is how you get inside a Compact Machine."
+				""
+				"&e&lThe machine is a room in its own dimension.&r From outside it is one block; inside it is anywhere from 3x3 to 16x16. Right-click with this to enter, and use the exit to leave."
+				""
+				"&7Hide an entire processing wing inside a single block. The chunk it lives in still has to be loaded for it to run.&r"
+			]
 			icon: "compactmachines:personal_shrinking_device"
 			id: "07736704666D9DC2"
 			rewards: [{

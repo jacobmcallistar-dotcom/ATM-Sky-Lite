@@ -5,7 +5,7 @@
 	group: "1A2B000000000005"
 	icon: "advancedperipherals:geo_scanner"
 	id: "353534BEE9A95F72"
-	order_index: 9
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -34,7 +34,13 @@
 			y: -1.5d
 		}
 		{
-			description: ["The &eChat Box&r reads and sends in-game chat from Lua - build a bot, log events, or bridge chat to a Discord webhook."]
+			description: [
+				"The &eChat Box&r lets a computer read and write chat."
+				""
+				"&e&lWhat it is actually for:&r status reporting. A program that watches your power, your ore buffer or a reactor's temperature and says something in chat when it matters - so you find out before the base stops."
+				""
+				"&7Pair it with a Player Detector to have it greet or warn only when someone is present.&r"
+			]
 			icon: "advancedperipherals:chat_box"
 			id: "38FC9026999746D9"
 			rewards: [{

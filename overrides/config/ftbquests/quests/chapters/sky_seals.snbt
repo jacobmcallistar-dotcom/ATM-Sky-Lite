@@ -25,7 +25,11 @@
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "&7Nine industries, one lattice"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:sky_matrix", type: "item" }]
+			tasks: [{
+				id: "5F157308530BC060"
+				item: "kubejs:sky_matrix"
+				type: "item"
+			}]
 			title: "&5The Nine Seals"
 			x: 0.0d
 			y: -3.0d
@@ -42,7 +46,11 @@
 			icon: "kubejs:seal_circuits"
 			id: "5E50000000000002"
 			subtitle: "&7Mekanism"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_circuits", type: "item" }]
+			tasks: [{
+				id: "53643F52888E6726"
+				item: "kubejs:seal_circuits"
+				type: "item"
+			}]
 			title: "&9Seal of Circuits"
 			x: -6.0d
 			y: -1.5d
@@ -59,7 +67,11 @@
 			icon: "kubejs:seal_network"
 			id: "5E50000000000003"
 			subtitle: "&7Applied Energistics"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_network", type: "item" }]
+			tasks: [{
+				id: "1333065EF3D61BDA"
+				item: "kubejs:seal_network"
+				type: "item"
+			}]
 			title: "&bSeal of the Network"
 			x: -4.0d
 			y: -1.5d
@@ -76,7 +88,11 @@
 			icon: "kubejs:seal_rotation"
 			id: "5E50000000000004"
 			subtitle: "&7Create"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_rotation", type: "item" }]
+			tasks: [{
+				id: "43AF7E37A1AB521B"
+				item: "kubejs:seal_rotation"
+				type: "item"
+			}]
 			title: "&eSeal of Rotation"
 			x: -2.0d
 			y: -1.5d
@@ -93,7 +109,11 @@
 			icon: "kubejs:seal_flux"
 			id: "5E50000000000005"
 			subtitle: "&7Powah"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_flux", type: "item" }]
+			tasks: [{
+				id: "6957CC58232A8973"
+				item: "kubejs:seal_flux"
+				type: "item"
+			}]
 			title: "&9Seal of Flux"
 			x: 0.0d
 			y: -1.5d
@@ -110,7 +130,11 @@
 			icon: "kubejs:seal_dragon"
 			id: "5E50000000000006"
 			subtitle: "&7Draconic Evolution"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_dragon", type: "item" }]
+			tasks: [{
+				id: "5378B2CFB7D4B40F"
+				item: "kubejs:seal_dragon"
+				type: "item"
+			}]
 			title: "&5Seal of the Dragon"
 			x: 2.0d
 			y: -1.5d
@@ -127,7 +151,11 @@
 			icon: "kubejs:seal_growth"
 			id: "5E50000000000007"
 			subtitle: "&7Mystical Agriculture"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_growth", type: "item" }]
+			tasks: [{
+				id: "5E2A800F795F4508"
+				item: "kubejs:seal_growth"
+				type: "item"
+			}]
 			title: "&dSeal of Growth"
 			x: 4.0d
 			y: -1.5d
@@ -146,7 +174,11 @@
 			icon: "kubejs:seal_swarm"
 			id: "5E50000000000008"
 			subtitle: "&7Productive Bees"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_swarm", type: "item" }]
+			tasks: [{
+				id: "7A55F2A96C37183F"
+				item: "kubejs:seal_swarm"
+				type: "item"
+			}]
 			title: "&6Seal of the Swarm"
 			x: -4.0d
 			y: 0.0d
@@ -163,7 +195,11 @@
 			icon: "kubejs:seal_ender"
 			id: "5E50000000000009"
 			subtitle: "&7Ender IO"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_ender", type: "item" }]
+			tasks: [{
+				id: "11293D15A24017A8"
+				item: "kubejs:seal_ender"
+				type: "item"
+			}]
 			title: "&aSeal of Ender"
 			x: -2.0d
 			y: 0.0d
@@ -180,13 +216,27 @@
 			icon: "kubejs:seal_dimension"
 			id: "5E5000000000000A"
 			subtitle: "&7RFTools"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:seal_dimension", type: "item" }]
+			tasks: [{
+				id: "1CF01FD15E76437D"
+				item: "kubejs:seal_dimension"
+				type: "item"
+			}]
 			title: "&6Seal of Dimensions"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5E50000000000002", "5E50000000000003", "5E50000000000004", "5E50000000000005", "5E50000000000006", "5E50000000000007", "5E50000000000008", "5E50000000000009", "5E5000000000000A"]
+			dependencies: [
+				"5E50000000000002"
+				"5E50000000000003"
+				"5E50000000000004"
+				"5E50000000000005"
+				"5E50000000000006"
+				"5E50000000000007"
+				"5E50000000000008"
+				"5E50000000000009"
+				"5E5000000000000A"
+			]
 			description: [
 				"&5&lNine seals in one grid.&r"
 				""
@@ -199,7 +249,11 @@
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "&7All nine, no substitutions"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:sky_matrix", type: "item" }]
+			tasks: [{
+				id: "1AC3B1FF674FD533"
+				item: "kubejs:sky_matrix"
+				type: "item"
+			}]
 			title: "&5The Sky Matrix"
 			x: 0.0d
 			y: 1.5d
@@ -221,7 +275,11 @@
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "&7Conquest and industry in one hand"
-			tasks: [{ id: "5E500000000000T0", item: "kubejs:ascension_core", type: "item" }]
+			tasks: [{
+				id: "6DE3C47BAD4F34A8"
+				item: "kubejs:ascension_core"
+				type: "item"
+			}]
 			title: "&5The Ascension Core"
 			x: 0.0d
 			y: 3.0d

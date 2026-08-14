@@ -136,6 +136,17 @@
 		}
 		{
 			dependencies: ["6C0C75598D65CE7D"]
+			description: [
+				"&eAdvanced Control Circuits&r need enriched circuits and gold. They gate tier-2 machines and factories."
+				""
+				"&c&lThis is the circuit that unlocks AE2.&r The Inscriber in this pack is built around one, which is the pack's way of saying the digital age does not start until the electric one is running properly. If you are impatient to start AE2, this quest is the whole bottleneck."
+				""
+				"&e&lThey are also the gate on:&r Advanced Factories, the Digital Miner, tier-2 Energy Cubes, and most of the machines worth owning."
+				""
+				"&7Make far more than you think you need. Circuits are consumed by every upgrade, every factory tier and every new machine - and hand-crafting them in batches of four is the thing that will make you finally build autocrafting.&r"
+				""
+				"&8Enriched Alloy is the ingredient that limits you, and it comes from the Metallurgic Infuser with an infused-redstone buffer. Keep that machine fed and circuits stop being a problem."
+			]
 			icon: "mekanism:advanced_control_circuit"
 			id: "267D2B1D2D8750CC"
 			rewards: [{

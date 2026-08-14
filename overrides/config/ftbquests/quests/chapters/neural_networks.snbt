@@ -5,7 +5,7 @@
 	group: "1A2B000000000005"
 	icon: "hostilenetworks:deep_learner"
 	id: "3C1F000000000019"
-	order_index: 8
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{

@@ -46,6 +46,23 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"&6Create: Steam 'n' Rails&r adds trains. Lay &etrack&r, mount a &esemaphore&r for signaling, and top off a locomotive with a &econductor's cap&r before you drive it."
+				""
+				"&e&lOn a floating island, trains are not decoration.&r They are the cheapest way to move large amounts of material between platforms that are too far apart to belt and too close to justify an AE2 network."
+				""
+				"&e&lThe build order that works:&r"
+				"&71.&r Lay &7Train Track&r with the &7Railway Casing&r - it auto-curves and bridges gaps, so you do not place every piece by hand."
+				"&72.&r Place a &7Train Station&r beside the track and name it."
+				"&73.&r Build the train on the track using a &7Train Assembler&r - bogeys first, then the body."
+				"&74.&r Assemble from the station, then give it a &7Schedule&r."
+				""
+				"&e&lSchedules are the actual feature.&r A schedule is a little program - go to station A, wait until cargo full, go to station B, wait 30 seconds, repeat. Hand it to a &7Conductor&r and the train runs itself forever with no player nearby."
+				""
+				"&7Semaphores and signals stop two trains colliding on shared track. With one train you can skip them entirely.&r"
+				""
+				"&8Fully optional. Nothing in the progression requires a train - but hauling stacks of ore chunks across your island by hand gets old fast."
+			]
 			icon: "railways:semaphore"
 			id: "6187A9055B14303B"
 			rewards: [{
@@ -73,6 +90,15 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"A &eGearbox&r takes rotation in one axis and sends it out on another. Vertical shaft to horizontal, and back."
+				""
+				"&c&lIt reverses direction on the opposite side.&r Two outputs from one gearbox spin opposite ways. This is either exactly what you want or the reason your contraption is fighting itself."
+				""
+				"&7A &fVertical Gearbox&r does the same job in the other orientation. Use the Engineer's Goggles to see which way anything is actually turning.&r"
+				""
+				"&8Encased shafts and gearboxes look tidier and stop the rotation snagging on adjacent cogs you did not mean to connect."
+			]
 			icon: "create:gearbox"
 			id: "7F00000000000001"
 			rewards: [{
@@ -220,6 +246,15 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"&eMechanical Belts&r carry items between machines. Place two shafts and connect them with a Belt Connector."
+				""
+				"&e&lBelts also transmit rotation&r along their length, so a belt is both a conveyor and a driveshaft. That is often the tidiest way to power a machine at the far end of a line."
+				""
+				"&7Items on a belt can be filtered, ejected, washed by a fan, pressed, or deployed onto - the belt is the surface most Create processing happens on.&r"
+				""
+				"&8Belts must run in a straight line between their two ends, at the same height or on a consistent diagonal. They will not curve."
+			]
 			icon: "create:belt_connector"
 			id: "7F00000000000006"
 			rewards: [{
@@ -365,6 +400,15 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"The &eMechanical Saw&r cuts logs into planks, planks into slabs, and - pointed upward - fells entire trees."
+				""
+				"&e&lTree farming is the real use.&r A saw facing up under a sapling, a Deployer with bone meal, and a chute to collect - that is a fully automatic wood farm in four blocks, and wood is your charcoal, your Furnator fuel and your bio fuel."
+				""
+				"&c&lIt damages entities that walk into it.&r Fence it off or fit it into a wall."
+				""
+				"&7Placed horizontally on a belt it processes items passing over it; placed vertically it acts as a block breaker.&r"
+			]
 			icon: "create:mechanical_saw"
 			id: "7F0000000000000B"
 			rewards: [{
@@ -510,6 +554,15 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"A &eMechanical Bearing&r rotates whatever is attached to it - the entry point to Create contraptions."
+				""
+				"&e&lAttach blocks, apply rotation, and the whole assembly turns as one object.&r Windmills, rotating platforms, drawbridges and clock hands all start here."
+				""
+				"&c&lBlocks only travel together if they are connected.&r Use &7Super Glue&r or a &7Linear Chassis&r to bind loose blocks into one contraption - otherwise the bearing spins and leaves them behind."
+				""
+				"&7Contraptions can carry working machinery - drills, saws, harvesters - which is how a single bearing becomes a quarry or a farm.&r"
+			]
 			icon: "create:mechanical_bearing"
 			id: "7F00000000000010"
 			rewards: [{
@@ -639,6 +692,17 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"&eMechanical Crafters&r arranged in the shape of a recipe will craft it continuously from piped-in ingredients."
+				""
+				"&e&lThe arrangement IS the recipe.&r Place crafters in the same pattern as the crafting grid, wrench them so their arrows form a single path ending at one output, give them rotation, and feed each one its ingredient."
+				""
+				"&c&lEvery crafter in the group must be connected by arrows into one chain.&r A broken path is the usual reason nothing happens."
+				""
+				"&7It is more work than an AE2 assembler and considerably more satisfying. It is also available this early, long before AE2 exists.&r"
+				""
+				"&8The Precision Mechanism itself can be automated this way - which is worth doing, since Mekanism will want several."
+			]
 			icon: "create:mechanical_crafter"
 			id: "7F00000000000014"
 			rewards: [{
@@ -1022,6 +1086,15 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"&6Create: Enchantment Industry&r turns enchanting into a Create process instead of a gamble at a table."
+				""
+				"&e&lThe loop:&r a &fMechanical Grindstone&r strips enchantments into &fExperience&r as a fluid, and the &fBlaze Enchanter&r spends that fluid to apply them."
+				""
+				"&7The &fPrinter&r copies enchanted books, so once you have one good book you can mass-produce it.&r"
+				""
+				"&8It also hooks into Apotheosis - the affix templates and Gem Cutter are from this mod, not Apotheosis itself."
+			]
 			icon: "create_enchantment_industry:blaze_enchanter"
 			id: "31B1A75FE671815D"
 			rewards: [{
@@ -1041,6 +1114,11 @@
 		}
 		{
 			dependencies: ["7F00000000000000"]
+			description: [
+				"&6Create Deco&r is purely decorative - catwalks, sheet metal, bars, doors and ladders in every Create palette."
+				""
+				"&7No mechanics and nothing gated. It exists so a factory can look like a factory.&r"
+			]
 			icon: "createdeco:andesite_catwalk"
 			id: "55295C3B6E054F67"
 			rewards: [{

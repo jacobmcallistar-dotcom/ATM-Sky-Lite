@@ -5,7 +5,7 @@
 	group: "1A2B000000000005"
 	icon: "cyclic:solidifier"
 	id: "3C1F000000000008"
-	order_index: 14
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

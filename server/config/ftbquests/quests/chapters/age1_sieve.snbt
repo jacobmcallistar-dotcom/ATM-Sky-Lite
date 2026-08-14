@@ -675,7 +675,13 @@
 		}
 		{
 			dependencies: ["210100000000000D"]
-			description: ["A &eWatering Can&r sprinkles crops, saplings and mushrooms to grow faster while you hold right-click. Tedious? Yes. Faster than waiting? Also yes. Cyclic's Sprinkler automates this later."]
+			description: [
+				"The &eWatering Can&r speeds up anything growing near it."
+				""
+				"&e&lOn a void island this is not a luxury.&r Your entire early food supply, your dirt production and your first Mystical Agriculture seeds all depend on plants growing, and there is nothing else to do while they do."
+				""
+				"&7Fill it with water, hold right-click over a plot. The wooden one is cheap and there are better tiers later.&r"
+			]
 			icon: "exdeorum:wooden_watering_can"
 			id: "2101000000000014"
 			rewards: [{

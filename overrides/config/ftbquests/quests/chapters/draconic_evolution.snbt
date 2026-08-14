@@ -151,7 +151,13 @@
 			y: -0.5d
 		}
 		{
-			description: ["&eChaotic&r tier is built from a Chaos Shard, pulled from the far end of a chaos-generation build. Beyond this: &eAwakened&r, the true ceiling of the mod."]
+			description: [
+				"&4&lChaotic is the last tier.&r Beyond Wyvern, beyond Draconic, and it costs a Chaos Shard from a Chaos Guardian in the End."
+				""
+				"&e&lThe gear is absurd by design&r - damage, durability and mining that make everything before it look ornamental. Fully upgraded Chaotic tools are the strongest items in this pack."
+				""
+				"&7Everything here still hangs off the Draconium Core, which is pinned with a Silver Dungeon Key - so the Valkyrie Queen died long before you got here.&r"
+			]
 			icon: "draconicevolution:chaotic_sword"
 			id: "69DF0964511307F4"
 			rewards: [{
