@@ -32,7 +32,7 @@
 				title: "Enter the Machine Age"
 				type: "checkmark"
 			}]
-			title: "&9First Machines"
+			title: "&2First Machines"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -59,7 +59,7 @@
 				item: "skyforge:industrial_keystone"
 				type: "item"
 			}]
-			title: "&9The Industrial Keystone"
+			title: "&2The Industrial Keystone"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -91,7 +91,7 @@
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
-			title: "&9Real Steel"
+			title: "&2Real Steel"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -117,7 +117,7 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			title: "&9Metallurgy 101"
+			title: "&2Metallurgy 101"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -152,7 +152,7 @@
 				item: "mekanism:enriched_redstone"
 				type: "item"
 			}]
-			title: "&9Enriched Materials"
+			title: "&2Enriched Materials"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -178,7 +178,7 @@
 				item: "mekanismgenerators:heat_generator"
 				type: "item"
 			}]
-			title: "&9Power On"
+			title: "&2Power On"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -211,7 +211,7 @@
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
-			title: "&9Energized Smelter"
+			title: "&2Energized Smelter"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -237,7 +237,7 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			title: "&9The Enrichment Chamber"
+			title: "&2The Enrichment Chamber"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -273,7 +273,7 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
-			title: "&9The Crusher"
+			title: "&2The Crusher"
 			x: -4.0d
 			y: -3.0d
 		}
@@ -305,7 +305,7 @@
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
-			title: "&9Osmium Compressor"
+			title: "&2Osmium Compressor"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -331,7 +331,7 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			title: "&9Fluix Crystals"
+			title: "&2Fluix Crystals"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -373,7 +373,7 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
-			title: "&9Press Start"
+			title: "&2Press Start"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -408,7 +408,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "&9Basic Circuits"
+			title: "&2Basic Circuits"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -463,7 +463,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The Machine Age"
+			title: "&2The Machine Age"
 			x: 0.0d
 			y: 0.0d
 		}

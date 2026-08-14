@@ -49,7 +49,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Store Some Power"
+			title: "&dStore Some Power"
 			x: -7.0d
 			y: 2.5d
 		}
@@ -77,7 +77,7 @@
 				item: "mekanism:basic_thermodynamic_conductor"
 				type: "item"
 			}]
-			title: "&9Thermodynamic Conductors"
+			title: "&dThermodynamic Conductors"
 			x: -11.0d
 			y: 3.0d
 		}
@@ -107,7 +107,7 @@
 				item: "mekanism:boiler_casing"
 				type: "item"
 			}]
-			title: "&9Thermoelectric Boiler"
+			title: "&dThermoelectric Boiler"
 			x: -5.0d
 			y: 5.0d
 		}
@@ -137,7 +137,7 @@
 				item: "mekanismgenerators:turbine_casing"
 				type: "item"
 			}]
-			title: "&9Industrial Turbine"
+			title: "&dIndustrial Turbine"
 			x: -3.0d
 			y: 5.0d
 		}
@@ -165,7 +165,7 @@
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
-			title: "&9Gas-Burning Generator"
+			title: "&dGas-Burning Generator"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -201,7 +201,7 @@
 				item: "mekanismgenerators:wind_generator"
 				type: "item"
 			}]
-			title: "&9Sky Power"
+			title: "&dSky Power"
 			x: -11.0d
 			y: -3.0d
 		}

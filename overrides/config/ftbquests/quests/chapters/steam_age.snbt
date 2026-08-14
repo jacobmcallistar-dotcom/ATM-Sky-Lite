@@ -40,7 +40,7 @@
 				title: "Begin the Steam Age"
 				type: "checkmark"
 			}]
-			title: "&eThe Steam Age"
+			title: "&9The Steam Age"
 			x: -14.0d
 			y: 0.0d
 		}
@@ -84,7 +84,7 @@
 					type: "item"
 				}
 			]
-			title: "&eSteam 'n' Rails"
+			title: "&9Steam 'n' Rails"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -112,7 +112,7 @@
 				item: "create:gearbox"
 				type: "item"
 			}]
-			title: "&eGearboxes"
+			title: "&9Gearboxes"
 			x: -12.0d
 			y: -1.5d
 		}
@@ -149,7 +149,7 @@
 					type: "item"
 				}
 			]
-			title: "&eClutch & Gearshift"
+			title: "&9Clutch & Gearshift"
 			x: -12.0d
 			y: -3.0d
 		}
@@ -177,7 +177,7 @@
 				item: "create:sequenced_gearshift"
 				type: "item"
 			}]
-			title: "&eSequenced Gearshift"
+			title: "&9Sequenced Gearshift"
 			x: -12.0d
 			y: -4.5d
 		}
@@ -205,7 +205,7 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			title: "&eRotation Speed Controller"
+			title: "&9Rotation Speed Controller"
 			x: -10.0d
 			y: -3.0d
 		}
@@ -240,7 +240,7 @@
 					type: "item"
 				}
 			]
-			title: "&eHand Crank & Windmill"
+			title: "&9Hand Crank & Windmill"
 			x: -10.0d
 			y: -4.5d
 		}
@@ -268,7 +268,7 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			title: "&eMechanical Belts"
+			title: "&9Mechanical Belts"
 			x: -8.0d
 			y: 1.5d
 		}
@@ -303,7 +303,7 @@
 					type: "item"
 				}
 			]
-			title: "&eFunnels"
+			title: "&9Funnels"
 			x: -8.0d
 			y: 3.0d
 		}
@@ -338,7 +338,7 @@
 					type: "item"
 				}
 			]
-			title: "&eChutes"
+			title: "&9Chutes"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -366,7 +366,7 @@
 				item: "create:weighted_ejector"
 				type: "item"
 			}]
-			title: "&eWeighted Ejector"
+			title: "&9Weighted Ejector"
 			x: -6.0d
 			y: 4.5d
 		}
@@ -394,7 +394,7 @@
 				item: "create:item_vault"
 				type: "item"
 			}]
-			title: "&eItem Vaults"
+			title: "&9Item Vaults"
 			x: -8.0d
 			y: 4.5d
 		}
@@ -422,7 +422,7 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			title: "&eMechanical Saw"
+			title: "&9Mechanical Saw"
 			x: -8.0d
 			y: -3.0d
 		}
@@ -450,7 +450,7 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			title: "&eMechanical Drill"
+			title: "&9Mechanical Drill"
 			x: -8.0d
 			y: -4.5d
 		}
@@ -485,7 +485,7 @@
 					type: "item"
 				}
 			]
-			title: "&eSpout & Item Drain"
+			title: "&9Spout & Item Drain"
 			x: -6.0d
 			y: -3.0d
 		}
@@ -522,7 +522,7 @@
 					type: "item"
 				}
 			]
-			title: "&eMechanical Pump & Pipes"
+			title: "&9Mechanical Pump & Pipes"
 			x: -4.0d
 			y: -3.0d
 		}
@@ -548,7 +548,7 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			title: "&eFluid Tanks"
+			title: "&9Fluid Tanks"
 			x: -4.0d
 			y: -4.5d
 		}
@@ -576,7 +576,7 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			title: "&eMechanical Bearing"
+			title: "&9Mechanical Bearing"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -623,7 +623,7 @@
 					type: "item"
 				}
 			]
-			title: "&eChassis & Super Glue"
+			title: "&9Chassis & Super Glue"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -658,7 +658,7 @@
 					type: "item"
 				}
 			]
-			title: "&eHarvester & Plough"
+			title: "&9Harvester & Plough"
 			x: -2.0d
 			y: 4.5d
 		}
@@ -686,7 +686,7 @@
 				item: "create:portable_storage_interface"
 				type: "item"
 			}]
-			title: "&ePortable Storage Interface"
+			title: "&9Portable Storage Interface"
 			x: 0.0d
 			y: 4.5d
 		}
@@ -716,7 +716,7 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			title: "&eMechanical Crafters"
+			title: "&9Mechanical Crafters"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -744,7 +744,7 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			title: "&eMechanical Arm"
+			title: "&9Mechanical Arm"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -779,7 +779,7 @@
 					type: "item"
 				}
 			]
-			title: "&eRedstone Link & Stockpile Switch"
+			title: "&9Redstone Link & Stockpile Switch"
 			x: 4.0d
 			y: -1.5d
 		}
@@ -814,7 +814,7 @@
 					type: "item"
 				}
 			]
-			title: "&eDisplay Link & Board"
+			title: "&9Display Link & Board"
 			x: 4.0d
 			y: -3.0d
 		}
@@ -851,7 +851,7 @@
 					type: "item"
 				}
 			]
-			title: "&eSchematics"
+			title: "&9Schematics"
 			x: 6.0d
 			y: -1.5d
 		}
@@ -904,7 +904,7 @@
 					type: "item"
 				}
 			]
-			title: "&eExtendo Grip & Potato Cannon"
+			title: "&9Extendo Grip & Potato Cannon"
 			x: 6.0d
 			y: 1.5d
 		}
@@ -945,7 +945,7 @@
 					type: "item"
 				}
 			]
-			title: "&eBacktank & Diving Gear"
+			title: "&9Backtank & Diving Gear"
 			x: 8.0d
 			y: 1.5d
 		}
@@ -980,7 +980,7 @@
 					type: "item"
 				}
 			]
-			title: "&eFilters"
+			title: "&9Filters"
 			x: 8.0d
 			y: 3.0d
 		}
@@ -1010,7 +1010,7 @@
 				item: "create:steam_engine"
 				type: "item"
 			}]
-			title: "&eSteam Engine"
+			title: "&9Steam Engine"
 			x: -6.0d
 			y: -4.5d
 		}
@@ -1045,7 +1045,7 @@
 					type: "item"
 				}
 			]
-			title: "&eStations & Schedules"
+			title: "&9Stations & Schedules"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -1080,7 +1080,7 @@
 				title: "Master Create"
 				type: "checkmark"
 			}]
-			title: "&e&lMaster of Kinetics"
+			title: "&9&lMaster of Kinetics"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -1108,7 +1108,7 @@
 				item: "create_enchantment_industry:blaze_enchanter"
 				type: "item"
 			}]
-			title: "&eEnchantment Industry"
+			title: "&9Enchantment Industry"
 			x: -8.0d
 			y: 6.0d
 		}
@@ -1132,7 +1132,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&eCreate Deco"
+			title: "&9Create Deco"
 			x: -6.0d
 			y: 6.0d
 		}
@@ -1157,7 +1157,7 @@
 				item: "create_jetpack:jetpack"
 				type: "item"
 			}]
-			title: "&eCreate Jetpack"
+			title: "&9Create Jetpack"
 			x: -4.0d
 			y: 6.0d
 		}

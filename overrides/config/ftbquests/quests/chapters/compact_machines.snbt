@@ -29,7 +29,7 @@
 				item: "compactmachines:machine_normal"
 				type: "item"
 			}]
-			title: "&fCompact Machines"
+			title: "&bCompact Machines"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -63,7 +63,7 @@
 				item: "compactmachines:tunnel_wall"
 				type: "item"
 			}]
-			title: "&fTunnels"
+			title: "&bTunnels"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -88,7 +88,7 @@
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
-			title: "&fPersonal Shrinking Device"
+			title: "&bPersonal Shrinking Device"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -116,7 +116,7 @@
 				item: "compactmachines:machine_tiny"
 				type: "item"
 			}]
-			title: "&fMachine Sizes"
+			title: "&bMachine Sizes"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -143,7 +143,7 @@
 				item: "compactmachines:tunnel"
 				type: "item"
 			}]
-			title: "&fTunnel Types"
+			title: "&bTunnel Types"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -168,7 +168,7 @@
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
-			title: "&fPersonal Shrinking Device"
+			title: "&bPersonal Shrinking Device"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -195,7 +195,7 @@
 				item: "compactmachines:wall"
 				type: "item"
 			}]
-			title: "&fLoading & Limits"
+			title: "&bLoading & Limits"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -218,7 +218,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&f&lRoom In A Block"
+			title: "&b&lRoom In A Block"
 			x: 4.0d
 			y: 1.5d
 		}

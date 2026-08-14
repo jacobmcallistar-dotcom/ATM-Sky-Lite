@@ -34,7 +34,7 @@
 				title: "Hear the pattern"
 				type: "checkmark"
 			}]
-			title: "&4The Void Signal"
+			title: "&cThe Void Signal"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -59,7 +59,7 @@
 				title: "Broadcast from your moonbase"
 				type: "checkmark"
 			}]
-			title: "&4Beacon: The Mare"
+			title: "&cBeacon: The Mare"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -92,7 +92,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Monolith"
+			title: "&cThe Monolith"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -129,7 +129,7 @@
 				title: "Broadcast from your Mars base"
 				type: "checkmark"
 			}]
-			title: "&4Beacon: The Red Soil"
+			title: "&cBeacon: The Red Soil"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -163,7 +163,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Blossom"
+			title: "&cThe Blossom"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -200,7 +200,7 @@
 				title: "Broadcast from your Venus base"
 				type: "checkmark"
 			}]
-			title: "&4Beacon: The Acid Choir"
+			title: "&cBeacon: The Acid Choir"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -233,7 +233,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Gauntlet"
+			title: "&cThe Gauntlet"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -273,7 +273,7 @@
 				title: "Broadcast from Glacio"
 				type: "checkmark"
 			}]
-			title: "&4Beacon: The Long Night"
+			title: "&cBeacon: The Long Night"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -307,7 +307,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Night Lich"
+			title: "&cThe Night Lich"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -333,7 +333,7 @@
 				title: "Trace the signal to its source"
 				type: "checkmark"
 			}]
-			title: "&4Beacon: The Source"
+			title: "&cBeacon: The Source"
 			x: 8.0d
 			y: 0.0d
 		}
@@ -388,7 +388,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4&lThe Harbinger"
+			title: "&c&lThe Harbinger"
 			x: 10.5d
 			y: 0.0d
 		}
@@ -414,7 +414,7 @@
 				title: "Dig into the anomaly"
 				type: "checkmark"
 			}]
-			title: "&4Anomaly: The Red Pharaoh"
+			title: "&cAnomaly: The Red Pharaoh"
 			x: -2.0d
 			y: 1.8d
 		}
@@ -448,7 +448,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Ancient Remnant"
+			title: "&cThe Ancient Remnant"
 			x: 0.0d
 			y: 1.8d
 		}
@@ -474,7 +474,7 @@
 				title: "Answer the second reading"
 				type: "checkmark"
 			}]
-			title: "&4Anomaly: The Frost Revenant"
+			title: "&cAnomaly: The Frost Revenant"
 			x: 6.0d
 			y: 1.8d
 		}
@@ -508,7 +508,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&4The Maledictus"
+			title: "&cThe Maledictus"
 			x: 8.0d
 			y: 1.8d
 		}

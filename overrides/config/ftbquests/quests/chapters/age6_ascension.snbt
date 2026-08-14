@@ -478,7 +478,7 @@
 				item: "kubejs:celestial_core"
 				type: "item"
 			}]
-			title: "&bThe Celestial Core"
+			title: "&5The Celestial Core"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -529,7 +529,7 @@
 				item: "skyforge:heart_of_the_sky"
 				type: "item"
 			}]
-			title: "&6&lHeart of the Sky"
+			title: "&5&lHeart of the Sky"
 			x: 6.5d
 			y: 0.0d
 		}

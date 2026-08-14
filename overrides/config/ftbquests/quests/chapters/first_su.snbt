@@ -42,7 +42,7 @@
 				title: "Feel the rotation"
 				type: "checkmark"
 			}]
-			title: "&eThe Kinetic Age"
+			title: "&2The Kinetic Age"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -68,7 +68,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			title: "&eAndesite Alloy"
+			title: "&2Andesite Alloy"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -110,7 +110,7 @@
 					type: "item"
 				}
 			]
-			title: "&eShafts & Cogs"
+			title: "&2Shafts & Cogs"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -135,7 +135,7 @@
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			title: "&eThe Water Wheel"
+			title: "&2The Water Wheel"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -174,7 +174,7 @@
 					type: "item"
 				}
 			]
-			title: "&eThe Engineer's Kit"
+			title: "&2The Engineer's Kit"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -200,7 +200,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "&eThe Press"
+			title: "&2The Press"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -231,7 +231,7 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: "&eThe Millstone"
+			title: "&2The Millstone"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -263,7 +263,7 @@
 					type: "item"
 				}
 			]
-			title: "&eFan Washing"
+			title: "&2Fan Washing"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -305,7 +305,7 @@
 					type: "item"
 				}
 			]
-			title: "&eBasin & Mixer"
+			title: "&2Basin & Mixer"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -330,7 +330,7 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			title: "&eThe Blaze Burner"
+			title: "&2The Blaze Burner"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -364,7 +364,7 @@
 					type: "item"
 				}
 			]
-			title: "&eZinc & Brass"
+			title: "&2Zinc & Brass"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -391,7 +391,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "&eCrushing Wheels"
+			title: "&2Crushing Wheels"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -432,7 +432,7 @@
 					type: "item"
 				}
 			]
-			title: "&eThe Deployer"
+			title: "&2The Deployer"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -469,7 +469,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			title: "&e&lThe Precision Mechanism"
+			title: "&2&lThe Precision Mechanism"
 			x: 8.0d
 			y: 0.0d
 		}

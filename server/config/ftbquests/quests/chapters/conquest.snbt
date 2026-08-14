@@ -32,7 +32,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Chaos Guardian"
+			title: "&cThe Chaos Guardian"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -60,7 +60,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&dThe Guardian of Gaia"
+			title: "&cThe Guardian of Gaia"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -88,7 +88,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&aThe Wilden Chimera"
+			title: "&cThe Wilden Chimera"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -116,7 +116,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&3The Leviathan"
+			title: "&cThe Leviathan"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -142,7 +142,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&3Scylla"
+			title: "&cScylla"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -168,7 +168,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&6The Kobolediator"
+			title: "&cThe Kobolediator"
 			x: -6.0d
 			y: 2.0d
 		}
@@ -196,7 +196,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Watcher"
+			title: "&cThe Watcher"
 			x: -3.0d
 			y: 2.0d
 		}
@@ -224,7 +224,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&bThe Alchemist"
+			title: "&cThe Alchemist"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -250,7 +250,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&6The Summoner"
+			title: "&cThe Summoner"
 			x: 3.0d
 			y: 2.0d
 		}

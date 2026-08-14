@@ -39,7 +39,7 @@
 				title: "Declare war on chest chaos"
 				type: "checkmark"
 			}]
-			title: "&fStash & Sort"
+			title: "&bStash & Sort"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -65,7 +65,7 @@
 				item: "storagedrawers:oak_full_drawers_1"
 				type: "item"
 			}]
-			title: "&fThe Drawer Wall"
+			title: "&bThe Drawer Wall"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -95,7 +95,7 @@
 				item: "storagedrawers:compacting_drawers_3"
 				type: "item"
 			}]
-			title: "&fCompacting Drawers"
+			title: "&bCompacting Drawers"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -120,7 +120,7 @@
 				item: "storagedrawers:controller"
 				type: "item"
 			}]
-			title: "&fThe Controller"
+			title: "&bThe Controller"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -144,7 +144,7 @@
 				item: "sophisticatedstorage:barrel"
 				type: "item"
 			}]
-			title: "&fSophisticated Barrels"
+			title: "&bSophisticated Barrels"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -180,7 +180,7 @@
 				item: "sophisticatedstorage:stack_upgrade_tier_1"
 				type: "item"
 			}]
-			title: "&fStack Upgrades"
+			title: "&bStack Upgrades"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -211,7 +211,7 @@
 					type: "item"
 				}
 			]
-			title: "&fHungry Backpack"
+			title: "&bHungry Backpack"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -245,7 +245,7 @@
 					type: "item"
 				}
 			]
-			title: "&fOne Terminal to Find It All"
+			title: "&bOne Terminal to Find It All"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -277,7 +277,7 @@
 				item: "toms_storage:ts.crafting_terminal"
 				type: "item"
 			}]
-			title: "&f&lCraft From Everywhere"
+			title: "&b&lCraft From Everywhere"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -311,7 +311,7 @@
 					type: "item"
 				}
 			]
-			title: "&fEnder Storage"
+			title: "&bEnder Storage"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -342,7 +342,7 @@
 					type: "item"
 				}
 			]
-			title: "&fEnderTanks"
+			title: "&bEnderTanks"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -381,7 +381,7 @@
 					type: "item"
 				}
 			]
-			title: "&fEntangled"
+			title: "&bEntangled"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -410,7 +410,7 @@
 				item: "storagedrawers:iron_storage_upgrade"
 				type: "item"
 			}]
-			title: "&fDrawer Upgrades"
+			title: "&bDrawer Upgrades"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -435,7 +435,7 @@
 				item: "sophisticatedstorage:iron_barrel"
 				type: "item"
 			}]
-			title: "&fSophisticated Backpacks"
+			title: "&bSophisticated Backpacks"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -462,7 +462,7 @@
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			title: "&fTom's Storage Terminal"
+			title: "&bTom's Storage Terminal"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -489,7 +489,7 @@
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
-			title: "&fEnder Storage & Tanks"
+			title: "&bEnder Storage & Tanks"
 			x: -4.0d
 			y: 4.5d
 		}
@@ -514,7 +514,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&fEntangled"
+			title: "&bEntangled"
 			x: -2.0d
 			y: 4.5d
 		}
@@ -540,7 +540,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&f&lStash Complete"
+			title: "&b&lStash Complete"
 			x: 0.0d
 			y: 3.8d
 		}

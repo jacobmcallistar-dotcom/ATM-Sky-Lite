@@ -33,7 +33,7 @@
 				title: "Begin Powah"
 				type: "checkmark"
 			}]
-			title: "&9Powah"
+			title: "&6Powah"
 			x: -10.0d
 			y: 2.25d
 		}
@@ -67,7 +67,7 @@
 				item: "powah:uraninite"
 				type: "item"
 			}]
-			title: "&9Bridged Uranium"
+			title: "&6Bridged Uranium"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -92,7 +92,7 @@
 				item: "powah:energizing_orb"
 				type: "item"
 			}]
-			title: "&9The Energizing Orb"
+			title: "&6The Energizing Orb"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -125,7 +125,7 @@
 				item: "powah:thermo_generator_basic"
 				type: "item"
 			}]
-			title: "&9Free Heat"
+			title: "&6Free Heat"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -153,7 +153,7 @@
 				item: "powah:reactor_basic"
 				type: "item"
 			}]
-			title: "&9Going Nuclear"
+			title: "&6Going Nuclear"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -181,7 +181,7 @@
 				item: "powah:capacitor_basic"
 				type: "item"
 			}]
-			title: "&9Capacitors"
+			title: "&6Capacitors"
 			x: -8.0d
 			y: 1.5d
 		}
@@ -216,7 +216,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Dielectric Materials"
+			title: "&6Dielectric Materials"
 			x: -8.0d
 			y: 3.0d
 		}
@@ -244,7 +244,7 @@
 				item: "powah:energy_cable_basic"
 				type: "item"
 			}]
-			title: "&9Energy Cables"
+			title: "&6Energy Cables"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -272,7 +272,7 @@
 				item: "powah:energy_cell_basic"
 				type: "item"
 			}]
-			title: "&9Energy Cells"
+			title: "&6Energy Cells"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -300,7 +300,7 @@
 				item: "powah:furnator_basic"
 				type: "item"
 			}]
-			title: "&9Furnator"
+			title: "&6Furnator"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -328,7 +328,7 @@
 				item: "powah:magmator_basic"
 				type: "item"
 			}]
-			title: "&9Magmator"
+			title: "&6Magmator"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -356,7 +356,7 @@
 				item: "powah:solar_panel_basic"
 				type: "item"
 			}]
-			title: "&9Powah Solar Panels"
+			title: "&6Powah Solar Panels"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -384,7 +384,7 @@
 				item: "powah:energizing_rod_basic"
 				type: "item"
 			}]
-			title: "&9Energizing Rods"
+			title: "&6Energizing Rods"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -414,7 +414,7 @@
 				item: "powah:reactor_basic"
 				type: "item"
 			}]
-			title: "&9Reactor Tiers"
+			title: "&6Reactor Tiers"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -444,7 +444,7 @@
 				item: "powah:ender_cell_basic"
 				type: "item"
 			}]
-			title: "&9Ender Cells"
+			title: "&6Ender Cells"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -470,7 +470,7 @@
 				item: "powah:ender_gate_basic"
 				type: "item"
 			}]
-			title: "&9Ender Gates"
+			title: "&6Ender Gates"
 			x: 6.0d
 			y: 1.5d
 		}
@@ -498,7 +498,7 @@
 				item: "powah:player_transmitter"
 				type: "item"
 			}]
-			title: "&9Player Transmitter"
+			title: "&6Player Transmitter"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -526,7 +526,7 @@
 				item: "powah:battery_basic"
 				type: "item"
 			}]
-			title: "&9Portable Batteries"
+			title: "&6Portable Batteries"
 			x: 6.0d
 			y: 3.0d
 		}
@@ -554,7 +554,7 @@
 				item: "powah:lens_of_ender"
 				type: "item"
 			}]
-			title: "&9Lens of Ender"
+			title: "&6Lens of Ender"
 			x: 8.0d
 			y: 1.5d
 		}
@@ -580,7 +580,7 @@
 				item: "powah:photoelectric_pane"
 				type: "item"
 			}]
-			title: "&9Photoelectric Pane"
+			title: "&6Photoelectric Pane"
 			x: 8.0d
 			y: 3.0d
 		}
@@ -613,7 +613,7 @@
 				title: "Master Powah"
 				type: "checkmark"
 			}]
-			title: "&9&lPowah Complete"
+			title: "&6&lPowah Complete"
 			x: 10.0d
 			y: 2.25d
 		}
@@ -650,7 +650,7 @@
 				title: "The grid is online"
 				type: "checkmark"
 			}]
-			title: "&9Powered Up"
+			title: "&6Powered Up"
 			x: 12.0d
 			y: 0.0d
 		}

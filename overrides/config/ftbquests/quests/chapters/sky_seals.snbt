@@ -51,7 +51,7 @@
 				item: "kubejs:seal_circuits"
 				type: "item"
 			}]
-			title: "&9Seal of Circuits"
+			title: "&5Seal of Circuits"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -72,7 +72,7 @@
 				item: "kubejs:seal_network"
 				type: "item"
 			}]
-			title: "&bSeal of the Network"
+			title: "&5Seal of the Network"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -93,7 +93,7 @@
 				item: "kubejs:seal_rotation"
 				type: "item"
 			}]
-			title: "&eSeal of Rotation"
+			title: "&5Seal of Rotation"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -114,7 +114,7 @@
 				item: "kubejs:seal_flux"
 				type: "item"
 			}]
-			title: "&9Seal of Flux"
+			title: "&5Seal of Flux"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -156,7 +156,7 @@
 				item: "kubejs:seal_growth"
 				type: "item"
 			}]
-			title: "&dSeal of Growth"
+			title: "&5Seal of Growth"
 			x: 4.0d
 			y: -1.5d
 		}
@@ -179,7 +179,7 @@
 				item: "kubejs:seal_swarm"
 				type: "item"
 			}]
-			title: "&6Seal of the Swarm"
+			title: "&5Seal of the Swarm"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -200,7 +200,7 @@
 				item: "kubejs:seal_ender"
 				type: "item"
 			}]
-			title: "&aSeal of Ender"
+			title: "&5Seal of Ender"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -221,7 +221,7 @@
 				item: "kubejs:seal_dimension"
 				type: "item"
 			}]
-			title: "&6Seal of Dimensions"
+			title: "&5Seal of Dimensions"
 			x: 0.0d
 			y: 0.0d
 		}

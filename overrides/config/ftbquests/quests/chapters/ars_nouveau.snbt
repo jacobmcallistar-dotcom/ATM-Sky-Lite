@@ -29,7 +29,7 @@
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
-			title: "&dArs Nouveau"
+			title: "&bArs Nouveau"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -61,7 +61,7 @@
 					type: "item"
 				}
 			]
-			title: "&dMagebloom"
+			title: "&bMagebloom"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -95,7 +95,7 @@
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			title: "&dThe Scribe's Table"
+			title: "&bThe Scribe's Table"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -127,7 +127,7 @@
 				item: "ars_nouveau:arcane_pedestal"
 				type: "item"
 			}]
-			title: "&dArcane Pedestal"
+			title: "&bArcane Pedestal"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -167,7 +167,7 @@
 					type: "item"
 				}
 			]
-			title: "&dBotania"
+			title: "&bBotania"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -207,7 +207,7 @@
 					type: "item"
 				}
 			]
-			title: "&dFunctional Flowers"
+			title: "&bFunctional Flowers"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -265,7 +265,7 @@
 					type: "item"
 				}
 			]
-			title: "&dOccultism"
+			title: "&bOccultism"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -305,7 +305,7 @@
 					type: "item"
 				}
 			]
-			title: "&dSource & Sourcelinks"
+			title: "&bSource & Sourcelinks"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -330,7 +330,7 @@
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			title: "&dImbuement Chamber"
+			title: "&bImbuement Chamber"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -362,7 +362,7 @@
 					type: "item"
 				}
 			]
-			title: "&dEnchanting Apparatus"
+			title: "&bEnchanting Apparatus"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -398,7 +398,7 @@
 					type: "item"
 				}
 			]
-			title: "&dFamiliars"
+			title: "&bFamiliars"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -423,7 +423,7 @@
 				item: "ars_nouveau:ritual_brazier"
 				type: "item"
 			}]
-			title: "&dRituals"
+			title: "&bRituals"
 			x: -2.0d
 			y: 4.5d
 		}
@@ -455,7 +455,7 @@
 					type: "item"
 				}
 			]
-			title: "&dSpell Gear"
+			title: "&bSpell Gear"
 			x: 0.0d
 			y: 4.5d
 		}
@@ -489,7 +489,7 @@
 					type: "item"
 				}
 			]
-			title: "&dSpell Turrets & Relays"
+			title: "&bSpell Turrets & Relays"
 			x: 2.0d
 			y: 4.5d
 		}
@@ -515,7 +515,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&d&lArs Nouveau Complete"
+			title: "&b&lArs Nouveau Complete"
 			x: 4.0d
 			y: 3.8d
 		}
@@ -541,7 +541,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&dArs Creo"
+			title: "&bArs Creo"
 			x: 6.0d
 			y: 3.0d
 		}

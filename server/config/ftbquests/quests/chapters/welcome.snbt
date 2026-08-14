@@ -51,7 +51,7 @@
 				title: "Begin your climb"
 				type: "checkmark"
 			}]
-			title: "&6Welcome to the Sky"
+			title: "&2Welcome to the Sky"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -79,7 +79,7 @@
 				title: "Read: The Sieve is Your Pickaxe"
 				type: "checkmark"
 			}]
-			title: "&aThe Sieve is Your Pickaxe"
+			title: "&2The Sieve is Your Pickaxe"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -107,7 +107,7 @@
 				title: "Read: Look It Up"
 				type: "checkmark"
 			}]
-			title: "&bLook It Up (JEI)"
+			title: "&2Look It Up (JEI)"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -142,7 +142,7 @@
 				title: "Read: The Eight Ages"
 				type: "checkmark"
 			}]
-			title: "&6The Eight Ages"
+			title: "&2The Eight Ages"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -171,7 +171,7 @@
 				title: "Read: The Keystone Bridges"
 				type: "checkmark"
 			}]
-			title: "&eNo Ores? No Problem"
+			title: "&2No Ores? No Problem"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -210,7 +210,7 @@
 				title: "Read: Staying Alive"
 				type: "checkmark"
 			}]
-			title: "&cStaying Alive"
+			title: "&2Staying Alive"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -261,7 +261,7 @@
 				title: "Read: The Gates"
 				type: "checkmark"
 			}]
-			title: "&cThe Gates"
+			title: "&2The Gates"
 			x: 0.0d
 			y: 2.5d
 		}

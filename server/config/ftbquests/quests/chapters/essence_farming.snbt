@@ -47,7 +47,7 @@
 				title: "Plant the first seed"
 				type: "checkmark"
 			}]
-			title: "&dEssence Farming"
+			title: "&bEssence Farming"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -73,7 +73,7 @@
 				item: "mysticalagriculture:inferium_essence"
 				type: "item"
 			}]
-			title: "&dInferium"
+			title: "&bInferium"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -111,7 +111,7 @@
 				}
 				type: "item"
 			}]
-			title: "&dThe Infusion Crystal"
+			title: "&bThe Infusion Crystal"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -145,7 +145,7 @@
 					type: "item"
 				}
 			]
-			title: "&dThe Infusion Altar"
+			title: "&bThe Infusion Altar"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -183,7 +183,7 @@
 				item: "mysticalagriculture:iron_seeds"
 				type: "item"
 			}]
-			title: "&dIron From Dirt"
+			title: "&bIron From Dirt"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -218,7 +218,7 @@
 					type: "item"
 				}
 			]
-			title: "&dClimbing the Tiers"
+			title: "&bClimbing the Tiers"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -253,7 +253,7 @@
 					type: "item"
 				}
 			]
-			title: "&dImperium & Supremium"
+			title: "&bImperium & Supremium"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -286,7 +286,7 @@
 				item: "mysticalagriculture:inferium_growth_accelerator"
 				type: "item"
 			}]
-			title: "&dGrowth Accelerators"
+			title: "&bGrowth Accelerators"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -328,7 +328,7 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "&dAutomating the Space Metals"
+			title: "&bAutomating the Space Metals"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -371,7 +371,7 @@
 					type: "item"
 				}
 			]
-			title: "&dSoul Harvest"
+			title: "&bSoul Harvest"
 			x: -8.0d
 			y: 1.5d
 		}
@@ -398,7 +398,7 @@
 				item: "mysticalagriculture:supremium_sword"
 				type: "item"
 			}]
-			title: "&dSupremium Steel"
+			title: "&bSupremium Steel"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -425,7 +425,7 @@
 				item: "mysticalagradditions:insanium_essence"
 				type: "item"
 			}]
-			title: "&dInsanium"
+			title: "&bInsanium"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -464,7 +464,7 @@
 					type: "item"
 				}
 			]
-			title: "&d&lAwakened"
+			title: "&b&lAwakened"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -506,7 +506,7 @@
 					type: "item"
 				}
 			]
-			title: "&dBotany Pots"
+			title: "&bBotany Pots"
 			x: 0.0d
 			y: 1.5d
 		}

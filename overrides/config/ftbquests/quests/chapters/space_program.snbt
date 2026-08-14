@@ -45,7 +45,7 @@
 				title: "Begin the Space Program"
 				type: "checkmark"
 			}]
-			title: "&6Reach for the Stars"
+			title: "&9Reach for the Stars"
 			x: -9.0d
 			y: 0.0d
 		}
@@ -89,7 +89,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Aerospace Steel"
+			title: "&9Aerospace Steel"
 			x: -7.0d
 			y: -1.5d
 		}
@@ -123,7 +123,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Ground Power"
+			title: "&9Ground Power"
 			x: -7.0d
 			y: 0.0d
 		}
@@ -159,7 +159,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Something to Breathe"
+			title: "&9Something to Breathe"
 			x: -7.0d
 			y: 1.5d
 		}
@@ -190,7 +190,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Fuel the Fire"
+			title: "&9Fuel the Fire"
 			x: -7.0d
 			y: 3.0d
 		}
@@ -271,7 +271,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Suit Up"
+			title: "&9Suit Up"
 			x: -5.0d
 			y: 1.5d
 		}
@@ -297,7 +297,7 @@
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			title: "&6The NASA Workbench"
+			title: "&9The NASA Workbench"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -341,7 +341,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Liftoff"
+			title: "&9Liftoff"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -376,7 +376,7 @@
 				id: "66D267109143739F"
 				type: "dimension"
 			}]
-			title: "&6The Moon"
+			title: "&9The Moon"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -420,7 +420,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Desh & Tier 2"
+			title: "&9Desh & Tier 2"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -455,7 +455,7 @@
 				id: "0D06BDC09913AB26"
 				type: "dimension"
 			}]
-			title: "&6Red Frontier"
+			title: "&9Red Frontier"
 			x: 4.0d
 			y: -1.0d
 		}
@@ -489,7 +489,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Ostrum & Tier 3"
+			title: "&9Ostrum & Tier 3"
 			x: 6.0d
 			y: -1.0d
 		}
@@ -524,7 +524,7 @@
 				id: "3AE534BE40559A80"
 				type: "dimension"
 			}]
-			title: "&6Hell's Frontier"
+			title: "&9Hell's Frontier"
 			x: 8.0d
 			y: -1.5d
 		}
@@ -550,7 +550,7 @@
 				id: "542F68E4652B6C92"
 				type: "dimension"
 			}]
-			title: "&6The Scorched World"
+			title: "&9The Scorched World"
 			x: 8.0d
 			y: -0.5d
 		}
@@ -584,7 +584,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Calorite & Tier 4"
+			title: "&9Calorite & Tier 4"
 			x: 10.0d
 			y: -1.5d
 		}
@@ -620,7 +620,7 @@
 				id: "50855D14DC4163DE"
 				type: "dimension"
 			}]
-			title: "&6The Edge of the System"
+			title: "&9The Edge of the System"
 			x: 12.0d
 			y: -1.5d
 		}
@@ -664,7 +664,7 @@
 				}
 				type: "item"
 			}]
-			title: "&6The Jet Suit"
+			title: "&9The Jet Suit"
 			x: 14.0d
 			y: -1.5d
 		}
@@ -696,7 +696,7 @@
 				item: "ad_astra:solar_panel"
 				type: "item"
 			}]
-			title: "&6Solar Power"
+			title: "&9Solar Power"
 			x: -5.0d
 			y: -2.5d
 		}
@@ -720,7 +720,7 @@
 				item: "ad_astra_giselle_addon:oxygen_can"
 				type: "item"
 			}]
-			title: "&6Bottled Sky"
+			title: "&9Bottled Sky"
 			x: -3.0d
 			y: 2.5d
 		}
@@ -745,7 +745,7 @@
 				item: "ad_astra_giselle_addon:pneumatic_space_breathing_upgrade"
 				type: "item"
 			}]
-			title: "&6Breathe Easy"
+			title: "&9Breathe Easy"
 			x: -1.0d
 			y: 2.5d
 		}
@@ -782,7 +782,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Launch Facility"
+			title: "&9Launch Facility"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -808,7 +808,7 @@
 				item: "ad_astra_giselle_addon:gravity_normalizer"
 				type: "item"
 			}]
-			title: "&6Gravity Normalizer"
+			title: "&9Gravity Normalizer"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -846,7 +846,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Acid-Proofed"
+			title: "&9Acid-Proofed"
 			x: 8.0d
 			y: 1.0d
 		}
@@ -878,7 +878,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Cryogenics"
+			title: "&9Cryogenics"
 			x: 10.0d
 			y: 0.0d
 		}

@@ -32,7 +32,7 @@
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			title: "&eRotation Into Electricity"
+			title: "&6Rotation Into Electricity"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -65,7 +65,7 @@
 					type: "item"
 				}
 			]
-			title: "&eWires and Connectors"
+			title: "&6Wires and Connectors"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -86,7 +86,7 @@
 				item: "createaddition:capacitor"
 				type: "item"
 			}]
-			title: "&eThe Capacitor"
+			title: "&6The Capacitor"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -107,7 +107,7 @@
 				item: "createaddition:accumulator"
 				type: "item"
 			}]
-			title: "&eThe Accumulator"
+			title: "&6The Accumulator"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -130,7 +130,7 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			title: "&eThe Electric Motor"
+			title: "&6The Electric Motor"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -151,7 +151,7 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			title: "&eThe Tesla Coil"
+			title: "&6The Tesla Coil"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -177,7 +177,7 @@
 				item: "createaddition:electrum_wire"
 				type: "item"
 			}]
-			title: "&eWired Up"
+			title: "&6Wired Up"
 			x: 4.0d
 			y: 0.0d
 		}

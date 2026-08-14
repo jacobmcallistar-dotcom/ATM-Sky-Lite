@@ -29,7 +29,7 @@
 				item: "draconicevolution:draconium_ingot"
 				type: "item"
 			}]
-			title: "&5Draconic Evolution"
+			title: "&bDraconic Evolution"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -68,7 +68,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Draconic Tools"
+			title: "&bDraconic Tools"
 			x: -2.0d
 			y: -0.5d
 		}
@@ -106,7 +106,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Energy Core"
+			title: "&bEnergy Core"
 			x: 0.0d
 			y: 0.5d
 		}
@@ -146,7 +146,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Wyvern Gear"
+			title: "&bWyvern Gear"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -173,7 +173,7 @@
 				item: "draconicevolution:chaotic_sword"
 				type: "item"
 			}]
-			title: "&5Chaotic Gear"
+			title: "&bChaotic Gear"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -210,7 +210,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Fusion Crafting"
+			title: "&bFusion Crafting"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -246,7 +246,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Energy Core"
+			title: "&bEnergy Core"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -282,7 +282,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Draconic Reactor"
+			title: "&bDraconic Reactor"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -309,7 +309,7 @@
 				item: "draconicevolution:flux_gate"
 				type: "item"
 			}]
-			title: "&5Flux Gates & Relays"
+			title: "&bFlux Gates & Relays"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -338,7 +338,7 @@
 				item: "draconicevolution:wyvern_pickaxe"
 				type: "item"
 			}]
-			title: "&5Draconic Tools"
+			title: "&bDraconic Tools"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -365,7 +365,7 @@
 				item: "draconicevolution:draconium_ingot"
 				type: "item"
 			}]
-			title: "&5Draconic Armour"
+			title: "&bDraconic Armour"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -392,7 +392,7 @@
 				item: "draconicevolution:chaos_shard"
 				type: "item"
 			}]
-			title: "&5Chaos Shards"
+			title: "&bChaos Shards"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -417,7 +417,7 @@
 				item: "draconicevolution:awakened_draconium_ingot"
 				type: "item"
 			}]
-			title: "&5&lAwakened Draconium"
+			title: "&b&lAwakened Draconium"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -443,7 +443,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&5&lDraconic Complete"
+			title: "&b&lDraconic Complete"
 			x: 4.0d
 			y: 2.2d
 		}

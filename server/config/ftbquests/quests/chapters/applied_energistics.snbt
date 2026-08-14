@@ -38,7 +38,7 @@
 				title: "Begin AE2"
 				type: "checkmark"
 			}]
-			title: "&bThe Network Awakens"
+			title: "&9The Network Awakens"
 			x: -9.0d
 			y: 0.0d
 		}
@@ -64,7 +64,7 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "&bCharge It Up"
+			title: "&9Charge It Up"
 			x: -7.0d
 			y: -1.0d
 		}
@@ -97,7 +97,7 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			title: "&bFluix Crystals"
+			title: "&9Fluix Crystals"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -132,7 +132,7 @@
 				item: "ae2:silicon"
 				type: "item"
 			}]
-			title: "&bSilicon"
+			title: "&9Silicon"
 			x: -7.0d
 			y: 1.0d
 		}
@@ -171,7 +171,7 @@
 					type: "item"
 				}
 			]
-			title: "&bThe Processors"
+			title: "&9The Processors"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -199,7 +199,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "&bThe Controller"
+			title: "&9The Controller"
 			x: -1.0d
 			y: 0.0d
 		}
@@ -238,7 +238,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPower the Network"
+			title: "&9Power the Network"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -279,7 +279,7 @@
 					type: "item"
 				}
 			]
-			title: "&bFirst Digital Storage"
+			title: "&9First Digital Storage"
 			x: 1.0d
 			y: 0.0d
 		}
@@ -325,7 +325,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBigger On The Inside"
+			title: "&9Bigger On The Inside"
 			x: 1.0d
 			y: -1.5d
 		}
@@ -361,7 +361,7 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			title: "&bThe Terminal"
+			title: "&9The Terminal"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -396,7 +396,7 @@
 					type: "item"
 				}
 			]
-			title: "&bAutocrafting Begins"
+			title: "&9Autocrafting Begins"
 			x: 5.0d
 			y: 0.5d
 		}
@@ -434,7 +434,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBuild a Crafting CPU"
+			title: "&9Build a Crafting CPU"
 			x: 7.0d
 			y: 0.5d
 		}
@@ -468,7 +468,7 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			title: "&bEncode Patterns"
+			title: "&9Encode Patterns"
 			x: 5.0d
 			y: 2.0d
 		}
@@ -514,7 +514,7 @@
 					type: "item"
 				}
 			]
-			title: "&bFull Automation"
+			title: "&9Full Automation"
 			x: 9.0d
 			y: 0.5d
 		}
@@ -546,7 +546,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			title: "&bGo Wireless"
+			title: "&9Go Wireless"
 			x: 3.0d
 			y: 2.0d
 		}
@@ -585,7 +585,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSpatial Storage"
+			title: "&9Spatial Storage"
 			x: 7.0d
 			y: 2.0d
 		}
@@ -628,7 +628,7 @@
 					type: "item"
 				}
 			]
-			title: "&bQuantum Bridge"
+			title: "&9Quantum Bridge"
 			x: 9.0d
 			y: 2.0d
 		}
@@ -663,7 +663,7 @@
 				item: "ae2:crafting_monitor"
 				type: "item"
 			}]
-			title: "&bMaster of the Network"
+			title: "&9Master of the Network"
 			x: 11.0d
 			y: 1.25d
 		}
@@ -687,7 +687,7 @@
 				item: "ae2things:disk_housing"
 				type: "item"
 			}]
-			title: "&bDISK Drives"
+			title: "&9DISK Drives"
 			x: 2.0d
 			y: -4.0d
 		}
@@ -711,7 +711,7 @@
 				item: "appmek:chemical_cell_housing"
 				type: "item"
 			}]
-			title: "&bChemicals, Digitized"
+			title: "&9Chemicals, Digitized"
 			x: 4.0d
 			y: -4.0d
 		}
@@ -737,7 +737,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			title: "&bWireless Terminals"
+			title: "&9Wireless Terminals"
 			x: 6.0d
 			y: -4.0d
 		}
@@ -762,7 +762,7 @@
 				item: "expatternprovider:ex_pattern_provider"
 				type: "item"
 			}]
-			title: "&bExpanded Pattern Provider"
+			title: "&9Expanded Pattern Provider"
 			x: 8.0d
 			y: -4.0d
 		}
@@ -787,7 +787,7 @@
 				item: "megacells:item_storage_cell_64m"
 				type: "item"
 			}]
-			title: "&bMEGA Cells"
+			title: "&9MEGA Cells"
 			x: 6.0d
 			y: -5.5d
 		}
@@ -815,7 +815,7 @@
 				item: "refinedstorage:controller"
 				type: "item"
 			}]
-			title: "&bRefined Storage"
+			title: "&9Refined Storage"
 			x: -4.0d
 			y: 4.0d
 		}
@@ -849,7 +849,7 @@
 					type: "item"
 				}
 			]
-			title: "&bCables & Grids"
+			title: "&9Cables & Grids"
 			x: -2.0d
 			y: 4.0d
 		}
@@ -875,7 +875,7 @@
 				item: "refinedstorage:1k_storage_disk"
 				type: "item"
 			}]
-			title: "&bStorage Disks"
+			title: "&9Storage Disks"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -908,7 +908,7 @@
 					type: "item"
 				}
 			]
-			title: "&bImporters & Exporters"
+			title: "&9Importers & Exporters"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -934,7 +934,7 @@
 				item: "refinedstorage:external_storage"
 				type: "item"
 			}]
-			title: "&bExternal Storage"
+			title: "&9External Storage"
 			x: 4.0d
 			y: 4.0d
 		}
@@ -965,7 +965,7 @@
 					type: "item"
 				}
 			]
-			title: "&bCable Tiers"
+			title: "&9Cable Tiers"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -1002,7 +1002,7 @@
 					type: "item"
 				}
 			]
-			title: "&bRequestify"
+			title: "&9Requestify"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -1047,7 +1047,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPackagedAuto"
+			title: "&9PackagedAuto"
 			x: -6.0d
 			y: 5.5d
 		}
@@ -1075,7 +1075,7 @@
 				item: "ae2:growth_accelerator"
 				type: "item"
 			}]
-			title: "&bCrystal Growth"
+			title: "&9Crystal Growth"
 			x: -9.0d
 			y: -2.5d
 		}
@@ -1114,7 +1114,7 @@
 					type: "item"
 				}
 			]
-			title: "&bCable Types"
+			title: "&9Cable Types"
 			x: -9.0d
 			y: -4.0d
 		}
@@ -1143,7 +1143,7 @@
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
-			title: "&bP2P Tunnels"
+			title: "&9P2P Tunnels"
 			x: -9.0d
 			y: -5.5d
 		}
@@ -1173,7 +1173,7 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			title: "&bStorage Bus"
+			title: "&9Storage Bus"
 			x: -7.0d
 			y: 2.5d
 		}
@@ -1209,7 +1209,7 @@
 					type: "item"
 				}
 			]
-			title: "&bInterface & Pattern Provider"
+			title: "&9Interface & Pattern Provider"
 			x: -7.0d
 			y: 4.0d
 		}
@@ -1236,7 +1236,7 @@
 				item: "ae2:level_emitter"
 				type: "item"
 			}]
-			title: "&bLevel Emitter"
+			title: "&9Level Emitter"
 			x: -5.0d
 			y: 4.0d
 		}
@@ -1270,7 +1270,7 @@
 					type: "item"
 				}
 			]
-			title: "&bFormation & Annihilation Planes"
+			title: "&9Formation & Annihilation Planes"
 			x: -5.0d
 			y: 5.5d
 		}
@@ -1298,7 +1298,7 @@
 				item: "ae2:cell_workbench"
 				type: "item"
 			}]
-			title: "&bCell Workbench"
+			title: "&9Cell Workbench"
 			x: -5.0d
 			y: 2.5d
 		}
@@ -1325,7 +1325,7 @@
 				item: "ae2:fluid_storage_cell_1k"
 				type: "item"
 			}]
-			title: "&bFluid & Chemical Cells"
+			title: "&9Fluid & Chemical Cells"
 			x: -3.0d
 			y: 2.5d
 		}
@@ -1359,7 +1359,7 @@
 					type: "item"
 				}
 			]
-			title: "&bIO Port & Condenser"
+			title: "&9IO Port & Condenser"
 			x: -3.0d
 			y: 4.0d
 		}
@@ -1391,7 +1391,7 @@
 					type: "item"
 				}
 			]
-			title: "&bStorage & Conversion Monitors"
+			title: "&9Storage & Conversion Monitors"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -1418,7 +1418,7 @@
 				item: "ae2:security_station"
 				type: "item"
 			}]
-			title: "&bSecurity Terminal"
+			title: "&9Security Terminal"
 			x: 1.0d
 			y: 4.0d
 		}
@@ -1452,7 +1452,7 @@
 					type: "item"
 				}
 			]
-			title: "&bNetwork Tools & Gear"
+			title: "&9Network Tools & Gear"
 			x: 1.0d
 			y: 5.5d
 		}
@@ -1479,7 +1479,7 @@
 				item: "ae2:chest"
 				type: "item"
 			}]
-			title: "&bME Chest"
+			title: "&9ME Chest"
 			x: -1.0d
 			y: 2.5d
 		}
@@ -1507,7 +1507,7 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			title: "&bCrafting Accelerators"
+			title: "&9Crafting Accelerators"
 			x: 5.0d
 			y: -2.5d
 		}
@@ -1532,7 +1532,7 @@
 				item: "ae2:crafting_monitor"
 				type: "item"
 			}]
-			title: "&bCrafting Monitor"
+			title: "&9Crafting Monitor"
 			x: 7.0d
 			y: -2.5d
 		}
@@ -1566,7 +1566,7 @@
 					type: "item"
 				}
 			]
-			title: "&bToggle Bus & Quartz Fiber"
+			title: "&9Toggle Bus & Quartz Fiber"
 			x: 3.0d
 			y: 4.0d
 		}
@@ -1594,7 +1594,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&b&lMaster of the Grid"
+			title: "&9&lMaster of the Grid"
 			x: 9.0d
 			y: 1.0d
 		}
@@ -1620,7 +1620,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&bArs Energistique"
+			title: "&9Ars Energistique"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -1644,7 +1644,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&bApplied Botanics"
+			title: "&9Applied Botanics"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -1670,7 +1670,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&bApplied Flux"
+			title: "&9Applied Flux"
 			x: 10.0d
 			y: 4.0d
 		}

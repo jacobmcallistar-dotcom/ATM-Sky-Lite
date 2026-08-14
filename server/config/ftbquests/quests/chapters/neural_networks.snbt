@@ -33,7 +33,7 @@
 				title: "Begin"
 				type: "checkmark"
 			}]
-			title: "&9Neural Networks"
+			title: "&bNeural Networks"
 			x: -8.0d
 			y: 0.8d
 		}
@@ -58,7 +58,7 @@
 				item: "hostilenetworks:deep_learner"
 				type: "item"
 			}]
-			title: "&9Learning to Kill"
+			title: "&bLearning to Kill"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -91,7 +91,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The Kill Simulator"
+			title: "&bThe Kill Simulator"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -117,7 +117,7 @@
 				item: "hostilenetworks:overworld_prediction"
 				type: "item"
 			}]
-			title: "&9Prediction Economy"
+			title: "&bPrediction Economy"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -143,7 +143,7 @@
 				item: "extrahnn:merger_camera"
 				type: "item"
 			}]
-			title: "&9Model Merging"
+			title: "&bModel Merging"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -173,7 +173,7 @@
 				item: "hostilenetworks:deep_learner"
 				type: "item"
 			}]
-			title: "&9The Deep Learner"
+			title: "&bThe Deep Learner"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -205,7 +205,7 @@
 				item: "hostilenetworks:blank_data_model"
 				type: "item"
 			}]
-			title: "&9Blank Data Models"
+			title: "&bBlank Data Models"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -233,7 +233,7 @@
 				item: "hostilenetworks:prediction_matrix"
 				type: "item"
 			}]
-			title: "&9Prediction Matrix"
+			title: "&bPrediction Matrix"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -262,7 +262,7 @@
 				item: "hostilenetworks:loot_fabricator"
 				type: "item"
 			}]
-			title: "&9The Loot Fabricator"
+			title: "&bThe Loot Fabricator"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -290,7 +290,7 @@
 				item: "hostilenetworks:nether_prediction"
 				type: "item"
 			}]
-			title: "&9Dimensional Predictions"
+			title: "&bDimensional Predictions"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -318,7 +318,7 @@
 				item: "extrahnn:merger_camera"
 				type: "item"
 			}]
-			title: "&9Model Merging"
+			title: "&bModel Merging"
 			x: 6.0d
 			y: 1.5d
 		}
@@ -348,7 +348,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&9&lSelf Aware"
+			title: "&b&lSelf Aware"
 			x: 8.0d
 			y: 0.8d
 		}

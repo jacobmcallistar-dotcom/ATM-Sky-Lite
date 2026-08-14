@@ -31,7 +31,7 @@
 				title: "Begin"
 				type: "checkmark"
 			}]
-			title: "&eSolar Flux"
+			title: "&6Solar Flux"
 			x: -6.0d
 			y: 0.8d
 		}
@@ -65,7 +65,7 @@
 					type: "item"
 				}
 			]
-			title: "&eSolar Flux"
+			title: "&6Solar Flux"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -91,7 +91,7 @@
 				item: "solarflux:photovoltaic_cell_1"
 				type: "item"
 			}]
-			title: "&ePhotovoltaic Cells"
+			title: "&6Photovoltaic Cells"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -119,7 +119,7 @@
 				item: "solarflux:sp_4"
 				type: "item"
 			}]
-			title: "&ePanel Tiers"
+			title: "&6Panel Tiers"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -152,7 +152,7 @@
 				item: "solarflux:blank_upgrade"
 				type: "item"
 			}]
-			title: "&eUpgrades"
+			title: "&6Upgrades"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -178,7 +178,7 @@
 				item: "solarflux:mirror"
 				type: "item"
 			}]
-			title: "&eMirrors"
+			title: "&6Mirrors"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -208,7 +208,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&e&lSolar Complete"
+			title: "&6&lSolar Complete"
 			x: 2.0d
 			y: 1.5d
 		}

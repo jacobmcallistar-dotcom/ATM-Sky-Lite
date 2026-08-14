@@ -29,7 +29,7 @@
 				title: "Begin"
 				type: "checkmark"
 			}]
-			title: "&fThe Toolkit"
+			title: "&bThe Toolkit"
 			x: 0.0d
 			y: -3.5d
 		}
@@ -63,7 +63,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&fJade"
+			title: "&bJade"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -93,7 +93,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&fInventory Profiles Next"
+			title: "&bInventory Profiles Next"
 			x: -1.5d
 			y: -1.5d
 		}
@@ -118,7 +118,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&fQuests Additions"
+			title: "&bQuests Additions"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -143,7 +143,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&fTom's Performant Storage"
+			title: "&bTom's Performant Storage"
 			x: 4.5d
 			y: -1.5d
 		}
@@ -174,7 +174,7 @@
 				title: "Read"
 				type: "checkmark"
 			}]
-			title: "&fElytra Slot"
+			title: "&bElytra Slot"
 			x: -2.0d
 			y: 0.5d
 		}
@@ -200,7 +200,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&fWaystones"
+			title: "&bWaystones"
 			x: -4.5d
 			y: 1.0d
 		}
@@ -229,7 +229,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&fJEI, Properly"
+			title: "&bJEI, Properly"
 			x: -1.5d
 			y: 1.0d
 		}
@@ -255,7 +255,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&fPerformance Mods"
+			title: "&bPerformance Mods"
 			x: 1.5d
 			y: 1.0d
 		}
@@ -279,7 +279,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&f&lToolkit Complete"
+			title: "&b&lToolkit Complete"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -303,7 +303,7 @@
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			title: "&fCrafting on a Stick"
+			title: "&bCrafting on a Stick"
 			x: 3.0d
 			y: 1.0d
 		}

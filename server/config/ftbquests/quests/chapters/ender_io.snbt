@@ -32,7 +32,7 @@
 				title: "Open the toolbox of the End"
 				type: "checkmark"
 			}]
-			title: "&5Ender IO"
+			title: "&bEnder IO"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -67,7 +67,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Smelt & Burn"
+			title: "&bSmelt & Burn"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -108,7 +108,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Conduits"
+			title: "&bConduits"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -148,7 +148,7 @@
 					type: "item"
 				}
 			]
-			title: "&5The SAG Mill"
+			title: "&bThe SAG Mill"
 			x: -8.0d
 			y: -1.5d
 		}
@@ -189,7 +189,7 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			title: "&5Dark Steel"
+			title: "&bDark Steel"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -234,7 +234,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Soul Industry"
+			title: "&bSoul Industry"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -276,7 +276,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Blink Economy"
+			title: "&bBlink Economy"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -313,7 +313,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Conduits"
+			title: "&bConduits"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -338,7 +338,7 @@
 				item: "enderio:yeta_wrench"
 				type: "item"
 			}]
-			title: "&5Yeta Wrench"
+			title: "&bYeta Wrench"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -372,7 +372,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Soul Binder & Powered Spawner"
+			title: "&bSoul Binder & Powered Spawner"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -397,7 +397,7 @@
 				item: "enderio:vibrant_crystal"
 				type: "item"
 			}]
-			title: "&5Vibrant Crystals & Capacitors"
+			title: "&bVibrant Crystals & Capacitors"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -424,7 +424,7 @@
 				item: "enderio:travel_anchor"
 				type: "item"
 			}]
-			title: "&5Travel Anchors & Staff"
+			title: "&bTravel Anchors & Staff"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -449,7 +449,7 @@
 				item: "enderio:xp_vacuum"
 				type: "item"
 			}]
-			title: "&5XP Vacuum & Obelisks"
+			title: "&bXP Vacuum & Obelisks"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -481,7 +481,7 @@
 					type: "item"
 				}
 			]
-			title: "&5Impulse Hopper & Wired Charger"
+			title: "&bImpulse Hopper & Wired Charger"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -520,7 +520,7 @@
 				}
 				type: "item"
 			}]
-			title: "&5Dark Steel Gear"
+			title: "&bDark Steel Gear"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -545,7 +545,7 @@
 				item: "enderio:photovoltaic_cell"
 				type: "item"
 			}]
-			title: "&5Photovoltaic Cells"
+			title: "&bPhotovoltaic Cells"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -571,7 +571,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&5&lEnder IO Complete"
+			title: "&b&lEnder IO Complete"
 			x: 4.0d
 			y: 2.2d
 		}

@@ -33,7 +33,7 @@
 				title: "Read: Bees Make Everything"
 				type: "checkmark"
 			}]
-			title: "&eProductive Bees"
+			title: "&bProductive Bees"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -57,7 +57,7 @@
 				item: "productivebees:sugarbag_nest"
 				type: "item"
 			}]
-			title: "&eFirst Hive"
+			title: "&bFirst Hive"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -81,7 +81,7 @@
 				item: "productivebees:advanced_oak_beehive"
 				type: "item"
 			}]
-			title: "&eThe Advanced Hive"
+			title: "&bThe Advanced Hive"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -105,7 +105,7 @@
 				item: "productivebees:centrifuge"
 				type: "item"
 			}]
-			title: "&eThe Centrifuge"
+			title: "&bThe Centrifuge"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -129,7 +129,7 @@
 				item: "productivebees:breeding_chamber"
 				type: "item"
 			}]
-			title: "&eThe Breeding Chamber"
+			title: "&bThe Breeding Chamber"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -160,7 +160,7 @@
 					type: "item"
 				}
 			]
-			title: "&ePowered Apiary"
+			title: "&bPowered Apiary"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -194,7 +194,7 @@
 				item: "productivebees:incubator"
 				type: "item"
 			}]
-			title: "&e&lThe Incubator"
+			title: "&b&lThe Incubator"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -227,7 +227,7 @@
 					type: "item"
 				}
 			]
-			title: "&eProductive Trees"
+			title: "&bProductive Trees"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -253,7 +253,7 @@
 				item: "productivebees:advanced_oak_beehive"
 				type: "item"
 			}]
-			title: "&eAdvanced Hives"
+			title: "&bAdvanced Hives"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -278,7 +278,7 @@
 				item: "productivebees:centrifuge"
 				type: "item"
 			}]
-			title: "&eCentrifuge"
+			title: "&bCentrifuge"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -305,7 +305,7 @@
 				item: "productivebees:bee_cage"
 				type: "item"
 			}]
-			title: "&eBreeding & Mutation"
+			title: "&bBreeding & Mutation"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -330,7 +330,7 @@
 				item: "productivebees:feeder"
 				type: "item"
 			}]
-			title: "&eFeeding Slabs & Flowers"
+			title: "&bFeeding Slabs & Flowers"
 			x: -6.0d
 			y: 4.5d
 		}
@@ -353,7 +353,7 @@
 				item: "productivebees:honey_generator"
 				type: "item"
 			}]
-			title: "&eHoney & Fluids"
+			title: "&bHoney & Fluids"
 			x: -4.0d
 			y: 4.5d
 		}
@@ -379,7 +379,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&e&lApiary Complete"
+			title: "&b&lApiary Complete"
 			x: 0.0d
 			y: 3.8d
 		}
@@ -405,7 +405,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&eThe Steel Bee"
+			title: "&bThe Steel Bee"
 			x: -6.0d
 			y: 6.0d
 		}
@@ -440,7 +440,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&e&lDesh, Ostrum and Calorite Bees"
+			title: "&b&lDesh, Ostrum and Calorite Bees"
 			x: -4.0d
 			y: 6.0d
 		}

@@ -33,7 +33,7 @@
 				title: "Read: The Industry Branch"
 				type: "checkmark"
 			}]
-			title: "&2Industrial Foregoing"
+			title: "&bIndustrial Foregoing"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -58,7 +58,7 @@
 				item: "industrialforegoing:plastic"
 				type: "item"
 			}]
-			title: "&2Plastic"
+			title: "&bPlastic"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -82,7 +82,7 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
-			title: "&2The Pity Frame"
+			title: "&bThe Pity Frame"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -113,7 +113,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Better Frames"
+			title: "&bBetter Frames"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -146,7 +146,7 @@
 					type: "item"
 				}
 			]
-			title: "&2&lThe Ore Laser"
+			title: "&b&lThe Ore Laser"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -170,7 +170,7 @@
 				item: "industrialforegoing:mob_crusher"
 				type: "item"
 			}]
-			title: "&2The Mob Crusher"
+			title: "&bThe Mob Crusher"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -194,7 +194,7 @@
 				item: "industrialforegoing:pity_black_hole_unit"
 				type: "item"
 			}]
-			title: "&2Bottomless Storage"
+			title: "&bBottomless Storage"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -235,7 +235,7 @@
 					type: "item"
 				}
 			]
-			title: "&2IF: Souls"
+			title: "&bIF: Souls"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -261,7 +261,7 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
-			title: "&2Machine Frames"
+			title: "&bMachine Frames"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -297,7 +297,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Laser Drill & Lenses"
+			title: "&bLaser Drill & Lenses"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -333,7 +333,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Plant Gatherer & Sower"
+			title: "&bPlant Gatherer & Sower"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -369,7 +369,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Mob Duplicator & Slaughter Factory"
+			title: "&bMob Duplicator & Slaughter Factory"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -403,7 +403,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Black Hole Units & Tanks"
+			title: "&bBlack Hole Units & Tanks"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -435,7 +435,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Biofuel & Protein Generators"
+			title: "&bBiofuel & Protein Generators"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -469,7 +469,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Enchantment Factory"
+			title: "&bEnchantment Factory"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -496,7 +496,7 @@
 				item: "industrialforegoing:material_stonework_factory"
 				type: "item"
 			}]
-			title: "&2Material Stonework Factory"
+			title: "&bMaterial Stonework Factory"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -522,7 +522,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&2&lIndustrial Foregoing Complete"
+			title: "&b&lIndustrial Foregoing Complete"
 			x: 6.0d
 			y: 2.2d
 		}

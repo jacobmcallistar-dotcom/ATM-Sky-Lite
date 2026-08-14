@@ -34,7 +34,7 @@
 				title: "Beyond the Island"
 				type: "checkmark"
 			}]
-			title: "&5Realms Beyond"
+			title: "&9Realms Beyond"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -65,7 +65,7 @@
 				id: "4BA53916264ABFE6"
 				type: "dimension"
 			}]
-			title: "&5Into the Aether"
+			title: "&9Into the Aether"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -101,7 +101,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Slider"
+			title: "&9The Slider"
 			x: -4.0d
 			y: -1.0d
 		}
@@ -138,7 +138,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Valkyrie Queen"
+			title: "&9The Valkyrie Queen"
 			x: -4.0d
 			y: 1.0d
 		}
@@ -181,7 +181,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Sun Spirit"
+			title: "&9The Sun Spirit"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -223,7 +223,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5Eye of the Storm"
+			title: "&9Eye of the Storm"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -272,7 +272,7 @@
 				id: "15E0BA1DF348E888"
 				type: "dimension"
 			}]
-			title: "&5Everbright"
+			title: "&9Everbright"
 			x: -6.0d
 			y: 2.5d
 		}
@@ -301,7 +301,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5Starlit Crusher"
+			title: "&9Starlit Crusher"
 			x: -4.0d
 			y: 2.5d
 		}
@@ -330,7 +330,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5The Arachnarch"
+			title: "&9The Arachnarch"
 			x: -2.0d
 			y: 2.5d
 		}
@@ -357,7 +357,7 @@
 				id: "095B56AFAA98D898"
 				type: "dimension"
 			}]
-			title: "&5The Undergarden"
+			title: "&9The Undergarden"
 			x: -6.0d
 			y: -2.5d
 		}
@@ -392,7 +392,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "&5Forgotten Guardian"
+			title: "&9Forgotten Guardian"
 			x: -4.0d
 			y: -2.5d
 		}

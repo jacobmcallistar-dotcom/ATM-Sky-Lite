@@ -34,7 +34,7 @@
 				item: "powergrid:multimeter"
 				type: "item"
 			}]
-			title: "&bReal Electricity"
+			title: "&6Real Electricity"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -72,7 +72,7 @@
 					type: "item"
 				}
 			]
-			title: "&bThe Generator"
+			title: "&6The Generator"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -110,7 +110,7 @@
 					type: "item"
 				}
 			]
-			title: "&bWire and Resistance"
+			title: "&6Wire and Resistance"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -141,7 +141,7 @@
 					type: "item"
 				}
 			]
-			title: "&bTransformers"
+			title: "&6Transformers"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -178,7 +178,7 @@
 					type: "item"
 				}
 			]
-			title: "&bLV, MV, HV"
+			title: "&6LV, MV, HV"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -212,7 +212,7 @@
 					type: "item"
 				}
 			]
-			title: "&bFuses and Breakers"
+			title: "&6Fuses and Breakers"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -250,7 +250,7 @@
 					type: "item"
 				}
 			]
-			title: "&bMeasure It"
+			title: "&6Measure It"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -280,7 +280,7 @@
 					type: "item"
 				}
 			]
-			title: "&bResistors and Capacitors"
+			title: "&6Resistors and Capacitors"
 			x: -8.0d
 			y: 1.5d
 		}
@@ -312,7 +312,7 @@
 					type: "item"
 				}
 			]
-			title: "&bDialling It In"
+			title: "&6Dialling It In"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -348,7 +348,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSemiconductors"
+			title: "&6Semiconductors"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -389,7 +389,7 @@
 					type: "item"
 				}
 			]
-			title: "&bEtching Circuits"
+			title: "&6Etching Circuits"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -420,7 +420,7 @@
 					type: "item"
 				}
 			]
-			title: "&bMotors and Heat"
+			title: "&6Motors and Heat"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -451,7 +451,7 @@
 					type: "item"
 				}
 			]
-			title: "&bLight and Alarm"
+			title: "&6Light and Alarm"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -481,7 +481,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPunch Cards and the CRT"
+			title: "&6Punch Cards and the CRT"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -508,7 +508,7 @@
 				item: "powergrid:integrated_circuit"
 				type: "item"
 			}]
-			title: "&bThe Grid"
+			title: "&6The Grid"
 			x: 6.0d
 			y: 0.8d
 		}

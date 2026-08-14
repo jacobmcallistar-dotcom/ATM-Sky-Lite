@@ -49,7 +49,7 @@
 				title: "Take flight"
 				type: "checkmark"
 			}]
-			title: "&aThe Sieve"
+			title: "&2The Sieve"
 			x: -16.0d
 			y: 0.0d
 		}
@@ -78,7 +78,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			title: "&aThe Cobble Engine"
+			title: "&2The Cobble Engine"
 			x: -12.0d
 			y: -1.5d
 		}
@@ -117,7 +117,7 @@
 				}
 				type: "item"
 			}]
-			title: "&aHammer Time"
+			title: "&2Hammer Time"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -162,7 +162,7 @@
 					type: "item"
 				}
 			]
-			title: "&aThe Sieve & the Mesh"
+			title: "&2The Sieve & the Mesh"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -206,7 +206,7 @@
 					type: "item"
 				}
 			]
-			title: "&aOre From Gravel"
+			title: "&2Ore From Gravel"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -237,7 +237,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "&aFirst Iron"
+			title: "&2First Iron"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -278,7 +278,7 @@
 				item: "cobblefordays:tier_1"
 				type: "item"
 			}]
-			title: "&aCobble On Tap"
+			title: "&2Cobble On Tap"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -307,7 +307,7 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			title: "&aHotter Than Hot"
+			title: "&2Hotter Than Hot"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -348,7 +348,7 @@
 				}
 				type: "item"
 			}]
-			title: "&aThe Crook"
+			title: "&2The Crook"
 			x: -14.0d
 			y: 1.5d
 		}
@@ -374,7 +374,7 @@
 				item: "exdeorum:oak_barrel"
 				type: "item"
 			}]
-			title: "&aThe Barrel"
+			title: "&2The Barrel"
 			x: -16.0d
 			y: -1.5d
 		}
@@ -398,7 +398,7 @@
 				item: "exdeorum:flint_mesh"
 				type: "item"
 			}]
-			title: "&aSharper Sieving: Flint"
+			title: "&2Sharper Sieving: Flint"
 			x: -8.0d
 			y: 1.5d
 		}
@@ -426,7 +426,7 @@
 				item: "exdeorum:iron_mesh"
 				type: "item"
 			}]
-			title: "&aIron Mesh"
+			title: "&2Iron Mesh"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -455,7 +455,7 @@
 				item: "exdeorum:diamond_mesh"
 				type: "item"
 			}]
-			title: "&aDiamond Mesh"
+			title: "&2Diamond Mesh"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -482,7 +482,7 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "&aCertus From Sand"
+			title: "&2Certus From Sand"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -509,7 +509,7 @@
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
-			title: "&aOsmium From Gravel"
+			title: "&2Osmium From Gravel"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -535,7 +535,7 @@
 				item: "skyforge:sky_dust"
 				type: "item"
 			}]
-			title: "&aDust of the Heavens"
+			title: "&2Dust of the Heavens"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -565,7 +565,7 @@
 				item: "skyforge:sky_steel_ingot"
 				type: "item"
 			}]
-			title: "&aSky Steel"
+			title: "&2Sky Steel"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -592,7 +592,7 @@
 				item: "skyforge:sky_assembler"
 				type: "item"
 			}]
-			title: "&aThe Sky Assembler"
+			title: "&2The Sky Assembler"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -631,7 +631,7 @@
 				item: "skyforge:sky_steel_ingot"
 				type: "item"
 			}]
-			title: "&aIngots on Tap"
+			title: "&2Ingots on Tap"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -669,7 +669,7 @@
 					type: "item"
 				}
 			]
-			title: "&aThe Crucible"
+			title: "&2The Crucible"
 			x: -14.0d
 			y: -1.5d
 		}
@@ -696,7 +696,7 @@
 				item: "exdeorum:wooden_watering_can"
 				type: "item"
 			}]
-			title: "&aThe Watering Can"
+			title: "&2The Watering Can"
 			x: -16.0d
 			y: -3.0d
 		}
@@ -721,7 +721,7 @@
 				item: "exdeorum:silk_worm"
 				type: "item"
 			}]
-			title: "&aSilk Worms"
+			title: "&2Silk Worms"
 			x: -12.0d
 			y: 1.5d
 		}
@@ -766,7 +766,7 @@
 					type: "item"
 				}
 			]
-			title: "&aCompressed Progress"
+			title: "&2Compressed Progress"
 			x: -8.0d
 			y: -1.5d
 		}
@@ -811,7 +811,7 @@
 					type: "item"
 				}
 			]
-			title: "&aPowered Sieving"
+			title: "&2Powered Sieving"
 			x: -8.0d
 			y: -3.0d
 		}
@@ -845,7 +845,7 @@
 				item: "exdeorum:mechanical_hammer"
 				type: "item"
 			}]
-			title: "&aThe Mechanical Hammer"
+			title: "&2The Mechanical Hammer"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -879,7 +879,7 @@
 				item: "exdeorum:mechanical_sieve"
 				type: "item"
 			}]
-			title: "&aThe Mechanical Sieve"
+			title: "&2The Mechanical Sieve"
 			x: 16.0d
 			y: 2.0d
 		}
@@ -921,7 +921,7 @@
 				item: "exdeorum:oak_compressed_sieve"
 				type: "item"
 			}]
-			title: "&aThe Compressed Sieve"
+			title: "&2The Compressed Sieve"
 			x: 18.0d
 			y: 2.0d
 		}
@@ -955,7 +955,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			title: "&aFirst Cobble"
+			title: "&2First Cobble"
 			x: -10.0d
 			y: 0.0d
 		}

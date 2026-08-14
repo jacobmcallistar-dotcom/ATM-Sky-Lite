@@ -42,7 +42,7 @@
 				title: "Pick a second industry"
 				type: "checkmark"
 			}]
-			title: "&6The Second Industry"
+			title: "&bThe Second Industry"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -68,7 +68,7 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			title: "&6The Stirling Dynamo"
+			title: "&bThe Stirling Dynamo"
 			x: -8.0d
 			y: -3.0d
 		}
@@ -95,7 +95,7 @@
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			title: "&6The Pulverizer"
+			title: "&bThe Pulverizer"
 			x: -6.0d
 			y: -3.0d
 		}
@@ -119,7 +119,7 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			title: "&6The Induction Smelter"
+			title: "&bThe Induction Smelter"
 			x: -4.0d
 			y: -3.0d
 		}
@@ -143,7 +143,7 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			title: "&6The Centrifugal Separator"
+			title: "&bThe Centrifugal Separator"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -176,7 +176,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Ducts"
+			title: "&bDucts"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -218,7 +218,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Servos and Filters"
+			title: "&bServos and Filters"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -242,7 +242,7 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			title: "&6The Phytogenic Insolator"
+			title: "&bThe Phytogenic Insolator"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -270,7 +270,7 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			title: "&6Dynamos"
+			title: "&bDynamos"
 			x: -8.0d
 			y: 3.0d
 		}
@@ -301,7 +301,7 @@
 				item: "thermal:machine_crafter"
 				type: "item"
 			}]
-			title: "&6Augments"
+			title: "&bAugments"
 			x: -8.0d
 			y: 4.5d
 		}
@@ -335,7 +335,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Pulverizer & Redstone Furnace"
+			title: "&bPulverizer & Redstone Furnace"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -360,7 +360,7 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			title: "&6Induction Smelter"
+			title: "&bInduction Smelter"
 			x: -6.0d
 			y: 4.5d
 		}
@@ -392,7 +392,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Fluid Machines"
+			title: "&bFluid Machines"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -419,7 +419,7 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			title: "&6Devices"
+			title: "&bDevices"
 			x: -4.0d
 			y: 4.5d
 		}
@@ -444,7 +444,7 @@
 				item: "thermal:energy_duct"
 				type: "item"
 			}]
-			title: "&6Fluiducts & Itemducts"
+			title: "&bFluiducts & Itemducts"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -469,7 +469,7 @@
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			title: "&6Tinkering & Reconfiguration"
+			title: "&bTinkering & Reconfiguration"
 			x: -2.0d
 			y: 4.5d
 		}
@@ -495,7 +495,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&6&lThermal Complete"
+			title: "&b&lThermal Complete"
 			x: 0.0d
 			y: 3.8d
 		}
@@ -523,7 +523,7 @@
 				item: "thermal:watering_can"
 				type: "item"
 			}]
-			title: "&6Thermal Cultivation"
+			title: "&bThermal Cultivation"
 			x: -7.0d
 			y: 4.0d
 		}
@@ -548,7 +548,7 @@
 				item: "thermal:flux_drill"
 				type: "item"
 			}]
-			title: "&6Thermal Innovation"
+			title: "&bThermal Innovation"
 			x: -5.0d
 			y: 4.0d
 		}
@@ -571,7 +571,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&6Thermal Locomotion"
+			title: "&bThermal Locomotion"
 			x: -7.0d
 			y: 5.5d
 		}
@@ -596,7 +596,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&6Thermal Integration"
+			title: "&bThermal Integration"
 			x: -5.0d
 			y: 5.5d
 		}

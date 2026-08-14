@@ -29,7 +29,7 @@
 				item: "rftoolsbase:machine_infuser"
 				type: "item"
 			}]
-			title: "&6RFTools"
+			title: "&bRFTools"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -58,7 +58,7 @@
 				item: "rftoolsbase:smartwrench"
 				type: "item"
 			}]
-			title: "&6Smartwrench"
+			title: "&bSmartwrench"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -90,7 +90,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Matter Transmitters"
+			title: "&bMatter Transmitters"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -131,7 +131,7 @@
 					type: "item"
 				}
 			]
-			title: "&6The Builder"
+			title: "&bThe Builder"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -164,7 +164,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Power Cells"
+			title: "&bPower Cells"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -199,7 +199,7 @@
 				item: "rftoolsdim:dimension_builder"
 				type: "item"
 			}]
-			title: "&6Build Your Own Dimension"
+			title: "&bBuild Your Own Dimension"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -237,7 +237,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Modular Storage"
+			title: "&bModular Storage"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -270,7 +270,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Programmable Logic"
+			title: "&bProgrammable Logic"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -305,7 +305,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Machine Frames"
+			title: "&bMachine Frames"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -338,7 +338,7 @@
 				item: "rftoolsbuilder:builder"
 				type: "item"
 			}]
-			title: "&6Shape Cards"
+			title: "&bShape Cards"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -372,7 +372,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Space Chamber & Mover"
+			title: "&bSpace Chamber & Mover"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -407,7 +407,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Screens"
+			title: "&bScreens"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -441,7 +441,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Redstone Anywhere"
+			title: "&bRedstone Anywhere"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -475,7 +475,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Logic Blocks"
+			title: "&bLogic Blocks"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -502,7 +502,7 @@
 				item: "rftoolsutility:crafter1"
 				type: "item"
 			}]
-			title: "&6RFTools Crafter"
+			title: "&bRFTools Crafter"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -536,7 +536,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Matter Beamer & Spawner"
+			title: "&bMatter Beamer & Spawner"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -563,7 +563,7 @@
 				item: "rftoolsutility:environmental_controller"
 				type: "item"
 			}]
-			title: "&6Environmental Controller"
+			title: "&bEnvironmental Controller"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -602,7 +602,7 @@
 				}
 				type: "item"
 			}]
-			title: "&6Charged Porter"
+			title: "&bCharged Porter"
 			x: 6.0d
 			y: 1.5d
 		}
@@ -637,7 +637,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Power Cells & Generation"
+			title: "&bPower Cells & Generation"
 			x: -4.0d
 			y: -1.5d
 		}
@@ -667,7 +667,7 @@
 				item: "rftoolsstorage:storage_scanner"
 				type: "item"
 			}]
-			title: "&6Storage Scanner"
+			title: "&bStorage Scanner"
 			x: 6.0d
 			y: 3.0d
 		}
@@ -695,7 +695,7 @@
 				title: "Complete"
 				type: "checkmark"
 			}]
-			title: "&6&lRFTools Complete"
+			title: "&b&lRFTools Complete"
 			x: 8.0d
 			y: 2.2d
 		}

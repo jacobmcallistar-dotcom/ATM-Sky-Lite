@@ -47,7 +47,7 @@
 				}
 				type: "item"
 			}]
-			title: "&6The Engineer's Hammer"
+			title: "&bThe Engineer's Hammer"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -72,7 +72,7 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
-			title: "&6Treated Wood"
+			title: "&bTreated Wood"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -98,7 +98,7 @@
 				item: "immersiveengineering:cokebrick"
 				type: "item"
 			}]
-			title: "&6The Coke Oven"
+			title: "&bThe Coke Oven"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -129,7 +129,7 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			title: "&6The Blast Furnace"
+			title: "&bThe Blast Furnace"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -164,7 +164,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Wires and Connectors"
+			title: "&bWires and Connectors"
 			x: -6.0d
 			y: 1.5d
 		}
@@ -202,7 +202,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Wind and Water"
+			title: "&bWind and Water"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -227,7 +227,7 @@
 				item: "immersiveengineering:conveyor_basic"
 				type: "item"
 			}]
-			title: "&6Conveyor Belts"
+			title: "&bConveyor Belts"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -267,7 +267,7 @@
 				title: "Run a second industry"
 				type: "checkmark"
 			}]
-			title: "&6&lIndustrialised"
+			title: "&b&lIndustrialised"
 			x: 0.0d
 			y: 0.75d
 		}
