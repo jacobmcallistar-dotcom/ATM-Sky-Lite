@@ -110,13 +110,11 @@
 				xp: 20
 			}]
 			subtitle: "&7The pad needs feeding"
-			tasks: [
-				{
-					id: "27C8645AB9E76C60"
-					item: "ad_astra:coal_generator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "27C8645AB9E76C60"
+				item: "ad_astra:coal_generator"
+				type: "item"
+			}]
 			title: "&9Ground Power"
 			x: -7.0d
 			y: 0.0d
@@ -138,13 +136,11 @@
 				xp: 30
 			}]
 			subtitle: "&7Oxygen or nothing"
-			tasks: [
-				{
-					id: "23647E2660285C01"
-					item: "ad_astra:oxygen_loader"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "23647E2660285C01"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
 			title: "&9Something to Breathe"
 			x: -7.0d
 			y: 1.5d
@@ -878,8 +874,16 @@
 			id: "2D5C000000000010"
 			subtitle: "&7Now that you have desh"
 			tasks: [
-				{ id: "2D5C0000000000T0", item: "ad_astra:oxygen_distributor", type: "item" }
-				{ id: "2D5C0000000000T1", item: "ad_astra:water_pump", type: "item" }
+				{
+					id: "683B386EFF3F12C3"
+					item: "ad_astra:oxygen_distributor"
+					type: "item"
+				}
+				{
+					id: "579A774DCC14E925"
+					item: "ad_astra:water_pump"
+					type: "item"
+				}
 			]
 			title: "&9Life Support"
 			x: 2.0d
@@ -897,9 +901,11 @@
 			icon: "ad_astra:energizer"
 			id: "2D5C000000000011"
 			subtitle: "&7Ostrum-framed charging"
-			tasks: [
-				{ id: "2D5C0000000000T0", item: "ad_astra:energizer", type: "item" }
-			]
+			tasks: [{
+				id: "23473CD06278FEDB"
+				item: "ad_astra:energizer"
+				type: "item"
+			}]
 			title: "&9The Energizer"
 			x: 6.0d
 			y: 0.5d
