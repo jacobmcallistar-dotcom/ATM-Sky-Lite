@@ -96,12 +96,11 @@
 		{
 			dependencies: ["025F9F5BB50F3C61"]
 			description: [
-				"Every Ad Astra machine drinks FE, and these two are the starter supply."
+				"A &6Coal Generator&r burns coal for FE. Crude, cheap, and it works on day one."
 				""
-				"&7- &fCoal Generator&7 - burns coal, exactly as it sounds."
-				"&7- &fEnergizer&7 - stores what it makes and charges items."
+				"&e&lYou do not have to use it.&r Every Ad Astra machine takes FE from anything - Powah, Create, Mekanism, the Power Grid. If you already have generation, wire it in and skip the coal entirely."
 				""
-				"&e&lYou do not have to use them.&r Ad Astra machines accept FE from anything - Powah, Create, Mekanism, the Power Grid. If you already have generation, wire it in and skip the coal."
+				"&7The &6Energizer&7 used to sit in this quest. It is built from &eostrum&7, so it is not craftable until Mars - it now has its own quest out on the Red Frontier.&r"
 			]
 			icon: "ad_astra:coal_generator"
 			id: "1654EA4BC9A74F79"
@@ -117,11 +116,6 @@
 					item: "ad_astra:coal_generator"
 					type: "item"
 				}
-				{
-					id: "70F463107DC7CBFD"
-					item: "ad_astra:energizer"
-					type: "item"
-				}
 			]
 			title: "&9Ground Power"
 			x: -7.0d
@@ -130,11 +124,13 @@
 		{
 			dependencies: ["025F9F5BB50F3C61"]
 			description: [
-				"No air in space. An Oxygen Distributor floods a sealed room with breathable air; an Oxygen Loader fills your tanks."
+				"The &bOxygen Loader&r fills tanks and suits. It is plain steel, so you can build it before you ever leave the ground - which is the point, because you cannot reach the Moon without oxygen."
 				""
-				"A Water Pump feeds them. This is your life support - do not skip it."
+				"&e&lThat is all you need for the trip.&r Loader, a tank, and a space suit."
+				""
+				"&7The &bOxygen Distributor&7 and &bWater Pump&7 are base-building blocks rather than travel gear, and both are framed in &edesh&7 - so they wait until you have stood on the Moon. See &fLife Support&7.&r"
 			]
-			icon: "ad_astra:oxygen_distributor"
+			icon: "ad_astra:oxygen_loader"
 			id: "15008CDD6EC8DA95"
 			rewards: [{
 				id: "7C51C336ACD0DF08"
@@ -144,18 +140,8 @@
 			subtitle: "&7Oxygen or nothing"
 			tasks: [
 				{
-					id: "65A375F0EC588450"
-					item: "ad_astra:oxygen_distributor"
-					type: "item"
-				}
-				{
 					id: "23647E2660285C01"
 					item: "ad_astra:oxygen_loader"
-					type: "item"
-				}
-				{
-					id: "5B56C31CDBE1A5A6"
-					item: "ad_astra:water_pump"
 					type: "item"
 				}
 			]
@@ -669,19 +655,13 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["1654EA4BC9A74F79"]
+			dependencies: ["3811F52536EF179D"]
 			description: [
-				"A &eSolar Panel&r loves a void world - no clouds below, no caves above. Free daytime FE for your outposts, on any planet with a sun."
+				"&eSolar Panels&r are the payoff for reaching the last planet."
 				""
-				"&e&lThis is the right generator for off-world bases.&r Your Moon or Mars outpost cannot easily run cables home, and hauling fuel across the solar system is miserable. Solar needs nothing shipped in."
+				"&c&lThey are not an early-game option in this pack.&r A Solar Panel needs a &ePhotovoltaic Etrium Cell&r, and etrium only exists on &bGlacio&r - the frozen exoplanet at the end of the line. Desh plates on top of that."
 				""
-				"&e&lIt only produces in daylight&r, so pair every panel with an &7Energy Cube&r or battery to carry the base through the night. On the Moon the night is long and hostile - a base that loses power after dark loses its oxygen distributor too."
-				""
-				"&c&lOutput varies by planet.&r Closer to the sun is stronger - Mercury and Venus are excellent, Glacio is poor. Plan the outpost's power around where it actually is."
-				""
-				"&7On your home island they are still worth building. No terrain shadows anything, so a roof of panels runs at full output all day.&r"
-				""
-				"&8Combine with wind generators at home: solar covers the day, wind never stops. Between them you rarely need to burn anything."
+				"&e&lWorth the wait:&r no fuel, no upkeep, and on an airless world with no weather they run at full output forever. Line the roof of a moonbase and never think about power there again."
 			]
 			icon: "ad_astra:solar_panel"
 			id: "2D5C000000000001"
@@ -697,8 +677,8 @@
 				type: "item"
 			}]
 			title: "&9Solar Power"
-			x: -5.0d
-			y: -2.5d
+			x: 14.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3AC5823954DFDBED"]
@@ -813,7 +793,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5B3D9DD3AF77FB22"]
+			dependencies: ["13FF1430C16D9379"]
 			description: [
 				"Venus rains acid that eats standard suits. The &eAcid Rain Proof upgrade&r shrugs it off; a full &eNetherite Space Suit&r shrugs off nearly everything else."
 				""
@@ -847,8 +827,8 @@
 				}
 			]
 			title: "&9Acid-Proofed"
-			x: 8.0d
-			y: 1.0d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["13FF1430C16D9379"]
@@ -881,6 +861,48 @@
 			title: "&9Cryogenics"
 			x: 10.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5954D67B54D46F03"]
+			description: [
+				"&9&lA breathable base, not just a breathable suit.&r"
+				""
+				"&7- &fOxygen Distributor&7 - floods a sealed room with oxygen so you can take the helmet off. It needs a sealed space; check the display for leaks."
+				"&7- &fWater Pump&7 - pulls water where there is none, which on the Moon is everywhere."
+				""
+				"&e&lBoth are framed in desh plates&r, which is why they wait until now - you could not have built either before the trip no matter how the old quest was worded."
+				""
+				"&8Feed the distributor oxygen from a loader and it will hold a base indefinitely."
+			]
+			icon: "ad_astra:oxygen_distributor"
+			id: "2D5C000000000010"
+			subtitle: "&7Now that you have desh"
+			tasks: [
+				{ id: "2D5C0000000000T0", item: "ad_astra:oxygen_distributor", type: "item" }
+				{ id: "2D5C0000000000T1", item: "ad_astra:water_pump", type: "item" }
+			]
+			title: "&9Life Support"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B3D9DD3AF77FB22"]
+			description: [
+				"The &6Energizer&r charges any item that holds power - suits, tools, jetpacks - far faster than a machine's own slot will."
+				""
+				"&c&lIt is a Mars block.&r Its frame is &eostrum plates and ostrum blocks&r around an &eEtrionic Capacitor&r and a block of diamond, so it cannot exist until you have landed on the Red Frontier."
+				""
+				"&7It used to sit next to the Coal Generator at the very start of this chapter, which was simply impossible.&r"
+			]
+			icon: "ad_astra:energizer"
+			id: "2D5C000000000011"
+			subtitle: "&7Ostrum-framed charging"
+			tasks: [
+				{ id: "2D5C0000000000T0", item: "ad_astra:energizer", type: "item" }
+			]
+			title: "&9The Energizer"
+			x: 6.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["&7Rockets, planets and what is on them"]
