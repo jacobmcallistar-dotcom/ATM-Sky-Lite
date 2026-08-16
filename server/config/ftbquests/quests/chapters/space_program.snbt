@@ -98,7 +98,7 @@
 			description: [
 				"A &6Coal Generator&r burns coal for FE. Crude, cheap, and it works on day one."
 				""
-				"&e&lYou do not have to use it.&r Every Ad Astra machine takes FE from anything - Powah, Create, Mekanism, the Power Grid. If you already have generation, wire it in and skip the coal entirely."
+				"&e&lYou do not have to use it.&r Every Ad Astra machine takes FE from anything - Create, Mekanism, Thermal, the Power Grid. If you already have generation, wire it in and skip the coal entirely."
 				""
 				"&7The &6Energizer&7 used to sit in this quest. It is built from &eostrum&7, so it is not craftable until Mars - it now has its own quest out on the Red Frontier.&r"
 			]

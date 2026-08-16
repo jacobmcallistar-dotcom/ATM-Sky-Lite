@@ -41,7 +41,7 @@
 			description: [
 				"The &eIndustrial Keystone&r is the master key to tech. Craft it from Sky Steel, redstone and a diamond."
 				""
-				"In a crafting grid it bridges Sky Dust into &7Osmium&r, &7Certus Quartz&r and &7Uraninite&r, and Sky Steel into &7Mekanism Steel&r - the ores the void refuses to give you."
+				"In a crafting grid it bridges Sky Dust into &7Osmium&r and &7Certus Quartz&r, and Sky Steel into &7Mekanism Steel&r - the ores the void refuses to give you."
 			]
 			icon: "skyforge:industrial_keystone"
 			id: "2102000000000002"
@@ -422,7 +422,7 @@
 			description: [
 				"Power flows, ore doubles, circuits stamp out. First Machines is done."
 				""
-				"&9Act II opens: dive the deep Mekanism tree, push to Advanced Circuits to crack open AE2, then spin up &9Powah&r - reactors and mass power.&r"
+				"&9Act II opens: dive the deep Mekanism tree, push to Advanced Circuits to crack open AE2, then spin up &9Mekanism Generators&r - turbines and mass power.&r"
 				""
 				"&7Next: &9Act II · Industry&7 opens with the &fMekanism&7 chapter, which picks up exactly here - gases, ore quadrupling and factory tiers.&r"
 			]

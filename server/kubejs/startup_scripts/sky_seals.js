@@ -34,7 +34,7 @@ StartupEvents.registry('item', event => {
   seal('seal_circuits',  'Seal of Circuits',   '§7Mekanism · ultimate circuitry')
   seal('seal_network',   'Seal of the Network','§7Applied Energistics · every processor')
   seal('seal_rotation',  'Seal of Rotation',   '§7Create · precision, eight times over')
-  seal('seal_flux',      'Seal of Flux',       '§7Powah · nitro-grade energy')
+  seal('seal_flux',      'Seal of Flux',       '§7Immersive Engineering · high-voltage storage')
   seal('seal_dragon',    'Seal of the Dragon', '§7Draconic Evolution · awakened metal')
   seal('seal_growth',    'Seal of Growth',     '§7Mystical Agriculture · supreme essence')
   seal('seal_swarm',     'Seal of the Swarm',  '§7Productive Bees · an apiary that works')

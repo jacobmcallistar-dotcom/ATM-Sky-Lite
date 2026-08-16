@@ -1,9 +1,11 @@
-// ATM Sky Lite - Tier Gating for Mekanism and Powah
+// ATM Sky Lite - Tier Gating for Mekanism
 // ---------------------------------------------------------------------------
-// Both mods are fine to START early and become extremely strong very quickly,
+// Mekanism is fine to START early and becomes extremely strong very quickly,
 // because once you are in, nothing stops you climbing the whole tier ladder on
-// your island. This maps those ladders onto the SAME travel ladder as
-// everything else: Moon -> Mars -> Venus. No combat, no new mechanics.
+// your island. This maps that ladder onto the SAME travel ladder as everything
+// else: Moon -> Mars -> Venus. No combat, no new mechanics.
+//
+// This file also gated Powah until 2026-08-16; see the note at the bottom.
 //
 // Existing builds are unaffected - a recipe gate only changes what you can
 // craft NEXT. Anything already placed keeps working forever.
@@ -25,16 +27,17 @@
 //                          whose casing SkyForge already gates behind the
 //                          Hydra's Fiery Ingot. So the suit is late-game
 //                          combat-gated already.
-//   Nitro Crystal          already costs a Nether Star (the Wither).
 //   Digital Miner          already needs Atomic Alloy, so it inherits that
 //                          gate - plus an explicit Desh cost below.
 // ---------------------------------------------------------------------------
 
 ServerEvents.recipes(event => {
 
-  const DESH     = 'ad_astra:desh_ingot'      // Moon
-  const OSTRUM   = 'ad_astra:ostrum_ingot'    // Mars
-  const CALORITE = 'ad_astra:calorite_ingot'  // Venus
+  // Calorite (Venus) was the third rung here, spent on Powah's Nitro Crystal.
+  // With Powah gone nothing in this file reaches Venus, so the constant went
+  // with it rather than sitting unused.
+  const DESH   = 'ad_astra:desh_ingot'    // Moon
+  const OSTRUM = 'ad_astra:ostrum_ingot'  // Mars
 
   // =========================================================================
   // MEKANISM - the Control Circuit ladder
@@ -84,48 +87,18 @@ ServerEvents.recipes(event => {
   }
 
   // =========================================================================
-  // POWAH - the crystal ladder
+  // POWAH - REMOVED 2026-08-16
   //
-  // Powah's whole progression is one crystal per tier out of the Energizing
-  // Orb. These are `powah:energizing` recipes, which take a free-form list of
-  // ingredients - so the travel material is simply appended and the original
-  // input is kept.
+  // This file used to gate Powah's crystal ladder (Niotic <- Moon, Spirited <-
+  // Mars, Nitro <- Venus) through `powah:energizing` recipes. Powah was
+  // removed from the pack, so those gates went with it - a recipe gate on a
+  // mod that is not installed is dead code at best, and `event.custom` against
+  // a missing recipe type throws at load at worst.
   //
-  // Energy costs are left exactly as Powah shipped them.
+  // Powah was the pack's passive-power answer; nothing replaced it directly.
+  // Its endgame role lives on in the Seal of Flux, which moved to Immersive
+  // Engineering's HV Capacitor (see sky_seals.js).
   // =========================================================================
 
-  const energizing = (id, ingredients, energy, result, count, label) => {
-    event.remove({ id: id })
-    const json = {
-      type: 'powah:energizing',
-      ingredients: ingredients.map(i => ({ item: i })),
-      energy: energy,
-      result: count > 1 ? { item: result, count: count } : { item: result }
-    }
-    event.custom(json).id('kubejs:' + id.split('/').pop())
-    console.log(`[tier_gates] ${label}`)
-  }
-
-  // Niotic Crystal <- the Moon
-  energizing('powah:energizing/niotic_crystal',
-    ['minecraft:diamond', DESH],
-    300000, 'powah:crystal_niotic', 1,
-    'Niotic Crystal <- Moon (Desh)')
-
-  // Spirited Crystal <- Mars
-  energizing('powah:energizing/spirited_crystal',
-    ['minecraft:emerald', OSTRUM],
-    1000000, 'powah:crystal_spirited', 1,
-    'Spirited Crystal <- Mars (Ostrum)')
-
-  // Nitro Crystal <- Venus. Already cost a Nether Star; Calorite is added so
-  // the top tier of the best passive power in the pack sits at the end of the
-  // travel ladder rather than immediately after the Wither.
-  energizing('powah:energizing/nitro_crystal',
-    ['minecraft:nether_star', 'minecraft:redstone_block', 'minecraft:redstone_block',
-     'powah:blazing_crystal_block', CALORITE],
-    20000000, 'powah:crystal_nitro', 16,
-    'Nitro Crystal <- Venus (Calorite)')
-
-  console.log('[tier_gates] Mekanism + Powah tier ladders mapped onto Moon -> Mars -> Venus')
+  console.log('[tier_gates] Mekanism tier ladder mapped onto Moon -> Mars -> Venus')
 })

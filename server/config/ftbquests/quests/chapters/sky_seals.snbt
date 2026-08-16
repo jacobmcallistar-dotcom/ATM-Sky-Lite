@@ -100,15 +100,15 @@
 		{
 			dependencies: ["5E50000000000001"]
 			description: [
-				"&98x Nitro Crystal&r around a &9Nitro Capacitor&r."
+				"&98x HV Capacitor&r around a &9Logic Unit&r."
 				""
-				"Nitro is Powah's top tier - the end of the energising ladder that starts with a basic reactor and climbs through Niotic and Spirited."
+				"The HV Capacitor is Immersive Engineering's top-tier energy storage, and the only one that needs hop graphite - so the Coke Oven, Crusher and Squeezer all have to be running before you can make even one."
 				""
-				"&7Chapter: &fPowah&7, Ways to Power.&r"
+				"&7The Logic Unit is the harder half: its Circuit Board needs a plastic plate, and IE's duroplast is the only thing in the pack that counts as one.&r"
 			]
 			icon: "kubejs:seal_flux"
 			id: "5E50000000000005"
-			subtitle: "&7Powah"
+			subtitle: "&7Immersive Engineering"
 			tasks: [{
 				id: "6957CC58232A8973"
 				item: "kubejs:seal_flux"

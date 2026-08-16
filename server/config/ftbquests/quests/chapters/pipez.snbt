@@ -125,7 +125,7 @@
 			description: [
 				"Swap the dropper for a &eredstone block&r and you get Energy Pipes - plain Forge Energy transport that every generator and machine in this pack speaks."
 				""
-				"Mekanism, Powah, EnderIO, RFTools, the Sky Assembler: all of it takes FE. One pipe type feeds them all."
+				"Mekanism, Thermal, EnderIO, RFTools, the Sky Assembler: all of it takes FE. One pipe type feeds them all."
 			]
 			icon: "pipez:energy_pipe"
 			id: "7E10000000000005"

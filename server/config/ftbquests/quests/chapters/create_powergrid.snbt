@@ -495,9 +495,9 @@
 				""
 				"Not a block that emits FE - a generator turning at a speed you chose, stepped up through a transformer, carried on wire you sized, protected by fuses you specified, switched by logic you etched, and stepped back down at the machines."
 				""
-				"&e&lAnd it all still speaks FE at the boundary&r, so every Mekanism, AE2 and Powah machine in the pack will accept it without knowing or caring how it was made."
+				"&e&lAnd it all still speaks FE at the boundary&r, so every Mekanism, AE2 and Thermal machine in the pack will accept it without knowing or caring how it was made."
 				""
-				"&8Powah, Solar Flux and Advanced Generators are simpler answers to the same question, and there is no shame in using them. But nothing else in this pack lets you build the actual thing."
+				"&8Solar Flux and Advanced Generators are simpler answers to the same question, and there is no shame in using them. But nothing else in this pack lets you build the actual thing."
 			]
 			icon: "powergrid:integrated_circuit"
 			id: "5E2000000000000F"

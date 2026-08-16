@@ -55,7 +55,7 @@
 				""
 				"&e&lPlumbing it:&r water in via &7Mechanical Pipes&r or a fluid tank, gases out via &7Pressurised Tubes&r. Gases do not travel in item pipes or fluid pipes - they need their own tubing. Put a &7Chemical Tank&r on each output as a buffer, or the separator throttles itself the moment one side backs up."
 				""
-				"&c&lIt is power-hungry.&r This is usually the point where a hand-fed generator stops being enough and you need a real power plant. Powah's reactors exist for exactly this."
+				"&c&lIt is power-hungry.&r This is usually the point where a hand-fed generator stops being enough and you need a real power plant. Mekanism Generators and Advanced Generators exist for exactly this."
 				""
 				"&8Water is free and infinite - a single Aqueous Accumulator or an infinite water source keeps it fed forever."
 			]
@@ -607,7 +607,7 @@
 		{
 			dependencies: ["7ADE000000000001"]
 			description: [
-				"&eUniversal Cables&r move Forge Energy between anything - Mekanism machines, Powah reactors, AE2 acceptors, all of it."
+				"&eUniversal Cables&r move Forge Energy between anything - Mekanism machines, Thermal dynamos, AE2 acceptors, all of it."
 				""
 				"&e&lFour tiers, each moving far more per tick:&r &7Basic &8→ &7Advanced &8→ &7Elite &8→ &7Ultimate&r. Upgrade in place with the tier installers."
 				""

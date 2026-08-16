@@ -247,7 +247,7 @@
 				""
 				"&7Advanced Generators is the odd one out among this pack's power mods - it has no tier ladder to climb, just a box you make as big as you need and a set of modules to fit. Two players' builds will not look alike.&r"
 				""
-				"&8Between this, Powah, Solar Flux, Mekanism turbines and Create alternators, there are five completely different ways to power this base. None of them is wrong."
+				"&8Between this, Solar Flux, Mekanism turbines and Create alternators, there are four completely different ways to power this base. None of them is wrong."
 			]
 			icon: "advgenerators:controller"
 			id: "7E00000000000007"
@@ -266,6 +266,42 @@
 			title: "&6&lBuilt To Spec"
 			x: 4.0d
 			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2103000000000009"
+				"19236F17F30F94C7"
+			]
+			description: [
+				"Turbine spinning, Induction Matrix charged, mobs on tap. You have industrial power and industrial resources."
+				""
+				"&cAct III opens: War in the Sky, The Void Signal and The Bestiary.&r"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "210300000000000B"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "210300000000010B"
+					type: "random"
+				}
+				{
+					id: "210300000000010C"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Act II complete"
+			tasks: [{
+					id: "210300000000020B"
+					title: "The grid is online"
+					type: "checkmark"
+			}]
+			title: "&6Powered Up"
+			x: 6.5d
+			y: 0.75d
 		}
 	]
 	subtitle: ["&7Modular multiblock generators"]
