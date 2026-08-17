@@ -7,23 +7,31 @@
 //
 // This adds an amethyst-style budding block per metal:
 //
-//     budding_desh      grows  desh_bud     -> desh_cluster       Moon only
-//     budding_ostrum    grows  ostrum_bud   -> ostrum_cluster     Mars only
-//     budding_calorite  grows  calorite_bud -> calorite_cluster   Venus only
+//     budding_desh      grows  desh_bud     -> desh_cluster       Moon ORBIT
+//     budding_ostrum    grows  ostrum_bud   -> ostrum_cluster     Mars ORBIT
+//     budding_calorite  grows  calorite_bud -> calorite_cluster   Venus ORBIT
 //
-// WHY EACH ONE IS LOCKED TO ITS OWN PLANET
-// ----------------------------------------
-// Desh/Ostrum/Calorite are the pack's TRAVEL GATES - tier_gates.js hangs the
-// Mekanism circuit ladder off them (Elite <- Moon, Ultimate <- Mars) and
-// endgame.js puts all three in the Celestial Core. If one greenhouse at home
-// could farm all three, that entire ladder collapses into "wait".
+// THEY ONLY GROW IN SPACE - THAT IS THE POINT
+// -------------------------------------------
+// Jacob's brief: "currently there is almost no use for a space station". So the
+// growth check is the ORBIT dimension, not the planet surface. Standing on the
+// Moon does nothing; the farm has to live on a station in Moon orbit. Each
+// metal wants its own station, which is three real builds and finally gives Ad
+// Astra's space stations a job.
 //
-// Locking each block to its own dimension keeps the ladder intact: you still
-// fly there, and you still build and power a base on the surface. What it
-// removes is the RE-mining, which is the tedious part rather than the gate.
+// Progression is not gated by this - it is gated by the RECIPE ladder in
+// server_scripts/sky_buds.js. Budding Ostrum costs 8 ostrum blocks (72 ingots),
+// which you can only have if you already went to Mars and mined it. So the
+// travel gates that tier_gates.js and endgame.js hang off Desh/Ostrum/Calorite
+// stay exactly as strong as they were.
 //
-// The check is exact - `ad_astra:moon`, not `ad_astra:moon_orbit` - so a space
-// station in orbit does not count as being on the planet.
+// The check is exact - `ad_astra:moon_orbit`, not `ad_astra:moon` - so the
+// surface deliberately does not count.
+//
+// KEEPING THE FARM RUNNING: random ticks need the chunk loaded AND ticking.
+// FTB Chunks is installed - claim the station chunks and force-load them, and
+// they keep ticking while you are online anywhere, so the farm runs while you
+// are back home on the island.
 //
 // GROWS UPWARD ONLY
 // -----------------
@@ -58,11 +66,11 @@
 // player whose kubejs folder is missing sky_buds.js is kicked on join.
 // ---------------------------------------------------------------------------
 
-// name -> the dimension it may grow in, and what a cluster is worth
+// name -> the ORBIT it may grow in, and what a cluster is worth
 global.SKY_BUD_METALS = [
-  { name: 'desh',     dim: 'ad_astra:moon',  raw: 'ad_astra:raw_desh',     nice: 'Desh'     },
-  { name: 'ostrum',   dim: 'ad_astra:mars',  raw: 'ad_astra:raw_ostrum',   nice: 'Ostrum'   },
-  { name: 'calorite', dim: 'ad_astra:venus', raw: 'ad_astra:raw_calorite', nice: 'Calorite' }
+  { name: 'desh',     dim: 'ad_astra:moon_orbit',  raw: 'ad_astra:raw_desh',     nice: 'Desh',     where: 'Moon orbit'  },
+  { name: 'ostrum',   dim: 'ad_astra:mars_orbit',  raw: 'ad_astra:raw_ostrum',   nice: 'Ostrum',   where: 'Mars orbit'  },
+  { name: 'calorite', dim: 'ad_astra:venus_orbit', raw: 'ad_astra:raw_calorite', nice: 'Calorite', where: 'Venus orbit' }
 ]
 
 StartupEvents.registry('block', event => {
@@ -85,7 +93,8 @@ StartupEvents.registry('block', event => {
       .randomTick(ctx => {
         const block = ctx.block
 
-        // the whole gate: wrong planet, nothing happens, ever
+        // the whole gate: not in the right ORBIT, nothing happens, ever.
+        // The planet surface below deliberately does not count.
         if (String(block.dimension) !== m.dim) return
         if (ctx.random.nextInt(4) !== 0) return
 
