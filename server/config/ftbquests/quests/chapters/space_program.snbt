@@ -1038,6 +1038,45 @@
 			x: 10.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["2D5C000000000021"]
+			description: [
+				"A budding block on its own is slow. It grows on &erandom ticks&r, and any one block only gets a handful of those a minute."
+				""
+				"&e&lGrowth Accelerators fix that.&r Put one &edirectly underneath&r a budding block and it rolls extra growth for it. &lThey stack&r - build a column of them under a single budding block and every accelerator in that column rolls separately."
+				""
+				"&7[ air ]&r  &8< the crystal grows here"
+				"&7[ budding block ]"
+				"&7[ accelerator ]&r  &8< stack as many as you like, up to 8"
+				"&7[ accelerator ]"
+				""
+				"&6&lFour tiers, each faster than the last:&r"
+				"&7- &dAmethyst&7 - the starter. Amethyst, glass and a redstone block."
+				"&7- &fDesh&7 - the amethyst one ringed with 8 desh ingots."
+				"&7- &cOstrum&7 - twice as fast again."
+				"&7- &6Calorite&7 - fires on &levery&r&7 random tick it gets."
+				""
+				"&8Each tier is built from the one below and consumes it, so upgrading a whole column is a real cost. Ingots though, not blocks - this is meant to be an upgrade you actually do."
+				""
+				"&8Any tier drives any budding block, and the orbit rule still applies: an accelerator will not grow desh anywhere except above the Moon."
+			]
+			icon: "kubejs:calorite_accelerator"
+			id: "2D5C000000000024"
+			rewards: [{
+					id: "2D5C000000000130"
+					type: "xp_levels"
+					xp_levels: 6
+			}]
+			subtitle: "&7Stack them under the farm"
+			tasks: [{
+					id: "2D5C000000000230"
+					item: "kubejs:amethyst_accelerator"
+					type: "item"
+			}]
+			title: "&9Growth Accelerators"
+			x: 4.0d
+			y: -4.5d
+		}
 	]
 	subtitle: ["&7Rockets, planets and what is on them"]
 	title: "&9The Space Program"

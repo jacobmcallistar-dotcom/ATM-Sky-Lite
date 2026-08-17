@@ -74,4 +74,50 @@ ServerEvents.recipes(event => {
 
     console.log(`[sky_buds] ${m.nice} Cluster -> 2x ${m.raw}`)
   })
+
+  // -------------------------------------------------------------------------
+  // GROWTH ACCELERATORS
+  //
+  // The base tier is built from scratch; every tier after it is the previous
+  // accelerator ringed with 8 of the next metal's INGOTS.
+  //
+  // Ingots, not blocks. The budding blocks already cost 8 blocks (72 ingots)
+  // a rung because they are infinite ore sources and should hurt. An
+  // accelerator only makes a farm you already own run faster, so 8 ingots a
+  // rung keeps upgrading something you actually do rather than save up for.
+  //
+  // Upgrading consumes the tier below it, same as the budding ladder, so a
+  // fully kitted column is a real running cost rather than a one-off.
+  // -------------------------------------------------------------------------
+
+  // base tier - amethyst, glass and a redstone block
+  event.shaped('kubejs:amethyst_accelerator', [
+    'AGA',
+    'GRG',
+    'AGA'
+  ], {
+    A: 'minecraft:amethyst_block',
+    G: 'minecraft:glass',
+    R: 'minecraft:redstone_block'
+  }).id('kubejs:amethyst_accelerator')
+  console.log('[sky_buds] Amethyst Growth Accelerator <- 4 amethyst + 4 glass + redstone block')
+
+  const ACCEL_LADDER = [
+    { out: 'kubejs:desh_accelerator',     centre: 'kubejs:amethyst_accelerator', ring: 'ad_astra:desh_ingot',     label: 'Desh'     },
+    { out: 'kubejs:ostrum_accelerator',   centre: 'kubejs:desh_accelerator',     ring: 'ad_astra:ostrum_ingot',   label: 'Ostrum'   },
+    { out: 'kubejs:calorite_accelerator', centre: 'kubejs:ostrum_accelerator',   ring: 'ad_astra:calorite_ingot', label: 'Calorite' }
+  ]
+
+  ACCEL_LADDER.forEach(step => {
+    event.shaped(step.out, [
+      'III',
+      'ICI',
+      'III'
+    ], {
+      I: step.ring,
+      C: step.centre
+    }).id(step.out)
+
+    console.log(`[sky_buds] ${step.label} Growth Accelerator <- previous tier + 8x ${step.ring}`)
+  })
 })

@@ -73,6 +73,35 @@ global.SKY_BUD_METALS = [
   { name: 'calorite', dim: 'ad_astra:venus_orbit', raw: 'ad_astra:raw_calorite', nice: 'Calorite', where: 'Venus orbit' }
 ]
 
+// ---------------------------------------------------------------------------
+// GROWTH ACCELERATORS
+//
+// Four tiers. Each sits UNDER a budding block and rolls extra growth for it, so
+// a farm goes from "leave it overnight" to "watch it tick over".
+//
+// `chance` is 1-in-N per random tick, so lower is faster - and the Calorite tier
+// at 1 fires on every single random tick it gets.
+//
+// They stack: put several in a column under one budding block and each one rolls
+// separately, which is how you make a single column genuinely fast rather than
+// just building more columns.
+//
+// Any tier drives ANY budding block. The tiers are a speed ladder, not a
+// compatibility matrix - and since you can only reach Calorite by having flown
+// to Venus, the tier you can build already tracks your progress.
+//
+// texture = what the block looks like, and it doubles as the tier's "material".
+// ---------------------------------------------------------------------------
+global.SKY_ACCELERATORS = [
+  { name: 'amethyst_accelerator', nice: 'Amethyst Growth Accelerator', chance: 4, texture: 'minecraft:block/amethyst_block',  light: 0.25 },
+  { name: 'desh_accelerator',     nice: 'Desh Growth Accelerator',     chance: 3, texture: 'ad_astra:block/desh_block',       light: 0.35 },
+  { name: 'ostrum_accelerator',   nice: 'Ostrum Growth Accelerator',   chance: 2, texture: 'ad_astra:block/ostrum_block',     light: 0.5  },
+  { name: 'calorite_accelerator', nice: 'Calorite Growth Accelerator', chance: 1, texture: 'ad_astra:block/calorite_block',   light: 0.7  }
+]
+
+// ids only, for the column walk
+global.SKY_ACCEL_IDS = global.SKY_ACCELERATORS.map(a => `kubejs:${a.name}`)
+
 StartupEvents.registry('block', event => {
 
   global.SKY_BUD_METALS.forEach(m => {
@@ -141,5 +170,65 @@ StartupEvents.registry('block', event => {
       .tagBlock('minecraft:mineable/pickaxe')
       .stoneSoundType()
       .lightLevel(0.35)
+  })
+
+  // =========================================================================
+  // The accelerators.
+  //
+  // Each one random-ticks on its own. When it fires it walks UP through any
+  // other accelerators stacked above it, finds the budding block on top of the
+  // column, and advances whatever is above THAT by one stage.
+  //
+  //     [ air        ]  <- crystal grows here
+  //     [ budding_X  ]
+  //     [ accelerator]  <- these roll growth for it
+  //     [ accelerator]
+  //
+  // Walking up rather than having the budding block look down means the work
+  // scales with the number of accelerators automatically: each one is its own
+  // independent roll, so eight of them is eight times the chances.
+  //
+  // The dimension check is repeated here deliberately. Without it an
+  // accelerator would be a way to grow desh anywhere, which would undo the
+  // whole orbit rule.
+  // =========================================================================
+  global.SKY_ACCELERATORS.forEach(a => {
+
+    event.create(a.name)
+      .displayName(a.nice)
+      .textureAll(a.texture)
+      .hardness(3.0)
+      .resistance(6.0)
+      .requiresTool(true)
+      .tagBlock('minecraft:mineable/pickaxe')
+      .tagBlock('forge:needs_iron_tool')
+      .stoneSoundType()
+      .lightLevel(a.light)
+      .randomTick(ctx => {
+        if (ctx.random.nextInt(a.chance) !== 0) return
+
+        let cur = ctx.block.up
+
+        // climb the accelerator stack - capped so a silly tower cannot turn
+        // one random tick into an unbounded walk
+        for (let step = 0; step < 8; step++) {
+          if (global.SKY_ACCEL_IDS.indexOf(cur.id) >= 0) { cur = cur.up; continue }
+
+          // not an accelerator: this should be the budding block
+          const metal = global.SKY_BUD_METALS.filter(m => `kubejs:budding_${m.name}` === cur.id)[0]
+          if (!metal) return
+
+          // same orbit rule as the budding block itself - no bypass
+          if (String(cur.dimension) !== metal.dim) return
+
+          const top = cur.up
+          if (top.id === 'minecraft:air') {
+            top.set(`kubejs:${metal.name}_bud`)
+          } else if (top.id === `kubejs:${metal.name}_bud`) {
+            top.set(`kubejs:${metal.name}_cluster`)
+          }
+          return
+        }
+      })
   })
 })
