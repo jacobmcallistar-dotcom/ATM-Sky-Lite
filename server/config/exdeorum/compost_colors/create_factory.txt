@@ -1,0 +1,25 @@
+// Compost colors for create_factory. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cake_paste, #ffffdd
+caramel_apple, #fa7533
+caramel_roll, #ff9e3d
+caramel_waffle, #e68037
+chocolate_apple, #d24d3e
+chocolate_roll, #ff8752
+chocolate_waffle, #ed8250
+dark_chocolate_apple, #9e2d0c
+dark_chocolate_roll, #a85014
+dark_chocolate_waffle, #9e5129
+honey_glazed_berries, #e6a020
+honey_roll, #ffd246
+honey_waffle, #ffaf2d
+ruby_chocolate_apple, #ff86b1
+ruby_chocolate_roll, #ffafc5
+ruby_chocolate_waffle, #ff98a5
+sweet_berries_jam_bucket, #bc7f7d
+sweet_berries_jam_roll, #fa4825
+sweet_berries_jam_waffle, #d9522c
+uncooked_waffle, #decd9b
+waffle, #f89732
+white_chocolate_apple, #ffac79
+white_chocolate_roll, #ffd787
+white_chocolate_waffle, #ffc97a

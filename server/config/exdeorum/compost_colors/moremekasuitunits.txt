@@ -1,0 +1,4 @@
+// Compost colors for moremekasuitunits. You may add your own colors, change existing ones, or remove colors that aren't needed.
+module_elytra_acceleration_unit, #cddac9
+module_flame_thrower_unit, #cdcac2
+module_looting_modification_unit, #cfd9ca

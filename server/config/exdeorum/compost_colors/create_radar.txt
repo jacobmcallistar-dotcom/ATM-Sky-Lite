@@ -1,0 +1,5 @@
+// Compost colors for create_radar. You may add your own colors, change existing ones, or remove colors that aren't needed.
+ident_filter_item, #ffeeb2
+radar_filter_item, #fff1b5
+radar_safe_zone_designator, #5f5f61
+target_filter_item, #fff7b9
