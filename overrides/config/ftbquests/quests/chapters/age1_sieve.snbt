@@ -287,7 +287,7 @@
 			description: [
 				"A Blast Furnace smelts metal twice as fast - and it is the only way to reach the heat needed for Sky Steel. Build one."
 				""
-				"&e&lWhy this matters more than it looks.&r &7Sky Steel&r is the backbone of the early game - it goes into the Sky Assembler, the Crucible line, and the keystone bridges that unlock Mekanism, AE2 and Powah. A normal furnace will never make it. This block is the gate."
+				"&e&lWhy this matters more than it looks.&r &7Sky Steel&r is the backbone of the early game - it goes into the Sky Assembler, the Crucible line, and the keystone bridges that unlock Mekanism and AE2. A normal furnace will never make it. This block is the gate."
 				""
 				"&7Blast Furnaces only accept ores, raw metals and metal tools - no food, no sand, no wood. Keep an ordinary furnace running alongside it.&r"
 				""
@@ -780,7 +780,7 @@
 				"&e&lThe full automated line:&r"
 				"&7Cobble generator &8→&7 Flux Hammer &8→&7 gravel &8→&7 Flux Sieve &8→&7 ore chunks &8→&7 furnace &8→&7 ingots&r"
 				""
-				"Each machine takes a mesh or a tool in its slot exactly like the hand version, so your diamond mesh carries straight over. They accept any Forge Energy - Powah reactors, Create Crafts & Additions alternators, Thermal dynamos, whatever you have running."
+				"Each machine takes a mesh or a tool in its slot exactly like the hand version, so your diamond mesh carries straight over. They accept any Forge Energy - Create Crafts & Additions alternators, Thermal dynamos, Solar Flux arrays, whatever you have running."
 				""
 				"&7Build the sieve first, the hammer second.&r Hammering is the less painful half by hand; sieving is what actually eats your evenings."
 				""

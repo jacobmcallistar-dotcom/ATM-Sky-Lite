@@ -160,7 +160,6 @@
 				""
 				"&e&lThe seeds that actually change this pack:&r"
 				"&7- &fOsmium&7 - breaks the Mekanism bottleneck"
-				"&7- &fUraninite&7 - makes Powah reactors sustainable"
 				"&7- &fDiamond / Obsidian&7 - the Elite and Ultimate circuit wall"
 				"&7- &fDesh, Ostrum, Calorite&7 - SkyForge adds planet-metal seeds, so you can farm what you flew for"
 				"&7- &fNether Star&7 - yes, really"
@@ -295,7 +294,7 @@
 			description: [
 				"&5&lThe space metals are the ones people assume they can never automate.&r"
 				""
-				"Desh, ostrum and calorite are hand-mined on the Moon, Mars and Venus, and they gate a great deal of the pack - the ME Controller, AE2 autocrafting, Powahs high crystals and Mekanisms Elite and Ultimate circuits."
+				"Desh, ostrum and calorite are hand-mined on the Moon, Mars and Venus, and they gate a great deal of the pack - the ME Controller, AE2 autocrafting and Mekanisms Elite and Ultimate circuits."
 				""
 				"&a&lThey are renewable, just not through Mystical Agriculture.&r There are no essence seeds for them. The answer is &eProductive Bees&r:"
 				""

@@ -381,7 +381,7 @@
 			description: [
 				"&eScreens&r display information from anywhere in your base - energy levels, machine status, item counts, time, player names."
 				""
-				"&e&lThey are modular.&r Each screen holds modules, and each module shows one thing. Add an Energy module pointed at your Powah reactor, a Counter module on your ore output, a Clock, a Redstone indicator."
+				"&e&lThey are modular.&r Each screen holds modules, and each module shows one thing. Add an Energy module pointed at your Induction Matrix, a Counter module on your ore output, a Clock, a Redstone indicator."
 				""
 				"&e&lA Screen Controller powers a whole wall of screens at once&r rather than wiring each one, and lets them read blocks far away."
 				""
@@ -611,11 +611,11 @@
 			description: [
 				"&ePower Cells&r store FE and, unusually, &lshare it wirelessly with every other cell on the same network&r."
 				""
-				"&e&lThat is the feature.&r Place a cell at your base and another at an outpost, link them, and power flows between them with no cable. It is Powah's Ender Cell idea, built into a storage block."
+				"&e&lThat is the feature.&r Place a cell at your base and another at an outpost, link them, and power flows between them with no cable. It is wireless power transfer, built into a storage block."
 				""
 				"&7Cells come in three tiers and combine into multiblocks - place them adjacent and capacity pools.&r"
 				""
-				"&8The Blazing Generator burns blaze rods for a reasonable trickle. Fine early, outclassed later by Powah reactors and Mekanism turbines."
+				"&8The Blazing Generator burns blaze rods for a reasonable trickle. Fine early, outclassed later by Mekanism turbines."
 			]
 			icon: "rftoolspower:cell1"
 			id: "7196D4CFF397E2AD"

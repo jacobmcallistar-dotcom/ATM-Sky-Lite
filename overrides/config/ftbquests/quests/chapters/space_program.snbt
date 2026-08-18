@@ -98,7 +98,7 @@
 			description: [
 				"A &6Coal Generator&r burns coal for FE. Crude, cheap, and it works on day one."
 				""
-				"&e&lYou do not have to use it.&r Every Ad Astra machine takes FE from anything - Powah, Create, Mekanism, the Power Grid. If you already have generation, wire it in and skip the coal entirely."
+				"&e&lYou do not have to use it.&r Every Ad Astra machine takes FE from anything - Create, Mekanism, Thermal, the Power Grid. If you already have generation, wire it in and skip the coal entirely."
 				""
 				"&7The &6Energizer&7 used to sit in this quest. It is built from &eostrum&7, so it is not craftable until Mars - it now has its own quest out on the Red Frontier.&r"
 			]
@@ -909,6 +909,173 @@
 			title: "&9The Energizer"
 			x: 6.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["5954D67B54D46F03"]
+			description: [
+				"&9&lThe problem.&r Desh, Ostrum and Calorite only exist as ore on their own planet. Every time the pack asks for more, it is another rocket, another mining trip, another hour.&r"
+				""
+				"&9&lThe fix.&r Budding blocks. Same idea as an amethyst geode - a block that slowly grows crystals you can harvest forever - except these only work in orbit.&r"
+				""
+				"It all starts with a &eBudding Amethyst&r, and you cannot mine one: silk touch does not work on it and geodes do not generate in a void world."
+				""
+				"&e&lArs Nouveau makes them.&r Its budding conversion turns a plain &eAmethyst Block&r into a &eBudding Amethyst&r, which means the whole chain below is renewable from the start."
+				""
+				"&8Amethyst itself comes from the sieve, so you already have a supply."
+			]
+			icon: "minecraft:budding_amethyst"
+			id: "2D5C000000000020"
+			rewards: [{
+					id: "2D5C000000000120"
+					type: "xp"
+					xp: 50
+			}]
+			subtitle: "&7The seed of every farm"
+			tasks: [{
+					id: "2D5C000000000220"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+			}]
+			title: "&9Seed Crystal"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D5C000000000020"]
+			description: [
+				"Ring your Budding Amethyst with &e8 Desh Blocks&r and it becomes a &eBudding Desh&r - 72 desh ingots, so this is not cheap. You have to have mined the Moon the hard way first."
+				""
+				"&c&lIt only grows in MOON ORBIT.&r Not on the Moon. On a &espace station&r above it. Standing on the surface does nothing at all - the block just sits there."
+				""
+				"&e&lHow to build the farm:&r lay a floor of Budding Desh with one empty block above each. A bud appears, then thickens into a &eDesh Cluster&r. Break the cluster for &e2 Raw Desh&r; the budding block stays and starts again."
+				""
+				"&6&lKeep the chunk loaded.&r Crystals grow on random ticks, and random ticks only happen in loaded, ticking chunks. &eClaim and force-load&r your station chunks with FTB Chunks (&bM&r for the map) and the farm keeps running while you are back home on the island.&r"
+				""
+				"&8Buds and clusters drop themselves if you break them early, so a half-grown farm can be moved."
+			]
+			icon: "kubejs:budding_desh"
+			id: "2D5C000000000021"
+			rewards: [{
+					id: "2D5C000000000121"
+					type: "xp_levels"
+					xp_levels: 5
+			}]
+			subtitle: "&7Grows only above the Moon"
+			tasks: [{
+					id: "2D5C000000000221"
+					item: "kubejs:budding_desh"
+					type: "item"
+			}]
+			title: "&9Budding Desh"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2D5C000000000021"
+				"5B3D9DD3AF77FB22"
+			]
+			description: [
+				"The ladder continues, and it eats its own rungs: a &eBudding Desh&r ringed with &e8 Ostrum Blocks&r becomes a &eBudding Ostrum&r."
+				""
+				"&c&lThe Budding Desh is consumed.&r If you want to keep farming desh as well, build a second one first - another Budding Amethyst, another 8 desh blocks."
+				""
+				"&c&lThis one only grows in MARS ORBIT&r, so it needs its own station. Your Moon station will not do."
+				""
+				"&8Same farm layout, same claim-and-force-load advice."
+			]
+			icon: "kubejs:budding_ostrum"
+			id: "2D5C000000000022"
+			rewards: [{
+					id: "2D5C000000000122"
+					type: "xp_levels"
+					xp_levels: 8
+			}]
+			subtitle: "&7Grows only above Mars"
+			tasks: [{
+					id: "2D5C000000000222"
+					item: "kubejs:budding_ostrum"
+					type: "item"
+			}]
+			title: "&9Budding Ostrum"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2D5C000000000022"
+				"13FF1430C16D9379"
+			]
+			description: [
+				"The last rung. A &eBudding Ostrum&r ringed with &e8 Calorite Blocks&r becomes a &eBudding Calorite&r, and it grows only in &eVENUS ORBIT&r."
+				""
+				"Three stations, three farms, and the mining trips stop for good. Desh for tier 2 rockets and Mekanism's Elite circuits, ostrum for tier 3 and Ultimate circuits, calorite for tier 4 - all of it renewable from here."
+				""
+				"&6&lThis is what space stations are for.&r Everything else in orbit is a view. This is a factory floor.&r"
+			]
+			icon: "kubejs:budding_calorite"
+			id: "2D5C000000000023"
+			rewards: [
+				{
+					id: "2D5C000000000123"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					id: "2D5C000000000124"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Grows only above Venus"
+			tasks: [{
+					id: "2D5C000000000223"
+					item: "kubejs:budding_calorite"
+					type: "item"
+			}]
+			title: "&9Budding Calorite"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D5C000000000021"]
+			description: [
+				"A budding block on its own is slow. It grows on &erandom ticks&r, and any one block only gets a handful of those a minute."
+				""
+				"&e&lGrowth Accelerators fix that.&r Put one &edirectly underneath&r a budding block and it rolls extra growth for it. &lThey stack&r - build a column of them under a single budding block and every accelerator in that column rolls separately."
+				""
+				"&7[ air ]&r  &8< the crystal grows here"
+				"&7[ budding block ]"
+				"&7[ accelerator ]&r  &8< stack as many as you like, up to 8"
+				"&7[ accelerator ]"
+				""
+				"&6&lFour tiers, each faster than the last:&r"
+				"&7- &dAmethyst&7 - the starter. Amethyst, glass and a redstone block."
+				"&7- &fDesh&7 - the amethyst one ringed with 8 desh ingots."
+				"&7- &cOstrum&7 - twice as fast again."
+				"&7- &6Calorite&7 - fires on &levery&r&7 random tick it gets."
+				""
+				"&8Each tier is built from the one below and consumes it, so upgrading a whole column is a real cost. Ingots though, not blocks - this is meant to be an upgrade you actually do."
+				""
+				"&8Any tier drives any budding block, and the orbit rule still applies: an accelerator will not grow desh anywhere except above the Moon."
+			]
+			icon: "kubejs:calorite_accelerator"
+			id: "2D5C000000000024"
+			rewards: [{
+					id: "2D5C000000000130"
+					type: "xp_levels"
+					xp_levels: 6
+			}]
+			subtitle: "&7Stack them under the farm"
+			tasks: [{
+					id: "2D5C000000000230"
+					item: "kubejs:amethyst_accelerator"
+					type: "item"
+			}]
+			title: "&9Growth Accelerators"
+			x: 4.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["&7Rockets, planets and what is on them"]

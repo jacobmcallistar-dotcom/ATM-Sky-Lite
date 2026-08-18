@@ -48,9 +48,39 @@ ServerEvents.recipes(event => {
   seal('seal_rotation', 'create:precision_mechanism',
        'create:brass_casing', 'Seal of Rotation')
 
-  // --- 4. Powah ------------------------------------------------------------
-  seal('seal_flux', 'powah:crystal_nitro',
-       'powah:capacitor_nitro', 'Seal of Flux')
+  // --- 4. Immersive Engineering --------------------------------------------
+  // Was Powah (8x Nitro Crystal + Nitro Capacitor) until Powah was removed
+  // from the pack on 2026-08-16. The HV Capacitor keeps the "flux" theme -
+  // it is IE's top-tier energy storage - so the seal id, its texture and the
+  // Sky Matrix recipe are all unchanged. Only the ingredients moved.
+  //
+  // It is not a soft landing. One capacitor needs a hop graphite ingot, and
+  // hop graphite is the deepest chain IE has:
+  //
+  //     coal -> Coke Oven -> coke -> Crusher -> coke dust
+  //          -> Squeezer (EIGHT dust, 19.2k RF) -> hop graphite dust -> smelt
+  //
+  // so eight capacitors is 64 coal through the whole coking line, plus 16
+  // steel, 8 aluminium plates and 8000 mB of redstone acid from the Mixer.
+  //
+  // The Logic Unit centre is the harder half. It needs a Circuit Board, which
+  // needs `forge:plates/plastic`, and in this pack exactly ONE item satisfies
+  // that tag - IE's own duroplast. That drags in the entire fluid chain:
+  //
+  //     Fermenter -> ethanol -> Refinery -> acetaldehyde
+  //               -> Refinery (+creosote) -> phenolic resin
+  //               -> Bottling Machine -> duroplast plate
+  //
+  // Between them the two halves demand the Coke Oven, Crusher, Squeezer,
+  // Blast Furnace, Metal Press, Mixer, Fermenter, Refinery, Bottling Machine
+  // and Engineer's Workbench - which is essentially all of IE, and the same
+  // bar the Mekanism and AE2 seals set.
+  //
+  // Neat side effect: coking 64 coal also yields 32,000 mB of creosote, and
+  // the seal's 36 treated wood only costs 4,500 mB through the Spout recipe
+  // in wood_treatment.js. The seal pays for its own treated wood.
+  seal('seal_flux', 'immersiveengineering:capacitor_hv',
+       'immersiveengineering:logic_unit', 'Seal of Flux')
 
   // --- 5. Draconic Evolution -----------------------------------------------
   seal('seal_dragon', 'draconicevolution:awakened_draconium_ingot',

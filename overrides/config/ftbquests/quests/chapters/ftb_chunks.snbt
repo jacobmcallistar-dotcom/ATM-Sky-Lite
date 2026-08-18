@@ -39,7 +39,7 @@
 			description: [
 				"&eForce-loading&r keeps a claimed chunk ticking even with nobody from your team online - the difference between a farm that runs while you sleep and one that pauses the moment you log off."
 				""
-				"&e&lThis is not optional in a pack like this.&r Sieves, smelters, mob farms, Powah reactors and every Create contraption stop dead in unloaded chunks. If you log off and come back to an empty output chest, this is almost always why."
+				"&e&lThis is not optional in a pack like this.&r Sieves, smelters, mob farms, Mekanism turbines and every Create contraption stop dead in unloaded chunks. If you log off and come back to an empty output chest, this is almost always why."
 				""
 				"&e&lHow to do it:&r press &bM&r for the map, drag to &7claim&r chunks, then &7ctrl+click&r (or shift+click) to force-load the ones that matter. Claimed and force-loaded are &lnot&r the same thing - claiming only sets ownership."
 				""

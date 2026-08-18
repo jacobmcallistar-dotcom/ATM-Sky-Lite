@@ -429,7 +429,7 @@
 				""
 				"&e&lItemducts have built-in filtering and round-robin&r without needing a separate sorter block, which makes small sorting jobs very quick to build."
 				""
-				"&7They connect straight to any FE machine, so a Thermal duct network can carry Mekanism, AE2 and Powah power equally well.&r"
+				"&7They connect straight to any FE machine, so a Thermal duct network can carry Mekanism, AE2 and Create power equally well.&r"
 			]
 			icon: "thermal:energy_duct"
 			id: "76133BE8A70ABAC1"

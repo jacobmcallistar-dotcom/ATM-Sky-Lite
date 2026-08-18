@@ -14,7 +14,14 @@
 // and Powah, so three whole mod progressions were gated behind a coin flip.
 //
 // Each one is now SHAPED with a distinct arrangement. Cost is unchanged -
-// still exactly 1 keystone + 2 sky dust for all four, same output counts.
+// still exactly 1 keystone + 2 sky dust, same output counts.
+//
+// POWAH REMOVED (2026-08-16)
+// --------------------------
+// The uraninite bridge is gone with the mod. Uraninite had no consumer in the
+// pack outside Powah's reactors, so bridging it would have handed out an item
+// with nothing to spend it on. The SkyForge datapack recipe it removed is
+// deleted at source too, so there is nothing left to collide with.
 
 ServerEvents.recipes(event => {
   const K = 'skyforge:industrial_keystone'
@@ -23,8 +30,7 @@ ServerEvents.recipes(event => {
   const bridges = [
     { id: 'skyforge:mekanism_bridge_osmium',   out: 'mekanism:ingot_osmium',       n: 2, pattern: ['DKD']       },
     { id: 'skyforge:ae2_bridge_certus',        out: 'ae2:certus_quartz_crystal',   n: 4, pattern: ['D', 'K', 'D'] },
-    { id: 'skyforge:mekanism_bridge_fluorite', out: 'mekanism:fluorite_gem',       n: 4, pattern: ['DD', 'K '] },
-    { id: 'skyforge:powah_bridge_uraninite',   out: 'powah:uraninite',             n: 4, pattern: ['DD', ' K'] }
+    { id: 'skyforge:mekanism_bridge_fluorite', out: 'mekanism:fluorite_gem',       n: 4, pattern: ['DD', 'K '] }
   ]
 
   bridges.forEach(b => {

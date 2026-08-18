@@ -166,7 +166,7 @@
 				"&7- &fMekanism&7 - go and power the machines this chapter was built for."
 				"&7- &fCreate Power Grid&7 - if you want electricity that behaves like real electricity, with voltage, transformers and circuits you etch yourself."
 				""
-				"&8Powah, Solar Flux and Advanced Generators are all later, larger answers to the same question. None of them is required to start Mekanism."
+				"&8Solar Flux and Advanced Generators are both later, larger answers to the same question. None of them is required to start Mekanism."
 			]
 			icon: "createaddition:electrum_wire"
 			id: "5E10000000000007"

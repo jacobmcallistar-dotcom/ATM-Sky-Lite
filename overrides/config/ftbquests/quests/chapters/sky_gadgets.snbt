@@ -402,7 +402,7 @@
 			description: [
 				"&eIron Jetpacks&r is a straightforward FE-powered flight ladder, and on a void island \"don't fall\" has real value."
 				""
-				"Craft a &eStrap&r and a &eCoil&r of the tier you can afford, and the jetpack charges from any Forge Energy source in the pack - Thermal dynamos, Solar Flux panels, Mekanism, Powah, all of it."
+				"Craft a &eStrap&r and a &eCoil&r of the tier you can afford, and the jetpack charges from any Forge Energy source in the pack - Thermal dynamos, Solar Flux panels, Mekanism, Create, all of it."
 				""
 				"&7Tiers run Basic through Ultimate, each with more capacity, speed and vertical thrust. Start basic; the coil is the expensive part, and every tier reuses the same strap."
 			]

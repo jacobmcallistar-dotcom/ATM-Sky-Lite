@@ -102,7 +102,7 @@
 				""
 				"&e&lUpgrade in place.&r A higher-tier panel can be crafted around a lower one, so panels you place now are not wasted when you climb."
 				""
-				"&c&lThey produce nothing at night and less in bad weather.&r Pair the array with an Energy Cell sized to carry your base until dawn, or run Powah Furnators alongside to cover the gap."
+				"&c&lThey produce nothing at night and less in bad weather.&r Pair the array with an Energy Cell sized to carry your base until dawn, or run a Mekanism generator alongside to cover the gap."
 				""
 				"&7A floating island is close to the ideal site - nothing shadows anything, so every panel runs at full output all day.&r"
 			]
@@ -190,7 +190,7 @@
 			description: [
 				"&e&lA full Solar Flux array asks nothing of you again.&r No fuel, no water, no waste, no maintenance."
 				""
-				"&7It will not run a fission reactor or an Ultimate Factory bank on its own - for that you want Powah reactors or a Mekanism turbine. But as the baseline that keeps lights, sieves and storage alive with zero attention, it is the best value in the pack.&r"
+				"&7It will not run a fission reactor or an Ultimate Factory bank on its own - for that you want a Mekanism turbine. But as the baseline that keeps lights, sieves and storage alive with zero attention, it is the best value in the pack.&r"
 				""
 				"&8Solar panels also work on other planets. Output scales with distance from the sun - excellent on Mercury and Venus, poor on Glacio."
 			]

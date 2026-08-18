@@ -13,7 +13,7 @@
 			description: [
 				"&e&lGeneration is never steady and demand is never flat.&r Storage is what sits between them, and Mekanism gives you two sizes of it."
 				""
-				"&e&lThe Basic Energy Cube&r is the small answer. It buffers spikes, and it doubles as an adapter - it will accept power from anything and hand it to anything, so it is also how you bridge Powah, Create or Solar Flux into a Mekanism machine."
+				"&e&lThe Basic Energy Cube&r is the small answer. It buffers spikes, and it doubles as an adapter - it will accept power from anything and hand it to anything, so it is also how you bridge Create, Thermal or Solar Flux into a Mekanism machine."
 				""
 				"&e&lThe Induction Matrix&r is the large one. It is a multiblock: a shell of &eInduction Casing&r, then &eCells&r for capacity and &eProviders&r for transfer rate, and those two are separate numbers you tune independently."
 				""
@@ -186,7 +186,7 @@
 				""
 				"&7Wire them into an Energy Cube rather than straight to machines. Wind output is steady but small, and the buffer is what turns a trickle into something that can handle a burst of demand.&r"
 				""
-				"&8Cheap enough to be your first real grid, weak enough that you will still want Powah reactors later. Build both."
+				"&8Cheap enough to be your first real grid, weak enough that you will still want a real turbine later. Build both."
 			]
 			icon: "mekanismgenerators:wind_generator"
 			id: "2103000000000005"
