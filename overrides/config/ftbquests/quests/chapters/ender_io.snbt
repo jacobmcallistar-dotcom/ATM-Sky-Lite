@@ -67,7 +67,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSmelt & Burn"
+			title: "&bSmelt \\& Burn"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -372,7 +372,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSoul Binder & Powered Spawner"
+			title: "&bSoul Binder \\& Powered Spawner"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -397,7 +397,7 @@
 				item: "enderio:vibrant_crystal"
 				type: "item"
 			}]
-			title: "&bVibrant Crystals & Capacitors"
+			title: "&bVibrant Crystals \\& Capacitors"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -424,7 +424,7 @@
 				item: "enderio:travel_anchor"
 				type: "item"
 			}]
-			title: "&bTravel Anchors & Staff"
+			title: "&bTravel Anchors \\& Staff"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -449,7 +449,7 @@
 				item: "enderio:xp_vacuum"
 				type: "item"
 			}]
-			title: "&bXP Vacuum & Obelisks"
+			title: "&bXP Vacuum \\& Obelisks"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -481,7 +481,7 @@
 					type: "item"
 				}
 			]
-			title: "&bImpulse Hopper & Wired Charger"
+			title: "&bImpulse Hopper \\& Wired Charger"
 			x: 0.0d
 			y: 1.5d
 		}

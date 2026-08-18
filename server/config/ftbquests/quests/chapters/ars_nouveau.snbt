@@ -305,7 +305,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSource & Sourcelinks"
+			title: "&bSource \\& Sourcelinks"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -489,7 +489,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSpell Turrets & Relays"
+			title: "&bSpell Turrets \\& Relays"
 			x: 2.0d
 			y: 4.5d
 		}

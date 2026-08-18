@@ -195,7 +195,7 @@
 				item: "compactmachines:wall"
 				type: "item"
 			}]
-			title: "&bLoading & Limits"
+			title: "&bLoading \\& Limits"
 			x: 2.0d
 			y: 1.5d
 		}

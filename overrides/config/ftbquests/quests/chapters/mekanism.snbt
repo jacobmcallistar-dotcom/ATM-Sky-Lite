@@ -199,7 +199,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Elite & Ultimate Circuits"
+			title: "&9Elite \\& Ultimate Circuits"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -414,7 +414,7 @@
 					type: "item"
 				}
 			]
-			title: "&9MekaSuit & Meka-Tool"
+			title: "&9MekaSuit \\& Meka-Tool"
 			x: 3.0d
 			y: 2.5d
 		}
@@ -1052,7 +1052,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Tanks & Buffers"
+			title: "&9Tanks \\& Buffers"
 			x: -1.0d
 			y: -6.0d
 		}
@@ -1146,7 +1146,7 @@
 					type: "item"
 				}
 			]
-			title: "&9QIO Importers & Exporters"
+			title: "&9QIO Importers \\& Exporters"
 			x: 9.0d
 			y: 3.0d
 		}

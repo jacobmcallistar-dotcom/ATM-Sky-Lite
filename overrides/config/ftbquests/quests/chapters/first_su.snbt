@@ -110,7 +110,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Shafts & Cogs"
+			title: "&2Shafts \\& Cogs"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -305,7 +305,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Basin & Mixer"
+			title: "&2Basin \\& Mixer"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -364,7 +364,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Zinc & Brass"
+			title: "&2Zinc \\& Brass"
 			x: 4.0d
 			y: 1.5d
 		}

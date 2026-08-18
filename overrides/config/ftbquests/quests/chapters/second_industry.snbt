@@ -335,7 +335,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPulverizer & Redstone Furnace"
+			title: "&bPulverizer \\& Redstone Furnace"
 			x: -6.0d
 			y: 3.0d
 		}
@@ -444,7 +444,7 @@
 				item: "thermal:energy_duct"
 				type: "item"
 			}]
-			title: "&bFluiducts & Itemducts"
+			title: "&bFluiducts \\& Itemducts"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -469,7 +469,7 @@
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			title: "&bTinkering & Reconfiguration"
+			title: "&bTinkering \\& Reconfiguration"
 			x: -2.0d
 			y: 4.5d
 		}

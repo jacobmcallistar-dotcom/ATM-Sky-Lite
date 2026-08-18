@@ -149,7 +149,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Clutch & Gearshift"
+			title: "&9Clutch \\& Gearshift"
 			x: -12.0d
 			y: -3.0d
 		}
@@ -240,7 +240,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Hand Crank & Windmill"
+			title: "&9Hand Crank \\& Windmill"
 			x: -10.0d
 			y: -4.5d
 		}
@@ -485,7 +485,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Spout & Item Drain"
+			title: "&9Spout \\& Item Drain"
 			x: -6.0d
 			y: -3.0d
 		}
@@ -522,7 +522,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Mechanical Pump & Pipes"
+			title: "&9Mechanical Pump \\& Pipes"
 			x: -4.0d
 			y: -3.0d
 		}
@@ -623,7 +623,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Chassis & Super Glue"
+			title: "&9Chassis \\& Super Glue"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -658,7 +658,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Harvester & Plough"
+			title: "&9Harvester \\& Plough"
 			x: -2.0d
 			y: 4.5d
 		}
@@ -779,7 +779,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Redstone Link & Stockpile Switch"
+			title: "&9Redstone Link \\& Stockpile Switch"
 			x: 4.0d
 			y: -1.5d
 		}
@@ -814,7 +814,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Display Link & Board"
+			title: "&9Display Link \\& Board"
 			x: 4.0d
 			y: -3.0d
 		}
@@ -904,7 +904,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Extendo Grip & Potato Cannon"
+			title: "&9Extendo Grip \\& Potato Cannon"
 			x: 6.0d
 			y: 1.5d
 		}
@@ -945,7 +945,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Backtank & Diving Gear"
+			title: "&9Backtank \\& Diving Gear"
 			x: 8.0d
 			y: 1.5d
 		}
@@ -995,7 +995,7 @@
 				""
 				"&c&lSuper-heated Blaze Burners are the usual bottleneck&r, and they want a steady blaze cake or lava supply. Plan the fuel before the boiler."
 				""
-				"&7Feed the output into a Crafts & Additions Alternator and this becomes your whole base's electricity too.&r"
+				"&7Feed the output into a Crafts \\& Additions Alternator and this becomes your whole base's electricity too.&r"
 			]
 			icon: "create:steam_engine"
 			id: "7F0000000000001C"
@@ -1045,7 +1045,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Stations & Schedules"
+			title: "&9Stations \\& Schedules"
 			x: 4.0d
 			y: 3.0d
 		}

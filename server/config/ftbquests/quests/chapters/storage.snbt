@@ -39,7 +39,7 @@
 				title: "Declare war on chest chaos"
 				type: "checkmark"
 			}]
-			title: "&bStash & Sort"
+			title: "&bStash \\& Sort"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -489,7 +489,7 @@
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
-			title: "&bEnder Storage & Tanks"
+			title: "&bEnder Storage \\& Tanks"
 			x: -4.0d
 			y: 4.5d
 		}

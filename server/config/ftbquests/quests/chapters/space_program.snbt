@@ -417,7 +417,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Desh & Tier 2"
+			title: "&9Desh \\& Tier 2"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -486,7 +486,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Ostrum & Tier 3"
+			title: "&9Ostrum \\& Tier 3"
 			x: 6.0d
 			y: -1.0d
 		}
@@ -581,7 +581,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Calorite & Tier 4"
+			title: "&9Calorite \\& Tier 4"
 			x: 10.0d
 			y: -1.5d
 		}

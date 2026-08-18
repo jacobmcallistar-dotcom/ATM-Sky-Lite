@@ -297,7 +297,7 @@
 					type: "item"
 				}
 			]
-			title: "&bLaser Drill & Lenses"
+			title: "&bLaser Drill \\& Lenses"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -333,7 +333,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPlant Gatherer & Sower"
+			title: "&bPlant Gatherer \\& Sower"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -369,7 +369,7 @@
 					type: "item"
 				}
 			]
-			title: "&bMob Duplicator & Slaughter Factory"
+			title: "&bMob Duplicator \\& Slaughter Factory"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -403,7 +403,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBlack Hole Units & Tanks"
+			title: "&bBlack Hole Units \\& Tanks"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -435,7 +435,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBiofuel & Protein Generators"
+			title: "&bBiofuel \\& Protein Generators"
 			x: 4.0d
 			y: 1.5d
 		}

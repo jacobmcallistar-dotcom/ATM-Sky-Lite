@@ -305,7 +305,7 @@
 				item: "productivebees:bee_cage"
 				type: "item"
 			}]
-			title: "&bBreeding & Mutation"
+			title: "&bBreeding \\& Mutation"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -330,7 +330,7 @@
 				item: "productivebees:feeder"
 				type: "item"
 			}]
-			title: "&bFeeding Slabs & Flowers"
+			title: "&bFeeding Slabs \\& Flowers"
 			x: -6.0d
 			y: 4.5d
 		}
@@ -353,7 +353,7 @@
 				item: "productivebees:honey_generator"
 				type: "item"
 			}]
-			title: "&bHoney & Fluids"
+			title: "&bHoney \\& Fluids"
 			x: -4.0d
 			y: 4.5d
 		}

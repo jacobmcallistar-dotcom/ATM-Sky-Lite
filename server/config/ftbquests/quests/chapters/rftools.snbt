@@ -372,7 +372,7 @@
 					type: "item"
 				}
 			]
-			title: "&bSpace Chamber & Mover"
+			title: "&bSpace Chamber \\& Mover"
 			x: 2.0d
 			y: -1.5d
 		}
@@ -536,7 +536,7 @@
 					type: "item"
 				}
 			]
-			title: "&bMatter Beamer & Spawner"
+			title: "&bMatter Beamer \\& Spawner"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -637,7 +637,7 @@
 					type: "item"
 				}
 			]
-			title: "&bPower Cells & Generation"
+			title: "&bPower Cells \\& Generation"
 			x: -4.0d
 			y: -1.5d
 		}

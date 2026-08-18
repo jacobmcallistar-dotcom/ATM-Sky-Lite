@@ -177,7 +177,7 @@
 					type: "item"
 				}
 			]
-			title: "&bBlock Reader & NBT Storage"
+			title: "&bBlock Reader \\& NBT Storage"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -266,7 +266,7 @@
 					type: "item"
 				}
 			]
-			title: "&bChat Box & Redstone Integrator"
+			title: "&bChat Box \\& Redstone Integrator"
 			x: 4.0d
 			y: 1.5d
 		}

@@ -271,6 +271,865 @@
 			x: 0.0d
 			y: 0.75d
 		}
+		{
+			dependencies: ["7E2000000000000A"]
+			description: [
+				"This is the single most important block in the chapter, and it looks like a greenhouse."
+				""
+				"The &eGarden Cloche&r grows a crop in a sealed box from water and power. &lNo farmland, no light level, no player standing nearby, no chunk babysitting.&r It just runs."
+				""
+				"&e&lPlant Industrial Hemp in it.&r Hemp is the feedstock for the entire fuel chain below, and one cloche produces it faster than a field would."
+				""
+				"&7In a void world this matters more than usual: you have no soil, no biomes and no rain. The cloche does not care about any of that."
+			]
+			icon: "immersiveengineering:cloche"
+			id: "7E20000000000011"
+			rewards: [{
+				id: "7E20000000000511"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7A farm with no farmland"
+			tasks: [
+				{
+					id: "7E20000000000401"
+					item: "immersiveengineering:cloche"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7E20000000000402"
+					item: "immersiveengineering:seed"
+					type: "item"
+				}
+			]
+			title: "&bThe Garden Cloche"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E20000000000011"]
+			description: [
+				"The &eIndustrial Squeezer&r presses seeds into &ePlant Oil&r - 120 mB per hemp seed."
+				""
+				"It is a multiblock: craft the item, place it, and hit it with the Engineer's Hammer to form the structure. Feed it seeds from the cloche on a conveyor and it will run unattended forever."
+				""
+				"&7It also squeezes other things - check JEI. But hemp seeds are why it is here."
+			]
+			icon: "immersiveengineering:squeezer"
+			id: "7E20000000000012"
+			rewards: [{
+				id: "7E20000000000512"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Hemp seeds into plant oil"
+			tasks: [
+				{
+					id: "7E20000000000403"
+					item: "immersiveengineering:squeezer"
+					type: "item"
+				}
+				{
+					id: "7E20000000000404"
+					item: "immersiveengineering:plantoil_bucket"
+					type: "item"
+				}
+			]
+			title: "&bThe Industrial Squeezer"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E20000000000011"]
+			description: [
+				"The &eIndustrial Fermenter&r ferments plant matter into &eEthanol&r - 80 mB per sugar cane."
+				""
+				"Second multiblock, same drill: craft, place, hammer. Sugar cane is trivially farmable and a cloche will grow that too, so this end of the chain costs you almost nothing once it is built."
+				""
+				"&7Plant oil and ethanol are the two halves of biodiesel. You need both running at once."
+			]
+			icon: "immersiveengineering:fermenter"
+			id: "7E20000000000013"
+			rewards: [{
+				id: "7E20000000000513"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Sugar into ethanol"
+			tasks: [
+				{
+					id: "7E20000000000405"
+					item: "immersiveengineering:fermenter"
+					type: "item"
+				}
+				{
+					id: "7E20000000000406"
+					item: "immersiveengineering:ethanol_bucket"
+					type: "item"
+				}
+			]
+			title: "&bThe Industrial Fermenter"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7E20000000000012"
+				"7E20000000000013"
+			]
+			description: [
+				"The &eRefinery&r combines plant oil and ethanol into &eBiodiesel&r."
+				""
+				"&e&lThe ratio is the good part:&r 8 plant oil plus 8 ethanol gives 16 biodiesel. Nothing is lost. The whole cost of this chain is the four multiblocks and a hemp farm, and after that the fuel is genuinely free."
+				""
+				"&7Biodiesel is a real IE fluid with its own uses - the Diesel Generator burns it for serious FE. But in this pack it does something else as well."
+			]
+			icon: "immersiveengineering:refinery"
+			id: "7E20000000000014"
+			rewards: [{
+				id: "7E20000000000514"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "gear"
+			subtitle: "&7Where the two halves meet"
+			tasks: [
+				{
+					id: "7E20000000000407"
+					item: "immersiveengineering:refinery"
+					type: "item"
+				}
+				{
+					id: "7E20000000000408"
+					item: "immersiveengineering:biodiesel_bucket"
+					type: "item"
+				}
+			]
+			title: "&bThe Refinery"
+			x: -2.0d
+			y: 3.8d
+		}
+		{
+			dependencies: ["7E20000000000014"]
+			description: [
+				"&e&lThis pack counts Biodiesel as oil.&r"
+				""
+				"It is registered into the &e#ad_astra:oil&r fluid tag, which means you can pour it straight into the &eAd Astra Fuel Refinery&r and it refines 1:1 into rocket &eFuel&r at 30 FE/t."
+				""
+				"&6&lWhat that means:&r the space program stops running on coal. A hemp farm, four IE multiblocks and a cloche will fuel every rocket you ever build, forever, with no mining and no fuel cost at all."
+				""
+				"&7&lThe three oils, cheapest last:&r"
+				"&7- &fBy hand&7 - 8 coal blocks plus a bucket. 72 coal per bucket. Your first rocket."
+				"&7- &fCoal cracking&7 - a heated Create basin, 18 coal per bucket. 4x cheaper and automatable."
+				"&7- &fBiodiesel&7 - this quest. No coal at all."
+				""
+				"&8All three go into the same Ad Astra Fuel Refinery. It is the only thing that makes Fuel, and it is a 1:1 conversion - oil supply was always the bottleneck, never the refining."
+			]
+			icon: "immersiveengineering:biodiesel_bucket"
+			id: "7E20000000000015"
+			rewards: [{
+				id: "7E20000000000515"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Biodiesel IS rocket oil"
+			tasks: [
+				{
+					id: "7E20000000000409"
+					item: "ad_astra:fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "&6&lRockets Run on Hemp"
+			x: 0.0d
+			y: 3.8d
+		}
+		{
+			dependencies: ["7E20000000000014"]
+			description: [
+				"The other thing to do with biodiesel: burn it."
+				""
+				"The &eDiesel Generator&r is a large multiblock that turns biodiesel into a lot of FE - far more than windmills will ever give you, and it runs day and night regardless of weather."
+				""
+				"&7Worth building once your hemp farm outproduces what the rockets need. It is the natural bridge between IE power and the electricity budget the rest of the pack wants."
+			]
+			icon: "immersiveengineering:diesel_generator"
+			id: "7E20000000000016"
+			rewards: [{
+				id: "7E20000000000516"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Burn it for power instead"
+			tasks: [
+				{
+					id: "7E2000000000040A"
+					item: "immersiveengineering:diesel_generator"
+					type: "item"
+				}
+			]
+			title: "&bThe Diesel Generator"
+			x: -2.0d
+			y: 5.2d
+		}
+		{
+			dependencies: ["7E20000000000014"]
+			description: [
+				"Four multiblocks producing four fluids need plumbing."
+				""
+				"&eFluid Pipes&r carry liquid and the &eFluid Pump&r pushes it. Unlike most mods' pipes these are directional and will happily pull from a multiblock output and shove it into the next machine's input."
+				""
+				"&7Insulate runs you care about, and remember the pump needs power. A &eFluid Router&r is worth building if one output has to feed two places."
+			]
+			icon: "immersiveengineering:fluid_pump"
+			id: "7E20000000000017"
+			rewards: [{
+				id: "7E20000000000517"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Moving it all around"
+			tasks: [
+				{
+					count: 8L
+					id: "7E2000000000040B"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "7E2000000000040C"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+			]
+			title: "&bFluid Pipes and Pumps"
+			x: 0.0d
+			y: 5.2d
+		}
+		{
+			dependencies: ["7E20000000000010"]
+			description: [
+				"LV wire caps out fast. &eMV Wire Coil&r (electrum) carries far more, and a &eTransformer&r steps between the two voltages."
+				""
+				"&c&lWire the transformer the right way round.&r The lower voltage goes on the small side, higher on the large. Backwards does nothing, and pushing HV into an LV connector destroys it in a small explosion."
+				""
+				"&7An &eMV Accumulator&r buffers the middle tier. From here the wires stop being decorative and start carrying your base."
+			]
+			icon: "immersiveengineering:transformer"
+			id: "7E20000000000018"
+			rewards: [{
+				id: "7E20000000000518"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Electrum, transformers, real throughput"
+			tasks: [
+				{
+					count: 4L
+					id: "7E2000000000040D"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E2000000000040E"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "7E2000000000040F"
+					item: "immersiveengineering:transformer"
+					type: "item"
+				}
+			]
+			title: "&bStepping Up to MV"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E20000000000018"]
+			description: [
+				"&eHV Wire Coil&r is steel, and it moves the kind of power the heavy multiblocks actually want - the Arc Furnace in particular will brown out anything smaller."
+				""
+				"The &eHV Accumulator&r is the big buffer. It is also, in this pack, a component of something much more important."
+				""
+				"&c&lHV wire is genuinely dangerous.&r Uninsulated HV will kill you if you walk into it. Insulate anything at head height or route it overhead."
+			]
+			icon: "immersiveengineering:capacitor_hv"
+			id: "7E20000000000019"
+			rewards: [{
+				id: "7E20000000000519"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The top of the ladder"
+			tasks: [
+				{
+					count: 4L
+					id: "7E20000000000410"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E20000000000411"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "7E20000000000412"
+					item: "immersiveengineering:capacitor_hv"
+					type: "item"
+				}
+			]
+			title: "&bHV and Accumulators"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E20000000000019"]
+			description: [
+				"The &eEngineer's Circuit Table&r builds &eCircuit Backplanes&r into &eLogic Circuits&r and &eLogic Units&r."
+				""
+				"These are IE's answer to a processor - used in its own advanced machinery, and in this pack, in the last Sky Seal."
+				""
+				"&7Cheap to run once built. Keep a stack of logic units around; several things later want them."
+			]
+			icon: "immersiveengineering:circuit_table"
+			id: "7E2000000000001A"
+			rewards: [{
+				id: "7E2000000000051A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Logic units and circuit boards"
+			tasks: [
+				{
+					id: "7E20000000000413"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7E20000000000414"
+					item: "immersiveengineering:logic_unit"
+					type: "item"
+				}
+			]
+			title: "&bThe Circuit Table"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7E20000000000019"
+				"7E2000000000001A"
+			]
+			description: [
+				"&d&lThe ninth and final Sky Seal is built here.&r"
+				""
+				"&eSeal of Flux&r = &eHV Accumulator&r plus &eLogic Unit&r. High-voltage storage and a piece of logic - the most electrically advanced thing IE makes, standing in for mastery of power itself."
+				""
+				"&6The nine seals combine into the &eSky Matrix&r, and the Sky Matrix into the &eHeart of the Sky&r. That is the win condition of this pack, and this quest is one ninth of it."
+				""
+				"&7See the &fSky Seals&7 chapter for the other eight and what the Matrix needs."
+			]
+			icon: "immersiveengineering:capacitor_hv"
+			id: "7E2000000000001B"
+			rewards: [{
+				id: "7E2000000000051B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "&7The ninth seal is an IE build"
+			tasks: [
+				{
+					id: "7E20000000000415"
+					item: "kubejs:seal_flux"
+					type: "item"
+				}
+			]
+			title: "&d&lThe Seal of Flux"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E20000000000019"]
+			description: [
+				"The &eAccumulator Backpack&r is a wearable battery that charges every powered tool you carry."
+				""
+				"Wear it and your drill, buzzsaw, revolver and railgun all top themselves up from it. It can be charged from a wire connector or, with the right upgrade, wirelessly from a Tesla Coil."
+				""
+				"&7Quietly one of the best quality-of-life items in the mod."
+			]
+			icon: "immersiveengineering:powerpack"
+			id: "7E2000000000001C"
+			rewards: [{
+				id: "7E2000000000051C"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Carry your own grid"
+			tasks: [
+				{
+					id: "7E20000000000416"
+					item: "immersiveengineering:powerpack"
+					type: "item"
+				}
+			]
+			title: "&bThe Accumulator Backpack"
+			x: 4.0d
+			y: 2.8d
+		}
+		{
+			dependencies: ["7E20000000000018"]
+			description: [
+				"The &ePowered Lantern&r and &eFloodlight&r light an area from the power grid instead of from torches."
+				""
+				"&e&lThe floodlight is a mob-spawn tool.&r It throws a genuine cone of light a long way, which in a void world means you can light an entire platform from one block and stop things spawning on it."
+				""
+				"&7Both need power. Both are worth it."
+			]
+			icon: "immersiveengineering:floodlight"
+			id: "7E2000000000001D"
+			rewards: [{
+				id: "7E2000000000051D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Light without torches"
+			tasks: [
+				{
+					id: "7E20000000000417"
+					item: "immersiveengineering:electric_lantern"
+					type: "item"
+				}
+				{
+					id: "7E20000000000418"
+					item: "immersiveengineering:floodlight"
+					type: "item"
+				}
+			]
+			title: "&bLanterns and Floodlights"
+			x: 2.0d
+			y: 2.8d
+		}
+		{
+			dependencies: ["7E2000000000000C"]
+			description: [
+				"Most of IE's machinery is not craftable in a crafting grid. It is assembled on the &eEngineer's Workbench&r from an &eEngineer's Blueprint&r."
+				""
+				"Put the blueprint in the workbench, put the components in the slots below, and take the finished multiblock item out. Then place it and hit it with the hammer."
+				""
+				"&7Blueprints exist for components, molds, bullets, wiring and the specialist tools. This block is the gateway to the entire second half of the mod - build it before anything else on this row."
+				""
+				"&8An &eAutomated Engineer's Workbench&r does the same job from a conveyor feed once you want it hands-off."
+			]
+			icon: "immersiveengineering:workbench"
+			id: "7E2000000000001E"
+			rewards: [{
+				id: "7E2000000000051E"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Blueprints and every multiblock"
+			tasks: [
+				{
+					id: "7E20000000000419"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "7E2000000000041A"
+					item: "immersiveengineering:blueprint"
+					type: "item"
+				}
+			]
+			title: "&bThe Engineer's Workbench"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E2000000000001E"]
+			description: [
+				"The &eMetal Press&r stamps ingots into &ePlates&r using swappable &eMolds&r."
+				""
+				"Plates are the tax on nearly every recipe in this mod and several others. Doing it by hand with the hammer works and gets old immediately."
+				""
+				"&e&lMolds worth having:&r Plate first, then Rod, Gear, Wire, and the Packing 3x3 and Unpacking pair - which turn nine ingots into a block and back with no crafting grid."
+			]
+			icon: "immersiveengineering:metal_press"
+			id: "7E2000000000001F"
+			rewards: [{
+				id: "7E2000000000051F"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Plates, rods, gears, wire"
+			tasks: [
+				{
+					id: "7E2000000000041B"
+					item: "immersiveengineering:metal_press"
+					type: "item"
+				}
+				{
+					id: "7E2000000000041C"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+			]
+			title: "&bThe Metal Press"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E2000000000001F"]
+			description: [
+				"The &eCrusher&r is a big multiblock that grinds ore into two dusts. Standard ore doubling, but it processes a stream rather than one item at a time."
+				""
+				"&7Feed it with conveyors and it will chew through everything your sieves produce without supervision."
+				""
+				"&c&lNote on the Excavator:&r IE's Excavator and Core Sample Drill find mineral veins in the world. &lThis is a void world - there are no chunks with veins in them&r, so neither is useful here. The Crusher plus your sieve output is the route in this pack."
+			]
+			icon: "immersiveengineering:crusher"
+			id: "7E20000000000020"
+			rewards: [{
+				id: "7E20000000000520"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Ore doubling, industrially"
+			tasks: [
+				{
+					id: "7E2000000000041D"
+					item: "immersiveengineering:crusher"
+					type: "item"
+				}
+			]
+			title: "&bThe Crusher"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E20000000000020"]
+			description: [
+				"The Arc Furnace eats &eGraphite Electrodes&r, and electrodes are made of &eHOP Graphite&r."
+				""
+				"&e&lThe chain:&r Coke Oven makes &eCoal Coke&r, the Crusher grinds it to &eCoke Dust&r, and the Arc Furnace or a kiln turns that into &eHOP Graphite Ingots&r. Three of those make an electrode."
+				""
+				"&c&lElectrodes wear out.&r Every Arc Furnace run consumes durability on all three, and replacing them is a permanent running cost. Automate coke dust early or the furnace will keep stopping."
+			]
+			icon: "immersiveengineering:ingot_hop_graphite"
+			id: "7E20000000000021"
+			rewards: [{
+				id: "7E20000000000521"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7The electrode problem"
+			tasks: [
+				{
+					count: 4L
+					id: "7E2000000000041E"
+					item: "immersiveengineering:ingot_hop_graphite"
+					type: "item"
+				}
+			]
+			title: "&bHOP Graphite"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E20000000000021"]
+			description: [
+				"The &eArc Furnace&r is IE's endgame smelter. It makes steel far faster than the Improvised Blast Furnace, alloys most of the pack's metals, and - the part people miss - &erecycles tools and armour back into ingots&r."
+				""
+				"It is a large build, it wants HV power, and it needs graphite electrodes in place before it will run."
+				""
+				"&7Once this is up, the Improvised Blast Furnace becomes a bootstrap you never use again."
+			]
+			icon: "immersiveengineering:arc_furnace"
+			id: "7E20000000000022"
+			rewards: [{
+				id: "7E20000000000522"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "gear"
+			subtitle: "&7Steel at scale, and recycling"
+			tasks: [
+				{
+					id: "7E2000000000041F"
+					item: "immersiveengineering:arc_furnace"
+					type: "item"
+				}
+			]
+			title: "&bThe Arc Furnace"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E20000000000022"]
+			description: [
+				"The &eAssembler&r holds three crafting recipes at once and runs them from a shared inventory, pulling fluids straight from its own tanks."
+				""
+				"&e&lThis is IE's autocrafter.&r It is not AE2 - it will not plan a tree of dependencies - but for a fixed set of things you make constantly it is simpler, cheaper and needs no channels."
+				""
+				"&7Good use: keep it stocked with the three components your builds always run out of."
+			]
+			icon: "immersiveengineering:assembler"
+			id: "7E20000000000023"
+			rewards: [{
+				id: "7E20000000000523"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Three recipes, one machine"
+			tasks: [
+				{
+					id: "7E20000000000420"
+					item: "immersiveengineering:assembler"
+					type: "item"
+				}
+			]
+			title: "&bThe Assembler"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E20000000000023"]
+			description: [
+				"The &eBottling Machine&r puts a fluid into an item - buckets, bottles, and anything else with a recipe."
+				""
+				"In this pack it is also how you make &eDuroplast&r, IE's synthetic plastic, out of the resin end of the fuel chain."
+				""
+				"&7Pairs naturally with the Refinery: pipe biodiesel in, get buckets out, feed them to whatever wants them."
+			]
+			icon: "immersiveengineering:bottling_machine"
+			id: "7E20000000000024"
+			rewards: [{
+				id: "7E20000000000524"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Fluids into containers"
+			tasks: [
+				{
+					id: "7E20000000000421"
+					item: "immersiveengineering:bottling_machine"
+					type: "item"
+				}
+			]
+			title: "&bThe Bottling Machine"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E2000000000001E"]
+			description: [
+				"The &eAlloy Kiln&r is a small brick multiblock that alloys two metals using ordinary fuel - no electricity at all."
+				""
+				"&e&lBuild this early.&r Electrum and constantan come out of it, and electrum is what MV wire is made of, so the kiln is quietly a prerequisite for the whole power branch."
+				""
+				"&7Twenty-seven Kiln Bricks, same as the other brick multiblocks."
+			]
+			icon: "immersiveengineering:alloy_smelter"
+			id: "7E20000000000025"
+			rewards: [{
+				id: "7E20000000000525"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Cheap alloys, no power"
+			tasks: [
+				{
+					count: 27L
+					id: "7E20000000000422"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+			]
+			title: "&bThe Alloy Kiln"
+			x: 4.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["7E2000000000001E"]
+			description: [
+				"The &eMining Drill&r breaks a 3x3 and runs off the power grid rather than durability. The &eBuzzsaw&r does the same for wood and cuts planks directly from logs."
+				""
+				"Both take &eupgrades&r in their own slots - capacity, speed, fortune, waterproofing. The drill with a Steel Drill Head and a fortune augment is a serious tool."
+				""
+				"&7Charge them from an Accumulator Backpack or a Charging Station."
+			]
+			icon: "immersiveengineering:drill"
+			id: "7E20000000000026"
+			rewards: [{
+				id: "7E20000000000526"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Powered tools"
+			tasks: [
+				{
+					id: "7E20000000000423"
+					item: "immersiveengineering:drill"
+					type: "item"
+				}
+				{
+					id: "7E20000000000424"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+			]
+			title: "&bDrill and Buzzsaw"
+			x: 2.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["7E2000000000001E"]
+			description: [
+				"The &eRevolver&r is IE's signature weapon: six chambers, swappable cartridge types, and upgrades that bolt onto the frame."
+				""
+				"&e&lCartridges matter more than the gun.&r Casings are stamped on the Metal Press, then loaded with different payloads - buckshot, armour-piercing, silver, phosphorus, even a flare round."
+				""
+				"&7Empty casings are returned when you fire, so a bullet press plus an assembler makes ammunition genuinely renewable."
+			]
+			icon: "immersiveengineering:revolver"
+			id: "7E20000000000027"
+			rewards: [{
+				id: "7E20000000000527"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Engineering, applied loudly"
+			tasks: [
+				{
+					id: "7E20000000000425"
+					item: "immersiveengineering:revolver"
+					type: "item"
+				}
+				{
+					id: "7E20000000000426"
+					item: "immersiveengineering:mold_bullet_casing"
+					type: "item"
+				}
+			]
+			title: "&bThe Revolver"
+			x: 6.0d
+			y: -1.2d
+		}
+		{
+			dependencies: [
+				"7E20000000000027"
+				"7E20000000000019"
+			]
+			description: [
+				"Two powered weapons, both fed from your grid."
+				""
+				"The &eRailgun&r accelerates a metal rod and hits harder than anything else in the mod, at the cost of a charge time and a lot of FE per shot."
+				""
+				"The &eChemical Thrower&r sprays a fluid - creosote to burn things, or water, or something worse. It is also the only sane way to deal with a large crowd."
+				""
+				"&7Both want the Accumulator Backpack. Neither is subtle."
+			]
+			icon: "immersiveengineering:railgun"
+			id: "7E20000000000028"
+			rewards: [{
+				id: "7E20000000000528"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The heavy end"
+			tasks: [
+				{
+					id: "7E20000000000427"
+					item: "immersiveengineering:railgun"
+					type: "item"
+				}
+				{
+					id: "7E20000000000428"
+					item: "immersiveengineering:chemthrower"
+					type: "item"
+				}
+			]
+			title: "&bRailgun and Chemthrower"
+			x: 8.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["7E20000000000027"]
+			description: [
+				"The &eGun Turret&r and &eChemthrower Turret&r shoot things so you do not have to."
+				""
+				"They take power, ammunition, and a whitelist or blacklist of what to fire at - so they can be told to ignore you and your pets and kill everything else."
+				""
+				"&7Useful around a mob farm, or on the edge of a platform where things wander in."
+			]
+			icon: "immersiveengineering:turret_gun"
+			id: "7E20000000000029"
+			rewards: [{
+				id: "7E20000000000529"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Automated defence"
+			tasks: [
+				{
+					id: "7E20000000000429"
+					item: "immersiveengineering:turret_gun"
+					type: "item"
+				}
+			]
+			title: "&bTurrets"
+			x: 10.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["7E2000000000000F"]
+			description: [
+				"The plain belt is one of eight. The variants are where conveyors stop being decorative:"
+				""
+				"&7- &fExtracting&7 - pulls items out of the inventory behind it"
+				"&7- &fSplitting&7 - alternates output left and right, for free round-robin"
+				"&7- &fDropping&7 - drops items off the end into a machine or a hopper"
+				"&7- &fVertical&7 - carries items straight up a wall"
+				"&7- &fCovered&7 - the same, but items cannot be picked up or shot off"
+				"&7- &fRedstone Controlled&7 - stops when told to"
+				""
+				"&8Extracting plus Splitting is a complete two-machine feeder with no pipes, no filters and no power."
+			]
+			icon: "immersiveengineering:conveyor_extract"
+			id: "7E2000000000002A"
+			rewards: [{
+				id: "7E2000000000052A"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Belts that do more than carry"
+			tasks: [
+				{
+					count: 4L
+					id: "7E2000000000042A"
+					item: "immersiveengineering:conveyor_extract"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E2000000000042B"
+					item: "immersiveengineering:conveyor_splitter"
+					type: "item"
+				}
+			]
+			title: "&bConveyor Variants"
+			x: -2.0d
+			y: -1.2d
+		}
 	]
 	subtitle: ["&7Wires, coke and blast furnaces"]
 	title: "&bImmersive Engineering"

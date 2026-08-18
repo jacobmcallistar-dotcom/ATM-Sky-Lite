@@ -634,7 +634,7 @@
 					type: "item"
 				}
 			]
-			title: "&bXNet: Controllers & Cables"
+			title: "&bXNet: Controllers \\& Cables"
 			x: -8.0d
 			y: 4.5d
 		}
@@ -661,7 +661,7 @@
 				item: "xnet:connector_blue"
 				type: "item"
 			}]
-			title: "&bXNet: Connectors & Filters"
+			title: "&bXNet: Connectors \\& Filters"
 			x: -6.0d
 			y: 4.5d
 		}

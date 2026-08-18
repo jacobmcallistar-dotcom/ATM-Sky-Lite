@@ -32,7 +32,7 @@
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "&7Digital storage & autocrafting"
+			subtitle: "&7Digital storage \\& autocrafting"
 			tasks: [{
 				id: "2DEA0BC44DC5E6F6"
 				title: "Begin AE2"
@@ -994,7 +994,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Interface & Pattern Provider"
+			title: "&9Interface \\& Pattern Provider"
 			x: -7.0d
 			y: 4.0d
 		}
@@ -1055,7 +1055,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Formation & Annihilation Planes"
+			title: "&9Formation \\& Annihilation Planes"
 			x: -5.0d
 			y: 5.5d
 		}
@@ -1110,7 +1110,7 @@
 				item: "ae2:fluid_storage_cell_1k"
 				type: "item"
 			}]
-			title: "&9Fluid & Chemical Cells"
+			title: "&9Fluid \\& Chemical Cells"
 			x: -3.0d
 			y: 2.5d
 		}
@@ -1144,7 +1144,7 @@
 					type: "item"
 				}
 			]
-			title: "&9IO Port & Condenser"
+			title: "&9IO Port \\& Condenser"
 			x: -3.0d
 			y: 4.0d
 		}
@@ -1176,7 +1176,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Storage & Conversion Monitors"
+			title: "&9Storage \\& Conversion Monitors"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -1237,7 +1237,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Network Tools & Gear"
+			title: "&9Network Tools \\& Gear"
 			x: 1.0d
 			y: 5.5d
 		}
@@ -1351,7 +1351,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Toggle Bus & Quartz Fiber"
+			title: "&9Toggle Bus \\& Quartz Fiber"
 			x: 3.0d
 			y: 4.0d
 		}

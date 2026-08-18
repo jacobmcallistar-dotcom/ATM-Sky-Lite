@@ -139,7 +139,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Frames & Tubing"
+			title: "&6Frames \\& Tubing"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -172,7 +172,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Fuel & Heat"
+			title: "&6Fuel \\& Heat"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -198,7 +198,7 @@
 				item: "advgenerators:steam_turbine_controller"
 				type: "item"
 			}]
-			title: "&6Turbines & Exchangers"
+			title: "&6Turbines \\& Exchangers"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -233,7 +233,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Output & Capacitors"
+			title: "&6Output \\& Capacitors"
 			x: 2.0d
 			y: 1.5d
 		}

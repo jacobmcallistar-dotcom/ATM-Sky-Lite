@@ -309,7 +309,7 @@
 				item: "draconicevolution:flux_gate"
 				type: "item"
 			}]
-			title: "&bFlux Gates & Relays"
+			title: "&bFlux Gates \\& Relays"
 			x: -2.0d
 			y: 3.0d
 		}
