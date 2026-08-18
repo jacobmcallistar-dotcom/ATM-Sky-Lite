@@ -8,9 +8,9 @@
 //
 // The only oil source in the pack was SkyForge's `skyforge:oil_synthesis`:
 //
-//     9 coal blocks + 1 bucket  =  1 oil bucket      (81 coal per 1000 mB)
+//     8 coal blocks + 1 bucket  =  1 oil bucket      (72 coal per 1000 mB)
 //
-// That is a plain crafting recipe, so it works, but it is 81 coal per bucket
+// That is a plain crafting recipe, so it works, but it is 72 coal per bucket
 // and a rocket wants three. Worse, it is the ONLY route, so the whole space
 // program throttles on hand-feeding coal blocks into a crafting grid.
 //
@@ -31,14 +31,14 @@
 //
 // WHAT THIS SCRIPT ADDS
 // ---------------------
-//   1. Coal cracking, in a Create basin. Automatable, ~4.5x cheaper than the
+//   1. Coal cracking, in a Create basin. Automatable, 4x cheaper than the
 //      hand recipe, and the output is crude oil rather than Ad Astra oil so
 //      the TFMG/CDG chains light up too.
 //   2. IE biodiesel counts as oil. The Squeezer -> Fermenter -> Refinery chain
 //      is fully automatable and farm-fed, so late game the space program runs
 //      on hemp instead of coal. No coal cost at all.
 //
-// SkyForge's 9-coal-block hand recipe is deliberately LEFT IN PLACE as the
+// SkyForge's 8-coal-block hand recipe is deliberately LEFT IN PLACE as the
 // no-tech fallback - it is what gets you your first rocket before you have a
 // basin, and it stays autocraftable in AE2.
 // ---------------------------------------------------------------------------
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
   //
   //     1 coal block + 1000 mB water  ->  500 mB tfmg:crude_oil
   //
-  // 18 coal per bucket of crude, against 81 for the hand recipe: 4.5x cheaper,
+  // 18 coal per bucket of crude, against 72 for the hand recipe: 4x cheaper,
   // and it runs unattended off a coal farm and a blaze burner.
   //
   // Output is `tfmg:crude_oil`, NOT `ad_astra:oil`, on purpose. Crude is in
