@@ -1,19 +1,31 @@
 # ---------------------------------------------------------------------------
 # ATM Sky Lite - server JVM arguments
 #
-# You have 16 GB. Your Minecraft CLIENT is also set to 6 GB, so the old
-# "-Xmx6G" here meant 12 GB of 16 GB went to Java and Windows was left
-# paging to disk. That is what made the whole machine feel unresponsive.
+# You have 16 GB and you host AND play on this machine, so the two JVMs have
+# to fit alongside Windows together.
 #
-# 4 GB is plenty for this server: the world is ~50 MB and it is 1-2 players.
-# Xms = Xmx means the heap never resizes mid-game (resizing = a stutter).
+# 2026-08-18: the client was killed on join by Windows - "Application Hang",
+# event 1002, 19 seconds after login, right at JEI recipe registration, which
+# is the peak allocation moment. No Java exception and no crash report, because
+# nothing threw: the machine simply ran out of physical memory and started
+# paging. Free RAM at the time was 0.8 GB of 15.8 GB.
 #
-# AlwaysPreTouch is deliberately NOT used. It would commit all 4 GB at boot;
-# leaving it off lets the server settle at whatever it actually needs (~3 GB)
-# while still never resizing. On a 16 GB box that spare GB matters.
+# Measured, not guessed: at -Xmx4G this server reached 3.68 GB working set and
+# 5.04 GB private. It will use whatever it is given. The client is now capped
+# at 5 GB (was 6). 3 + 5 + Windows leaves headroom; 4 + 6 did not.
+#
+# 3 GB is still ample here: the world is ~50 MB and it is 1-2 players.
+# Xms = Xmx means the heap never resizes mid-game (resizing = a stutter), so
+# lowering Xms alone would have achieved nothing except reintroducing that.
+#
+# AlwaysPreTouch is deliberately NOT used - it would commit the whole heap at
+# boot rather than letting the server settle at what it actually needs.
+#
+# If the client still gets killed on join, close Chrome/Edge/Discord/VS Code
+# before playing. Those were costing ~1.5 GB.
 # ---------------------------------------------------------------------------
--Xms4G
--Xmx4G
+-Xms3G
+-Xmx3G
 
 # --- Aikar's flags: G1 garbage collector tuned for Minecraft -----------------
 # Default G1 collects rarely but in long pauses. Every long pause is a frozen
