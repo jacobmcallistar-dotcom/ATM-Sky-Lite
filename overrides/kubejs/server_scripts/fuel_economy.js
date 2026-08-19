@@ -63,6 +63,30 @@ ServerEvents.tags('fluid', event => {
   // -------------------------------------------------------------------------
   event.add('ad_astra:oil', 'immersiveengineering:biodiesel')
   console.log('[fuel] immersiveengineering:biodiesel added to #ad_astra:oil')
+
+  // -------------------------------------------------------------------------
+  // PLANT OIL IS OIL. This is the important one.
+  //
+  // Jacob's requirement: a route to rocket fuel that does not burn coal. The
+  // biodiesel chain above qualifies, but it costs FOUR multiblocks (Squeezer,
+  // Fermenter, Refinery, plus a Cloche) and a saltpeter catalyst before it
+  // produces a single millibucket. That is a lot of build to ask for before
+  // the first rocket.
+  //
+  // Plant oil needs ONE multiblock:
+  //
+  //     Garden Cloche -> hemp seeds -> Industrial Squeezer -> 120 mB plantoil
+  //
+  // Verified against IE's own recipe data (squeezer/hemp_seeds.json): 120 mB
+  // per hemp seed at 6400 FE, and forge:plantoil resolves to exactly
+  // immersiveengineering:plantoil. Wheat, pumpkin, melon and beetroot seeds
+  // work too, at 80/40/20/60 mB - so any seed you already have is fuel.
+  //
+  // Added by TAG rather than by fluid id so any other mod's plant oil counts
+  // as well, and so this keeps working if IE renames the fluid.
+  // -------------------------------------------------------------------------
+  event.add('ad_astra:oil', '#forge:plantoil')
+  console.log('[fuel] #forge:plantoil added to #ad_astra:oil (coal-free route)')
 })
 
 ServerEvents.recipes(event => {

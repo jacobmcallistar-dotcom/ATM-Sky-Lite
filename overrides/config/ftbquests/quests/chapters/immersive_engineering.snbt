@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "immersive_engineering"
-	group: "1A2B000000000005"
+	group: "1A2B000000000002"
 	icon: {
 		Count: 1
 		id: "immersiveengineering:hammer"
@@ -11,7 +11,7 @@
 		}
 	}
 	id: "7E21000000000000"
-	order_index: 11
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -314,7 +314,7 @@
 				""
 				"It is a multiblock: craft the item, place it, and hit it with the Engineer's Hammer to form the structure. Feed it seeds from the cloche on a conveyor and it will run unattended forever."
 				""
-				"&7It also squeezes other things - check JEI. But hemp seeds are why it is here."
+				"&6&lThis is the fuel quest.&r Plant oil counts as &e#ad_astra:oil&r in this pack, so what comes out of this machine goes straight into the Ad Astra Fuel Refinery and becomes rocket fuel. No coal anywhere in the chain."
 			]
 			icon: "immersiveengineering:squeezer"
 			id: "7E20000000000012"
@@ -411,20 +411,23 @@
 			y: 3.8d
 		}
 		{
-			dependencies: ["7E20000000000014"]
+			dependencies: ["7E20000000000012"]
 			description: [
-				"&e&lThis pack counts Biodiesel as oil.&r"
+				"&e&lPlant Oil is rocket fuel.&r"
 				""
-				"It is registered into the &e#ad_astra:oil&r fluid tag, which means you can pour it straight into the &eAd Astra Fuel Refinery&r and it refines 1:1 into rocket &eFuel&r at 30 FE/t."
+				"This pack registers &eplant oil&r into the &e#ad_astra:oil&r fluid tag. Pour it straight into the &eAd Astra Fuel Refinery&r and it refines 1:1 into rocket &eFuel&r at 30 FE/t."
 				""
-				"&6&lWhat that means:&r the space program stops running on coal. A hemp farm, four IE multiblocks and a cloche will fuel every rocket you ever build, forever, with no mining and no fuel cost at all."
+				"&6&lThe whole coal-free route is two blocks:&r"
+				"&7- &fGarden Cloche&7 growing Industrial Hemp"
+				"&7- &fIndustrial Squeezer&7 pressing the seeds - 120 mB of plant oil each"
 				""
-				"&7&lThe three oils, cheapest last:&r"
-				"&7- &fBy hand&7 - 8 coal blocks plus a bucket. 72 coal per bucket. Your first rocket."
-				"&7- &fCoal cracking&7 - a heated Create basin, 18 coal per bucket. 4x cheaper and automatable."
-				"&7- &fBiodiesel&7 - this quest. No coal at all."
+				"That is it. No mining, no coal, no burning anything. A cloche needs water and power and runs unattended forever, so once this is up the space program never runs out of fuel again."
 				""
-				"&8All three go into the same Ad Astra Fuel Refinery. It is the only thing that makes Fuel, and it is a 1:1 conversion - oil supply was always the bottleneck, never the refining."
+				"&7&lOther seeds work too&r, if you have them spare: wheat 80 mB, beetroot 60, pumpkin 40, melon 20. Hemp is simply the best of them."
+				""
+				"&e&lBiodiesel is the upgrade, not the requirement.&r Running plant oil and ethanol through the Refinery gives 16 biodiesel from 8 plus 8 - denser fuel and the only thing the Diesel Generator burns. Build it when you want the power, not to reach orbit."
+				""
+				"&8Every oil in the pack feeds the same Ad Astra Fuel Refinery. It is the only block that makes Fuel, and it is a 1:1 conversion - oil supply was always the bottleneck, never the refining."
 			]
 			icon: "immersiveengineering:biodiesel_bucket"
 			id: "7E20000000000015"
