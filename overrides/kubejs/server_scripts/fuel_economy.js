@@ -92,6 +92,27 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.recipes(event => {
 
   // -------------------------------------------------------------------------
+  // REMOVE THE COAL HAND-CRAFT.
+  //
+  //     skyforge:oil_synthesis   8 coal blocks + bucket -> ad_astra:oil_bucket
+  //
+  // Jacob's call: he does not want coal to be a way of getting oil. Plant oil
+  // replaces it - one Squeezer, or Create seed oil even earlier - so the
+  // no-machine shortcut is no longer needed to reach orbit.
+  //
+  // Removed here rather than by deleting it from the SkyForge jar, so the mod
+  // stays untouched and this is one line to revert.
+  //
+  // CONSEQUENCE, stated plainly: there is now NO way to make oil without
+  // building a machine first. A fresh player must get to a Create press or an
+  // IE Squeezer before their first rocket. That is the intended difficulty,
+  // not an oversight.
+  // -------------------------------------------------------------------------
+  event.remove({ id: 'skyforge:oil_synthesis' })
+  console.log('[fuel] REMOVED skyforge:oil_synthesis (coal blocks -> oil bucket)')
+
+
+  // -------------------------------------------------------------------------
   // Coal cracking - Create mixing, heated basin.
   //
   //     1 coal block + 1000 mB water  ->  500 mB tfmg:crude_oil
