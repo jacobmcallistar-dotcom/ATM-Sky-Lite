@@ -1,88 +1,79 @@
 // ATM Sky Lite - treated wood / hardened planks
 // ---------------------------------------------------------------------------
-// TREATED WOOD, WITHOUT A BUCKET
-// -----------------------------
-// IE's hand recipe is `immersiveengineering:shaped_fluid`:
+// ANY CREOSOTE MAKES TREATED WOOD
+// -------------------------------
+// There are two creosotes in this pack and #forge:creosote holds both:
 //
-//     www        w = #minecraft:planks
-//     wbw        b = 1000 mB #forge:creosote, supplied as a BUCKET
-//     www        -> 8 treated wood
+//     immersiveengineering:creosote            IE Coke Oven
+//     tfmg:creosote / tfmg:flowing_creosote    TFMG coking
 //
-// Two problems with it. The bucket has to be shuffled in and out of the grid
-// by hand, and `shaped_fluid` is IE's own recipe type, so nothing in this pack
-// can automate it - not AE2 patterns, not mechanical crafters. It is a hand
-// recipe forever.
+// IE's hand recipe has always taken the TAG, so both work by hand. The
+// automatable routes did not - and for a while neither did, because of a fix
+// that overshot.
 //
-// So this adds a BASIN route. Fluid arrives by pipe, no bucket is ever held,
-// and the whole thing runs unattended:
+// WHAT WENT WRONG, AND WHY IT IS SAFE NOW
+// ---------------------------------------
+// Hardened planks used to be a create:filling recipe: plank + 250 mB
+// tfmg:creosote. Create ships its own compat recipe taking plank +125 mB of
+// the #forge:creosote TAG for treated wood - and since that tag contains TFMG
+// creosote, the cheaper 125 mB recipe always matched first. Hardened planks
+// were unobtainable.
 //
-//     1 plank + 125 mB immersiveengineering:creosote  ->  1 treated wood
+// That was fixed by deleting Create's tag recipe. It worked, but it took the
+// only automatable route that accepted TFMG creosote with it, so a Create-side
+// coking setup could no longer make treated wood in a Spout at all.
 //
-// 125 mB per plank is exactly the hand recipe's rate (1000 mB for 8), so
-// automating it costs the same creosote it always did.
+// Hardened planks are now a PRESS with no fluid in the recipe (below), so
+// nothing on plank+creosote can shadow them any more. The tag recipe is
+// therefore safe to keep, and every route below takes #forge:creosote:
 //
-// Mixing, deliberately - not another filling recipe. Filling is the Spout, and
-// piling more recipes onto plank+creosote in a Spout is what caused the
-// hardened planks bug below. Mixing is a basin+mixer, so it shares its inputs
-// with nothing.
+//     hand craft   8 planks + 1000 mB  -> 8    (IE shaped_fluid, not automatable)
+//     Spout        1 plank  +  125 mB  -> 1    (Create's compat recipe)
+//     basin        1 plank  +  125 mB  -> 1    (added here, no bucket)
 //
-// Treated wood can now be made three ways: the hand craft (bucket, 8 at a
-// time), createaddition's Spout recipe, and this basin. All the same rate.
-//
-// HARDENED PLANKS - ONE ROUTE, AND IT IS A PRESS
-// ----------------------------------------------
-// They used to be impossible. Three create:filling recipes took planks plus
-// creosote, and Create's own compat recipe took the #forge:creosote TAG at
-// 125 mB - a tag that contains tfmg:creosote as well as IE's. Hardened planks
-// wanted the same planks at 250 mB, so the cheaper recipe was always satisfied
-// first and you got treated wood every single time.
-//
-// Rather than balance three fluid recipes against each other, hardened planks
-// are now made by pressing treated wood, and the fluid route is gone entirely:
-//
-//     4x treated wood + heat  ->  1x hardened planks     [create:compacting]
-//
-// No fluid means nothing can shadow it, and it can never be shadowed again.
-// It also keeps hardened planks strictly dearer than treated wood - four
-// planks and four lots of creosote plus a heat source - so the progression
-// Jacob wanted survives, and both woods are automatable, which was the
-// original request.
-//
-// TFMG creosote keeps all its other uses; it simply no longer makes planks.
+// All three at the same rate. createaddition ships a fourth that duplicates the
+// Spout one but only accepts IE creosote; it is removed so there is exactly one
+// recipe per machine and no ambiguity for Create to resolve.
 // ---------------------------------------------------------------------------
 
 ServerEvents.recipes(event => {
 
   // -------------------------------------------------------------------------
-  // Clear out both fluid routes to planks so there is exactly one recipe per
-  // product and no possibility of one shadowing the other.
-  //
-  //   create:...treated_wood_in_spout   the tag-based one that caused the bug
-  //   tfmg:filling/hardened_planks      replaced by the press below
+  // Remove the redundant IE-only Spout recipe. Create's own compat recipe does
+  // the same job at the same rate and accepts BOTH creosotes, so keeping both
+  // would leave two recipes matching identical inputs.
   // -------------------------------------------------------------------------
-  event.remove({ id: 'create:filling/compat/immersiveengineering/treated_wood_in_spout' })
-  console.log('[wood] REMOVED create tag-based creosote->treated wood (it shadowed hardened planks)')
+  event.remove({ id: 'createaddition:filling/treated_wood_planks' })
+  console.log('[wood] REMOVED createaddition IE-only spout recipe (create compat covers both creosotes)')
 
+  // -------------------------------------------------------------------------
+  // Hardened planks: the fluid route stays gone. The press is the only way.
+  // -------------------------------------------------------------------------
   event.remove({ id: 'tfmg:filling/hardened_planks' })
-  console.log('[wood] REMOVED tfmg creosote->hardened planks (the press is the route now)')
+  console.log('[wood] REMOVED tfmg creosote->hardened planks (the press is the route)')
 
   // -------------------------------------------------------------------------
-  // Treated wood in a basin. No bucket, no crafting grid.
+  // Treated wood in a basin - no bucket, fluid arrives by pipe.
+  //
+  // fluidTag, not fluid: this is the whole point of this revision. Naming
+  // immersiveengineering:creosote exactly is what locked TFMG creosote out.
+  // 125 mB per plank matches the hand recipe's rate (1000 mB for 8).
   // -------------------------------------------------------------------------
   event.custom({
     type: 'create:mixing',
     ingredients: [
       { tag: 'minecraft:planks' },
-      { amount: 125, fluid: 'immersiveengineering:creosote', nbt: {} }
+      { amount: 125, fluidTag: 'forge:creosote' }
     ],
     results: [
       { item: 'immersiveengineering:treated_wood_horizontal' }
     ]
   }).id('kubejs:treated_wood_mixing')
-  console.log('[wood] Basin: plank + 125 mB IE creosote -> treated wood (no bucket)')
+  console.log('[wood] Basin: plank + 125 mB #forge:creosote -> treated wood (either creosote)')
 
   // -------------------------------------------------------------------------
-  // Hardened planks by press. The only route.
+  // Hardened planks by press. No fluid, so nothing can shadow it, and it can
+  // never shadow anything else. Four treated wood keeps it strictly dearer.
   // -------------------------------------------------------------------------
   event.custom({
     type: 'create:compacting',
