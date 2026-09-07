@@ -70,10 +70,17 @@ ServerEvents.recipes(event => {
     // machinery actually consumes, and because ad_astra's own recipes accept it -
     // the `ad_astra:steel_plates` tag includes `#forge:plates/steel`.
     //
-    // Side effect: ad_astra:steel_plate had exactly one recipe in the pack (that
-    // pressing recipe) so the item is now uncraftable. Nothing needs it
-    // specifically - everything reads the tag. Flip this to
-    // 'ad_astra:steel_plate' if that item should be the survivor instead.
+    // ad_astra:steel_plate stays fully craftable - Ad Astra's own Compressor
+    // makes it from steel ingots or steel blocks
+    // (ad_astra:compressing/steel_plate_from_compressing_steel_{ingots,blocks}).
+    // Only the create:pressing route was removed, which is the point: Ad Astra
+    // plates come from Ad Astra machinery.
+    //
+    // NOTE FOR FUTURE SCANS: Ad Astra writes recipe outputs as `result.id`, not
+    // `result.item`, and KubeJS cannot filter that custom type by output at all -
+    // `forEachRecipe({output: 'ad_astra:steel_plate'})` returns 0 even while the
+    // recipes exist. Filter by `type: 'ad_astra:compressing'` instead. An earlier
+    // pass mistakenly concluded the item was uncraftable because of this.
     steel:    'immersiveengineering:plate_steel'
   }
 
