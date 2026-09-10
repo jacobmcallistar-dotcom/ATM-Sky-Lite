@@ -1,6 +1,6 @@
 # ATM Sky Lite
 
-A Minecraft **1.20.1 Forge** void-skyblock modpack (216 server / 217 client mods) built around
+A Minecraft **1.20.1 Forge** void-skyblock modpack (215 server / 216 client mods) built around
 Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod, **SkyForge**.
 
 > **Minecraft: Java Edition (a genuine, paid account) is required.** The server runs
@@ -30,6 +30,91 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
 3. Download `ATM-Sky-Lite-client.zip` from Releases and copy its `mods` and `config`
    folders into your `.minecraft` (`%appdata%\.minecraft`), merging/replacing.
    - Your `mods` folder must contain **exactly** the shipped mods — remove any extras or you'll be kicked on join.
+
+> **Unreleased — GregTech and PneumaticCraft, with questlines. 215 server / 216 client mods.**
+>
+> **GregTech CEu Modern 7.5.3 added**, and the pack now runs
+> `AE2 → PneumaticCraft → GregTech` as the back half of Act II. GregTech is the
+> late-game crafting tier: nine voltage tiers, and almost nothing in it is made
+> on a bench.
+>
+> One jar, no extra dependencies — LDLib, Registrate, Configuration and
+> MixinExtras are all JarJar'd inside it. Note the 1.20.1 line has **no stable
+> release**; all 95 of its 1.20.1-Forge builds are tagged beta and 7.5.3 is the
+> newest.
+>
+> **PneumaticCraft was already installed and had never had a single quest.** It
+> now has 27, and it earns its place in the chain: its Assembly Line is the
+> first machine in the pack that performs a recipe no crafting grid can express,
+> which is exactly what GregTech then demands nine tiers of.
+>
+> | New chapter | Act II slot | Quests |
+> |---|---|---|
+> | Pneumatic Industry | 5, straight after AE2 | 27 |
+> | GregTech | 6 | 76 |
+>
+> Realms Beyond, Mystical Agriculture, Productive Bees, Ender IO and RFTools
+> shifted from 5–9 to 7–11 to make room.
+>
+> **GregTech had no way to exist on a skyblock.** Every one of its materials
+> comes from ore veins in world generation and there is no world to generate
+> them in — install it as-is and you get 8,816 items and no route to any of
+> them. `gregtech_bridge.js` adds 28 GregTech raw ores to Ex Deorum sieve
+> drops, tiered so ore access tracks the voltage that needs it:
+>
+> | Siftable + mesh | Ores | Tier |
+> |---|---|---|
+> | Crushed Deepslate + diamond | chalcopyrite, cassiterite, magnetite, galena, sphalerite, pyrite | Steam / LV |
+> | Crushed Blackstone + diamond | bauxite, tetrahedrite, malachite, apatite, graphite, cinnabar | LV / MV |
+> | Crushed Netherrack + netherite | garnierite, pentlandite, cobaltite, ilmenite, scheelite, chromite, molybdenite | MV / HV |
+> | Crushed End Stone + netherite | cooperite, palladium, monazite, bastnasite, pitchblende, uraninite, thorium, naquadah | EV / IV / LuV |
+>
+> Raw ore, never ingots — the whole point of GregTech is what happens to ore on
+> the way to metal. Rubber saplings drop from the same deepslate tier, because
+> rubber trees are worldgen too and GregTech cables need them.
+>
+> **GregTech's defaults would have broken Act I.** It ships eight "harder
+> vanilla" recipe flags on by default, and they rewrite the early game, not the
+> late one: `hardIronRecipes` (buckets — which Act I needs for crucible lava),
+> `harderCharcoalRecipe` (removes charcoal smelting, an Act I fuel),
+> `disableManualCompression`, `nerfPaperCrafting`, `hardGlassRecipes`,
+> `hardAdvancedIronRecipes`, `flintAndSteelRequireSteel` and
+> `removeVanillaTNTRecipe` are all now **off**.
+>
+> `removeVanillaOreGen` and `removeVanillaLargeOreVeins` are off too — both
+> default to on, and both would have stripped vanilla ore from the Ad Astra
+> planets and quietly broken the Space Program.
+>
+> Two flags went the other way, because the late game is meant to be harder:
+> `harderCircuitRecipes` and `hardMultiRecipes` are now **on**.
+>
+> **Late-game parts leave the crafting grid.** `gregtech_hard_crafting.js`
+> removes the crafting-table recipe for every GregTech machine hull, casing,
+> component and circuit at MV and above — but only where a machine recipe for
+> that item demonstrably exists, checked at runtime rather than assumed. If
+> GregTech ever drops an assembler recipe, the bench recipe survives instead of
+> the item becoming uncraftable. Steam and LV keep their bench recipes on
+> purpose: the Assembler is itself an LV machine.
+>
+> **`metal_unification.js` went from 16 metals to 31.** GregTech registers its
+> own ingot and dust for ~100 materials, which turned fifteen previously
+> single-variant metals into multi-variant ones overnight — exactly the
+> breakage that script exists to prevent. Added: bismuth, brass, cobalt,
+> copper, gold, invar, iridium, iron, naquadah, osmium, platinum, rose gold,
+> silicon, titanium, tungsten.
+>
+> copper, gold and iron were **already** broken before GregTech and had simply
+> never been noticed: five mods ship a dust for each and none of the three was
+> listed. GregTech just made it a sixth.
+>
+> **On authoring:** GregTech generates its items at runtime from material ×
+> tag-prefix, so they are not in the jar's lang file and cannot be read off a
+> wiki reliably. Every one of the 406 new quest ids and every `gtceu:` /
+> `pneumaticcraft:` item id in both chapters was validated against a registry
+> dump taken from this server with GregTech installed. That caught
+> `pneumaticcraft:ingot_iron_compressed` (not `compressed_iron_ingot`),
+> `gtceu:steam_large_turbine` (not `large_steam_turbine`) and the fact that
+> `gtceu:raw_iridium` does not exist at all — iridium is a cooperite byproduct.
 
 > **Unreleased — Forge 47.4.10. 216 server / 217 client mods.**
 >

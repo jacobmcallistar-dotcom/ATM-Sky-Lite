@@ -1,0 +1,896 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft"
+	group: "1A2B000000000002"
+	icon: "pneumaticcraft:pressure_chamber_valve"
+	id: "3C1F000000000021"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B23279463D8A784"]
+			description: [
+				"&3&lPneumaticCraft: Repressurized&r runs on &eair&r, not FE."
+				""
+				"Every machine you have built so far takes a cable and eats energy. These do not. They take a &epressure tube&r and they eat &eatmosphere&r - and if you push too much in, they &cexplode&r."
+				""
+				"&7That trade is the whole mod. Air is cheap and easy to make; storing it safely is the hard part, and every machine here has a pressure ceiling you can exceed.&r"
+				""
+				"&8AE2 gave you a network that builds anything you can already craft. This chapter is about making the things a crafting table cannot.&r"
+			]
+			icon: "pneumaticcraft:air_compressor"
+			id: "5F1B17DE5A751804"
+			rewards: [
+				{
+					id: "574D240493274CFF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "27775D25577698E7"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Air is the new cable"
+			tasks: [{
+				id: "0B776C721652B9E8"
+				title: "Begin PneumaticCraft"
+				type: "checkmark"
+			}]
+			title: "&3Pressure, Not Power"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F1B17DE5A751804"]
+			description: [
+				"The mod's starting material, and it is made by &cblowing up iron&r."
+				""
+				"&e&lHow:&r drop iron ingots on the ground and detonate TNT next to them. The blast compresses what it does not destroy. Expect losses - that is normal and intended."
+				""
+				"&7Once you have a Pressure Chamber this becomes a clean, lossless recipe. Until then, explosives are the only route, so make a batch big enough to build the chamber itself.&r"
+				""
+				"&8The item id is &7ingot_iron_compressed&8, not compressed_iron_ingot - worth knowing if you are searching JEI.&r"
+			]
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "476FCEE0C4E3BB61"
+			rewards: [{
+				id: "71F25A6B779D738F"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Blow up iron on purpose"
+			tasks: [{
+				count: 8L
+				id: "4DA0D23441732063"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			title: "&3Compressed Iron"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Burns solid fuel to make &epressurised air&r. This is your first pressure source."
+				""
+				"&7Feed it coal, charcoal or anything else that burns. It fills whatever is connected to it through pressure tubes.&r"
+				""
+				"&e&lWatch the gauge.&r An Air Compressor will happily keep pumping past the safe limit of whatever it is attached to. Pressure that exceeds a machine's rating destroys the machine - and a Pressure Chamber failing at full pressure takes the room with it."
+				""
+				"&8There are better compressors later - Advanced, Liquid, Flux, Electrostatic, Solar. This one is deliberately crude.&r"
+			]
+			icon: "pneumaticcraft:air_compressor"
+			id: "4E6385AC3D47904B"
+			rewards: [{
+				id: "500D8D22C3F3FBC8"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Burn fuel, make air"
+			tasks: [{
+				id: "5FC9232C4C4FAEDC"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			title: "&3The Air Compressor"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E6385AC3D47904B"]
+			description: [
+				"Air moves through &epressure tubes&r, and it equalises across everything they connect."
+				""
+				"&7There is no direction and no throughput rating - one connected network shares one pressure value. A compressor at one end raises the pressure everywhere at once.&r"
+				""
+				"&e&lThat means one over-pressurised machine can be caused by a compressor three rooms away.&r Keep separate pressure networks for machines with different limits, or regulate between them."
+				""
+				"&8Tube modules clip onto tubes and are where most of the mod's control lives - regulators, safety valves, pressure gauges, redstone logic.&r"
+			]
+			icon: "pneumaticcraft:pressure_tube"
+			id: "27FE2D3D678A6B43"
+			rewards: [{
+				id: "61D7BDD570FB1124"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7One network, one pressure"
+			tasks: [{
+				count: 8L
+				id: "36A01FC5DC149958"
+				item: "pneumaticcraft:pressure_tube"
+				type: "item"
+			}]
+			title: "&3Pressure Tubes"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27FE2D3D678A6B43"]
+			description: [
+				"&c&lRead this before you build anything expensive.&r"
+				""
+				"A &eSafety Tube Module&r vents air once pressure passes a threshold you set. It is the difference between a machine that stops and a machine that detonates."
+				""
+				"&7A &ePressure Gauge Module&r shows the current value on the tube itself, so you can see a problem building instead of discovering it.&r"
+				""
+				"&e&lA Regulator Tube Module&r caps how much pressure flows onward - use it to run a 5-bar machine off a 20-bar network safely."
+				""
+				"&8Every explosion in this mod is preventable and almost all of them are caused by skipping this quest.&r"
+			]
+			icon: "pneumaticcraft:safety_tube_module"
+			id: "15331FCA574312E1"
+			rewards: [{
+				id: "74F2F9BD08041B32"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Cheaper than rebuilding"
+			tasks: [
+				{
+					id: "6CBEDDA90ABDF5BF"
+					item: "pneumaticcraft:pressure_gauge"
+					type: "item"
+				}
+				{
+					id: "3EAE27845D597A97"
+					item: "pneumaticcraft:safety_tube_module"
+					type: "item"
+				}
+			]
+			title: "&3Gauges and Safety Valves"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["27FE2D3D678A6B43"]
+			description: [
+				"A hollow cube of chamber walls with at least one &eValve&r and one &eInterface&r. Pressurise it and it crafts."
+				""
+				"&e&lBuild:&r a 3x3x3 (or larger) shell - walls, glass for visibility, one valve, one interface for item in/out. The inside must be empty."
+				""
+				"&7This is where Compressed Iron stops needing TNT. Throw iron in, raise the pressure, get compressed iron out with no losses. It also makes the plastic feedstock and several parts you cannot get any other way.&r"
+				""
+				"&8Bigger chambers hold more items but need more air to reach the same pressure. 4x4x4 is a comfortable working size.&r"
+			]
+			icon: "pneumaticcraft:pressure_chamber_valve"
+			id: "114109F9E95F5341"
+			rewards: [
+				{
+					id: "5350BBB3808DF05E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "73D1FC1852E1D645"
+					type: "random"
+				}
+			]
+			subtitle: "&7Craft with atmosphere"
+			tasks: [
+				{
+					id: "01324E6F5EC85D7E"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "002F609FFCA609CA"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+			]
+			title: "&3The Pressure Chamber"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["114109F9E95F5341"]
+			description: [
+				"PneumaticCraft's chemistry starts with &ecrude oil&r."
+				""
+				"&7On a skyblock there is no oil lake to pump, so you make it: a &eGas Lift&r on a deep enough shaft, or far more practically, let another mod's oil feed the same tag.&r"
+				""
+				"&e&lWhat oil is for:&r the Refinery cracks it into Diesel, Kerosene, LPG and Gasoline. Those are fuels, but more importantly LPG and Diesel are what the Thermopneumatic Processing Plant turns into &ePlastic&r."
+				""
+				"&8Plastic is the wall between you and every circuit in this mod. Everything below this quest depends on getting oil flowing.&r"
+			]
+			icon: "pneumaticcraft:oil_bucket"
+			id: "2C9F3C747B643CE8"
+			rewards: [{
+				id: "37B9836455FB6801"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7The feedstock for everything"
+			tasks: [{
+				id: "12F04419A34F4D93"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			title: "&3Oil"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C9F3C747B643CE8"]
+			description: [
+				"Stack &eRefinery&r blocks vertically and heat them. Oil goes in the bottom; different fractions come out at different heights."
+				""
+				"&7Two blocks tall gives you Diesel and LPG. Three gives Kerosene as well. Four gives Gasoline. Taller stacks are strictly better - build four.&r"
+				""
+				"&e&lIt needs heat, not pressure.&r Feed it from a heat source - lava, a Vortex Tube's hot side, or a heating element. The hotter it runs, the faster it refines."
+				""
+				"&8All four outputs must have somewhere to go. A full output tank stalls the whole stack.&r"
+			]
+			icon: "pneumaticcraft:refinery"
+			id: "54256C29EAFD9893"
+			rewards: [{
+				id: "1C856909C42ACBE0"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Crack oil into fuels"
+			tasks: [{
+				count: 3L
+				id: "619F7CB4F3A89FDB"
+				item: "pneumaticcraft:refinery"
+				type: "item"
+			}]
+			title: "&3The Refinery"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54256C29EAFD9893"]
+			description: [
+				"A &eVortex Tube&r takes pressurised air and splits it into a &chot&r end and a &bcold&r end. No fuel, no power - just pressure."
+				""
+				"&7That hot end is how you heat a Refinery or a Thermopneumatic Processing Plant without burning anything. The cold end is how you freeze things later.&r"
+				""
+				"&e&lHeat Sinks&r move heat away from something that is getting too hot. Machines in this mod have a temperature as well as a pressure, and both can kill them."
+				""
+				"&8Heat spreads between touching blocks. Sinks, frames and the tube all care about what they are physically next to.&r"
+			]
+			icon: "pneumaticcraft:vortex_tube"
+			id: "43398E3A1581BE26"
+			rewards: [{
+				id: "05E9E632DFFBC6C8"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Hot and cold from air alone"
+			tasks: [
+				{
+					id: "27F25CAE81BC2C3E"
+					item: "pneumaticcraft:vortex_tube"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3ABB78859ACF2252"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+			]
+			title: "&3Heat and the Vortex Tube"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["54256C29EAFD9893"]
+			description: [
+				"&eThermopneumatic Processing Plant&r: LPG plus heat plus pressure gives you molten plastic, which cools into sheets."
+				""
+				"&7This is the single most important item in the mod. Printed Circuit Boards need it, drones need it, every machine past this point needs it.&r"
+				""
+				"&e&lSet up a loop, not a batch.&r Oil to Refinery to LPG to Processing Plant to Plastic, running continuously. You will need hundreds of sheets and hand-feeding it is miserable."
+				""
+				"&8Plastic comes in colours. They are purely decorative except where a recipe names one - and a few do, so keep the white ones.&r"
+			]
+			icon: "pneumaticcraft:plastic"
+			id: "3316E24A3B26354B"
+			rewards: [
+				{
+					id: "47F7DB4F8FB8895C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3876A2EF40AB465F"
+					type: "random"
+				}
+			]
+			subtitle: "&7The wall you have to climb"
+			tasks: [{
+				count: 16L
+				id: "4367833132BE8A9A"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			title: "&3Plastic"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3316E24A3B26354B"]
+			description: [
+				"The machine that made your plastic - and it does considerably more than that."
+				""
+				"&7It combines a fluid, heat and pressure into something new. Plastic is the obvious product; it also makes Etching Acid, which is the next quest, and several intermediate chemicals.&r"
+				""
+				"&e&lIt needs all three inputs in range at once.&r Too cold and nothing happens. Too hot and you waste air. The recipe tooltip in JEI lists the temperature band each recipe wants."
+				""
+				"&8Pair it permanently with a Vortex Tube and a Refinery - the three of them together are the chemical core of your base.&r"
+			]
+			icon: "pneumaticcraft:thermopneumatic_processing_plant"
+			id: "547837702F80246F"
+			rewards: [{
+				id: "1AA1ED484D7909BE"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Fluid plus heat plus air"
+			tasks: [{
+				id: "3456C2828F2691EB"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			title: "&3Thermopneumatic Processing Plant"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3316E24A3B26354B"]
+			description: [
+				"The most involved thing you have crafted so far, and a genuine multi-step process."
+				""
+				"&e&l1.&r &7Empty PCB&r in a &eUV Light Box&r - exposes it. Watch the progress bar; over-exposing ruins it."
+				"&e&l2.&r Drop the exposed board in an &eEtching Tank&r full of &eEtching Acid&r."
+				"&e&l3.&r Out comes an &eUnassembled PCB&r - or a &cFailed PCB&r if you got the exposure wrong."
+				"&e&l4.&r Failed boards are not waste: reprocess them to recover most of the material."
+				""
+				"&7Assemble the unassembled board with a transistor and a capacitor to finish it.&r"
+				""
+				"&8This is deliberately fiddly by hand. The Assembly Line exists to do it for you - which is the next quest, and the point of this whole chapter.&r"
+			]
+			icon: "pneumaticcraft:printed_circuit_board"
+			id: "65B80864358094A0"
+			rewards: [
+				{
+					id: "4A5666143E31F661"
+					type: "xp"
+					xp: 70
+				}
+				{
+					id: "27AA71AAAAB74651"
+					type: "random"
+				}
+			]
+			subtitle: "&7Expose, etch, assemble"
+			tasks: [{
+				count: 4L
+				id: "71BB9D5FB36D8377"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			title: "&3Printed Circuit Boards"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&3&lRobotic arms that build things a crafting table cannot.&r"
+				""
+				"A row of machines under an &eAssembly Controller&r: a &ePlatform&r to hold the work, a &eDrill&r and a &eLaser&r to shape it, and &eIO Units&r to feed and collect."
+				""
+				"&e&lThey must be in a line and all touching the controller's row.&r Give the controller the right &eProgram&r - Drill, Laser, or Drill+Laser - for the recipe you want."
+				""
+				"&7This is the first machine in the pack that performs a recipe no crafting grid can express. It is also the reason PneumaticCraft sits between AE2 and GregTech: it teaches automated assembly on a small scale, right before GregTech demands it on a large one.&r"
+				""
+				"&8Point an AE2 Pattern Provider at the import unit and your ME network can drive the whole thing.&r"
+			]
+			icon: "pneumaticcraft:assembly_controller"
+			id: "6800E30C46DE556B"
+			rewards: [
+				{
+					id: "40A22CB8F38E9452"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3346B1C591C38A5E"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Automated crafting, properly"
+			tasks: [
+				{
+					id: "3DD7A220686AB98F"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "628494CAC1AD50CD"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "689A3D5BD1401F28"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+				{
+					id: "761CF87D8D10CB67"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "00166135D65C65E4"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "4035ABD9BE4DCA2B"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+			]
+			title: "&3&lThe Assembly Line"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6800E30C46DE556B"]
+			description: [
+				"A &eDrone&r is a flying robot you &eprogram&r rather than configure."
+				""
+				"&e&lHow:&r put a drone in a &eProgrammer&r and drag puzzle-piece instructions together - go here, pick up that, place it there, repeat. It is a visual programming language and it is genuinely powerful."
+				""
+				"&7Drones dig, build, farm, fight, move fluids and haul items between places nothing else will reach. They run on air, so they need a charging station and a pressure supply.&r"
+				""
+				"&8Start with something small - a drone that empties one chest into another - before attempting a quarry. The debugging tools are good but the learning curve is real.&r"
+			]
+			icon: "pneumaticcraft:drone"
+			id: "0AD14E5D12410C2F"
+			rewards: [{
+				id: "33E73B1F1D0BA58B"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Program it, do not configure it"
+			tasks: [{
+				id: "21D0B8051C94C2AB"
+				item: "pneumaticcraft:drone"
+				type: "item"
+			}]
+			title: "&3Drones"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6800E30C46DE556B"]
+			description: [
+				"Drones, pneumatic armour and pneumatic tools all hold air, and all need somewhere to refill."
+				""
+				"&7Place a &eCharging Station&r on a pressurised tube and drop the item on top. Add an &eUpgrade&r slot module to charge faster.&r"
+				""
+				"&8The station also charges items in a player's inventory if they stand on it - handy next to the door.&r"
+			]
+			icon: "pneumaticcraft:charging_station"
+			id: "64E7B4BEB420192D"
+			rewards: [{
+				id: "37489B513E9B8E58"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Refill air-powered gear"
+			tasks: [{
+				id: "78960189F88C7BA3"
+				item: "pneumaticcraft:charging_station"
+				type: "item"
+			}]
+			title: "&3Charging Station"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0AD14E5D12410C2F"]
+			description: [
+				"A drone that never moves. It sits in one block and runs a drone program from there."
+				""
+				"&7Cheaper than a real drone, cannot be shot down, and perfect for a fixed job - restocking a machine, harvesting one farm, keeping a tank topped up.&r"
+				""
+				"&e&lIt has a limited working radius&r, so it replaces logistics inside a room rather than across a base."
+				""
+				"&8If you find yourself writing the same drone program for a job that never moves, this is the block you actually wanted.&r"
+			]
+			icon: "pneumaticcraft:programmable_controller"
+			id: "2E123689C466249B"
+			rewards: [{
+				id: "679E90A7CDDCFBF2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7A drone that stays put"
+			tasks: [{
+				id: "772FBA90BEF94853"
+				item: "pneumaticcraft:programmable_controller"
+				type: "item"
+			}]
+			title: "&3Programmable Controller"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0AD14E5D12410C2F"]
+			description: [
+				"Item routing with no pipes and no cables at all."
+				""
+				"&7Stick &eLogistics Frames&r on inventories - Provider, Requester, Storage - and a &eLogistics Drone&r flies the items between them. Configure with the &eLogistics Configurator&r.&r"
+				""
+				"&e&lIt crosses gaps nothing else does&r - between floating islands, across a room, through a wall you never want to run a pipe through."
+				""
+				"&8Slower than pipes but vastly easier to reconfigure. Good for low-volume, awkward routes.&r"
+			]
+			icon: "pneumaticcraft:logistics_drone"
+			id: "1EAE763F48B86557"
+			rewards: [{
+				id: "2026DC207400CF45"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Routing without pipes"
+			tasks: [
+				{
+					id: "1F065B3A38FDB2D7"
+					item: "pneumaticcraft:logistics_drone"
+					type: "item"
+				}
+				{
+					id: "25E5347F0164B879"
+					item: "pneumaticcraft:logistics_frame_requester"
+					type: "item"
+				}
+			]
+			title: "&3Logistics Drones"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64E7B4BEB420192D"]
+			description: [
+				"Powered armour that runs on air and is upgraded with modules."
+				""
+				"&7The &eHelmet&r alone gives you an entity tracker, block tracker, a HUD and search highlighting. The full set adds flight, speed, magnets, jump boost and damage reduction.&r"
+				""
+				"&e&lEvery feature is a separate upgrade you install and can toggle in-game.&r Open the helmet's GUI to configure what is active - running everything at once drains air fast."
+				""
+				"&8It is one of the best armour sets in the pack and it is available a long way before the endgame gear in Act III.&r"
+			]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:pneumatic_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4ABC1C11D5ACBF55"
+			rewards: [
+				{
+					id: "1FD42B9BE0796239"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5E41D438618E9291"
+					type: "random"
+				}
+			]
+			subtitle: "&7Modular, and very good"
+			tasks: [{
+				id: "33A11143A9B04B8D"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3Pneumatic Armour"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["64E7B4BEB420192D"]
+			description: [
+				"A real elevator: a base, a stack of frames, and it rises on air pressure."
+				""
+				"&7Add an &eElevator Caller&r to summon it to a floor. It is faster and far less annoying than a ladder shaft, and it looks the part.&r"
+				""
+				"&8Height depends on how many frames you stack. Pressure has to reach the base, so plan the tube run before you build the shaft.&r"
+			]
+			icon: "pneumaticcraft:elevator_base"
+			id: "61AF2265C4876A47"
+			rewards: [{
+				id: "558D0A6C544D5200"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Better than a ladder"
+			tasks: [
+				{
+					id: "44DE387A2C06CB02"
+					item: "pneumaticcraft:elevator_base"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "142A7E8F28BF6BB7"
+					item: "pneumaticcraft:elevator_frame"
+					type: "item"
+				}
+			]
+			title: "&3Elevators"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Binds to a player and exposes their inventory, XP and hunger to machines."
+				""
+				"&7Pipe items straight into your own inventory from anywhere on the network, drain XP into a fluid, or feed yourself automatically.&r"
+				""
+				"&8Needs a lot of pressure to hold the link. It is a luxury block, but a genuinely convenient one.&r"
+			]
+			icon: "pneumaticcraft:aerial_interface"
+			id: "45E4603C0A5923F7"
+			rewards: [{
+				id: "176B058744004699"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Your inventory, automated"
+			tasks: [{
+				id: "43509725D9C50545"
+				item: "pneumaticcraft:aerial_interface"
+				type: "item"
+			}]
+			title: "&3Aerial Interface"
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"The starter compressor is slow and wastes fuel. These do not."
+				""
+				"&e&lAdvanced Air Compressor&r - same idea, much better efficiency and a higher ceiling."
+				"&e&lLiquid Compressor&r - burns Diesel, LPG or Kerosene straight from your Refinery instead of solid fuel."
+				"&e&lFlux Compressor&r - converts FE into air, which finally connects PneumaticCraft to the rest of your base."
+				"&e&lElectrostatic Compressor&r - collects lightning. Situational, and excellent when it works."
+				""
+				"&7The Flux Compressor is the one that matters here: it means your Mekanism reactors and Create generators can drive this entire chapter.&r"
+			]
+			icon: "pneumaticcraft:advanced_air_compressor"
+			id: "3391C25F7E3F97B8"
+			rewards: [{
+				id: "2D65E6B090D20C01"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Stop burning coal"
+			tasks: [
+				{
+					id: "45BBC39BC9CB5383"
+					item: "pneumaticcraft:advanced_air_compressor"
+					type: "item"
+				}
+				{
+					id: "2117F8A2DB4520FF"
+					item: "pneumaticcraft:liquid_compressor"
+					type: "item"
+				}
+			]
+			title: "&3Better Compressors"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Standard tubes fail above 5 bar. Advanced tubes hold considerably more."
+				""
+				"&7Every high-tier machine wants pressure the basic tube cannot legally carry, so this is not optional for long.&r"
+				""
+				"&c&lMixing tube tiers means the weakest link sets your real ceiling&r - one basic tube left in an advanced run will burst and vent the network."
+				""
+				"&8Check your runs after any rebuild. This is the most common cause of bases that keep exploding.&r"
+			]
+			icon: "pneumaticcraft:advanced_pressure_tube"
+			id: "2CA2FCA3486332F8"
+			rewards: [{
+				id: "6428AC04CC6C2952"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Raise the ceiling"
+			tasks: [{
+				count: 8L
+				id: "3A16D8C6FC5E39F0"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
+			}]
+			title: "&3Advanced Pressure Tubes"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Protects an area from other players, and lets you set who may do what."
+				""
+				"&7Intruders have to beat a hacking minigame to get past it, and it can alert or retaliate when they fail.&r"
+				""
+				"&8On a private server this is mostly flavour, but it also blocks hostile drones - which is not flavour at all.&r"
+			]
+			icon: "pneumaticcraft:security_station"
+			id: "5446DF731D5ECB51"
+			rewards: [{
+				id: "1A0DC3778CB1C7A1"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Lock the door"
+			tasks: [{
+				id: "5BDC3CC60F983DA6"
+				item: "pneumaticcraft:security_station"
+				type: "item"
+			}]
+			title: "&3Security Station"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5446DF731D5ECB51"]
+			description: [
+				"Mount a &eMinigun&r on a post and let it deal with whatever wanders in."
+				""
+				"&7Feed it ammo, set a target filter, and give it pressure. It is genuinely effective and pairs well with any mob farm that needs a kill floor.&r"
+				""
+				"&8Micromissiles are the upgrade path if a minigun is not emphatic enough.&r"
+			]
+			icon: "pneumaticcraft:sentry_turret"
+			id: "0AFA85040D817814"
+			rewards: [{
+				id: "65393711DC7F3A67"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Automated hostility"
+			tasks: [{
+				id: "35B2C66036D4881C"
+				item: "pneumaticcraft:sentry_turret"
+				type: "item"
+			}]
+			title: "&3Sentry Turret"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Trade items and fluids for other items and fluids, delivered by drone."
+				""
+				"&7Offers rotate. Some are excellent, some are not, and you can add your own custom trades between players.&r"
+				""
+				"&8A convenient way to turn a surplus of something into a shortage of something else.&r"
+			]
+			icon: "pneumaticcraft:amadron_tablet"
+			id: "6337272AC7C9F0DF"
+			rewards: [{
+				id: "2159E69BD0246136"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Order by drone"
+			tasks: [{
+				id: "5E02E2972CB8468A"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			title: "&3Amadron Tablet"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"The &eJackhammer&r mines fast and wide, and runs on air rather than durability."
+				""
+				"&7Swap drill bits to change what it is good at - a compressed iron bit for general work, netherite for everything else. Vein-mining and area modes are built in.&r"
+				""
+				"&8Also worth making: the Pneumatic Wrench, which rotates and dismantles machines in one click.&r"
+			]
+			icon: "pneumaticcraft:jackhammer"
+			id: "50AF9E36DBB9E8ED"
+			rewards: [{
+				id: "08B172E57AF3F9A2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Air-powered mining"
+			tasks: [{
+				id: "1AB7BEDE246754BE"
+				item: "pneumaticcraft:jackhammer"
+				type: "item"
+			}]
+			title: "&3Pneumatic Tools"
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6800E30C46DE556B"]
+			description: [
+				"&3&lYou can manufacture circuit boards on an assembly line.&r"
+				""
+				"Oil becomes plastic. Plastic becomes boards. Boards become drones, and drones do the work. Nothing in that chain fits in a crafting grid, and that is the point."
+				""
+				"&7&lWhat this unlocks:&r GregTech. Its machines are gated behind the boards you now make automatically - the Assembly Line was the rehearsal, and what comes next is the same idea at industrial scale, across nine voltage tiers.&r"
+				""
+				"&8Sixteen boards is not an arbitrary number. You will want a steady supply before you start GregTech, not a stack you made by hand.&r"
+			]
+			icon: "pneumaticcraft:assembly_controller"
+			id: "3E785FC067476803"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "2543F090B4976C77"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "2E6C44CC40F02351"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7On to GregTech"
+			tasks: [{
+				count: 16L
+				id: "3D92B922E6B447F0"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			title: "&3&lPressure Mastered"
+			x: 11.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["&7Air pressure, drones \\& assembly"]
+	title: "&3Pneumatic Industry"
+}

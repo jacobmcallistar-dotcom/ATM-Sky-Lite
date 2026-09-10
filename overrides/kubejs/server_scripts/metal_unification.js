@@ -44,10 +44,26 @@ ServerEvents.recipes(event => {
   global.MU_FAMILIES = ['ingots', 'nuggets', 'plates', 'dusts', 'gears', 'rods', 'storage_blocks']
 
   // Metals confirmed to have more than one variant in this pack.
+  //
+  // The second block was added with GregTech. GT registers its own ingot and
+  // dust for ~100 materials, which turned fifteen previously single-variant
+  // metals into multi-variant ones overnight - exactly the breakage this
+  // script exists to prevent, just with gtceu: as the surprise item instead
+  // of tfmg:. Verified against the live registry, not guessed.
+  //
+  // copper, gold and iron are in the GT block but were ALREADY broken before
+  // it: five mods ship a dust for each (enderio, IE, mekanism, occultism,
+  // thermal) and none of the three was ever listed here. GT just made it a
+  // sixth. Ingots for those three are untouched - GT deliberately reuses the
+  // vanilla ingot rather than adding a rival, so there is nothing to unify.
   global.MU_METALS = [
     'steel', 'lead', 'nickel', 'silver', 'electrum', 'aluminum', 'constantan',
     'calorite', 'desh', 'ostrum', 'zinc', 'draconium', 'uranium', 'bronze',
-    'tin', 'lithium'
+    'tin', 'lithium',
+    // added with GregTech
+    'bismuth', 'brass', 'cobalt', 'copper', 'gold', 'invar', 'iridium', 'iron',
+    'naquadah', 'osmium', 'platinum', 'rose_gold', 'silicon', 'titanium',
+    'tungsten'
   ]
 
   global.MU_SWAPS = 0

@@ -1,0 +1,2613 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gregtech"
+	group: "1A2B000000000002"
+	icon: "gtceu:lv_machine_hull"
+	id: "3C1F000000000022"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3E785FC067476803"]
+			description: [
+				"&6&lGregTech&r is not another tech mod. It is a different opinion about what tech mods are for."
+				""
+				"Everything you have built until now was a machine that does a job. GregTech gives you a &esupply chain&r: ore becomes crushed ore becomes purified ore becomes dust becomes ingot, and every one of those steps is a machine you had to build, power and feed."
+				""
+				"&e&lNine voltage tiers&r sit between here and the end of this chapter - Steam, LV, MV, HV, EV, IV and LuV. Each one needs the one before it. There are no shortcuts and the mod will not pretend otherwise."
+				""
+				"&7&lWhat you already have helps.&r Your AE2 network can drive GregTech's machines, and the PneumaticCraft assembly line taught you the shape of what is coming: recipes that a crafting grid cannot express.&r"
+				""
+				"&c&lThis chapter is long on purpose.&r Read the quest text - GregTech punishes guessing harder than anything else in this pack."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "3EF69082A65472D5"
+			rewards: [
+				{
+					id: "003C0ABC3B762547"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "12BB76935B15094D"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7The long way round, deliberately"
+			tasks: [{
+				id: "4D74C5C009B5FA95"
+				title: "Begin GregTech"
+				type: "checkmark"
+			}]
+			title: "&6Nothing Here Is Free"
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"GregTech expects ore veins underground. You live on a floating island, so there are none."
+				""
+				"&e&lThe sieve is your ore vein.&r This pack adds GregTech raw ores to Ex Deorum sieve drops, tiered to match the voltage that needs them:"
+				""
+				"&7Crushed &fDeepslate&7 + &fdiamond mesh&7 - chalcopyrite, cassiterite, magnetite, galena, sphalerite, pyrite (steam and LV)&r"
+				"&7Crushed &fBlackstone&7 + &fdiamond mesh&7 - bauxite, tetrahedrite, malachite, apatite, graphite, cinnabar&r"
+				"&7Crushed &fNetherrack&7 + &fnetherite mesh&7 - garnierite, cobaltite, ilmenite, scheelite, chromite, molybdenite&r"
+				"&7Crushed &fEnd Stone&7 + &fnetherite mesh&7 - cooperite, palladium, monazite, bastnasite, pitchblende, uraninite, thorium, naquadah&r"
+				""
+				"&e&lRaw ore, not ingots.&r That is deliberate: the whole point of GregTech is what you do to ore on the way to metal. Handing you ingots would delete the mod."
+				""
+				"&8Automate a sieve array before you go any further. Every tier below this one eats ore faster than the last.&r"
+			]
+			icon: "exdeorum:diamond_mesh"
+			id: "6F928CDC354ECCAA"
+			rewards: [
+				{
+					id: "15276BF0147F517E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "4FE9588544E9D26C"
+					type: "random"
+				}
+			]
+			subtitle: "&7Your sieve is the ore vein"
+			tasks: [{
+				count: 16L
+				id: "3289451AC009FE18"
+				item: "gtceu:raw_chalcopyrite"
+				type: "item"
+			}]
+			title: "&6Ore From Nothing"
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&c&lGregTech machines cannot be broken with a pickaxe.&r"
+				""
+				"&eWrench&r removes machines and rotates them. &eWire Cutter&r takes down cables. &eScrewdriver&r toggles machine settings and covers. &eHammer&r mutes machines and is a crafting ingredient everywhere. &eFile&r shapes parts."
+				""
+				"&7Make all five now. Trying to mine a machine without a wrench destroys it and gives you nothing back.&r"
+				""
+				"&8They wear out. Bronze is the starting tier; you will remake these in steel and then never think about them again.&r"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:bronze_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
+			id: "3DCDBFBDE083B187"
+			rewards: [{
+				id: "4C7BEBCC3F82C88A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7A pickaxe will not do"
+			tasks: [
+				{
+					id: "7348ECC9A856FAE8"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_wrench"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "236446C7375FB66C"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D44A6B318D0BB44"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_screwdriver"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B13CA5971088C9D"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_wire_cutter"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A639E9191B82A2F"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_file"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6The Tools You Cannot Skip"
+			x: -15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F928CDC354ECCAA"]
+			description: [
+				"Three copper, one tin. The first alloy, and the entire steam age is built from it."
+				""
+				"&7Chalcopyrite gives copper, cassiterite gives tin. Both come out of your deepslate sieve.&r"
+				""
+				"&e&lMix the dusts, then smelt.&r A crucible or furnace works now; the Alloy Smelter does it properly in a moment."
+				""
+				"&8You need a lot. Every steam machine, every casing, every pipe at this tier is bronze.&r"
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "6DA8E644C8768590"
+			rewards: [{
+				id: "48A3D554B7118902"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Copper plus tin"
+			tasks: [{
+				count: 16L
+				id: "31DDC11453A7D561"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "&6Bronze"
+			x: -13.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The &eSteam Solid Boiler&r burns fuel to boil water into steam. That steam is your first power."
+				""
+				"&c&lIt needs water and it will explode without it.&r Keep it fed. A boiler that runs dry while hot destroys itself and a good deal of what is next to it."
+				""
+				"&7Steam travels in pipes to steam machines. It is not FE and nothing else in your base can use it.&r"
+				""
+				"&8There is a Solar Boiler if you would rather not babysit fuel. It is slower, and it is much harder to blow up.&r"
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "4A29E20A07C9F89F"
+			rewards: [{
+				id: "7167937794CF449B"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Water in, steam out, do not forget the water"
+			tasks: [{
+				id: "1BC7354E5E648706"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "&6Steam, The Hard Way"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&e&lThis is the machine that pays for GregTech.&r"
+				""
+				"One raw ore in, two dust out. Everything you sieve is now worth double, and dust is what every downstream process actually wants."
+				""
+				"&7If you build one steam machine, build this one. Ore doubling from the first tier is the reason the grind is bearable.&r"
+				""
+				"&8Later tiers add washing and centrifuging on top, taking one ore to three or four dust plus byproducts.&r"
+			]
+			icon: "gtceu:lp_steam_macerator"
+			id: "62BB32BBB7EADB8A"
+			rewards: [
+				{
+					id: "01CA1FAFA7F74775"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "24E93594B5B55A98"
+					type: "random"
+				}
+			]
+			subtitle: "&7Ore doubling, from tier one"
+			tasks: [{
+				id: "58FFAD2CEEE288D1"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			title: "&6The Macerator"
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62BB32BBB7EADB8A"]
+			description: [
+				"Five more machines that between them cover everything the steam age can do."
+				""
+				"&eFurnace&r smelts. &eAlloy Smelter&r combines two inputs into an alloy - this is how you stop hand-mixing bronze. &eCompressor&r makes blocks and plates. &eExtractor&r pulls fluids out of things. &eForge Hammer&r flattens ingots into plates."
+				""
+				"&7Plates are the hidden tax of GregTech - almost every recipe wants them. Get the Forge Hammer running early.&r"
+			]
+			icon: "gtceu:lp_steam_alloy_smelter"
+			id: "13C3AE5E4E227AE3"
+			rewards: [{
+				id: "02A4F43D4811003E"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Smelt, alloy, compress, extract, hammer"
+			tasks: [
+				{
+					id: "11F89CAC8FD1644F"
+					item: "gtceu:lp_steam_furnace"
+					type: "item"
+				}
+				{
+					id: "69C43011CE0C5D90"
+					item: "gtceu:lp_steam_alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "4617CE0EE4C73050"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "76EC1EE47F89D155"
+					item: "gtceu:lp_steam_extractor"
+					type: "item"
+				}
+				{
+					id: "786BB5A2188EB7EB"
+					item: "gtceu:lp_steam_forge_hammer"
+					type: "item"
+				}
+			]
+			title: "&6The Rest of the Steam Set"
+			x: -10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"13C3AE5E4E227AE3"
+				"0281B22E7C755283"
+			]
+			description: [
+				"The same machines again, in steel, running at double speed on high-pressure steam."
+				""
+				"&7A straight upgrade. Worth doing once you have steel, and not before.&r"
+				""
+				"&8If you are already moving toward LV power you can skip this entirely - electric machines outclass both steam tiers.&r"
+			]
+			icon: "gtceu:hp_steam_macerator"
+			id: "328D59FA5A7D3CDF"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "0983D90F518FFAD2"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Twice as fast, twice the steam"
+			tasks: [{
+				id: "41277591BDBF0D3F"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			title: "&6High Pressure Steam"
+			x: -10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13C3AE5E4E227AE3"]
+			description: [
+				"Two multiblocks that process eight things at once instead of one."
+				""
+				"&e&lSteam Grinder&r - a parallel macerator. &e&lSteam Oven&r - a parallel furnace."
+				""
+				"&7Both are bronze-tier and both massively outperform their single-block versions. If the steam age feels slow, this is the answer.&r"
+				""
+				"&8Check the structure preview in JEI. GregTech multiblocks are exact - one wrong block and the controller will not form.&r"
+			]
+			icon: "gtceu:steam_grinder"
+			id: "2C5B8EB1720D631E"
+			rewards: [{
+				id: "2217D85F67B976D9"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Eight at a time"
+			tasks: [
+				{
+					id: "52EAA3A2F12752D8"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					id: "731F07C1BE2E6061"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+			]
+			title: "&6Steam Multiblocks"
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"A 3x3x3 of coke oven bricks. Turns coal into &eCoke&r and &eCreosote&r."
+				""
+				"&7Coke burns hotter and longer than coal, and it is what the Primitive Blast Furnace needs to make steel. Creosote is a fuel and a wood treatment.&r"
+				""
+				"&8Slow, cheap, and completely passive. Build two.&r"
+			]
+			icon: "gtceu:coke_oven"
+			id: "3885F27EA6628C90"
+			rewards: [{
+				id: "1E1653DD4E593D6C"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Coal in, coke and creosote out"
+			tasks: [{
+				id: "329071CA2D87B8E9"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "&6The Coke Oven"
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3885F27EA6628C90"]
+			description: [
+				"&6&lThe wall at the end of the steam age.&r"
+				""
+				"A &ePrimitive Blast Furnace&r - 3x3x4 of firebricks - takes iron and coke and gives you steel. Slowly. Very slowly."
+				""
+				"&7Everything in LV is made of steel. You will build several of these and they will still be the bottleneck, which is exactly why the Electric Blast Furnace later feels like such a relief.&r"
+				""
+				"&e&lThis pack already has six other steels&r and they are all interchangeable here - the unification script sees to that. GregTech's own recipes still want GregTech steel for machine casings, so run the furnace anyway.&r"
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "0281B22E7C755283"
+			rewards: [
+				{
+					id: "2244F588859258DC"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "07B33BE9F015CE3F"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Slow, mandatory, worth it"
+			tasks: [{
+				count: 16L
+				id: "11E2D42E1BBA72CA"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "&6&lSteel"
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0281B22E7C755283"]
+			description: [
+				"&6&lThe first circuit.&r Glass tube, copper wire, red alloy - crude, and the gateway to everything electric."
+				""
+				"&7Circuits are GregTech's real currency. There are nine tiers of them and each voltage tier needs its own. You will make thousands.&r"
+				""
+				"&e&lStart automating them now&r, in the steam age, before you need them by the stack. Every player who hand-crafts circuits regrets it around MV."
+				""
+				"&8This pack runs with harder circuit recipes enabled - the first circuit in each set yields one instead of two. Plan accordingly.&r"
+			]
+			icon: "gtceu:vacuum_tube"
+			id: "0E27C23D9934451A"
+			rewards: [{
+				id: "38589718CAA63139"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7ULV - where circuits begin"
+			tasks: [{
+				count: 8L
+				id: "506DFD7F5903199A"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "&6Vacuum Tubes"
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0281B22E7C755283"]
+			description: [
+				"Cables have to be insulated and insulation means rubber."
+				""
+				"&e&lRubber trees are worldgen&r, which you do not have - so this pack drops &eRubber Saplings&r from the deepslate sieve. Plant them, harvest the logs, extract the resin."
+				""
+				"&7Later you can make synthetic rubber from oil in a chemical reactor, which is far faster. Until then, grow trees.&r"
+				""
+				"&8Your PneumaticCraft refinery already produces the feedstock for the synthetic route. Worth remembering at MV.&r"
+			]
+			icon: "gtceu:rubber_ingot"
+			id: "71FC888AFDDA9C31"
+			rewards: [{
+				id: "7A9C8967CFD20826"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Saplings from the sieve"
+			tasks: [{
+				count: 8L
+				id: "099A071C42F96BED"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			title: "&6Rubber"
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["71FC888AFDDA9C31"]
+			description: [
+				"&eWire&r carries power and loses some as heat. &eCable&r is wire wrapped in rubber - less loss, and safe to touch."
+				""
+				"&c&lVoltage matters.&r Push LV into a machine rated for it and all is well. Push MV into an LV machine and the machine is gone."
+				""
+				"&7Each cable has an amperage limit too. Exceed it and the cable burns out. Thicker cable - double, quadruple, octal - carries more.&r"
+				""
+				"&8Tin for LV, copper for a bit more, gold and aluminium higher up. The wiremill makes them cheaply once you have one.&r"
+			]
+			icon: "gtceu:copper_single_cable"
+			id: "4703D75450ABD90D"
+			rewards: [{
+				id: "7CA566D5F3EDD9B8"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Voltage kills machines"
+			tasks: [
+				{
+					count: 4L
+					id: "09AD06C72480A68D"
+					item: "gtceu:tin_single_wire"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4363D8CCF691D99C"
+					item: "gtceu:copper_single_cable"
+					type: "item"
+				}
+			]
+			title: "&6Cables and Wires"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A steel casing plus a cable. Every LV machine is a hull with something bolted into it."
+				""
+				"&7Making hulls in bulk is the single best use of your early automation. Every machine below this quest starts as one.&r"
+				""
+				"&8The casing tier sets the voltage tier. Steel is LV, aluminium is MV, stainless is HV, and so on up.&r"
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "5667082EB6274412"
+			rewards: [{
+				id: "002FAD1363E5BE84"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7The chassis for everything"
+			tasks: [{
+				count: 4L
+				id: "1336B81387F00011"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "&6LV Machine Hulls"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&e&lLV Steam Turbine&r turns your existing boiler steam into 32 EU/t. That is the bridge from the steam age to the electric one."
+				""
+				"&7A &eBattery Buffer&r holds batteries and acts as your power bank - machines draw from it, generators fill it. Without one, a generator that stops means machines that stop instantly.&r"
+				""
+				"&c&lGregTech power is not FE.&r Nothing in Mekanism, Create or AE2 speaks EU natively. Energy Converters exist for that, and they are a later quest."
+				""
+				"&8One amp of LV is 32 EU/t. The battery buffer size sets how many amps you can draw at once.&r"
+			]
+			icon: "gtceu:lv_steam_turbine"
+			id: "183F8AF7AFE70685"
+			rewards: [
+				{
+					id: "27C60535BF486F45"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2600C68C617DAFFA"
+					type: "random"
+				}
+			]
+			subtitle: "&7EU/t, amps, and why both matter"
+			tasks: [
+				{
+					id: "312302E0414E7352"
+					item: "gtceu:lv_steam_turbine"
+					type: "item"
+				}
+				{
+					id: "5ADBC2EF76D8009A"
+					item: "gtceu:lv_battery_buffer_4x"
+					type: "item"
+				}
+				{
+					id: "32C2D052C387EDF3"
+					item: "gtceu:lv_sodium_battery"
+					type: "item"
+				}
+			]
+			title: "&6From Steam to Electricity"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"The steam set again, electric this time - faster, quieter, and no boiler to keep watered."
+				""
+				"&7Electric machines also accept &eoverclocks&r: feed a machine a higher voltage than it needs and it runs faster for proportionally more power. This is the core optimisation of the whole mod.&r"
+				""
+				"&8Once these are running you can dismantle the steam age entirely, or keep the multiblocks for bulk work.&r"
+			]
+			icon: "gtceu:lv_macerator"
+			id: "19243218E629BD4F"
+			rewards: [{
+				id: "0305E3176F035AED"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Electric, and overclockable"
+			tasks: [
+				{
+					id: "158F87DFEB249C57"
+					item: "gtceu:lv_macerator"
+					type: "item"
+				}
+				{
+					id: "5ECC4C351463685C"
+					item: "gtceu:lv_electric_furnace"
+					type: "item"
+				}
+				{
+					id: "663774E9CAD00607"
+					item: "gtceu:lv_alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "319A7860F952B728"
+					item: "gtceu:lv_compressor"
+					type: "item"
+				}
+				{
+					id: "5336A83451ECDD12"
+					item: "gtceu:lv_extractor"
+					type: "item"
+				}
+			]
+			title: "&6The LV Workshop"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19243218E629BD4F"]
+			description: [
+				"Four machines that turn ingots into the shapes recipes actually ask for."
+				""
+				"&eBender&r makes plates and foils. &eWiremill&r makes wire. &eLathe&r makes rods, screws and bolts. &eCutter&r makes plates into smaller plates and cuts blocks."
+				""
+				"&7Between them these replace an enormous amount of hand-crafting. The Bender in particular ends the Forge Hammer era.&r"
+				""
+				"&8This pack has harder rod recipes on, so the Lathe gives one rod and dust rather than two rods. Build two lathes.&r"
+			]
+			icon: "gtceu:lv_bender"
+			id: "1B1DFBFE8EBD4D7D"
+			rewards: [{
+				id: "58CA11B032365CDB"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Plates, wire, rods, screws"
+			tasks: [
+				{
+					id: "40AFE0707E0A3453"
+					item: "gtceu:lv_bender"
+					type: "item"
+				}
+				{
+					id: "253AC9857E6546A3"
+					item: "gtceu:lv_wiremill"
+					type: "item"
+				}
+				{
+					id: "201B358F882B9098"
+					item: "gtceu:lv_lathe"
+					type: "item"
+				}
+				{
+					id: "2FFA7FFD8906B40C"
+					item: "gtceu:lv_cutter"
+					type: "item"
+				}
+			]
+			title: "&6Shaping Machines"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["19243218E629BD4F"]
+			description: [
+				"GregTech's chemistry is where the material tree stops being a line and becomes a web."
+				""
+				"&eElectrolyzer&r splits a compound into its elements - water into hydrogen and oxygen, salt into sodium and chlorine. &eCentrifuge&r separates mixtures. &eChemical Reactor&r combines things into new compounds."
+				""
+				"&7Almost every advanced material in the mod passes through one of these three. Synthetic rubber, plastics, and every acid you will need later start here.&r"
+				""
+				"&8JEI is essential from this point on. The chains get deep and nothing is guessable.&r"
+			]
+			icon: "gtceu:lv_chemical_reactor"
+			id: "6ABE982B094D119A"
+			rewards: [{
+				id: "40892E03FE206C98"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Split, separate, combine"
+			tasks: [
+				{
+					id: "1C6DC1ACADBF7431"
+					item: "gtceu:lv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "7432B63841AF998F"
+					item: "gtceu:lv_electrolyzer"
+					type: "item"
+				}
+				{
+					id: "5DD13487E7EB8B8A"
+					item: "gtceu:lv_centrifuge"
+					type: "item"
+				}
+			]
+			title: "&6First Chemistry"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["19243218E629BD4F"]
+			description: [
+				"&6&lThis is how one ore becomes four dust.&r"
+				""
+				"&e&l1.&r &7Macerator&r - raw ore into crushed ore (x2)."
+				"&e&l2.&r &7Ore Washer&r - crushed ore into purified crushed ore, plus a byproduct."
+				"&e&l3.&r &7Thermal Centrifuge&r - purified ore into centrifuged ore, plus another byproduct."
+				"&e&l4.&r &7Macerator again&r - centrifuged ore into dust."
+				""
+				"&7The byproducts are the point. Chalcopyrite washed and centrifuged does not just give copper - it gives gold, and sulfur, and pyrite. Ores you sieve for one metal quietly supply three more.&r"
+				""
+				"&8Set this chain up once, feed everything through it, and never sieve as much again.&r"
+			]
+			icon: "gtceu:lv_ore_washer"
+			id: "783ADB72710DB977"
+			rewards: [
+				{
+					id: "715318DFD185C556"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "67D3F1BB397FCE10"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7One ore, four dust, three byproducts"
+			tasks: [
+				{
+					id: "7B84A18A10347BA0"
+					item: "gtceu:lv_ore_washer"
+					type: "item"
+				}
+				{
+					id: "27DCB617DC55E4A9"
+					item: "gtceu:lv_thermal_centrifuge"
+					type: "item"
+				}
+			]
+			title: "&6&lThe Full Ore Chain"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B1DFBFE8EBD4D7D"]
+			description: [
+				"The LV circuit. Vacuum tubes were the prototype; this is the real thing."
+				""
+				"&7Circuit boards, resistors, capacitors, transistors and wire, assembled together. Each of those is its own small production line.&r"
+				""
+				"&e&lThe Circuit Assembler exists to do all of it at once&r - it is the next quest and it is not optional if you value your time.&r"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "27B49C89068813B9"
+			rewards: [{
+				id: "1BFBE146AFD7635D"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7LV - the first real circuit"
+			tasks: [{
+				count: 8L
+				id: "30403ABC4E337629"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "&6Electronic Circuits"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&e&lOne machine, one recipe, a finished circuit.&r"
+				""
+				"Feed it the components and it assembles circuits directly - no crafting grid, no intermediate juggling, and it accepts a programmed circuit to pick between recipes that share inputs."
+				""
+				"&7Point an AE2 Pattern Provider at it and your ME network makes circuits on demand. This is the single highest-value automation in the entire chapter.&r"
+				""
+				"&8Every tier from here up needs its own circuit. Automating this once pays off nine times.&r"
+			]
+			icon: "gtceu:lv_circuit_assembler"
+			id: "3C16BDC13810E8A5"
+			rewards: [
+				{
+					id: "4BAAE8F2FA525F6C"
+					type: "xp"
+					xp: 70
+				}
+				{
+					id: "12C5F0E9F117C120"
+					type: "random"
+				}
+			]
+			subtitle: "&7Automate this above all else"
+			tasks: [{
+				id: "088BF8FF1E3B044F"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			title: "&6The Circuit Assembler"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6ABE982B094D119A"]
+			description: [
+				"&6&lThe machine that takes late-game crafting out of the crafting grid.&r"
+				""
+				"Most GregTech machine parts - motors, pistons, pumps, conveyors, robot arms, emitters, sensors, field generators - are made here, not on a bench."
+				""
+				"&7In this pack that is enforced: the components that define a voltage tier are assembler recipes, and they stay that way all the way to LuV. If you want a machine, you build the parts that build it.&r"
+				""
+				"&e&lThis is the direct descendant of your PneumaticCraft assembly line&r - same idea, nine tiers of it.&r"
+			]
+			icon: "gtceu:lv_assembler"
+			id: "01B45D20008851EA"
+			rewards: [
+				{
+					id: "16A00D82E2B7234E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "36523C33419BA047"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Where machine parts come from"
+			tasks: [{
+				id: "106DAEF0A6BCFCC5"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "&6&lThe Assembler"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["01B45D20008851EA"]
+			description: [
+				"Motors, pumps, conveyors, pistons, robot arms, emitters, sensors, field generators."
+				""
+				"&7Every GregTech machine is a hull plus some of these. Every tier has its own set, made from that tier's materials.&r"
+				""
+				"&e&lAutomate the whole set at every tier.&r The single biggest time sink in GregTech is hand-making components you already know how to make.&r"
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "3CF8A5492C9EB3DB"
+			rewards: [{
+				id: "574F691C89CE7EAA"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7The parts every machine is made of"
+			tasks: [
+				{
+					count: 4L
+					id: "167191B86802D484"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "18802EA40958810C"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "72D7A8B68A6421E1"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3806ED5D5F509275"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+			]
+			title: "&6Machine Components"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["783ADB72710DB977"]
+			description: [
+				"MV runs on aluminium the way LV runs on steel."
+				""
+				"&7Bauxite from your blackstone sieve, washed and centrifuged, gives aluminium - and rutile and titanium as byproducts, which matter a great deal later.&r"
+				""
+				"&8Aluminium needs the Electric Blast Furnace to smelt. That is the next milestone and it is a big one.&r"
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "702DDE04AD6FE445"
+			rewards: [{
+				id: "71298C2E8E2E3F3B"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7The MV metal"
+			tasks: [{
+				count: 16L
+				id: "2277AE345851B582"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			title: "&6Aluminium"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"702DDE04AD6FE445"
+				"3CF8A5492C9EB3DB"
+			]
+			description: [
+				"&6&lThe most important multiblock in GregTech.&r"
+				""
+				"A 3x3x4 shell of heatproof casings around &eCupronickel Coils&r, with energy, item and fluid hatches. It smelts what nothing else can."
+				""
+				"&e&lCoils set the temperature and temperature gates materials.&r Cupronickel reaches 1800K - enough for aluminium and stainless steel. Kanthal, Nichrome and beyond come later and unlock the metals above them."
+				""
+				"&7Every tier from here to the end of the chapter is gated on a hotter coil. When a recipe says it needs a temperature you cannot reach, the answer is always better coils.&r"
+				""
+				"&8It also replaces the Primitive Blast Furnace for steel, at roughly twenty times the speed.&r"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "69C6C815EF744A38"
+			rewards: [
+				{
+					id: "1AC8945DAE1787BD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "59FF54D8BEBCE54C"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7Coils set the ceiling"
+			tasks: [
+				{
+					id: "596CC5BFCEACB6D0"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "67315B7F3341ACFD"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			title: "&6&lThe Electric Blast Furnace"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"128 EU/t. Four times LV, and the tier where GregTech starts feeling fast."
+				""
+				"&7Aluminium hulls, MV circuits, MV components. The same machines you already have, rebuilt one tier up - and every one of them now overclocks off LV recipes.&r"
+				""
+				"&e&lAn MV machine running an LV recipe runs at four times the speed for four times the power.&r That is what a voltage tier actually buys you.&r"
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "35C0E27B8CC84BB1"
+			rewards: [{
+				id: "4B223A57C75CE596"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7128 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "7376C3C179E3E485"
+					item: "gtceu:mv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4DA235DEF8C46949"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "&6MV Machines"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"A &eDistillery&r splits one fluid into one product. A &eDistillation Tower&r splits it into all of them at once."
+				""
+				"&7The tower is a tall multiblock - one output hatch per layer, each catching a different fraction. Oil into naphtha, diesel, kerosene, refinery gas and more.&r"
+				""
+				"&e&lThis is where GregTech's oil chain overtakes PneumaticCraft's&r - same crude, far more products, and every one of them feeds a chemistry line.&r"
+			]
+			icon: "gtceu:distillation_tower"
+			id: "0FCC9BB75D78488B"
+			rewards: [{
+				id: "67F2DABA3DF05D72"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Every fraction at once"
+			tasks: [
+				{
+					id: "6B59A82A9B6D538F"
+					item: "gtceu:lv_distillery"
+					type: "item"
+				}
+				{
+					id: "001481488B99D53A"
+					item: "gtceu:distillation_tower"
+					type: "item"
+				}
+			]
+			title: "&6Distillation"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"&eMixer&r blends dusts and fluids. &eFluid Solidifier&r casts molten material into shapes with a mould. &eForming Press&r stamps parts out of plates."
+				""
+				"&7Unglamorous machines that turn up in a surprising number of recipe chains. The Fluid Solidifier in particular is how you cast anything you can melt.&r"
+			]
+			icon: "gtceu:lv_mixer"
+			id: "0DB29A7A9B8DBA44"
+			rewards: [{
+				id: "1FA6667ECC471317"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Blend, cast, stamp"
+			tasks: [
+				{
+					id: "6737AAFF7E848C1A"
+					item: "gtceu:lv_mixer"
+					type: "item"
+				}
+				{
+					id: "56D740E73BD30013"
+					item: "gtceu:lv_fluid_solidifier"
+					type: "item"
+				}
+				{
+					id: "62A6ADD39F3254C6"
+					item: "gtceu:lv_forming_press"
+					type: "item"
+				}
+			]
+			title: "&6Mixing and Pressing"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"&e&lEnergy Converters&r translate between FE and EU in both directions."
+				""
+				"&7Your Mekanism fission reactor, your Create generators and your Solar Flux array all produce FE. GregTech eats EU. A converter bridges them, at a loss you set by the conversion ratio.&r"
+				""
+				"&c&lMind the amperage.&r A 4-amp converter at LV moves four amps - exceed it and nothing flows. Match the converter to the load."
+				""
+				"&8This is the quest that stops GregTech being an island. Everything you built in Act II can now power it.&r"
+			]
+			icon: "gtceu:lv_4a_energy_converter"
+			id: "19DD54DF2A7B8F50"
+			rewards: [
+				{
+					id: "7E665FAB6D1EAB7D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0E562FA6035BDB0F"
+					type: "random"
+				}
+			]
+			subtitle: "&7FE in, EU out"
+			tasks: [{
+				id: "5E9169CFDA7CBBB3"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "&6Talking to the Rest of the Base"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"Iron, chrome, nickel and manganese, blended and blasted at 1700K."
+				""
+				"&7Chromite from your netherrack sieve gives chrome; garnierite and pentlandite give nickel. Cupronickel coils are just hot enough.&r"
+				""
+				"&8Stainless is the HV casing metal and the material of the Vacuum Freezer, which is what unlocks the tier above it.&r"
+			]
+			icon: "gtceu:stainless_steel_ingot"
+			id: "0CBF1A9A4A2396CA"
+			rewards: [{
+				id: "137D7466EAD0D0C2"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The HV metal"
+			tasks: [{
+				count: 16L
+				id: "26D3EACB91CD1F37"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			title: "&6Stainless Steel"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0CBF1A9A4A2396CA"]
+			description: [
+				"The second coil tier - 2700K, up from cupronickel's 1800K."
+				""
+				"&7Swap them into your Electric Blast Furnace and a whole set of recipes that were previously impossible becomes routine. Titanium in particular needs the heat.&r"
+				""
+				"&8Coil upgrades are the cleanest progression markers in the mod. When in doubt, get hotter.&r"
+			]
+			icon: "gtceu:kanthal_coil_block"
+			id: "7BBBFFB6FBDC8E41"
+			rewards: [{
+				id: "69F3C6C7FDA477A2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&72700K"
+			tasks: [{
+				count: 16L
+				id: "592F79AF51649196"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "&6Kanthal Coils"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0CBF1A9A4A2396CA"]
+			description: [
+				"512 EU/t, stainless hulls, and the tier where multiblocks start to dominate."
+				""
+				"&7Single-block machines still work, but from HV on the interesting recipes increasingly want a multiblock - and multiblocks scale in a way single blocks cannot.&r"
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "484CEB96819E922F"
+			rewards: [{
+				id: "5929182AB692F7B2"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7512 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "729D0C3FF427B6E8"
+					item: "gtceu:hv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4CC17EBB2E2CD4DF"
+					item: "gtceu:advanced_integrated_circuit"
+					type: "item"
+				}
+			]
+			title: "&6HV Machines"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6&lHot ingots have to be cooled before they are usable, and only this machine can do it.&r"
+				""
+				"The Electric Blast Furnace produces &eHot Ingots&r for the high-temperature metals. A hot ingot is not an ingot - you cannot craft with it until it is frozen."
+				""
+				"&7Titanium, tungsten steel and everything above them pass through here. It is a hard gate and there is no way around it.&r"
+				""
+				"&8It also makes liquid nitrogen and liquid helium, both of which matter for the tiers above.&r"
+			]
+			icon: "gtceu:vacuum_freezer"
+			id: "6DA24143E4F956CA"
+			rewards: [
+				{
+					id: "5F274B68ED347033"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "093049E433E24E54"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7Hot ingots are not ingots"
+			tasks: [{
+				id: "116C881A26EE7EEE"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			title: "&6&lThe Vacuum Freezer"
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"The single-block chemical reactor with the throughput limits removed."
+				""
+				"&7Perfect efficiency, no overclock penalty, and it handles recipes the small one refuses outright. Every serious chemistry chain from HV onward runs through one.&r"
+				""
+				"&8Small, cheap for a multiblock, and one of the best value builds in the mod.&r"
+			]
+			icon: "gtceu:large_chemical_reactor"
+			id: "725325117F12B111"
+			rewards: [{
+				id: "41BDCB224076C15C"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Chemistry without limits"
+			tasks: [{
+				id: "57F3480FAB04091C"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			title: "&6Large Chemical Reactor"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Compresses things by detonating explosives next to them. Genuinely."
+				""
+				"&7It is how you make diamonds from carbon, and how several dense alloys are formed. Feed it TNT or, better, dynamite.&r"
+				""
+				"&8Loud. Put it somewhere you do not mind hearing.&r"
+			]
+			icon: "gtceu:implosion_compressor"
+			id: "72A26D419A5BEC8C"
+			rewards: [{
+				id: "2ADF57E9E3D71C5B"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Compression by explosion"
+			tasks: [{
+				id: "01388D85A6E50E4D"
+				item: "gtceu:implosion_compressor"
+				type: "item"
+			}]
+			title: "&6Implosion Compressor"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&eCracker&r breaks heavy hydrocarbons into light ones with hydrogen or steam - the step that turns mediocre oil fractions into good ones."
+				""
+				"&ePyrolyse Oven&r is an industrial coke oven: wood or coal in, charcoal or coke plus creosote and gases out, at enormous scale."
+				""
+				"&7Together they roughly triple the fuel value you get out of a barrel of oil.&r"
+			]
+			icon: "gtceu:cracker"
+			id: "4B48EA4C0580C69C"
+			rewards: [{
+				id: "6826845C0F8017D0"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Better fuel from the same oil"
+			tasks: [
+				{
+					id: "375324F0F1838B0F"
+					item: "gtceu:cracker"
+					type: "item"
+				}
+				{
+					id: "7AEF4ADD4D6CB1B3"
+					item: "gtceu:pyrolyse_oven"
+					type: "item"
+				}
+			]
+			title: "&6Cracking and Pyrolysis"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"A multiblock diesel engine. Feed it a good fuel and lubricant and it produces HV power continuously."
+				""
+				"&7Your distillation tower makes the fuel; the chemistry line makes the lubricant. This is the first generator that comfortably outruns your consumption.&r"
+				""
+				"&e&lRun it with oxygen&r for a substantial boost, at the cost of needing an oxygen supply.&r"
+				""
+				"&8Alternatively, keep converting FE from the rest of your base. Both are valid; the engine is more in the spirit of the thing.&r"
+			]
+			icon: "gtceu:large_combustion_engine"
+			id: "5EBB73EAFDC5D13C"
+			rewards: [{
+				id: "709FC0C52F68A5BB"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Power that keeps up"
+			tasks: [{
+				id: "6BEEF69BED230ABE"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			title: "&6Serious Generation"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The HV circuit. Silicon wafers, engraved with lasers, cut into chips."
+				""
+				"&7This is where circuit production stops being a recipe and becomes a factory: grow silicon boules, slice them into wafers, engrave the wafers, cut them into chips, assemble the chips into circuits.&r"
+				""
+				"&e&lIf your circuit assembler line is not automated by now, it will become the thing that stops you.&r"
+			]
+			icon: "gtceu:nano_processor"
+			id: "664F33D2C27AF763"
+			rewards: [{
+				id: "689AE609704C83DB"
+				type: "xp"
+				xp: 70
+			}]
+			subtitle: "&7HV - wafers and lasers"
+			tasks: [{
+				count: 4L
+				id: "4C3049D74BB13456"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			title: "&6Nanoprocessors"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Ilmenite and rutile, blasted at Kanthal temperature and frozen in the Vacuum Freezer."
+				""
+				"&7The EV casing metal, and the material of every large turbine and most high-tier multiblocks.&r"
+				""
+				"&8Your bauxite byproducts have been quietly stockpiling rutile this whole time.&r"
+			]
+			icon: "gtceu:titanium_ingot"
+			id: "5882269D82C980B1"
+			rewards: [{
+				id: "4A5537A9C421EB0F"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The EV metal"
+			tasks: [{
+				count: 16L
+				id: "605011EF33F690C2"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			title: "&6Titanium"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5882269D82C980B1"]
+			description: [
+				"3000K. The third coil tier, and the one that unlocks tungsten."
+				""
+				"&7Nickel and chrome, both of which you are already producing. The bottleneck is quantity, not availability.&r"
+			]
+			icon: "gtceu:nichrome_coil_block"
+			id: "488ED1E4259C425B"
+			rewards: [{
+				id: "04925B1A9E36E4B2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&73000K"
+			tasks: [{
+				count: 16L
+				id: "752626A01B88E399"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			title: "&6Nichrome Coils"
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5882269D82C980B1"]
+			description: [
+				"2048 EU/t. Titanium hulls and quantum processors."
+				""
+				"&7At EV a single machine can consume more power than your entire base did at LV. Generation stops being an afterthought.&r"
+				""
+				"&8Check your cable amperage before you connect anything at this tier. EV through an underrated cable is an expensive lesson.&r"
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "1C23CC58F433F47B"
+			rewards: [{
+				id: "42B6E50BE8C47016"
+				type: "xp"
+				xp: 70
+			}]
+			subtitle: "&72048 EU/t"
+			tasks: [
+				{
+					count: 4L
+					id: "07C8F18E49CDA9EC"
+					item: "gtceu:ev_machine_hull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "447DD3AA9C2C9394"
+					item: "gtceu:quantum_processor"
+					type: "item"
+				}
+			]
+			title: "&6EV Machines"
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"A furnace that smelts up to 32 stacks in parallel."
+				""
+				"&7Coils set the parallel count here too - hotter coils mean more simultaneous smelts. With Nichrome it is genuinely industrial.&r"
+				""
+				"&8The answer to 'why is my furnace array 40 blocks long'.&r"
+			]
+			icon: "gtceu:multi_smelter"
+			id: "58B9968A6C7E1353"
+			rewards: [{
+				id: "0A84E0E0F529D311"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Smelting in bulk"
+			tasks: [{
+				id: "7EEF60CE57981B62"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			title: "&6Multi Smelter"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["488ED1E4259C425B"]
+			description: [
+				"Tungsten and steel at 3000K, then frozen. The IV casing metal."
+				""
+				"&7Scheelite and tungstate from the netherrack sieve give tungsten. Both are rare drops - this is the point where sieve throughput becomes the bottleneck rather than power.&r"
+				""
+				"&8Tungsten steel is also what the Assembly Line is made of, so budget generously.&r"
+			]
+			icon: "gtceu:tungsten_steel_ingot"
+			id: "7258DCF019883F39"
+			rewards: [{
+				id: "576166EFD0B03FDD"
+				type: "xp"
+				xp: 70
+			}]
+			subtitle: "&7The IV metal"
+			tasks: [{
+				count: 16L
+				id: "7ACCBE1A075820BB"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			title: "&6Tungsten Steel"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7258DCF019883F39"]
+			description: [
+				"8192 EU/t, tungsten steel hulls, and crystal processors grown rather than etched."
+				""
+				"&7The Autoclave grows crystal chips from seed crystals in a superheated fluid. It is the most involved circuit line in the mod so far and it is not the last.&r"
+			]
+			icon: "gtceu:iv_machine_hull"
+			id: "3F6135F92C4113A7"
+			rewards: [{
+				id: "41DAE3383E7E30D1"
+				type: "xp"
+				xp: 80
+			}]
+			subtitle: "&78192 EU/t"
+			tasks: [
+				{
+					count: 2L
+					id: "0FF15DA8868DBBBC"
+					item: "gtceu:iv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "37B18036C2F7B4DB"
+					item: "gtceu:crystal_processor"
+					type: "item"
+				}
+			]
+			title: "&6IV Machines"
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F6135F92C4113A7"]
+			description: [
+				"&6&lThe machine this entire chapter was built to reach.&r"
+				""
+				"A long multiblock - a controller, a row of assembling units, casings, energy and fluid hatches, and a &eData Access Hatch&r holding the research."
+				""
+				"&e&lIt does not accept recipes. It accepts research.&r You scan an item into a Data Stick with a Scanner, feed the stick to the line, and only then can it build that item. Nothing about it fits in a crafting grid, a machine GUI, or an AE2 pattern without deliberate work."
+				""
+				"&7&lThis is the payoff.&r Every high-tier component from here to the end of GregTech is an assembly line recipe. Automating it - feeding materials, managing data sticks, driving it from your ME network - is the real endgame of the mod, and it is exactly the skill PneumaticCraft's little assembly line was teaching you eight tiers ago.&r"
+				""
+				"&8Build it long. The number of assembling units sets how complex a recipe it can run.&r"
+			]
+			icon: "gtceu:assembly_line"
+			id: "33492215FCC0998C"
+			rewards: [
+				{
+					id: "0C5F4D9A2DE8789D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "7D2CA84D94432E7A"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7Research, then manufacture"
+			tasks: [{
+				id: "182B26A1FFB3C3F1"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "&6&lThe Assembly Line"
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&c&lThe rarest thing in the sieve.&r One percent from crushed end stone with a netherite mesh."
+				""
+				"&7Naquadah is the LuV material and the reason the End Stone tier of the sieve bridge exists at all. Expect to run a very large sieve array for a very long time.&r"
+				""
+				"&e&lEnriching it&r in a centrifuge gives Naquadah Enriched, which is what the high-tier alloys actually want.&r"
+				""
+				"&8If this feels punishing, that is intentional - it is the last material gate in the chapter.&r"
+			]
+			icon: "gtceu:naquadah_ingot"
+			id: "33F1BBD37C4B8F86"
+			rewards: [
+				{
+					id: "349918959C39D958"
+					type: "xp"
+					xp: 90
+				}
+				{
+					id: "0C69EE28472B7ED1"
+					type: "random"
+				}
+			]
+			subtitle: "&71% drop, and worth it"
+			tasks: [{
+				count: 8L
+				id: "4843D307A039708B"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "&6Naquadah"
+			x: 16.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F1BBD37C4B8F86"]
+			description: [
+				"32768 EU/t. Naquadah alloy hulls and crystal processor assemblies."
+				""
+				"&7Everything at this tier is an assembly line recipe. There is no hand-crafting your way to LuV and there was never meant to be.&r"
+				""
+				"&8Beyond LuV lie ZPM and UV. They are in the mod, they are not in this chapter, and reaching them is entirely up to you.&r"
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "583DA29C23636A64"
+			rewards: [{
+				id: "1B79F7BCCD2426C5"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			subtitle: "&732768 EU/t"
+			tasks: [
+				{
+					id: "769FB98C02ED23D0"
+					item: "gtceu:luv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "17DC5E3158797347"
+					item: "gtceu:crystal_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "&6LuV Machines"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&6&lYou started with a sieve and a crook. You finished with an assembly line running on naquadah.&r"
+				""
+				"Nine voltage tiers. Four coil temperatures. An ore chain that turns one raw ore into four dust and three byproducts. Circuits grown from crystal. A manufacturing line that has to be taught what to build before it will build it."
+				""
+				"&7&lNothing in this chapter could be crafted on a bench&r, and that was the whole point. GregTech is the late game of this pack because it is the only mod here where the answer to 'how do I make this' is always another factory.&r"
+				""
+				"&e&lWhat is left:&r ZPM, UV and the Fusion Reactor, none of which this chapter holds your hand through. And the Heart of the Sky, which is still waiting in Act IV.&r"
+				""
+				"&8Go and automate something.&r"
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "6078D2EFDD1403C3"
+			rewards: [
+				{
+					id: "535B21E7B1493383"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "1D23477B8BECAE87"
+					type: "random"
+				}
+				{
+					id: "227634917B725190"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&7GregTech mastered"
+			tasks: [
+				{
+					id: "3EA02109F7C5F871"
+					item: "gtceu:luv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "42B7959402F46321"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+			]
+			title: "&6&lIndustry"
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19243218E629BD4F"]
+			description: [
+				"&c&lThe single most confusing item in GregTech, and you need it constantly.&r"
+				""
+				"Many recipes share the same inputs and differ only in output. One ingot in an Extruder could become a rod, a plate, a wire or a gear - the machine has no way to know which you meant."
+				""
+				"&e&lThe Programmed Circuit is how you tell it.&r Set it to a number, put it in the machine's circuit slot, and that number selects the recipe. JEI shows which number each recipe wants."
+				""
+				"&7It is never consumed. One per machine, set once, forgotten forever.&r"
+				""
+				"&8If a machine refuses a recipe you are certain is correct, this is almost always why.&r"
+			]
+			icon: "gtceu:programmed_circuit"
+			id: "17A2DE7D7DA93E23"
+			rewards: [{
+				id: "4688B0A65FFC772A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7How machines know what you meant"
+			tasks: [{
+				id: "41B5F7530CF64D0A"
+				item: "gtceu:programmed_circuit"
+				type: "item"
+			}]
+			title: "&e&lThe Programmed Circuit"
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3CF8A5492C9EB3DB"]
+			description: [
+				"&e&lGregTech machines have no input or output sides until you give them one.&r"
+				""
+				"Right-click a machine face with a &eConveyor Module&r and it becomes an item port. A &ePump&r makes it a fluid port. A &eRobot Arm&r does the same with filtering and exact-count control."
+				""
+				"&7Screwdriver-click the cover to set direction, mode and filters. This is how GregTech automates - not with pipes into the block, but with covers on the block.&r"
+				""
+				"&8Covers also do redstone logic, machine control and readouts. There are a lot of them and they are worth browsing.&r"
+			]
+			icon: "gtceu:lv_conveyor_module"
+			id: "3EC427A37E19E448"
+			rewards: [{
+				id: "459F2C1511A1BED6"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Automation lives on the faces"
+			tasks: [
+				{
+					id: "1A31BA45FC4F78ED"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "2445D2374C3708D7"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "108C3CFB65CFDAE1"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "&e&lMachine Covers"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"Item and fluid pipes, in sizes from tiny to huge."
+				""
+				"&7Bigger pipe moves more per tick. Item pipes have a throughput limit and fluid pipes have both a rate and a temperature limit - move something hot through a low-grade pipe and it melts.&r"
+				""
+				"&e&lRestrictive item pipes&r are ignored by routing unless there is no alternative - the standard trick for controlling where items actually go.&r"
+			]
+			icon: "gtceu:copper_normal_fluid_pipe"
+			id: "56B58ADAC7845CFF"
+			rewards: [{
+				id: "2AC84031BAAC2467"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Rate, temperature, and melting"
+			tasks: [
+				{
+					count: 4L
+					id: "397B0215DC6C1AC7"
+					item: "gtceu:tin_normal_item_pipe"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "250A56F492C14301"
+					item: "gtceu:copper_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "&ePipes"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"&e&lThe most important number in GregTech is the one on the recipe, not the machine.&r"
+				""
+				"Every recipe has a voltage and a duration. Run it in a machine of exactly that tier and you get exactly that duration."
+				""
+				"&7Run it in a machine one tier higher and it takes &ehalf&r the time for &efour times&r the power per tick. Two tiers up: a quarter of the time, sixteen times the power. This is called an overclock and it applies everywhere.&r"
+				""
+				"&e&lThe consequence:&r a high-tier machine is not just faster, it is dramatically less power-efficient per operation. Sometimes the right answer is more LV machines, not one EV machine."
+				""
+				"&8Multiblocks with parallel processing sidestep this entirely, which is why they dominate the late game.&r"
+			]
+			icon: "gtceu:mv_electric_motor"
+			id: "0EE8448366B93CF1"
+			rewards: [{
+				id: "1EC5648B663F9E58"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Half the time, four times the power"
+			tasks: [{
+				count: 2L
+				id: "12E8DF48FFBA2199"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			title: "&e&lOverclocking"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"Multiblocks do not have item slots. They have &ehatches&r and &ebuses&r that you build into the wall."
+				""
+				"&7&eBus&r moves items, &ehatch&r moves fluid, &eenergy hatch&r brings power in. Each one replaces one casing block in the structure.&r"
+				""
+				"&e&lThe hatch tier caps the multiblock's voltage.&r An LV energy hatch on an EV multiblock means it runs at LV."
+				""
+				"&8Most multiblocks accept several buses. More buses means more parallel input, which matters enormously later.&r"
+			]
+			icon: "gtceu:lv_input_bus"
+			id: "423AC14C76774FF1"
+			rewards: [{
+				id: "7F46C45777895A0F"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7How multiblocks eat"
+			tasks: [
+				{
+					id: "2616F0FE1A8753E4"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "71A3CA42D583749D"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "291B93459D5851E5"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "04537B43A906E3CC"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "1195C530B3DC99AC"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&eHatches and Buses"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			description: [
+				"Multiblocks need a &eMaintenance Hatch&r, and occasionally they need attention through it."
+				""
+				"&7When a problem appears, open the hatch and apply the tool it asks for - wrench, screwdriver, hammer, wire cutter or crowbar. Ignore it and the machine runs slower.&r"
+				""
+				"&8An Auto-Maintenance Hatch removes the chore permanently and is worth building the moment you can.&r"
+			]
+			icon: "gtceu:maintenance_hatch"
+			id: "17667FE3DE3D3593"
+			rewards: [{
+				id: "4727083ECAEAF67F"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7The chore you can automate away"
+			tasks: [{
+				id: "08F1DA0480A14E20"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			title: "&eMaintenance"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13C3AE5E4E227AE3"]
+			description: [
+				"A &eMiner&r digs an area beneath it automatically. A &eRock Crusher&r turns cobble into gravel, sand and dust."
+				""
+				"&7On a skyblock the miner has nothing to dig, so it is mostly a curiosity here - but the Rock Crusher is genuinely useful for turning your cobble surplus into sieve feedstock.&r"
+				""
+				"&8Cobblestone into gravel into sand into dust is a legitimate ore-adjacent chain when you have a cobble generator.&r"
+			]
+			icon: "gtceu:lp_steam_rock_crusher"
+			id: "2BFBF2B5FB241A7B"
+			rewards: [{
+				id: "25B7102D231EA9EF"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Cobble into feedstock"
+			tasks: [
+				{
+					id: "0121A1CA535F41B2"
+					item: "gtceu:lp_steam_miner"
+					type: "item"
+				}
+				{
+					id: "4F904A3D7FAF0274"
+					item: "gtceu:lp_steam_rock_crusher"
+					type: "item"
+				}
+			]
+			title: "&6Steam Miner"
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"A multiblock boiler that produces far more steam than the single block, and scales with its casing material."
+				""
+				"&7Bronze, then steel, then titanium, then tungsten steel - each one roughly doubles output. The bronze one alone will comfortably run your whole steam age.&r"
+				""
+				"&c&lStill needs water.&r Multiblock boilers explode just as thoroughly as single ones, only louder.&r"
+			]
+			icon: "gtceu:bronze_large_boiler"
+			id: "11F76D9C6ABB1B01"
+			rewards: [{
+				id: "17B92B4C82613246"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Steam at scale"
+			tasks: [{
+				id: "6F7A8EB696070A1D"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			title: "&6Large Boilers"
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B1DFBFE8EBD4D7D"]
+			description: [
+				"&eArc Furnace&r burns things with electricity and oxygen. &eExtruder&r pushes metal through a shaped mould."
+				""
+				"&7The Arc Furnace is the fastest recycler in the mod - feed it anything metal and get dust back. The Extruder makes rods, plates, wire, gears and pipes from ingots in one step.&r"
+				""
+				"&e&lThe Extruder needs a Programmed Circuit&r to choose which shape you meant. See the mechanics quest if that sentence is new.&r"
+			]
+			icon: "gtceu:lv_arc_furnace"
+			id: "3D119F750AEDC6B5"
+			rewards: [{
+				id: "440CE2FD802D8DD6"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Recycle and extrude"
+			tasks: [
+				{
+					id: "1E7DEE89BB5C4C0C"
+					item: "gtceu:lv_arc_furnace"
+					type: "item"
+				}
+				{
+					id: "6F264B64F2ADBC36"
+					item: "gtceu:lv_extruder"
+					type: "item"
+				}
+			]
+			title: "&6Arc Furnace"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Two machines that only matter for circuits - and circuits are everything."
+				""
+				"&e&lAutoclave&r grows crystals from dust in a pressurised fluid. &e&lLaser Engraver&r etches patterns into wafers and plates."
+				""
+				"&7Together they are the silicon line: boule, wafer, engraved wafer, chip. Every circuit above MV comes out of these two machines.&r"
+				""
+				"&8Build them early even though they look niche. They stop looking niche immediately.&r"
+			]
+			icon: "gtceu:lv_laser_engraver"
+			id: "674AF2EA7AAFFF11"
+			rewards: [{
+				id: "2A61B6FF22C86FC6"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The silicon line"
+			tasks: [
+				{
+					id: "4A1B28FAC5DBAED1"
+					item: "gtceu:lv_autoclave"
+					type: "item"
+				}
+				{
+					id: "3CCBCCA340DDA242"
+					item: "gtceu:lv_laser_engraver"
+					type: "item"
+				}
+			]
+			title: "&6Autoclave and Laser Engraver"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["783ADB72710DB977"]
+			description: [
+				"&eElectromagnetic Separator&r pulls magnetic byproducts out of dust - this is where neodymium comes from."
+				""
+				"&ePolarizer&r magnetises rods into magnetic rods, which every motor needs. &eSifter&r sorts gem dusts into graded gems."
+				""
+				"&7The separator is the quiet one that matters: run your centrifuged iron dust through it and you get gold and neodymium for free.&r"
+			]
+			icon: "gtceu:lv_electromagnetic_separator"
+			id: "56F55553D55C9129"
+			rewards: [{
+				id: "0A303F20161F1A3E"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Byproducts of byproducts"
+			tasks: [
+				{
+					id: "2B60F1BEA9E7BBD4"
+					item: "gtceu:lv_electromagnetic_separator"
+					type: "item"
+				}
+				{
+					id: "37E28436F6E3A567"
+					item: "gtceu:lv_polarizer"
+					type: "item"
+				}
+				{
+					id: "5B857DCBEF25B2B8"
+					item: "gtceu:lv_sifter"
+					type: "item"
+				}
+			]
+			title: "&6Separation"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["783ADB72710DB977"]
+			description: [
+				"&eChemical Bath&r washes crushed ore in a fluid rather than water - mercury or persulfate, which pull out far more byproduct."
+				""
+				"&7This is the upgrade to the Ore Washer and it roughly doubles your byproduct yield again. Cinnabar from the blackstone sieve gives you the mercury.&r"
+				""
+				"&8Also used for dyeing, and for a handful of chemistry steps later.&r"
+			]
+			icon: "gtceu:lv_chemical_bath"
+			id: "1B34D945BCF58069"
+			rewards: [{
+				id: "3041626C76DC878A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Better washing"
+			tasks: [
+				{
+					id: "6E8EFB5C16E14AC2"
+					item: "gtceu:lv_chemical_bath"
+					type: "item"
+				}
+				{
+					id: "5BA617F73D58E41A"
+					item: "gtceu:lv_fluid_heater"
+					type: "item"
+				}
+			]
+			title: "&6Chemical Bath"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6ABE982B094D119A"]
+			description: [
+				"&eFermenter&r turns biomass into ethanol. &eBrewery&r makes potions and useful fluids. &eCanner&r fills and empties containers."
+				""
+				"&7Ethanol is a genuinely good early fuel and your Mystical Agriculture farms produce biomass faster than you can burn it.&r"
+				""
+				"&8The Canner is the unglamorous one you will use constantly - filling cells is a step in an enormous number of recipes.&r"
+			]
+			icon: "gtceu:lv_fermenter"
+			id: "0186E91FE3D4711B"
+			rewards: [{
+				id: "3267E1D1E5026126"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Biomass into fuel"
+			tasks: [
+				{
+					id: "633CEBE34B4FF853"
+					item: "gtceu:lv_fermenter"
+					type: "item"
+				}
+				{
+					id: "5B131B0E1FF1616B"
+					item: "gtceu:lv_brewery"
+					type: "item"
+				}
+				{
+					id: "4343B372687E166B"
+					item: "gtceu:lv_canner"
+					type: "item"
+				}
+			]
+			title: "&6Fermenting and Brewing"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CF8A5492C9EB3DB"]
+			description: [
+				"Single-item storage that holds an absurd amount, and scales with tier."
+				""
+				"&7A Super Chest holds one item type in enormous quantity. A Super Tank does the same for fluid. Both are cheap and both solve the 'where do I put four million cobblestone' problem.&r"
+				""
+				"&8They also work beautifully as AE2 storage bus targets.&r"
+			]
+			icon: "gtceu:lv_super_chest"
+			id: "471B788303D5C675"
+			rewards: [{
+				id: "5DB74EA6C06178CB"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Somewhere to put it all"
+			tasks: [
+				{
+					id: "38B3D14F6E694F41"
+					item: "gtceu:lv_super_chest"
+					type: "item"
+				}
+				{
+					id: "55CED7ECC53FF368"
+					item: "gtceu:lv_super_tank"
+					type: "item"
+				}
+			]
+			title: "&6Super Chests and Tanks"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Batteries store EU and slot into battery buffers, machines and tools."
+				""
+				"&7Sodium is the cheap tier, lithium is better, cadmium better still. A &eCharger&r refills them and any electric tool you own.&r"
+				""
+				"&e&lBattery Buffers are also how you set a machine's voltage&r - the buffer tier determines what comes out of it.&r"
+			]
+			icon: "gtceu:lv_lithium_battery"
+			id: "48910BCC5E54FCEB"
+			rewards: [{
+				id: "1B5815FB2C23A860"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Store it and carry it"
+			tasks: [
+				{
+					count: 4L
+					id: "44DD54B0555399C6"
+					item: "gtceu:lv_lithium_battery"
+					type: "item"
+				}
+				{
+					id: "6941A8CDCE78A36C"
+					item: "gtceu:lv_charger_4x"
+					type: "item"
+				}
+			]
+			title: "&6Batteries and Charging"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Free power, in very small amounts."
+				""
+				"&7An LV solar panel produces a trickle. They are not a serious power source and they are not meant to be - but they are excellent for keeping a battery buffer topped up or running a single low-draw machine.&r"
+				""
+				"&8Your Solar Flux array in Ways to Power is a far better answer to solar. Use an Energy Converter.&r"
+			]
+			icon: "gtceu:lv_solar_panel"
+			id: "74B1B399F473482C"
+			rewards: [{
+				id: "6583E3FF71318E4B"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "&7Free, and barely worth it"
+			tasks: [{
+				count: 4L
+				id: "41D9F0BB439EF6E6"
+				item: "gtceu:lv_solar_panel"
+				type: "item"
+			}]
+			title: "&6Solar Panels"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"Pumps fluid veins out of the ground - oil, natural gas, brine, lava."
+				""
+				"&c&lOn a void skyblock there are no fluid veins&r, so this is here for completeness rather than use. Your oil comes from PneumaticCraft and your distillation tower."
+				""
+				"&8If you ever build a platform over a real dimension with worldgen, this becomes the best oil source in the pack.&r"
+			]
+			icon: "gtceu:mv_fluid_drilling_rig"
+			id: "3103B1663B7C7AC2"
+			rewards: [{
+				id: "00F95D09A4E893B8"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Of limited use up here"
+			tasks: [{
+				id: "4ADAAEA1411998FA"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			title: "&6Fluid Drilling Rig"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35C0E27B8CC84BB1"]
+			description: [
+				"A multiblock turbine with a &eturbine rotor&r in the middle. Feed it steam and it produces a great deal of power."
+				""
+				"&7Rotor material sets efficiency and durability - bronze is poor, steel decent, titanium good, tungsten steel excellent. Rotors wear out and need replacing.&r"
+				""
+				"&e&lGas and Plasma turbines&r follow the same pattern with better fuels. The plasma turbine is an endgame generator.&r"
+			]
+			icon: "gtceu:steam_large_turbine"
+			id: "4387A744B5B91BC3"
+			rewards: [{
+				id: "0A2BD690AB5CD4D8"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7Rotors, and replacing them"
+			tasks: [
+				{
+					id: "793208EA77DA9965"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "52B2C59FA3CD1AEA"
+					item: "gtceu:steel_turbine_casing"
+					type: "item"
+				}
+			]
+			title: "&6Large Turbines"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"The second large boiler tier, and the one that will actually keep a large turbine fed."
+				""
+				"&7Roughly double the bronze boiler's steam output. Pair it with a Large Steam Turbine and you have a power plant.&r"
+			]
+			icon: "gtceu:steel_large_boiler"
+			id: "364B82D7330AF979"
+			rewards: [{
+				id: "6332FC001178FB44"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Feed the turbine"
+			tasks: [{
+				id: "220CFF14C4A470D5"
+				item: "gtceu:steel_large_boiler"
+				type: "item"
+			}]
+			title: "&6Steel Large Boiler"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["664F33D2C27AF763"]
+			description: [
+				"&6&lA sealed, filtered room - and above HV, circuits will not assemble outside one.&r"
+				""
+				"Build a hollow box of &ePlascrete&r with a &eFilter Casing&r ceiling and the Cleanroom controller in a wall. Power it, seal it completely, and it maintains a cleanliness value."
+				""
+				"&c&lEvery opening breaks it.&r Doors must be airtight, cables and pipes must pass through the proper casings, and one missing block drops cleanliness to zero and stops every machine inside."
+				""
+				"&7Put your circuit assembler line, laser engraver and autoclave inside it. That is the whole reason it exists.&r"
+				""
+				"&8This is the gate most players hit unprepared - they build the HV circuit line, wonder why nothing runs, and discover the cleanroom requirement afterwards. Now you will not.&r"
+			]
+			icon: "gtceu:cleanroom"
+			id: "27BCBBA619216663"
+			rewards: [
+				{
+					id: "379B71636C8B2696"
+					type: "xp"
+					xp: 90
+				}
+				{
+					id: "221EAF688F707B57"
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&7No circuits above HV without it"
+			tasks: [
+				{
+					id: "024A37095801B10A"
+					item: "gtceu:cleanroom"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2FB7FD9C3ED1629B"
+					item: "gtceu:filter_casing"
+					type: "item"
+				}
+			]
+			title: "&6&lThe Cleanroom"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"The &eGas Large Turbine&r burns refinery gas, methane or any combustible gas for serious HV output."
+				""
+				"&7Your distillation tower produces exactly the fuels it wants. Between this and the Large Combustion Engine, HV power is a solved problem.&r"
+			]
+			icon: "gtceu:gas_large_turbine"
+			id: "536EF740E4903450"
+			rewards: [{
+				id: "5D0237A6079536D6"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Burn gas at scale"
+			tasks: [
+				{
+					id: "685D165BB68E8AD2"
+					item: "gtceu:hv_fluid_drilling_rig"
+					type: "item"
+				}
+				{
+					id: "4F7A757F9CEF9995"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
+			]
+			title: "&6HV Drilling and Gas Turbines"
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The component set again, in HV materials."
+				""
+				"&7By now you should have the entire component chain automated end to end - if you are still hand-crafting motors at HV, stop and fix that before going further.&r"
+				""
+				"&8Each tier's components need the tier's metal, its circuit and its cable. Three lines, all of which you already have.&r"
+			]
+			icon: "gtceu:hv_electric_motor"
+			id: "6F7FC7E21C9741C2"
+			rewards: [{
+				id: "20FD7FE26F831427"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Automate the set, again"
+			tasks: [
+				{
+					count: 2L
+					id: "27F0EA7770698ABC"
+					item: "gtceu:hv_electric_motor"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7CDB3BA878D5FC30"
+					item: "gtceu:hv_machine_casing"
+					type: "item"
+				}
+			]
+			title: "&6HV Components"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Enormous automated mining multiblocks."
+				""
+				"&c&lAgain: there is nothing under your island to mine.&r These are included because the chapter is a complete voltage ladder, not because a skyblock can use them."
+				""
+				"&7Your ore comes from the sieve and always will. That is the trade this pack makes.&r"
+			]
+			icon: "gtceu:ev_large_miner"
+			id: "2071FD6F804BE5C4"
+			rewards: [{
+				id: "2F507571858FD530"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "&7Complete, if not useful here"
+			tasks: [
+				{
+					id: "3E8DA8C5C231E66E"
+					item: "gtceu:ev_large_miner"
+					type: "item"
+				}
+				{
+					id: "5BAF140027F79249"
+					item: "gtceu:ev_fluid_drilling_rig"
+					type: "item"
+				}
+			]
+			title: "&6Large Miners"
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Titanium components, EV circuits, EV cables."
+				""
+				"&7At this tier the assembler is doing nearly all the work and your job is keeping it supplied. If any part of the chain is still manual it will show here.&r"
+			]
+			icon: "gtceu:ev_machine_casing"
+			id: "648499515FE6D868"
+			rewards: [{
+				id: "35BAE1FB8AA514A1"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&7Titanium everything"
+			tasks: [{
+				count: 4L
+				id: "586FE1A0D7AED8A1"
+				item: "gtceu:ev_machine_casing"
+				type: "item"
+			}]
+			title: "&6EV Components"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3F6135F92C4113A7"]
+			description: [
+				"&6&lThe Assembly Line does not know how to build anything until you teach it.&r"
+				""
+				"&e&l1.&r Put the target item and a blank &eData Stick&r in a &eScanner&r. It writes the research onto the stick."
+				"&e&l2.&r Put the stick in a &eData Access Hatch&r on the Assembly Line."
+				"&e&l3.&r The line can now build that item, and only that item."
+				""
+				"&7Every assembly line recipe needs its own stick. A hatch holds several; larger hatches hold more.&r"
+				""
+				"&8This is the mechanic that makes late GregTech feel like running a factory rather than crafting items.&r"
+			]
+			icon: "gtceu:data_stick"
+			id: "02E443A12BE5D631"
+			rewards: [{
+				id: "1FFD18C55D71E5FF"
+				type: "xp"
+				xp: 80
+			}]
+			subtitle: "&7Research before manufacture"
+			tasks: [
+				{
+					id: "13B887D1A5AE1E03"
+					item: "gtceu:lv_scanner"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1CC061A818E8FDB5"
+					item: "gtceu:data_stick"
+					type: "item"
+				}
+				{
+					id: "3B59A654BF797BA5"
+					item: "gtceu:data_access_hatch"
+					type: "item"
+				}
+			]
+			title: "&6&lScanner and Data Sticks"
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F6135F92C4113A7"]
+			description: [
+				"Tungsten steel components and crystal circuits."
+				""
+				"&7Nearly everything at IV is an assembly line recipe. The components you can still assemble normally are the exception, not the rule.&r"
+			]
+			icon: "gtceu:iv_machine_casing"
+			id: "2F28068FF2DCEA13"
+			rewards: [{
+				id: "400B65B60651A2AC"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "&7The last hand-buildable tier"
+			tasks: [{
+				count: 4L
+				id: "589BC77B550E0057"
+				item: "gtceu:iv_machine_casing"
+				type: "item"
+			}]
+			title: "&6IV Components"
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"&7ZPM, UV, UHV and the Fusion Reactor are all in this mod and none of them are in this chapter."
+				""
+				"&e&lWhat comes next, if you want it:&r fusion reactors that make plasma, plasma turbines that burn it, superconductors that move power without loss, and wetware circuits grown from cultured brain tissue."
+				""
+				"&7There are no quests for any of it. At this point you know how GregTech works well enough not to need them - which is the only sensible place for a quest chapter to stop.&r"
+				""
+				"&8The Heart of the Sky is still waiting in Act IV, and nine Sky Seals are still unbuilt.&r"
+			]
+			icon: "gtceu:plasma_large_turbine"
+			id: "6C68A5420D811952"
+			rewards: [
+				{
+					id: "277DFEC810E501C8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "70AD9CC9476E0D6F"
+					type: "random"
+				}
+			]
+			subtitle: "&7No more hand-holding"
+			tasks: [{
+				id: "3FE75D5095E9A1D1"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			title: "&6Beyond LuV"
+			x: 18.0d
+			y: -4.0d
+		}
+	]
+	subtitle: ["&7Nine voltage tiers, no shortcuts"]
+	title: "&6GregTech"
+}

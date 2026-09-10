@@ -9,10 +9,10 @@ and removals show up in the diff.
 
 | | count |
 |---|---|
-| server | 214 |
-| client | 215 |
+| server | 215 |
+| client | 216 |
 
-Last generated: 2026-08-27
+Last generated: 2026-09-10
 
 ## Client-only
 
@@ -169,6 +169,7 @@ mismatch.
 - `geckolib-forge-1.20.1-4.8.4.jar`
 - `gravestone-forge-1.20.1-1.0.35.jar`
 - `gravestonecurioscompat-1.20.1-Forge-4.0.2.jar`
+- `gtceu-1.20.1-7.5.3.jar`
 - `guideme-20.1.15.jar`
 - `humancompanions-1.20.1-1.7.6.jar`
 - `immersive_aircraft-1.4.1+1.20.1-forge.jar`
