@@ -115,6 +115,19 @@ Mekanism + Applied Energistics 2 + skyblock progression, plus a custom glue mod,
 > `pneumaticcraft:ingot_iron_compressed` (not `compressed_iron_ingot`),
 > `gtceu:steam_large_turbine` (not `large_steam_turbine`) and the fact that
 > `gtceu:raw_iridium` does not exist at all — iridium is a cooperite byproduct.
+>
+> **Powah's orphan quest chapter is gone.** `powah.snbt` had been sitting in the
+> client's `config/ftbquests/quests/chapters/` since 2026-08-15, left behind by
+> the Powah removal on 2026-08-16 — the server and the repo had both dropped it,
+> the client never did. Harmless in play (quests are server-authoritative) but it
+> was the only file where the client and `overrides/` disagreed. Archived to
+> `server-backups/removed-mods/powah-client-copy-20260910.snbt` first; the copy
+> already there was a different, older build of the chapter.
+>
+> The Powah mentions still in `sky_seals.js`, `keystone_bridges.js` and
+> `tier_gates.js` are **deliberate** — they are the comments explaining where
+> each Powah gate went when the mod was removed (the Seal of Flux moved to
+> Immersive Engineering's HV Capacitor). No live code references the mod.
 
 > **Unreleased — Forge 47.4.10. 216 server / 217 client mods.**
 >
